@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarFunc));
             this.sideBarMenu = new System.Windows.Forms.FlowLayoutPanel();
             this.panelMenu = new System.Windows.Forms.Panel();
@@ -61,6 +61,7 @@
             this.BtnSalvar = new System.Windows.Forms.Button();
             this.BoxcEmail = new System.Windows.Forms.TextBox();
             this.BoxcSenha = new System.Windows.Forms.TextBox();
+            this.BoxcNome = new System.Windows.Forms.TextBox();
             this.BoxcId = new System.Windows.Forms.TextBox();
             this.pbFechar = new System.Windows.Forms.PictureBox();
             this.panelCinza = new System.Windows.Forms.Panel();
@@ -82,17 +83,16 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.LayoutFundoDT = new System.Windows.Forms.FlowLayoutPanel();
             this.panelEditarFundo = new System.Windows.Forms.Panel();
-            this.panelFundoDT = new System.Windows.Forms.Panel();
-            this.BoxcNome = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lblIdD = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.lblNomeD = new System.Windows.Forms.Label();
-            this.lblSenhaD = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.lblEmailD = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.lblEmailD = new System.Windows.Forms.Label();
+            this.BoxdEmail = new System.Windows.Forms.TextBox();
+            this.lblSenhaD = new System.Windows.Forms.Label();
+            this.BoxdSenha = new System.Windows.Forms.TextBox();
+            this.lblNomeD = new System.Windows.Forms.Label();
+            this.BoxdNome = new System.Windows.Forms.TextBox();
+            this.lblIdD = new System.Windows.Forms.Label();
+            this.BoxdId = new System.Windows.Forms.TextBox();
+            this.panelFundoDT = new System.Windows.Forms.Panel();
             this.sideBarMenu.SuspendLayout();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
@@ -418,37 +418,37 @@
             this.DTgridFunc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DTgridFunc.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DTgridFunc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle37.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle37.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTgridFunc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTgridFunc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DTgridFunc.ColumnHeadersHeight = 30;
             this.DTgridFunc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DTgridFunc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CheckBox});
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle38.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DTgridFunc.DefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DTgridFunc.DefaultCellStyle = dataGridViewCellStyle6;
             this.DTgridFunc.GridColor = System.Drawing.Color.Black;
             this.DTgridFunc.Location = new System.Drawing.Point(3, 3);
             this.DTgridFunc.Name = "DTgridFunc";
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTgridFunc.RowHeadersDefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTgridFunc.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.DTgridFunc.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.DTgridFunc.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.DTgridFunc.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -529,6 +529,15 @@
             this.BoxcSenha.Name = "BoxcSenha";
             this.BoxcSenha.Size = new System.Drawing.Size(250, 29);
             this.BoxcSenha.TabIndex = 7;
+            // 
+            // BoxcNome
+            // 
+            this.BoxcNome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxcNome.Location = new System.Drawing.Point(74, 141);
+            this.BoxcNome.MaxLength = 100;
+            this.BoxcNome.Name = "BoxcNome";
+            this.BoxcNome.Size = new System.Drawing.Size(250, 29);
+            this.BoxcNome.TabIndex = 3;
             // 
             // BoxcId
             // 
@@ -641,10 +650,10 @@
             // dataGridViewImageColumn1
             // 
             this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle40.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle40.NullValue")));
-            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle8.NullValue")));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewImageColumn1.FillWeight = 167.1073F;
             this.dataGridViewImageColumn1.HeaderText = "CEditar";
             this.dataGridViewImageColumn1.Image = global::UkraBar.Properties.Resources.pencil_16px;
@@ -751,7 +760,7 @@
             this.LayoutFundoDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
             this.LayoutFundoDT.Controls.Add(this.panelEditarFundo);
             this.LayoutFundoDT.Controls.Add(this.panelFundoDT);
-            this.LayoutFundoDT.Location = new System.Drawing.Point(255, 125);
+            this.LayoutFundoDT.Location = new System.Drawing.Point(321, 114);
             this.LayoutFundoDT.Name = "LayoutFundoDT";
             this.LayoutFundoDT.Size = new System.Drawing.Size(982, 561);
             this.LayoutFundoDT.TabIndex = 43;
@@ -761,118 +770,19 @@
             this.panelEditarFundo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
             this.panelEditarFundo.Controls.Add(this.button1);
             this.panelEditarFundo.Controls.Add(this.lblEmailD);
-            this.panelEditarFundo.Controls.Add(this.textBox4);
+            this.panelEditarFundo.Controls.Add(this.BoxdEmail);
             this.panelEditarFundo.Controls.Add(this.lblSenhaD);
-            this.panelEditarFundo.Controls.Add(this.textBox3);
+            this.panelEditarFundo.Controls.Add(this.BoxdSenha);
             this.panelEditarFundo.Controls.Add(this.lblNomeD);
-            this.panelEditarFundo.Controls.Add(this.textBox2);
+            this.panelEditarFundo.Controls.Add(this.BoxdNome);
             this.panelEditarFundo.Controls.Add(this.lblIdD);
-            this.panelEditarFundo.Controls.Add(this.textBox1);
+            this.panelEditarFundo.Controls.Add(this.BoxdId);
             this.panelEditarFundo.Location = new System.Drawing.Point(3, 3);
             this.panelEditarFundo.MaximumSize = new System.Drawing.Size(979, 103);
             this.panelEditarFundo.MinimumSize = new System.Drawing.Size(979, 0);
             this.panelEditarFundo.Name = "panelEditarFundo";
             this.panelEditarFundo.Size = new System.Drawing.Size(979, 0);
             this.panelEditarFundo.TabIndex = 0;
-            // 
-            // panelFundoDT
-            // 
-            this.panelFundoDT.Controls.Add(this.DTgridFunc);
-            this.panelFundoDT.Location = new System.Drawing.Point(3, 9);
-            this.panelFundoDT.Name = "panelFundoDT";
-            this.panelFundoDT.Size = new System.Drawing.Size(979, 552);
-            this.panelFundoDT.TabIndex = 1;
-            // 
-            // BoxcNome
-            // 
-            this.BoxcNome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxcNome.Location = new System.Drawing.Point(74, 141);
-            this.BoxcNome.MaxLength = 100;
-            this.BoxcNome.Name = "BoxcNome";
-            this.BoxcNome.Size = new System.Drawing.Size(250, 29);
-            this.BoxcNome.TabIndex = 3;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(28, 41);
-            this.textBox1.MaxLength = 100;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(59, 29);
-            this.textBox1.TabIndex = 4;
-            // 
-            // lblIdD
-            // 
-            this.lblIdD.AutoSize = true;
-            this.lblIdD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdD.ForeColor = System.Drawing.Color.White;
-            this.lblIdD.Location = new System.Drawing.Point(45, 17);
-            this.lblIdD.Name = "lblIdD";
-            this.lblIdD.Size = new System.Drawing.Size(25, 21);
-            this.lblIdD.TabIndex = 5;
-            this.lblIdD.Text = "Id";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(115, 41);
-            this.textBox2.MaxLength = 100;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(245, 29);
-            this.textBox2.TabIndex = 6;
-            // 
-            // lblNomeD
-            // 
-            this.lblNomeD.AutoSize = true;
-            this.lblNomeD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeD.ForeColor = System.Drawing.Color.White;
-            this.lblNomeD.Location = new System.Drawing.Point(209, 17);
-            this.lblNomeD.Name = "lblNomeD";
-            this.lblNomeD.Size = new System.Drawing.Size(57, 21);
-            this.lblNomeD.TabIndex = 7;
-            this.lblNomeD.Text = "Nome";
-            // 
-            // lblSenhaD
-            // 
-            this.lblSenhaD.AutoSize = true;
-            this.lblSenhaD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenhaD.ForeColor = System.Drawing.Color.White;
-            this.lblSenhaD.Location = new System.Drawing.Point(726, 17);
-            this.lblSenhaD.Name = "lblSenhaD";
-            this.lblSenhaD.Size = new System.Drawing.Size(57, 21);
-            this.lblSenhaD.TabIndex = 9;
-            this.lblSenhaD.Text = "Senha";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(632, 41);
-            this.textBox3.MaxLength = 100;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(245, 29);
-            this.textBox3.TabIndex = 8;
-            // 
-            // lblEmailD
-            // 
-            this.lblEmailD.AutoSize = true;
-            this.lblEmailD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmailD.ForeColor = System.Drawing.Color.White;
-            this.lblEmailD.Location = new System.Drawing.Point(470, 17);
-            this.lblEmailD.Name = "lblEmailD";
-            this.lblEmailD.Size = new System.Drawing.Size(53, 21);
-            this.lblEmailD.TabIndex = 11;
-            this.lblEmailD.Text = "Email";
-            this.lblEmailD.Click += new System.EventHandler(this.lblEmailD_Click);
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(374, 41);
-            this.textBox4.MaxLength = 100;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(245, 29);
-            this.textBox4.TabIndex = 10;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // button1
             // 
@@ -892,6 +802,96 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lblEmailD
+            // 
+            this.lblEmailD.AutoSize = true;
+            this.lblEmailD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmailD.ForeColor = System.Drawing.Color.White;
+            this.lblEmailD.Location = new System.Drawing.Point(470, 17);
+            this.lblEmailD.Name = "lblEmailD";
+            this.lblEmailD.Size = new System.Drawing.Size(53, 21);
+            this.lblEmailD.TabIndex = 11;
+            this.lblEmailD.Text = "Email";
+            this.lblEmailD.Click += new System.EventHandler(this.lblEmailD_Click);
+            // 
+            // BoxdEmail
+            // 
+            this.BoxdEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxdEmail.Location = new System.Drawing.Point(374, 41);
+            this.BoxdEmail.MaxLength = 100;
+            this.BoxdEmail.Name = "BoxdEmail";
+            this.BoxdEmail.Size = new System.Drawing.Size(245, 29);
+            this.BoxdEmail.TabIndex = 10;
+            this.BoxdEmail.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // lblSenhaD
+            // 
+            this.lblSenhaD.AutoSize = true;
+            this.lblSenhaD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenhaD.ForeColor = System.Drawing.Color.White;
+            this.lblSenhaD.Location = new System.Drawing.Point(726, 17);
+            this.lblSenhaD.Name = "lblSenhaD";
+            this.lblSenhaD.Size = new System.Drawing.Size(57, 21);
+            this.lblSenhaD.TabIndex = 9;
+            this.lblSenhaD.Text = "Senha";
+            // 
+            // BoxdSenha
+            // 
+            this.BoxdSenha.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxdSenha.Location = new System.Drawing.Point(632, 41);
+            this.BoxdSenha.MaxLength = 100;
+            this.BoxdSenha.Name = "BoxdSenha";
+            this.BoxdSenha.Size = new System.Drawing.Size(245, 29);
+            this.BoxdSenha.TabIndex = 8;
+            // 
+            // lblNomeD
+            // 
+            this.lblNomeD.AutoSize = true;
+            this.lblNomeD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeD.ForeColor = System.Drawing.Color.White;
+            this.lblNomeD.Location = new System.Drawing.Point(209, 17);
+            this.lblNomeD.Name = "lblNomeD";
+            this.lblNomeD.Size = new System.Drawing.Size(57, 21);
+            this.lblNomeD.TabIndex = 7;
+            this.lblNomeD.Text = "Nome";
+            // 
+            // BoxdNome
+            // 
+            this.BoxdNome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxdNome.Location = new System.Drawing.Point(115, 41);
+            this.BoxdNome.MaxLength = 100;
+            this.BoxdNome.Name = "BoxdNome";
+            this.BoxdNome.Size = new System.Drawing.Size(245, 29);
+            this.BoxdNome.TabIndex = 6;
+            // 
+            // lblIdD
+            // 
+            this.lblIdD.AutoSize = true;
+            this.lblIdD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdD.ForeColor = System.Drawing.Color.White;
+            this.lblIdD.Location = new System.Drawing.Point(45, 17);
+            this.lblIdD.Name = "lblIdD";
+            this.lblIdD.Size = new System.Drawing.Size(25, 21);
+            this.lblIdD.TabIndex = 5;
+            this.lblIdD.Text = "Id";
+            // 
+            // BoxdId
+            // 
+            this.BoxdId.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxdId.Location = new System.Drawing.Point(28, 41);
+            this.BoxdId.MaxLength = 100;
+            this.BoxdId.Name = "BoxdId";
+            this.BoxdId.Size = new System.Drawing.Size(59, 29);
+            this.BoxdId.TabIndex = 4;
+            // 
+            // panelFundoDT
+            // 
+            this.panelFundoDT.Controls.Add(this.DTgridFunc);
+            this.panelFundoDT.Location = new System.Drawing.Point(3, 9);
+            this.panelFundoDT.Name = "panelFundoDT";
+            this.panelFundoDT.Size = new System.Drawing.Size(979, 552);
+            this.panelFundoDT.TabIndex = 1;
             // 
             // CadastrarFunc
             // 
@@ -991,12 +991,12 @@
         private System.Windows.Forms.Panel panelFundoDT;
         private System.Windows.Forms.TextBox BoxcNome;
         private System.Windows.Forms.Label lblIdD;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox BoxdId;
+        private System.Windows.Forms.TextBox BoxdNome;
         private System.Windows.Forms.Label lblEmailD;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox BoxdEmail;
         private System.Windows.Forms.Label lblSenhaD;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox BoxdSenha;
         private System.Windows.Forms.Label lblNomeD;
         private System.Windows.Forms.Button button1;
     }

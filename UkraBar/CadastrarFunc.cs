@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -130,7 +131,10 @@ namespace UkraBar
 
         private void DTgridFunc_MouseClick(object sender, MouseEventArgs e)//Função Click na tabela para Enviar nas Box
         {
-
+            BoxdId.Text = DTgridFunc.CurrentRow.Cells[1].Value.ToString();
+            BoxdNome.Text = DTgridFunc.CurrentRow.Cells[2].Value.ToString();
+            BoxdSenha.Text = DTgridFunc.CurrentRow.Cells[3].Value.ToString();
+            BoxdEmail.Text = DTgridFunc.CurrentRow.Cells[4].Value.ToString();
         }
 
         bool sideBarMenuExpand;
@@ -193,7 +197,7 @@ namespace UkraBar
 
         private void DTgridFunc_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+       
         }
 
         private void DTgridFunc_CellClick(object sender, DataGridViewCellEventArgs e)

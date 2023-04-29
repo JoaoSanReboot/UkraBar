@@ -72,7 +72,7 @@ namespace UkraBar
 
         private void button9_Click(object sender, EventArgs e)//Botão de Cadastro Desconto
         {
-            CadastrarDesc DesCad = new CadastrarDesc();
+            CadastrarDescD DesCad = new CadastrarDescD();
             this.Hide();
             DesCad.ShowDialog();
             this.Close();
