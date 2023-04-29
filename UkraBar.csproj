@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94A1D89D-3DEB-4E8D-B4BC-49A1DE0BD7E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UkraBar</RootNamespace>
+    <AssemblyName>UkraBar</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.21.9.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.21.9\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.32.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.32.1\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CadastrarDesc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarDesc.Designer.cs">
+      <DependentUpon>CadastrarDesc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarFunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarFunc.Designer.cs">
+      <DependentUpon>CadastrarFunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarMesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarMesas.Designer.cs">
+      <DependentUpon>CadastrarMesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarProd.Designer.cs">
+      <DependentUpon>CadastrarProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PainelCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PainelCliente.Designer.cs">
+      <DependentUpon>PainelCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PainelFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PainelFuncionario.Designer.cs">
+      <DependentUpon>PainelFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PainelLogins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PainelLogins.Designer.cs">
+      <DependentUpon>PainelLogins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PainelAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PainelAdm.Designer.cs">
+      <DependentUpon>PainelAdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CadastrarDesc.resx">
+      <DependentUpon>CadastrarDesc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarFunc.resx">
+      <DependentUpon>CadastrarFunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarProd.resx">
+      <DependentUpon>CadastrarProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PainelCliente.resx">
+      <DependentUpon>PainelCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PainelFuncionario.resx">
+      <DependentUpon>PainelFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PainelLogins.resx">
+      <DependentUpon>PainelLogins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PainelAdm.resx">
+      <DependentUpon>PainelAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye_50px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOTAO.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand_arrow_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaFundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squared_menu_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filled_circle_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reply_arrow_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filtered_file_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circled_x_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoxBranca.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoxIdBranca.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_more_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toggle_off_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toggleon_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checkmark_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X Key_50px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
