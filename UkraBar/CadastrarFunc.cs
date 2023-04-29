@@ -165,12 +165,7 @@ namespace UkraBar
                 panelNovoFunc.Visible = false;
                 NovoFuncTimer.Start();
             }
-            if (sideBarMenuExpand == true)
-            {
-                panelEditarSlide.Visible = false;
-                EditarTimer.Start();
-            }
-
+      
         }
 
         private void BtnVoltar_Click(object sender, EventArgs e)
@@ -258,7 +253,7 @@ namespace UkraBar
         private void BtnNovoFunc_Click(object sender, EventArgs e)
         {
            
-            if(sideBarMenuExpand == true && EditarFunc == false) 
+            if(sideBarMenuExpand == true) 
             {
                 panelNovoFunc.Visible = true;
                 NovoFuncTimer.Start();
@@ -266,38 +261,20 @@ namespace UkraBar
 
         }
 
+        bool EditFundo;
         private void BtnEditar_Click(object sender, EventArgs e)
         {
-            if (sideBarMenuExpand == true && NovoFuncBar == false)
+            if (EditFundo)
             {
-                panelEditarSlide.Visible = true;
-                EditarTimer.Start();
-            }
-
-        }
-
-        bool EditarFunc;
-
-        private void EditarTimer_Tick(object sender, EventArgs e)
-        {
-            if (EditarFunc)
-            {
-                panelEditarSlide.Width -= 30;
-                if (panelEditarSlide.Width == panelEditarSlide.MinimumSize.Width)
-                {
-                    EditarFunc = false;
-                    EditarTimer.Stop();
-                }
+                panelEditarFundo.Height -= 113;
+                EditFundo = false;
             }
             else
             {
-                panelEditarSlide.Width += 10;
-                if (panelEditarSlide.Width == panelEditarSlide.MaximumSize.Width)
-                {
-                    EditarFunc = true;
-                    EditarTimer.Stop();
-                }
+                panelEditarFundo.Height += 113;
+                EditFundo = true;
             }
+
         }
 
         private void sideBarMenu_Paint(object sender, PaintEventArgs e)
@@ -341,6 +318,26 @@ namespace UkraBar
             }
             CarregarDados();
             conn.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEmailD_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscar_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
