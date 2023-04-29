@@ -1,6 +1,6 @@
 ﻿namespace UkraBar
 {
-    partial class CadastrarProd
+    partial class CadastrarProdP
     {
         /// <summary>
         /// Required designer variable.
@@ -28,623 +28,504 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarProd));
-            this.BtnCadastrarProd = new System.Windows.Forms.Button();
-            this.tabelaControle = new System.Windows.Forms.TabControl();
-            this.Cadastro = new System.Windows.Forms.TabPage();
-            this.pContainer = new System.Windows.Forms.Panel();
-            this.pPainelProduto = new System.Windows.Forms.Panel();
-            this.lblpDescricao = new System.Windows.Forms.Label();
-            this.BoxDescricao = new System.Windows.Forms.TextBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pbpDescricao = new System.Windows.Forms.PictureBox();
-            this.lblpProduto = new System.Windows.Forms.Label();
-            this.BoxProduto = new System.Windows.Forms.TextBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pbpProduto = new System.Windows.Forms.PictureBox();
-            this.lblpQuantidade = new System.Windows.Forms.Label();
-            this.BoxQuantidade = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pbpQuantidade = new System.Windows.Forms.PictureBox();
-            this.lblpValor = new System.Windows.Forms.Label();
-            this.BoxValor = new System.Windows.Forms.TextBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pbpValor = new System.Windows.Forms.PictureBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.cCrudP = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.BoxpQuantidade = new System.Windows.Forms.TextBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarProdP));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.sideBarMenuP = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelMenuP = new System.Windows.Forms.Panel();
+            this.lblMenuP = new System.Windows.Forms.Label();
+            this.pbMenuP = new System.Windows.Forms.PictureBox();
+            this.panelShowConfigP = new System.Windows.Forms.Panel();
+            this.BtnEditarP = new System.Windows.Forms.Button();
+            this.BtnNovoFuncP = new System.Windows.Forms.Button();
+            this.BtnDeletarP = new System.Windows.Forms.Button();
+            this.BtnEscuroP = new System.Windows.Forms.Button();
+            this.BtnConfiguraçõesP = new System.Windows.Forms.Button();
+            this.BtnClaroP = new System.Windows.Forms.Button();
+            this.panelFiltroP = new System.Windows.Forms.Panel();
+            this.BtnFiltroP = new System.Windows.Forms.Button();
+            this.panelAjudaP = new System.Windows.Forms.Panel();
+            this.BtnAjudaP = new System.Windows.Forms.Button();
+            this.panelSobreP = new System.Windows.Forms.Panel();
+            this.BtnSobreP = new System.Windows.Forms.Button();
+            this.panelVoltarP = new System.Windows.Forms.Panel();
+            this.BtnVoltarP = new System.Windows.Forms.Button();
+            this.BarSideTopP = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelLabelP = new System.Windows.Forms.Panel();
+            this.lblFuncP = new System.Windows.Forms.Label();
+            this.panelBuscarP = new System.Windows.Forms.Panel();
             this.btnBuscarP = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.BoxBuscar = new System.Windows.Forms.TextBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.BoxBuscarP = new System.Windows.Forms.TextBox();
+            this.pictureBox5P = new System.Windows.Forms.PictureBox();
+            this.LayoutFundoDTP = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelEditarFundoP = new System.Windows.Forms.Panel();
+            this.BtnPincelP = new System.Windows.Forms.Button();
+            this.lblEmailP = new System.Windows.Forms.Label();
+            this.BoxdEmailP = new System.Windows.Forms.TextBox();
+            this.lblSenhaP = new System.Windows.Forms.Label();
+            this.BoxdSenhaP = new System.Windows.Forms.TextBox();
+            this.lblNomeP = new System.Windows.Forms.Label();
+            this.BoxdNomeP = new System.Windows.Forms.TextBox();
+            this.lblIdP = new System.Windows.Forms.Label();
+            this.BoxdIdP = new System.Windows.Forms.TextBox();
+            this.panelFundoDTP = new System.Windows.Forms.Panel();
             this.DTgridProd = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.BoxpId = new System.Windows.Forms.TextBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.BoxpValor = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.BoxpDescricao = new System.Windows.Forms.TextBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.BoxpProduto = new System.Windows.Forms.TextBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.cCrudProd = new System.Windows.Forms.Panel();
-            this.BtnAtualizarP = new System.Windows.Forms.Button();
-            this.BtnExcluirP = new System.Windows.Forms.Button();
-            this.BtnSalvarP = new System.Windows.Forms.Button();
-            this.BtnVoltar = new System.Windows.Forms.PictureBox();
-            this.tabelaControle.SuspendLayout();
-            this.Cadastro.SuspendLayout();
-            this.pContainer.SuspendLayout();
-            this.pPainelProduto.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbpDescricao)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbpProduto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbpQuantidade)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbpValor)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            this.cCrudP.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            this.CheckBoxP = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.sideBarMenuP.SuspendLayout();
+            this.panelMenuP.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenuP)).BeginInit();
+            this.panelShowConfigP.SuspendLayout();
+            this.panelFiltroP.SuspendLayout();
+            this.panelAjudaP.SuspendLayout();
+            this.panelSobreP.SuspendLayout();
+            this.panelVoltarP.SuspendLayout();
+            this.BarSideTopP.SuspendLayout();
+            this.panelLabelP.SuspendLayout();
+            this.panelBuscarP.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5P)).BeginInit();
+            this.LayoutFundoDTP.SuspendLayout();
+            this.panelEditarFundoP.SuspendLayout();
+            this.panelFundoDTP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DTgridProd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.cCrudProd.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnVoltar)).BeginInit();
             this.SuspendLayout();
             // 
-            // BtnCadastrarProd
+            // sideBarMenuP
             // 
-            resources.ApplyResources(this.BtnCadastrarProd, "BtnCadastrarProd");
-            this.BtnCadastrarProd.Name = "BtnCadastrarProd";
-            this.BtnCadastrarProd.UseVisualStyleBackColor = true;
-            this.BtnCadastrarProd.Click += new System.EventHandler(this.button1_Click_1);
+            this.sideBarMenuP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.sideBarMenuP.Controls.Add(this.panelMenuP);
+            this.sideBarMenuP.Controls.Add(this.panelShowConfigP);
+            this.sideBarMenuP.Controls.Add(this.panelFiltroP);
+            this.sideBarMenuP.Controls.Add(this.panelAjudaP);
+            this.sideBarMenuP.Controls.Add(this.panelSobreP);
+            this.sideBarMenuP.Controls.Add(this.panelVoltarP);
+            resources.ApplyResources(this.sideBarMenuP, "sideBarMenuP");
+            this.sideBarMenuP.Name = "sideBarMenuP";
             // 
-            // tabelaControle
+            // panelMenuP
             // 
-            this.tabelaControle.Controls.Add(this.Cadastro);
-            this.tabelaControle.Controls.Add(this.tabPage2);
-            resources.ApplyResources(this.tabelaControle, "tabelaControle");
-            this.tabelaControle.Name = "tabelaControle";
-            this.tabelaControle.SelectedIndex = 0;
+            this.panelMenuP.Controls.Add(this.lblMenuP);
+            this.panelMenuP.Controls.Add(this.pbMenuP);
+            resources.ApplyResources(this.panelMenuP, "panelMenuP");
+            this.panelMenuP.Name = "panelMenuP";
             // 
-            // Cadastro
+            // lblMenuP
             // 
-            this.Cadastro.Controls.Add(this.pContainer);
-            resources.ApplyResources(this.Cadastro, "Cadastro");
-            this.Cadastro.Name = "Cadastro";
-            this.Cadastro.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.lblMenuP, "lblMenuP");
+            this.lblMenuP.ForeColor = System.Drawing.Color.White;
+            this.lblMenuP.Name = "lblMenuP";
             // 
-            // pContainer
+            // pbMenuP
             // 
-            this.pContainer.BackColor = System.Drawing.Color.Snow;
-            this.pContainer.Controls.Add(this.BtnCadastrarProd);
-            this.pContainer.Controls.Add(this.pPainelProduto);
-            resources.ApplyResources(this.pContainer, "pContainer");
-            this.pContainer.Name = "pContainer";
+            this.pbMenuP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbMenuP.Image = global::UkraBar.Properties.Resources.squared_menu_24px;
+            resources.ApplyResources(this.pbMenuP, "pbMenuP");
+            this.pbMenuP.Name = "pbMenuP";
+            this.pbMenuP.TabStop = false;
             // 
-            // pPainelProduto
+            // panelShowConfigP
             // 
-            this.pPainelProduto.Controls.Add(this.lblpDescricao);
-            this.pPainelProduto.Controls.Add(this.BoxDescricao);
-            this.pPainelProduto.Controls.Add(this.pictureBox4);
-            this.pPainelProduto.Controls.Add(this.pbpDescricao);
-            this.pPainelProduto.Controls.Add(this.lblpProduto);
-            this.pPainelProduto.Controls.Add(this.BoxProduto);
-            this.pPainelProduto.Controls.Add(this.pictureBox20);
-            this.pPainelProduto.Controls.Add(this.pbpProduto);
-            this.pPainelProduto.Controls.Add(this.lblpQuantidade);
-            this.pPainelProduto.Controls.Add(this.BoxQuantidade);
-            this.pPainelProduto.Controls.Add(this.pictureBox1);
-            this.pPainelProduto.Controls.Add(this.pbpQuantidade);
-            this.pPainelProduto.Controls.Add(this.lblpValor);
-            this.pPainelProduto.Controls.Add(this.BoxValor);
-            this.pPainelProduto.Controls.Add(this.pictureBox15);
-            this.pPainelProduto.Controls.Add(this.pbpValor);
-            resources.ApplyResources(this.pPainelProduto, "pPainelProduto");
-            this.pPainelProduto.Name = "pPainelProduto";
+            this.panelShowConfigP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.panelShowConfigP.Controls.Add(this.BtnEditarP);
+            this.panelShowConfigP.Controls.Add(this.BtnNovoFuncP);
+            this.panelShowConfigP.Controls.Add(this.BtnDeletarP);
+            this.panelShowConfigP.Controls.Add(this.BtnEscuroP);
+            this.panelShowConfigP.Controls.Add(this.BtnConfiguraçõesP);
+            this.panelShowConfigP.Controls.Add(this.BtnClaroP);
+            resources.ApplyResources(this.panelShowConfigP, "panelShowConfigP");
+            this.panelShowConfigP.Name = "panelShowConfigP";
             // 
-            // lblpDescricao
+            // BtnEditarP
             // 
-            resources.ApplyResources(this.lblpDescricao, "lblpDescricao");
-            this.lblpDescricao.Name = "lblpDescricao";
+            this.BtnEditarP.BackColor = System.Drawing.Color.DarkCyan;
+            this.BtnEditarP.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnEditarP, "BtnEditarP");
+            this.BtnEditarP.ForeColor = System.Drawing.Color.White;
+            this.BtnEditarP.Image = global::UkraBar.Properties.Resources.pencil_24px;
+            this.BtnEditarP.Name = "BtnEditarP";
+            this.BtnEditarP.UseVisualStyleBackColor = false;
             // 
-            // BoxDescricao
+            // BtnNovoFuncP
             // 
-            this.BoxDescricao.BackColor = System.Drawing.Color.Snow;
-            this.BoxDescricao.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.BoxDescricao, "BoxDescricao");
-            this.BoxDescricao.Name = "BoxDescricao";
-            this.BoxDescricao.Tag = "Descricao";
-            this.BoxDescricao.Enter += new System.EventHandler(this.txtProdutoEnter);
-            this.BoxDescricao.Leave += new System.EventHandler(this.txtProdutoLeave);
+            this.BtnNovoFuncP.BackColor = System.Drawing.Color.Green;
+            this.BtnNovoFuncP.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnNovoFuncP, "BtnNovoFuncP");
+            this.BtnNovoFuncP.ForeColor = System.Drawing.Color.White;
+            this.BtnNovoFuncP.Image = global::UkraBar.Properties.Resources.add_30px;
+            this.BtnNovoFuncP.Name = "BtnNovoFuncP";
+            this.BtnNovoFuncP.UseVisualStyleBackColor = false;
             // 
-            // pictureBox4
+            // BtnDeletarP
             // 
-            resources.ApplyResources(this.pictureBox4, "pictureBox4");
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.TabStop = false;
+            this.BtnDeletarP.BackColor = System.Drawing.Color.Red;
+            this.BtnDeletarP.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnDeletarP, "BtnDeletarP");
+            this.BtnDeletarP.ForeColor = System.Drawing.Color.White;
+            this.BtnDeletarP.Image = global::UkraBar.Properties.Resources.trash_26px;
+            this.BtnDeletarP.Name = "BtnDeletarP";
+            this.BtnDeletarP.UseVisualStyleBackColor = false;
             // 
-            // pbpDescricao
+            // BtnEscuroP
             // 
-            this.pbpDescricao.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.pbpDescricao, "pbpDescricao");
-            this.pbpDescricao.Name = "pbpDescricao";
-            this.pbpDescricao.TabStop = false;
+            this.BtnEscuroP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.BtnEscuroP.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnEscuroP, "BtnEscuroP");
+            this.BtnEscuroP.ForeColor = System.Drawing.Color.White;
+            this.BtnEscuroP.Image = global::UkraBar.Properties.Resources.toggleon_24px;
+            this.BtnEscuroP.Name = "BtnEscuroP";
+            this.BtnEscuroP.UseVisualStyleBackColor = false;
             // 
-            // lblpProduto
+            // BtnConfiguraçõesP
             // 
-            resources.ApplyResources(this.lblpProduto, "lblpProduto");
-            this.lblpProduto.Name = "lblpProduto";
+            this.BtnConfiguraçõesP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnConfiguraçõesP.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnConfiguraçõesP, "BtnConfiguraçõesP");
+            this.BtnConfiguraçõesP.ForeColor = System.Drawing.Color.White;
+            this.BtnConfiguraçõesP.Image = global::UkraBar.Properties.Resources.engineering_30px;
+            this.BtnConfiguraçõesP.Name = "BtnConfiguraçõesP";
+            this.BtnConfiguraçõesP.UseVisualStyleBackColor = false;
             // 
-            // BoxProduto
+            // BtnClaroP
             // 
-            this.BoxProduto.BackColor = System.Drawing.Color.Snow;
-            this.BoxProduto.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.BoxProduto, "BoxProduto");
-            this.BoxProduto.Name = "BoxProduto";
-            this.BoxProduto.Tag = "Produto";
-            this.BoxProduto.Enter += new System.EventHandler(this.txtProdutoEnter);
-            this.BoxProduto.Leave += new System.EventHandler(this.txtProdutoLeave);
+            this.BtnClaroP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.BtnClaroP.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnClaroP, "BtnClaroP");
+            this.BtnClaroP.ForeColor = System.Drawing.Color.White;
+            this.BtnClaroP.Image = global::UkraBar.Properties.Resources.toggle_off_24px;
+            this.BtnClaroP.Name = "BtnClaroP";
+            this.BtnClaroP.UseVisualStyleBackColor = false;
             // 
-            // pictureBox20
+            // panelFiltroP
             // 
-            resources.ApplyResources(this.pictureBox20, "pictureBox20");
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.TabStop = false;
+            this.panelFiltroP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.panelFiltroP.Controls.Add(this.BtnFiltroP);
+            resources.ApplyResources(this.panelFiltroP, "panelFiltroP");
+            this.panelFiltroP.Name = "panelFiltroP";
             // 
-            // pbpProduto
+            // BtnFiltroP
             // 
-            this.pbpProduto.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.pbpProduto, "pbpProduto");
-            this.pbpProduto.Name = "pbpProduto";
-            this.pbpProduto.TabStop = false;
+            this.BtnFiltroP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnFiltroP.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnFiltroP, "BtnFiltroP");
+            this.BtnFiltroP.ForeColor = System.Drawing.Color.White;
+            this.BtnFiltroP.Image = global::UkraBar.Properties.Resources.filtered_file_24px;
+            this.BtnFiltroP.Name = "BtnFiltroP";
+            this.BtnFiltroP.UseVisualStyleBackColor = false;
             // 
-            // lblpQuantidade
+            // panelAjudaP
             // 
-            resources.ApplyResources(this.lblpQuantidade, "lblpQuantidade");
-            this.lblpQuantidade.Name = "lblpQuantidade";
+            this.panelAjudaP.Controls.Add(this.BtnAjudaP);
+            resources.ApplyResources(this.panelAjudaP, "panelAjudaP");
+            this.panelAjudaP.Name = "panelAjudaP";
             // 
-            // BoxQuantidade
+            // BtnAjudaP
             // 
-            this.BoxQuantidade.BackColor = System.Drawing.Color.Snow;
-            this.BoxQuantidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.BoxQuantidade, "BoxQuantidade");
-            this.BoxQuantidade.Name = "BoxQuantidade";
-            this.BoxQuantidade.Tag = "Quantidade";
-            this.BoxQuantidade.Enter += new System.EventHandler(this.txtProdutoEnter);
-            this.BoxQuantidade.Leave += new System.EventHandler(this.txtProdutoLeave);
+            this.BtnAjudaP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnAjudaP.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnAjudaP, "BtnAjudaP");
+            this.BtnAjudaP.ForeColor = System.Drawing.Color.White;
+            this.BtnAjudaP.Image = global::UkraBar.Properties.Resources.ask_question_24px;
+            this.BtnAjudaP.Name = "BtnAjudaP";
+            this.BtnAjudaP.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // panelSobreP
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            this.panelSobreP.Controls.Add(this.BtnSobreP);
+            resources.ApplyResources(this.panelSobreP, "panelSobreP");
+            this.panelSobreP.Name = "panelSobreP";
             // 
-            // pbpQuantidade
+            // BtnSobreP
             // 
-            this.pbpQuantidade.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.pbpQuantidade, "pbpQuantidade");
-            this.pbpQuantidade.Name = "pbpQuantidade";
-            this.pbpQuantidade.TabStop = false;
+            this.BtnSobreP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnSobreP.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnSobreP, "BtnSobreP");
+            this.BtnSobreP.ForeColor = System.Drawing.Color.White;
+            this.BtnSobreP.Image = global::UkraBar.Properties.Resources.info_24px;
+            this.BtnSobreP.Name = "BtnSobreP";
+            this.BtnSobreP.UseVisualStyleBackColor = false;
             // 
-            // lblpValor
+            // panelVoltarP
             // 
-            resources.ApplyResources(this.lblpValor, "lblpValor");
-            this.lblpValor.Name = "lblpValor";
+            this.panelVoltarP.Controls.Add(this.BtnVoltarP);
+            resources.ApplyResources(this.panelVoltarP, "panelVoltarP");
+            this.panelVoltarP.Name = "panelVoltarP";
             // 
-            // BoxValor
+            // BtnVoltarP
             // 
-            this.BoxValor.BackColor = System.Drawing.Color.Snow;
-            this.BoxValor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.BoxValor, "BoxValor");
-            this.BoxValor.Name = "BoxValor";
-            this.BoxValor.Tag = "Valor";
-            this.BoxValor.Enter += new System.EventHandler(this.txtProdutoEnter);
-            this.BoxValor.Leave += new System.EventHandler(this.txtProdutoLeave);
+            this.BtnVoltarP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnVoltarP.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnVoltarP, "BtnVoltarP");
+            this.BtnVoltarP.ForeColor = System.Drawing.Color.White;
+            this.BtnVoltarP.Image = global::UkraBar.Properties.Resources.reply_arrow_24px;
+            this.BtnVoltarP.Name = "BtnVoltarP";
+            this.BtnVoltarP.UseVisualStyleBackColor = false;
             // 
-            // pictureBox15
+            // BarSideTopP
             // 
-            resources.ApplyResources(this.pictureBox15, "pictureBox15");
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.TabStop = false;
+            this.BarSideTopP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BarSideTopP.Controls.Add(this.panelLabelP);
+            this.BarSideTopP.Controls.Add(this.panelBuscarP);
+            resources.ApplyResources(this.BarSideTopP, "BarSideTopP");
+            this.BarSideTopP.Name = "BarSideTopP";
             // 
-            // pbpValor
+            // panelLabelP
             // 
-            this.pbpValor.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.pbpValor, "pbpValor");
-            this.pbpValor.Name = "pbpValor";
-            this.pbpValor.TabStop = false;
+            this.panelLabelP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.panelLabelP.Controls.Add(this.lblFuncP);
+            resources.ApplyResources(this.panelLabelP, "panelLabelP");
+            this.panelLabelP.Name = "panelLabelP";
             // 
-            // tabPage2
+            // lblFuncP
             // 
-            this.tabPage2.Controls.Add(this.cCrudP);
-            resources.ApplyResources(this.tabPage2, "tabPage2");
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.lblFuncP, "lblFuncP");
+            this.lblFuncP.ForeColor = System.Drawing.Color.White;
+            this.lblFuncP.Name = "lblFuncP";
             // 
-            // cCrudP
+            // panelBuscarP
             // 
-            this.cCrudP.BackColor = System.Drawing.Color.Snow;
-            this.cCrudP.Controls.Add(this.label1);
-            this.cCrudP.Controls.Add(this.BoxpQuantidade);
-            this.cCrudP.Controls.Add(this.pictureBox16);
-            this.cCrudP.Controls.Add(this.pictureBox17);
-            this.cCrudP.Controls.Add(this.btnBuscarP);
-            this.cCrudP.Controls.Add(this.label6);
-            this.cCrudP.Controls.Add(this.BoxBuscar);
-            this.cCrudP.Controls.Add(this.pictureBox12);
-            this.cCrudP.Controls.Add(this.pictureBox13);
-            this.cCrudP.Controls.Add(this.DTgridProd);
-            this.cCrudP.Controls.Add(this.label5);
-            this.cCrudP.Controls.Add(this.BoxpId);
-            this.cCrudP.Controls.Add(this.pictureBox10);
-            this.cCrudP.Controls.Add(this.pictureBox11);
-            this.cCrudP.Controls.Add(this.label7);
-            this.cCrudP.Controls.Add(this.BoxpValor);
-            this.cCrudP.Controls.Add(this.pictureBox3);
-            this.cCrudP.Controls.Add(this.pictureBox5);
-            this.cCrudP.Controls.Add(this.label8);
-            this.cCrudP.Controls.Add(this.BoxpDescricao);
-            this.cCrudP.Controls.Add(this.pictureBox6);
-            this.cCrudP.Controls.Add(this.pictureBox7);
-            this.cCrudP.Controls.Add(this.label9);
-            this.cCrudP.Controls.Add(this.BoxpProduto);
-            this.cCrudP.Controls.Add(this.pictureBox8);
-            this.cCrudP.Controls.Add(this.pictureBox9);
-            this.cCrudP.Controls.Add(this.cCrudProd);
-            resources.ApplyResources(this.cCrudP, "cCrudP");
-            this.cCrudP.Name = "cCrudP";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // BoxpQuantidade
-            // 
-            this.BoxpQuantidade.BackColor = System.Drawing.Color.Snow;
-            this.BoxpQuantidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.BoxpQuantidade, "BoxpQuantidade");
-            this.BoxpQuantidade.Name = "BoxpQuantidade";
-            this.BoxpQuantidade.Tag = "";
-            // 
-            // pictureBox16
-            // 
-            resources.ApplyResources(this.pictureBox16, "pictureBox16");
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.pictureBox17, "pictureBox17");
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.TabStop = false;
+            this.panelBuscarP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.panelBuscarP.Controls.Add(this.btnBuscarP);
+            this.panelBuscarP.Controls.Add(this.BoxBuscarP);
+            this.panelBuscarP.Controls.Add(this.pictureBox5P);
+            resources.ApplyResources(this.panelBuscarP, "panelBuscarP");
+            this.panelBuscarP.Name = "panelBuscarP";
             // 
             // btnBuscarP
             // 
+            this.btnBuscarP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnBuscarP.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnBuscarP, "btnBuscarP");
+            this.btnBuscarP.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarP.Image = global::UkraBar.Properties.Resources.search_more_24px;
             this.btnBuscarP.Name = "btnBuscarP";
-            this.btnBuscarP.UseVisualStyleBackColor = true;
-            this.btnBuscarP.Click += new System.EventHandler(this.btnBuscarP_Click);
+            this.btnBuscarP.UseVisualStyleBackColor = false;
             // 
-            // label6
+            // BoxBuscarP
             // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
+            this.BoxBuscarP.BackColor = System.Drawing.Color.White;
+            this.BoxBuscarP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.BoxBuscarP, "BoxBuscarP");
+            this.BoxBuscarP.Name = "BoxBuscarP";
+            this.BoxBuscarP.Tag = "";
             // 
-            // BoxBuscar
+            // pictureBox5P
             // 
-            this.BoxBuscar.BackColor = System.Drawing.Color.White;
-            this.BoxBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.BoxBuscar, "BoxBuscar");
-            this.BoxBuscar.Name = "BoxBuscar";
-            this.BoxBuscar.Tag = "";
+            this.pictureBox5P.Image = global::UkraBar.Properties.Resources.BoxBranca;
+            resources.ApplyResources(this.pictureBox5P, "pictureBox5P");
+            this.pictureBox5P.Name = "pictureBox5P";
+            this.pictureBox5P.TabStop = false;
             // 
-            // pictureBox12
+            // LayoutFundoDTP
             // 
-            resources.ApplyResources(this.pictureBox12, "pictureBox12");
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.TabStop = false;
+            this.LayoutFundoDTP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.LayoutFundoDTP.Controls.Add(this.panelEditarFundoP);
+            this.LayoutFundoDTP.Controls.Add(this.panelFundoDTP);
+            resources.ApplyResources(this.LayoutFundoDTP, "LayoutFundoDTP");
+            this.LayoutFundoDTP.Name = "LayoutFundoDTP";
             // 
-            // pictureBox13
+            // panelEditarFundoP
             // 
-            this.pictureBox13.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.pictureBox13, "pictureBox13");
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.TabStop = false;
+            this.panelEditarFundoP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.panelEditarFundoP.Controls.Add(this.BtnPincelP);
+            this.panelEditarFundoP.Controls.Add(this.lblEmailP);
+            this.panelEditarFundoP.Controls.Add(this.BoxdEmailP);
+            this.panelEditarFundoP.Controls.Add(this.lblSenhaP);
+            this.panelEditarFundoP.Controls.Add(this.BoxdSenhaP);
+            this.panelEditarFundoP.Controls.Add(this.lblNomeP);
+            this.panelEditarFundoP.Controls.Add(this.BoxdNomeP);
+            this.panelEditarFundoP.Controls.Add(this.lblIdP);
+            this.panelEditarFundoP.Controls.Add(this.BoxdIdP);
+            resources.ApplyResources(this.panelEditarFundoP, "panelEditarFundoP");
+            this.panelEditarFundoP.Name = "panelEditarFundoP";
+            // 
+            // BtnPincelP
+            // 
+            this.BtnPincelP.BackColor = System.Drawing.Color.DarkCyan;
+            this.BtnPincelP.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnPincelP, "BtnPincelP");
+            this.BtnPincelP.ForeColor = System.Drawing.Color.White;
+            this.BtnPincelP.Image = global::UkraBar.Properties.Resources.pencil_24px;
+            this.BtnPincelP.Name = "BtnPincelP";
+            this.BtnPincelP.UseVisualStyleBackColor = false;
+            // 
+            // lblEmailP
+            // 
+            resources.ApplyResources(this.lblEmailP, "lblEmailP");
+            this.lblEmailP.ForeColor = System.Drawing.Color.White;
+            this.lblEmailP.Name = "lblEmailP";
+            // 
+            // BoxdEmailP
+            // 
+            resources.ApplyResources(this.BoxdEmailP, "BoxdEmailP");
+            this.BoxdEmailP.Name = "BoxdEmailP";
+            // 
+            // lblSenhaP
+            // 
+            resources.ApplyResources(this.lblSenhaP, "lblSenhaP");
+            this.lblSenhaP.ForeColor = System.Drawing.Color.White;
+            this.lblSenhaP.Name = "lblSenhaP";
+            // 
+            // BoxdSenhaP
+            // 
+            resources.ApplyResources(this.BoxdSenhaP, "BoxdSenhaP");
+            this.BoxdSenhaP.Name = "BoxdSenhaP";
+            // 
+            // lblNomeP
+            // 
+            resources.ApplyResources(this.lblNomeP, "lblNomeP");
+            this.lblNomeP.ForeColor = System.Drawing.Color.White;
+            this.lblNomeP.Name = "lblNomeP";
+            // 
+            // BoxdNomeP
+            // 
+            resources.ApplyResources(this.BoxdNomeP, "BoxdNomeP");
+            this.BoxdNomeP.Name = "BoxdNomeP";
+            // 
+            // lblIdP
+            // 
+            resources.ApplyResources(this.lblIdP, "lblIdP");
+            this.lblIdP.ForeColor = System.Drawing.Color.White;
+            this.lblIdP.Name = "lblIdP";
+            // 
+            // BoxdIdP
+            // 
+            resources.ApplyResources(this.BoxdIdP, "BoxdIdP");
+            this.BoxdIdP.Name = "BoxdIdP";
+            // 
+            // panelFundoDTP
+            // 
+            this.panelFundoDTP.Controls.Add(this.DTgridProd);
+            resources.ApplyResources(this.panelFundoDTP, "panelFundoDTP");
+            this.panelFundoDTP.Name = "panelFundoDTP";
             // 
             // DTgridProd
             // 
-            this.DTgridProd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             resources.ApplyResources(this.DTgridProd, "DTgridProd");
+            this.DTgridProd.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DTgridProd.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.DTgridProd.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DTgridProd.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DTgridProd.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTgridProd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.DTgridProd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.DTgridProd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CheckBoxP});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DTgridProd.DefaultCellStyle = dataGridViewCellStyle2;
+            this.DTgridProd.GridColor = System.Drawing.Color.Black;
             this.DTgridProd.Name = "DTgridProd";
-            this.DTgridProd.MouseClick += new System.Windows.Forms.MouseEventHandler(this.DTgridProd_MouseClick);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTgridProd.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.DTgridProd.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.DTgridProd.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.DTgridProd.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DTgridProd.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
+            this.DTgridProd.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
+            this.DTgridProd.RowTemplate.Height = 30;
+            this.DTgridProd.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             // 
-            // label5
+            // CheckBoxP
             // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
+            this.CheckBoxP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.CheckBoxP.FillWeight = 30.45685F;
+            this.CheckBoxP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            resources.ApplyResources(this.CheckBoxP, "CheckBoxP");
+            this.CheckBoxP.Name = "CheckBoxP";
             // 
-            // BoxpId
-            // 
-            this.BoxpId.BackColor = System.Drawing.Color.Snow;
-            this.BoxpId.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.BoxpId, "BoxpId");
-            this.BoxpId.Name = "BoxpId";
-            this.BoxpId.Tag = "";
-            // 
-            // pictureBox10
-            // 
-            resources.ApplyResources(this.pictureBox10, "pictureBox10");
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.pictureBox11, "pictureBox11");
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.TabStop = false;
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            // 
-            // BoxpValor
-            // 
-            this.BoxpValor.BackColor = System.Drawing.Color.Snow;
-            this.BoxpValor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.BoxpValor, "BoxpValor");
-            this.BoxpValor.Name = "BoxpValor";
-            this.BoxpValor.Tag = "";
-            // 
-            // pictureBox3
-            // 
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.pictureBox5, "pictureBox5");
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.TabStop = false;
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
-            this.label8.Tag = "Senha";
-            // 
-            // BoxpDescricao
-            // 
-            this.BoxpDescricao.BackColor = System.Drawing.Color.Snow;
-            this.BoxpDescricao.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.BoxpDescricao, "BoxpDescricao");
-            this.BoxpDescricao.Name = "BoxpDescricao";
-            this.BoxpDescricao.Tag = "";
-            // 
-            // pictureBox6
-            // 
-            resources.ApplyResources(this.pictureBox6, "pictureBox6");
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.pictureBox7, "pictureBox7");
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.TabStop = false;
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
-            // 
-            // BoxpProduto
-            // 
-            this.BoxpProduto.BackColor = System.Drawing.Color.Snow;
-            this.BoxpProduto.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.BoxpProduto, "BoxpProduto");
-            this.BoxpProduto.Name = "BoxpProduto";
-            this.BoxpProduto.Tag = "";
-            // 
-            // pictureBox8
-            // 
-            resources.ApplyResources(this.pictureBox8, "pictureBox8");
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.pictureBox9, "pictureBox9");
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.TabStop = false;
-            // 
-            // cCrudProd
-            // 
-            this.cCrudProd.BackColor = System.Drawing.Color.Gainsboro;
-            this.cCrudProd.Controls.Add(this.BtnAtualizarP);
-            this.cCrudProd.Controls.Add(this.BtnExcluirP);
-            this.cCrudProd.Controls.Add(this.BtnSalvarP);
-            resources.ApplyResources(this.cCrudProd, "cCrudProd");
-            this.cCrudProd.Name = "cCrudProd";
-            // 
-            // BtnAtualizarP
-            // 
-            this.BtnAtualizarP.BackColor = System.Drawing.Color.Gainsboro;
-            this.BtnAtualizarP.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAtualizarP.FlatAppearance.BorderSize = 0;
-            this.BtnAtualizarP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.BtnAtualizarP, "BtnAtualizarP");
-            this.BtnAtualizarP.ForeColor = System.Drawing.Color.Black;
-            this.BtnAtualizarP.Name = "BtnAtualizarP";
-            this.BtnAtualizarP.UseVisualStyleBackColor = false;
-            this.BtnAtualizarP.Click += new System.EventHandler(this.BtnAtualizarP_Click);
-            this.BtnAtualizarP.MouseEnter += new System.EventHandler(this.MouseEnterCRUDGRAYP);
-            // 
-            // BtnExcluirP
-            // 
-            this.BtnExcluirP.BackColor = System.Drawing.Color.Gainsboro;
-            this.BtnExcluirP.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnExcluirP.FlatAppearance.BorderSize = 0;
-            this.BtnExcluirP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.BtnExcluirP, "BtnExcluirP");
-            this.BtnExcluirP.ForeColor = System.Drawing.Color.Black;
-            this.BtnExcluirP.Name = "BtnExcluirP";
-            this.BtnExcluirP.UseVisualStyleBackColor = false;
-            this.BtnExcluirP.Click += new System.EventHandler(this.BtnExcluirP_Click);
-            this.BtnExcluirP.MouseEnter += new System.EventHandler(this.MouseEnterCRUDREDP);
-            // 
-            // BtnSalvarP
-            // 
-            this.BtnSalvarP.BackColor = System.Drawing.Color.Gainsboro;
-            this.BtnSalvarP.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnSalvarP.FlatAppearance.BorderSize = 0;
-            this.BtnSalvarP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.BtnSalvarP, "BtnSalvarP");
-            this.BtnSalvarP.ForeColor = System.Drawing.Color.Black;
-            this.BtnSalvarP.Name = "BtnSalvarP";
-            this.BtnSalvarP.UseVisualStyleBackColor = false;
-            this.BtnSalvarP.Click += new System.EventHandler(this.BtnSalvarP_Click);
-            this.BtnSalvarP.MouseEnter += new System.EventHandler(this.MouseEnterCRUDP);
-            this.BtnSalvarP.MouseLeave += new System.EventHandler(this.MouseLeaveCRUDP);
-            // 
-            // BtnVoltar
-            // 
-            this.BtnVoltar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.BtnVoltar, "BtnVoltar");
-            this.BtnVoltar.Name = "BtnVoltar";
-            this.BtnVoltar.TabStop = false;
-            this.BtnVoltar.Click += new System.EventHandler(this.BtnVoltar_Click);
-            // 
-            // CadastrarProd
+            // CadastrarProdP
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.BtnVoltar);
-            this.Controls.Add(this.tabelaControle);
-            this.Name = "CadastrarProd";
+            this.Controls.Add(this.LayoutFundoDTP);
+            this.Controls.Add(this.BarSideTopP);
+            this.Controls.Add(this.sideBarMenuP);
+            this.Name = "CadastrarProdP";
             this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.tabelaControle.ResumeLayout(false);
-            this.Cadastro.ResumeLayout(false);
-            this.pContainer.ResumeLayout(false);
-            this.pPainelProduto.ResumeLayout(false);
-            this.pPainelProduto.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbpDescricao)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbpProduto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbpQuantidade)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbpValor)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.cCrudP.ResumeLayout(false);
-            this.cCrudP.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            this.sideBarMenuP.ResumeLayout(false);
+            this.panelMenuP.ResumeLayout(false);
+            this.panelMenuP.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenuP)).EndInit();
+            this.panelShowConfigP.ResumeLayout(false);
+            this.panelFiltroP.ResumeLayout(false);
+            this.panelAjudaP.ResumeLayout(false);
+            this.panelSobreP.ResumeLayout(false);
+            this.panelVoltarP.ResumeLayout(false);
+            this.BarSideTopP.ResumeLayout(false);
+            this.panelLabelP.ResumeLayout(false);
+            this.panelLabelP.PerformLayout();
+            this.panelBuscarP.ResumeLayout(false);
+            this.panelBuscarP.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5P)).EndInit();
+            this.LayoutFundoDTP.ResumeLayout(false);
+            this.panelEditarFundoP.ResumeLayout(false);
+            this.panelEditarFundoP.PerformLayout();
+            this.panelFundoDTP.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DTgridProd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.cCrudProd.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.BtnVoltar)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button BtnCadastrarProd;
-        private System.Windows.Forms.TabControl tabelaControle;
-        private System.Windows.Forms.TabPage Cadastro;
-        private System.Windows.Forms.Panel pContainer;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Panel cCrudP;
+
+        private System.Windows.Forms.FlowLayoutPanel sideBarMenuP;
+        private System.Windows.Forms.Panel panelMenuP;
+        private System.Windows.Forms.Label lblMenuP;
+        private System.Windows.Forms.PictureBox pbMenuP;
+        private System.Windows.Forms.Panel panelShowConfigP;
+        private System.Windows.Forms.Button BtnEditarP;
+        private System.Windows.Forms.Button BtnNovoFuncP;
+        private System.Windows.Forms.Button BtnDeletarP;
+        private System.Windows.Forms.Button BtnEscuroP;
+        private System.Windows.Forms.Button BtnConfiguraçõesP;
+        private System.Windows.Forms.Button BtnClaroP;
+        private System.Windows.Forms.Panel panelFiltroP;
+        private System.Windows.Forms.Button BtnFiltroP;
+        private System.Windows.Forms.Panel panelAjudaP;
+        private System.Windows.Forms.Button BtnAjudaP;
+        private System.Windows.Forms.Panel panelSobreP;
+        private System.Windows.Forms.Button BtnSobreP;
+        private System.Windows.Forms.Panel panelVoltarP;
+        private System.Windows.Forms.Button BtnVoltarP;
+        private System.Windows.Forms.FlowLayoutPanel BarSideTopP;
+        private System.Windows.Forms.Panel panelLabelP;
+        private System.Windows.Forms.Label lblFuncP;
+        private System.Windows.Forms.Panel panelBuscarP;
         private System.Windows.Forms.Button btnBuscarP;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox BoxBuscar;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.TextBox BoxBuscarP;
+        private System.Windows.Forms.PictureBox pictureBox5P;
+        private System.Windows.Forms.FlowLayoutPanel LayoutFundoDTP;
+        private System.Windows.Forms.Panel panelEditarFundoP;
+        private System.Windows.Forms.Button BtnPincelP;
+        private System.Windows.Forms.Label lblEmailP;
+        private System.Windows.Forms.TextBox BoxdEmailP;
+        private System.Windows.Forms.Label lblSenhaP;
+        private System.Windows.Forms.TextBox BoxdSenhaP;
+        private System.Windows.Forms.Label lblNomeP;
+        private System.Windows.Forms.TextBox BoxdNomeP;
+        private System.Windows.Forms.Label lblIdP;
+        private System.Windows.Forms.TextBox BoxdIdP;
+        private System.Windows.Forms.Panel panelFundoDTP;
         private System.Windows.Forms.DataGridView DTgridProd;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox BoxpId;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox BoxpValor;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox BoxpDescricao;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox BoxpProduto;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Panel cCrudProd;
-        private System.Windows.Forms.Button BtnAtualizarP;
-        private System.Windows.Forms.Button BtnExcluirP;
-        private System.Windows.Forms.Button BtnSalvarP;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox BoxpQuantidade;
-        private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.PictureBox pictureBox17;
-        private System.Windows.Forms.PictureBox BtnVoltar;
-        private System.Windows.Forms.Panel pPainelProduto;
-        private System.Windows.Forms.Label lblpDescricao;
-        private System.Windows.Forms.TextBox BoxDescricao;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pbpDescricao;
-        private System.Windows.Forms.Label lblpProduto;
-        private System.Windows.Forms.TextBox BoxProduto;
-        private System.Windows.Forms.PictureBox pictureBox20;
-        private System.Windows.Forms.PictureBox pbpProduto;
-        private System.Windows.Forms.Label lblpQuantidade;
-        private System.Windows.Forms.TextBox BoxQuantidade;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pbpQuantidade;
-        private System.Windows.Forms.Label lblpValor;
-        private System.Windows.Forms.TextBox BoxValor;
-        private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.PictureBox pbpValor;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn CheckBoxP;
     }
 }

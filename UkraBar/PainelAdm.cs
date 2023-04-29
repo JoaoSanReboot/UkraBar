@@ -63,7 +63,7 @@ namespace UkraBar
 
         private void button10_Click(object sender, EventArgs e)
         {
-            CadastrarProd ProdCad = new CadastrarProd();
+            CadastrarProdP ProdCad = new CadastrarProdP();
             this.Hide();
             ProdCad.ShowDialog();
             this.Close();

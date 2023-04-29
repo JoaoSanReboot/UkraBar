@@ -30,7 +30,6 @@ namespace UkraBar
         public CadastrarFunc()
         {
             InitializeComponent();
-            CarregarDados();
         }
 
         Panel c = new Panel();// Complementação do BtnMouseEnter e Leave.
