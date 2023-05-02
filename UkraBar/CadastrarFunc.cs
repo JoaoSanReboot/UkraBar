@@ -1,22 +1,16 @@
 ﻿using MySql.Data.MySqlClient;
-using MySqlX.XDevAPI.Relational;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Linq;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace UkraBar
 {
 
     public partial class CadastrarFunc : Form
     {
-        //Setando comando MySql para facilitar a contatenação.
+                                            //Setando comandos MySql para a contatenação.
 
         public MySqlConnection conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
         private string connectionString = "SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;";
@@ -25,229 +19,186 @@ namespace UkraBar
         private DataTable table;
 
 
-        // Estabelecendo conexão com o Banco de Dados
-
         public CadastrarFunc()
         {
             InitializeComponent();
+            CarregarDados();
         }
 
-        Panel c = new Panel();// Complementação do BtnMouseEnter e Leave.
-
-
+        //Carregar Dados é um public para carregar informações no DataGridView.
         public void CarregarDados()
         {
-
-            MySqlConnection conn = new MySqlConnection(connectionString);//Definindo Conexão
-            conn.Open();// Abre Conexão
-
-            string query = "SELECT * FROM cadastro_funcionario";//Carrega dados no DataGriedView
-            comando = new MySqlCommand(query, conn); //Declara comandos para o MySql
-            reader = comando.ExecuteReader();
-            table = new DataTable();
-            table.Load(reader);
-            DTgridFunc.DataSource = table;
-            DTgridFunc.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            conn.Open();// Abre Conexão.
+            
+            string query = "SELECT * FROM cadastro_funcionario"; //Seleciona informações da tabela Cadastro Funcionário.
+            comando = new MySqlCommand(query, conn); //Declara comandos que serão usados.
+            reader = comando.ExecuteReader(); //Lê os comandos.
+            table = new DataTable(); //Abre a Table.
+            table.Load(reader); //Table lê os comandos.
+            DTgridFunc.DataSource = table; //Renomeia Table para DTgridFunc.
+            DTgridFunc.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; //Comando para alinhar as tabelas no DataGriedView.
             conn.Close(); //Fecha Conexão 
 
-        }//Carrega dados no DataGridView.
+        }
 
-        public void AbrirConexão()//Um Public para caso a conn esteja fechada ela se abra.
+        //Publics Abrir e Fechar Conexão com o Banco de Dados.
+        public void AbrirConexão()
         {
+            //Se o status da conexão estiver fechada então abrir.
             if (conn.State == ConnectionState.Closed)
             {
                 conn.Open();
             }
         }
 
-        public void FecharConexão()//Um Public para caso a conn esteja aberta ela se feche.
+        public void FecharConexão()
         {
+            //Se o status da conexão estiver aberta então fechar.
             if (conn.State == ConnectionState.Open)
             {
                 conn.Close();
             }
         }
 
-        public void executarQuery(string query)//Um Public para executar comando e mostrar box caso ele seja executado com exilio ou não.
+        //Public Executar comandos no banco de dados.
+        public void executarQuery(string query)
         {
             try
             {
-                AbrirConexão();
-                comando = new MySqlCommand(query, conn);
+                AbrirConexão(); //Abre Conexão.
+                comando = new MySqlCommand(query, conn); //Declara comandos para MySql.
 
+                //Se o comando for executado corretamente mostrar Message Box
                 if (comando.ExecuteNonQuery() == 1)
-                {
+                
                     MessageBox.Show("Executado com Sucesso");
-                }
+                
+                //Senão Mostrar outra Message Box
                 else
-                {
+                
                     MessageBox.Show("Não foi Executado");
-                }
+                
             }
+            //Se uma exceção for encontrada Mostrar Error Message
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
             finally
             {
+                //Depois de Executar tudo Fechar.
                 FecharConexão();
             }
         }
 
+                                                      //Declarar Valores Bools
 
-        private void btnBuscar_Click(object sender, EventArgs e)//Botão de fazer Busca na tabela.
-        {
-            using (MySqlConnection conn = new MySqlConnection(connectionString))//Executa a conn quando apertado.
-            {
-                string b = "'%" + BoxBuscar.Text + "%'"; // Defini BoxBuscar como string
+        bool sideBarMenuExpand; //Bool para Cronometro da Barra Lateral.
+        bool PanelConfig;   //Bool para o Panel de Configurações.
+        bool NovoFuncBar;   //Bool para o Panel de Novo Funcionário.
+        bool EditFundo;     //Bool para o Panel de Editar Funcionário.
 
-                try
-                {
-                    conn.Open();//Abre Conexão.
-                    comando = new MySqlCommand("SELECT * FROM ukrasystem.cadastro_funcionario WHERE" +
-                        " id_cadastro LIKE" + b +
-                        "OR nome_funcionario LIKE" + b +
-                        "OR senha_funcionario LIKE" + b +
-                        "OR email_funcionario LIKE" + b, conn); //Envia comando Select no MySql
-                    DataTable ProcurarDataTable = new DataTable(); //Defini table nova
-                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(comando))//Faz o filtro no DataGridView.
-                    {
-                        adapter.Fill(ProcurarDataTable);
-                    }
-                    DTgridFunc.DataSource = ProcurarDataTable; //Mostra nova table
-                    DTgridFunc.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;//Centraliza as Tabelas.
-                    conn.Close();//Fecha Conexão.
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Algum erro Encontrado", ex.Message);
-                }
-            }
-        }
+                                             //Timer Ticks para animações das Side Bars.
 
-      
-
-        private void DTgridFunc_MouseClick(object sender, MouseEventArgs e)//Função Click na tabela para Enviar nas Box
-        {
-
-        }
-
-        bool sideBarMenuExpand;
-
+        //Side Bar Lateral.
         private void SideBarTime_Tick(object sender, EventArgs e)
         {
             if (sideBarMenuExpand)
             {
-                sideBarMenu.Width -= 30;
-                if (sideBarMenu.Width == sideBarMenu.MinimumSize.Width)
-                {
-                    sideBarMenuExpand = false;
-                    SideBarTime.Stop();
-                }
-            }
+                sideBarMenu.Width -= 30;    //Declara o caso do Panel estiver com Determinado tamanho.
+                if (sideBarMenu.Width == sideBarMenu.MinimumSize.Width)//Se estiver executa o comando.
+
+                    sideBarMenuExpand = false;//Deixa o Bool False.
+                    SideBarTime.Stop();//Para o TimerTick
+
+            } //Se o Bool Estiver Sim.
             else
             {
-                sideBarMenu.Width += 10;
-                if (sideBarMenu.Width == sideBarMenu.MaximumSize.Width)
-                {
-                    sideBarMenuExpand = true;
-                    SideBarTime.Stop();
-                }
-            }
+                
+                sideBarMenu.Width += 10;    //Declara o caso do Panel estiver com Determinado tamanho.
+                if (sideBarMenu.Width == sideBarMenu.MaximumSize.Width)//Se estiver executa o comando.
+
+                    sideBarMenuExpand = true//Deixa o Bool True.
+                    SideBarTime.Stop();//Para o TimerTick
+
+            }//Se o Bool Estiver Não.
         }
 
+        //Side Bar Novo Funcionário.
+        private void NovoFuncTimer_Tick(object sender, EventArgs e)
+        {
+
+            if (NovoFuncBar)
+            {
+                panelNovoFunc.Width -= 30; //Declara o caso do Panel estiver com Determinado tamanho.
+                if (panelNovoFunc.Width == panelNovoFunc.MinimumSize.Width)//Se estiver executa o comando.
+                
+                    NovoFuncBar = false;//Deixa o Bool False.
+                    NovoFuncTimer.Stop();//Para o TimerTick.
+
+            }//Se o Bool Estiver Sim.
+            else
+            {
+                panelNovoFunc.Width += 10;  //Declara o caso do Panel estiver com Determinado tamanho.
+                if (panelNovoFunc.Width == panelNovoFunc.MaximumSize.Width)//Se estiver executa o comando.
+
+                    NovoFuncBar = true;   //Deixa o Bool True.
+                    NovoFuncTimer.Stop();//Para o TimerTick.
+
+            }//Se o Bool Estiver Não.
+        }
+
+
+                             //Funções dos Botões da Side Bar Lateral Direia.
+
+
+        //Executa o TimerTick SideBarLateral.
         private void pbMenu_Click(object sender, EventArgs e)
         {
-            SideBarTime.Start();
-            if (sideBarMenuExpand == true)
-            {
-                panelNovoFunc.Visible = false;
-                NovoFuncTimer.Start();
-            }
+            SideBarTime.Start();    //Começa o TimerTick.
+            if (sideBarMenuExpand == true)  //Se o Bool Estiver True.
+            
+                panelNovoFunc.Visible = false; //Esconder Outro Bool.
+                NovoFuncTimer.Start();        //Incia outro Timer.
+            
       
         }
 
-        private void BtnVoltar_Click(object sender, EventArgs e)
-        {
-            PainelAdm adm = new PainelAdm();
-            this.Hide();
-            adm.ShowDialog();
-            this.Close();
-        }
-
-        private void BtnFiltro_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BoxBuscar_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CadastrarFunc_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DTgridFunc_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void DTgridFunc_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        bool PanelConfig;
+        //Abre o Panel de Configurações.
         private void BtnConfigurações_Click(object sender, EventArgs e)
         {
-            if(PanelConfig)
-            {
-                panelShowConfig.Height -= 257;
-                PanelConfig = false;
-            }
+            if (PanelConfig)//Se o Panel estive True
+            
+                panelShowConfig.Height -= 257;//Se o panel estiver Menor ou igual o Valor.
+                PanelConfig = false;         //Deixe o Bool False.
+            
             else
-            {
-               panelShowConfig.Height += 257;
-                PanelConfig = true;
-            }
+            
+                panelShowConfig.Height += 257;//Se o panel estiver Maior ou igual o Valor.
+                PanelConfig = true;          //Deixe o Bool True.
+
         }
 
-        private void BtnLuzConf_Click(object sender, EventArgs e)
+        //Volta um Formulário.
+        private void BtnVoltar_Click(object sender, EventArgs e)
         {
-            BtnClaro.BringToFront();
+            PainelAdm adm = new PainelAdm(); //Declara nome do Formulário
+            this.Hide();       //Esconde o Atual
+            adm.ShowDialog(); //Mostra o Novo Formulário.
+            this.Close();    //Fecha o Formulário antigo.
         }
 
-        private void BtnClaro_Click(object sender, EventArgs e)
+        //Deixa o Formulário em Modo Escuro.
+        private void BtnDarkOn_Click(object sender, EventArgs e)
         {
-            BtnEscuro.BringToFront();
-        }
+            BringToFront.BtnDarkOff();
+            LightMode(Color.White);
+        }       
 
-        bool NovoFuncBar;
-        private void NovoFuncTimer_Tick(object sender, EventArgs e)
+        private void BtnDarkOff_Click(object sender, EventArgs e)
         {
-         
-                if (NovoFuncBar)
-                {
-                    panelNovoFunc.Width -= 30;
-                    if (panelNovoFunc.Width == panelNovoFunc.MinimumSize.Width)
-                    {
-                        NovoFuncBar = false;
-                        NovoFuncTimer.Stop();
-                    }
-                }
-                else
-                {
-                    panelNovoFunc.Width += 10;
-                    if (panelNovoFunc.Width == panelNovoFunc.MaximumSize.Width)
-                    {
-                        NovoFuncBar = true;
-                        NovoFuncTimer.Stop();
-                    }
-                }
-            }
+            BringToFront.BtnDarkOn();
+        }
 
         private void BtnNovoFunc_Click(object sender, EventArgs e)
         {
@@ -260,7 +211,6 @@ namespace UkraBar
 
         }
 
-        bool EditFundo;
         private void BtnEditar_Click(object sender, EventArgs e)
         {
             if (EditFundo)
@@ -273,11 +223,6 @@ namespace UkraBar
                 panelEditarFundo.Height += 113;
                 EditFundo = true;
             }
-
-        }
-
-        private void sideBarMenu_Paint(object sender, PaintEventArgs e)
-        {
 
         }
 
@@ -319,25 +264,28 @@ namespace UkraBar
             conn.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void sideBarMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void CadastrarFunc_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void lblEmailD_Click(object sender, EventArgs e)
+        private void LightMode(Color novaCor)
         {
-
+            foreach (Control controle in Controls)
+            {
+                controle.BackColor = novaCor;
+                controle.ForeColor = Color.White;
+                if (controle is Button)
+                {
+                    ((Button)controle).FlatAppearance.BorderColor = novaCor;
+                }
+            }
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnBuscar_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
     

@@ -1,6 +1,6 @@
 ﻿namespace UkraBar
 {
-    partial class CadastrarDescD
+    partial class CadastrarDesc
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.sideBarMenuD = new System.Windows.Forms.FlowLayoutPanel();
             this.panelMenuD = new System.Windows.Forms.Panel();
             this.lblMenuD = new System.Windows.Forms.Label();
@@ -75,13 +75,13 @@
             this.SiderBarDesc = new System.Windows.Forms.Timer(this.components);
             this.SideBarNovoD = new System.Windows.Forms.Timer(this.components);
             this.panelNovoDes = new System.Windows.Forms.Panel();
-            this.BtnSalvar = new System.Windows.Forms.Button();
             this.BoxcEmail = new System.Windows.Forms.TextBox();
             this.BoxcSenha = new System.Windows.Forms.TextBox();
             this.BoxcNome = new System.Windows.Forms.TextBox();
             this.BoxcId = new System.Windows.Forms.TextBox();
             this.pbFechar = new System.Windows.Forms.PictureBox();
             this.panelCinza = new System.Windows.Forms.Panel();
+            this.BtnSalvar = new System.Windows.Forms.Button();
             this.lblId = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
@@ -418,9 +418,9 @@
             this.lblFuncD.Location = new System.Drawing.Point(2, 20);
             this.lblFuncD.Name = "lblFuncD";
             this.lblFuncD.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblFuncD.Size = new System.Drawing.Size(262, 21);
+            this.lblFuncD.Size = new System.Drawing.Size(252, 21);
             this.lblFuncD.TabIndex = 0;
-            this.lblFuncD.Text = "CRUD | Cofigurações de Funcionário";
+            this.lblFuncD.Text = "CRUD | Cofigurações de Descontos";
             // 
             // panelBuscarD
             // 
@@ -477,7 +477,7 @@
             this.LayoutFundoDTD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
             this.LayoutFundoDTD.Controls.Add(this.panelEditarFundoD);
             this.LayoutFundoDTD.Controls.Add(this.panelFundoDT);
-            this.LayoutFundoDTD.Location = new System.Drawing.Point(317, 125);
+            this.LayoutFundoDTD.Location = new System.Drawing.Point(255, 122);
             this.LayoutFundoDTD.Name = "LayoutFundoDTD";
             this.LayoutFundoDTD.Size = new System.Drawing.Size(982, 561);
             this.LayoutFundoDTD.TabIndex = 44;
@@ -617,37 +617,37 @@
             this.DTgridDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DTgridDesc.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DTgridDesc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTgridDesc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTgridDesc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.DTgridDesc.ColumnHeadersHeight = 30;
             this.DTgridDesc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DTgridDesc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CheckBoxD});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DTgridDesc.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DTgridDesc.DefaultCellStyle = dataGridViewCellStyle17;
             this.DTgridDesc.GridColor = System.Drawing.Color.Black;
             this.DTgridDesc.Location = new System.Drawing.Point(3, 3);
             this.DTgridDesc.Name = "DTgridDesc";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTgridDesc.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTgridDesc.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.DTgridDesc.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.DTgridDesc.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.DTgridDesc.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -688,24 +688,6 @@
             this.panelNovoDes.Name = "panelNovoDes";
             this.panelNovoDes.Size = new System.Drawing.Size(0, 393);
             this.panelNovoDes.TabIndex = 45;
-            // 
-            // BtnSalvar
-            // 
-            this.BtnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.BtnSalvar.FlatAppearance.BorderSize = 0;
-            this.BtnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSalvar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSalvar.ForeColor = System.Drawing.Color.White;
-            this.BtnSalvar.Image = global::UkraBar.Properties.Resources.Checkmark_24px;
-            this.BtnSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSalvar.Location = new System.Drawing.Point(8, 262);
-            this.BtnSalvar.Name = "BtnSalvar";
-            this.BtnSalvar.Padding = new System.Windows.Forms.Padding(0, 0, 40, 0);
-            this.BtnSalvar.Size = new System.Drawing.Size(250, 50);
-            this.BtnSalvar.TabIndex = 11;
-            this.BtnSalvar.Text = "                        Salvar";
-            this.BtnSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSalvar.UseVisualStyleBackColor = false;
             // 
             // BoxcEmail
             // 
@@ -767,6 +749,24 @@
             this.panelCinza.Name = "panelCinza";
             this.panelCinza.Size = new System.Drawing.Size(268, 323);
             this.panelCinza.TabIndex = 12;
+            // 
+            // BtnSalvar
+            // 
+            this.BtnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BtnSalvar.FlatAppearance.BorderSize = 0;
+            this.BtnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSalvar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSalvar.ForeColor = System.Drawing.Color.White;
+            this.BtnSalvar.Image = global::UkraBar.Properties.Resources.Checkmark_24px;
+            this.BtnSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnSalvar.Location = new System.Drawing.Point(8, 262);
+            this.BtnSalvar.Name = "BtnSalvar";
+            this.BtnSalvar.Padding = new System.Windows.Forms.Padding(0, 0, 40, 0);
+            this.BtnSalvar.Size = new System.Drawing.Size(250, 50);
+            this.BtnSalvar.TabIndex = 11;
+            this.BtnSalvar.Text = "                        Salvar";
+            this.BtnSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSalvar.UseVisualStyleBackColor = false;
             // 
             // lblId
             // 
@@ -832,7 +832,7 @@
             this.lblSenha.TabIndex = 8;
             this.lblSenha.Text = "Senha:";
             // 
-            // CadastrarDescD
+            // CadastrarDesc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -841,7 +841,7 @@
             this.Controls.Add(this.sideBarMenuD);
             this.Controls.Add(this.panelNovoDes);
             this.Controls.Add(this.LayoutFundoDTD);
-            this.Name = "CadastrarDescD";
+            this.Name = "CadastrarDesc";
             this.Text = "CadastrarDesc";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.sideBarMenuD.ResumeLayout(false);

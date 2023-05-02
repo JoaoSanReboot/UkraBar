@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace UkraBar
 {
-    public partial class CadastrarDescD : Form
+    public partial class CadastrarDesc : Form
     {
-        public CadastrarDescD()
+        public CadastrarDesc()
         {
             InitializeComponent();
         }
