@@ -2,6 +2,7 @@
 using System;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -28,6 +29,7 @@ namespace UkraBar
         //Carregar Dados é um public para carregar informações no DataGridView.
         public void CarregarDados()
         {
+            conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
             conn.Open();// Abre Conexão.
             
             string query = "SELECT * FROM cadastro_funcionario"; //Seleciona informações da tabela Cadastro Funcionário.
@@ -106,21 +108,23 @@ namespace UkraBar
             if (sideBarMenuExpand)
             {
                 sideBarMenu.Width -= 30;    //Declara o caso do Panel estiver com Determinado tamanho.
-                if (sideBarMenu.Width == sideBarMenu.MinimumSize.Width)//Se estiver executa o comando.
+                if (sideBarMenu.Width == sideBarMenu.MinimumSize.Width)
+                {
 
                     sideBarMenuExpand = false;//Deixa o Bool False.
                     SideBarTime.Stop();//Para o TimerTick
-
+                }//Se estiver executa o comando.
             } //Se o Bool Estiver Sim.
             else
             {
                 
                 sideBarMenu.Width += 10;    //Declara o caso do Panel estiver com Determinado tamanho.
-                if (sideBarMenu.Width == sideBarMenu.MaximumSize.Width)//Se estiver executa o comando.
+                if (sideBarMenu.Width == sideBarMenu.MaximumSize.Width)
+                {
 
-                    sideBarMenuExpand = true//Deixa o Bool True.
-                    SideBarTime.Stop();//Para o TimerTick
-
+                    sideBarMenuExpand = true; //Deixa o Bool True.
+                    SideBarTime.Stop();      //Para o TimerTick
+                }//Se estiver executa o comando.
             }//Se o Bool Estiver Não.
         }
 
@@ -131,52 +135,54 @@ namespace UkraBar
             if (NovoFuncBar)
             {
                 panelNovoFunc.Width -= 30; //Declara o caso do Panel estiver com Determinado tamanho.
-                if (panelNovoFunc.Width == panelNovoFunc.MinimumSize.Width)//Se estiver executa o comando.
-                
+                if  (panelNovoFunc.Width == panelNovoFunc.MinimumSize.Width){
+                    
+
+
                     NovoFuncBar = false;//Deixa o Bool False.
                     NovoFuncTimer.Stop();//Para o TimerTick.
-
+                }//Se estiver executa o comando.
             }//Se o Bool Estiver Sim.
             else
             {
                 panelNovoFunc.Width += 10;  //Declara o caso do Panel estiver com Determinado tamanho.
-                if (panelNovoFunc.Width == panelNovoFunc.MaximumSize.Width)//Se estiver executa o comando.
+                if (panelNovoFunc.Width == panelNovoFunc.MaximumSize.Width)
+                {
 
                     NovoFuncBar = true;   //Deixa o Bool True.
                     NovoFuncTimer.Stop();//Para o TimerTick.
-
+                }
             }//Se o Bool Estiver Não.
         }
 
 
-                             //Funções dos Botões da Side Bar Lateral Direia.
+        //Funções dos Botões da Side Bar Lateral Direia.
 
 
         //Executa o TimerTick SideBarLateral.
-        private void pbMenu_Click(object sender, EventArgs e)
+        private void pbMenu_Click_1(object sender, EventArgs e)
         {
             SideBarTime.Start();    //Começa o TimerTick.
             if (sideBarMenuExpand == true)  //Se o Bool Estiver True.
-            
+
                 panelNovoFunc.Visible = false; //Esconder Outro Bool.
-                NovoFuncTimer.Start();        //Incia outro Timer.
-            
-      
+            NovoFuncTimer.Stop();        //Incia outro Timer.
         }
 
         //Abre o Panel de Configurações.
         private void BtnConfigurações_Click(object sender, EventArgs e)
         {
-            if (PanelConfig)//Se o Panel estive True
-            
+            if (PanelConfig)
+            {
+
                 panelShowConfig.Height -= 257;//Se o panel estiver Menor ou igual o Valor.
-                PanelConfig = false;         //Deixe o Bool False.
-            
+                PanelConfig = false;
+            }//Se o Panel estive True
             else
-            
+            {
                 panelShowConfig.Height += 257;//Se o panel estiver Maior ou igual o Valor.
                 PanelConfig = true;          //Deixe o Bool True.
-
+            }//Se o Panel estive False
         }
 
         //Volta um Formulário.
@@ -188,27 +194,13 @@ namespace UkraBar
             this.Close();    //Fecha o Formulário antigo.
         }
 
-        //Deixa o Formulário em Modo Escuro.
-        private void BtnDarkOn_Click(object sender, EventArgs e)
-        {
-            BringToFront.BtnDarkOff();
-            LightMode(Color.White);
-        }       
-
-        private void BtnDarkOff_Click(object sender, EventArgs e)
-        {
-            BringToFront.BtnDarkOn();
-        }
-
         private void BtnNovoFunc_Click(object sender, EventArgs e)
         {
-           
-            if(sideBarMenuExpand == true) 
+            if (sideBarMenuExpand == true)
             {
                 panelNovoFunc.Visible = true;
                 NovoFuncTimer.Start();
             }
-
         }
 
         private void BtnEditar_Click(object sender, EventArgs e)
@@ -223,7 +215,6 @@ namespace UkraBar
                 panelEditarFundo.Height += 113;
                 EditFundo = true;
             }
-
         }
 
         private void pbFechar_Click(object sender, EventArgs e)
@@ -249,7 +240,7 @@ namespace UkraBar
                 DataGridViewCheckBoxCell CheckBox = DTgridFunc.Rows[i].Cells[0] as DataGridViewCheckBoxCell;
 
                 if (CheckBox.Value != null && (bool)CheckBox.Value == true)
-                {       
+                {
                     int id = Convert.ToInt32(DTgridFunc.Rows[i].Cells[1].Value);
 
                     MySqlCommand comando = new MySqlCommand("DELETE FROM cadastro_funcionario WHERE id_cadastro = @id_cadastro", conn);
@@ -264,28 +255,10 @@ namespace UkraBar
             conn.Close();
         }
 
-        private void sideBarMenu_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         private void CadastrarFunc_Load(object sender, EventArgs e)
         {
-
+            this.FormBorderStyle = FormBorderStyle.None;
         }
-
-        private void LightMode(Color novaCor)
-        {
-            foreach (Control controle in Controls)
-            {
-                controle.BackColor = novaCor;
-                controle.ForeColor = Color.White;
-                if (controle is Button)
-                {
-                    ((Button)controle).FlatAppearance.BorderColor = novaCor;
-                }
-            }
-        }
-
     }
 }
     

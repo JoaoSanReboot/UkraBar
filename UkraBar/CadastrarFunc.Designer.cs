@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarFunc));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
             this.SideBarTime = new System.Windows.Forms.Timer(this.components);
             this.NovoFuncTimer = new System.Windows.Forms.Timer(this.components);
             this.panelNovoFunc = new System.Windows.Forms.Panel();
@@ -53,30 +53,6 @@
             this.panelEditar = new System.Windows.Forms.Panel();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.BarSideTop = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelLabel = new System.Windows.Forms.Panel();
-            this.lblFunc = new System.Windows.Forms.Label();
-            this.panelBuscar = new System.Windows.Forms.Panel();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.BoxBuscar = new System.Windows.Forms.TextBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.panelVoltar = new System.Windows.Forms.Panel();
-            this.BtnVoltar = new System.Windows.Forms.Button();
-            this.panelSobre = new System.Windows.Forms.Panel();
-            this.BtnSobre = new System.Windows.Forms.Button();
-            this.panelAjuda = new System.Windows.Forms.Panel();
-            this.BtnAjuda = new System.Windows.Forms.Button();
-            this.panelShowConfig = new System.Windows.Forms.Panel();
-            this.BtnEditar = new System.Windows.Forms.Button();
-            this.BtnNovoFunc = new System.Windows.Forms.Button();
-            this.BtnDeletar = new System.Windows.Forms.Button();
-            this.BtnConfigurações = new System.Windows.Forms.Button();
-            this.panelMenu = new System.Windows.Forms.Panel();
-            this.lblMenu = new System.Windows.Forms.Label();
-            this.pbMenu = new System.Windows.Forms.PictureBox();
-            this.sideBarMenu = new System.Windows.Forms.FlowLayoutPanel();
-            this.BtnDarkOn = new System.Windows.Forms.Button();
-            this.BtnDarkOff = new System.Windows.Forms.Button();
             this.LayoutFundoDT = new System.Windows.Forms.FlowLayoutPanel();
             this.panelEditarFundo = new System.Windows.Forms.Panel();
             this.BtnPincel = new System.Windows.Forms.Button();
@@ -91,25 +67,42 @@
             this.panelFundoDT = new System.Windows.Forms.Panel();
             this.DTgridFunc = new System.Windows.Forms.DataGridView();
             this.CheckBox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.paneltopbar = new System.Windows.Forms.Panel();
+            this.BarSideTop = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelLabel = new System.Windows.Forms.Panel();
+            this.lblFunc = new System.Windows.Forms.Label();
+            this.panelBuscar = new System.Windows.Forms.Panel();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.BoxBuscar = new System.Windows.Forms.TextBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.sideBarMenu = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.lblMenu = new System.Windows.Forms.Label();
+            this.pbMenu = new System.Windows.Forms.PictureBox();
+            this.panelShowConfig = new System.Windows.Forms.Panel();
+            this.BtnEditar = new System.Windows.Forms.Button();
+            this.BtnNovoFunc = new System.Windows.Forms.Button();
+            this.BtnDeletar = new System.Windows.Forms.Button();
+            this.BtnConfigurações = new System.Windows.Forms.Button();
+            this.BtnSobre = new System.Windows.Forms.Button();
+            this.BtnAjuda = new System.Windows.Forms.Button();
+            this.BtnVoltar = new System.Windows.Forms.Button();
             this.panelNovoFunc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFechar)).BeginInit();
             this.panelCinza.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.BarSideTop.SuspendLayout();
-            this.panelLabel.SuspendLayout();
-            this.panelBuscar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panelVoltar.SuspendLayout();
-            this.panelSobre.SuspendLayout();
-            this.panelAjuda.SuspendLayout();
-            this.panelShowConfig.SuspendLayout();
-            this.panelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
-            this.sideBarMenu.SuspendLayout();
             this.LayoutFundoDT.SuspendLayout();
             this.panelEditarFundo.SuspendLayout();
             this.panelFundoDT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DTgridFunc)).BeginInit();
+            this.BarSideTop.SuspendLayout();
+            this.panelLabel.SuspendLayout();
+            this.panelBuscar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.sideBarMenu.SuspendLayout();
+            this.panelMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
+            this.panelShowConfig.SuspendLayout();
             this.SuspendLayout();
             // 
             // SideBarTime
@@ -295,10 +288,10 @@
             // dataGridViewImageColumn1
             // 
             this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle6.NullValue")));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle29.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle29.NullValue")));
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle29;
             this.dataGridViewImageColumn1.FillWeight = 167.1073F;
             this.dataGridViewImageColumn1.HeaderText = "CEditar";
             this.dataGridViewImageColumn1.Image = global::UkraBar.Properties.Resources.pencil_16px;
@@ -317,348 +310,6 @@
             this.dataGridViewImageColumn2.MinimumWidth = 6;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Width = 236;
-            // 
-            // BarSideTop
-            // 
-            this.BarSideTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BarSideTop.Controls.Add(this.panelLabel);
-            this.BarSideTop.Controls.Add(this.panelBuscar);
-            this.BarSideTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BarSideTop.Location = new System.Drawing.Point(226, 0);
-            this.BarSideTop.Name = "BarSideTop";
-            this.BarSideTop.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BarSideTop.Size = new System.Drawing.Size(1144, 64);
-            this.BarSideTop.TabIndex = 44;
-            // 
-            // panelLabel
-            // 
-            this.panelLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.panelLabel.Controls.Add(this.lblFunc);
-            this.panelLabel.Location = new System.Drawing.Point(3, 3);
-            this.panelLabel.Name = "panelLabel";
-            this.panelLabel.Size = new System.Drawing.Size(287, 61);
-            this.panelLabel.TabIndex = 39;
-            // 
-            // lblFunc
-            // 
-            this.lblFunc.AutoSize = true;
-            this.lblFunc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFunc.ForeColor = System.Drawing.Color.White;
-            this.lblFunc.Location = new System.Drawing.Point(2, 20);
-            this.lblFunc.Name = "lblFunc";
-            this.lblFunc.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblFunc.Size = new System.Drawing.Size(262, 21);
-            this.lblFunc.TabIndex = 0;
-            this.lblFunc.Text = "CRUD | Cofigurações de Funcionário";
-            // 
-            // panelBuscar
-            // 
-            this.panelBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.panelBuscar.Controls.Add(this.btnBuscar);
-            this.panelBuscar.Controls.Add(this.BoxBuscar);
-            this.panelBuscar.Controls.Add(this.pictureBox5);
-            this.panelBuscar.Location = new System.Drawing.Point(296, 3);
-            this.panelBuscar.Name = "panelBuscar";
-            this.panelBuscar.Size = new System.Drawing.Size(454, 61);
-            this.panelBuscar.TabIndex = 40;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Image = global::UkraBar.Properties.Resources.search_more_24px;
-            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscar.Location = new System.Drawing.Point(301, 7);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Padding = new System.Windows.Forms.Padding(0, 0, 12, 0);
-            this.btnBuscar.Size = new System.Drawing.Size(150, 46);
-            this.btnBuscar.TabIndex = 44;
-            this.btnBuscar.Text = "      Buscar";
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
-            // BoxBuscar
-            // 
-            this.BoxBuscar.BackColor = System.Drawing.Color.White;
-            this.BoxBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BoxBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxBuscar.Location = new System.Drawing.Point(21, 20);
-            this.BoxBuscar.Name = "BoxBuscar";
-            this.BoxBuscar.Size = new System.Drawing.Size(253, 19);
-            this.BoxBuscar.TabIndex = 29;
-            this.BoxBuscar.Tag = "";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::UkraBar.Properties.Resources.BoxBranca;
-            this.pictureBox5.Location = new System.Drawing.Point(3, 7);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(292, 47);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 33;
-            this.pictureBox5.TabStop = false;
-            // 
-            // panelVoltar
-            // 
-            this.panelVoltar.Controls.Add(this.BtnVoltar);
-            this.panelVoltar.Location = new System.Drawing.Point(3, 500);
-            this.panelVoltar.Name = "panelVoltar";
-            this.panelVoltar.Size = new System.Drawing.Size(223, 50);
-            this.panelVoltar.TabIndex = 44;
-            // 
-            // BtnVoltar
-            // 
-            this.BtnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnVoltar.FlatAppearance.BorderSize = 0;
-            this.BtnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnVoltar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnVoltar.ForeColor = System.Drawing.Color.White;
-            this.BtnVoltar.Image = global::UkraBar.Properties.Resources.reply_arrow_24px;
-            this.BtnVoltar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnVoltar.Location = new System.Drawing.Point(0, 0);
-            this.BtnVoltar.Name = "BtnVoltar";
-            this.BtnVoltar.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.BtnVoltar.Size = new System.Drawing.Size(223, 50);
-            this.BtnVoltar.TabIndex = 39;
-            this.BtnVoltar.Text = "                  Voltar";
-            this.BtnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnVoltar.UseVisualStyleBackColor = false;
-            this.BtnVoltar.Click += new System.EventHandler(this.BtnVoltar_Click);
-            // 
-            // panelSobre
-            // 
-            this.panelSobre.Controls.Add(this.BtnSobre);
-            this.panelSobre.Location = new System.Drawing.Point(3, 444);
-            this.panelSobre.Name = "panelSobre";
-            this.panelSobre.Size = new System.Drawing.Size(223, 50);
-            this.panelSobre.TabIndex = 43;
-            // 
-            // BtnSobre
-            // 
-            this.BtnSobre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnSobre.FlatAppearance.BorderSize = 0;
-            this.BtnSobre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSobre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSobre.ForeColor = System.Drawing.Color.White;
-            this.BtnSobre.Image = global::UkraBar.Properties.Resources.info_24px;
-            this.BtnSobre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSobre.Location = new System.Drawing.Point(0, 0);
-            this.BtnSobre.Name = "BtnSobre";
-            this.BtnSobre.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.BtnSobre.Size = new System.Drawing.Size(223, 50);
-            this.BtnSobre.TabIndex = 38;
-            this.BtnSobre.Text = "                  Sobre";
-            this.BtnSobre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSobre.UseVisualStyleBackColor = false;
-            // 
-            // panelAjuda
-            // 
-            this.panelAjuda.Controls.Add(this.BtnAjuda);
-            this.panelAjuda.Location = new System.Drawing.Point(3, 388);
-            this.panelAjuda.Name = "panelAjuda";
-            this.panelAjuda.Size = new System.Drawing.Size(223, 50);
-            this.panelAjuda.TabIndex = 42;
-            // 
-            // BtnAjuda
-            // 
-            this.BtnAjuda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnAjuda.FlatAppearance.BorderSize = 0;
-            this.BtnAjuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAjuda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAjuda.ForeColor = System.Drawing.Color.White;
-            this.BtnAjuda.Image = global::UkraBar.Properties.Resources.ask_question_24px;
-            this.BtnAjuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAjuda.Location = new System.Drawing.Point(0, 0);
-            this.BtnAjuda.Name = "BtnAjuda";
-            this.BtnAjuda.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.BtnAjuda.Size = new System.Drawing.Size(223, 50);
-            this.BtnAjuda.TabIndex = 38;
-            this.BtnAjuda.Text = "                  Ajuda";
-            this.BtnAjuda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAjuda.UseVisualStyleBackColor = false;
-            // 
-            // panelShowConfig
-            // 
-            this.panelShowConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.panelShowConfig.Controls.Add(this.BtnDarkOn);
-            this.panelShowConfig.Controls.Add(this.BtnDarkOff);
-            this.panelShowConfig.Controls.Add(this.BtnEditar);
-            this.panelShowConfig.Controls.Add(this.BtnNovoFunc);
-            this.panelShowConfig.Controls.Add(this.BtnDeletar);
-            this.panelShowConfig.Controls.Add(this.BtnConfigurações);
-            this.panelShowConfig.Location = new System.Drawing.Point(3, 125);
-            this.panelShowConfig.MaximumSize = new System.Drawing.Size(223, 257);
-            this.panelShowConfig.MinimumSize = new System.Drawing.Size(223, 50);
-            this.panelShowConfig.Name = "panelShowConfig";
-            this.panelShowConfig.Size = new System.Drawing.Size(223, 257);
-            this.panelShowConfig.TabIndex = 45;
-            // 
-            // BtnEditar
-            // 
-            this.BtnEditar.BackColor = System.Drawing.Color.DarkCyan;
-            this.BtnEditar.FlatAppearance.BorderSize = 0;
-            this.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEditar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEditar.ForeColor = System.Drawing.Color.White;
-            this.BtnEditar.Image = global::UkraBar.Properties.Resources.pencil_24px;
-            this.BtnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEditar.Location = new System.Drawing.Point(-4, 152);
-            this.BtnEditar.Name = "BtnEditar";
-            this.BtnEditar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnEditar.Size = new System.Drawing.Size(231, 50);
-            this.BtnEditar.TabIndex = 43;
-            this.BtnEditar.Text = "                  Editar";
-            this.BtnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEditar.UseVisualStyleBackColor = false;
-            this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
-            // 
-            // BtnNovoFunc
-            // 
-            this.BtnNovoFunc.BackColor = System.Drawing.Color.Green;
-            this.BtnNovoFunc.FlatAppearance.BorderSize = 0;
-            this.BtnNovoFunc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNovoFunc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnNovoFunc.ForeColor = System.Drawing.Color.White;
-            this.BtnNovoFunc.Image = global::UkraBar.Properties.Resources.add_30px;
-            this.BtnNovoFunc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnNovoFunc.Location = new System.Drawing.Point(0, 52);
-            this.BtnNovoFunc.Name = "BtnNovoFunc";
-            this.BtnNovoFunc.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnNovoFunc.Size = new System.Drawing.Size(229, 50);
-            this.BtnNovoFunc.TabIndex = 40;
-            this.BtnNovoFunc.Text = "               Novo Funcionário";
-            this.BtnNovoFunc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnNovoFunc.UseVisualStyleBackColor = false;
-            this.BtnNovoFunc.Click += new System.EventHandler(this.BtnNovoFunc_Click);
-            // 
-            // BtnDeletar
-            // 
-            this.BtnDeletar.BackColor = System.Drawing.Color.Red;
-            this.BtnDeletar.FlatAppearance.BorderSize = 0;
-            this.BtnDeletar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDeletar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDeletar.ForeColor = System.Drawing.Color.White;
-            this.BtnDeletar.Image = global::UkraBar.Properties.Resources.trash_26px;
-            this.BtnDeletar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnDeletar.Location = new System.Drawing.Point(1, 102);
-            this.BtnDeletar.Name = "BtnDeletar";
-            this.BtnDeletar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnDeletar.Size = new System.Drawing.Size(223, 50);
-            this.BtnDeletar.TabIndex = 41;
-            this.BtnDeletar.Text = "                  Deletar";
-            this.BtnDeletar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnDeletar.UseVisualStyleBackColor = false;
-            this.BtnDeletar.Click += new System.EventHandler(this.BtnDeletar_Click);
-            // 
-            // BtnConfigurações
-            // 
-            this.BtnConfigurações.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnConfigurações.FlatAppearance.BorderSize = 0;
-            this.BtnConfigurações.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnConfigurações.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnConfigurações.ForeColor = System.Drawing.Color.White;
-            this.BtnConfigurações.Image = global::UkraBar.Properties.Resources.engineering_30px;
-            this.BtnConfigurações.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnConfigurações.Location = new System.Drawing.Point(0, 0);
-            this.BtnConfigurações.Name = "BtnConfigurações";
-            this.BtnConfigurações.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnConfigurações.Size = new System.Drawing.Size(223, 50);
-            this.BtnConfigurações.TabIndex = 38;
-            this.BtnConfigurações.Text = "                  Configurações";
-            this.BtnConfigurações.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnConfigurações.UseVisualStyleBackColor = false;
-            this.BtnConfigurações.Click += new System.EventHandler(this.BtnConfigurações_Click);
-            // 
-            // panelMenu
-            // 
-            this.panelMenu.Controls.Add(this.lblMenu);
-            this.panelMenu.Controls.Add(this.pbMenu);
-            this.panelMenu.Location = new System.Drawing.Point(3, 3);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(248, 116);
-            this.panelMenu.TabIndex = 0;
-            // 
-            // lblMenu
-            // 
-            this.lblMenu.AutoSize = true;
-            this.lblMenu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMenu.ForeColor = System.Drawing.Color.White;
-            this.lblMenu.Location = new System.Drawing.Point(94, 40);
-            this.lblMenu.Name = "lblMenu";
-            this.lblMenu.Size = new System.Drawing.Size(50, 21);
-            this.lblMenu.TabIndex = 1;
-            this.lblMenu.Text = "Menu";
-            // 
-            // pbMenu
-            // 
-            this.pbMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbMenu.Image = global::UkraBar.Properties.Resources.squared_menu_24px;
-            this.pbMenu.Location = new System.Drawing.Point(17, 37);
-            this.pbMenu.Name = "pbMenu";
-            this.pbMenu.Size = new System.Drawing.Size(30, 28);
-            this.pbMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbMenu.TabIndex = 0;
-            this.pbMenu.TabStop = false;
-            this.pbMenu.Click += new System.EventHandler(this.pbMenu_Click);
-            // 
-            // sideBarMenu
-            // 
-            this.sideBarMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.sideBarMenu.Controls.Add(this.panelMenu);
-            this.sideBarMenu.Controls.Add(this.panelShowConfig);
-            this.sideBarMenu.Controls.Add(this.panelAjuda);
-            this.sideBarMenu.Controls.Add(this.panelSobre);
-            this.sideBarMenu.Controls.Add(this.panelVoltar);
-            this.sideBarMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sideBarMenu.Location = new System.Drawing.Point(0, 0);
-            this.sideBarMenu.MaximumSize = new System.Drawing.Size(226, 749);
-            this.sideBarMenu.MinimumSize = new System.Drawing.Size(76, 749);
-            this.sideBarMenu.Name = "sideBarMenu";
-            this.sideBarMenu.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.sideBarMenu.Size = new System.Drawing.Size(226, 749);
-            this.sideBarMenu.TabIndex = 36;
-            this.sideBarMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.sideBarMenu_Paint);
-            // 
-            // BtnDarkOn
-            // 
-            this.BtnDarkOn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.BtnDarkOn.FlatAppearance.BorderSize = 0;
-            this.BtnDarkOn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDarkOn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDarkOn.ForeColor = System.Drawing.Color.White;
-            this.BtnDarkOn.Image = global::UkraBar.Properties.Resources.toggleon_24px;
-            this.BtnDarkOn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnDarkOn.Location = new System.Drawing.Point(-6, 202);
-            this.BtnDarkOn.Name = "BtnDarkOn";
-            this.BtnDarkOn.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.BtnDarkOn.Size = new System.Drawing.Size(229, 50);
-            this.BtnDarkOn.TabIndex = 45;
-            this.BtnDarkOn.Text = "                  DarkMode";
-            this.BtnDarkOn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnDarkOn.UseVisualStyleBackColor = false;
-            this.BtnDarkOn.Click += new System.EventHandler(this.BtnDarkOn_Click);
-            // 
-            // BtnDarkOff
-            // 
-            this.BtnDarkOff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.BtnDarkOff.FlatAppearance.BorderSize = 0;
-            this.BtnDarkOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDarkOff.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDarkOff.ForeColor = System.Drawing.Color.White;
-            this.BtnDarkOff.Image = global::UkraBar.Properties.Resources.toggle_off_24px;
-            this.BtnDarkOff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnDarkOff.Location = new System.Drawing.Point(0, 202);
-            this.BtnDarkOff.Name = "BtnDarkOff";
-            this.BtnDarkOff.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.BtnDarkOff.Size = new System.Drawing.Size(229, 50);
-            this.BtnDarkOff.TabIndex = 46;
-            this.BtnDarkOff.Text = "                  DarkMode";
-            this.BtnDarkOff.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnDarkOff.UseVisualStyleBackColor = false;
-            this.BtnDarkOff.Click += new System.EventHandler(this.BtnDarkOff_Click);
             // 
             // LayoutFundoDT
             // 
@@ -805,37 +456,37 @@
             this.DTgridFunc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DTgridFunc.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DTgridFunc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTgridFunc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTgridFunc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
             this.DTgridFunc.ColumnHeadersHeight = 30;
             this.DTgridFunc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DTgridFunc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CheckBox});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DTgridFunc.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DTgridFunc.DefaultCellStyle = dataGridViewCellStyle31;
             this.DTgridFunc.GridColor = System.Drawing.Color.Black;
             this.DTgridFunc.Location = new System.Drawing.Point(3, 3);
             this.DTgridFunc.Name = "DTgridFunc";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTgridFunc.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTgridFunc.RowHeadersDefaultCellStyle = dataGridViewCellStyle32;
             this.DTgridFunc.RowHeadersWidth = 51;
             this.DTgridFunc.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.DTgridFunc.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
@@ -858,16 +509,303 @@
             this.CheckBox.Name = "CheckBox";
             this.CheckBox.Width = 80;
             // 
+            // paneltopbar
+            // 
+            this.paneltopbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.paneltopbar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.paneltopbar.Location = new System.Drawing.Point(0, 0);
+            this.paneltopbar.Name = "paneltopbar";
+            this.paneltopbar.Size = new System.Drawing.Size(1370, 30);
+            this.paneltopbar.TabIndex = 46;
+            // 
+            // BarSideTop
+            // 
+            this.BarSideTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BarSideTop.Controls.Add(this.panelLabel);
+            this.BarSideTop.Controls.Add(this.panelBuscar);
+            this.BarSideTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BarSideTop.Location = new System.Drawing.Point(76, 30);
+            this.BarSideTop.Name = "BarSideTop";
+            this.BarSideTop.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.BarSideTop.Size = new System.Drawing.Size(1294, 64);
+            this.BarSideTop.TabIndex = 48;
+            // 
+            // panelLabel
+            // 
+            this.panelLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.panelLabel.Controls.Add(this.lblFunc);
+            this.panelLabel.Location = new System.Drawing.Point(3, 3);
+            this.panelLabel.Name = "panelLabel";
+            this.panelLabel.Size = new System.Drawing.Size(287, 61);
+            this.panelLabel.TabIndex = 39;
+            // 
+            // lblFunc
+            // 
+            this.lblFunc.AutoSize = true;
+            this.lblFunc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFunc.ForeColor = System.Drawing.Color.White;
+            this.lblFunc.Location = new System.Drawing.Point(9, 20);
+            this.lblFunc.Name = "lblFunc";
+            this.lblFunc.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblFunc.Size = new System.Drawing.Size(262, 21);
+            this.lblFunc.TabIndex = 0;
+            this.lblFunc.Text = "CRUD | Cofigurações de Funcionário";
+            // 
+            // panelBuscar
+            // 
+            this.panelBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.panelBuscar.Controls.Add(this.btnBuscar);
+            this.panelBuscar.Controls.Add(this.BoxBuscar);
+            this.panelBuscar.Controls.Add(this.pictureBox5);
+            this.panelBuscar.Location = new System.Drawing.Point(296, 3);
+            this.panelBuscar.Name = "panelBuscar";
+            this.panelBuscar.Size = new System.Drawing.Size(454, 61);
+            this.panelBuscar.TabIndex = 40;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Image = global::UkraBar.Properties.Resources.search_more_24px;
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.Location = new System.Drawing.Point(301, 7);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Padding = new System.Windows.Forms.Padding(0, 0, 12, 0);
+            this.btnBuscar.Size = new System.Drawing.Size(150, 46);
+            this.btnBuscar.TabIndex = 44;
+            this.btnBuscar.Text = "      Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // BoxBuscar
+            // 
+            this.BoxBuscar.BackColor = System.Drawing.Color.White;
+            this.BoxBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BoxBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxBuscar.Location = new System.Drawing.Point(21, 20);
+            this.BoxBuscar.Name = "BoxBuscar";
+            this.BoxBuscar.Size = new System.Drawing.Size(253, 19);
+            this.BoxBuscar.TabIndex = 29;
+            this.BoxBuscar.Tag = "";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::UkraBar.Properties.Resources.BoxBranca;
+            this.pictureBox5.Location = new System.Drawing.Point(3, 7);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(292, 47);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 33;
+            this.pictureBox5.TabStop = false;
+            // 
+            // sideBarMenu
+            // 
+            this.sideBarMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.sideBarMenu.Controls.Add(this.panelMenu);
+            this.sideBarMenu.Controls.Add(this.panelShowConfig);
+            this.sideBarMenu.Controls.Add(this.BtnSobre);
+            this.sideBarMenu.Controls.Add(this.BtnAjuda);
+            this.sideBarMenu.Controls.Add(this.BtnVoltar);
+            this.sideBarMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.sideBarMenu.Location = new System.Drawing.Point(0, 30);
+            this.sideBarMenu.MaximumSize = new System.Drawing.Size(226, 749);
+            this.sideBarMenu.MinimumSize = new System.Drawing.Size(76, 749);
+            this.sideBarMenu.Name = "sideBarMenu";
+            this.sideBarMenu.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sideBarMenu.Size = new System.Drawing.Size(76, 749);
+            this.sideBarMenu.TabIndex = 47;
+            // 
+            // panelMenu
+            // 
+            this.panelMenu.Controls.Add(this.lblMenu);
+            this.panelMenu.Controls.Add(this.pbMenu);
+            this.panelMenu.Location = new System.Drawing.Point(3, 3);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(222, 116);
+            this.panelMenu.TabIndex = 0;
+            // 
+            // lblMenu
+            // 
+            this.lblMenu.AutoSize = true;
+            this.lblMenu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenu.ForeColor = System.Drawing.Color.White;
+            this.lblMenu.Location = new System.Drawing.Point(94, 40);
+            this.lblMenu.Name = "lblMenu";
+            this.lblMenu.Size = new System.Drawing.Size(50, 21);
+            this.lblMenu.TabIndex = 1;
+            this.lblMenu.Text = "Menu";
+            // 
+            // pbMenu
+            // 
+            this.pbMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbMenu.Image = global::UkraBar.Properties.Resources.squared_menu_24px;
+            this.pbMenu.Location = new System.Drawing.Point(17, 37);
+            this.pbMenu.Name = "pbMenu";
+            this.pbMenu.Size = new System.Drawing.Size(30, 28);
+            this.pbMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbMenu.TabIndex = 0;
+            this.pbMenu.TabStop = false;
+            this.pbMenu.Click += new System.EventHandler(this.pbMenu_Click_1);
+            // 
+            // panelShowConfig
+            // 
+            this.panelShowConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.panelShowConfig.Controls.Add(this.BtnEditar);
+            this.panelShowConfig.Controls.Add(this.BtnNovoFunc);
+            this.panelShowConfig.Controls.Add(this.BtnDeletar);
+            this.panelShowConfig.Controls.Add(this.BtnConfigurações);
+            this.panelShowConfig.Location = new System.Drawing.Point(3, 125);
+            this.panelShowConfig.MaximumSize = new System.Drawing.Size(223, 200);
+            this.panelShowConfig.MinimumSize = new System.Drawing.Size(223, 50);
+            this.panelShowConfig.Name = "panelShowConfig";
+            this.panelShowConfig.Size = new System.Drawing.Size(223, 50);
+            this.panelShowConfig.TabIndex = 45;
+            // 
+            // BtnEditar
+            // 
+            this.BtnEditar.BackColor = System.Drawing.Color.DarkCyan;
+            this.BtnEditar.FlatAppearance.BorderSize = 0;
+            this.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEditar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEditar.ForeColor = System.Drawing.Color.White;
+            this.BtnEditar.Image = global::UkraBar.Properties.Resources.pencil_24px;
+            this.BtnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnEditar.Location = new System.Drawing.Point(1, 150);
+            this.BtnEditar.Name = "BtnEditar";
+            this.BtnEditar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.BtnEditar.Size = new System.Drawing.Size(231, 50);
+            this.BtnEditar.TabIndex = 43;
+            this.BtnEditar.Text = "                    Editar";
+            this.BtnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnEditar.UseVisualStyleBackColor = false;
+            this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
+            // 
+            // BtnNovoFunc
+            // 
+            this.BtnNovoFunc.BackColor = System.Drawing.Color.Green;
+            this.BtnNovoFunc.FlatAppearance.BorderSize = 0;
+            this.BtnNovoFunc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNovoFunc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNovoFunc.ForeColor = System.Drawing.Color.White;
+            this.BtnNovoFunc.Image = global::UkraBar.Properties.Resources.add_30px;
+            this.BtnNovoFunc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnNovoFunc.Location = new System.Drawing.Point(1, 52);
+            this.BtnNovoFunc.Name = "BtnNovoFunc";
+            this.BtnNovoFunc.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.BtnNovoFunc.Size = new System.Drawing.Size(229, 50);
+            this.BtnNovoFunc.TabIndex = 40;
+            this.BtnNovoFunc.Text = "               Novo Funcionário";
+            this.BtnNovoFunc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnNovoFunc.UseVisualStyleBackColor = false;
+            this.BtnNovoFunc.Click += new System.EventHandler(this.BtnNovoFunc_Click);
+            // 
+            // BtnDeletar
+            // 
+            this.BtnDeletar.BackColor = System.Drawing.Color.Red;
+            this.BtnDeletar.FlatAppearance.BorderSize = 0;
+            this.BtnDeletar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDeletar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDeletar.ForeColor = System.Drawing.Color.White;
+            this.BtnDeletar.Image = global::UkraBar.Properties.Resources.trash_26px;
+            this.BtnDeletar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnDeletar.Location = new System.Drawing.Point(1, 102);
+            this.BtnDeletar.Name = "BtnDeletar";
+            this.BtnDeletar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.BtnDeletar.Size = new System.Drawing.Size(223, 50);
+            this.BtnDeletar.TabIndex = 41;
+            this.BtnDeletar.Text = "                  Deletar";
+            this.BtnDeletar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnDeletar.UseVisualStyleBackColor = false;
+            this.BtnDeletar.Click += new System.EventHandler(this.BtnDeletar_Click);
+            // 
+            // BtnConfigurações
+            // 
+            this.BtnConfigurações.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnConfigurações.FlatAppearance.BorderSize = 0;
+            this.BtnConfigurações.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnConfigurações.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnConfigurações.ForeColor = System.Drawing.Color.White;
+            this.BtnConfigurações.Image = global::UkraBar.Properties.Resources.engineering_30px;
+            this.BtnConfigurações.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnConfigurações.Location = new System.Drawing.Point(0, 0);
+            this.BtnConfigurações.Name = "BtnConfigurações";
+            this.BtnConfigurações.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.BtnConfigurações.Size = new System.Drawing.Size(223, 50);
+            this.BtnConfigurações.TabIndex = 38;
+            this.BtnConfigurações.Text = "                  Configurações";
+            this.BtnConfigurações.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnConfigurações.UseVisualStyleBackColor = false;
+            this.BtnConfigurações.Click += new System.EventHandler(this.BtnConfigurações_Click);
+            // 
+            // BtnSobre
+            // 
+            this.BtnSobre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnSobre.FlatAppearance.BorderSize = 0;
+            this.BtnSobre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSobre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSobre.ForeColor = System.Drawing.Color.White;
+            this.BtnSobre.Image = global::UkraBar.Properties.Resources.info_24px;
+            this.BtnSobre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSobre.Location = new System.Drawing.Point(3, 181);
+            this.BtnSobre.Name = "BtnSobre";
+            this.BtnSobre.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.BtnSobre.Size = new System.Drawing.Size(223, 50);
+            this.BtnSobre.TabIndex = 38;
+            this.BtnSobre.Text = "                  Sobre";
+            this.BtnSobre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSobre.UseVisualStyleBackColor = false;
+            // 
+            // BtnAjuda
+            // 
+            this.BtnAjuda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnAjuda.FlatAppearance.BorderSize = 0;
+            this.BtnAjuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAjuda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAjuda.ForeColor = System.Drawing.Color.White;
+            this.BtnAjuda.Image = global::UkraBar.Properties.Resources.ask_question_24px;
+            this.BtnAjuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAjuda.Location = new System.Drawing.Point(3, 237);
+            this.BtnAjuda.Name = "BtnAjuda";
+            this.BtnAjuda.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.BtnAjuda.Size = new System.Drawing.Size(223, 50);
+            this.BtnAjuda.TabIndex = 38;
+            this.BtnAjuda.Text = "                  Ajuda";
+            this.BtnAjuda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAjuda.UseVisualStyleBackColor = false;
+            // 
+            // BtnVoltar
+            // 
+            this.BtnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnVoltar.FlatAppearance.BorderSize = 0;
+            this.BtnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnVoltar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVoltar.ForeColor = System.Drawing.Color.White;
+            this.BtnVoltar.Image = global::UkraBar.Properties.Resources.reply_arrow_24px;
+            this.BtnVoltar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnVoltar.Location = new System.Drawing.Point(3, 293);
+            this.BtnVoltar.Name = "BtnVoltar";
+            this.BtnVoltar.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.BtnVoltar.Size = new System.Drawing.Size(223, 50);
+            this.BtnVoltar.TabIndex = 39;
+            this.BtnVoltar.Text = "                  Voltar";
+            this.BtnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnVoltar.UseVisualStyleBackColor = false;
+            this.BtnVoltar.Click += new System.EventHandler(this.BtnVoltar_Click);
+            // 
             // CadastrarFunc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.LayoutFundoDT);
             this.Controls.Add(this.BarSideTop);
             this.Controls.Add(this.sideBarMenu);
+            this.Controls.Add(this.paneltopbar);
             this.Controls.Add(this.panelEditar);
             this.Controls.Add(this.panelNovoFunc);
+            this.Controls.Add(this.LayoutFundoDT);
             this.Name = "CadastrarFunc";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Painel de Cadastro";
@@ -880,25 +818,22 @@
             this.panelCinza.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.LayoutFundoDT.ResumeLayout(false);
+            this.panelEditarFundo.ResumeLayout(false);
+            this.panelEditarFundo.PerformLayout();
+            this.panelFundoDT.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DTgridFunc)).EndInit();
             this.BarSideTop.ResumeLayout(false);
             this.panelLabel.ResumeLayout(false);
             this.panelLabel.PerformLayout();
             this.panelBuscar.ResumeLayout(false);
             this.panelBuscar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panelVoltar.ResumeLayout(false);
-            this.panelSobre.ResumeLayout(false);
-            this.panelAjuda.ResumeLayout(false);
-            this.panelShowConfig.ResumeLayout(false);
+            this.sideBarMenu.ResumeLayout(false);
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).EndInit();
-            this.sideBarMenu.ResumeLayout(false);
-            this.LayoutFundoDT.ResumeLayout(false);
-            this.panelEditarFundo.ResumeLayout(false);
-            this.panelEditarFundo.PerformLayout();
-            this.panelFundoDT.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DTgridFunc)).EndInit();
+            this.panelShowConfig.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -923,30 +858,6 @@
         private System.Windows.Forms.PictureBox pbFechar;
         private System.Windows.Forms.Panel panelCinza;
         private System.Windows.Forms.TextBox BoxcNome;
-        private System.Windows.Forms.FlowLayoutPanel BarSideTop;
-        private System.Windows.Forms.Panel panelLabel;
-        private System.Windows.Forms.Label lblFunc;
-        private System.Windows.Forms.Panel panelBuscar;
-        private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.TextBox BoxBuscar;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Panel panelVoltar;
-        private System.Windows.Forms.Button BtnVoltar;
-        private System.Windows.Forms.Panel panelSobre;
-        private System.Windows.Forms.Button BtnSobre;
-        private System.Windows.Forms.Panel panelAjuda;
-        private System.Windows.Forms.Button BtnAjuda;
-        private System.Windows.Forms.Panel panelShowConfig;
-        private System.Windows.Forms.Button BtnEditar;
-        private System.Windows.Forms.Button BtnNovoFunc;
-        private System.Windows.Forms.Button BtnDeletar;
-        private System.Windows.Forms.Button BtnConfigurações;
-        private System.Windows.Forms.Panel panelMenu;
-        private System.Windows.Forms.Label lblMenu;
-        private System.Windows.Forms.PictureBox pbMenu;
-        private System.Windows.Forms.FlowLayoutPanel sideBarMenu;
-        private System.Windows.Forms.Button BtnDarkOff;
-        private System.Windows.Forms.Button BtnDarkOn;
         private System.Windows.Forms.FlowLayoutPanel LayoutFundoDT;
         private System.Windows.Forms.Panel panelEditarFundo;
         private System.Windows.Forms.Button BtnPincel;
@@ -961,5 +872,25 @@
         private System.Windows.Forms.Panel panelFundoDT;
         private System.Windows.Forms.DataGridView DTgridFunc;
         private System.Windows.Forms.DataGridViewCheckBoxColumn CheckBox;
+        private System.Windows.Forms.Panel paneltopbar;
+        private System.Windows.Forms.FlowLayoutPanel BarSideTop;
+        private System.Windows.Forms.Panel panelLabel;
+        private System.Windows.Forms.Label lblFunc;
+        private System.Windows.Forms.Panel panelBuscar;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox BoxBuscar;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.FlowLayoutPanel sideBarMenu;
+        private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.Label lblMenu;
+        private System.Windows.Forms.PictureBox pbMenu;
+        private System.Windows.Forms.Panel panelShowConfig;
+        private System.Windows.Forms.Button BtnEditar;
+        private System.Windows.Forms.Button BtnNovoFunc;
+        private System.Windows.Forms.Button BtnDeletar;
+        private System.Windows.Forms.Button BtnConfigurações;
+        private System.Windows.Forms.Button BtnSobre;
+        private System.Windows.Forms.Button BtnAjuda;
+        private System.Windows.Forms.Button BtnVoltar;
     }
 }
