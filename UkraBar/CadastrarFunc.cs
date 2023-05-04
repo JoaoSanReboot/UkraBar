@@ -134,8 +134,8 @@ namespace UkraBar
 
             if (NovoFuncBar)
             {
-                panelNovoFunc.Width -= 30; //Declara o caso do Panel estiver com Determinado tamanho.
-                if  (panelNovoFunc.Width == panelNovoFunc.MinimumSize.Width){
+                PanelCadastrarFunc.Width -= 30; //Declara o caso do Panel estiver com Determinado tamanho.
+                if  (PanelCadastrarFunc.Width == PanelCadastrarFunc.MinimumSize.Width){
                     
 
 
@@ -145,8 +145,8 @@ namespace UkraBar
             }//Se o Bool Estiver Sim.
             else
             {
-                panelNovoFunc.Width += 10;  //Declara o caso do Panel estiver com Determinado tamanho.
-                if (panelNovoFunc.Width == panelNovoFunc.MaximumSize.Width)
+                PanelCadastrarFunc.Width += 10;  //Declara o caso do Panel estiver com Determinado tamanho.
+                if (PanelCadastrarFunc.Width == PanelCadastrarFunc.MaximumSize.Width)
                 {
 
                     NovoFuncBar = true;   //Deixa o Bool True.
@@ -165,8 +165,8 @@ namespace UkraBar
             SideBarTime.Start();    //Começa o TimerTick.
             if (sideBarMenuExpand == true)  //Se o Bool Estiver True.
 
-                panelNovoFunc.Visible = false; //Esconder Outro Bool.
-            NovoFuncTimer.Stop();        //Incia outro Timer.
+                PanelCadastrarFunc.Visible = false; //Esconder Outro Bool.
+                NovoFuncTimer.Stop();        //Incia outro Timer.
         }
 
         //Abre o Panel de Configurações.
@@ -198,7 +198,7 @@ namespace UkraBar
         {
             if (sideBarMenuExpand == true)
             {
-                panelNovoFunc.Visible = true;
+                PanelCadastrarFunc.Visible = true;
                 NovoFuncTimer.Start();
             }
         }
@@ -259,6 +259,31 @@ namespace UkraBar
         {
             this.FormBorderStyle = FormBorderStyle.None;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            MaximizarJanela.Location = MaximizarJanela.Location;
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+            MinimizarJanela.Location = MinimizarJanela.Location;
+        }
+
+        private void FecharJanelaF_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtnUpload_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog(); // Defini um dialog como o Novo
+            //Um Filtro de imagens que aceita apenas Png e Jpg.
+            dialog.Filter = "JPG Files(*.jpg)|*.jpg | PNG Files(*.png)|*png | AllFiles(*.*)|*.*";
+        }
     }
 }
     
@@ -266,3 +291,4 @@ namespace UkraBar
 
 
 
+ 

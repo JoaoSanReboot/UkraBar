@@ -249,5 +249,20 @@
   <ItemGroup>
     <None Include="Resources\X Key_50px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_window_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize_window_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_window_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_window_24px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload_32px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -133,6 +133,26 @@ namespace UkraBar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close_window_24px {
+            get {
+                object obj = ResourceManager.GetObject("close_window_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap close_window_24px1 {
+            get {
+                object obj = ResourceManager.GetObject("close_window_24px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap engineering_30px {
             get {
                 object obj = ResourceManager.GetObject("engineering_30px", resourceCulture);
@@ -206,6 +226,26 @@ namespace UkraBar.Properties {
         internal static System.Drawing.Bitmap info_24px {
             get {
                 object obj = ResourceManager.GetObject("info_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maximize_window_24px {
+            get {
+                object obj = ResourceManager.GetObject("maximize_window_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimize_window_24px {
+            get {
+                object obj = ResourceManager.GetObject("minimize_window_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -326,6 +366,16 @@ namespace UkraBar.Properties {
         internal static System.Drawing.Bitmap trash_26px {
             get {
                 object obj = ResourceManager.GetObject("trash_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap upload_32px {
+            get {
+                object obj = ResourceManager.GetObject("upload_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
