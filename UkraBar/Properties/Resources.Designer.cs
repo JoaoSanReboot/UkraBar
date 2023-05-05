@@ -113,6 +113,26 @@ namespace UkraBar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BtnEntrar {
+            get {
+                object obj = ResourceManager.GetObject("BtnEntrar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BtnEntrar1 {
+            get {
+                object obj = ResourceManager.GetObject("BtnEntrar1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Checkmark_24px {
             get {
                 object obj = ResourceManager.GetObject("Checkmark_24px", resourceCulture);
@@ -296,6 +316,16 @@ namespace UkraBar.Properties {
         internal static System.Drawing.Bitmap squared_menu_24px {
             get {
                 object obj = ResourceManager.GetObject("squared_menu_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TeladeEntrada {
+            get {
+                object obj = ResourceManager.GetObject("TeladeEntrada", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

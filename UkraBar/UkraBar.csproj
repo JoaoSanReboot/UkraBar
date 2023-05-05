@@ -193,9 +193,6 @@
     <None Include="Resources\hide_24px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\BOTAO.PNG" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\expand_arrow_24px.png" />
   </ItemGroup>
   <ItemGroup>
@@ -263,6 +260,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\upload_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TeladeEntrada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnEntrar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnEntrar1.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
