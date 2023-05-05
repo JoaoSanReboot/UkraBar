@@ -43,10 +43,9 @@
             this.lblId = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelAviso = new System.Windows.Forms.Panel();
             this.lblAviso = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
-            this.panelEditar = new System.Windows.Forms.Panel();
             this.LayoutFundoDT = new System.Windows.Forms.FlowLayoutPanel();
             this.panelEditarFundo = new System.Windows.Forms.Panel();
             this.BtnPincel = new System.Windows.Forms.Button();
@@ -60,7 +59,6 @@
             this.BoxdIdF = new System.Windows.Forms.TextBox();
             this.panelFundoDT = new System.Windows.Forms.Panel();
             this.DTgridFunc = new System.Windows.Forms.DataGridView();
-            this.CheckBox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.paneltopbar = new System.Windows.Forms.Panel();
             this.MinimizarJanela = new System.Windows.Forms.Button();
             this.MaximizarJanela = new System.Windows.Forms.Button();
@@ -71,7 +69,7 @@
             this.panelBuscar = new System.Windows.Forms.Panel();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.BoxBuscar = new System.Windows.Forms.TextBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.FundoPesquisar = new System.Windows.Forms.PictureBox();
             this.sideBarMenu = new System.Windows.Forms.FlowLayoutPanel();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.lblMenu = new System.Windows.Forms.Label();
@@ -85,14 +83,16 @@
             this.BtnAjuda = new System.Windows.Forms.Button();
             this.BtnVoltar = new System.Windows.Forms.Button();
             this.PanelCadastrarFunc = new System.Windows.Forms.Panel();
+            this.BoxdFilesF = new System.Windows.Forms.TextBox();
             this.BtnUpload = new System.Windows.Forms.Button();
             this.ImagenFunc = new System.Windows.Forms.PictureBox();
             this.BtnSalvar = new System.Windows.Forms.Button();
             this.pbFechar = new System.Windows.Forms.PictureBox();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.BoxdFilesF = new System.Windows.Forms.TextBox();
-            this.panel1.SuspendLayout();
+            this.CheckBox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.pbFundo = new System.Windows.Forms.PictureBox();
+            this.panelAviso.SuspendLayout();
             this.LayoutFundoDT.SuspendLayout();
             this.panelEditarFundo.SuspendLayout();
             this.panelFundoDT.SuspendLayout();
@@ -101,7 +101,7 @@
             this.BarSideTop.SuspendLayout();
             this.panelLabel.SuspendLayout();
             this.panelBuscar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FundoPesquisar)).BeginInit();
             this.sideBarMenu.SuspendLayout();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
@@ -109,6 +109,7 @@
             this.PanelCadastrarFunc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImagenFunc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFechar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFundo)).BeginInit();
             this.SuspendLayout();
             // 
             // SideBarTime
@@ -190,14 +191,14 @@
             this.lblEmail.TabIndex = 10;
             this.lblEmail.Text = "Email:";
             // 
-            // panel1
+            // panelAviso
             // 
-            this.panel1.BackColor = System.Drawing.Color.Red;
-            this.panel1.Controls.Add(this.lblAviso);
-            this.panel1.Location = new System.Drawing.Point(112, 78);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(136, 19);
-            this.panel1.TabIndex = 6;
+            this.panelAviso.BackColor = System.Drawing.Color.Red;
+            this.panelAviso.Controls.Add(this.lblAviso);
+            this.panelAviso.Location = new System.Drawing.Point(112, 78);
+            this.panelAviso.Name = "panelAviso";
+            this.panelAviso.Size = new System.Drawing.Size(136, 19);
+            this.panelAviso.TabIndex = 6;
             // 
             // lblAviso
             // 
@@ -220,16 +221,6 @@
             this.lblSenha.Size = new System.Drawing.Size(58, 21);
             this.lblSenha.TabIndex = 8;
             this.lblSenha.Text = "Senha:";
-            // 
-            // panelEditar
-            // 
-            this.panelEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.panelEditar.Location = new System.Drawing.Point(1117, 227);
-            this.panelEditar.MaximumSize = new System.Drawing.Size(241, 427);
-            this.panelEditar.MinimumSize = new System.Drawing.Size(0, 427);
-            this.panelEditar.Name = "panelEditar";
-            this.panelEditar.Size = new System.Drawing.Size(0, 427);
-            this.panelEditar.TabIndex = 41;
             // 
             // LayoutFundoDT
             // 
@@ -418,16 +409,8 @@
             this.DTgridFunc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DTgridFunc.Size = new System.Drawing.Size(973, 546);
             this.DTgridFunc.TabIndex = 29;
-            // 
-            // CheckBox
-            // 
-            this.CheckBox.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.CheckBox.FillWeight = 30.45685F;
-            this.CheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CheckBox.HeaderText = "Selecionar";
-            this.CheckBox.MinimumWidth = 6;
-            this.CheckBox.Name = "CheckBox";
-            this.CheckBox.Width = 80;
+            this.DTgridFunc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTgridFunc_CellContentClick);
+            this.DTgridFunc.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DTgridFunc_CellMouseClick);
             // 
             // paneltopbar
             // 
@@ -492,10 +475,10 @@
             this.BarSideTop.Controls.Add(this.panelLabel);
             this.BarSideTop.Controls.Add(this.panelBuscar);
             this.BarSideTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BarSideTop.Location = new System.Drawing.Point(226, 39);
+            this.BarSideTop.Location = new System.Drawing.Point(76, 39);
             this.BarSideTop.Name = "BarSideTop";
             this.BarSideTop.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BarSideTop.Size = new System.Drawing.Size(1144, 64);
+            this.BarSideTop.Size = new System.Drawing.Size(1294, 64);
             this.BarSideTop.TabIndex = 48;
             // 
             // panelLabel
@@ -524,7 +507,7 @@
             this.panelBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.panelBuscar.Controls.Add(this.btnBuscar);
             this.panelBuscar.Controls.Add(this.BoxBuscar);
-            this.panelBuscar.Controls.Add(this.pictureBox5);
+            this.panelBuscar.Controls.Add(this.FundoPesquisar);
             this.panelBuscar.Location = new System.Drawing.Point(296, 3);
             this.panelBuscar.Name = "panelBuscar";
             this.panelBuscar.Size = new System.Drawing.Size(454, 61);
@@ -547,6 +530,7 @@
             this.btnBuscar.Text = "      Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // BoxBuscar
             // 
@@ -559,15 +543,15 @@
             this.BoxBuscar.TabIndex = 29;
             this.BoxBuscar.Tag = "";
             // 
-            // pictureBox5
+            // FundoPesquisar
             // 
-            this.pictureBox5.Image = global::UkraBar.Properties.Resources.BoxBranca;
-            this.pictureBox5.Location = new System.Drawing.Point(3, 7);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(292, 47);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 33;
-            this.pictureBox5.TabStop = false;
+            this.FundoPesquisar.Image = global::UkraBar.Properties.Resources.BoxBranca;
+            this.FundoPesquisar.Location = new System.Drawing.Point(3, 7);
+            this.FundoPesquisar.Name = "FundoPesquisar";
+            this.FundoPesquisar.Size = new System.Drawing.Size(292, 47);
+            this.FundoPesquisar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.FundoPesquisar.TabIndex = 33;
+            this.FundoPesquisar.TabStop = false;
             // 
             // sideBarMenu
             // 
@@ -583,7 +567,7 @@
             this.sideBarMenu.MinimumSize = new System.Drawing.Size(76, 749);
             this.sideBarMenu.Name = "sideBarMenu";
             this.sideBarMenu.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.sideBarMenu.Size = new System.Drawing.Size(226, 749);
+            this.sideBarMenu.Size = new System.Drawing.Size(76, 749);
             this.sideBarMenu.TabIndex = 47;
             // 
             // panelMenu
@@ -629,7 +613,7 @@
             this.panelShowConfig.MaximumSize = new System.Drawing.Size(223, 200);
             this.panelShowConfig.MinimumSize = new System.Drawing.Size(223, 50);
             this.panelShowConfig.Name = "panelShowConfig";
-            this.panelShowConfig.Size = new System.Drawing.Size(223, 200);
+            this.panelShowConfig.Size = new System.Drawing.Size(223, 50);
             this.panelShowConfig.TabIndex = 45;
             // 
             // BtnEditar
@@ -717,7 +701,7 @@
             this.BtnSobre.ForeColor = System.Drawing.Color.White;
             this.BtnSobre.Image = global::UkraBar.Properties.Resources.info_24px;
             this.BtnSobre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSobre.Location = new System.Drawing.Point(3, 331);
+            this.BtnSobre.Location = new System.Drawing.Point(3, 181);
             this.BtnSobre.Name = "BtnSobre";
             this.BtnSobre.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.BtnSobre.Size = new System.Drawing.Size(223, 50);
@@ -735,7 +719,7 @@
             this.BtnAjuda.ForeColor = System.Drawing.Color.White;
             this.BtnAjuda.Image = global::UkraBar.Properties.Resources.ask_question_24px;
             this.BtnAjuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAjuda.Location = new System.Drawing.Point(3, 387);
+            this.BtnAjuda.Location = new System.Drawing.Point(3, 237);
             this.BtnAjuda.Name = "BtnAjuda";
             this.BtnAjuda.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.BtnAjuda.Size = new System.Drawing.Size(223, 50);
@@ -753,7 +737,7 @@
             this.BtnVoltar.ForeColor = System.Drawing.Color.White;
             this.BtnVoltar.Image = global::UkraBar.Properties.Resources.reply_arrow_24px;
             this.BtnVoltar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnVoltar.Location = new System.Drawing.Point(3, 443);
+            this.BtnVoltar.Location = new System.Drawing.Point(3, 293);
             this.BtnVoltar.Name = "BtnVoltar";
             this.BtnVoltar.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.BtnVoltar.Size = new System.Drawing.Size(223, 50);
@@ -776,7 +760,7 @@
             this.PanelCadastrarFunc.Controls.Add(this.lblEmail);
             this.PanelCadastrarFunc.Controls.Add(this.BoxcNome);
             this.PanelCadastrarFunc.Controls.Add(this.lblNome);
-            this.PanelCadastrarFunc.Controls.Add(this.panel1);
+            this.PanelCadastrarFunc.Controls.Add(this.panelAviso);
             this.PanelCadastrarFunc.Controls.Add(this.lblSenha);
             this.PanelCadastrarFunc.Controls.Add(this.pbFechar);
             this.PanelCadastrarFunc.Controls.Add(this.lblId);
@@ -784,8 +768,15 @@
             this.PanelCadastrarFunc.MaximumSize = new System.Drawing.Size(982, 560);
             this.PanelCadastrarFunc.MinimumSize = new System.Drawing.Size(0, 560);
             this.PanelCadastrarFunc.Name = "PanelCadastrarFunc";
-            this.PanelCadastrarFunc.Size = new System.Drawing.Size(982, 560);
+            this.PanelCadastrarFunc.Size = new System.Drawing.Size(0, 560);
             this.PanelCadastrarFunc.TabIndex = 49;
+            // 
+            // BoxdFilesF
+            // 
+            this.BoxdFilesF.Location = new System.Drawing.Point(626, 333);
+            this.BoxdFilesF.Name = "BoxdFilesF";
+            this.BoxdFilesF.Size = new System.Drawing.Size(292, 20);
+            this.BoxdFilesF.TabIndex = 14;
             // 
             // BtnUpload
             // 
@@ -874,12 +865,25 @@
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Width = 236;
             // 
-            // BoxdFilesF
+            // CheckBox
             // 
-            this.BoxdFilesF.Location = new System.Drawing.Point(626, 333);
-            this.BoxdFilesF.Name = "BoxdFilesF";
-            this.BoxdFilesF.Size = new System.Drawing.Size(292, 20);
-            this.BoxdFilesF.TabIndex = 14;
+            this.CheckBox.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.CheckBox.FillWeight = 30.45685F;
+            this.CheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CheckBox.HeaderText = "Selecionar";
+            this.CheckBox.MinimumWidth = 6;
+            this.CheckBox.Name = "CheckBox";
+            this.CheckBox.Width = 70;
+            // 
+            // pbFundo
+            // 
+            this.pbFundo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbFundo.Image = global::UkraBar.Properties.Resources.TelaFundo;
+            this.pbFundo.Location = new System.Drawing.Point(0, 0);
+            this.pbFundo.Name = "pbFundo";
+            this.pbFundo.Size = new System.Drawing.Size(1370, 749);
+            this.pbFundo.TabIndex = 50;
+            this.pbFundo.TabStop = false;
             // 
             // CadastrarFunc
             // 
@@ -890,15 +894,15 @@
             this.Controls.Add(this.BarSideTop);
             this.Controls.Add(this.sideBarMenu);
             this.Controls.Add(this.paneltopbar);
-            this.Controls.Add(this.panelEditar);
             this.Controls.Add(this.LayoutFundoDT);
+            this.Controls.Add(this.pbFundo);
             this.Name = "CadastrarFunc";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Painel de Cadastro";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.CadastrarFunc_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelAviso.ResumeLayout(false);
+            this.panelAviso.PerformLayout();
             this.LayoutFundoDT.ResumeLayout(false);
             this.panelEditarFundo.ResumeLayout(false);
             this.panelEditarFundo.PerformLayout();
@@ -910,7 +914,7 @@
             this.panelLabel.PerformLayout();
             this.panelBuscar.ResumeLayout(false);
             this.panelBuscar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FundoPesquisar)).EndInit();
             this.sideBarMenu.ResumeLayout(false);
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
@@ -920,6 +924,7 @@
             this.PanelCadastrarFunc.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImagenFunc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFechar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFundo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -929,13 +934,12 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.Timer NovoFuncTimer;
-        private System.Windows.Forms.Panel panelEditar;
         private System.Windows.Forms.Button BtnSalvar;
         private System.Windows.Forms.TextBox BoxcEmail;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox BoxcSenha;
         private System.Windows.Forms.Label lblSenha;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelAviso;
         private System.Windows.Forms.Label lblAviso;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.TextBox BoxcId;
@@ -955,7 +959,6 @@
         private System.Windows.Forms.TextBox BoxdIdF;
         private System.Windows.Forms.Panel panelFundoDT;
         private System.Windows.Forms.DataGridView DTgridFunc;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn CheckBox;
         private System.Windows.Forms.Panel paneltopbar;
         private System.Windows.Forms.FlowLayoutPanel BarSideTop;
         private System.Windows.Forms.Panel panelLabel;
@@ -963,7 +966,7 @@
         private System.Windows.Forms.Panel panelBuscar;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox BoxBuscar;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox FundoPesquisar;
         private System.Windows.Forms.FlowLayoutPanel sideBarMenu;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Label lblMenu;
@@ -983,5 +986,7 @@
         private System.Windows.Forms.Button BtnUpload;
         private System.Windows.Forms.PictureBox ImagenFunc;
         private System.Windows.Forms.TextBox BoxdFilesF;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn CheckBox;
+        private System.Windows.Forms.PictureBox pbFundo;
     }
 }

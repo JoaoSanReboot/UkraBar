@@ -167,7 +167,7 @@ namespace UkraBar
             if (sideBarMenuExpand == true)  //Se o Bool Estiver True.
 
                 PanelCadastrarFunc.Visible = false; //Esconder Outro Bool.
-                NovoFuncTimer.Stop();        //Incia outro Timer.
+                NovoFuncTimer.Stop();        //Para outro Timer.
         }
 
         //Abre o Panel de Configurações.
@@ -225,16 +225,8 @@ namespace UkraBar
 
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
-            byte[] imagem_byte = null;
-
-            FileStream fStrem = new FileStream(this.BoxdFilesF.Text, FileMode.Open, FileAccess.Read);//Defini fStrem como Binário.
-
-            BinaryReader br = new BinaryReader(fStrem);//Coloca o fStream Dentro de um Leitor Binário.
-
-            imagem_byte = br.ReadBytes((int)fStrem.Length);//Defini que ele irá ler em Binário e salvará na array.
-
-            string inserirQuery = "INSERT INTO cadastro_funcionário (id_cadastro, foto, nome_foto, nome_funcionario, senha_funcionario, email_funcionario) VALUES" +
-                "('" + imagem_byte + "', '"+ BoxdFilesF.Text +"' '" + BoxcId.Text + "', '" + BoxcNome.Text + "', '" + BoxcSenha.Text + "','" + BoxcEmail.Text + "')";
+            string inserirQuery = "INSERT INTO cadastro_funcionario (id_cadastro, nome_foto, nome_funcionario, senha_funcionario, email_funcionario) VALUES" +
+                "('" + BoxcId.Text + "', '"+ BoxdFilesF.Text +"', '" + BoxcNome.Text + "', '" + BoxcSenha.Text + "','" + BoxcEmail.Text + "')";
                 executarQuery(inserirQuery);
                 CarregarDados();//Carrega dados na tabela.
                 NovoFuncTimer.Stop();
@@ -244,26 +236,57 @@ namespace UkraBar
         {
             conn.Open();
 
-            for (int i = 0; i < DTgridFunc.Rows.Count; i++)
+            for (int i = 0; i < DTgridFunc.Rows.Count; i++)//Faz a contagem de linhas Selecionadas.
             {
-                DataGridViewCheckBoxCell CheckBox = DTgridFunc.Rows[i].Cells[0] as DataGridViewCheckBoxCell;
+                DataGridViewCheckBoxCell CheckBox = DTgridFunc.Rows[i].Cells[0] as DataGridViewCheckBoxCell; //Defini CheckBox como funcional.
 
-                if (CheckBox.Value != null && (bool)CheckBox.Value == true)
+                if (CheckBox.Value != null && (bool)CheckBox.Value == true)//Bool sim ou não.
                 {
-                    int id = Convert.ToInt32(DTgridFunc.Rows[i].Cells[1].Value);
+                    int id = Convert.ToInt32(DTgridFunc.Rows[i].Cells[1].Value);//Int para contagem de celulas marcadas.
 
-                    MySqlCommand comando = new MySqlCommand("DELETE FROM cadastro_funcionario WHERE id_cadastro = @id_cadastro", conn);
+                    MySqlCommand comando = new MySqlCommand("DELETE FROM cadastro_funcionario WHERE id_cadastro = @id_cadastro", conn);//Comandos MySql
                     comando.Parameters.AddWithValue("@id_cadastro", id);
                     comando.ExecuteNonQuery();
 
-                    DTgridFunc.Rows.RemoveAt(i);
-                    i--;
+                    DTgridFunc.Rows.RemoveAt(i);//Deleta as linhas.
+                    i--;                       //Diminui as linhas.
                 }
             }
-            CarregarDados();
+            CarregarDados();//Carregas os dados no GridView
             conn.Close();
         }
 
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))//Executa a conn quando apertado.
+            {
+                string b = "'%" + BoxBuscar.Text + "%'"; // Defini BoxBuscar como string
+
+                try
+                {
+                    conn.Open();//Abre Conexão.
+                    comando = new MySqlCommand("SELECT * FROM ukrasystem.cadastro_funcionario WHERE" +
+                        " id_cadastro LIKE" + b +
+                        "OR nome_foto LIKE" + b +
+                        "OR nome_funcionario LIKE" + b +
+                        "OR senha_funcionario LIKE" + b +
+                        "OR email_funcionario LIKE" + b, conn); //Envia comando Select no MySql
+                    DataTable ProcurarDataTable = new DataTable(); //Defini table nova
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(comando))//Faz o filtro no DataGridView.
+                    {
+                        adapter.Fill(ProcurarDataTable);
+                    }
+                    DTgridFunc.DataSource = ProcurarDataTable; //Mostra nova table
+                    DTgridFunc.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;//Centraliza as Tabelas.
+                    conn.Close();//Fecha Conexão.
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Algum erro Encontrado", ex.Message);
+                }
+            }
+        }
+      
         private void CadastrarFunc_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.None;
@@ -289,17 +312,20 @@ namespace UkraBar
 
         private void BtnUpload_Click(object sender, EventArgs e)
         {
-            OpenFileDialog dialog = new OpenFileDialog(); // Defini um dialog como o Novo
-            //Um Filtro de imagens que aceita apenas Png e Jpg.
-            dialog.Filter = "JPG Files(*.jpg)|*.jpg | PNG Files(*.png)|*png | AllFiles(*.*)|*.*";
 
-            if(dialog.ShowDialog() == DialogResult.OK)//Se o usúario der Ok no Filles mostrar diretório.
-            {
-                string foto = dialog.FileName.ToString();
-                BoxdFilesF.Text = foto;
-                ImagenFunc.ImageLocation = foto; 
+        }
 
-            }
+        private void DTgridFunc_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void DTgridFunc_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            BoxdIdF.Text = DTgridFunc.CurrentRow.Cells[1].Value.ToString();
+            BoxdNomeF.Text = DTgridFunc.CurrentRow.Cells[2].Value.ToString();
+            BoxdSenhaF.Text = DTgridFunc.CurrentRow.Cells[3].Value.ToString();
+            BoxdEmailF.Text = DTgridFunc.CurrentRow.Cells[4].Value.ToString();
         }
     }
 }
