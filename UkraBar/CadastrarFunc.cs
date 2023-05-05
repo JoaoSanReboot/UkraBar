@@ -4,6 +4,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using System.IO;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace UkraBar
@@ -14,7 +15,7 @@ namespace UkraBar
                                             //Setando comandos MySql para a contatenação.
 
         public MySqlConnection conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
-        private string connectionString = "SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;";
+        public string connectionString = "SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;";
         private MySqlCommand comando;
         private MySqlDataReader reader;
         private DataTable table;
@@ -224,11 +225,19 @@ namespace UkraBar
 
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
-            string inserirQuery = "INSERT INTO cadastro_funcionario (id_cadastro, nome_funcionario, senha_funcionario, email_funcionario) VALUES" +
-                "('" + BoxcId.Text + "', '" + BoxcNome.Text + "', '" + BoxcSenha.Text + "','" + BoxcEmail.Text + "')";
-            executarQuery(inserirQuery);//Executa o comando InserirQuery string
-            CarregarDados();//Carrega dados na tabela.
-            NovoFuncTimer.Start();
+            byte[] imagem_byte = null;
+
+            FileStream fStrem = new FileStream(this.BoxdFilesF.Text, FileMode.Open, FileAccess.Read);//Defini fStrem como Binário.
+
+            BinaryReader br = new BinaryReader(fStrem);//Coloca o fStream Dentro de um Leitor Binário.
+
+            imagem_byte = br.ReadBytes((int)fStrem.Length);//Defini que ele irá ler em Binário e salvará na array.
+
+            string inserirQuery = "INSERT INTO cadastro_funcionário (id_cadastro, foto, nome_foto, nome_funcionario, senha_funcionario, email_funcionario) VALUES" +
+                "('" + imagem_byte + "', '"+ BoxdFilesF.Text +"' '" + BoxcId.Text + "', '" + BoxcNome.Text + "', '" + BoxcSenha.Text + "','" + BoxcEmail.Text + "')";
+                executarQuery(inserirQuery);
+                CarregarDados();//Carrega dados na tabela.
+                NovoFuncTimer.Stop();
         }
 
         private void BtnDeletar_Click(object sender, EventArgs e)
@@ -283,6 +292,14 @@ namespace UkraBar
             OpenFileDialog dialog = new OpenFileDialog(); // Defini um dialog como o Novo
             //Um Filtro de imagens que aceita apenas Png e Jpg.
             dialog.Filter = "JPG Files(*.jpg)|*.jpg | PNG Files(*.png)|*png | AllFiles(*.*)|*.*";
+
+            if(dialog.ShowDialog() == DialogResult.OK)//Se o usúario der Ok no Filles mostrar diretório.
+            {
+                string foto = dialog.FileName.ToString();
+                BoxdFilesF.Text = foto;
+                ImagenFunc.ImageLocation = foto; 
+
+            }
         }
     }
 }
