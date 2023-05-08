@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarFunc));
             this.SideBarTime = new System.Windows.Forms.Timer(this.components);
             this.NovoFuncTimer = new System.Windows.Forms.Timer(this.components);
@@ -59,6 +59,7 @@
             this.BoxdIdF = new System.Windows.Forms.TextBox();
             this.panelFundoDT = new System.Windows.Forms.Panel();
             this.DTgridFunc = new System.Windows.Forms.DataGridView();
+            this.CheckBox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.paneltopbar = new System.Windows.Forms.Panel();
             this.MinimizarJanela = new System.Windows.Forms.Button();
             this.MaximizarJanela = new System.Windows.Forms.Button();
@@ -90,7 +91,6 @@
             this.pbFechar = new System.Windows.Forms.PictureBox();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.CheckBox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.pbFundo = new System.Windows.Forms.PictureBox();
             this.panelAviso.SuspendLayout();
             this.LayoutFundoDT.SuspendLayout();
@@ -224,6 +224,9 @@
             // 
             // LayoutFundoDT
             // 
+            this.LayoutFundoDT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.LayoutFundoDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
             this.LayoutFundoDT.Controls.Add(this.panelEditarFundo);
             this.LayoutFundoDT.Controls.Add(this.panelFundoDT);
@@ -239,9 +242,9 @@
             this.panelEditarFundo.Controls.Add(this.lblEmailF);
             this.panelEditarFundo.Controls.Add(this.BoxdEmailF);
             this.panelEditarFundo.Controls.Add(this.lblSenhaF);
-            this.panelEditarFundo.Controls.Add(this.BoxdSenhaF);
             this.panelEditarFundo.Controls.Add(this.lblNomeF);
             this.panelEditarFundo.Controls.Add(this.BoxdNomeF);
+            this.panelEditarFundo.Controls.Add(this.BoxdSenhaF);
             this.panelEditarFundo.Controls.Add(this.lblIdF);
             this.panelEditarFundo.Controls.Add(this.BoxdIdF);
             this.panelEditarFundo.Location = new System.Drawing.Point(3, 3);
@@ -274,7 +277,7 @@
             this.lblEmailF.AutoSize = true;
             this.lblEmailF.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmailF.ForeColor = System.Drawing.Color.White;
-            this.lblEmailF.Location = new System.Drawing.Point(468, 17);
+            this.lblEmailF.Location = new System.Drawing.Point(729, 18);
             this.lblEmailF.Name = "lblEmailF";
             this.lblEmailF.Size = new System.Drawing.Size(53, 21);
             this.lblEmailF.TabIndex = 45;
@@ -283,7 +286,7 @@
             // BoxdEmailF
             // 
             this.BoxdEmailF.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxdEmailF.Location = new System.Drawing.Point(372, 41);
+            this.BoxdEmailF.Location = new System.Drawing.Point(633, 42);
             this.BoxdEmailF.MaxLength = 100;
             this.BoxdEmailF.Name = "BoxdEmailF";
             this.BoxdEmailF.Size = new System.Drawing.Size(245, 29);
@@ -294,7 +297,7 @@
             this.lblSenhaF.AutoSize = true;
             this.lblSenhaF.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSenhaF.ForeColor = System.Drawing.Color.White;
-            this.lblSenhaF.Location = new System.Drawing.Point(726, 17);
+            this.lblSenhaF.Location = new System.Drawing.Point(466, 17);
             this.lblSenhaF.Name = "lblSenhaF";
             this.lblSenhaF.Size = new System.Drawing.Size(57, 21);
             this.lblSenhaF.TabIndex = 9;
@@ -303,7 +306,7 @@
             // BoxdSenhaF
             // 
             this.BoxdSenhaF.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxdSenhaF.Location = new System.Drawing.Point(632, 41);
+            this.BoxdSenhaF.Location = new System.Drawing.Point(374, 41);
             this.BoxdSenhaF.MaxLength = 100;
             this.BoxdSenhaF.Name = "BoxdSenhaF";
             this.BoxdSenhaF.Size = new System.Drawing.Size(245, 29);
@@ -367,37 +370,37 @@
             this.DTgridFunc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DTgridFunc.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DTgridFunc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTgridFunc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTgridFunc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.DTgridFunc.ColumnHeadersHeight = 30;
             this.DTgridFunc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DTgridFunc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CheckBox});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DTgridFunc.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DTgridFunc.DefaultCellStyle = dataGridViewCellStyle10;
             this.DTgridFunc.GridColor = System.Drawing.Color.Black;
             this.DTgridFunc.Location = new System.Drawing.Point(3, 3);
             this.DTgridFunc.Name = "DTgridFunc";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTgridFunc.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTgridFunc.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.DTgridFunc.RowHeadersWidth = 51;
             this.DTgridFunc.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.DTgridFunc.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
@@ -411,6 +414,16 @@
             this.DTgridFunc.TabIndex = 29;
             this.DTgridFunc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTgridFunc_CellContentClick);
             this.DTgridFunc.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DTgridFunc_CellMouseClick);
+            // 
+            // CheckBox
+            // 
+            this.CheckBox.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.CheckBox.FillWeight = 30.45685F;
+            this.CheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CheckBox.HeaderText = "Selecionar";
+            this.CheckBox.MinimumWidth = 6;
+            this.CheckBox.Name = "CheckBox";
+            this.CheckBox.Width = 70;
             // 
             // paneltopbar
             // 
@@ -426,6 +439,8 @@
             // 
             // MinimizarJanela
             // 
+            this.MinimizarJanela.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.MinimizarJanela.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.MinimizarJanela.FlatAppearance.BorderSize = 0;
             this.MinimizarJanela.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
@@ -441,6 +456,8 @@
             // 
             // MaximizarJanela
             // 
+            this.MaximizarJanela.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.MaximizarJanela.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.MaximizarJanela.FlatAppearance.BorderSize = 0;
             this.MaximizarJanela.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
@@ -456,6 +473,8 @@
             // 
             // FecharJanelaF
             // 
+            this.FecharJanelaF.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.FecharJanelaF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.FecharJanelaF.FlatAppearance.BorderSize = 0;
             this.FecharJanelaF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
@@ -842,10 +861,10 @@
             // dataGridViewImageColumn1
             // 
             this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle8.NullValue")));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle12.NullValue")));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridViewImageColumn1.FillWeight = 167.1073F;
             this.dataGridViewImageColumn1.HeaderText = "CEditar";
             this.dataGridViewImageColumn1.Image = global::UkraBar.Properties.Resources.pencil_16px;
@@ -865,19 +884,11 @@
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Width = 236;
             // 
-            // CheckBox
-            // 
-            this.CheckBox.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.CheckBox.FillWeight = 30.45685F;
-            this.CheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CheckBox.HeaderText = "Selecionar";
-            this.CheckBox.MinimumWidth = 6;
-            this.CheckBox.Name = "CheckBox";
-            this.CheckBox.Width = 70;
-            // 
             // pbFundo
             // 
-            this.pbFundo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbFundo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbFundo.Image = global::UkraBar.Properties.Resources.TelaFundo;
             this.pbFundo.Location = new System.Drawing.Point(0, 0);
             this.pbFundo.Name = "pbFundo";

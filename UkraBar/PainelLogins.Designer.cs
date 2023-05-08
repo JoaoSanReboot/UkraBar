@@ -166,7 +166,7 @@
             // 
             this.BtnFuncionario1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnFuncionario1.Image = global::UkraBar.Properties.Resources.BtnEntrar;
-            this.BtnFuncionario1.Location = new System.Drawing.Point(143, 589);
+            this.BtnFuncionario1.Location = new System.Drawing.Point(1033, 589);
             this.BtnFuncionario1.Name = "BtnFuncionario1";
             this.BtnFuncionario1.Size = new System.Drawing.Size(196, 50);
             this.BtnFuncionario1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -178,7 +178,7 @@
             // 
             this.BtnAdm1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnAdm1.Image = global::UkraBar.Properties.Resources.BtnEntrar;
-            this.BtnAdm1.Location = new System.Drawing.Point(1026, 589);
+            this.BtnAdm1.Location = new System.Drawing.Point(156, 589);
             this.BtnAdm1.Name = "BtnAdm1";
             this.BtnAdm1.Size = new System.Drawing.Size(196, 50);
             this.BtnAdm1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;

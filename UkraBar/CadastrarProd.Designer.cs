@@ -1,6 +1,6 @@
 ﻿namespace UkraBar
 {
-    partial class CadastrarProdP
+    partial class CadastrarProd
     {
         /// <summary>
         /// Required designer variable.
@@ -28,375 +28,509 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarProdP));
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarProd));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.sideBarMenuP = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelMenuP = new System.Windows.Forms.Panel();
-            this.lblMenuP = new System.Windows.Forms.Label();
-            this.pbMenuP = new System.Windows.Forms.PictureBox();
-            this.panelShowConfigP = new System.Windows.Forms.Panel();
-            this.BtnEditarP = new System.Windows.Forms.Button();
-            this.BtnNovoFuncP = new System.Windows.Forms.Button();
-            this.BtnDeletarP = new System.Windows.Forms.Button();
-            this.BtnEscuroP = new System.Windows.Forms.Button();
-            this.BtnConfiguraçõesP = new System.Windows.Forms.Button();
-            this.BtnClaroP = new System.Windows.Forms.Button();
-            this.panelFiltroP = new System.Windows.Forms.Panel();
-            this.BtnFiltroP = new System.Windows.Forms.Button();
-            this.panelAjudaP = new System.Windows.Forms.Panel();
-            this.BtnAjudaP = new System.Windows.Forms.Button();
-            this.panelSobreP = new System.Windows.Forms.Panel();
-            this.BtnSobreP = new System.Windows.Forms.Button();
-            this.panelVoltarP = new System.Windows.Forms.Panel();
-            this.BtnVoltarP = new System.Windows.Forms.Button();
-            this.BarSideTopP = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelLabelP = new System.Windows.Forms.Panel();
-            this.lblFuncP = new System.Windows.Forms.Label();
-            this.panelBuscarP = new System.Windows.Forms.Panel();
-            this.btnBuscarP = new System.Windows.Forms.Button();
-            this.BoxBuscarP = new System.Windows.Forms.TextBox();
-            this.pictureBox5P = new System.Windows.Forms.PictureBox();
-            this.LayoutFundoDTP = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelEditarFundoP = new System.Windows.Forms.Panel();
-            this.BtnPincelP = new System.Windows.Forms.Button();
-            this.lblEmailP = new System.Windows.Forms.Label();
-            this.BoxdEmailP = new System.Windows.Forms.TextBox();
-            this.lblSenhaP = new System.Windows.Forms.Label();
-            this.BoxdSenhaP = new System.Windows.Forms.TextBox();
-            this.lblNomeP = new System.Windows.Forms.Label();
-            this.BoxdNomeP = new System.Windows.Forms.TextBox();
-            this.lblIdP = new System.Windows.Forms.Label();
-            this.BoxdIdP = new System.Windows.Forms.TextBox();
-            this.panelFundoDTP = new System.Windows.Forms.Panel();
+            this.BarSideTop = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelLabel = new System.Windows.Forms.Panel();
+            this.lblProd = new System.Windows.Forms.Label();
+            this.panelBuscar = new System.Windows.Forms.Panel();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.BoxBuscar = new System.Windows.Forms.TextBox();
+            this.FundoPesquisar = new System.Windows.Forms.PictureBox();
+            this.sideBarMenuD = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.lblMenu = new System.Windows.Forms.Label();
+            this.pbMenu = new System.Windows.Forms.PictureBox();
+            this.panelShowConfig = new System.Windows.Forms.Panel();
+            this.BtnNovoProd = new System.Windows.Forms.Button();
+            this.BtnEditar = new System.Windows.Forms.Button();
+            this.BtnDeletar = new System.Windows.Forms.Button();
+            this.BtnConfigurações = new System.Windows.Forms.Button();
+            this.BtnSobre = new System.Windows.Forms.Button();
+            this.BtnAjuda = new System.Windows.Forms.Button();
+            this.BtnVoltar = new System.Windows.Forms.Button();
+            this.paneltopbar = new System.Windows.Forms.Panel();
+            this.MinimizarJanela = new System.Windows.Forms.Button();
+            this.MaximizarJanela = new System.Windows.Forms.Button();
+            this.FecharJanelaF = new System.Windows.Forms.Button();
+            this.TimerSideBar = new System.Windows.Forms.Timer(this.components);
+            this.NovoProdBar = new System.Windows.Forms.Timer(this.components);
+            this.PanelCadastrarProd = new System.Windows.Forms.Panel();
+            this.BoxdFilesF = new System.Windows.Forms.TextBox();
+            this.BtnUpload = new System.Windows.Forms.Button();
+            this.ImagenFunc = new System.Windows.Forms.PictureBox();
+            this.BtnSalvar = new System.Windows.Forms.Button();
+            this.BoxcEmail = new System.Windows.Forms.TextBox();
+            this.BoxcSenha = new System.Windows.Forms.TextBox();
+            this.BoxcId = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.BoxcNome = new System.Windows.Forms.TextBox();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.panelAviso = new System.Windows.Forms.Panel();
+            this.lblAviso = new System.Windows.Forms.Label();
+            this.lblSenha = new System.Windows.Forms.Label();
+            this.pbFechar = new System.Windows.Forms.PictureBox();
+            this.lblId = new System.Windows.Forms.Label();
+            this.LayoutFundoDT = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelEditarFundo = new System.Windows.Forms.Panel();
+            this.BtnPincel = new System.Windows.Forms.Button();
+            this.lblEmailF = new System.Windows.Forms.Label();
+            this.BoxdEmailF = new System.Windows.Forms.TextBox();
+            this.lblSenhaF = new System.Windows.Forms.Label();
+            this.lblNomeF = new System.Windows.Forms.Label();
+            this.BoxdNomeF = new System.Windows.Forms.TextBox();
+            this.BoxdSenhaF = new System.Windows.Forms.TextBox();
+            this.lblIdF = new System.Windows.Forms.Label();
+            this.BoxdIdF = new System.Windows.Forms.TextBox();
+            this.panelFundoDT = new System.Windows.Forms.Panel();
             this.DTgridProd = new System.Windows.Forms.DataGridView();
-            this.CheckBoxP = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.sideBarMenuP.SuspendLayout();
-            this.panelMenuP.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMenuP)).BeginInit();
-            this.panelShowConfigP.SuspendLayout();
-            this.panelFiltroP.SuspendLayout();
-            this.panelAjudaP.SuspendLayout();
-            this.panelSobreP.SuspendLayout();
-            this.panelVoltarP.SuspendLayout();
-            this.BarSideTopP.SuspendLayout();
-            this.panelLabelP.SuspendLayout();
-            this.panelBuscarP.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5P)).BeginInit();
-            this.LayoutFundoDTP.SuspendLayout();
-            this.panelEditarFundoP.SuspendLayout();
-            this.panelFundoDTP.SuspendLayout();
+            this.CheckBox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.BarSideTop.SuspendLayout();
+            this.panelLabel.SuspendLayout();
+            this.panelBuscar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FundoPesquisar)).BeginInit();
+            this.sideBarMenuD.SuspendLayout();
+            this.panelMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
+            this.panelShowConfig.SuspendLayout();
+            this.paneltopbar.SuspendLayout();
+            this.PanelCadastrarProd.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenFunc)).BeginInit();
+            this.panelAviso.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFechar)).BeginInit();
+            this.LayoutFundoDT.SuspendLayout();
+            this.panelEditarFundo.SuspendLayout();
+            this.panelFundoDT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DTgridProd)).BeginInit();
             this.SuspendLayout();
             // 
-            // sideBarMenuP
-            // 
-            this.sideBarMenuP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.sideBarMenuP.Controls.Add(this.panelMenuP);
-            this.sideBarMenuP.Controls.Add(this.panelShowConfigP);
-            this.sideBarMenuP.Controls.Add(this.panelFiltroP);
-            this.sideBarMenuP.Controls.Add(this.panelAjudaP);
-            this.sideBarMenuP.Controls.Add(this.panelSobreP);
-            this.sideBarMenuP.Controls.Add(this.panelVoltarP);
-            resources.ApplyResources(this.sideBarMenuP, "sideBarMenuP");
-            this.sideBarMenuP.Name = "sideBarMenuP";
-            // 
-            // panelMenuP
-            // 
-            this.panelMenuP.Controls.Add(this.lblMenuP);
-            this.panelMenuP.Controls.Add(this.pbMenuP);
-            resources.ApplyResources(this.panelMenuP, "panelMenuP");
-            this.panelMenuP.Name = "panelMenuP";
-            // 
-            // lblMenuP
-            // 
-            resources.ApplyResources(this.lblMenuP, "lblMenuP");
-            this.lblMenuP.ForeColor = System.Drawing.Color.White;
-            this.lblMenuP.Name = "lblMenuP";
-            // 
-            // pbMenuP
-            // 
-            this.pbMenuP.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbMenuP.Image = global::UkraBar.Properties.Resources.squared_menu_24px;
-            resources.ApplyResources(this.pbMenuP, "pbMenuP");
-            this.pbMenuP.Name = "pbMenuP";
-            this.pbMenuP.TabStop = false;
-            // 
-            // panelShowConfigP
-            // 
-            this.panelShowConfigP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.panelShowConfigP.Controls.Add(this.BtnEditarP);
-            this.panelShowConfigP.Controls.Add(this.BtnNovoFuncP);
-            this.panelShowConfigP.Controls.Add(this.BtnDeletarP);
-            this.panelShowConfigP.Controls.Add(this.BtnEscuroP);
-            this.panelShowConfigP.Controls.Add(this.BtnConfiguraçõesP);
-            this.panelShowConfigP.Controls.Add(this.BtnClaroP);
-            resources.ApplyResources(this.panelShowConfigP, "panelShowConfigP");
-            this.panelShowConfigP.Name = "panelShowConfigP";
-            // 
-            // BtnEditarP
-            // 
-            this.BtnEditarP.BackColor = System.Drawing.Color.DarkCyan;
-            this.BtnEditarP.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtnEditarP, "BtnEditarP");
-            this.BtnEditarP.ForeColor = System.Drawing.Color.White;
-            this.BtnEditarP.Image = global::UkraBar.Properties.Resources.pencil_24px;
-            this.BtnEditarP.Name = "BtnEditarP";
-            this.BtnEditarP.UseVisualStyleBackColor = false;
-            // 
-            // BtnNovoFuncP
-            // 
-            this.BtnNovoFuncP.BackColor = System.Drawing.Color.Green;
-            this.BtnNovoFuncP.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtnNovoFuncP, "BtnNovoFuncP");
-            this.BtnNovoFuncP.ForeColor = System.Drawing.Color.White;
-            this.BtnNovoFuncP.Image = global::UkraBar.Properties.Resources.add_30px;
-            this.BtnNovoFuncP.Name = "BtnNovoFuncP";
-            this.BtnNovoFuncP.UseVisualStyleBackColor = false;
-            // 
-            // BtnDeletarP
-            // 
-            this.BtnDeletarP.BackColor = System.Drawing.Color.Red;
-            this.BtnDeletarP.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtnDeletarP, "BtnDeletarP");
-            this.BtnDeletarP.ForeColor = System.Drawing.Color.White;
-            this.BtnDeletarP.Image = global::UkraBar.Properties.Resources.trash_26px;
-            this.BtnDeletarP.Name = "BtnDeletarP";
-            this.BtnDeletarP.UseVisualStyleBackColor = false;
-            // 
-            // BtnEscuroP
-            // 
-            this.BtnEscuroP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.BtnEscuroP.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtnEscuroP, "BtnEscuroP");
-            this.BtnEscuroP.ForeColor = System.Drawing.Color.White;
-            this.BtnEscuroP.Image = global::UkraBar.Properties.Resources.toggleon_24px;
-            this.BtnEscuroP.Name = "BtnEscuroP";
-            this.BtnEscuroP.UseVisualStyleBackColor = false;
-            // 
-            // BtnConfiguraçõesP
-            // 
-            this.BtnConfiguraçõesP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnConfiguraçõesP.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtnConfiguraçõesP, "BtnConfiguraçõesP");
-            this.BtnConfiguraçõesP.ForeColor = System.Drawing.Color.White;
-            this.BtnConfiguraçõesP.Image = global::UkraBar.Properties.Resources.engineering_30px;
-            this.BtnConfiguraçõesP.Name = "BtnConfiguraçõesP";
-            this.BtnConfiguraçõesP.UseVisualStyleBackColor = false;
-            // 
-            // BtnClaroP
-            // 
-            this.BtnClaroP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.BtnClaroP.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtnClaroP, "BtnClaroP");
-            this.BtnClaroP.ForeColor = System.Drawing.Color.White;
-            this.BtnClaroP.Image = global::UkraBar.Properties.Resources.toggle_off_24px;
-            this.BtnClaroP.Name = "BtnClaroP";
-            this.BtnClaroP.UseVisualStyleBackColor = false;
-            // 
-            // panelFiltroP
-            // 
-            this.panelFiltroP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.panelFiltroP.Controls.Add(this.BtnFiltroP);
-            resources.ApplyResources(this.panelFiltroP, "panelFiltroP");
-            this.panelFiltroP.Name = "panelFiltroP";
-            // 
-            // BtnFiltroP
-            // 
-            this.BtnFiltroP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnFiltroP.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtnFiltroP, "BtnFiltroP");
-            this.BtnFiltroP.ForeColor = System.Drawing.Color.White;
-            this.BtnFiltroP.Image = global::UkraBar.Properties.Resources.filtered_file_24px;
-            this.BtnFiltroP.Name = "BtnFiltroP";
-            this.BtnFiltroP.UseVisualStyleBackColor = false;
-            // 
-            // panelAjudaP
-            // 
-            this.panelAjudaP.Controls.Add(this.BtnAjudaP);
-            resources.ApplyResources(this.panelAjudaP, "panelAjudaP");
-            this.panelAjudaP.Name = "panelAjudaP";
-            // 
-            // BtnAjudaP
-            // 
-            this.BtnAjudaP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnAjudaP.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtnAjudaP, "BtnAjudaP");
-            this.BtnAjudaP.ForeColor = System.Drawing.Color.White;
-            this.BtnAjudaP.Image = global::UkraBar.Properties.Resources.ask_question_24px;
-            this.BtnAjudaP.Name = "BtnAjudaP";
-            this.BtnAjudaP.UseVisualStyleBackColor = false;
-            // 
-            // panelSobreP
-            // 
-            this.panelSobreP.Controls.Add(this.BtnSobreP);
-            resources.ApplyResources(this.panelSobreP, "panelSobreP");
-            this.panelSobreP.Name = "panelSobreP";
-            // 
-            // BtnSobreP
-            // 
-            this.BtnSobreP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnSobreP.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtnSobreP, "BtnSobreP");
-            this.BtnSobreP.ForeColor = System.Drawing.Color.White;
-            this.BtnSobreP.Image = global::UkraBar.Properties.Resources.info_24px;
-            this.BtnSobreP.Name = "BtnSobreP";
-            this.BtnSobreP.UseVisualStyleBackColor = false;
-            // 
-            // panelVoltarP
-            // 
-            this.panelVoltarP.Controls.Add(this.BtnVoltarP);
-            resources.ApplyResources(this.panelVoltarP, "panelVoltarP");
-            this.panelVoltarP.Name = "panelVoltarP";
-            // 
-            // BtnVoltarP
-            // 
-            this.BtnVoltarP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnVoltarP.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtnVoltarP, "BtnVoltarP");
-            this.BtnVoltarP.ForeColor = System.Drawing.Color.White;
-            this.BtnVoltarP.Image = global::UkraBar.Properties.Resources.reply_arrow_24px;
-            this.BtnVoltarP.Name = "BtnVoltarP";
-            this.BtnVoltarP.UseVisualStyleBackColor = false;
-            // 
-            // BarSideTopP
-            // 
-            this.BarSideTopP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BarSideTopP.Controls.Add(this.panelLabelP);
-            this.BarSideTopP.Controls.Add(this.panelBuscarP);
-            resources.ApplyResources(this.BarSideTopP, "BarSideTopP");
-            this.BarSideTopP.Name = "BarSideTopP";
-            // 
-            // panelLabelP
-            // 
-            this.panelLabelP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.panelLabelP.Controls.Add(this.lblFuncP);
-            resources.ApplyResources(this.panelLabelP, "panelLabelP");
-            this.panelLabelP.Name = "panelLabelP";
-            // 
-            // lblFuncP
-            // 
-            resources.ApplyResources(this.lblFuncP, "lblFuncP");
-            this.lblFuncP.ForeColor = System.Drawing.Color.White;
-            this.lblFuncP.Name = "lblFuncP";
-            // 
-            // panelBuscarP
-            // 
-            this.panelBuscarP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.panelBuscarP.Controls.Add(this.btnBuscarP);
-            this.panelBuscarP.Controls.Add(this.BoxBuscarP);
-            this.panelBuscarP.Controls.Add(this.pictureBox5P);
-            resources.ApplyResources(this.panelBuscarP, "panelBuscarP");
-            this.panelBuscarP.Name = "panelBuscarP";
-            // 
-            // btnBuscarP
-            // 
-            this.btnBuscarP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnBuscarP.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btnBuscarP, "btnBuscarP");
-            this.btnBuscarP.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarP.Image = global::UkraBar.Properties.Resources.search_more_24px;
-            this.btnBuscarP.Name = "btnBuscarP";
-            this.btnBuscarP.UseVisualStyleBackColor = false;
-            // 
-            // BoxBuscarP
-            // 
-            this.BoxBuscarP.BackColor = System.Drawing.Color.White;
-            this.BoxBuscarP.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.BoxBuscarP, "BoxBuscarP");
-            this.BoxBuscarP.Name = "BoxBuscarP";
-            this.BoxBuscarP.Tag = "";
-            // 
-            // pictureBox5P
-            // 
-            this.pictureBox5P.Image = global::UkraBar.Properties.Resources.BoxBranca;
-            resources.ApplyResources(this.pictureBox5P, "pictureBox5P");
-            this.pictureBox5P.Name = "pictureBox5P";
-            this.pictureBox5P.TabStop = false;
-            // 
-            // LayoutFundoDTP
-            // 
-            this.LayoutFundoDTP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.LayoutFundoDTP.Controls.Add(this.panelEditarFundoP);
-            this.LayoutFundoDTP.Controls.Add(this.panelFundoDTP);
-            resources.ApplyResources(this.LayoutFundoDTP, "LayoutFundoDTP");
-            this.LayoutFundoDTP.Name = "LayoutFundoDTP";
-            // 
-            // panelEditarFundoP
-            // 
-            this.panelEditarFundoP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.panelEditarFundoP.Controls.Add(this.BtnPincelP);
-            this.panelEditarFundoP.Controls.Add(this.lblEmailP);
-            this.panelEditarFundoP.Controls.Add(this.BoxdEmailP);
-            this.panelEditarFundoP.Controls.Add(this.lblSenhaP);
-            this.panelEditarFundoP.Controls.Add(this.BoxdSenhaP);
-            this.panelEditarFundoP.Controls.Add(this.lblNomeP);
-            this.panelEditarFundoP.Controls.Add(this.BoxdNomeP);
-            this.panelEditarFundoP.Controls.Add(this.lblIdP);
-            this.panelEditarFundoP.Controls.Add(this.BoxdIdP);
-            resources.ApplyResources(this.panelEditarFundoP, "panelEditarFundoP");
-            this.panelEditarFundoP.Name = "panelEditarFundoP";
-            // 
-            // BtnPincelP
-            // 
-            this.BtnPincelP.BackColor = System.Drawing.Color.DarkCyan;
-            this.BtnPincelP.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtnPincelP, "BtnPincelP");
-            this.BtnPincelP.ForeColor = System.Drawing.Color.White;
-            this.BtnPincelP.Image = global::UkraBar.Properties.Resources.pencil_24px;
-            this.BtnPincelP.Name = "BtnPincelP";
-            this.BtnPincelP.UseVisualStyleBackColor = false;
-            // 
-            // lblEmailP
-            // 
-            resources.ApplyResources(this.lblEmailP, "lblEmailP");
-            this.lblEmailP.ForeColor = System.Drawing.Color.White;
-            this.lblEmailP.Name = "lblEmailP";
-            // 
-            // BoxdEmailP
-            // 
-            resources.ApplyResources(this.BoxdEmailP, "BoxdEmailP");
-            this.BoxdEmailP.Name = "BoxdEmailP";
-            // 
-            // lblSenhaP
-            // 
-            resources.ApplyResources(this.lblSenhaP, "lblSenhaP");
-            this.lblSenhaP.ForeColor = System.Drawing.Color.White;
-            this.lblSenhaP.Name = "lblSenhaP";
-            // 
-            // BoxdSenhaP
-            // 
-            resources.ApplyResources(this.BoxdSenhaP, "BoxdSenhaP");
-            this.BoxdSenhaP.Name = "BoxdSenhaP";
-            // 
-            // lblNomeP
-            // 
-            resources.ApplyResources(this.lblNomeP, "lblNomeP");
-            this.lblNomeP.ForeColor = System.Drawing.Color.White;
-            this.lblNomeP.Name = "lblNomeP";
-            // 
-            // BoxdNomeP
-            // 
-            resources.ApplyResources(this.BoxdNomeP, "BoxdNomeP");
-            this.BoxdNomeP.Name = "BoxdNomeP";
-            // 
-            // lblIdP
-            // 
-            resources.ApplyResources(this.lblIdP, "lblIdP");
-            this.lblIdP.ForeColor = System.Drawing.Color.White;
-            this.lblIdP.Name = "lblIdP";
-            // 
-            // BoxdIdP
-            // 
-            resources.ApplyResources(this.BoxdIdP, "BoxdIdP");
-            this.BoxdIdP.Name = "BoxdIdP";
-            // 
-            // panelFundoDTP
-            // 
-            this.panelFundoDTP.Controls.Add(this.DTgridProd);
-            resources.ApplyResources(this.panelFundoDTP, "panelFundoDTP");
-            this.panelFundoDTP.Name = "panelFundoDTP";
+            // BarSideTop
+            // 
+            this.BarSideTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BarSideTop.Controls.Add(this.panelLabel);
+            this.BarSideTop.Controls.Add(this.panelBuscar);
+            resources.ApplyResources(this.BarSideTop, "BarSideTop");
+            this.BarSideTop.Name = "BarSideTop";
+            // 
+            // panelLabel
+            // 
+            this.panelLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.panelLabel.Controls.Add(this.lblProd);
+            resources.ApplyResources(this.panelLabel, "panelLabel");
+            this.panelLabel.Name = "panelLabel";
+            // 
+            // lblProd
+            // 
+            resources.ApplyResources(this.lblProd, "lblProd");
+            this.lblProd.ForeColor = System.Drawing.Color.White;
+            this.lblProd.Name = "lblProd";
+            // 
+            // panelBuscar
+            // 
+            this.panelBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.panelBuscar.Controls.Add(this.btnBuscar);
+            this.panelBuscar.Controls.Add(this.BoxBuscar);
+            this.panelBuscar.Controls.Add(this.FundoPesquisar);
+            resources.ApplyResources(this.panelBuscar, "panelBuscar");
+            this.panelBuscar.Name = "panelBuscar";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnBuscar, "btnBuscar");
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Image = global::UkraBar.Properties.Resources.search_more_24px;
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // BoxBuscar
+            // 
+            this.BoxBuscar.BackColor = System.Drawing.Color.White;
+            this.BoxBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.BoxBuscar, "BoxBuscar");
+            this.BoxBuscar.Name = "BoxBuscar";
+            this.BoxBuscar.Tag = "";
+            // 
+            // FundoPesquisar
+            // 
+            this.FundoPesquisar.Image = global::UkraBar.Properties.Resources.BoxBranca;
+            resources.ApplyResources(this.FundoPesquisar, "FundoPesquisar");
+            this.FundoPesquisar.Name = "FundoPesquisar";
+            this.FundoPesquisar.TabStop = false;
+            // 
+            // sideBarMenuD
+            // 
+            this.sideBarMenuD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.sideBarMenuD.Controls.Add(this.panelMenu);
+            this.sideBarMenuD.Controls.Add(this.panelShowConfig);
+            this.sideBarMenuD.Controls.Add(this.BtnSobre);
+            this.sideBarMenuD.Controls.Add(this.BtnAjuda);
+            this.sideBarMenuD.Controls.Add(this.BtnVoltar);
+            resources.ApplyResources(this.sideBarMenuD, "sideBarMenuD");
+            this.sideBarMenuD.Name = "sideBarMenuD";
+            // 
+            // panelMenu
+            // 
+            this.panelMenu.Controls.Add(this.lblMenu);
+            this.panelMenu.Controls.Add(this.pbMenu);
+            resources.ApplyResources(this.panelMenu, "panelMenu");
+            this.panelMenu.Name = "panelMenu";
+            // 
+            // lblMenu
+            // 
+            resources.ApplyResources(this.lblMenu, "lblMenu");
+            this.lblMenu.ForeColor = System.Drawing.Color.White;
+            this.lblMenu.Name = "lblMenu";
+            // 
+            // pbMenu
+            // 
+            this.pbMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbMenu.Image = global::UkraBar.Properties.Resources.squared_menu_24px;
+            resources.ApplyResources(this.pbMenu, "pbMenu");
+            this.pbMenu.Name = "pbMenu";
+            this.pbMenu.TabStop = false;
+            this.pbMenu.Click += new System.EventHandler(this.pbMenu_Click);
+            // 
+            // panelShowConfig
+            // 
+            this.panelShowConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.panelShowConfig.Controls.Add(this.BtnDeletar);
+            this.panelShowConfig.Controls.Add(this.BtnNovoProd);
+            this.panelShowConfig.Controls.Add(this.BtnEditar);
+            this.panelShowConfig.Controls.Add(this.BtnConfigurações);
+            resources.ApplyResources(this.panelShowConfig, "panelShowConfig");
+            this.panelShowConfig.Name = "panelShowConfig";
+            // 
+            // BtnNovoProd
+            // 
+            this.BtnNovoProd.BackColor = System.Drawing.Color.Green;
+            this.BtnNovoProd.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnNovoProd, "BtnNovoProd");
+            this.BtnNovoProd.ForeColor = System.Drawing.Color.White;
+            this.BtnNovoProd.Image = global::UkraBar.Properties.Resources.add_30px;
+            this.BtnNovoProd.Name = "BtnNovoProd";
+            this.BtnNovoProd.UseVisualStyleBackColor = false;
+            this.BtnNovoProd.Click += new System.EventHandler(this.BtnNovoProd_Click);
+            // 
+            // BtnEditar
+            // 
+            this.BtnEditar.BackColor = System.Drawing.Color.DarkCyan;
+            this.BtnEditar.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnEditar, "BtnEditar");
+            this.BtnEditar.ForeColor = System.Drawing.Color.White;
+            this.BtnEditar.Image = global::UkraBar.Properties.Resources.pencil_24px;
+            this.BtnEditar.Name = "BtnEditar";
+            this.BtnEditar.UseVisualStyleBackColor = false;
+            // 
+            // BtnDeletar
+            // 
+            this.BtnDeletar.BackColor = System.Drawing.Color.Red;
+            this.BtnDeletar.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnDeletar, "BtnDeletar");
+            this.BtnDeletar.ForeColor = System.Drawing.Color.White;
+            this.BtnDeletar.Image = global::UkraBar.Properties.Resources.trash_26px;
+            this.BtnDeletar.Name = "BtnDeletar";
+            this.BtnDeletar.UseVisualStyleBackColor = false;
+            this.BtnDeletar.Click += new System.EventHandler(this.BtnDeletar_Click);
+            // 
+            // BtnConfigurações
+            // 
+            this.BtnConfigurações.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnConfigurações.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnConfigurações, "BtnConfigurações");
+            this.BtnConfigurações.ForeColor = System.Drawing.Color.White;
+            this.BtnConfigurações.Image = global::UkraBar.Properties.Resources.engineering_30px;
+            this.BtnConfigurações.Name = "BtnConfigurações";
+            this.BtnConfigurações.UseVisualStyleBackColor = false;
+            this.BtnConfigurações.Click += new System.EventHandler(this.BtnConfigurações_Click_1);
+            // 
+            // BtnSobre
+            // 
+            this.BtnSobre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnSobre.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnSobre, "BtnSobre");
+            this.BtnSobre.ForeColor = System.Drawing.Color.White;
+            this.BtnSobre.Image = global::UkraBar.Properties.Resources.info_24px;
+            this.BtnSobre.Name = "BtnSobre";
+            this.BtnSobre.UseVisualStyleBackColor = false;
+            // 
+            // BtnAjuda
+            // 
+            this.BtnAjuda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnAjuda.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnAjuda, "BtnAjuda");
+            this.BtnAjuda.ForeColor = System.Drawing.Color.White;
+            this.BtnAjuda.Image = global::UkraBar.Properties.Resources.ask_question_24px;
+            this.BtnAjuda.Name = "BtnAjuda";
+            this.BtnAjuda.UseVisualStyleBackColor = false;
+            // 
+            // BtnVoltar
+            // 
+            this.BtnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnVoltar.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnVoltar, "BtnVoltar");
+            this.BtnVoltar.ForeColor = System.Drawing.Color.White;
+            this.BtnVoltar.Image = global::UkraBar.Properties.Resources.reply_arrow_24px;
+            this.BtnVoltar.Name = "BtnVoltar";
+            this.BtnVoltar.UseVisualStyleBackColor = false;
+            this.BtnVoltar.Click += new System.EventHandler(this.BtnVoltar_Click);
+            // 
+            // paneltopbar
+            // 
+            this.paneltopbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.paneltopbar.Controls.Add(this.MinimizarJanela);
+            this.paneltopbar.Controls.Add(this.MaximizarJanela);
+            this.paneltopbar.Controls.Add(this.FecharJanelaF);
+            resources.ApplyResources(this.paneltopbar, "paneltopbar");
+            this.paneltopbar.Name = "paneltopbar";
+            // 
+            // MinimizarJanela
+            // 
+            resources.ApplyResources(this.MinimizarJanela, "MinimizarJanela");
+            this.MinimizarJanela.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.MinimizarJanela.FlatAppearance.BorderSize = 0;
+            this.MinimizarJanela.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.MinimizarJanela.Image = global::UkraBar.Properties.Resources.minimize_window_24px;
+            this.MinimizarJanela.Name = "MinimizarJanela";
+            this.MinimizarJanela.UseVisualStyleBackColor = false;
+            this.MinimizarJanela.Click += new System.EventHandler(this.MinimizarJanela_Click);
+            // 
+            // MaximizarJanela
+            // 
+            resources.ApplyResources(this.MaximizarJanela, "MaximizarJanela");
+            this.MaximizarJanela.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.MaximizarJanela.FlatAppearance.BorderSize = 0;
+            this.MaximizarJanela.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.MaximizarJanela.Image = global::UkraBar.Properties.Resources.maximize_window_24px;
+            this.MaximizarJanela.Name = "MaximizarJanela";
+            this.MaximizarJanela.UseVisualStyleBackColor = false;
+            this.MaximizarJanela.Click += new System.EventHandler(this.MaximizarJanela_Click);
+            // 
+            // FecharJanelaF
+            // 
+            resources.ApplyResources(this.FecharJanelaF, "FecharJanelaF");
+            this.FecharJanelaF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.FecharJanelaF.FlatAppearance.BorderSize = 0;
+            this.FecharJanelaF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.FecharJanelaF.Image = global::UkraBar.Properties.Resources.close_window_24px1;
+            this.FecharJanelaF.Name = "FecharJanelaF";
+            this.FecharJanelaF.UseVisualStyleBackColor = false;
+            this.FecharJanelaF.Click += new System.EventHandler(this.FecharJanelaF_Click);
+            // 
+            // TimerSideBar
+            // 
+            this.TimerSideBar.Interval = 10;
+            this.TimerSideBar.Tick += new System.EventHandler(this.TimerSideBar_Tick);
+            // 
+            // NovoProdBar
+            // 
+            this.NovoProdBar.Interval = 10;
+            this.NovoProdBar.Tick += new System.EventHandler(this.NovoProdBar_Tick);
+            // 
+            // PanelCadastrarProd
+            // 
+            this.PanelCadastrarProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.PanelCadastrarProd.Controls.Add(this.BoxdFilesF);
+            this.PanelCadastrarProd.Controls.Add(this.BtnUpload);
+            this.PanelCadastrarProd.Controls.Add(this.ImagenFunc);
+            this.PanelCadastrarProd.Controls.Add(this.BtnSalvar);
+            this.PanelCadastrarProd.Controls.Add(this.BoxcEmail);
+            this.PanelCadastrarProd.Controls.Add(this.BoxcSenha);
+            this.PanelCadastrarProd.Controls.Add(this.BoxcId);
+            this.PanelCadastrarProd.Controls.Add(this.lblEmail);
+            this.PanelCadastrarProd.Controls.Add(this.BoxcNome);
+            this.PanelCadastrarProd.Controls.Add(this.lblNome);
+            this.PanelCadastrarProd.Controls.Add(this.panelAviso);
+            this.PanelCadastrarProd.Controls.Add(this.lblSenha);
+            this.PanelCadastrarProd.Controls.Add(this.pbFechar);
+            this.PanelCadastrarProd.Controls.Add(this.lblId);
+            resources.ApplyResources(this.PanelCadastrarProd, "PanelCadastrarProd");
+            this.PanelCadastrarProd.Name = "PanelCadastrarProd";
+            // 
+            // BoxdFilesF
+            // 
+            resources.ApplyResources(this.BoxdFilesF, "BoxdFilesF");
+            this.BoxdFilesF.Name = "BoxdFilesF";
+            // 
+            // BtnUpload
+            // 
+            this.BtnUpload.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BtnUpload.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnUpload, "BtnUpload");
+            this.BtnUpload.ForeColor = System.Drawing.Color.White;
+            this.BtnUpload.Image = global::UkraBar.Properties.Resources.upload_32px;
+            this.BtnUpload.Name = "BtnUpload";
+            this.BtnUpload.UseVisualStyleBackColor = false;
+            // 
+            // ImagenFunc
+            // 
+            this.ImagenFunc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.ImagenFunc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.ImagenFunc, "ImagenFunc");
+            this.ImagenFunc.Name = "ImagenFunc";
+            this.ImagenFunc.TabStop = false;
+            // 
+            // BtnSalvar
+            // 
+            this.BtnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BtnSalvar.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnSalvar, "BtnSalvar");
+            this.BtnSalvar.ForeColor = System.Drawing.Color.White;
+            this.BtnSalvar.Image = global::UkraBar.Properties.Resources.Checkmark_24px;
+            this.BtnSalvar.Name = "BtnSalvar";
+            this.BtnSalvar.UseVisualStyleBackColor = false;
+            // 
+            // BoxcEmail
+            // 
+            resources.ApplyResources(this.BoxcEmail, "BoxcEmail");
+            this.BoxcEmail.Name = "BoxcEmail";
+            // 
+            // BoxcSenha
+            // 
+            resources.ApplyResources(this.BoxcSenha, "BoxcSenha");
+            this.BoxcSenha.Name = "BoxcSenha";
+            // 
+            // BoxcId
+            // 
+            resources.ApplyResources(this.BoxcId, "BoxcId");
+            this.BoxcId.Name = "BoxcId";
+            // 
+            // lblEmail
+            // 
+            resources.ApplyResources(this.lblEmail, "lblEmail");
+            this.lblEmail.ForeColor = System.Drawing.Color.White;
+            this.lblEmail.Name = "lblEmail";
+            // 
+            // BoxcNome
+            // 
+            resources.ApplyResources(this.BoxcNome, "BoxcNome");
+            this.BoxcNome.Name = "BoxcNome";
+            // 
+            // lblNome
+            // 
+            resources.ApplyResources(this.lblNome, "lblNome");
+            this.lblNome.ForeColor = System.Drawing.Color.White;
+            this.lblNome.Name = "lblNome";
+            // 
+            // panelAviso
+            // 
+            this.panelAviso.BackColor = System.Drawing.Color.Red;
+            this.panelAviso.Controls.Add(this.lblAviso);
+            resources.ApplyResources(this.panelAviso, "panelAviso");
+            this.panelAviso.Name = "panelAviso";
+            // 
+            // lblAviso
+            // 
+            resources.ApplyResources(this.lblAviso, "lblAviso");
+            this.lblAviso.ForeColor = System.Drawing.Color.Black;
+            this.lblAviso.Name = "lblAviso";
+            // 
+            // lblSenha
+            // 
+            resources.ApplyResources(this.lblSenha, "lblSenha");
+            this.lblSenha.ForeColor = System.Drawing.Color.White;
+            this.lblSenha.Name = "lblSenha";
+            // 
+            // pbFechar
+            // 
+            this.pbFechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbFechar.Image = global::UkraBar.Properties.Resources.X_Key_50px;
+            resources.ApplyResources(this.pbFechar, "pbFechar");
+            this.pbFechar.Name = "pbFechar";
+            this.pbFechar.TabStop = false;
+            // 
+            // lblId
+            // 
+            resources.ApplyResources(this.lblId, "lblId");
+            this.lblId.ForeColor = System.Drawing.Color.White;
+            this.lblId.Name = "lblId";
+            // 
+            // LayoutFundoDT
+            // 
+            resources.ApplyResources(this.LayoutFundoDT, "LayoutFundoDT");
+            this.LayoutFundoDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.LayoutFundoDT.Controls.Add(this.panelEditarFundo);
+            this.LayoutFundoDT.Controls.Add(this.panelFundoDT);
+            this.LayoutFundoDT.Name = "LayoutFundoDT";
+            // 
+            // panelEditarFundo
+            // 
+            this.panelEditarFundo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.panelEditarFundo.Controls.Add(this.BtnPincel);
+            this.panelEditarFundo.Controls.Add(this.lblEmailF);
+            this.panelEditarFundo.Controls.Add(this.BoxdEmailF);
+            this.panelEditarFundo.Controls.Add(this.lblSenhaF);
+            this.panelEditarFundo.Controls.Add(this.lblNomeF);
+            this.panelEditarFundo.Controls.Add(this.BoxdNomeF);
+            this.panelEditarFundo.Controls.Add(this.BoxdSenhaF);
+            this.panelEditarFundo.Controls.Add(this.lblIdF);
+            this.panelEditarFundo.Controls.Add(this.BoxdIdF);
+            resources.ApplyResources(this.panelEditarFundo, "panelEditarFundo");
+            this.panelEditarFundo.Name = "panelEditarFundo";
+            // 
+            // BtnPincel
+            // 
+            this.BtnPincel.BackColor = System.Drawing.Color.DarkCyan;
+            this.BtnPincel.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnPincel, "BtnPincel");
+            this.BtnPincel.ForeColor = System.Drawing.Color.White;
+            this.BtnPincel.Image = global::UkraBar.Properties.Resources.pencil_24px;
+            this.BtnPincel.Name = "BtnPincel";
+            this.BtnPincel.UseVisualStyleBackColor = false;
+            // 
+            // lblEmailF
+            // 
+            resources.ApplyResources(this.lblEmailF, "lblEmailF");
+            this.lblEmailF.ForeColor = System.Drawing.Color.White;
+            this.lblEmailF.Name = "lblEmailF";
+            // 
+            // BoxdEmailF
+            // 
+            resources.ApplyResources(this.BoxdEmailF, "BoxdEmailF");
+            this.BoxdEmailF.Name = "BoxdEmailF";
+            // 
+            // lblSenhaF
+            // 
+            resources.ApplyResources(this.lblSenhaF, "lblSenhaF");
+            this.lblSenhaF.ForeColor = System.Drawing.Color.White;
+            this.lblSenhaF.Name = "lblSenhaF";
+            // 
+            // lblNomeF
+            // 
+            resources.ApplyResources(this.lblNomeF, "lblNomeF");
+            this.lblNomeF.ForeColor = System.Drawing.Color.White;
+            this.lblNomeF.Name = "lblNomeF";
+            // 
+            // BoxdNomeF
+            // 
+            resources.ApplyResources(this.BoxdNomeF, "BoxdNomeF");
+            this.BoxdNomeF.Name = "BoxdNomeF";
+            // 
+            // BoxdSenhaF
+            // 
+            resources.ApplyResources(this.BoxdSenhaF, "BoxdSenhaF");
+            this.BoxdSenhaF.Name = "BoxdSenhaF";
+            // 
+            // lblIdF
+            // 
+            resources.ApplyResources(this.lblIdF, "lblIdF");
+            this.lblIdF.ForeColor = System.Drawing.Color.White;
+            this.lblIdF.Name = "lblIdF";
+            // 
+            // BoxdIdF
+            // 
+            resources.ApplyResources(this.BoxdIdF, "BoxdIdF");
+            this.BoxdIdF.Name = "BoxdIdF";
+            // 
+            // panelFundoDT
+            // 
+            this.panelFundoDT.Controls.Add(this.DTgridProd);
+            resources.ApplyResources(this.panelFundoDT, "panelFundoDT");
+            this.panelFundoDT.Name = "panelFundoDT";
             // 
             // DTgridProd
             // 
@@ -416,7 +550,7 @@
             this.DTgridProd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DTgridProd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DTgridProd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CheckBoxP});
+            this.CheckBox});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -443,43 +577,49 @@
             this.DTgridProd.RowTemplate.Height = 30;
             this.DTgridProd.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             // 
-            // CheckBoxP
+            // CheckBox
             // 
-            this.CheckBoxP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.CheckBoxP.FillWeight = 30.45685F;
-            this.CheckBoxP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            resources.ApplyResources(this.CheckBoxP, "CheckBoxP");
-            this.CheckBoxP.Name = "CheckBoxP";
+            this.CheckBox.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.CheckBox.FillWeight = 30.45685F;
+            this.CheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            resources.ApplyResources(this.CheckBox, "CheckBox");
+            this.CheckBox.Name = "CheckBox";
             // 
-            // CadastrarProdP
+            // CadastrarProd
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.LayoutFundoDTP);
-            this.Controls.Add(this.BarSideTopP);
-            this.Controls.Add(this.sideBarMenuP);
-            this.Name = "CadastrarProdP";
+            this.Controls.Add(this.PanelCadastrarProd);
+            this.Controls.Add(this.BarSideTop);
+            this.Controls.Add(this.sideBarMenuD);
+            this.Controls.Add(this.paneltopbar);
+            this.Controls.Add(this.LayoutFundoDT);
+            this.Name = "CadastrarProd";
             this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.sideBarMenuP.ResumeLayout(false);
-            this.panelMenuP.ResumeLayout(false);
-            this.panelMenuP.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMenuP)).EndInit();
-            this.panelShowConfigP.ResumeLayout(false);
-            this.panelFiltroP.ResumeLayout(false);
-            this.panelAjudaP.ResumeLayout(false);
-            this.panelSobreP.ResumeLayout(false);
-            this.panelVoltarP.ResumeLayout(false);
-            this.BarSideTopP.ResumeLayout(false);
-            this.panelLabelP.ResumeLayout(false);
-            this.panelLabelP.PerformLayout();
-            this.panelBuscarP.ResumeLayout(false);
-            this.panelBuscarP.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5P)).EndInit();
-            this.LayoutFundoDTP.ResumeLayout(false);
-            this.panelEditarFundoP.ResumeLayout(false);
-            this.panelEditarFundoP.PerformLayout();
-            this.panelFundoDTP.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.CadastrarProd_Load);
+            this.BarSideTop.ResumeLayout(false);
+            this.panelLabel.ResumeLayout(false);
+            this.panelLabel.PerformLayout();
+            this.panelBuscar.ResumeLayout(false);
+            this.panelBuscar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FundoPesquisar)).EndInit();
+            this.sideBarMenuD.ResumeLayout(false);
+            this.panelMenu.ResumeLayout(false);
+            this.panelMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).EndInit();
+            this.panelShowConfig.ResumeLayout(false);
+            this.paneltopbar.ResumeLayout(false);
+            this.PanelCadastrarProd.ResumeLayout(false);
+            this.PanelCadastrarProd.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenFunc)).EndInit();
+            this.panelAviso.ResumeLayout(false);
+            this.panelAviso.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFechar)).EndInit();
+            this.LayoutFundoDT.ResumeLayout(false);
+            this.panelEditarFundo.ResumeLayout(false);
+            this.panelEditarFundo.PerformLayout();
+            this.panelFundoDT.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DTgridProd)).EndInit();
             this.ResumeLayout(false);
 
@@ -487,45 +627,60 @@
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel sideBarMenuP;
-        private System.Windows.Forms.Panel panelMenuP;
-        private System.Windows.Forms.Label lblMenuP;
-        private System.Windows.Forms.PictureBox pbMenuP;
-        private System.Windows.Forms.Panel panelShowConfigP;
-        private System.Windows.Forms.Button BtnEditarP;
-        private System.Windows.Forms.Button BtnNovoFuncP;
-        private System.Windows.Forms.Button BtnDeletarP;
-        private System.Windows.Forms.Button BtnEscuroP;
-        private System.Windows.Forms.Button BtnConfiguraçõesP;
-        private System.Windows.Forms.Button BtnClaroP;
-        private System.Windows.Forms.Panel panelFiltroP;
-        private System.Windows.Forms.Button BtnFiltroP;
-        private System.Windows.Forms.Panel panelAjudaP;
-        private System.Windows.Forms.Button BtnAjudaP;
-        private System.Windows.Forms.Panel panelSobreP;
-        private System.Windows.Forms.Button BtnSobreP;
-        private System.Windows.Forms.Panel panelVoltarP;
-        private System.Windows.Forms.Button BtnVoltarP;
-        private System.Windows.Forms.FlowLayoutPanel BarSideTopP;
-        private System.Windows.Forms.Panel panelLabelP;
-        private System.Windows.Forms.Label lblFuncP;
-        private System.Windows.Forms.Panel panelBuscarP;
-        private System.Windows.Forms.Button btnBuscarP;
-        private System.Windows.Forms.TextBox BoxBuscarP;
-        private System.Windows.Forms.PictureBox pictureBox5P;
-        private System.Windows.Forms.FlowLayoutPanel LayoutFundoDTP;
-        private System.Windows.Forms.Panel panelEditarFundoP;
-        private System.Windows.Forms.Button BtnPincelP;
-        private System.Windows.Forms.Label lblEmailP;
-        private System.Windows.Forms.TextBox BoxdEmailP;
-        private System.Windows.Forms.Label lblSenhaP;
-        private System.Windows.Forms.TextBox BoxdSenhaP;
-        private System.Windows.Forms.Label lblNomeP;
-        private System.Windows.Forms.TextBox BoxdNomeP;
-        private System.Windows.Forms.Label lblIdP;
-        private System.Windows.Forms.TextBox BoxdIdP;
-        private System.Windows.Forms.Panel panelFundoDTP;
+        private System.Windows.Forms.FlowLayoutPanel BarSideTop;
+        private System.Windows.Forms.Panel panelLabel;
+        private System.Windows.Forms.Label lblProd;
+        private System.Windows.Forms.Panel panelBuscar;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox BoxBuscar;
+        private System.Windows.Forms.PictureBox FundoPesquisar;
+        private System.Windows.Forms.FlowLayoutPanel sideBarMenuD;
+        private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.Label lblMenu;
+        private System.Windows.Forms.PictureBox pbMenu;
+        private System.Windows.Forms.Panel panelShowConfig;
+        private System.Windows.Forms.Button BtnEditar;
+        private System.Windows.Forms.Button BtnDeletar;
+        private System.Windows.Forms.Button BtnConfigurações;
+        private System.Windows.Forms.Button BtnSobre;
+        private System.Windows.Forms.Button BtnAjuda;
+        private System.Windows.Forms.Button BtnVoltar;
+        private System.Windows.Forms.Panel paneltopbar;
+        private System.Windows.Forms.Button MinimizarJanela;
+        private System.Windows.Forms.Button MaximizarJanela;
+        private System.Windows.Forms.Button FecharJanelaF;
+        private System.Windows.Forms.Timer TimerSideBar;
+        private System.Windows.Forms.Timer NovoProdBar;
+        private System.Windows.Forms.Panel PanelCadastrarProd;
+        private System.Windows.Forms.TextBox BoxdFilesF;
+        private System.Windows.Forms.Button BtnUpload;
+        private System.Windows.Forms.PictureBox ImagenFunc;
+        private System.Windows.Forms.Button BtnSalvar;
+        private System.Windows.Forms.TextBox BoxcEmail;
+        private System.Windows.Forms.TextBox BoxcSenha;
+        private System.Windows.Forms.TextBox BoxcId;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.TextBox BoxcNome;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Panel panelAviso;
+        private System.Windows.Forms.Label lblAviso;
+        private System.Windows.Forms.Label lblSenha;
+        private System.Windows.Forms.PictureBox pbFechar;
+        private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.Button BtnNovoProd;
+        private System.Windows.Forms.FlowLayoutPanel LayoutFundoDT;
+        private System.Windows.Forms.Panel panelEditarFundo;
+        private System.Windows.Forms.Button BtnPincel;
+        private System.Windows.Forms.Label lblEmailF;
+        private System.Windows.Forms.TextBox BoxdEmailF;
+        private System.Windows.Forms.Label lblSenhaF;
+        private System.Windows.Forms.Label lblNomeF;
+        private System.Windows.Forms.TextBox BoxdNomeF;
+        private System.Windows.Forms.TextBox BoxdSenhaF;
+        private System.Windows.Forms.Label lblIdF;
+        private System.Windows.Forms.TextBox BoxdIdF;
+        private System.Windows.Forms.Panel panelFundoDT;
         private System.Windows.Forms.DataGridView DTgridProd;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn CheckBoxP;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn CheckBox;
     }
 }

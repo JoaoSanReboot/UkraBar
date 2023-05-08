@@ -225,11 +225,20 @@ namespace UkraBar
 
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
-            string inserirQuery = "INSERT INTO cadastro_funcionario (id_cadastro, nome_foto, nome_funcionario, senha_funcionario, email_funcionario) VALUES" +
-                "('" + BoxcId.Text + "', '"+ BoxdFilesF.Text +"', '" + BoxcNome.Text + "', '" + BoxcSenha.Text + "','" + BoxcEmail.Text + "')";
-                executarQuery(inserirQuery);
-                CarregarDados();//Carrega dados na tabela.
-                NovoFuncTimer.Stop();
+            byte[] imagem_byte = null;
+
+            FileStream fStrem = new FileStream(this.BoxdFilesF.Text, FileMode.Open, FileAccess.Read);//Defini fStrem como Binário.
+
+            BinaryReader br = new BinaryReader(fStrem);//Coloca o fStream Dentro de um Leitor Binário.
+
+            imagem_byte = br.ReadBytes((int)fStrem.Length);//Defini que ele irá ler em Binário e salvará na array.
+
+            string inserirQuery = "INSERT INTO cadastro_funcionario (id_cadastro, nome_funcionario, senha_funcionario, email_funcionario, foto) VALUES" +
+                "('" + BoxcId.Text + "','" + BoxcNome.Text + "', '" + BoxcSenha.Text + "','" + BoxcEmail.Text + "','" + imagem_byte + "')";
+            executarQuery(inserirQuery);
+            CarregarDados();//Carrega dados na tabela.
+            NovoFuncTimer.Stop();
+
         }
 
         private void BtnDeletar_Click(object sender, EventArgs e)
@@ -312,7 +321,17 @@ namespace UkraBar
 
         private void BtnUpload_Click(object sender, EventArgs e)
         {
+            OpenFileDialog dialog = new OpenFileDialog(); // Defini um dialog como o Novo
+            //Um Filtro de imagens que aceita apenas Png e Jpg.
+            dialog.Filter = "JPG Files(*.jpg)|*.jpg | PNG Files(*.png)|*png | AllFiles(*.*)|*.*";
 
+            if (dialog.ShowDialog() == DialogResult.OK)//Se o usúario der Ok no Filles mostrar diretório.
+            {
+                string foto = dialog.FileName.ToString();
+                BoxdFilesF.Text = foto;
+                ImagenFunc.ImageLocation = foto;
+
+            }
         }
 
         private void DTgridFunc_CellContentClick(object sender, DataGridViewCellEventArgs e)
