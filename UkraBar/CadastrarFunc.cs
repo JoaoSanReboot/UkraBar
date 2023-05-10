@@ -16,9 +16,9 @@ namespace UkraBar
 
         public MySqlConnection conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
         public string connectionString = "SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;";
-        private MySqlCommand comando;
-        private MySqlDataReader reader;
-        private DataTable table;
+        public MySqlCommand comando;
+        public MySqlDataReader reader;
+        public DataTable table;
 
 
         public CadastrarFunc()

@@ -45,9 +45,9 @@
             this.lblMenu = new System.Windows.Forms.Label();
             this.pbMenu = new System.Windows.Forms.PictureBox();
             this.panelShowConfig = new System.Windows.Forms.Panel();
+            this.BtnDeletar = new System.Windows.Forms.Button();
             this.BtnNovoProd = new System.Windows.Forms.Button();
             this.BtnEditar = new System.Windows.Forms.Button();
-            this.BtnDeletar = new System.Windows.Forms.Button();
             this.BtnConfigurações = new System.Windows.Forms.Button();
             this.BtnSobre = new System.Windows.Forms.Button();
             this.BtnAjuda = new System.Windows.Forms.Button();
@@ -59,19 +59,21 @@
             this.TimerSideBar = new System.Windows.Forms.Timer(this.components);
             this.NovoProdBar = new System.Windows.Forms.Timer(this.components);
             this.PanelCadastrarProd = new System.Windows.Forms.Panel();
+            this.BoxcQuantidade = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.BoxdFilesF = new System.Windows.Forms.TextBox();
             this.BtnUpload = new System.Windows.Forms.Button();
-            this.ImagenFunc = new System.Windows.Forms.PictureBox();
+            this.ImagenProd = new System.Windows.Forms.PictureBox();
             this.BtnSalvar = new System.Windows.Forms.Button();
-            this.BoxcEmail = new System.Windows.Forms.TextBox();
-            this.BoxcSenha = new System.Windows.Forms.TextBox();
+            this.BoxcValorP = new System.Windows.Forms.TextBox();
+            this.BoxcDescricao = new System.Windows.Forms.TextBox();
             this.BoxcId = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.BoxcNome = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.panelAviso = new System.Windows.Forms.Panel();
             this.lblAviso = new System.Windows.Forms.Label();
-            this.lblSenha = new System.Windows.Forms.Label();
+            this.lblDescricao = new System.Windows.Forms.Label();
             this.pbFechar = new System.Windows.Forms.PictureBox();
             this.lblId = new System.Windows.Forms.Label();
             this.LayoutFundoDT = new System.Windows.Forms.FlowLayoutPanel();
@@ -98,7 +100,7 @@
             this.panelShowConfig.SuspendLayout();
             this.paneltopbar.SuspendLayout();
             this.PanelCadastrarProd.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImagenFunc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenProd)).BeginInit();
             this.panelAviso.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFechar)).BeginInit();
             this.LayoutFundoDT.SuspendLayout();
@@ -205,6 +207,17 @@
             resources.ApplyResources(this.panelShowConfig, "panelShowConfig");
             this.panelShowConfig.Name = "panelShowConfig";
             // 
+            // BtnDeletar
+            // 
+            this.BtnDeletar.BackColor = System.Drawing.Color.Red;
+            this.BtnDeletar.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.BtnDeletar, "BtnDeletar");
+            this.BtnDeletar.ForeColor = System.Drawing.Color.White;
+            this.BtnDeletar.Image = global::UkraBar.Properties.Resources.trash_26px;
+            this.BtnDeletar.Name = "BtnDeletar";
+            this.BtnDeletar.UseVisualStyleBackColor = false;
+            this.BtnDeletar.Click += new System.EventHandler(this.BtnDeletar_Click);
+            // 
             // BtnNovoProd
             // 
             this.BtnNovoProd.BackColor = System.Drawing.Color.Green;
@@ -225,17 +238,6 @@
             this.BtnEditar.Image = global::UkraBar.Properties.Resources.pencil_24px;
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.UseVisualStyleBackColor = false;
-            // 
-            // BtnDeletar
-            // 
-            this.BtnDeletar.BackColor = System.Drawing.Color.Red;
-            this.BtnDeletar.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.BtnDeletar, "BtnDeletar");
-            this.BtnDeletar.ForeColor = System.Drawing.Color.White;
-            this.BtnDeletar.Image = global::UkraBar.Properties.Resources.trash_26px;
-            this.BtnDeletar.Name = "BtnDeletar";
-            this.BtnDeletar.UseVisualStyleBackColor = false;
-            this.BtnDeletar.Click += new System.EventHandler(this.BtnDeletar_Click);
             // 
             // BtnConfigurações
             // 
@@ -334,22 +336,35 @@
             // PanelCadastrarProd
             // 
             this.PanelCadastrarProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.PanelCadastrarProd.Controls.Add(this.BoxcQuantidade);
+            this.PanelCadastrarProd.Controls.Add(this.label2);
             this.PanelCadastrarProd.Controls.Add(this.BoxdFilesF);
             this.PanelCadastrarProd.Controls.Add(this.BtnUpload);
-            this.PanelCadastrarProd.Controls.Add(this.ImagenFunc);
+            this.PanelCadastrarProd.Controls.Add(this.ImagenProd);
             this.PanelCadastrarProd.Controls.Add(this.BtnSalvar);
-            this.PanelCadastrarProd.Controls.Add(this.BoxcEmail);
-            this.PanelCadastrarProd.Controls.Add(this.BoxcSenha);
+            this.PanelCadastrarProd.Controls.Add(this.BoxcValorP);
+            this.PanelCadastrarProd.Controls.Add(this.BoxcDescricao);
             this.PanelCadastrarProd.Controls.Add(this.BoxcId);
             this.PanelCadastrarProd.Controls.Add(this.lblEmail);
             this.PanelCadastrarProd.Controls.Add(this.BoxcNome);
             this.PanelCadastrarProd.Controls.Add(this.lblNome);
             this.PanelCadastrarProd.Controls.Add(this.panelAviso);
-            this.PanelCadastrarProd.Controls.Add(this.lblSenha);
+            this.PanelCadastrarProd.Controls.Add(this.lblDescricao);
             this.PanelCadastrarProd.Controls.Add(this.pbFechar);
             this.PanelCadastrarProd.Controls.Add(this.lblId);
             resources.ApplyResources(this.PanelCadastrarProd, "PanelCadastrarProd");
             this.PanelCadastrarProd.Name = "PanelCadastrarProd";
+            // 
+            // BoxcQuantidade
+            // 
+            resources.ApplyResources(this.BoxcQuantidade, "BoxcQuantidade");
+            this.BoxcQuantidade.Name = "BoxcQuantidade";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Name = "label2";
             // 
             // BoxdFilesF
             // 
@@ -366,13 +381,13 @@
             this.BtnUpload.Name = "BtnUpload";
             this.BtnUpload.UseVisualStyleBackColor = false;
             // 
-            // ImagenFunc
+            // ImagenProd
             // 
-            this.ImagenFunc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.ImagenFunc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.ImagenFunc, "ImagenFunc");
-            this.ImagenFunc.Name = "ImagenFunc";
-            this.ImagenFunc.TabStop = false;
+            this.ImagenProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.ImagenProd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.ImagenProd, "ImagenProd");
+            this.ImagenProd.Name = "ImagenProd";
+            this.ImagenProd.TabStop = false;
             // 
             // BtnSalvar
             // 
@@ -383,16 +398,17 @@
             this.BtnSalvar.Image = global::UkraBar.Properties.Resources.Checkmark_24px;
             this.BtnSalvar.Name = "BtnSalvar";
             this.BtnSalvar.UseVisualStyleBackColor = false;
+            this.BtnSalvar.Click += new System.EventHandler(this.BtnSalvar_Click);
             // 
-            // BoxcEmail
+            // BoxcValorP
             // 
-            resources.ApplyResources(this.BoxcEmail, "BoxcEmail");
-            this.BoxcEmail.Name = "BoxcEmail";
+            resources.ApplyResources(this.BoxcValorP, "BoxcValorP");
+            this.BoxcValorP.Name = "BoxcValorP";
             // 
-            // BoxcSenha
+            // BoxcDescricao
             // 
-            resources.ApplyResources(this.BoxcSenha, "BoxcSenha");
-            this.BoxcSenha.Name = "BoxcSenha";
+            resources.ApplyResources(this.BoxcDescricao, "BoxcDescricao");
+            this.BoxcDescricao.Name = "BoxcDescricao";
             // 
             // BoxcId
             // 
@@ -429,11 +445,11 @@
             this.lblAviso.ForeColor = System.Drawing.Color.Black;
             this.lblAviso.Name = "lblAviso";
             // 
-            // lblSenha
+            // lblDescricao
             // 
-            resources.ApplyResources(this.lblSenha, "lblSenha");
-            this.lblSenha.ForeColor = System.Drawing.Color.White;
-            this.lblSenha.Name = "lblSenha";
+            resources.ApplyResources(this.lblDescricao, "lblDescricao");
+            this.lblDescricao.ForeColor = System.Drawing.Color.White;
+            this.lblDescricao.Name = "lblDescricao";
             // 
             // pbFechar
             // 
@@ -442,6 +458,7 @@
             resources.ApplyResources(this.pbFechar, "pbFechar");
             this.pbFechar.Name = "pbFechar";
             this.pbFechar.TabStop = false;
+            this.pbFechar.Click += new System.EventHandler(this.pbFechar_Click);
             // 
             // lblId
             // 
@@ -612,7 +629,7 @@
             this.paneltopbar.ResumeLayout(false);
             this.PanelCadastrarProd.ResumeLayout(false);
             this.PanelCadastrarProd.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImagenFunc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenProd)).EndInit();
             this.panelAviso.ResumeLayout(false);
             this.panelAviso.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFechar)).EndInit();
@@ -654,17 +671,17 @@
         private System.Windows.Forms.Panel PanelCadastrarProd;
         private System.Windows.Forms.TextBox BoxdFilesF;
         private System.Windows.Forms.Button BtnUpload;
-        private System.Windows.Forms.PictureBox ImagenFunc;
+        private System.Windows.Forms.PictureBox ImagenProd;
         private System.Windows.Forms.Button BtnSalvar;
-        private System.Windows.Forms.TextBox BoxcEmail;
-        private System.Windows.Forms.TextBox BoxcSenha;
+        private System.Windows.Forms.TextBox BoxcValorP;
+        private System.Windows.Forms.TextBox BoxcDescricao;
         private System.Windows.Forms.TextBox BoxcId;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox BoxcNome;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Panel panelAviso;
         private System.Windows.Forms.Label lblAviso;
-        private System.Windows.Forms.Label lblSenha;
+        private System.Windows.Forms.Label lblDescricao;
         private System.Windows.Forms.PictureBox pbFechar;
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Button BtnNovoProd;
@@ -682,5 +699,7 @@
         private System.Windows.Forms.Panel panelFundoDT;
         private System.Windows.Forms.DataGridView DTgridProd;
         private System.Windows.Forms.DataGridViewCheckBoxColumn CheckBox;
+        private System.Windows.Forms.TextBox BoxcQuantidade;
+        private System.Windows.Forms.Label label2;
     }
 }

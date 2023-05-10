@@ -840,6 +840,66 @@
   <metadata name="NovoProdBar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>125, 17</value>
   </metadata>
+  <data name="BoxcQuantidade.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="BoxcQuantidade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 406</value>
+  </data>
+  <data name="BoxcQuantidade.MaxLength" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="BoxcQuantidade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 29</value>
+  </data>
+  <data name="BoxcQuantidade.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;BoxcQuantidade.Name" xml:space="preserve">
+    <value>BoxcQuantidade</value>
+  </data>
+  <data name="&gt;&gt;BoxcQuantidade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BoxcQuantidade.Parent" xml:space="preserve">
+    <value>PanelCadastrarProd</value>
+  </data>
+  <data name="&gt;&gt;BoxcQuantidade.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 385</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 21</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Quantidade:</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>PanelCadastrarProd</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="BoxdFilesF.Location" type="System.Drawing.Point, System.Drawing">
     <value>626, 333</value>
   </data>
@@ -859,7 +919,7 @@
     <value>PanelCadastrarProd</value>
   </data>
   <data name="&gt;&gt;BoxdFilesF.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="BtnUpload.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -898,31 +958,31 @@
     <value>PanelCadastrarProd</value>
   </data>
   <data name="&gt;&gt;BtnUpload.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
-  <data name="ImagenFunc.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="ImagenProd.Location" type="System.Drawing.Point, System.Drawing">
     <value>626, 67</value>
   </data>
-  <data name="ImagenFunc.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="ImagenProd.Size" type="System.Drawing.Size, System.Drawing">
     <value>292, 260</value>
   </data>
-  <data name="ImagenFunc.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+  <data name="ImagenProd.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
-  <data name="ImagenFunc.TabIndex" type="System.Int32, mscorlib">
+  <data name="ImagenProd.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;ImagenFunc.Name" xml:space="preserve">
-    <value>ImagenFunc</value>
+  <data name="&gt;&gt;ImagenProd.Name" xml:space="preserve">
+    <value>ImagenProd</value>
   </data>
-  <data name="&gt;&gt;ImagenFunc.Type" xml:space="preserve">
+  <data name="&gt;&gt;ImagenProd.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ImagenFunc.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ImagenProd.Parent" xml:space="preserve">
     <value>PanelCadastrarProd</value>
   </data>
-  <data name="&gt;&gt;ImagenFunc.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;ImagenProd.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="BtnSalvar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -934,13 +994,13 @@
     <value>MiddleRight</value>
   </data>
   <data name="BtnSalvar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 382</value>
+    <value>55, 466</value>
   </data>
   <data name="BtnSalvar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 40, 0</value>
   </data>
   <data name="BtnSalvar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 50</value>
+    <value>256, 50</value>
   </data>
   <data name="BtnSalvar.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -961,61 +1021,61 @@
     <value>PanelCadastrarProd</value>
   </data>
   <data name="&gt;&gt;BtnSalvar.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
-  <data name="BoxcEmail.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="BoxcValorP.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
-  <data name="BoxcEmail.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="BoxcValorP.Location" type="System.Drawing.Point, System.Drawing">
     <value>61, 322</value>
   </data>
-  <data name="BoxcEmail.MaxLength" type="System.Int32, mscorlib">
+  <data name="BoxcValorP.MaxLength" type="System.Int32, mscorlib">
     <value>100</value>
   </data>
-  <data name="BoxcEmail.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="BoxcValorP.Size" type="System.Drawing.Size, System.Drawing">
     <value>250, 29</value>
   </data>
-  <data name="BoxcEmail.TabIndex" type="System.Int32, mscorlib">
+  <data name="BoxcValorP.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;BoxcEmail.Name" xml:space="preserve">
-    <value>BoxcEmail</value>
+  <data name="&gt;&gt;BoxcValorP.Name" xml:space="preserve">
+    <value>BoxcValorP</value>
   </data>
-  <data name="&gt;&gt;BoxcEmail.Type" xml:space="preserve">
+  <data name="&gt;&gt;BoxcValorP.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;BoxcEmail.Parent" xml:space="preserve">
+  <data name="&gt;&gt;BoxcValorP.Parent" xml:space="preserve">
     <value>PanelCadastrarProd</value>
   </data>
-  <data name="&gt;&gt;BoxcEmail.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;BoxcValorP.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="BoxcSenha.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="BoxcDescricao.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
-  <data name="BoxcSenha.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="BoxcDescricao.Location" type="System.Drawing.Point, System.Drawing">
     <value>61, 235</value>
   </data>
-  <data name="BoxcSenha.MaxLength" type="System.Int32, mscorlib">
-    <value>30</value>
+  <data name="BoxcDescricao.MaxLength" type="System.Int32, mscorlib">
+    <value>100</value>
   </data>
-  <data name="BoxcSenha.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="BoxcDescricao.Size" type="System.Drawing.Size, System.Drawing">
     <value>250, 29</value>
   </data>
-  <data name="BoxcSenha.TabIndex" type="System.Int32, mscorlib">
+  <data name="BoxcDescricao.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;BoxcSenha.Name" xml:space="preserve">
-    <value>BoxcSenha</value>
+  <data name="&gt;&gt;BoxcDescricao.Name" xml:space="preserve">
+    <value>BoxcDescricao</value>
   </data>
-  <data name="&gt;&gt;BoxcSenha.Type" xml:space="preserve">
+  <data name="&gt;&gt;BoxcDescricao.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;BoxcSenha.Parent" xml:space="preserve">
+  <data name="&gt;&gt;BoxcDescricao.Parent" xml:space="preserve">
     <value>PanelCadastrarProd</value>
   </data>
-  <data name="&gt;&gt;BoxcSenha.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;BoxcDescricao.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="BoxcId.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
@@ -1042,7 +1102,7 @@
     <value>PanelCadastrarProd</value>
   </data>
   <data name="&gt;&gt;BoxcId.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="lblEmail.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1054,13 +1114,13 @@
     <value>58, 299</value>
   </data>
   <data name="lblEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 21</value>
+    <value>139, 21</value>
   </data>
   <data name="lblEmail.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
   <data name="lblEmail.Text" xml:space="preserve">
-    <value>Email:</value>
+    <value>Valor do Produto:</value>
   </data>
   <data name="&gt;&gt;lblEmail.Name" xml:space="preserve">
     <value>lblEmail</value>
@@ -1072,7 +1132,7 @@
     <value>PanelCadastrarProd</value>
   </data>
   <data name="&gt;&gt;lblEmail.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="BoxcNome.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
@@ -1099,7 +1159,7 @@
     <value>PanelCadastrarProd</value>
   </data>
   <data name="&gt;&gt;BoxcNome.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="lblNome.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1111,13 +1171,13 @@
     <value>61, 124</value>
   </data>
   <data name="lblNome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 21</value>
+    <value>147, 21</value>
   </data>
   <data name="lblNome.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="lblNome.Text" xml:space="preserve">
-    <value>Nome:</value>
+    <value>Nome do Produto:</value>
   </data>
   <data name="&gt;&gt;lblNome.Name" xml:space="preserve">
     <value>lblNome</value>
@@ -1129,7 +1189,7 @@
     <value>PanelCadastrarProd</value>
   </data>
   <data name="&gt;&gt;lblNome.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="lblAviso.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1180,37 +1240,37 @@
     <value>PanelCadastrarProd</value>
   </data>
   <data name="&gt;&gt;panelAviso.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
-  <data name="lblSenha.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblDescricao.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lblSenha.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lblDescricao.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Semibold, 12pt, style=Bold</value>
   </data>
-  <data name="lblSenha.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lblDescricao.Location" type="System.Drawing.Point, System.Drawing">
     <value>61, 214</value>
   </data>
-  <data name="lblSenha.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 21</value>
+  <data name="lblDescricao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 21</value>
   </data>
-  <data name="lblSenha.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblDescricao.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="lblSenha.Text" xml:space="preserve">
-    <value>Senha:</value>
+  <data name="lblDescricao.Text" xml:space="preserve">
+    <value>Descrição:</value>
   </data>
-  <data name="&gt;&gt;lblSenha.Name" xml:space="preserve">
-    <value>lblSenha</value>
+  <data name="&gt;&gt;lblDescricao.Name" xml:space="preserve">
+    <value>lblDescricao</value>
   </data>
-  <data name="&gt;&gt;lblSenha.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblDescricao.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblSenha.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblDescricao.Parent" xml:space="preserve">
     <value>PanelCadastrarProd</value>
   </data>
-  <data name="&gt;&gt;lblSenha.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="&gt;&gt;lblDescricao.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="pbFechar.Location" type="System.Drawing.Point, System.Drawing">
     <value>936, 4</value>
@@ -1234,7 +1294,7 @@
     <value>PanelCadastrarProd</value>
   </data>
   <data name="&gt;&gt;pbFechar.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="lblId.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1264,19 +1324,19 @@
     <value>PanelCadastrarProd</value>
   </data>
   <data name="&gt;&gt;lblId.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="PanelCadastrarProd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>278, 163</value>
+    <value>278, 164</value>
   </data>
   <data name="PanelCadastrarProd.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>982, 560</value>
+    <value>982, 558</value>
   </data>
   <data name="PanelCadastrarProd.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>0, 560</value>
   </data>
   <data name="PanelCadastrarProd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 560</value>
+    <value>982, 560</value>
   </data>
   <data name="PanelCadastrarProd.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>

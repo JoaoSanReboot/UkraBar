@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,9 +16,9 @@ namespace UkraBar
     {
         public MySqlConnection conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
         public string connectionString = "SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;";
-        private MySqlCommand comando;
-        private MySqlDataReader reader;
-        private DataTable table;
+        public MySqlCommand comando;
+        public MySqlDataReader reader2;
+        public DataTable table;
 
         public CadastrarProd()
         {
@@ -30,11 +31,11 @@ namespace UkraBar
             conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
             conn.Open();// Abre Conexão.
 
-            string query = "SELECT * FROM cadastro_produto"; //Seleciona informações da tabela Cadastro Funcionário.
+            string query = "SELECT * FROM produto"; //Seleciona informações da tabela Cadastro Funcionário.
             comando = new MySqlCommand(query, conn); //Declara comandos que serão usados.
-            reader = comando.ExecuteReader(); //Lê os comandos.
+            reader2 = comando.ExecuteReader(); //Lê os comandos.
             table = new DataTable(); //Abre a Table.
-            table.Load(reader); //Table lê os comandos.
+            table.Load(reader2); //Table lê os comandos.
             DTgridProd.DataSource = table; //Renomeia Table para DTgridFunc.
             DTgridProd.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; //Comando para alinhar as tabelas no DataGriedView.
             conn.Close(); //Fecha Conexão 
@@ -216,14 +217,14 @@ namespace UkraBar
 
         private void MaximizarJanela_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
-            MinimizarJanela.Location = MinimizarJanela.Location;
+            this.WindowState = FormWindowState.Maximized;
+            MaximizarJanela.Location = MaximizarJanela.Location;
         }
 
         private void MinimizarJanela_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
-            MaximizarJanela.Location = MaximizarJanela.Location;
+            this.WindowState = FormWindowState.Minimized;
+            MinimizarJanela.Location = MinimizarJanela.Location;
         }
 
         private void BtnNovoProd_Click(object sender, EventArgs e)
@@ -238,6 +239,20 @@ namespace UkraBar
         private void BtnDeletar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pbFechar_Click(object sender, EventArgs e)
+        {
+            NovoProdBar.Start();
+        }
+
+        private void BtnSalvar_Click(object sender, EventArgs e)
+        {
+            string inserirQuery = "INSERT INTO produto (id_produto, nome_produto, descricao, valor_produto, quantidade) VALUES" +
+                "('" + BoxcId.Text + "','" + BoxcNome.Text + "', '" + BoxcDescricao.Text + "','" + BoxcValorP.Text + "','"+ BoxcQuantidade+"')";
+            executarQuery(inserirQuery);
+            CarregarDados();//Carrega dados na tabela.
+            NovoProdBar.Stop();
         }
     }
 }
