@@ -31,7 +31,7 @@
             this.pMenu = new System.Windows.Forms.Panel();
             this.BtnVoltarADM = new System.Windows.Forms.Button();
             this.BtnDescontosView = new System.Windows.Forms.Button();
-            this.BtnProdutosView = new System.Windows.Forms.Button();
+            this.BtnClientesView = new System.Windows.Forms.Button();
             this.BtnCadastrar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -53,7 +53,7 @@
             this.pMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.pMenu.Controls.Add(this.BtnVoltarADM);
             this.pMenu.Controls.Add(this.BtnDescontosView);
-            this.pMenu.Controls.Add(this.BtnProdutosView);
+            this.pMenu.Controls.Add(this.BtnClientesView);
             this.pMenu.Controls.Add(this.BtnCadastrar);
             this.pMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pMenu.Location = new System.Drawing.Point(0, 0);
@@ -97,23 +97,24 @@
             this.BtnDescontosView.MouseEnter += new System.EventHandler(this.btnMouseEnter);
             this.BtnDescontosView.MouseLeave += new System.EventHandler(this.btnMouseLeave);
             // 
-            // BtnProdutosView
+            // BtnClientesView
             // 
-            this.BtnProdutosView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnProdutosView.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnProdutosView.FlatAppearance.BorderSize = 0;
-            this.BtnProdutosView.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.BtnProdutosView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnProdutosView.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnProdutosView.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnProdutosView.Location = new System.Drawing.Point(442, 16);
-            this.BtnProdutosView.Name = "BtnProdutosView";
-            this.BtnProdutosView.Size = new System.Drawing.Size(187, 63);
-            this.BtnProdutosView.TabIndex = 2;
-            this.BtnProdutosView.Text = "Produtos";
-            this.BtnProdutosView.UseVisualStyleBackColor = false;
-            this.BtnProdutosView.MouseEnter += new System.EventHandler(this.btnMouseEnter);
-            this.BtnProdutosView.MouseLeave += new System.EventHandler(this.btnMouseLeave);
+            this.BtnClientesView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnClientesView.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnClientesView.FlatAppearance.BorderSize = 0;
+            this.BtnClientesView.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnClientesView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClientesView.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClientesView.ForeColor = System.Drawing.SystemColors.Control;
+            this.BtnClientesView.Location = new System.Drawing.Point(442, 16);
+            this.BtnClientesView.Name = "BtnClientesView";
+            this.BtnClientesView.Size = new System.Drawing.Size(187, 63);
+            this.BtnClientesView.TabIndex = 2;
+            this.BtnClientesView.Text = "Clientes";
+            this.BtnClientesView.UseVisualStyleBackColor = false;
+            this.BtnClientesView.Click += new System.EventHandler(this.BtnClientesView_Click);
+            this.BtnClientesView.MouseEnter += new System.EventHandler(this.btnMouseEnter);
+            this.BtnClientesView.MouseLeave += new System.EventHandler(this.btnMouseLeave);
             // 
             // BtnCadastrar
             // 
@@ -288,7 +289,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button BtnDescontosView;
-        private System.Windows.Forms.Button BtnProdutosView;
+        private System.Windows.Forms.Button BtnClientesView;
         private System.Windows.Forms.Button BtnCadastrar;
         private System.Windows.Forms.Panel pCadastro;
         private System.Windows.Forms.Button BtnDesconto;

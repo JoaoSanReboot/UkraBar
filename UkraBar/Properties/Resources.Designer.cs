@@ -223,6 +223,16 @@ namespace UkraBar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FundoMesas {
+            get {
+                object obj = ResourceManager.GetObject("FundoMesas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hide_24px {
             get {
                 object obj = ResourceManager.GetObject("hide_24px", resourceCulture);
@@ -256,6 +266,76 @@ namespace UkraBar.Properties {
         internal static System.Drawing.Bitmap maximize_window_24px {
             get {
                 object obj = ResourceManager.GetObject("maximize_window_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MesaIEsquerdo {
+            get {
+                object obj = ResourceManager.GetObject("MesaIEsquerdo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MesaIEsquerdoL {
+            get {
+                object obj = ResourceManager.GetObject("MesaIEsquerdoL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MesaMeio {
+            get {
+                object obj = ResourceManager.GetObject("MesaMeio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MesaSDireito {
+            get {
+                object obj = ResourceManager.GetObject("MesaSDireito", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MesaSDireito1 {
+            get {
+                object obj = ResourceManager.GetObject("MesaSDireito1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MesaSEsquerdo {
+            get {
+                object obj = ResourceManager.GetObject("MesaSEsquerdo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MesaSuperiorEsquerdo {
+            get {
+                object obj = ResourceManager.GetObject("MesaSuperiorEsquerdo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarProd));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BarSideTop = new System.Windows.Forms.FlowLayoutPanel();
             this.panelLabel = new System.Windows.Forms.Panel();
             this.lblProd = new System.Windows.Forms.Label();
@@ -76,20 +76,25 @@
             this.lblDescricao = new System.Windows.Forms.Label();
             this.pbFechar = new System.Windows.Forms.PictureBox();
             this.lblId = new System.Windows.Forms.Label();
+            this.Aviso2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.LayoutFundoDT = new System.Windows.Forms.FlowLayoutPanel();
             this.panelEditarFundo = new System.Windows.Forms.Panel();
+            this.lblQuantidadeP = new System.Windows.Forms.Label();
+            this.BoxdQuantidadeP = new System.Windows.Forms.TextBox();
             this.BtnPincel = new System.Windows.Forms.Button();
-            this.lblEmailF = new System.Windows.Forms.Label();
-            this.BoxdEmailF = new System.Windows.Forms.TextBox();
-            this.lblSenhaF = new System.Windows.Forms.Label();
-            this.lblNomeF = new System.Windows.Forms.Label();
-            this.BoxdNomeF = new System.Windows.Forms.TextBox();
-            this.BoxdSenhaF = new System.Windows.Forms.TextBox();
-            this.lblIdF = new System.Windows.Forms.Label();
-            this.BoxdIdF = new System.Windows.Forms.TextBox();
+            this.lblValorP = new System.Windows.Forms.Label();
+            this.BoxdValorP = new System.Windows.Forms.TextBox();
+            this.lblDescricaoP = new System.Windows.Forms.Label();
+            this.lblNomeP = new System.Windows.Forms.Label();
+            this.BoxdNomeP = new System.Windows.Forms.TextBox();
+            this.BoxdDescricaoP = new System.Windows.Forms.TextBox();
+            this.lblIdP = new System.Windows.Forms.Label();
+            this.BoxdIdP = new System.Windows.Forms.TextBox();
             this.panelFundoDT = new System.Windows.Forms.Panel();
             this.DTgridProd = new System.Windows.Forms.DataGridView();
             this.CheckBox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.TelaFundo = new System.Windows.Forms.PictureBox();
             this.BarSideTop.SuspendLayout();
             this.panelLabel.SuspendLayout();
             this.panelBuscar.SuspendLayout();
@@ -103,10 +108,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImagenProd)).BeginInit();
             this.panelAviso.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFechar)).BeginInit();
+            this.Aviso2.SuspendLayout();
             this.LayoutFundoDT.SuspendLayout();
             this.panelEditarFundo.SuspendLayout();
             this.panelFundoDT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DTgridProd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TelaFundo)).BeginInit();
             this.SuspendLayout();
             // 
             // BarSideTop
@@ -148,6 +155,7 @@
             this.btnBuscar.Image = global::UkraBar.Properties.Resources.search_more_24px;
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // BoxBuscar
             // 
@@ -238,6 +246,7 @@
             this.BtnEditar.Image = global::UkraBar.Properties.Resources.pencil_24px;
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.UseVisualStyleBackColor = false;
+            this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
             // 
             // BtnConfigurações
             // 
@@ -352,6 +361,7 @@
             this.PanelCadastrarProd.Controls.Add(this.lblDescricao);
             this.PanelCadastrarProd.Controls.Add(this.pbFechar);
             this.PanelCadastrarProd.Controls.Add(this.lblId);
+            this.PanelCadastrarProd.Controls.Add(this.Aviso2);
             resources.ApplyResources(this.PanelCadastrarProd, "PanelCadastrarProd");
             this.PanelCadastrarProd.Name = "PanelCadastrarProd";
             // 
@@ -466,6 +476,19 @@
             this.lblId.ForeColor = System.Drawing.Color.White;
             this.lblId.Name = "lblId";
             // 
+            // Aviso2
+            // 
+            this.Aviso2.BackColor = System.Drawing.Color.Red;
+            this.Aviso2.Controls.Add(this.label1);
+            resources.ApplyResources(this.Aviso2, "Aviso2");
+            this.Aviso2.Name = "Aviso2";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Name = "label1";
+            // 
             // LayoutFundoDT
             // 
             resources.ApplyResources(this.LayoutFundoDT, "LayoutFundoDT");
@@ -477,17 +500,30 @@
             // panelEditarFundo
             // 
             this.panelEditarFundo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.panelEditarFundo.Controls.Add(this.lblQuantidadeP);
+            this.panelEditarFundo.Controls.Add(this.BoxdQuantidadeP);
             this.panelEditarFundo.Controls.Add(this.BtnPincel);
-            this.panelEditarFundo.Controls.Add(this.lblEmailF);
-            this.panelEditarFundo.Controls.Add(this.BoxdEmailF);
-            this.panelEditarFundo.Controls.Add(this.lblSenhaF);
-            this.panelEditarFundo.Controls.Add(this.lblNomeF);
-            this.panelEditarFundo.Controls.Add(this.BoxdNomeF);
-            this.panelEditarFundo.Controls.Add(this.BoxdSenhaF);
-            this.panelEditarFundo.Controls.Add(this.lblIdF);
-            this.panelEditarFundo.Controls.Add(this.BoxdIdF);
+            this.panelEditarFundo.Controls.Add(this.lblValorP);
+            this.panelEditarFundo.Controls.Add(this.BoxdValorP);
+            this.panelEditarFundo.Controls.Add(this.lblDescricaoP);
+            this.panelEditarFundo.Controls.Add(this.lblNomeP);
+            this.panelEditarFundo.Controls.Add(this.BoxdNomeP);
+            this.panelEditarFundo.Controls.Add(this.BoxdDescricaoP);
+            this.panelEditarFundo.Controls.Add(this.lblIdP);
+            this.panelEditarFundo.Controls.Add(this.BoxdIdP);
             resources.ApplyResources(this.panelEditarFundo, "panelEditarFundo");
             this.panelEditarFundo.Name = "panelEditarFundo";
+            // 
+            // lblQuantidadeP
+            // 
+            resources.ApplyResources(this.lblQuantidadeP, "lblQuantidadeP");
+            this.lblQuantidadeP.ForeColor = System.Drawing.Color.White;
+            this.lblQuantidadeP.Name = "lblQuantidadeP";
+            // 
+            // BoxdQuantidadeP
+            // 
+            resources.ApplyResources(this.BoxdQuantidadeP, "BoxdQuantidadeP");
+            this.BoxdQuantidadeP.Name = "BoxdQuantidadeP";
             // 
             // BtnPincel
             // 
@@ -498,50 +534,51 @@
             this.BtnPincel.Image = global::UkraBar.Properties.Resources.pencil_24px;
             this.BtnPincel.Name = "BtnPincel";
             this.BtnPincel.UseVisualStyleBackColor = false;
+            this.BtnPincel.Click += new System.EventHandler(this.BtnPincel_Click);
             // 
-            // lblEmailF
+            // lblValorP
             // 
-            resources.ApplyResources(this.lblEmailF, "lblEmailF");
-            this.lblEmailF.ForeColor = System.Drawing.Color.White;
-            this.lblEmailF.Name = "lblEmailF";
+            resources.ApplyResources(this.lblValorP, "lblValorP");
+            this.lblValorP.ForeColor = System.Drawing.Color.White;
+            this.lblValorP.Name = "lblValorP";
             // 
-            // BoxdEmailF
+            // BoxdValorP
             // 
-            resources.ApplyResources(this.BoxdEmailF, "BoxdEmailF");
-            this.BoxdEmailF.Name = "BoxdEmailF";
+            resources.ApplyResources(this.BoxdValorP, "BoxdValorP");
+            this.BoxdValorP.Name = "BoxdValorP";
             // 
-            // lblSenhaF
+            // lblDescricaoP
             // 
-            resources.ApplyResources(this.lblSenhaF, "lblSenhaF");
-            this.lblSenhaF.ForeColor = System.Drawing.Color.White;
-            this.lblSenhaF.Name = "lblSenhaF";
+            resources.ApplyResources(this.lblDescricaoP, "lblDescricaoP");
+            this.lblDescricaoP.ForeColor = System.Drawing.Color.White;
+            this.lblDescricaoP.Name = "lblDescricaoP";
             // 
-            // lblNomeF
+            // lblNomeP
             // 
-            resources.ApplyResources(this.lblNomeF, "lblNomeF");
-            this.lblNomeF.ForeColor = System.Drawing.Color.White;
-            this.lblNomeF.Name = "lblNomeF";
+            resources.ApplyResources(this.lblNomeP, "lblNomeP");
+            this.lblNomeP.ForeColor = System.Drawing.Color.White;
+            this.lblNomeP.Name = "lblNomeP";
             // 
-            // BoxdNomeF
+            // BoxdNomeP
             // 
-            resources.ApplyResources(this.BoxdNomeF, "BoxdNomeF");
-            this.BoxdNomeF.Name = "BoxdNomeF";
+            resources.ApplyResources(this.BoxdNomeP, "BoxdNomeP");
+            this.BoxdNomeP.Name = "BoxdNomeP";
             // 
-            // BoxdSenhaF
+            // BoxdDescricaoP
             // 
-            resources.ApplyResources(this.BoxdSenhaF, "BoxdSenhaF");
-            this.BoxdSenhaF.Name = "BoxdSenhaF";
+            resources.ApplyResources(this.BoxdDescricaoP, "BoxdDescricaoP");
+            this.BoxdDescricaoP.Name = "BoxdDescricaoP";
             // 
-            // lblIdF
+            // lblIdP
             // 
-            resources.ApplyResources(this.lblIdF, "lblIdF");
-            this.lblIdF.ForeColor = System.Drawing.Color.White;
-            this.lblIdF.Name = "lblIdF";
+            resources.ApplyResources(this.lblIdP, "lblIdP");
+            this.lblIdP.ForeColor = System.Drawing.Color.White;
+            this.lblIdP.Name = "lblIdP";
             // 
-            // BoxdIdF
+            // BoxdIdP
             // 
-            resources.ApplyResources(this.BoxdIdF, "BoxdIdF");
-            this.BoxdIdF.Name = "BoxdIdF";
+            resources.ApplyResources(this.BoxdIdP, "BoxdIdP");
+            this.BoxdIdP.Name = "BoxdIdP";
             // 
             // panelFundoDT
             // 
@@ -557,35 +594,35 @@
             this.DTgridProd.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DTgridProd.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DTgridProd.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTgridProd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTgridProd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.DTgridProd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DTgridProd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CheckBox});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DTgridProd.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DTgridProd.DefaultCellStyle = dataGridViewCellStyle5;
             this.DTgridProd.GridColor = System.Drawing.Color.Black;
             this.DTgridProd.Name = "DTgridProd";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTgridProd.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTgridProd.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.DTgridProd.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.DTgridProd.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.DTgridProd.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -593,6 +630,7 @@
             this.DTgridProd.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
             this.DTgridProd.RowTemplate.Height = 30;
             this.DTgridProd.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DTgridProd.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DTgridProd_CellMouseClick);
             // 
             // CheckBox
             // 
@@ -601,6 +639,13 @@
             this.CheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             resources.ApplyResources(this.CheckBox, "CheckBox");
             this.CheckBox.Name = "CheckBox";
+            // 
+            // TelaFundo
+            // 
+            resources.ApplyResources(this.TelaFundo, "TelaFundo");
+            this.TelaFundo.Image = global::UkraBar.Properties.Resources.TelaFundo;
+            this.TelaFundo.Name = "TelaFundo";
+            this.TelaFundo.TabStop = false;
             // 
             // CadastrarProd
             // 
@@ -611,6 +656,7 @@
             this.Controls.Add(this.sideBarMenuD);
             this.Controls.Add(this.paneltopbar);
             this.Controls.Add(this.LayoutFundoDT);
+            this.Controls.Add(this.TelaFundo);
             this.Name = "CadastrarProd";
             this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -633,11 +679,14 @@
             this.panelAviso.ResumeLayout(false);
             this.panelAviso.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFechar)).EndInit();
+            this.Aviso2.ResumeLayout(false);
+            this.Aviso2.PerformLayout();
             this.LayoutFundoDT.ResumeLayout(false);
             this.panelEditarFundo.ResumeLayout(false);
             this.panelEditarFundo.PerformLayout();
             this.panelFundoDT.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DTgridProd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TelaFundo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -688,18 +737,23 @@
         private System.Windows.Forms.FlowLayoutPanel LayoutFundoDT;
         private System.Windows.Forms.Panel panelEditarFundo;
         private System.Windows.Forms.Button BtnPincel;
-        private System.Windows.Forms.Label lblEmailF;
-        private System.Windows.Forms.TextBox BoxdEmailF;
-        private System.Windows.Forms.Label lblSenhaF;
-        private System.Windows.Forms.Label lblNomeF;
-        private System.Windows.Forms.TextBox BoxdNomeF;
-        private System.Windows.Forms.TextBox BoxdSenhaF;
-        private System.Windows.Forms.Label lblIdF;
-        private System.Windows.Forms.TextBox BoxdIdF;
+        private System.Windows.Forms.Label lblValorP;
+        private System.Windows.Forms.TextBox BoxdValorP;
+        private System.Windows.Forms.Label lblDescricaoP;
+        private System.Windows.Forms.Label lblNomeP;
+        private System.Windows.Forms.TextBox BoxdNomeP;
+        private System.Windows.Forms.TextBox BoxdDescricaoP;
+        private System.Windows.Forms.Label lblIdP;
+        private System.Windows.Forms.TextBox BoxdIdP;
         private System.Windows.Forms.Panel panelFundoDT;
         private System.Windows.Forms.DataGridView DTgridProd;
         private System.Windows.Forms.DataGridViewCheckBoxColumn CheckBox;
         private System.Windows.Forms.TextBox BoxcQuantidade;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel Aviso2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblQuantidadeP;
+        private System.Windows.Forms.TextBox BoxdQuantidadeP;
+        private System.Windows.Forms.PictureBox TelaFundo;
     }
 }

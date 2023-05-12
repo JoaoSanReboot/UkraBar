@@ -88,11 +88,8 @@ namespace UkraBar
 
         private void BtnMesas_Click(object sender, EventArgs e)
         {
-            CadastrarMesas MesasCad = new CadastrarMesas();
-            this.Hide();
-            MesasCad.ShowDialog();
-            this.Close();
-        }//Botao Cadastras Mesas
+  
+        }
 
         private void voltar1_Click(object sender, EventArgs e)
         {
@@ -107,5 +104,12 @@ namespace UkraBar
 
         }
 
+        private void BtnClientesView_Click(object sender, EventArgs e)
+        {
+            PainelCliente Cliente = new PainelCliente();
+            this.Hide();
+            Cliente.ShowDialog();
+            this.Close();
+        }
     }
 }

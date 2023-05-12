@@ -6,6 +6,7 @@ using System.Linq;
 using System.Windows.Forms;
 using System.IO;
 using static System.Net.Mime.MediaTypeNames;
+using Mysqlx.Crud;
 
 namespace UkraBar
 {
@@ -24,7 +25,7 @@ namespace UkraBar
         public CadastrarFunc()
         {
             InitializeComponent();
-            CarregarDados();
+            
         }
 
         //Carregar Dados é um public para carregar informações no DataGridView.
@@ -157,7 +158,7 @@ namespace UkraBar
         }
 
 
-        //Funções dos Botões da Side Bar Lateral Direia.
+                                                          //Funções em Gerais.
 
 
         //Executa o TimerTick SideBarLateral.
@@ -195,57 +196,55 @@ namespace UkraBar
             this.Close();    //Fecha o Formulário antigo.
         }
 
+        //Abre Panel de Cadastrar Funcionários.
         private void BtnNovoFunc_Click(object sender, EventArgs e)
         {
-            if (sideBarMenuExpand == true)
+            if (sideBarMenuExpand == true)//Se o Bool Estiver Sim.
             {
-                PanelCadastrarFunc.Visible = true;
-                NovoFuncTimer.Start();
+                PanelCadastrarFunc.Visible = true;//Então deixar Bool Sim;
+                NovoFuncTimer.Start();          //Começar Timer.
             }
         }
 
+        //Abre o Panel de Editar Funcionários.
         private void BtnEditar_Click(object sender, EventArgs e)
         {
-            if (EditFundo)
+            if (EditFundo)//Se o Bool estiver menor ou igual valor.
             {
                 panelEditarFundo.Height -= 113;
-                EditFundo = false;
+                EditFundo = false;//Deixar Bool false.
             }
             else
             {
-                panelEditarFundo.Height += 113;
-                EditFundo = true;
+                panelEditarFundo.Height += 113;//Se o Bool estiver maior ou igual valor.
+                EditFundo = true;//Deixar Bool True.
             }
         }
 
+        //PictureBox de X botton para fechar Panel de Cadastro
         private void pbFechar_Click(object sender, EventArgs e)
         {
-            NovoFuncTimer.Start();
+            NovoFuncTimer.Start();//Inicia o Tempo para Fechar.
         }
 
+        //Btn Salvar Dentro do Panel, Envia Informações no MySql.
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
-            byte[] imagem_byte = null;
-
-            FileStream fStrem = new FileStream(this.BoxdFilesF.Text, FileMode.Open, FileAccess.Read);//Defini fStrem como Binário.
-
-            BinaryReader br = new BinaryReader(fStrem);//Coloca o fStream Dentro de um Leitor Binário.
-
-            imagem_byte = br.ReadBytes((int)fStrem.Length);//Defini que ele irá ler em Binário e salvará na array.
-
-            string inserirQuery = "INSERT INTO cadastro_funcionario (id_cadastro, nome_funcionario, senha_funcionario, email_funcionario, foto) VALUES" +
-                "('" + BoxcId.Text + "','" + BoxcNome.Text + "', '" + BoxcSenha.Text + "','" + BoxcEmail.Text + "','" + imagem_byte + "')";
-            executarQuery(inserirQuery);
-            CarregarDados();//Carrega dados na tabela.
-            NovoFuncTimer.Stop();
+            //Cria um String para colocar no Executor de Query.
+            string inserirQuery = "INSERT INTO cadastro_funcionario (id_cadastro, nome_funcionario, senha_funcionario, email_funcionario) VALUES" +
+                "('" + BoxcId.Text + "','" + BoxcNome.Text + "', '" + BoxcSenha.Text + "','" + BoxcEmail.Text + "')";
+            executarQuery(inserirQuery);//Coloca a String no Executor.
+            CarregarDados();        //Carrega dados na tabela.
+            NovoFuncTimer.Stop();//Para o Timer.
 
         }
 
+        //Btn Deletar Informações no Grid e no MySql.
         private void BtnDeletar_Click(object sender, EventArgs e)
         {
             conn.Open();
 
-            for (int i = 0; i < DTgridFunc.Rows.Count; i++)//Faz a contagem de linhas Selecionadas.
+            for (int i = 0; i < DTgridFunc.Rows.Count; i++)//Faz a contagem de linhas Selecionadas enquanto i for menor que a contagens de rows.
             {
                 DataGridViewCheckBoxCell CheckBox = DTgridFunc.Rows[i].Cells[0] as DataGridViewCheckBoxCell; //Defini CheckBox como funcional.
 
@@ -265,6 +264,7 @@ namespace UkraBar
             conn.Close();
         }
 
+        //Btn Buscar Informações na Tabela.
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             using (MySqlConnection conn = new MySqlConnection(connectionString))//Executa a conn quando apertado.
@@ -295,57 +295,86 @@ namespace UkraBar
                 }
             }
         }
-      
+
+        private void BtnPincel_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                conn.Open();//Abre Conexão.
+                //Declara String.
+                string Atualizar = "UPDATE cadastro_funcionario SET nome_funcionario = @nome_funcionario, senha_funcionario = @senha_funcionario, email_funcionario = @email_funcionario WHERE id_cadastro = @id_cadastro";
+                using (MySqlCommand comando = new MySqlCommand(Atualizar, conn))//Usa strings.
+                {
+                    {
+                        //Declara Box como informações dentro do mysql.
+                        comando.Parameters.AddWithValue("@id_cadastro", BoxdIdF.Text);
+                        comando.Parameters.AddWithValue("@nome_funcionario", BoxdNomeF.Text);
+                        comando.Parameters.AddWithValue("@senha_funcionario", BoxdSenhaF.Text);
+                        comando.Parameters.AddWithValue("@email_funcionario", BoxdEmailF.Text);
+                        comando.ExecuteNonQuery();//Executa comando.
+                    }
+                }
+                MessageBox.Show("Executado com Sucesso");//Mensagem de Execução.
+                CarregarDados();//Carrega dados na tabela.
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro");//Mensagem de error.
+            }
+            finally
+            {
+                conn.Close();//Fecha Conexão.
+            }
+        }
+
+        //Setando o Form como sem Borda.
         private void CadastrarFunc_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.None;
         }
 
+        //Picture Box Aumentar Form.
         private void button1_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
-            MaximizarJanela.Location = MaximizarJanela.Location;
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
 
         }
 
+        //Picture Box Minimizar Form.
         private void button2_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-            MinimizarJanela.Location = MinimizarJanela.Location;
         }
 
+        //Picture Box de X para Fechar Form.
         private void FecharJanelaF_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void BtnUpload_Click(object sender, EventArgs e)
+        //Função Clicar na Row enviar informações nas Box.
+        private void DTgridFunc_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            OpenFileDialog dialog = new OpenFileDialog(); // Defini um dialog como o Novo
-            //Um Filtro de imagens que aceita apenas Png e Jpg.
-            dialog.Filter = "JPG Files(*.jpg)|*.jpg | PNG Files(*.png)|*png | AllFiles(*.*)|*.*";
-
-            if (dialog.ShowDialog() == DialogResult.OK)//Se o usúario der Ok no Filles mostrar diretório.
+            foreach (DataGridViewRow row in DTgridFunc.Rows)
             {
-                string foto = dialog.FileName.ToString();
-                BoxdFilesF.Text = foto;
-                ImagenFunc.ImageLocation = foto;
-
+                if (Convert.ToBoolean(row.Cells["CheckBox"].Value))
+                {
+                    BoxdIdF.Text = DTgridFunc.CurrentRow.Cells[1].Value.ToString();
+                    BoxdNomeF.Text = DTgridFunc.CurrentRow.Cells[2].Value.ToString();
+                    BoxdSenhaF.Text = DTgridFunc.CurrentRow.Cells[3].Value.ToString();
+                    BoxdEmailF.Text = DTgridFunc.CurrentRow.Cells[4].Value.ToString();
+                }
             }
         }
 
-        private void DTgridFunc_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void DTgridFunc_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            BoxdIdF.Text = DTgridFunc.CurrentRow.Cells[1].Value.ToString();
-            BoxdNomeF.Text = DTgridFunc.CurrentRow.Cells[2].Value.ToString();
-            BoxdSenhaF.Text = DTgridFunc.CurrentRow.Cells[3].Value.ToString();
-            BoxdEmailF.Text = DTgridFunc.CurrentRow.Cells[4].Value.ToString();
-        }
+       
     }
 }
     

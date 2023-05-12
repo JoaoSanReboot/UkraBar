@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace UkraBar
 {
-    public partial class CadastrarMesas : Form
+    public partial class PainelMesas : Form
     {
-        public CadastrarMesas()
+        public PainelMesas()
         {
             InitializeComponent();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

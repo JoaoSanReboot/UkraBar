@@ -58,7 +58,7 @@
             this.TextFunc1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextFunc1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextFunc1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TextFunc1.Location = new System.Drawing.Point(105, 398);
+            this.TextFunc1.Location = new System.Drawing.Point(986, 398);
             this.TextFunc1.Name = "TextFunc1";
             this.TextFunc1.Size = new System.Drawing.Size(270, 28);
             this.TextFunc1.TabIndex = 11;
@@ -104,7 +104,7 @@
             this.TextAdm1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextAdm1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextAdm1.ForeColor = System.Drawing.Color.Black;
-            this.TextAdm1.Location = new System.Drawing.Point(987, 397);
+            this.TextAdm1.Location = new System.Drawing.Point(105, 398);
             this.TextAdm1.Name = "TextAdm1";
             this.TextAdm1.Size = new System.Drawing.Size(270, 28);
             this.TextAdm1.TabIndex = 33;
@@ -178,7 +178,7 @@
             // 
             this.BtnAdm1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnAdm1.Image = global::UkraBar.Properties.Resources.BtnEntrar;
-            this.BtnAdm1.Location = new System.Drawing.Point(156, 589);
+            this.BtnAdm1.Location = new System.Drawing.Point(144, 589);
             this.BtnAdm1.Name = "BtnAdm1";
             this.BtnAdm1.Size = new System.Drawing.Size(196, 50);
             this.BtnAdm1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;

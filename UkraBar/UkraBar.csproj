@@ -93,12 +93,6 @@
     <Compile Include="CadastrarFunc.Designer.cs">
       <DependentUpon>CadastrarFunc.cs</DependentUpon>
     </Compile>
-    <Compile Include="CadastrarMesas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CadastrarMesas.Designer.cs">
-      <DependentUpon>CadastrarMesas.cs</DependentUpon>
-    </Compile>
     <Compile Include="CadastrarProd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +129,18 @@
     <Compile Include="PainelAdm.Designer.cs">
       <DependentUpon>PainelAdm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PainelMesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PainelMesas.Designer.cs">
+      <DependentUpon>PainelMesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PainelProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PainelProdutos.Designer.cs">
+      <DependentUpon>PainelProdutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CadastrarDesc.resx">
@@ -157,6 +163,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PainelAdm.resx">
       <DependentUpon>PainelAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PainelMesas.resx">
+      <DependentUpon>PainelMesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PainelProdutos.resx">
+      <DependentUpon>PainelProdutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -269,6 +281,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BtnEntrar1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoMesas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MesaIEsquerdoL.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

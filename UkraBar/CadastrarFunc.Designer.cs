@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarFunc));
             this.SideBarTime = new System.Windows.Forms.Timer(this.components);
             this.NovoFuncTimer = new System.Windows.Forms.Timer(this.components);
             this.BoxcEmail = new System.Windows.Forms.TextBox();
@@ -84,9 +83,6 @@
             this.BtnAjuda = new System.Windows.Forms.Button();
             this.BtnVoltar = new System.Windows.Forms.Button();
             this.PanelCadastrarFunc = new System.Windows.Forms.Panel();
-            this.BoxdFilesF = new System.Windows.Forms.TextBox();
-            this.BtnUpload = new System.Windows.Forms.Button();
-            this.ImagenFunc = new System.Windows.Forms.PictureBox();
             this.BtnSalvar = new System.Windows.Forms.Button();
             this.pbFechar = new System.Windows.Forms.PictureBox();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -107,7 +103,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
             this.panelShowConfig.SuspendLayout();
             this.PanelCadastrarFunc.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImagenFunc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFechar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFundo)).BeginInit();
             this.SuspendLayout();
@@ -271,6 +266,7 @@
             this.BtnPincel.Text = "                  Editar";
             this.BtnPincel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnPincel.UseVisualStyleBackColor = false;
+            this.BtnPincel.Click += new System.EventHandler(this.BtnPincel_Click);
             // 
             // lblEmailF
             // 
@@ -411,8 +407,7 @@
             this.DTgridFunc.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.DTgridFunc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DTgridFunc.Size = new System.Drawing.Size(973, 546);
-            this.DTgridFunc.TabIndex = 29;
-            this.DTgridFunc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTgridFunc_CellContentClick);
+            this.DTgridFunc.TabIndex = 30;
             this.DTgridFunc.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DTgridFunc_CellMouseClick);
             // 
             // CheckBox
@@ -769,9 +764,6 @@
             // PanelCadastrarFunc
             // 
             this.PanelCadastrarFunc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.PanelCadastrarFunc.Controls.Add(this.BoxdFilesF);
-            this.PanelCadastrarFunc.Controls.Add(this.BtnUpload);
-            this.PanelCadastrarFunc.Controls.Add(this.ImagenFunc);
             this.PanelCadastrarFunc.Controls.Add(this.BtnSalvar);
             this.PanelCadastrarFunc.Controls.Add(this.BoxcEmail);
             this.PanelCadastrarFunc.Controls.Add(this.BoxcSenha);
@@ -790,43 +782,6 @@
             this.PanelCadastrarFunc.Size = new System.Drawing.Size(0, 560);
             this.PanelCadastrarFunc.TabIndex = 49;
             // 
-            // BoxdFilesF
-            // 
-            this.BoxdFilesF.Location = new System.Drawing.Point(626, 333);
-            this.BoxdFilesF.Name = "BoxdFilesF";
-            this.BoxdFilesF.Size = new System.Drawing.Size(292, 20);
-            this.BoxdFilesF.TabIndex = 14;
-            // 
-            // BtnUpload
-            // 
-            this.BtnUpload.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.BtnUpload.FlatAppearance.BorderSize = 0;
-            this.BtnUpload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnUpload.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnUpload.ForeColor = System.Drawing.Color.White;
-            this.BtnUpload.Image = global::UkraBar.Properties.Resources.upload_32px;
-            this.BtnUpload.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnUpload.Location = new System.Drawing.Point(626, 359);
-            this.BtnUpload.Name = "BtnUpload";
-            this.BtnUpload.Padding = new System.Windows.Forms.Padding(0, 0, 40, 0);
-            this.BtnUpload.Size = new System.Drawing.Size(292, 50);
-            this.BtnUpload.TabIndex = 13;
-            this.BtnUpload.Text = "                           Upload";
-            this.BtnUpload.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnUpload.UseVisualStyleBackColor = false;
-            this.BtnUpload.Click += new System.EventHandler(this.BtnUpload_Click);
-            // 
-            // ImagenFunc
-            // 
-            this.ImagenFunc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.ImagenFunc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImagenFunc.Location = new System.Drawing.Point(626, 67);
-            this.ImagenFunc.Name = "ImagenFunc";
-            this.ImagenFunc.Size = new System.Drawing.Size(292, 260);
-            this.ImagenFunc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ImagenFunc.TabIndex = 12;
-            this.ImagenFunc.TabStop = false;
-            // 
             // BtnSalvar
             // 
             this.BtnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -836,7 +791,7 @@
             this.BtnSalvar.ForeColor = System.Drawing.Color.White;
             this.BtnSalvar.Image = global::UkraBar.Properties.Resources.Checkmark_24px;
             this.BtnSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSalvar.Location = new System.Drawing.Point(61, 382);
+            this.BtnSalvar.Location = new System.Drawing.Point(62, 424);
             this.BtnSalvar.Name = "BtnSalvar";
             this.BtnSalvar.Padding = new System.Windows.Forms.Padding(0, 0, 40, 0);
             this.BtnSalvar.Size = new System.Drawing.Size(250, 50);
@@ -862,7 +817,7 @@
             // 
             this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle4.NullValue")));
+            dataGridViewCellStyle4.NullValue = null;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewImageColumn1.FillWeight = 167.1073F;
@@ -933,7 +888,6 @@
             this.panelShowConfig.ResumeLayout(false);
             this.PanelCadastrarFunc.ResumeLayout(false);
             this.PanelCadastrarFunc.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImagenFunc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFechar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFundo)).EndInit();
             this.ResumeLayout(false);
@@ -969,7 +923,6 @@
         private System.Windows.Forms.Label lblIdF;
         private System.Windows.Forms.TextBox BoxdIdF;
         private System.Windows.Forms.Panel panelFundoDT;
-        private System.Windows.Forms.DataGridView DTgridFunc;
         private System.Windows.Forms.Panel paneltopbar;
         private System.Windows.Forms.FlowLayoutPanel BarSideTop;
         private System.Windows.Forms.Panel panelLabel;
@@ -994,10 +947,8 @@
         private System.Windows.Forms.Button MinimizarJanela;
         private System.Windows.Forms.Button MaximizarJanela;
         private System.Windows.Forms.Panel PanelCadastrarFunc;
-        private System.Windows.Forms.Button BtnUpload;
-        private System.Windows.Forms.PictureBox ImagenFunc;
-        private System.Windows.Forms.TextBox BoxdFilesF;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn CheckBox;
         private System.Windows.Forms.PictureBox pbFundo;
+        private System.Windows.Forms.DataGridView DTgridFunc;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn CheckBox;
     }
 }
