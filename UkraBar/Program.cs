@@ -17,7 +17,7 @@ namespace UkraBar
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PainelFuncionario());
+            Application.Run(new Clientes());
            
         }
     }
