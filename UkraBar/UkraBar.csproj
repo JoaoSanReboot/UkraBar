@@ -99,6 +99,12 @@
     <Compile Include="CadastrarProd.Designer.cs">
       <DependentUpon>CadastrarProd.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuEscolha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuEscolha.Designer.cs">
+      <DependentUpon>MenuEscolha.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastrarProd.resx">
       <DependentUpon>CadastrarProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuEscolha.resx">
+      <DependentUpon>MenuEscolha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PainelCliente.resx">
       <DependentUpon>PainelCliente.cs</DependentUpon>
@@ -287,6 +296,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MesaIEsquerdoL.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale %281%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnSandubas.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnPratos.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnBebidas.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnSobremesas.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
