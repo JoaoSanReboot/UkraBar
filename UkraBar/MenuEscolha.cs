@@ -16,5 +16,38 @@ namespace UkraBar
         {
             InitializeComponent();
         }
+
+        private void BtnSanduba_Click(object sender, EventArgs e)
+        {
+           MenuSanduba MenuS = new MenuSanduba();
+            this.Hide();
+            MenuS.ShowDialog();
+            this.Close();   
+
+        }
+
+        private void BtnPratos_Click(object sender, EventArgs e)
+        {
+            MenuPratos MenuP = new MenuPratos();
+            this.Hide();
+            MenuP.ShowDialog();
+            this.Close();
+        }
+
+        private void BtnBebidas_Click(object sender, EventArgs e)
+        {
+            MenuBebidas MenuB = new MenuBebidas();
+            this.Hide();
+            MenuB.ShowDialog();
+            this.Close();
+        }
+
+        private void BtnSobremesas_Click(object sender, EventArgs e)
+        {
+            MenuSobremesas MenuSm = new MenuSobremesas();
+            this.Hide();
+            MenuSm.ShowDialog();
+            this.Close();
+        }
     }
 }

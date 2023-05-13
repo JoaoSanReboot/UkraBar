@@ -123,6 +123,7 @@
             this.BtnVoltarADM.TabIndex = 9;
             this.BtnVoltarADM.Text = "Voltar";
             this.BtnVoltarADM.UseVisualStyleBackColor = false;
+            this.BtnVoltarADM.Click += new System.EventHandler(this.BtnVoltarADM_Click);
             // 
             // BtnClientesView
             // 

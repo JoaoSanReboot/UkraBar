@@ -27,5 +27,10 @@ namespace UkraBar
 
                 pCadastro.Visible = false;//Esconde o Painel de Botões
         }
+
+        private void BtnVoltarADM_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

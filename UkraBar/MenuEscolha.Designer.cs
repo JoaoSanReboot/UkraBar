@@ -50,6 +50,7 @@
             this.BtnSobremesas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.BtnSobremesas.TabIndex = 4;
             this.BtnSobremesas.TabStop = false;
+            this.BtnSobremesas.Click += new System.EventHandler(this.BtnSobremesas_Click);
             // 
             // BtnBebidas
             // 
@@ -61,6 +62,7 @@
             this.BtnBebidas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.BtnBebidas.TabIndex = 3;
             this.BtnBebidas.TabStop = false;
+            this.BtnBebidas.Click += new System.EventHandler(this.BtnBebidas_Click);
             // 
             // BtnPratos
             // 
@@ -72,6 +74,7 @@
             this.BtnPratos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.BtnPratos.TabIndex = 2;
             this.BtnPratos.TabStop = false;
+            this.BtnPratos.Click += new System.EventHandler(this.BtnPratos_Click);
             // 
             // BtnSanduba
             // 
@@ -83,6 +86,7 @@
             this.BtnSanduba.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.BtnSanduba.TabIndex = 1;
             this.BtnSanduba.TabStop = false;
+            this.BtnSanduba.Click += new System.EventHandler(this.BtnSanduba_Click);
             // 
             // TelaFundo
             // 
