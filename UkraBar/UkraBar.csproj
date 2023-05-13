@@ -135,6 +135,12 @@
     <Compile Include="MenuSobremesas.Designer.cs">
       <DependentUpon>MenuSobremesas.cs</DependentUpon>
     </Compile>
+    <Compile Include="PagamentoEscolha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagamentoEscolha.Designer.cs">
+      <DependentUpon>PagamentoEscolha.cs</DependentUpon>
+    </Compile>
     <Compile Include="PainelCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,11 +188,17 @@
     <EmbeddedResource Include="CadastrarProd.resx">
       <DependentUpon>CadastrarProd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuEscolha.resx">
       <DependentUpon>MenuEscolha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuSanduba.resx">
       <DependentUpon>MenuSanduba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagamentoEscolha.resx">
+      <DependentUpon>PagamentoEscolha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PainelCliente.resx">
       <DependentUpon>PainelCliente.cs</DependentUpon>
@@ -322,9 +334,6 @@
     <None Include="Resources\FundoMesas.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\MesaIEsquerdoL.PNG" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\sale %281%29 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
@@ -338,6 +347,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BtnSobremesas.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Voceestaai.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
