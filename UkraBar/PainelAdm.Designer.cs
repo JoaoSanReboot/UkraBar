@@ -40,7 +40,6 @@
             this.BtnFuncionario = new System.Windows.Forms.Button();
             this.BtnDesconto = new System.Windows.Forms.Button();
             this.BtnProdutos = new System.Windows.Forms.Button();
-            this.BtnMesas = new System.Windows.Forms.Button();
             this.pbFundoAdm = new System.Windows.Forms.PictureBox();
             this.pMenu.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -130,7 +129,7 @@
             this.BtnCadastrar.Location = new System.Drawing.Point(226, 16);
             this.BtnCadastrar.Name = "BtnCadastrar";
             this.BtnCadastrar.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
-            this.BtnCadastrar.Size = new System.Drawing.Size(187, 62);
+            this.BtnCadastrar.Size = new System.Drawing.Size(187, 63);
             this.BtnCadastrar.TabIndex = 0;
             this.BtnCadastrar.Text = "   Cadastrar";
             this.BtnCadastrar.UseVisualStyleBackColor = false;
@@ -167,6 +166,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(10, 529);
             this.panel3.TabIndex = 3;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // pCadastro
             // 
@@ -174,10 +174,9 @@
             this.pCadastro.Controls.Add(this.BtnFuncionario);
             this.pCadastro.Controls.Add(this.BtnDesconto);
             this.pCadastro.Controls.Add(this.BtnProdutos);
-            this.pCadastro.Controls.Add(this.BtnMesas);
             this.pCadastro.Location = new System.Drawing.Point(226, 80);
             this.pCadastro.Name = "pCadastro";
-            this.pCadastro.Size = new System.Drawing.Size(187, 237);
+            this.pCadastro.Size = new System.Drawing.Size(187, 182);
             this.pCadastro.TabIndex = 8;
             this.pCadastro.Visible = false;
             this.pCadastro.Paint += new System.Windows.Forms.PaintEventHandler(this.pCadastro_Paint);
@@ -191,9 +190,9 @@
             this.BtnFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnFuncionario.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnFuncionario.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnFuncionario.Location = new System.Drawing.Point(0, 175);
+            this.BtnFuncionario.Location = new System.Drawing.Point(0, 117);
             this.BtnFuncionario.Name = "BtnFuncionario";
-            this.BtnFuncionario.Size = new System.Drawing.Size(187, 62);
+            this.BtnFuncionario.Size = new System.Drawing.Size(187, 65);
             this.BtnFuncionario.TabIndex = 8;
             this.BtnFuncionario.Text = "Funcionário";
             this.BtnFuncionario.UseVisualStyleBackColor = false;
@@ -210,7 +209,7 @@
             this.BtnDesconto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDesconto.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDesconto.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnDesconto.Location = new System.Drawing.Point(0, 118);
+            this.BtnDesconto.Location = new System.Drawing.Point(0, 59);
             this.BtnDesconto.Name = "BtnDesconto";
             this.BtnDesconto.Size = new System.Drawing.Size(187, 62);
             this.BtnDesconto.TabIndex = 7;
@@ -235,23 +234,6 @@
             this.BtnProdutos.UseVisualStyleBackColor = false;
             this.BtnProdutos.Click += new System.EventHandler(this.button10_Click);
             // 
-            // BtnMesas
-            // 
-            this.BtnMesas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnMesas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMesas.FlatAppearance.BorderSize = 0;
-            this.BtnMesas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(210)))), ((int)(((byte)(2)))));
-            this.BtnMesas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMesas.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMesas.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnMesas.Location = new System.Drawing.Point(0, 59);
-            this.BtnMesas.Name = "BtnMesas";
-            this.BtnMesas.Size = new System.Drawing.Size(187, 62);
-            this.BtnMesas.TabIndex = 6;
-            this.BtnMesas.Text = "Mesas";
-            this.BtnMesas.UseVisualStyleBackColor = false;
-            this.BtnMesas.Click += new System.EventHandler(this.BtnMesas_Click);
-            // 
             // pbFundoAdm
             // 
             this.pbFundoAdm.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -261,6 +243,7 @@
             this.pbFundoAdm.Size = new System.Drawing.Size(1028, 609);
             this.pbFundoAdm.TabIndex = 9;
             this.pbFundoAdm.TabStop = false;
+            this.pbFundoAdm.Click += new System.EventHandler(this.pbFundoAdm_Click);
             // 
             // PainelAdm
             // 
@@ -294,7 +277,6 @@
         private System.Windows.Forms.Panel pCadastro;
         private System.Windows.Forms.Button BtnDesconto;
         private System.Windows.Forms.Button BtnProdutos;
-        private System.Windows.Forms.Button BtnMesas;
         private System.Windows.Forms.Button BtnFuncionario;
         private System.Windows.Forms.Button BtnVoltarADM;
         private System.Windows.Forms.PictureBox pbFundoAdm;

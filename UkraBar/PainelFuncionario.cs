@@ -16,5 +16,16 @@ namespace UkraBar
         {
             InitializeComponent();
         }
+
+        private void BtnCadastrar_Click(object sender, EventArgs e)
+        {
+            if (!pCadastro.Visible)
+
+                pCadastro.Visible = true; //Exibi o Painel de Botões 
+
+            else
+
+                pCadastro.Visible = false;//Esconde o Painel de Botões
+        }
     }
 }
