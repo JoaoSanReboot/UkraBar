@@ -16,5 +16,10 @@ namespace UkraBar
         {
             InitializeComponent();
         }
+
+        private void paneltopbar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

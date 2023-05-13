@@ -223,7 +223,6 @@ namespace UkraBar
         private void MinimizarJanela_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-            MinimizarJanela.Location = MinimizarJanela.Location;
         }
 
         //Abre Panel de Novo Produto
