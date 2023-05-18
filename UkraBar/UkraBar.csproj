@@ -99,6 +99,12 @@
     <Compile Include="CadastrarProd.Designer.cs">
       <DependentUpon>CadastrarProd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Carrinho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carrinho.Designer.cs">
+      <DependentUpon>Carrinho.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuBebidas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,12 @@
     </Compile>
     <Compile Include="Clientes.Designer.cs">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPagamento.Designer.cs">
+      <DependentUpon>MenuPagamento.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuPratos.cs">
       <SubType>Form</SubType>
@@ -146,12 +158,6 @@
     </Compile>
     <Compile Include="PainelCliente.Designer.cs">
       <DependentUpon>PainelCliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PainelFuncionario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PainelFuncionario.Designer.cs">
-      <DependentUpon>PainelFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="PainelLogins.cs">
       <SubType>Form</SubType>
@@ -188,11 +194,17 @@
     <EmbeddedResource Include="CadastrarProd.resx">
       <DependentUpon>CadastrarProd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Carrinho.resx">
+      <DependentUpon>Carrinho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuEscolha.resx">
       <DependentUpon>MenuEscolha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPagamento.resx">
+      <DependentUpon>MenuPagamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuSanduba.resx">
       <DependentUpon>MenuSanduba.cs</DependentUpon>
@@ -202,9 +214,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PainelCliente.resx">
       <DependentUpon>PainelCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PainelFuncionario.resx">
-      <DependentUpon>PainelFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PainelLogins.resx">
       <DependentUpon>PainelLogins.cs</DependentUpon>
@@ -349,7 +358,43 @@
     <None Include="Resources\BtnSobremesas.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Voceestaai.PNG" />
+    <None Include="Resources\TelaCpf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CpfNaNota1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelinhaCpf.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sandubas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sandubas2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SandubaEspanhol.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SandubaPolones1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UkraSimbolo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subtract_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UkraSimboloBranco.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Selecione.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

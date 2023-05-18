@@ -62,7 +62,7 @@ namespace UkraBar
                 if (reader.HasRows)
                 {
                     MessageBox.Show("Logado com sucesso!");//Caso login executado com exilio abrir formulario
-                    PainelFuncionario PainelLogins = new PainelFuncionario();
+                    PainelAdm PainelLogins = new PainelAdm();
                     PainelLogins.Show();
                     this.Hide();
                 }
