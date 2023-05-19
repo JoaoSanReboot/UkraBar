@@ -49,5 +49,13 @@ namespace UkraBar
             MenuSm.ShowDialog();
             this.Close();
         }
+
+        private void BtnFechar_Click(object sender, EventArgs e)
+        {
+            MenuPagamento menuPagamento = new MenuPagamento();
+            this.Hide();
+            menuPagamento.ShowDialog();
+            this.Close();
+        }
     }
 }

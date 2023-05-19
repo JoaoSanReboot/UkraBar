@@ -57,7 +57,7 @@
             this.lblIdF = new System.Windows.Forms.Label();
             this.BoxdIdF = new System.Windows.Forms.TextBox();
             this.panelFundoDT = new System.Windows.Forms.Panel();
-            this.DTgridFunc = new System.Windows.Forms.DataGridView();
+            this.DTgridClientes = new System.Windows.Forms.DataGridView();
             this.CheckBox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.paneltopbar = new System.Windows.Forms.Panel();
             this.MinimizarJanela = new System.Windows.Forms.Button();
@@ -91,7 +91,7 @@
             this.LayoutFundoDT.SuspendLayout();
             this.panelEditarFundo.SuspendLayout();
             this.panelFundoDT.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DTgridFunc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DTgridClientes)).BeginInit();
             this.paneltopbar.SuspendLayout();
             this.BarSideTop.SuspendLayout();
             this.panelLabel.SuspendLayout();
@@ -348,22 +348,22 @@
             // 
             // panelFundoDT
             // 
-            this.panelFundoDT.Controls.Add(this.DTgridFunc);
+            this.panelFundoDT.Controls.Add(this.DTgridClientes);
             this.panelFundoDT.Location = new System.Drawing.Point(3, 9);
             this.panelFundoDT.Name = "panelFundoDT";
             this.panelFundoDT.Size = new System.Drawing.Size(979, 552);
             this.panelFundoDT.TabIndex = 1;
             // 
-            // DTgridFunc
+            // DTgridClientes
             // 
-            this.DTgridFunc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.DTgridClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.DTgridFunc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DTgridFunc.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.DTgridFunc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DTgridFunc.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DTgridFunc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+            this.DTgridClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DTgridClientes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.DTgridClientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DTgridClientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DTgridClientes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -371,10 +371,10 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTgridFunc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.DTgridFunc.ColumnHeadersHeight = 30;
-            this.DTgridFunc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.DTgridFunc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DTgridClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.DTgridClientes.ColumnHeadersHeight = 30;
+            this.DTgridClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.DTgridClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CheckBox});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
@@ -383,10 +383,10 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DTgridFunc.DefaultCellStyle = dataGridViewCellStyle2;
-            this.DTgridFunc.GridColor = System.Drawing.Color.Black;
-            this.DTgridFunc.Location = new System.Drawing.Point(3, 3);
-            this.DTgridFunc.Name = "DTgridFunc";
+            this.DTgridClientes.DefaultCellStyle = dataGridViewCellStyle2;
+            this.DTgridClientes.GridColor = System.Drawing.Color.Black;
+            this.DTgridClientes.Location = new System.Drawing.Point(3, 3);
+            this.DTgridClientes.Name = "DTgridClientes";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -394,19 +394,19 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GrayText;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTgridFunc.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.DTgridFunc.RowHeadersWidth = 51;
-            this.DTgridFunc.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.DTgridFunc.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.DTgridFunc.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DTgridFunc.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
-            this.DTgridFunc.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
-            this.DTgridFunc.RowTemplate.Height = 30;
-            this.DTgridFunc.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.DTgridFunc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DTgridFunc.Size = new System.Drawing.Size(973, 546);
-            this.DTgridFunc.TabIndex = 30;
-            this.DTgridFunc.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DTgridFunc_CellMouseClick);
+            this.DTgridClientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.DTgridClientes.RowHeadersWidth = 51;
+            this.DTgridClientes.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.DTgridClientes.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.DTgridClientes.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DTgridClientes.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
+            this.DTgridClientes.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
+            this.DTgridClientes.RowTemplate.Height = 30;
+            this.DTgridClientes.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.DTgridClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DTgridClientes.Size = new System.Drawing.Size(973, 546);
+            this.DTgridClientes.TabIndex = 30;
+            this.DTgridClientes.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DTgridFunc_CellMouseClick);
             // 
             // CheckBox
             // 
@@ -858,7 +858,7 @@
             this.panelEditarFundo.ResumeLayout(false);
             this.panelEditarFundo.PerformLayout();
             this.panelFundoDT.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DTgridFunc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DTgridClientes)).EndInit();
             this.paneltopbar.ResumeLayout(false);
             this.BarSideTop.ResumeLayout(false);
             this.panelLabel.ResumeLayout(false);
@@ -931,7 +931,7 @@
         private System.Windows.Forms.Button MinimizarJanela;
         private System.Windows.Forms.Button MaximizarJanela;
         private System.Windows.Forms.Panel PanelCadastrarFunc;
-        private System.Windows.Forms.DataGridView DTgridFunc;
+        private System.Windows.Forms.DataGridView DTgridClientes;
         private System.Windows.Forms.DataGridViewCheckBoxColumn CheckBox;
     }
 }

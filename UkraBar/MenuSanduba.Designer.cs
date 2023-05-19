@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.PanelLateral = new System.Windows.Forms.Panel();
+            this.BtnCarrinho = new System.Windows.Forms.Button();
             this.BtnSair = new System.Windows.Forms.Button();
             this.BtnVoltar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -157,7 +158,7 @@
             this.panel30 = new System.Windows.Forms.Panel();
             this.BtnCancelarA = new System.Windows.Forms.Button();
             this.BtnOkA = new System.Windows.Forms.Button();
-            this.BtnCarrinho = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.PanelLateral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelItaliano.SuspendLayout();
@@ -205,6 +206,22 @@
             this.PanelLateral.Name = "PanelLateral";
             this.PanelLateral.Size = new System.Drawing.Size(159, 749);
             this.PanelLateral.TabIndex = 7;
+            // 
+            // BtnCarrinho
+            // 
+            this.BtnCarrinho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnCarrinho.FlatAppearance.BorderSize = 0;
+            this.BtnCarrinho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCarrinho.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCarrinho.ForeColor = System.Drawing.Color.White;
+            this.BtnCarrinho.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
+            this.BtnCarrinho.Location = new System.Drawing.Point(0, 263);
+            this.BtnCarrinho.Name = "BtnCarrinho";
+            this.BtnCarrinho.Size = new System.Drawing.Size(156, 50);
+            this.BtnCarrinho.TabIndex = 42;
+            this.BtnCarrinho.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCarrinho.UseVisualStyleBackColor = false;
+            this.BtnCarrinho.Click += new System.EventHandler(this.BtnCarrinho_Click);
             // 
             // BtnSair
             // 
@@ -380,6 +397,7 @@
             this.BoxCItaliano.Size = new System.Drawing.Size(70, 39);
             this.BoxCItaliano.TabIndex = 1;
             this.BoxCItaliano.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BoxCItaliano.Click += new System.EventHandler(this.BoxCItaliano_Click);
             // 
             // lblQuantidade
             // 
@@ -1801,27 +1819,30 @@
             this.BtnOkA.UseVisualStyleBackColor = false;
             this.BtnOkA.Click += new System.EventHandler(this.BtnOkA_Click);
             // 
-            // BtnCarrinho
+            // button1
             // 
-            this.BtnCarrinho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnCarrinho.FlatAppearance.BorderSize = 0;
-            this.BtnCarrinho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCarrinho.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCarrinho.ForeColor = System.Drawing.Color.White;
-            this.BtnCarrinho.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
-            this.BtnCarrinho.Location = new System.Drawing.Point(0, 263);
-            this.BtnCarrinho.Name = "BtnCarrinho";
-            this.BtnCarrinho.Size = new System.Drawing.Size(156, 50);
-            this.BtnCarrinho.TabIndex = 42;
-            this.BtnCarrinho.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCarrinho.UseVisualStyleBackColor = false;
-            this.BtnCarrinho.Click += new System.EventHandler(this.BtnCarrinho_Click);
+            this.button1.BackColor = System.Drawing.Color.DarkGreen;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(529, 30);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
+            this.button1.Size = new System.Drawing.Size(281, 55);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "        Comprar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // MenuSanduba
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panelAlemão);
             this.Controls.Add(this.panelVegetariano);
             this.Controls.Add(this.panelKatsuSando);
@@ -2027,5 +2048,6 @@
         private System.Windows.Forms.Button BtnSair;
         private System.Windows.Forms.Button BtnVoltar;
         private System.Windows.Forms.Button BtnCarrinho;
+        private System.Windows.Forms.Button button1;
     }
 }

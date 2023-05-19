@@ -49,6 +49,7 @@
             this.BtnPix.TabIndex = 0;
             this.BtnPix.Text = "Selecionar";
             this.BtnPix.UseVisualStyleBackColor = false;
+            this.BtnPix.Click += new System.EventHandler(this.BtnPix_Click);
             // 
             // BtnCartao
             // 
@@ -66,6 +67,7 @@
             this.BtnCartao.TabIndex = 1;
             this.BtnCartao.Text = "Selecionar";
             this.BtnCartao.UseVisualStyleBackColor = false;
+            this.BtnCartao.Click += new System.EventHandler(this.BtnCartao_Click);
             // 
             // BtnDinheiro
             // 
@@ -77,12 +79,13 @@
             this.BtnDinheiro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDinheiro.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDinheiro.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnDinheiro.Location = new System.Drawing.Point(1020, 466);
+            this.BtnDinheiro.Location = new System.Drawing.Point(999, 466);
             this.BtnDinheiro.Name = "BtnDinheiro";
             this.BtnDinheiro.Size = new System.Drawing.Size(180, 76);
             this.BtnDinheiro.TabIndex = 2;
             this.BtnDinheiro.Text = "Selecionar";
             this.BtnDinheiro.UseVisualStyleBackColor = false;
+            this.BtnDinheiro.Click += new System.EventHandler(this.BtnDinheiro_Click);
             // 
             // MenuPagamento
             // 

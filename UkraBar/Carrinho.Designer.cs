@@ -28,16 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.BarSideTop = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelLabel = new System.Windows.Forms.Panel();
-            this.lblFunc = new System.Windows.Forms.Label();
-            this.panelBuscar = new System.Windows.Forms.Panel();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.BoxBuscar = new System.Windows.Forms.TextBox();
-            this.FundoPesquisar = new System.Windows.Forms.PictureBox();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.sideBarMenu = new System.Windows.Forms.FlowLayoutPanel();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.lblMenu = new System.Windows.Forms.Label();
@@ -59,10 +52,7 @@
             this.panelFundoDT = new System.Windows.Forms.Panel();
             this.DTgridFunc = new System.Windows.Forms.DataGridView();
             this.CheckBox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.BarSideTop.SuspendLayout();
-            this.panelLabel.SuspendLayout();
-            this.panelBuscar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FundoPesquisar)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
             this.sideBarMenu.SuspendLayout();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
@@ -71,89 +61,6 @@
             this.panelFundoDT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DTgridFunc)).BeginInit();
             this.SuspendLayout();
-            // 
-            // BarSideTop
-            // 
-            this.BarSideTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BarSideTop.Controls.Add(this.panelLabel);
-            this.BarSideTop.Controls.Add(this.panelBuscar);
-            this.BarSideTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BarSideTop.Location = new System.Drawing.Point(226, 0);
-            this.BarSideTop.Name = "BarSideTop";
-            this.BarSideTop.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BarSideTop.Size = new System.Drawing.Size(1144, 64);
-            this.BarSideTop.TabIndex = 50;
-            // 
-            // panelLabel
-            // 
-            this.panelLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.panelLabel.Controls.Add(this.lblFunc);
-            this.panelLabel.Location = new System.Drawing.Point(3, 3);
-            this.panelLabel.Name = "panelLabel";
-            this.panelLabel.Size = new System.Drawing.Size(287, 61);
-            this.panelLabel.TabIndex = 39;
-            // 
-            // lblFunc
-            // 
-            this.lblFunc.AutoSize = true;
-            this.lblFunc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFunc.ForeColor = System.Drawing.Color.White;
-            this.lblFunc.Location = new System.Drawing.Point(9, 20);
-            this.lblFunc.Name = "lblFunc";
-            this.lblFunc.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblFunc.Size = new System.Drawing.Size(262, 21);
-            this.lblFunc.TabIndex = 0;
-            this.lblFunc.Text = "CRUD | Cofigurações de Funcionário";
-            // 
-            // panelBuscar
-            // 
-            this.panelBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.panelBuscar.Controls.Add(this.btnBuscar);
-            this.panelBuscar.Controls.Add(this.BoxBuscar);
-            this.panelBuscar.Controls.Add(this.FundoPesquisar);
-            this.panelBuscar.Location = new System.Drawing.Point(296, 3);
-            this.panelBuscar.Name = "panelBuscar";
-            this.panelBuscar.Size = new System.Drawing.Size(454, 61);
-            this.panelBuscar.TabIndex = 40;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Image = global::UkraBar.Properties.Resources.search_more_24px;
-            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscar.Location = new System.Drawing.Point(301, 7);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Padding = new System.Windows.Forms.Padding(0, 0, 12, 0);
-            this.btnBuscar.Size = new System.Drawing.Size(150, 46);
-            this.btnBuscar.TabIndex = 44;
-            this.btnBuscar.Text = "      Buscar";
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
-            // BoxBuscar
-            // 
-            this.BoxBuscar.BackColor = System.Drawing.Color.White;
-            this.BoxBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BoxBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxBuscar.Location = new System.Drawing.Point(21, 20);
-            this.BoxBuscar.Name = "BoxBuscar";
-            this.BoxBuscar.Size = new System.Drawing.Size(253, 19);
-            this.BoxBuscar.TabIndex = 29;
-            this.BoxBuscar.Tag = "";
-            // 
-            // FundoPesquisar
-            // 
-            this.FundoPesquisar.Image = global::UkraBar.Properties.Resources.BoxBranca;
-            this.FundoPesquisar.Location = new System.Drawing.Point(3, 7);
-            this.FundoPesquisar.Name = "FundoPesquisar";
-            this.FundoPesquisar.Size = new System.Drawing.Size(292, 47);
-            this.FundoPesquisar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.FundoPesquisar.TabIndex = 33;
-            this.FundoPesquisar.TabStop = false;
             // 
             // sideBarMenu
             // 
@@ -404,37 +311,37 @@
             this.DTgridFunc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DTgridFunc.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DTgridFunc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTgridFunc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTgridFunc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.DTgridFunc.ColumnHeadersHeight = 30;
             this.DTgridFunc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DTgridFunc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CheckBox});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DTgridFunc.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DTgridFunc.DefaultCellStyle = dataGridViewCellStyle5;
             this.DTgridFunc.GridColor = System.Drawing.Color.Black;
             this.DTgridFunc.Location = new System.Drawing.Point(3, 3);
             this.DTgridFunc.Name = "DTgridFunc";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTgridFunc.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTgridFunc.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.DTgridFunc.RowHeadersWidth = 51;
             this.DTgridFunc.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.DTgridFunc.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
@@ -457,22 +364,35 @@
             this.CheckBox.Name = "CheckBox";
             this.CheckBox.Width = 70;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::UkraBar.Properties.Resources.reply_arrow_24px;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(428, 60);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(223, 50);
+            this.button1.TabIndex = 40;
+            this.button1.Text = "                  Voltar";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Carrinho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.LayoutFundoDT);
-            this.Controls.Add(this.BarSideTop);
             this.Controls.Add(this.sideBarMenu);
+            this.Controls.Add(this.button1);
             this.Name = "Carrinho";
             this.Text = "Carrinho";
-            this.BarSideTop.ResumeLayout(false);
-            this.panelLabel.ResumeLayout(false);
-            this.panelLabel.PerformLayout();
-            this.panelBuscar.ResumeLayout(false);
-            this.panelBuscar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FundoPesquisar)).EndInit();
             this.sideBarMenu.ResumeLayout(false);
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
@@ -487,14 +407,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel BarSideTop;
-        private System.Windows.Forms.Panel panelLabel;
-        private System.Windows.Forms.Label lblFunc;
-        private System.Windows.Forms.Panel panelBuscar;
-        private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.TextBox BoxBuscar;
-        private System.Windows.Forms.PictureBox FundoPesquisar;
         private System.Windows.Forms.FlowLayoutPanel sideBarMenu;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Label lblMenu;
@@ -516,5 +428,6 @@
         private System.Windows.Forms.Panel panelFundoDT;
         private System.Windows.Forms.DataGridView DTgridFunc;
         private System.Windows.Forms.DataGridViewCheckBoxColumn CheckBox;
+        private System.Windows.Forms.Button button1;
     }
 }

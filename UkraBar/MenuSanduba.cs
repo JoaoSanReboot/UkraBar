@@ -21,7 +21,8 @@ namespace UkraBar
             AtualizarValor();
         }
 
-        private int quantidadeItaliano = 0;
+       
+
         private int quantidadeIberico = 0;
         private int quantidadePolones = 0;
         private int quantidadeJapones = 0;
@@ -87,7 +88,8 @@ namespace UkraBar
         //Todos os Btn Ok
         private void BtnOkI_Click(object sender, EventArgs e)
         {
-        
+            VariaveisGlobais.quantidadeItaliano = Convert.ToString(quantidadeItaliano2);
+            MessageBox.Show(VariaveisGlobais.quantidadeItaliano, "Foram adicionados no Carrinho");
         }
 
         private void BtnOkK_Click(object sender, EventArgs e)
@@ -114,32 +116,32 @@ namespace UkraBar
 
         }
 
+        int quantidadeItaliano2 = 0;
         //Resto
         private void BtnMenos1_Click(object sender, EventArgs e)
         {
-            if (quantidadeItaliano > 0)
+            if (quantidadeItaliano2 > 0)
             {
-                quantidadeItaliano--;
+                quantidadeItaliano2--;
                 AtualizarValor();
             }
         }
 
         private void BtnMais1_Click(object sender, EventArgs e)
         {
-            quantidadeItaliano++;
+            quantidadeItaliano2++;
             AtualizarValor();
         }
 
         private void AtualizarValor()
         {
-            BoxCItaliano.Text = quantidadeItaliano.ToString();
+            BoxCItaliano.Text = quantidadeItaliano2.ToString();
             BoxcQuantidadeI.Text = quantidadeIberico.ToString();
             BoxCQuantidadeZ.Text = quantidadePolones.ToString();
             BoxCQuantidadeK.Text = quantidadeJapones.ToString();
             BoxCQuantidadeV.Text = quantidadeVegetariano.ToString();
             BoxCQuantidadeA.Text = quantidadeAlemao.ToString();
         }
-
         private void BtnMaisI_Click(object sender, EventArgs e)
         {
             quantidadeIberico++;
@@ -244,6 +246,16 @@ namespace UkraBar
             this.Hide();
             carrinho.ShowDialog();
             this.Close();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+      
+        }
+
+        private void BoxCItaliano_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

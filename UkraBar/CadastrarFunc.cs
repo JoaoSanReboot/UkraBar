@@ -25,6 +25,7 @@ namespace UkraBar
         public CadastrarFunc()
         {
             InitializeComponent();
+            CarregarDados();
             
         }
 
@@ -39,8 +40,8 @@ namespace UkraBar
             reader = comando.ExecuteReader(); //Lê os comandos.
             table = new DataTable(); //Abre a Table.
             table.Load(reader); //Table lê os comandos.
-            DTgridFunc.DataSource = table; //Renomeia Table para DTgridFunc.
-            DTgridFunc.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; //Comando para alinhar as tabelas no DataGriedView.
+            DTgridClientes.DataSource = table; //Renomeia Table para DTgridFunc.
+            DTgridClientes.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; //Comando para alinhar as tabelas no DataGriedView.
             conn.Close(); //Fecha Conexão 
 
         }
@@ -244,19 +245,19 @@ namespace UkraBar
         {
             conn.Open();
 
-            for (int i = 0; i < DTgridFunc.Rows.Count; i++)//Faz a contagem de linhas Selecionadas enquanto i for menor que a contagens de rows.
+            for (int i = 0; i < DTgridClientes.Rows.Count; i++)//Faz a contagem de linhas Selecionadas enquanto i for menor que a contagens de rows.
             {
-                DataGridViewCheckBoxCell CheckBox = DTgridFunc.Rows[i].Cells[0] as DataGridViewCheckBoxCell; //Defini CheckBox como funcional.
+                DataGridViewCheckBoxCell CheckBox = DTgridClientes.Rows[i].Cells[0] as DataGridViewCheckBoxCell; //Defini CheckBox como funcional.
 
                 if (CheckBox.Value != null && (bool)CheckBox.Value == true)//Bool sim ou não.
                 {
-                    int id = Convert.ToInt32(DTgridFunc.Rows[i].Cells[1].Value);//Int para contagem de celulas marcadas.
+                    int id = Convert.ToInt32(DTgridClientes.Rows[i].Cells[1].Value);//Int para contagem de celulas marcadas.
 
                     MySqlCommand comando = new MySqlCommand("DELETE FROM cadastro_funcionario WHERE id_cadastro = @id_cadastro", conn);//Comandos MySql
                     comando.Parameters.AddWithValue("@id_cadastro", id);
                     comando.ExecuteNonQuery();
 
-                    DTgridFunc.Rows.RemoveAt(i);//Deleta as linhas.
+                    DTgridClientes.Rows.RemoveAt(i);//Deleta as linhas.
                     i--;                       //Diminui as linhas.
                 }
             }
@@ -285,8 +286,8 @@ namespace UkraBar
                     {
                         adapter.Fill(ProcurarDataTable);
                     }
-                    DTgridFunc.DataSource = ProcurarDataTable; //Mostra nova table
-                    DTgridFunc.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;//Centraliza as Tabelas.
+                    DTgridClientes.DataSource = ProcurarDataTable; //Mostra nova table
+                    DTgridClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;//Centraliza as Tabelas.
                     conn.Close();//Fecha Conexão.
                 }
                 catch (Exception ex)
@@ -362,14 +363,14 @@ namespace UkraBar
         //Função Clicar na Row enviar informações nas Box.
         private void DTgridFunc_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            foreach (DataGridViewRow row in DTgridFunc.Rows)
+            foreach (DataGridViewRow row in DTgridClientes.Rows)
             {
                 if (Convert.ToBoolean(row.Cells["CheckBox"].Value))
                 {
-                    BoxdIdF.Text = DTgridFunc.CurrentRow.Cells[1].Value.ToString();
-                    BoxdNomeF.Text = DTgridFunc.CurrentRow.Cells[2].Value.ToString();
-                    BoxdSenhaF.Text = DTgridFunc.CurrentRow.Cells[3].Value.ToString();
-                    BoxdEmailF.Text = DTgridFunc.CurrentRow.Cells[4].Value.ToString();
+                    BoxdIdF.Text = DTgridClientes.CurrentRow.Cells[1].Value.ToString();
+                    BoxdNomeF.Text = DTgridClientes.CurrentRow.Cells[2].Value.ToString();
+                    BoxdSenhaF.Text = DTgridClientes.CurrentRow.Cells[3].Value.ToString();
+                    BoxdEmailF.Text = DTgridClientes.CurrentRow.Cells[4].Value.ToString();
                 }
             }
         }

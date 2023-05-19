@@ -33,6 +33,7 @@
             this.BtnPratos = new System.Windows.Forms.PictureBox();
             this.BtnSanduba = new System.Windows.Forms.PictureBox();
             this.TelaFundo = new System.Windows.Forms.PictureBox();
+            this.BtnFechar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BtnSobremesas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnBebidas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnPratos)).BeginInit();
@@ -98,11 +99,27 @@
             this.TelaFundo.TabIndex = 0;
             this.TelaFundo.TabStop = false;
             // 
+            // BtnFechar
+            // 
+            this.BtnFechar.BackColor = System.Drawing.Color.Red;
+            this.BtnFechar.FlatAppearance.BorderSize = 0;
+            this.BtnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnFechar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnFechar.ForeColor = System.Drawing.SystemColors.Control;
+            this.BtnFechar.Location = new System.Drawing.Point(587, 230);
+            this.BtnFechar.Name = "BtnFechar";
+            this.BtnFechar.Size = new System.Drawing.Size(192, 63);
+            this.BtnFechar.TabIndex = 5;
+            this.BtnFechar.Text = "Finalizar Pedido";
+            this.BtnFechar.UseVisualStyleBackColor = false;
+            this.BtnFechar.Click += new System.EventHandler(this.BtnFechar_Click);
+            // 
             // MenuEscolha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 673);
+            this.Controls.Add(this.BtnFechar);
             this.Controls.Add(this.BtnSobremesas);
             this.Controls.Add(this.BtnBebidas);
             this.Controls.Add(this.BtnPratos);
@@ -128,5 +145,6 @@
         private System.Windows.Forms.PictureBox BtnPratos;
         private System.Windows.Forms.PictureBox BtnBebidas;
         private System.Windows.Forms.PictureBox BtnSobremesas;
+        private System.Windows.Forms.Button BtnFechar;
     }
 }
