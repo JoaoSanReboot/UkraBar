@@ -268,7 +268,7 @@ namespace UkraBar
             AtualizarValor();
             VariaveisGlobais.valorVegetariano= VariaveisGlobais.quantidadeVegetariano * 22;
             BoxValorfinalV.Text = VariaveisGlobais.valorVegetariano.ToString() + ",00";
-            string InserirVegetariano = "INSERT INTO carrinho ()"
+
 
         }
 
