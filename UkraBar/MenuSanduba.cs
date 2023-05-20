@@ -21,14 +21,6 @@ namespace UkraBar
             AtualizarValor();
         }
 
-       
-
-        private int quantidadeIberico = 0;
-        private int quantidadePolones = 0;
-        private int quantidadeJapones = 0;
-        private int quantidadeVegetariano = 0;
-        private int quantidadeAlemao = 0;
-
         private string quantidadeArmazenada = string.Empty;
 
         //Todos os Btn Compras.
@@ -88,86 +80,92 @@ namespace UkraBar
         //Todos os Btn Ok
         private void BtnOkI_Click(object sender, EventArgs e)
         {
-            VariaveisGlobais.quantidadeItaliano = Convert.ToString(quantidadeItaliano2);
-            MessageBox.Show(VariaveisGlobais.quantidadeItaliano, "Foram adicionados no Carrinho");
+            MessageBox.Show(VariaveisGlobais.quantidadeItaliano.ToString(), "Foram adicionados no Carrinho");
+            panelItaliano.Visible = false;
         }
 
         private void BtnOkK_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show(VariaveisGlobais.quantidadeJapones.ToString(), "Foram adicionados no Carrinho");
+            panelKatsuSando.Visible = false;
         }
 
         private void BtnOkV_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show(VariaveisGlobais.quantidadeVegetariano.ToString(), "Foram adicionados no Carrinho");
+            panelVegetariano.Visible = false;
         }
         private void BtnOkZ_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show(VariaveisGlobais.quantidadePolones.ToString(), "Foram adicionados no Carrinho");
+            panelZapiekanka.Visible = false;
         }
 
         private void BtnOkA_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show(VariaveisGlobais.quantidadeAlemao.ToString(), "Foram adicionados no Carrinho");
+            panelAlemão.Visible = false;
         }
 
         private void BtnOkIB_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show(VariaveisGlobais.quantidadeIberico.ToString(), "Foram adicionados no Carrinho");
+            panelIberico.Visible = false;
         }
 
-        int quantidadeItaliano2 = 0;
+
         //Resto
+        private void AtualizarValor()
+        {
+            BoxCItaliano.Text = VariaveisGlobais.quantidadeItaliano.ToString();
+            BoxcQuantidadeI.Text = VariaveisGlobais.quantidadeIberico.ToString();
+            BoxCQuantidadeZ.Text = VariaveisGlobais.quantidadePolones.ToString();
+            BoxCQuantidadeK.Text = VariaveisGlobais.quantidadeJapones.ToString();
+            BoxCQuantidadeV.Text = VariaveisGlobais.quantidadeVegetariano.ToString();
+            BoxCQuantidadeA.Text = VariaveisGlobais.quantidadeAlemao.ToString();
+        }
+
         private void BtnMenos1_Click(object sender, EventArgs e)
         {
-            if (quantidadeItaliano2 > 0)
+            if (VariaveisGlobais.quantidadeItaliano > 0)
             {
-                quantidadeItaliano2--;
+                VariaveisGlobais.quantidadeItaliano--;
                 AtualizarValor();
             }
         }
 
         private void BtnMais1_Click(object sender, EventArgs e)
         {
-            quantidadeItaliano2++;
+            VariaveisGlobais.quantidadeItaliano++;
             AtualizarValor();
         }
 
-        private void AtualizarValor()
-        {
-            BoxCItaliano.Text = quantidadeItaliano2.ToString();
-            BoxcQuantidadeI.Text = quantidadeIberico.ToString();
-            BoxCQuantidadeZ.Text = quantidadePolones.ToString();
-            BoxCQuantidadeK.Text = quantidadeJapones.ToString();
-            BoxCQuantidadeV.Text = quantidadeVegetariano.ToString();
-            BoxCQuantidadeA.Text = quantidadeAlemao.ToString();
-        }
         private void BtnMaisI_Click(object sender, EventArgs e)
         {
-            quantidadeIberico++;
+            VariaveisGlobais.quantidadeIberico++;
             AtualizarValor();
         }
 
         private void BtnMenosI_Click(object sender, EventArgs e)
         {
-            if (quantidadeIberico > 0)
+            if (VariaveisGlobais.quantidadeIberico > 0)
             {
-                quantidadeIberico--;
+                VariaveisGlobais.quantidadeIberico--;
                 AtualizarValor();
             }
         }
 
         private void BtnMaisZ_Click(object sender, EventArgs e)
         {
-            quantidadePolones++;
+            VariaveisGlobais.quantidadePolones++;
             AtualizarValor();
         }
 
         private void BtnMenosZ_Click(object sender, EventArgs e)
         {
-            if (quantidadePolones > 0)
+            if (VariaveisGlobais.quantidadePolones > 0)
             {
-                quantidadePolones--;
+                VariaveisGlobais.quantidadePolones--;
                 AtualizarValor();
             }
         }
@@ -175,15 +173,15 @@ namespace UkraBar
 
         private void BtnMaisK_Click(object sender, EventArgs e)
         {
-            quantidadeJapones++;
+            VariaveisGlobais.quantidadeJapones++;
             AtualizarValor();
         }
 
         private void BtnMenosK_Click(object sender, EventArgs e)
         {
-            if (quantidadeJapones > 0)
+            if (VariaveisGlobais.quantidadeJapones > 0)
             {
-                quantidadeJapones--;
+                VariaveisGlobais.quantidadeJapones--;
                 AtualizarValor();
             }
         }
@@ -191,30 +189,30 @@ namespace UkraBar
 
         private void BtnMaisV_Click(object sender, EventArgs e)
         {
-            quantidadeVegetariano++;
+            VariaveisGlobais.quantidadeVegetariano++;
             AtualizarValor();
         }
 
         private void BtnMenosV_Click(object sender, EventArgs e)
         {
-            if (quantidadeVegetariano > 0)
+            if (VariaveisGlobais.quantidadeVegetariano > 0)
             {
-                quantidadeVegetariano--;
+                VariaveisGlobais.quantidadeVegetariano--;
                 AtualizarValor();
             }
         }
 
         private void BtnMaisA_Click(object sender, EventArgs e)
         {
-            quantidadeAlemao++;
+            VariaveisGlobais.quantidadeAlemao++;
             AtualizarValor();
         }
 
         private void BtnMenosA_Click(object sender, EventArgs e)
         {
-            if (quantidadeAlemao > 0)
+            if (VariaveisGlobais.quantidadeAlemao > 0)
             {
-                quantidadeAlemao--;
+                VariaveisGlobais.quantidadeAlemao--;
                 AtualizarValor();
             }
         }
@@ -241,21 +239,24 @@ namespace UkraBar
         }
 
         private void BtnCarrinho_Click(object sender, EventArgs e)
-        {
+        {  
             Carrinho carrinho = new Carrinho();
             this.Hide();
             carrinho.ShowDialog();
             this.Close();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-      
-        }
-
         private void BoxCItaliano_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnPagamento_Click(object sender, EventArgs e)
+        {
+            MenuPagamento pagamento = new MenuPagamento();
+            this.Hide();
+            pagamento.ShowDialog();
+            this.Close();
         }
     }
 }

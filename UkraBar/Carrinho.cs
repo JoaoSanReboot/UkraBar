@@ -23,7 +23,6 @@ namespace UkraBar
         public Carrinho()
         {
             InitializeComponent();
-            CarregarDados();
     
         }
 

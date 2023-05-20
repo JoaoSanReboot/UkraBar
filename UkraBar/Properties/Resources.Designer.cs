@@ -433,6 +433,26 @@ namespace UkraBar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mobile_shop_payment_24px {
+            get {
+                object obj = ResourceManager.GetObject("mobile_shop_payment_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mobile_shop_payment_24px1 {
+            get {
+                object obj = ResourceManager.GetObject("mobile_shop_payment_24px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pencil_16px {
             get {
                 object obj = ResourceManager.GetObject("pencil_16px", resourceCulture);

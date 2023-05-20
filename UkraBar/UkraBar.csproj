@@ -147,12 +147,6 @@
     <Compile Include="MenuSobremesas.Designer.cs">
       <DependentUpon>MenuSobremesas.cs</DependentUpon>
     </Compile>
-    <Compile Include="PagamentoEscolha.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PagamentoEscolha.Designer.cs">
-      <DependentUpon>PagamentoEscolha.cs</DependentUpon>
-    </Compile>
     <Compile Include="PainelCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,9 +203,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuSanduba.resx">
       <DependentUpon>MenuSanduba.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PagamentoEscolha.resx">
-      <DependentUpon>PagamentoEscolha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PainelCliente.resx">
       <DependentUpon>PainelCliente.cs</DependentUpon>
@@ -396,6 +387,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Selecione.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobile_shop_payment_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobile_shop_payment_24px1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

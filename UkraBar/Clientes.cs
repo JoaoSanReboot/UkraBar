@@ -42,19 +42,13 @@ namespace UkraBar
 
         private void BtnCpfCad_Click(object sender, EventArgs e)
         {
-            string ArmazenarCpf = BoxCpf.Text;
+            BoxCpf.Text = VariaveisGlobais.Cpf.ToString();
 
-            if (string.IsNullOrEmpty(ArmazenarCpf))
-            {
-                MessageBox.Show("Você não digitou corretamente");
-            }
-            else
-            {
-                MenuEscolha Escolha = new MenuEscolha();
+            MenuEscolha Escolha = new MenuEscolha();
                 this.Hide();
                 Escolha.ShowDialog();
                 this.Close();
-            }
+            
         }
     }
 }

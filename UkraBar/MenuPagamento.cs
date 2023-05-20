@@ -17,24 +17,33 @@ namespace UkraBar
             InitializeComponent();
         }
 
-        public int PagamentoPix = 0;
-        public int PagamentoCartao = 0;
-        public int PagamentoDinheiro = 0;
-
+  
 
         private void BtnPix_Click(object sender, EventArgs e)
         {
-            PagamentoPix = 1;
+            VariaveisGlobais.pix = 1;
+            Carrinho carrinho3 = new Carrinho();
+            this.Hide();
+            carrinho3.ShowDialog();
+            this.Close();
         }
 
         private void BtnCartao_Click(object sender, EventArgs e)
         {
-            PagamentoCartao = 1;
+            VariaveisGlobais.cartao = 1;
+            Carrinho carrinho3 = new Carrinho();
+            this.Hide();
+            carrinho3.ShowDialog();
+            this.Close();
         }
 
         private void BtnDinheiro_Click(object sender, EventArgs e)
         {
-            PagamentoDinheiro = 1;
+            VariaveisGlobais.dinheiro = 1;
+            Carrinho carrinho3 = new Carrinho();
+            this.Hide();
+            carrinho3.ShowDialog();
+            this.Close();
         }
     }
 }

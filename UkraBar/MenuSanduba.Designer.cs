@@ -28,13 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.PanelLateral = new System.Windows.Forms.Panel();
-            this.BtnCarrinho = new System.Windows.Forms.Button();
             this.BtnSair = new System.Windows.Forms.Button();
-            this.BtnVoltar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelItaliano = new System.Windows.Forms.Panel();
-            this.pbSimbolo = new System.Windows.Forms.PictureBox();
             this.panelBorder3 = new System.Windows.Forms.Panel();
             this.PanelBorder2 = new System.Windows.Forms.Panel();
             this.panelBorder1 = new System.Windows.Forms.Panel();
@@ -45,23 +40,12 @@
             this.lblPreço = new System.Windows.Forms.Label();
             this.BoxCItaliano = new System.Windows.Forms.TextBox();
             this.lblQuantidade = new System.Windows.Forms.Label();
-            this.BtnMais1 = new System.Windows.Forms.Button();
-            this.BtnMenos1 = new System.Windows.Forms.Button();
             this.lblItaliano = new System.Windows.Forms.Label();
             this.panelFundo = new System.Windows.Forms.Panel();
             this.BtnCancelarI = new System.Windows.Forms.Button();
             this.BtnOkI = new System.Windows.Forms.Button();
-            this.BtnComprar = new System.Windows.Forms.Button();
-            this.BtnAlemao = new System.Windows.Forms.PictureBox();
-            this.BtnVegano = new System.Windows.Forms.PictureBox();
-            this.BtnJapones = new System.Windows.Forms.PictureBox();
-            this.BtnPolones = new System.Windows.Forms.PictureBox();
-            this.BtnEspanhol = new System.Windows.Forms.PictureBox();
-            this.BtnItaliano = new System.Windows.Forms.PictureBox();
-            this.pbFundo = new System.Windows.Forms.PictureBox();
             this.panelIberico = new System.Windows.Forms.Panel();
             this.lblInfoI3 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -72,20 +56,12 @@
             this.lblPreçoI = new System.Windows.Forms.Label();
             this.BoxcQuantidadeI = new System.Windows.Forms.TextBox();
             this.lblQuantidadeI = new System.Windows.Forms.Label();
-            this.BtnMaisI = new System.Windows.Forms.Button();
-            this.BtnMenosI = new System.Windows.Forms.Button();
             this.lblIberico = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.BtnCancelarIB = new System.Windows.Forms.Button();
             this.BtnOkIB = new System.Windows.Forms.Button();
-            this.BtnComprarIberico = new System.Windows.Forms.Button();
-            this.BtnComprarPolones = new System.Windows.Forms.Button();
-            this.BtnComprarAlemao = new System.Windows.Forms.Button();
-            this.BtnVegetariano = new System.Windows.Forms.Button();
-            this.BtnKatsuoSando = new System.Windows.Forms.Button();
             this.panelZapiekanka = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -96,15 +72,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.BoxCQuantidadeZ = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.BtnMaisZ = new System.Windows.Forms.Button();
-            this.BtnMenosZ = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.BtnCancelarZ = new System.Windows.Forms.Button();
             this.BtnOkZ = new System.Windows.Forms.Button();
             this.panelKatsuSando = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
@@ -115,15 +88,12 @@
             this.label10 = new System.Windows.Forms.Label();
             this.BoxCQuantidadeK = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.BtnMaisK = new System.Windows.Forms.Button();
-            this.BtnMenosK = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
             this.BtnCancelarK = new System.Windows.Forms.Button();
             this.BtnOkK = new System.Windows.Forms.Button();
             this.panelVegetariano = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
             this.panel21 = new System.Windows.Forms.Panel();
@@ -134,14 +104,11 @@
             this.label16 = new System.Windows.Forms.Label();
             this.BoxCQuantidadeV = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.BtnMaisV = new System.Windows.Forms.Button();
-            this.BtnMenosV = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.panel24 = new System.Windows.Forms.Panel();
             this.BtnCancelarV = new System.Windows.Forms.Button();
             this.BtnOkV = new System.Windows.Forms.Button();
             this.panelAlemão = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel25 = new System.Windows.Forms.Panel();
             this.panel26 = new System.Windows.Forms.Panel();
             this.panel27 = new System.Windows.Forms.Panel();
@@ -152,19 +119,71 @@
             this.label22 = new System.Windows.Forms.Label();
             this.BoxCQuantidadeA = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.BtnMaisA = new System.Windows.Forms.Button();
-            this.BtnMenosA = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.panel30 = new System.Windows.Forms.Panel();
             this.BtnCancelarA = new System.Windows.Forms.Button();
             this.BtnOkA = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.PanelLateral.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SideBarLateral = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.BtnPagamento = new System.Windows.Forms.Button();
+            this.BtnCarrinho = new System.Windows.Forms.Button();
+            this.BtnVoltar = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.BtnMaisA = new System.Windows.Forms.Button();
+            this.BtnMenosA = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.BtnMaisV = new System.Windows.Forms.Button();
+            this.BtnMenosV = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.BtnMaisK = new System.Windows.Forms.Button();
+            this.BtnMenosK = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.BtnMaisZ = new System.Windows.Forms.Button();
+            this.BtnMenosZ = new System.Windows.Forms.Button();
+            this.BtnKatsuoSando = new System.Windows.Forms.Button();
+            this.BtnVegetariano = new System.Windows.Forms.Button();
+            this.BtnComprarAlemao = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.BtnMaisI = new System.Windows.Forms.Button();
+            this.BtnMenosI = new System.Windows.Forms.Button();
+            this.pbSimbolo = new System.Windows.Forms.PictureBox();
+            this.BtnMais1 = new System.Windows.Forms.Button();
+            this.BtnMenos1 = new System.Windows.Forms.Button();
+            this.BtnComprar = new System.Windows.Forms.Button();
+            this.BtnAlemao = new System.Windows.Forms.PictureBox();
+            this.BtnVegano = new System.Windows.Forms.PictureBox();
+            this.BtnJapones = new System.Windows.Forms.PictureBox();
+            this.BtnPolones = new System.Windows.Forms.PictureBox();
+            this.BtnEspanhol = new System.Windows.Forms.PictureBox();
+            this.BtnItaliano = new System.Windows.Forms.PictureBox();
+            this.BtnComprarIberico = new System.Windows.Forms.Button();
+            this.BtnComprarPolones = new System.Windows.Forms.Button();
+            this.pbFundo = new System.Windows.Forms.PictureBox();
             this.panelItaliano.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSimbolo)).BeginInit();
             this.panelValor.SuspendLayout();
             this.panelFundo.SuspendLayout();
+            this.panelIberico.SuspendLayout();
+            this.panelValorI.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panelZapiekanka.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panelKatsuSando.SuspendLayout();
+            this.panel17.SuspendLayout();
+            this.panel18.SuspendLayout();
+            this.panelVegetariano.SuspendLayout();
+            this.panel23.SuspendLayout();
+            this.panel24.SuspendLayout();
+            this.panelAlemão.SuspendLayout();
+            this.panel29.SuspendLayout();
+            this.panel30.SuspendLayout();
+            this.SideBarLateral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSimbolo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnAlemao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnVegano)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnJapones)).BeginInit();
@@ -172,56 +191,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.BtnEspanhol)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnItaliano)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFundo)).BeginInit();
-            this.panelIberico.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panelValorI.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panelZapiekanka.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panelKatsuSando.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel17.SuspendLayout();
-            this.panel18.SuspendLayout();
-            this.panelVegetariano.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel23.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.panelAlemão.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.panel29.SuspendLayout();
-            this.panel30.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // PanelLateral
-            // 
-            this.PanelLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.PanelLateral.Controls.Add(this.BtnCarrinho);
-            this.PanelLateral.Controls.Add(this.BtnSair);
-            this.PanelLateral.Controls.Add(this.BtnVoltar);
-            this.PanelLateral.Controls.Add(this.pictureBox1);
-            this.PanelLateral.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PanelLateral.Location = new System.Drawing.Point(0, 0);
-            this.PanelLateral.Name = "PanelLateral";
-            this.PanelLateral.Size = new System.Drawing.Size(159, 749);
-            this.PanelLateral.TabIndex = 7;
-            // 
-            // BtnCarrinho
-            // 
-            this.BtnCarrinho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnCarrinho.FlatAppearance.BorderSize = 0;
-            this.BtnCarrinho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCarrinho.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCarrinho.ForeColor = System.Drawing.Color.White;
-            this.BtnCarrinho.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
-            this.BtnCarrinho.Location = new System.Drawing.Point(0, 263);
-            this.BtnCarrinho.Name = "BtnCarrinho";
-            this.BtnCarrinho.Size = new System.Drawing.Size(156, 50);
-            this.BtnCarrinho.TabIndex = 42;
-            this.BtnCarrinho.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCarrinho.UseVisualStyleBackColor = false;
-            this.BtnCarrinho.Click += new System.EventHandler(this.BtnCarrinho_Click);
             // 
             // BtnSair
             // 
@@ -231,44 +201,14 @@
             this.BtnSair.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSair.ForeColor = System.Drawing.Color.White;
             this.BtnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSair.Location = new System.Drawing.Point(0, 653);
+            this.BtnSair.Location = new System.Drawing.Point(3, 415);
             this.BtnSair.Name = "BtnSair";
             this.BtnSair.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.BtnSair.Size = new System.Drawing.Size(156, 50);
+            this.BtnSair.Size = new System.Drawing.Size(224, 50);
             this.BtnSair.TabIndex = 41;
             this.BtnSair.Text = "Sair";
             this.BtnSair.UseVisualStyleBackColor = false;
             this.BtnSair.Click += new System.EventHandler(this.BtnSair_Click);
-            // 
-            // BtnVoltar
-            // 
-            this.BtnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnVoltar.FlatAppearance.BorderSize = 0;
-            this.BtnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnVoltar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnVoltar.ForeColor = System.Drawing.Color.White;
-            this.BtnVoltar.Image = global::UkraBar.Properties.Resources.reply_arrow_24px;
-            this.BtnVoltar.Location = new System.Drawing.Point(3, 207);
-            this.BtnVoltar.Name = "BtnVoltar";
-            this.BtnVoltar.Size = new System.Drawing.Size(156, 50);
-            this.BtnVoltar.TabIndex = 40;
-            this.BtnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnVoltar.UseVisualStyleBackColor = false;
-            this.BtnVoltar.Click += new System.EventHandler(this.BtnVoltar_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::UkraBar.Properties.Resources.UkraSimbolo;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(132, 124);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
             // 
             // panelItaliano
             // 
@@ -295,16 +235,6 @@
             this.panelItaliano.Size = new System.Drawing.Size(707, 486);
             this.panelItaliano.TabIndex = 8;
             this.panelItaliano.Visible = false;
-            // 
-            // pbSimbolo
-            // 
-            this.pbSimbolo.Image = global::UkraBar.Properties.Resources.UkraSimboloBranco;
-            this.pbSimbolo.Location = new System.Drawing.Point(27, 23);
-            this.pbSimbolo.Name = "pbSimbolo";
-            this.pbSimbolo.Size = new System.Drawing.Size(113, 81);
-            this.pbSimbolo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbSimbolo.TabIndex = 19;
-            this.pbSimbolo.TabStop = false;
             // 
             // panelBorder3
             // 
@@ -410,32 +340,6 @@
             this.lblQuantidade.TabIndex = 7;
             this.lblQuantidade.Text = "Quantidade";
             // 
-            // BtnMais1
-            // 
-            this.BtnMais1.BackColor = System.Drawing.Color.DarkGreen;
-            this.BtnMais1.FlatAppearance.BorderSize = 0;
-            this.BtnMais1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMais1.Image = global::UkraBar.Properties.Resources.Plus_24px;
-            this.BtnMais1.Location = new System.Drawing.Point(27, 209);
-            this.BtnMais1.Name = "BtnMais1";
-            this.BtnMais1.Size = new System.Drawing.Size(35, 35);
-            this.BtnMais1.TabIndex = 6;
-            this.BtnMais1.UseVisualStyleBackColor = false;
-            this.BtnMais1.Click += new System.EventHandler(this.BtnMais1_Click);
-            // 
-            // BtnMenos1
-            // 
-            this.BtnMenos1.BackColor = System.Drawing.Color.DarkGreen;
-            this.BtnMenos1.FlatAppearance.BorderSize = 0;
-            this.BtnMenos1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMenos1.Image = global::UkraBar.Properties.Resources.subtract_24px;
-            this.BtnMenos1.Location = new System.Drawing.Point(72, 208);
-            this.BtnMenos1.Name = "BtnMenos1";
-            this.BtnMenos1.Size = new System.Drawing.Size(35, 35);
-            this.BtnMenos1.TabIndex = 3;
-            this.BtnMenos1.UseVisualStyleBackColor = false;
-            this.BtnMenos1.Click += new System.EventHandler(this.BtnMenos1_Click);
-            // 
             // lblItaliano
             // 
             this.lblItaliano.AutoSize = true;
@@ -487,120 +391,6 @@
             this.BtnOkI.UseVisualStyleBackColor = false;
             this.BtnOkI.Click += new System.EventHandler(this.BtnOkI_Click);
             // 
-            // BtnComprar
-            // 
-            this.BtnComprar.BackColor = System.Drawing.Color.DarkGreen;
-            this.BtnComprar.FlatAppearance.BorderSize = 0;
-            this.BtnComprar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnComprar.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnComprar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnComprar.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
-            this.BtnComprar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnComprar.Location = new System.Drawing.Point(247, 310);
-            this.BtnComprar.Name = "BtnComprar";
-            this.BtnComprar.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnComprar.Size = new System.Drawing.Size(281, 55);
-            this.BtnComprar.TabIndex = 9;
-            this.BtnComprar.Text = "        Comprar";
-            this.BtnComprar.UseVisualStyleBackColor = false;
-            this.BtnComprar.Click += new System.EventHandler(this.BtnComprar_Click);
-            // 
-            // BtnAlemao
-            // 
-            this.BtnAlemao.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnAlemao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAlemao.Image = global::UkraBar.Properties.Resources.SandubaAlemão21;
-            this.BtnAlemao.Location = new System.Drawing.Point(1016, 419);
-            this.BtnAlemao.Name = "BtnAlemao";
-            this.BtnAlemao.Size = new System.Drawing.Size(284, 186);
-            this.BtnAlemao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.BtnAlemao.TabIndex = 6;
-            this.BtnAlemao.TabStop = false;
-            // 
-            // BtnVegano
-            // 
-            this.BtnVegano.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnVegano.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnVegano.Image = global::UkraBar.Properties.Resources.SandubaVegano;
-            this.BtnVegano.Location = new System.Drawing.Point(638, 419);
-            this.BtnVegano.Name = "BtnVegano";
-            this.BtnVegano.Size = new System.Drawing.Size(286, 187);
-            this.BtnVegano.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.BtnVegano.TabIndex = 5;
-            this.BtnVegano.TabStop = false;
-            // 
-            // BtnJapones
-            // 
-            this.BtnJapones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnJapones.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnJapones.Image = global::UkraBar.Properties.Resources.KatsuSanduba1;
-            this.BtnJapones.Location = new System.Drawing.Point(247, 419);
-            this.BtnJapones.Name = "BtnJapones";
-            this.BtnJapones.Size = new System.Drawing.Size(281, 188);
-            this.BtnJapones.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.BtnJapones.TabIndex = 4;
-            this.BtnJapones.TabStop = false;
-            // 
-            // BtnPolones
-            // 
-            this.BtnPolones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnPolones.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnPolones.Image = global::UkraBar.Properties.Resources.SandubaPolones1;
-            this.BtnPolones.Location = new System.Drawing.Point(1017, 119);
-            this.BtnPolones.Name = "BtnPolones";
-            this.BtnPolones.Size = new System.Drawing.Size(279, 184);
-            this.BtnPolones.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.BtnPolones.TabIndex = 3;
-            this.BtnPolones.TabStop = false;
-            // 
-            // BtnEspanhol
-            // 
-            this.BtnEspanhol.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnEspanhol.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnEspanhol.Image = global::UkraBar.Properties.Resources.SandubaEspanhol;
-            this.BtnEspanhol.Location = new System.Drawing.Point(638, 119);
-            this.BtnEspanhol.Name = "BtnEspanhol";
-            this.BtnEspanhol.Size = new System.Drawing.Size(280, 184);
-            this.BtnEspanhol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.BtnEspanhol.TabIndex = 2;
-            this.BtnEspanhol.TabStop = false;
-            // 
-            // BtnItaliano
-            // 
-            this.BtnItaliano.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnItaliano.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnItaliano.Image = global::UkraBar.Properties.Resources.SandubaItaliano;
-            this.BtnItaliano.Location = new System.Drawing.Point(247, 119);
-            this.BtnItaliano.Name = "BtnItaliano";
-            this.BtnItaliano.Size = new System.Drawing.Size(280, 185);
-            this.BtnItaliano.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.BtnItaliano.TabIndex = 1;
-            this.BtnItaliano.TabStop = false;
-            // 
-            // pbFundo
-            // 
-            this.pbFundo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbFundo.Image = global::UkraBar.Properties.Resources.TelaFundo;
-            this.pbFundo.Location = new System.Drawing.Point(0, 0);
-            this.pbFundo.Name = "pbFundo";
-            this.pbFundo.Size = new System.Drawing.Size(1370, 749);
-            this.pbFundo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbFundo.TabIndex = 0;
-            this.pbFundo.TabStop = false;
-            this.pbFundo.Click += new System.EventHandler(this.pbFundo_Click);
-            // 
             // panelIberico
             // 
             this.panelIberico.BackColor = System.Drawing.Color.White;
@@ -638,16 +428,6 @@
             this.lblInfoI3.Size = new System.Drawing.Size(532, 25);
             this.lblInfoI3.TabIndex = 20;
             this.lblInfoI3.Text = "Azeitonas e rúcula. Prato inspirado na culinária ibérica. ";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::UkraBar.Properties.Resources.UkraSimboloBranco;
-            this.pictureBox2.Location = new System.Drawing.Point(27, 23);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(113, 81);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 19;
-            this.pictureBox2.TabStop = false;
             // 
             // panel2
             // 
@@ -752,32 +532,6 @@
             this.lblQuantidadeI.TabIndex = 7;
             this.lblQuantidadeI.Text = "Quantidade";
             // 
-            // BtnMaisI
-            // 
-            this.BtnMaisI.BackColor = System.Drawing.Color.DarkGreen;
-            this.BtnMaisI.FlatAppearance.BorderSize = 0;
-            this.BtnMaisI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMaisI.Image = global::UkraBar.Properties.Resources.Plus_24px;
-            this.BtnMaisI.Location = new System.Drawing.Point(27, 218);
-            this.BtnMaisI.Name = "BtnMaisI";
-            this.BtnMaisI.Size = new System.Drawing.Size(35, 35);
-            this.BtnMaisI.TabIndex = 6;
-            this.BtnMaisI.UseVisualStyleBackColor = false;
-            this.BtnMaisI.Click += new System.EventHandler(this.BtnMaisI_Click);
-            // 
-            // BtnMenosI
-            // 
-            this.BtnMenosI.BackColor = System.Drawing.Color.DarkGreen;
-            this.BtnMenosI.FlatAppearance.BorderSize = 0;
-            this.BtnMenosI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMenosI.Image = global::UkraBar.Properties.Resources.subtract_24px;
-            this.BtnMenosI.Location = new System.Drawing.Point(72, 217);
-            this.BtnMenosI.Name = "BtnMenosI";
-            this.BtnMenosI.Size = new System.Drawing.Size(35, 35);
-            this.BtnMenosI.TabIndex = 3;
-            this.BtnMenosI.UseVisualStyleBackColor = false;
-            this.BtnMenosI.Click += new System.EventHandler(this.BtnMenosI_Click);
-            // 
             // lblIberico
             // 
             this.lblIberico.AutoSize = true;
@@ -829,96 +583,6 @@
             this.BtnOkIB.UseVisualStyleBackColor = false;
             this.BtnOkIB.Click += new System.EventHandler(this.BtnOkIB_Click);
             // 
-            // BtnComprarIberico
-            // 
-            this.BtnComprarIberico.BackColor = System.Drawing.Color.DarkGreen;
-            this.BtnComprarIberico.FlatAppearance.BorderSize = 0;
-            this.BtnComprarIberico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnComprarIberico.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnComprarIberico.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnComprarIberico.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
-            this.BtnComprarIberico.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnComprarIberico.Location = new System.Drawing.Point(637, 310);
-            this.BtnComprarIberico.Name = "BtnComprarIberico";
-            this.BtnComprarIberico.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnComprarIberico.Size = new System.Drawing.Size(281, 55);
-            this.BtnComprarIberico.TabIndex = 11;
-            this.BtnComprarIberico.Text = "        Comprar";
-            this.BtnComprarIberico.UseVisualStyleBackColor = false;
-            this.BtnComprarIberico.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // BtnComprarPolones
-            // 
-            this.BtnComprarPolones.BackColor = System.Drawing.Color.DarkGreen;
-            this.BtnComprarPolones.FlatAppearance.BorderSize = 0;
-            this.BtnComprarPolones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnComprarPolones.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnComprarPolones.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnComprarPolones.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
-            this.BtnComprarPolones.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnComprarPolones.Location = new System.Drawing.Point(1019, 312);
-            this.BtnComprarPolones.Name = "BtnComprarPolones";
-            this.BtnComprarPolones.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnComprarPolones.Size = new System.Drawing.Size(281, 55);
-            this.BtnComprarPolones.TabIndex = 12;
-            this.BtnComprarPolones.Text = "        Comprar";
-            this.BtnComprarPolones.UseVisualStyleBackColor = false;
-            this.BtnComprarPolones.Click += new System.EventHandler(this.BtnComprarPolones_Click);
-            // 
-            // BtnComprarAlemao
-            // 
-            this.BtnComprarAlemao.BackColor = System.Drawing.Color.DarkGreen;
-            this.BtnComprarAlemao.FlatAppearance.BorderSize = 0;
-            this.BtnComprarAlemao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnComprarAlemao.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnComprarAlemao.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnComprarAlemao.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
-            this.BtnComprarAlemao.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnComprarAlemao.Location = new System.Drawing.Point(1015, 611);
-            this.BtnComprarAlemao.Name = "BtnComprarAlemao";
-            this.BtnComprarAlemao.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnComprarAlemao.Size = new System.Drawing.Size(281, 55);
-            this.BtnComprarAlemao.TabIndex = 13;
-            this.BtnComprarAlemao.Text = "        Comprar";
-            this.BtnComprarAlemao.UseVisualStyleBackColor = false;
-            this.BtnComprarAlemao.Click += new System.EventHandler(this.BtnComprarAlemao_Click);
-            // 
-            // BtnVegetariano
-            // 
-            this.BtnVegetariano.BackColor = System.Drawing.Color.DarkGreen;
-            this.BtnVegetariano.FlatAppearance.BorderSize = 0;
-            this.BtnVegetariano.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnVegetariano.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnVegetariano.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnVegetariano.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
-            this.BtnVegetariano.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnVegetariano.Location = new System.Drawing.Point(637, 611);
-            this.BtnVegetariano.Name = "BtnVegetariano";
-            this.BtnVegetariano.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnVegetariano.Size = new System.Drawing.Size(281, 55);
-            this.BtnVegetariano.TabIndex = 14;
-            this.BtnVegetariano.Text = "        Comprar";
-            this.BtnVegetariano.UseVisualStyleBackColor = false;
-            this.BtnVegetariano.Click += new System.EventHandler(this.BtnVegetariano_Click);
-            // 
-            // BtnKatsuoSando
-            // 
-            this.BtnKatsuoSando.BackColor = System.Drawing.Color.DarkGreen;
-            this.BtnKatsuoSando.FlatAppearance.BorderSize = 0;
-            this.BtnKatsuoSando.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnKatsuoSando.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnKatsuoSando.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnKatsuoSando.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
-            this.BtnKatsuoSando.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnKatsuoSando.Location = new System.Drawing.Point(247, 613);
-            this.BtnKatsuoSando.Name = "BtnKatsuoSando";
-            this.BtnKatsuoSando.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnKatsuoSando.Size = new System.Drawing.Size(281, 55);
-            this.BtnKatsuoSando.TabIndex = 15;
-            this.BtnKatsuoSando.Text = "        Comprar";
-            this.BtnKatsuoSando.UseVisualStyleBackColor = false;
-            this.BtnKatsuoSando.Click += new System.EventHandler(this.BtnKatsuoSando_Click);
-            // 
             // panelZapiekanka
             // 
             this.panelZapiekanka.BackColor = System.Drawing.Color.White;
@@ -956,16 +620,6 @@
             this.label1.Size = new System.Drawing.Size(478, 25);
             this.label1.TabIndex = 20;
             this.label1.Text = "Prato vegetariano inspirado na culinária polonesa";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::UkraBar.Properties.Resources.UkraSimboloBranco;
-            this.pictureBox3.Location = new System.Drawing.Point(27, 23);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(113, 81);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 19;
-            this.pictureBox3.TabStop = false;
             // 
             // panel6
             // 
@@ -1070,32 +724,6 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Quantidade";
             // 
-            // BtnMaisZ
-            // 
-            this.BtnMaisZ.BackColor = System.Drawing.Color.DarkGreen;
-            this.BtnMaisZ.FlatAppearance.BorderSize = 0;
-            this.BtnMaisZ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMaisZ.Image = global::UkraBar.Properties.Resources.Plus_24px;
-            this.BtnMaisZ.Location = new System.Drawing.Point(27, 218);
-            this.BtnMaisZ.Name = "BtnMaisZ";
-            this.BtnMaisZ.Size = new System.Drawing.Size(35, 35);
-            this.BtnMaisZ.TabIndex = 6;
-            this.BtnMaisZ.UseVisualStyleBackColor = false;
-            this.BtnMaisZ.Click += new System.EventHandler(this.BtnMaisZ_Click);
-            // 
-            // BtnMenosZ
-            // 
-            this.BtnMenosZ.BackColor = System.Drawing.Color.DarkGreen;
-            this.BtnMenosZ.FlatAppearance.BorderSize = 0;
-            this.BtnMenosZ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMenosZ.Image = global::UkraBar.Properties.Resources.subtract_24px;
-            this.BtnMenosZ.Location = new System.Drawing.Point(72, 217);
-            this.BtnMenosZ.Name = "BtnMenosZ";
-            this.BtnMenosZ.Size = new System.Drawing.Size(35, 35);
-            this.BtnMenosZ.TabIndex = 3;
-            this.BtnMenosZ.UseVisualStyleBackColor = false;
-            this.BtnMenosZ.Click += new System.EventHandler(this.BtnMenosZ_Click);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -1184,16 +812,6 @@
             this.label7.Size = new System.Drawing.Size(478, 25);
             this.label7.TabIndex = 20;
             this.label7.Text = "Prato vegetariano inspirado na culinária polonesa";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::UkraBar.Properties.Resources.UkraSimboloBranco;
-            this.pictureBox4.Location = new System.Drawing.Point(27, 23);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(113, 81);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox4.TabIndex = 19;
-            this.pictureBox4.TabStop = false;
             // 
             // panel13
             // 
@@ -1298,32 +916,6 @@
             this.label11.TabIndex = 7;
             this.label11.Text = "Quantidade";
             // 
-            // BtnMaisK
-            // 
-            this.BtnMaisK.BackColor = System.Drawing.Color.DarkGreen;
-            this.BtnMaisK.FlatAppearance.BorderSize = 0;
-            this.BtnMaisK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMaisK.Image = global::UkraBar.Properties.Resources.Plus_24px;
-            this.BtnMaisK.Location = new System.Drawing.Point(27, 218);
-            this.BtnMaisK.Name = "BtnMaisK";
-            this.BtnMaisK.Size = new System.Drawing.Size(35, 35);
-            this.BtnMaisK.TabIndex = 6;
-            this.BtnMaisK.UseVisualStyleBackColor = false;
-            this.BtnMaisK.Click += new System.EventHandler(this.BtnMaisK_Click);
-            // 
-            // BtnMenosK
-            // 
-            this.BtnMenosK.BackColor = System.Drawing.Color.DarkGreen;
-            this.BtnMenosK.FlatAppearance.BorderSize = 0;
-            this.BtnMenosK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMenosK.Image = global::UkraBar.Properties.Resources.subtract_24px;
-            this.BtnMenosK.Location = new System.Drawing.Point(72, 217);
-            this.BtnMenosK.Name = "BtnMenosK";
-            this.BtnMenosK.Size = new System.Drawing.Size(35, 35);
-            this.BtnMenosK.TabIndex = 3;
-            this.BtnMenosK.UseVisualStyleBackColor = false;
-            this.BtnMenosK.Click += new System.EventHandler(this.BtnMenosK_Click);
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -1412,16 +1004,6 @@
             this.label13.Size = new System.Drawing.Size(687, 25);
             this.label13.TabIndex = 20;
             this.label13.Text = "Prato similar ao Italiano com ingredientes bastante comuns na Holanda.\r\n";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::UkraBar.Properties.Resources.UkraSimboloBranco;
-            this.pictureBox5.Location = new System.Drawing.Point(27, 23);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(113, 81);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox5.TabIndex = 19;
-            this.pictureBox5.TabStop = false;
             // 
             // panel19
             // 
@@ -1526,32 +1108,6 @@
             this.label17.TabIndex = 7;
             this.label17.Text = "Quantidade";
             // 
-            // BtnMaisV
-            // 
-            this.BtnMaisV.BackColor = System.Drawing.Color.DarkGreen;
-            this.BtnMaisV.FlatAppearance.BorderSize = 0;
-            this.BtnMaisV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMaisV.Image = global::UkraBar.Properties.Resources.Plus_24px;
-            this.BtnMaisV.Location = new System.Drawing.Point(27, 218);
-            this.BtnMaisV.Name = "BtnMaisV";
-            this.BtnMaisV.Size = new System.Drawing.Size(35, 35);
-            this.BtnMaisV.TabIndex = 6;
-            this.BtnMaisV.UseVisualStyleBackColor = false;
-            this.BtnMaisV.Click += new System.EventHandler(this.BtnMaisV_Click);
-            // 
-            // BtnMenosV
-            // 
-            this.BtnMenosV.BackColor = System.Drawing.Color.DarkGreen;
-            this.BtnMenosV.FlatAppearance.BorderSize = 0;
-            this.BtnMenosV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMenosV.Image = global::UkraBar.Properties.Resources.subtract_24px;
-            this.BtnMenosV.Location = new System.Drawing.Point(72, 217);
-            this.BtnMenosV.Name = "BtnMenosV";
-            this.BtnMenosV.Size = new System.Drawing.Size(35, 35);
-            this.BtnMenosV.TabIndex = 3;
-            this.BtnMenosV.UseVisualStyleBackColor = false;
-            this.BtnMenosV.Click += new System.EventHandler(this.BtnMenosV_Click);
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -1628,16 +1184,6 @@
             this.panelAlemão.Size = new System.Drawing.Size(707, 486);
             this.panelAlemão.TabIndex = 24;
             this.panelAlemão.Visible = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::UkraBar.Properties.Resources.UkraSimboloBranco;
-            this.pictureBox6.Location = new System.Drawing.Point(27, 23);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(113, 81);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox6.TabIndex = 19;
-            this.pictureBox6.TabStop = false;
             // 
             // panel25
             // 
@@ -1742,32 +1288,6 @@
             this.label23.TabIndex = 7;
             this.label23.Text = "Quantidade";
             // 
-            // BtnMaisA
-            // 
-            this.BtnMaisA.BackColor = System.Drawing.Color.DarkGreen;
-            this.BtnMaisA.FlatAppearance.BorderSize = 0;
-            this.BtnMaisA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMaisA.Image = global::UkraBar.Properties.Resources.Plus_24px;
-            this.BtnMaisA.Location = new System.Drawing.Point(27, 200);
-            this.BtnMaisA.Name = "BtnMaisA";
-            this.BtnMaisA.Size = new System.Drawing.Size(35, 35);
-            this.BtnMaisA.TabIndex = 6;
-            this.BtnMaisA.UseVisualStyleBackColor = false;
-            this.BtnMaisA.Click += new System.EventHandler(this.BtnMaisA_Click);
-            // 
-            // BtnMenosA
-            // 
-            this.BtnMenosA.BackColor = System.Drawing.Color.DarkGreen;
-            this.BtnMenosA.FlatAppearance.BorderSize = 0;
-            this.BtnMenosA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMenosA.Image = global::UkraBar.Properties.Resources.subtract_24px;
-            this.BtnMenosA.Location = new System.Drawing.Point(72, 199);
-            this.BtnMenosA.Name = "BtnMenosA";
-            this.BtnMenosA.Size = new System.Drawing.Size(35, 35);
-            this.BtnMenosA.TabIndex = 3;
-            this.BtnMenosA.UseVisualStyleBackColor = false;
-            this.BtnMenosA.Click += new System.EventHandler(this.BtnMenosA_Click);
-            // 
             // label24
             // 
             this.label24.AutoSize = true;
@@ -1819,30 +1339,506 @@
             this.BtnOkA.UseVisualStyleBackColor = false;
             this.BtnOkA.Click += new System.EventHandler(this.BtnOkA_Click);
             // 
-            // button1
+            // SideBarLateral
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkGreen;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(529, 30);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.button1.Size = new System.Drawing.Size(281, 55);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "        Comprar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.SideBarLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.SideBarLateral.Controls.Add(this.BtnPagamento);
+            this.SideBarLateral.Controls.Add(this.BtnCarrinho);
+            this.SideBarLateral.Controls.Add(this.BtnVoltar);
+            this.SideBarLateral.Controls.Add(this.panel1);
+            this.SideBarLateral.Controls.Add(this.BtnSair);
+            this.SideBarLateral.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SideBarLateral.Location = new System.Drawing.Point(0, 0);
+            this.SideBarLateral.Name = "SideBarLateral";
+            this.SideBarLateral.Size = new System.Drawing.Size(227, 749);
+            this.SideBarLateral.TabIndex = 43;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(3, 171);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(224, 238);
+            this.panel1.TabIndex = 44;
+            // 
+            // BtnPagamento
+            // 
+            this.BtnPagamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnPagamento.FlatAppearance.BorderSize = 0;
+            this.BtnPagamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPagamento.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPagamento.ForeColor = System.Drawing.Color.White;
+            this.BtnPagamento.Image = global::UkraBar.Properties.Resources.mobile_shop_payment_24px1;
+            this.BtnPagamento.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnPagamento.Location = new System.Drawing.Point(3, 3);
+            this.BtnPagamento.Name = "BtnPagamento";
+            this.BtnPagamento.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.BtnPagamento.Size = new System.Drawing.Size(224, 50);
+            this.BtnPagamento.TabIndex = 45;
+            this.BtnPagamento.Text = "      Forma de Pagamento";
+            this.BtnPagamento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnPagamento.UseVisualStyleBackColor = false;
+            this.BtnPagamento.Click += new System.EventHandler(this.BtnPagamento_Click);
+            // 
+            // BtnCarrinho
+            // 
+            this.BtnCarrinho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnCarrinho.FlatAppearance.BorderSize = 0;
+            this.BtnCarrinho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCarrinho.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCarrinho.ForeColor = System.Drawing.Color.White;
+            this.BtnCarrinho.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
+            this.BtnCarrinho.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCarrinho.Location = new System.Drawing.Point(3, 59);
+            this.BtnCarrinho.Name = "BtnCarrinho";
+            this.BtnCarrinho.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.BtnCarrinho.Size = new System.Drawing.Size(224, 50);
+            this.BtnCarrinho.TabIndex = 42;
+            this.BtnCarrinho.Text = "   Carrinho";
+            this.BtnCarrinho.UseVisualStyleBackColor = false;
+            this.BtnCarrinho.Click += new System.EventHandler(this.BtnCarrinho_Click);
+            // 
+            // BtnVoltar
+            // 
+            this.BtnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnVoltar.FlatAppearance.BorderSize = 0;
+            this.BtnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnVoltar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVoltar.ForeColor = System.Drawing.Color.White;
+            this.BtnVoltar.Image = global::UkraBar.Properties.Resources.reply_arrow_24px;
+            this.BtnVoltar.Location = new System.Drawing.Point(3, 115);
+            this.BtnVoltar.Name = "BtnVoltar";
+            this.BtnVoltar.Size = new System.Drawing.Size(224, 50);
+            this.BtnVoltar.TabIndex = 40;
+            this.BtnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnVoltar.UseVisualStyleBackColor = false;
+            this.BtnVoltar.Click += new System.EventHandler(this.BtnVoltar_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::UkraBar.Properties.Resources.UkraSimboloBranco;
+            this.pictureBox6.Location = new System.Drawing.Point(27, 23);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(113, 81);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox6.TabIndex = 19;
+            this.pictureBox6.TabStop = false;
+            // 
+            // BtnMaisA
+            // 
+            this.BtnMaisA.BackColor = System.Drawing.Color.DarkGreen;
+            this.BtnMaisA.FlatAppearance.BorderSize = 0;
+            this.BtnMaisA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMaisA.Image = global::UkraBar.Properties.Resources.Plus_24px;
+            this.BtnMaisA.Location = new System.Drawing.Point(27, 200);
+            this.BtnMaisA.Name = "BtnMaisA";
+            this.BtnMaisA.Size = new System.Drawing.Size(35, 35);
+            this.BtnMaisA.TabIndex = 6;
+            this.BtnMaisA.UseVisualStyleBackColor = false;
+            this.BtnMaisA.Click += new System.EventHandler(this.BtnMaisA_Click);
+            // 
+            // BtnMenosA
+            // 
+            this.BtnMenosA.BackColor = System.Drawing.Color.DarkGreen;
+            this.BtnMenosA.FlatAppearance.BorderSize = 0;
+            this.BtnMenosA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMenosA.Image = global::UkraBar.Properties.Resources.subtract_24px;
+            this.BtnMenosA.Location = new System.Drawing.Point(72, 199);
+            this.BtnMenosA.Name = "BtnMenosA";
+            this.BtnMenosA.Size = new System.Drawing.Size(35, 35);
+            this.BtnMenosA.TabIndex = 3;
+            this.BtnMenosA.UseVisualStyleBackColor = false;
+            this.BtnMenosA.Click += new System.EventHandler(this.BtnMenosA_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::UkraBar.Properties.Resources.UkraSimboloBranco;
+            this.pictureBox5.Location = new System.Drawing.Point(27, 23);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(113, 81);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox5.TabIndex = 19;
+            this.pictureBox5.TabStop = false;
+            // 
+            // BtnMaisV
+            // 
+            this.BtnMaisV.BackColor = System.Drawing.Color.DarkGreen;
+            this.BtnMaisV.FlatAppearance.BorderSize = 0;
+            this.BtnMaisV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMaisV.Image = global::UkraBar.Properties.Resources.Plus_24px;
+            this.BtnMaisV.Location = new System.Drawing.Point(27, 218);
+            this.BtnMaisV.Name = "BtnMaisV";
+            this.BtnMaisV.Size = new System.Drawing.Size(35, 35);
+            this.BtnMaisV.TabIndex = 6;
+            this.BtnMaisV.UseVisualStyleBackColor = false;
+            this.BtnMaisV.Click += new System.EventHandler(this.BtnMaisV_Click);
+            // 
+            // BtnMenosV
+            // 
+            this.BtnMenosV.BackColor = System.Drawing.Color.DarkGreen;
+            this.BtnMenosV.FlatAppearance.BorderSize = 0;
+            this.BtnMenosV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMenosV.Image = global::UkraBar.Properties.Resources.subtract_24px;
+            this.BtnMenosV.Location = new System.Drawing.Point(72, 217);
+            this.BtnMenosV.Name = "BtnMenosV";
+            this.BtnMenosV.Size = new System.Drawing.Size(35, 35);
+            this.BtnMenosV.TabIndex = 3;
+            this.BtnMenosV.UseVisualStyleBackColor = false;
+            this.BtnMenosV.Click += new System.EventHandler(this.BtnMenosV_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::UkraBar.Properties.Resources.UkraSimboloBranco;
+            this.pictureBox4.Location = new System.Drawing.Point(27, 23);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(113, 81);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox4.TabIndex = 19;
+            this.pictureBox4.TabStop = false;
+            // 
+            // BtnMaisK
+            // 
+            this.BtnMaisK.BackColor = System.Drawing.Color.DarkGreen;
+            this.BtnMaisK.FlatAppearance.BorderSize = 0;
+            this.BtnMaisK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMaisK.Image = global::UkraBar.Properties.Resources.Plus_24px;
+            this.BtnMaisK.Location = new System.Drawing.Point(27, 218);
+            this.BtnMaisK.Name = "BtnMaisK";
+            this.BtnMaisK.Size = new System.Drawing.Size(35, 35);
+            this.BtnMaisK.TabIndex = 6;
+            this.BtnMaisK.UseVisualStyleBackColor = false;
+            this.BtnMaisK.Click += new System.EventHandler(this.BtnMaisK_Click);
+            // 
+            // BtnMenosK
+            // 
+            this.BtnMenosK.BackColor = System.Drawing.Color.DarkGreen;
+            this.BtnMenosK.FlatAppearance.BorderSize = 0;
+            this.BtnMenosK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMenosK.Image = global::UkraBar.Properties.Resources.subtract_24px;
+            this.BtnMenosK.Location = new System.Drawing.Point(72, 217);
+            this.BtnMenosK.Name = "BtnMenosK";
+            this.BtnMenosK.Size = new System.Drawing.Size(35, 35);
+            this.BtnMenosK.TabIndex = 3;
+            this.BtnMenosK.UseVisualStyleBackColor = false;
+            this.BtnMenosK.Click += new System.EventHandler(this.BtnMenosK_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::UkraBar.Properties.Resources.UkraSimboloBranco;
+            this.pictureBox3.Location = new System.Drawing.Point(27, 23);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(113, 81);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 19;
+            this.pictureBox3.TabStop = false;
+            // 
+            // BtnMaisZ
+            // 
+            this.BtnMaisZ.BackColor = System.Drawing.Color.DarkGreen;
+            this.BtnMaisZ.FlatAppearance.BorderSize = 0;
+            this.BtnMaisZ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMaisZ.Image = global::UkraBar.Properties.Resources.Plus_24px;
+            this.BtnMaisZ.Location = new System.Drawing.Point(27, 218);
+            this.BtnMaisZ.Name = "BtnMaisZ";
+            this.BtnMaisZ.Size = new System.Drawing.Size(35, 35);
+            this.BtnMaisZ.TabIndex = 6;
+            this.BtnMaisZ.UseVisualStyleBackColor = false;
+            this.BtnMaisZ.Click += new System.EventHandler(this.BtnMaisZ_Click);
+            // 
+            // BtnMenosZ
+            // 
+            this.BtnMenosZ.BackColor = System.Drawing.Color.DarkGreen;
+            this.BtnMenosZ.FlatAppearance.BorderSize = 0;
+            this.BtnMenosZ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMenosZ.Image = global::UkraBar.Properties.Resources.subtract_24px;
+            this.BtnMenosZ.Location = new System.Drawing.Point(72, 217);
+            this.BtnMenosZ.Name = "BtnMenosZ";
+            this.BtnMenosZ.Size = new System.Drawing.Size(35, 35);
+            this.BtnMenosZ.TabIndex = 3;
+            this.BtnMenosZ.UseVisualStyleBackColor = false;
+            this.BtnMenosZ.Click += new System.EventHandler(this.BtnMenosZ_Click);
+            // 
+            // BtnKatsuoSando
+            // 
+            this.BtnKatsuoSando.BackColor = System.Drawing.Color.DarkGreen;
+            this.BtnKatsuoSando.FlatAppearance.BorderSize = 0;
+            this.BtnKatsuoSando.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnKatsuoSando.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnKatsuoSando.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnKatsuoSando.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
+            this.BtnKatsuoSando.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnKatsuoSando.Location = new System.Drawing.Point(247, 613);
+            this.BtnKatsuoSando.Name = "BtnKatsuoSando";
+            this.BtnKatsuoSando.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
+            this.BtnKatsuoSando.Size = new System.Drawing.Size(281, 55);
+            this.BtnKatsuoSando.TabIndex = 15;
+            this.BtnKatsuoSando.Text = "        Comprar";
+            this.BtnKatsuoSando.UseVisualStyleBackColor = false;
+            this.BtnKatsuoSando.Click += new System.EventHandler(this.BtnKatsuoSando_Click);
+            // 
+            // BtnVegetariano
+            // 
+            this.BtnVegetariano.BackColor = System.Drawing.Color.DarkGreen;
+            this.BtnVegetariano.FlatAppearance.BorderSize = 0;
+            this.BtnVegetariano.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnVegetariano.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVegetariano.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnVegetariano.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
+            this.BtnVegetariano.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnVegetariano.Location = new System.Drawing.Point(637, 611);
+            this.BtnVegetariano.Name = "BtnVegetariano";
+            this.BtnVegetariano.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
+            this.BtnVegetariano.Size = new System.Drawing.Size(281, 55);
+            this.BtnVegetariano.TabIndex = 14;
+            this.BtnVegetariano.Text = "        Comprar";
+            this.BtnVegetariano.UseVisualStyleBackColor = false;
+            this.BtnVegetariano.Click += new System.EventHandler(this.BtnVegetariano_Click);
+            // 
+            // BtnComprarAlemao
+            // 
+            this.BtnComprarAlemao.BackColor = System.Drawing.Color.DarkGreen;
+            this.BtnComprarAlemao.FlatAppearance.BorderSize = 0;
+            this.BtnComprarAlemao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnComprarAlemao.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnComprarAlemao.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnComprarAlemao.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
+            this.BtnComprarAlemao.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnComprarAlemao.Location = new System.Drawing.Point(1015, 611);
+            this.BtnComprarAlemao.Name = "BtnComprarAlemao";
+            this.BtnComprarAlemao.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
+            this.BtnComprarAlemao.Size = new System.Drawing.Size(281, 55);
+            this.BtnComprarAlemao.TabIndex = 13;
+            this.BtnComprarAlemao.Text = "        Comprar";
+            this.BtnComprarAlemao.UseVisualStyleBackColor = false;
+            this.BtnComprarAlemao.Click += new System.EventHandler(this.BtnComprarAlemao_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::UkraBar.Properties.Resources.UkraSimboloBranco;
+            this.pictureBox2.Location = new System.Drawing.Point(27, 23);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(113, 81);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
+            // 
+            // BtnMaisI
+            // 
+            this.BtnMaisI.BackColor = System.Drawing.Color.DarkGreen;
+            this.BtnMaisI.FlatAppearance.BorderSize = 0;
+            this.BtnMaisI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMaisI.Image = global::UkraBar.Properties.Resources.Plus_24px;
+            this.BtnMaisI.Location = new System.Drawing.Point(27, 218);
+            this.BtnMaisI.Name = "BtnMaisI";
+            this.BtnMaisI.Size = new System.Drawing.Size(35, 35);
+            this.BtnMaisI.TabIndex = 6;
+            this.BtnMaisI.UseVisualStyleBackColor = false;
+            this.BtnMaisI.Click += new System.EventHandler(this.BtnMaisI_Click);
+            // 
+            // BtnMenosI
+            // 
+            this.BtnMenosI.BackColor = System.Drawing.Color.DarkGreen;
+            this.BtnMenosI.FlatAppearance.BorderSize = 0;
+            this.BtnMenosI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMenosI.Image = global::UkraBar.Properties.Resources.subtract_24px;
+            this.BtnMenosI.Location = new System.Drawing.Point(72, 217);
+            this.BtnMenosI.Name = "BtnMenosI";
+            this.BtnMenosI.Size = new System.Drawing.Size(35, 35);
+            this.BtnMenosI.TabIndex = 3;
+            this.BtnMenosI.UseVisualStyleBackColor = false;
+            this.BtnMenosI.Click += new System.EventHandler(this.BtnMenosI_Click);
+            // 
+            // pbSimbolo
+            // 
+            this.pbSimbolo.Image = global::UkraBar.Properties.Resources.UkraSimboloBranco;
+            this.pbSimbolo.Location = new System.Drawing.Point(27, 23);
+            this.pbSimbolo.Name = "pbSimbolo";
+            this.pbSimbolo.Size = new System.Drawing.Size(113, 81);
+            this.pbSimbolo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbSimbolo.TabIndex = 19;
+            this.pbSimbolo.TabStop = false;
+            // 
+            // BtnMais1
+            // 
+            this.BtnMais1.BackColor = System.Drawing.Color.DarkGreen;
+            this.BtnMais1.FlatAppearance.BorderSize = 0;
+            this.BtnMais1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMais1.Image = global::UkraBar.Properties.Resources.Plus_24px;
+            this.BtnMais1.Location = new System.Drawing.Point(27, 209);
+            this.BtnMais1.Name = "BtnMais1";
+            this.BtnMais1.Size = new System.Drawing.Size(35, 35);
+            this.BtnMais1.TabIndex = 6;
+            this.BtnMais1.UseVisualStyleBackColor = false;
+            this.BtnMais1.Click += new System.EventHandler(this.BtnMais1_Click);
+            // 
+            // BtnMenos1
+            // 
+            this.BtnMenos1.BackColor = System.Drawing.Color.DarkGreen;
+            this.BtnMenos1.FlatAppearance.BorderSize = 0;
+            this.BtnMenos1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMenos1.Image = global::UkraBar.Properties.Resources.subtract_24px;
+            this.BtnMenos1.Location = new System.Drawing.Point(72, 208);
+            this.BtnMenos1.Name = "BtnMenos1";
+            this.BtnMenos1.Size = new System.Drawing.Size(35, 35);
+            this.BtnMenos1.TabIndex = 3;
+            this.BtnMenos1.UseVisualStyleBackColor = false;
+            this.BtnMenos1.Click += new System.EventHandler(this.BtnMenos1_Click);
+            // 
+            // BtnComprar
+            // 
+            this.BtnComprar.BackColor = System.Drawing.Color.DarkGreen;
+            this.BtnComprar.FlatAppearance.BorderSize = 0;
+            this.BtnComprar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnComprar.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnComprar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnComprar.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
+            this.BtnComprar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnComprar.Location = new System.Drawing.Point(247, 310);
+            this.BtnComprar.Name = "BtnComprar";
+            this.BtnComprar.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
+            this.BtnComprar.Size = new System.Drawing.Size(281, 55);
+            this.BtnComprar.TabIndex = 9;
+            this.BtnComprar.Text = "        Comprar";
+            this.BtnComprar.UseVisualStyleBackColor = false;
+            this.BtnComprar.Click += new System.EventHandler(this.BtnComprar_Click);
+            // 
+            // BtnAlemao
+            // 
+            this.BtnAlemao.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnAlemao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAlemao.Image = global::UkraBar.Properties.Resources.SandubaAlemão21;
+            this.BtnAlemao.Location = new System.Drawing.Point(1016, 419);
+            this.BtnAlemao.Name = "BtnAlemao";
+            this.BtnAlemao.Size = new System.Drawing.Size(284, 186);
+            this.BtnAlemao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.BtnAlemao.TabIndex = 6;
+            this.BtnAlemao.TabStop = false;
+            // 
+            // BtnVegano
+            // 
+            this.BtnVegano.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnVegano.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnVegano.Image = global::UkraBar.Properties.Resources.SandubaVegano;
+            this.BtnVegano.Location = new System.Drawing.Point(638, 419);
+            this.BtnVegano.Name = "BtnVegano";
+            this.BtnVegano.Size = new System.Drawing.Size(286, 187);
+            this.BtnVegano.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.BtnVegano.TabIndex = 5;
+            this.BtnVegano.TabStop = false;
+            // 
+            // BtnJapones
+            // 
+            this.BtnJapones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnJapones.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnJapones.Image = global::UkraBar.Properties.Resources.KatsuSanduba1;
+            this.BtnJapones.Location = new System.Drawing.Point(247, 419);
+            this.BtnJapones.Name = "BtnJapones";
+            this.BtnJapones.Size = new System.Drawing.Size(281, 188);
+            this.BtnJapones.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.BtnJapones.TabIndex = 4;
+            this.BtnJapones.TabStop = false;
+            // 
+            // BtnPolones
+            // 
+            this.BtnPolones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnPolones.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnPolones.Image = global::UkraBar.Properties.Resources.SandubaPolones1;
+            this.BtnPolones.Location = new System.Drawing.Point(1017, 119);
+            this.BtnPolones.Name = "BtnPolones";
+            this.BtnPolones.Size = new System.Drawing.Size(279, 184);
+            this.BtnPolones.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.BtnPolones.TabIndex = 3;
+            this.BtnPolones.TabStop = false;
+            // 
+            // BtnEspanhol
+            // 
+            this.BtnEspanhol.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnEspanhol.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnEspanhol.Image = global::UkraBar.Properties.Resources.SandubaEspanhol;
+            this.BtnEspanhol.Location = new System.Drawing.Point(638, 119);
+            this.BtnEspanhol.Name = "BtnEspanhol";
+            this.BtnEspanhol.Size = new System.Drawing.Size(280, 184);
+            this.BtnEspanhol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.BtnEspanhol.TabIndex = 2;
+            this.BtnEspanhol.TabStop = false;
+            // 
+            // BtnItaliano
+            // 
+            this.BtnItaliano.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnItaliano.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnItaliano.Image = global::UkraBar.Properties.Resources.SandubaItaliano;
+            this.BtnItaliano.Location = new System.Drawing.Point(247, 119);
+            this.BtnItaliano.Name = "BtnItaliano";
+            this.BtnItaliano.Size = new System.Drawing.Size(280, 185);
+            this.BtnItaliano.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.BtnItaliano.TabIndex = 1;
+            this.BtnItaliano.TabStop = false;
+            // 
+            // BtnComprarIberico
+            // 
+            this.BtnComprarIberico.BackColor = System.Drawing.Color.DarkGreen;
+            this.BtnComprarIberico.FlatAppearance.BorderSize = 0;
+            this.BtnComprarIberico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnComprarIberico.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnComprarIberico.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnComprarIberico.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
+            this.BtnComprarIberico.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnComprarIberico.Location = new System.Drawing.Point(637, 310);
+            this.BtnComprarIberico.Name = "BtnComprarIberico";
+            this.BtnComprarIberico.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
+            this.BtnComprarIberico.Size = new System.Drawing.Size(281, 55);
+            this.BtnComprarIberico.TabIndex = 11;
+            this.BtnComprarIberico.Text = "        Comprar";
+            this.BtnComprarIberico.UseVisualStyleBackColor = false;
+            this.BtnComprarIberico.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // BtnComprarPolones
+            // 
+            this.BtnComprarPolones.BackColor = System.Drawing.Color.DarkGreen;
+            this.BtnComprarPolones.FlatAppearance.BorderSize = 0;
+            this.BtnComprarPolones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnComprarPolones.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnComprarPolones.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnComprarPolones.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
+            this.BtnComprarPolones.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnComprarPolones.Location = new System.Drawing.Point(1019, 312);
+            this.BtnComprarPolones.Name = "BtnComprarPolones";
+            this.BtnComprarPolones.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
+            this.BtnComprarPolones.Size = new System.Drawing.Size(281, 55);
+            this.BtnComprarPolones.TabIndex = 12;
+            this.BtnComprarPolones.Text = "        Comprar";
+            this.BtnComprarPolones.UseVisualStyleBackColor = false;
+            this.BtnComprarPolones.Click += new System.EventHandler(this.BtnComprarPolones_Click);
+            // 
+            // pbFundo
+            // 
+            this.pbFundo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbFundo.Image = global::UkraBar.Properties.Resources.TelaFundo;
+            this.pbFundo.Location = new System.Drawing.Point(0, 0);
+            this.pbFundo.Name = "pbFundo";
+            this.pbFundo.Size = new System.Drawing.Size(1370, 749);
+            this.pbFundo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbFundo.TabIndex = 0;
+            this.pbFundo.TabStop = false;
+            this.pbFundo.Click += new System.EventHandler(this.pbFundo_Click);
             // 
             // MenuSanduba
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.SideBarLateral);
             this.Controls.Add(this.panelAlemão);
             this.Controls.Add(this.panelVegetariano);
             this.Controls.Add(this.panelKatsuSando);
@@ -1853,7 +1849,6 @@
             this.Controls.Add(this.panelIberico);
             this.Controls.Add(this.panelItaliano);
             this.Controls.Add(this.BtnComprar);
-            this.Controls.Add(this.PanelLateral);
             this.Controls.Add(this.BtnAlemao);
             this.Controls.Add(this.BtnVegano);
             this.Controls.Add(this.BtnJapones);
@@ -1866,14 +1861,43 @@
             this.Name = "MenuSanduba";
             this.Text = "MenuSanduba";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.PanelLateral.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelItaliano.ResumeLayout(false);
             this.panelItaliano.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSimbolo)).EndInit();
             this.panelValor.ResumeLayout(false);
             this.panelValor.PerformLayout();
             this.panelFundo.ResumeLayout(false);
+            this.panelIberico.ResumeLayout(false);
+            this.panelIberico.PerformLayout();
+            this.panelValorI.ResumeLayout(false);
+            this.panelValorI.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panelZapiekanka.ResumeLayout(false);
+            this.panelZapiekanka.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panelKatsuSando.ResumeLayout(false);
+            this.panelKatsuSando.PerformLayout();
+            this.panel17.ResumeLayout(false);
+            this.panel17.PerformLayout();
+            this.panel18.ResumeLayout(false);
+            this.panelVegetariano.ResumeLayout(false);
+            this.panelVegetariano.PerformLayout();
+            this.panel23.ResumeLayout(false);
+            this.panel23.PerformLayout();
+            this.panel24.ResumeLayout(false);
+            this.panelAlemão.ResumeLayout(false);
+            this.panelAlemão.PerformLayout();
+            this.panel29.ResumeLayout(false);
+            this.panel29.PerformLayout();
+            this.panel30.ResumeLayout(false);
+            this.SideBarLateral.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSimbolo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnAlemao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnVegano)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnJapones)).EndInit();
@@ -1881,36 +1905,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.BtnEspanhol)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnItaliano)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFundo)).EndInit();
-            this.panelIberico.ResumeLayout(false);
-            this.panelIberico.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panelValorI.ResumeLayout(false);
-            this.panelValorI.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panelZapiekanka.ResumeLayout(false);
-            this.panelZapiekanka.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panelKatsuSando.ResumeLayout(false);
-            this.panelKatsuSando.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel17.ResumeLayout(false);
-            this.panel17.PerformLayout();
-            this.panel18.ResumeLayout(false);
-            this.panelVegetariano.ResumeLayout(false);
-            this.panelVegetariano.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel23.ResumeLayout(false);
-            this.panel23.PerformLayout();
-            this.panel24.ResumeLayout(false);
-            this.panelAlemão.ResumeLayout(false);
-            this.panelAlemão.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.panel29.ResumeLayout(false);
-            this.panel29.PerformLayout();
-            this.panel30.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1925,8 +1919,6 @@
         private System.Windows.Forms.PictureBox BtnJapones;
         private System.Windows.Forms.PictureBox BtnVegano;
         private System.Windows.Forms.PictureBox BtnAlemao;
-        private System.Windows.Forms.Panel PanelLateral;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panelItaliano;
         private System.Windows.Forms.Button BtnMais1;
         private System.Windows.Forms.TextBox BoxCItaliano;
@@ -2048,6 +2040,8 @@
         private System.Windows.Forms.Button BtnSair;
         private System.Windows.Forms.Button BtnVoltar;
         private System.Windows.Forms.Button BtnCarrinho;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.FlowLayoutPanel SideBarLateral;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button BtnPagamento;
     }
 }
