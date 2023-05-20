@@ -22,12 +22,22 @@ namespace UkraBar
         public static double valorVegetariano;
         public static double valorAlemao;
 
+        public static double valorItalianoMenos;
+        public static double valorIbericoMenos;
+        public static double valorPolonesMenos;
+        public static double valorJaponesMenos;
+        public static double valorVegetarianoMenos;
+        public static double valorAlemaoMenos;
+
+
+        public static double valorFinal; 
+
 
 
         public static int cartao = 0;
         public static int dinheiro = 0;
         public static int pix = 0;
 
-        public static int Cpf;
+        public static string Cpf;
     }
 }

@@ -31,19 +31,18 @@
             this.BtnPix = new System.Windows.Forms.Button();
             this.BtnCartao = new System.Windows.Forms.Button();
             this.BtnDinheiro = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnPix
             // 
-            this.BtnPix.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnPix.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BtnPix.FlatAppearance.BorderSize = 0;
             this.BtnPix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPix.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPix.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnPix.Location = new System.Drawing.Point(192, 466);
+            this.BtnPix.Location = new System.Drawing.Point(188, 466);
             this.BtnPix.Name = "BtnPix";
             this.BtnPix.Size = new System.Drawing.Size(180, 76);
             this.BtnPix.TabIndex = 0;
@@ -53,9 +52,6 @@
             // 
             // BtnCartao
             // 
-            this.BtnCartao.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnCartao.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BtnCartao.FlatAppearance.BorderSize = 0;
             this.BtnCartao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -71,9 +67,6 @@
             // 
             // BtnDinheiro
             // 
-            this.BtnDinheiro.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnDinheiro.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BtnDinheiro.FlatAppearance.BorderSize = 0;
             this.BtnDinheiro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -87,17 +80,29 @@
             this.BtnDinheiro.UseVisualStyleBackColor = false;
             this.BtnDinheiro.Click += new System.EventHandler(this.BtnDinheiro_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::UkraBar.Properties.Resources.Selecione;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1370, 749);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // MenuPagamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::UkraBar.Properties.Resources.Selecione;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.BtnDinheiro);
             this.Controls.Add(this.BtnCartao);
             this.Controls.Add(this.BtnPix);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "MenuPagamento";
             this.Text = "MenuPagamento";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -107,5 +112,6 @@
         private System.Windows.Forms.Button BtnPix;
         private System.Windows.Forms.Button BtnCartao;
         private System.Windows.Forms.Button BtnDinheiro;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

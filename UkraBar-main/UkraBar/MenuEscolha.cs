@@ -52,6 +52,9 @@ namespace UkraBar
 
         private void BtnFechar_Click(object sender, EventArgs e)
         {
+
+            VariaveisGlobais.valorFinal = VariaveisGlobais.valorItaliano + VariaveisGlobais.valorJapones + VariaveisGlobais.valorPolones + VariaveisGlobais.valorVegetariano + VariaveisGlobais.valorAlemao + VariaveisGlobais.valorIberico;
+
             MenuPagamento menuPagamento = new MenuPagamento();
             this.Hide();
             menuPagamento.ShowDialog();

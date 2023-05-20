@@ -30,6 +30,9 @@
         {
             this.BtnSair = new System.Windows.Forms.Button();
             this.panelItaliano = new System.Windows.Forms.Panel();
+            this.label35 = new System.Windows.Forms.Label();
+            this.BoxValorfinalI = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
             this.pbSimbolo = new System.Windows.Forms.PictureBox();
             this.panelBorder3 = new System.Windows.Forms.Panel();
             this.PanelBorder2 = new System.Windows.Forms.Panel();
@@ -48,6 +51,9 @@
             this.BtnCancelarI = new System.Windows.Forms.Button();
             this.BtnOkI = new System.Windows.Forms.Button();
             this.panelIberico = new System.Windows.Forms.Panel();
+            this.label34 = new System.Windows.Forms.Label();
+            this.BoxValorfinalIB = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
             this.lblInfoI3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -67,6 +73,9 @@
             this.BtnCancelarIB = new System.Windows.Forms.Button();
             this.BtnOkIB = new System.Windows.Forms.Button();
             this.panelZapiekanka = new System.Windows.Forms.Panel();
+            this.label33 = new System.Windows.Forms.Label();
+            this.BoxValorfinalZ = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -86,6 +95,9 @@
             this.BtnCancelarZ = new System.Windows.Forms.Button();
             this.BtnOkZ = new System.Windows.Forms.Button();
             this.panelKatsuSando = new System.Windows.Forms.Panel();
+            this.label32 = new System.Windows.Forms.Label();
+            this.BoxValorfinalK = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -105,6 +117,9 @@
             this.BtnCancelarK = new System.Windows.Forms.Button();
             this.BtnOkK = new System.Windows.Forms.Button();
             this.panelVegetariano = new System.Windows.Forms.Panel();
+            this.label30 = new System.Windows.Forms.Label();
+            this.BoxValorfinalV = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel19 = new System.Windows.Forms.Panel();
@@ -124,6 +139,9 @@
             this.BtnCancelarV = new System.Windows.Forms.Button();
             this.BtnOkV = new System.Windows.Forms.Button();
             this.panelAlemão = new System.Windows.Forms.Panel();
+            this.label31 = new System.Windows.Forms.Label();
+            this.BoxValorfinal = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel25 = new System.Windows.Forms.Panel();
             this.panel26 = new System.Windows.Forms.Panel();
@@ -154,21 +172,8 @@
             this.BtnPolones = new System.Windows.Forms.PictureBox();
             this.BtnEspanhol = new System.Windows.Forms.PictureBox();
             this.BtnItaliano = new System.Windows.Forms.PictureBox();
-            this.BtnComprarIberico = new System.Windows.Forms.Button();
-            this.BtnComprarPolones = new System.Windows.Forms.Button();
-            this.pbFundo = new System.Windows.Forms.PictureBox();
-            this.BoxValorfinal = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.BoxValorfinalV = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.BoxValorFivalK = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.BoxValorfinalZ = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.BoxValorfinalIB = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.BoxValorfinalI = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
+            this.BtnIberico = new System.Windows.Forms.Button();
+            this.BtnPolonesComprar = new System.Windows.Forms.Button();
             this.panelItaliano.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSimbolo)).BeginInit();
             this.panelValor.SuspendLayout();
@@ -200,7 +205,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.BtnPolones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnEspanhol)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnItaliano)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFundo)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnSair
@@ -211,7 +215,7 @@
             this.BtnSair.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSair.ForeColor = System.Drawing.Color.White;
             this.BtnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSair.Location = new System.Drawing.Point(3, 303);
+            this.BtnSair.Location = new System.Drawing.Point(3, 697);
             this.BtnSair.Name = "BtnSair";
             this.BtnSair.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.BtnSair.Size = new System.Drawing.Size(224, 50);
@@ -223,6 +227,7 @@
             // panelItaliano
             // 
             this.panelItaliano.BackColor = System.Drawing.Color.White;
+            this.panelItaliano.Controls.Add(this.label35);
             this.panelItaliano.Controls.Add(this.BoxValorfinalI);
             this.panelItaliano.Controls.Add(this.label29);
             this.panelItaliano.Controls.Add(this.pbSimbolo);
@@ -240,13 +245,49 @@
             this.panelItaliano.Controls.Add(this.lblItaliano);
             this.panelItaliano.Controls.Add(this.panelFundo);
             this.panelItaliano.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelItaliano.Location = new System.Drawing.Point(378, 120);
+            this.panelItaliano.Location = new System.Drawing.Point(381, 120);
             this.panelItaliano.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelItaliano.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelItaliano.Name = "panelItaliano";
             this.panelItaliano.Size = new System.Drawing.Size(707, 486);
             this.panelItaliano.TabIndex = 8;
             this.panelItaliano.Visible = false;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label35.Location = new System.Drawing.Point(71, 279);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(36, 25);
+            this.label35.TabIndex = 24;
+            this.label35.Text = "R$";
+            // 
+            // BoxValorfinalI
+            // 
+            this.BoxValorfinalI.BackColor = System.Drawing.Color.White;
+            this.BoxValorfinalI.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BoxValorfinalI.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxValorfinalI.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.BoxValorfinalI.Location = new System.Drawing.Point(123, 271);
+            this.BoxValorfinalI.MaxLength = 50;
+            this.BoxValorfinalI.Name = "BoxValorfinalI";
+            this.BoxValorfinalI.ReadOnly = true;
+            this.BoxValorfinalI.Size = new System.Drawing.Size(70, 33);
+            this.BoxValorfinalI.TabIndex = 20;
+            this.BoxValorfinalI.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label29.Location = new System.Drawing.Point(199, 279);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(112, 25);
+            this.label29.TabIndex = 21;
+            this.label29.Text = "Valor Final";
             // 
             // pbSimbolo
             // 
@@ -442,6 +483,7 @@
             // panelIberico
             // 
             this.panelIberico.BackColor = System.Drawing.Color.White;
+            this.panelIberico.Controls.Add(this.label34);
             this.panelIberico.Controls.Add(this.BoxValorfinalIB);
             this.panelIberico.Controls.Add(this.label28);
             this.panelIberico.Controls.Add(this.lblInfoI3);
@@ -460,13 +502,49 @@
             this.panelIberico.Controls.Add(this.lblIberico);
             this.panelIberico.Controls.Add(this.panel7);
             this.panelIberico.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelIberico.Location = new System.Drawing.Point(378, 120);
+            this.panelIberico.Location = new System.Drawing.Point(381, 120);
             this.panelIberico.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelIberico.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelIberico.Name = "panelIberico";
             this.panelIberico.Size = new System.Drawing.Size(707, 486);
             this.panelIberico.TabIndex = 10;
             this.panelIberico.Visible = false;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label34.Location = new System.Drawing.Point(71, 285);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(36, 25);
+            this.label34.TabIndex = 23;
+            this.label34.Text = "R$";
+            // 
+            // BoxValorfinalIB
+            // 
+            this.BoxValorfinalIB.BackColor = System.Drawing.Color.White;
+            this.BoxValorfinalIB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BoxValorfinalIB.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxValorfinalIB.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.BoxValorfinalIB.Location = new System.Drawing.Point(123, 277);
+            this.BoxValorfinalIB.MaxLength = 50;
+            this.BoxValorfinalIB.Name = "BoxValorfinalIB";
+            this.BoxValorfinalIB.ReadOnly = true;
+            this.BoxValorfinalIB.Size = new System.Drawing.Size(70, 33);
+            this.BoxValorfinalIB.TabIndex = 21;
+            this.BoxValorfinalIB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label28.Location = new System.Drawing.Point(199, 285);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(112, 25);
+            this.label28.TabIndex = 22;
+            this.label28.Text = "Valor Final";
             // 
             // lblInfoI3
             // 
@@ -672,6 +750,7 @@
             // panelZapiekanka
             // 
             this.panelZapiekanka.BackColor = System.Drawing.Color.White;
+            this.panelZapiekanka.Controls.Add(this.label33);
             this.panelZapiekanka.Controls.Add(this.BoxValorfinalZ);
             this.panelZapiekanka.Controls.Add(this.label27);
             this.panelZapiekanka.Controls.Add(this.label1);
@@ -690,13 +769,49 @@
             this.panelZapiekanka.Controls.Add(this.label6);
             this.panelZapiekanka.Controls.Add(this.panel12);
             this.panelZapiekanka.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelZapiekanka.Location = new System.Drawing.Point(378, 120);
+            this.panelZapiekanka.Location = new System.Drawing.Point(381, 120);
             this.panelZapiekanka.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelZapiekanka.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelZapiekanka.Name = "panelZapiekanka";
             this.panelZapiekanka.Size = new System.Drawing.Size(707, 486);
             this.panelZapiekanka.TabIndex = 21;
             this.panelZapiekanka.Visible = false;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label33.Location = new System.Drawing.Point(71, 291);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(36, 25);
+            this.label33.TabIndex = 24;
+            this.label33.Text = "R$";
+            // 
+            // BoxValorfinalZ
+            // 
+            this.BoxValorfinalZ.BackColor = System.Drawing.Color.White;
+            this.BoxValorfinalZ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BoxValorfinalZ.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxValorfinalZ.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.BoxValorfinalZ.Location = new System.Drawing.Point(123, 277);
+            this.BoxValorfinalZ.MaxLength = 50;
+            this.BoxValorfinalZ.Name = "BoxValorfinalZ";
+            this.BoxValorfinalZ.ReadOnly = true;
+            this.BoxValorfinalZ.Size = new System.Drawing.Size(70, 33);
+            this.BoxValorfinalZ.TabIndex = 21;
+            this.BoxValorfinalZ.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label27.Location = new System.Drawing.Point(199, 285);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(112, 25);
+            this.label27.TabIndex = 22;
+            this.label27.Text = "Valor Final";
             // 
             // label1
             // 
@@ -902,7 +1017,8 @@
             // panelKatsuSando
             // 
             this.panelKatsuSando.BackColor = System.Drawing.Color.White;
-            this.panelKatsuSando.Controls.Add(this.BoxValorFivalK);
+            this.panelKatsuSando.Controls.Add(this.label32);
+            this.panelKatsuSando.Controls.Add(this.BoxValorfinalK);
             this.panelKatsuSando.Controls.Add(this.label26);
             this.panelKatsuSando.Controls.Add(this.label7);
             this.panelKatsuSando.Controls.Add(this.pictureBox4);
@@ -920,13 +1036,49 @@
             this.panelKatsuSando.Controls.Add(this.label12);
             this.panelKatsuSando.Controls.Add(this.panel18);
             this.panelKatsuSando.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelKatsuSando.Location = new System.Drawing.Point(378, 120);
+            this.panelKatsuSando.Location = new System.Drawing.Point(381, 120);
             this.panelKatsuSando.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelKatsuSando.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelKatsuSando.Name = "panelKatsuSando";
             this.panelKatsuSando.Size = new System.Drawing.Size(707, 486);
             this.panelKatsuSando.TabIndex = 22;
             this.panelKatsuSando.Visible = false;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label32.Location = new System.Drawing.Point(71, 279);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(36, 25);
+            this.label32.TabIndex = 24;
+            this.label32.Text = "R$";
+            // 
+            // BoxValorfinalK
+            // 
+            this.BoxValorfinalK.BackColor = System.Drawing.Color.White;
+            this.BoxValorfinalK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BoxValorfinalK.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxValorfinalK.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.BoxValorfinalK.Location = new System.Drawing.Point(123, 269);
+            this.BoxValorfinalK.MaxLength = 50;
+            this.BoxValorfinalK.Name = "BoxValorfinalK";
+            this.BoxValorfinalK.ReadOnly = true;
+            this.BoxValorfinalK.Size = new System.Drawing.Size(70, 33);
+            this.BoxValorfinalK.TabIndex = 21;
+            this.BoxValorfinalK.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label26.Location = new System.Drawing.Point(199, 277);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(112, 25);
+            this.label26.TabIndex = 22;
+            this.label26.Text = "Valor Final";
             // 
             // label7
             // 
@@ -1132,6 +1284,7 @@
             // panelVegetariano
             // 
             this.panelVegetariano.BackColor = System.Drawing.Color.White;
+            this.panelVegetariano.Controls.Add(this.label30);
             this.panelVegetariano.Controls.Add(this.BoxValorfinalV);
             this.panelVegetariano.Controls.Add(this.label25);
             this.panelVegetariano.Controls.Add(this.label13);
@@ -1150,13 +1303,49 @@
             this.panelVegetariano.Controls.Add(this.label18);
             this.panelVegetariano.Controls.Add(this.panel24);
             this.panelVegetariano.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelVegetariano.Location = new System.Drawing.Point(378, 119);
+            this.panelVegetariano.Location = new System.Drawing.Point(381, 119);
             this.panelVegetariano.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelVegetariano.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelVegetariano.Name = "panelVegetariano";
             this.panelVegetariano.Size = new System.Drawing.Size(707, 486);
             this.panelVegetariano.TabIndex = 23;
             this.panelVegetariano.Visible = false;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label30.Location = new System.Drawing.Point(71, 280);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(36, 25);
+            this.label30.TabIndex = 23;
+            this.label30.Text = "R$";
+            // 
+            // BoxValorfinalV
+            // 
+            this.BoxValorfinalV.BackColor = System.Drawing.Color.White;
+            this.BoxValorfinalV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BoxValorfinalV.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxValorfinalV.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.BoxValorfinalV.Location = new System.Drawing.Point(123, 270);
+            this.BoxValorfinalV.MaxLength = 50;
+            this.BoxValorfinalV.Name = "BoxValorfinalV";
+            this.BoxValorfinalV.ReadOnly = true;
+            this.BoxValorfinalV.Size = new System.Drawing.Size(70, 33);
+            this.BoxValorfinalV.TabIndex = 21;
+            this.BoxValorfinalV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label25.Location = new System.Drawing.Point(199, 278);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(112, 25);
+            this.label25.TabIndex = 22;
+            this.label25.Text = "Valor Final";
             // 
             // label13
             // 
@@ -1362,6 +1551,7 @@
             // panelAlemão
             // 
             this.panelAlemão.BackColor = System.Drawing.Color.White;
+            this.panelAlemão.Controls.Add(this.label31);
             this.panelAlemão.Controls.Add(this.BoxValorfinal);
             this.panelAlemão.Controls.Add(this.label19);
             this.panelAlemão.Controls.Add(this.pictureBox6);
@@ -1379,13 +1569,49 @@
             this.panelAlemão.Controls.Add(this.label24);
             this.panelAlemão.Controls.Add(this.panel30);
             this.panelAlemão.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelAlemão.Location = new System.Drawing.Point(378, 120);
+            this.panelAlemão.Location = new System.Drawing.Point(381, 120);
             this.panelAlemão.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelAlemão.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelAlemão.Name = "panelAlemão";
             this.panelAlemão.Size = new System.Drawing.Size(707, 486);
             this.panelAlemão.TabIndex = 24;
             this.panelAlemão.Visible = false;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label31.Location = new System.Drawing.Point(71, 271);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(36, 25);
+            this.label31.TabIndex = 24;
+            this.label31.Text = "R$";
+            // 
+            // BoxValorfinal
+            // 
+            this.BoxValorfinal.BackColor = System.Drawing.Color.White;
+            this.BoxValorfinal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BoxValorfinal.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxValorfinal.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.BoxValorfinal.Location = new System.Drawing.Point(123, 261);
+            this.BoxValorfinal.MaxLength = 50;
+            this.BoxValorfinal.Name = "BoxValorfinal";
+            this.BoxValorfinal.ReadOnly = true;
+            this.BoxValorfinal.Size = new System.Drawing.Size(70, 33);
+            this.BoxValorfinal.TabIndex = 20;
+            this.BoxValorfinal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label19.Location = new System.Drawing.Point(199, 269);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(112, 25);
+            this.label19.TabIndex = 21;
+            this.label19.Text = "Valor Final";
             // 
             // pictureBox6
             // 
@@ -1609,7 +1835,7 @@
             // 
             this.panel1.Location = new System.Drawing.Point(3, 59);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(224, 238);
+            this.panel1.Size = new System.Drawing.Size(224, 632);
             this.panel1.TabIndex = 44;
             // 
             // BtnKatsuoSando
@@ -1768,203 +1994,41 @@
             this.BtnItaliano.TabIndex = 1;
             this.BtnItaliano.TabStop = false;
             // 
-            // BtnComprarIberico
+            // BtnIberico
             // 
-            this.BtnComprarIberico.BackColor = System.Drawing.Color.DarkGreen;
-            this.BtnComprarIberico.FlatAppearance.BorderSize = 0;
-            this.BtnComprarIberico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnComprarIberico.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnComprarIberico.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnComprarIberico.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
-            this.BtnComprarIberico.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnComprarIberico.Location = new System.Drawing.Point(637, 310);
-            this.BtnComprarIberico.Name = "BtnComprarIberico";
-            this.BtnComprarIberico.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnComprarIberico.Size = new System.Drawing.Size(281, 55);
-            this.BtnComprarIberico.TabIndex = 11;
-            this.BtnComprarIberico.Text = "        Comprar";
-            this.BtnComprarIberico.UseVisualStyleBackColor = false;
-            this.BtnComprarIberico.Click += new System.EventHandler(this.button1_Click);
+            this.BtnIberico.BackColor = System.Drawing.Color.DarkGreen;
+            this.BtnIberico.FlatAppearance.BorderSize = 0;
+            this.BtnIberico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnIberico.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnIberico.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnIberico.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
+            this.BtnIberico.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnIberico.Location = new System.Drawing.Point(637, 316);
+            this.BtnIberico.Name = "BtnIberico";
+            this.BtnIberico.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
+            this.BtnIberico.Size = new System.Drawing.Size(281, 55);
+            this.BtnIberico.TabIndex = 44;
+            this.BtnIberico.Text = "        Comprar";
+            this.BtnIberico.UseVisualStyleBackColor = false;
+            this.BtnIberico.Click += new System.EventHandler(this.BtnIberico_Click);
             // 
-            // BtnComprarPolones
+            // BtnPolonesComprar
             // 
-            this.BtnComprarPolones.BackColor = System.Drawing.Color.DarkGreen;
-            this.BtnComprarPolones.FlatAppearance.BorderSize = 0;
-            this.BtnComprarPolones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnComprarPolones.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnComprarPolones.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnComprarPolones.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
-            this.BtnComprarPolones.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnComprarPolones.Location = new System.Drawing.Point(1019, 312);
-            this.BtnComprarPolones.Name = "BtnComprarPolones";
-            this.BtnComprarPolones.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnComprarPolones.Size = new System.Drawing.Size(281, 55);
-            this.BtnComprarPolones.TabIndex = 12;
-            this.BtnComprarPolones.Text = "        Comprar";
-            this.BtnComprarPolones.UseVisualStyleBackColor = false;
-            this.BtnComprarPolones.Click += new System.EventHandler(this.BtnComprarPolones_Click);
-            // 
-            // pbFundo
-            // 
-            this.pbFundo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbFundo.Image = global::UkraBar.Properties.Resources.TelaFundo;
-            this.pbFundo.Location = new System.Drawing.Point(0, 0);
-            this.pbFundo.Name = "pbFundo";
-            this.pbFundo.Size = new System.Drawing.Size(1370, 749);
-            this.pbFundo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbFundo.TabIndex = 0;
-            this.pbFundo.TabStop = false;
-            this.pbFundo.Click += new System.EventHandler(this.pbFundo_Click);
-            // 
-            // BoxValorfinal
-            // 
-            this.BoxValorfinal.BackColor = System.Drawing.Color.White;
-            this.BoxValorfinal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BoxValorfinal.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxValorfinal.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.BoxValorfinal.Location = new System.Drawing.Point(123, 261);
-            this.BoxValorfinal.MaxLength = 50;
-            this.BoxValorfinal.Name = "BoxValorfinal";
-            this.BoxValorfinal.ReadOnly = true;
-            this.BoxValorfinal.Size = new System.Drawing.Size(70, 39);
-            this.BoxValorfinal.TabIndex = 20;
-            this.BoxValorfinal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label19.Location = new System.Drawing.Point(199, 269);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(112, 25);
-            this.label19.TabIndex = 21;
-            this.label19.Text = "Valor Final";
-            // 
-            // BoxValorfinalV
-            // 
-            this.BoxValorfinalV.BackColor = System.Drawing.Color.White;
-            this.BoxValorfinalV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BoxValorfinalV.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxValorfinalV.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.BoxValorfinalV.Location = new System.Drawing.Point(123, 270);
-            this.BoxValorfinalV.MaxLength = 50;
-            this.BoxValorfinalV.Name = "BoxValorfinalV";
-            this.BoxValorfinalV.ReadOnly = true;
-            this.BoxValorfinalV.Size = new System.Drawing.Size(70, 39);
-            this.BoxValorfinalV.TabIndex = 21;
-            this.BoxValorfinalV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label25.Location = new System.Drawing.Point(199, 278);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(112, 25);
-            this.label25.TabIndex = 22;
-            this.label25.Text = "Valor Final";
-            // 
-            // BoxValorFivalK
-            // 
-            this.BoxValorFivalK.BackColor = System.Drawing.Color.White;
-            this.BoxValorFivalK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BoxValorFivalK.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxValorFivalK.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.BoxValorFivalK.Location = new System.Drawing.Point(123, 269);
-            this.BoxValorFivalK.MaxLength = 50;
-            this.BoxValorFivalK.Name = "BoxValorFivalK";
-            this.BoxValorFivalK.ReadOnly = true;
-            this.BoxValorFivalK.Size = new System.Drawing.Size(70, 39);
-            this.BoxValorFivalK.TabIndex = 21;
-            this.BoxValorFivalK.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label26.Location = new System.Drawing.Point(199, 277);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(112, 25);
-            this.label26.TabIndex = 22;
-            this.label26.Text = "Valor Final";
-            // 
-            // BoxValorfinalZ
-            // 
-            this.BoxValorfinalZ.BackColor = System.Drawing.Color.White;
-            this.BoxValorfinalZ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BoxValorfinalZ.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxValorfinalZ.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.BoxValorfinalZ.Location = new System.Drawing.Point(123, 277);
-            this.BoxValorfinalZ.MaxLength = 50;
-            this.BoxValorfinalZ.Name = "BoxValorfinalZ";
-            this.BoxValorfinalZ.ReadOnly = true;
-            this.BoxValorfinalZ.Size = new System.Drawing.Size(70, 39);
-            this.BoxValorfinalZ.TabIndex = 21;
-            this.BoxValorfinalZ.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label27.Location = new System.Drawing.Point(199, 285);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(112, 25);
-            this.label27.TabIndex = 22;
-            this.label27.Text = "Valor Final";
-            // 
-            // BoxValorfinalIB
-            // 
-            this.BoxValorfinalIB.BackColor = System.Drawing.Color.White;
-            this.BoxValorfinalIB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BoxValorfinalIB.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxValorfinalIB.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.BoxValorfinalIB.Location = new System.Drawing.Point(123, 277);
-            this.BoxValorfinalIB.MaxLength = 50;
-            this.BoxValorfinalIB.Name = "BoxValorfinalIB";
-            this.BoxValorfinalIB.ReadOnly = true;
-            this.BoxValorfinalIB.Size = new System.Drawing.Size(70, 39);
-            this.BoxValorfinalIB.TabIndex = 21;
-            this.BoxValorfinalIB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label28.Location = new System.Drawing.Point(199, 285);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(112, 25);
-            this.label28.TabIndex = 22;
-            this.label28.Text = "Valor Final";
-            // 
-            // BoxValorfinalI
-            // 
-            this.BoxValorfinalI.BackColor = System.Drawing.Color.White;
-            this.BoxValorfinalI.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BoxValorfinalI.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxValorfinalI.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.BoxValorfinalI.Location = new System.Drawing.Point(123, 271);
-            this.BoxValorfinalI.MaxLength = 50;
-            this.BoxValorfinalI.Name = "BoxValorfinalI";
-            this.BoxValorfinalI.ReadOnly = true;
-            this.BoxValorfinalI.Size = new System.Drawing.Size(70, 39);
-            this.BoxValorfinalI.TabIndex = 20;
-            this.BoxValorfinalI.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label29.Location = new System.Drawing.Point(199, 279);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(112, 25);
-            this.label29.TabIndex = 21;
-            this.label29.Text = "Valor Final";
+            this.BtnPolonesComprar.BackColor = System.Drawing.Color.DarkGreen;
+            this.BtnPolonesComprar.FlatAppearance.BorderSize = 0;
+            this.BtnPolonesComprar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPolonesComprar.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPolonesComprar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnPolonesComprar.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
+            this.BtnPolonesComprar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnPolonesComprar.Location = new System.Drawing.Point(1015, 316);
+            this.BtnPolonesComprar.Name = "BtnPolonesComprar";
+            this.BtnPolonesComprar.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
+            this.BtnPolonesComprar.Size = new System.Drawing.Size(281, 55);
+            this.BtnPolonesComprar.TabIndex = 45;
+            this.BtnPolonesComprar.Text = "        Comprar";
+            this.BtnPolonesComprar.UseVisualStyleBackColor = false;
+            this.BtnPolonesComprar.Click += new System.EventHandler(this.BtnPolonesComprar_Click);
             // 
             // MenuSanduba
             // 
@@ -1972,15 +2036,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panelVegetariano);
-            this.Controls.Add(this.SideBarLateral);
+            this.Controls.Add(this.panelItaliano);
             this.Controls.Add(this.panelAlemão);
+            this.Controls.Add(this.panelIberico);
             this.Controls.Add(this.panelKatsuSando);
             this.Controls.Add(this.panelZapiekanka);
+            this.Controls.Add(this.BtnPolonesComprar);
+            this.Controls.Add(this.BtnIberico);
+            this.Controls.Add(this.SideBarLateral);
             this.Controls.Add(this.BtnKatsuoSando);
             this.Controls.Add(this.BtnVegetariano);
             this.Controls.Add(this.BtnComprarAlemao);
-            this.Controls.Add(this.panelIberico);
-            this.Controls.Add(this.panelItaliano);
             this.Controls.Add(this.BtnComprar);
             this.Controls.Add(this.BtnAlemao);
             this.Controls.Add(this.BtnVegano);
@@ -1988,9 +2054,6 @@
             this.Controls.Add(this.BtnPolones);
             this.Controls.Add(this.BtnEspanhol);
             this.Controls.Add(this.BtnItaliano);
-            this.Controls.Add(this.BtnComprarIberico);
-            this.Controls.Add(this.BtnComprarPolones);
-            this.Controls.Add(this.pbFundo);
             this.Name = "MenuSanduba";
             this.Text = "MenuSanduba";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -2037,15 +2100,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.BtnPolones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnEspanhol)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnItaliano)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFundo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pbFundo;
         private System.Windows.Forms.PictureBox BtnItaliano;
         private System.Windows.Forms.PictureBox BtnEspanhol;
         private System.Windows.Forms.PictureBox BtnPolones;
@@ -2090,8 +2150,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button BtnCancelarIB;
         private System.Windows.Forms.Button BtnOkIB;
-        private System.Windows.Forms.Button BtnComprarIberico;
-        private System.Windows.Forms.Button BtnComprarPolones;
         private System.Windows.Forms.Button BtnComprarAlemao;
         private System.Windows.Forms.Button BtnVegetariano;
         private System.Windows.Forms.Button BtnKatsuoSando;
@@ -2180,11 +2238,19 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.TextBox BoxValorfinalZ;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox BoxValorFivalK;
+        private System.Windows.Forms.TextBox BoxValorfinalK;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox BoxValorfinalV;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox BoxValorfinal;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Button BtnIberico;
+        private System.Windows.Forms.Button BtnPolonesComprar;
     }
 }
