@@ -92,7 +92,7 @@ namespace UkraBar
 
         private void BtnOkV_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(VariaveisGlobais.quantidadeVegetariano.ToString(), "Foram adicionados no Carrinho");
+            MessageBox.Show("R$"+VariaveisGlobais.valorVegetariano.ToString()+",00", "Foram adicionados no Carrinho");
             panelVegetariano.Visible = false;
         }
         private void BtnOkZ_Click(object sender, EventArgs e)
@@ -131,6 +131,7 @@ namespace UkraBar
             {
                 VariaveisGlobais.quantidadeItaliano--;
                 AtualizarValor();
+
             }
         }
 
@@ -138,12 +139,14 @@ namespace UkraBar
         {
             VariaveisGlobais.quantidadeItaliano++;
             AtualizarValor();
+            VariaveisGlobais.valorItaliano = VariaveisGlobais.quantidadeItaliano * 24;
         }
 
         private void BtnMaisI_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadeIberico++;
             AtualizarValor();
+            VariaveisGlobais.valorIberico=VariaveisGlobais.quantidadeIberico* 27;
         }
 
         private void BtnMenosI_Click(object sender, EventArgs e)
@@ -159,6 +162,7 @@ namespace UkraBar
         {
             VariaveisGlobais.quantidadePolones++;
             AtualizarValor();
+            VariaveisGlobais.valorPolones = VariaveisGlobais.quantidadePolones * 24;
         }
 
         private void BtnMenosZ_Click(object sender, EventArgs e)
@@ -175,6 +179,7 @@ namespace UkraBar
         {
             VariaveisGlobais.quantidadeJapones++;
             AtualizarValor();
+            VariaveisGlobais.valorJapones = VariaveisGlobais.quantidadeJapones * 24;
         }
 
         private void BtnMenosK_Click(object sender, EventArgs e)
@@ -191,6 +196,7 @@ namespace UkraBar
         {
             VariaveisGlobais.quantidadeVegetariano++;
             AtualizarValor();
+           VariaveisGlobais.valorVegetariano= VariaveisGlobais.quantidadeVegetariano * 22;
         }
 
         private void BtnMenosV_Click(object sender, EventArgs e)
@@ -199,6 +205,7 @@ namespace UkraBar
             {
                 VariaveisGlobais.quantidadeVegetariano--;
                 AtualizarValor();
+                VariaveisGlobais.valorVegetariano - 22;
             }
         }
 
@@ -206,6 +213,7 @@ namespace UkraBar
         {
             VariaveisGlobais.quantidadeAlemao++;
             AtualizarValor();
+            VariaveisGlobais.valorAlemao = VariaveisGlobais.quantidadeAlemao * 25;
         }
 
         private void BtnMenosA_Click(object sender, EventArgs e)
@@ -238,26 +246,11 @@ namespace UkraBar
 
         }
 
-        private void BtnCarrinho_Click(object sender, EventArgs e)
-        {  
-            Carrinho carrinho = new Carrinho();
-            this.Hide();
-            carrinho.ShowDialog();
-            this.Close();
-        }
-
         private void BoxCItaliano_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void BtnPagamento_Click(object sender, EventArgs e)
-        {
-            MenuPagamento pagamento = new MenuPagamento();
-            this.Hide();
-            pagamento.ShowDialog();
-            this.Close();
-        }
     }
 }
 

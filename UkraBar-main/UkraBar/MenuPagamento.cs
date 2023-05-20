@@ -22,10 +22,10 @@ namespace UkraBar
         private void BtnPix_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.pix = 1;
-            Carrinho carrinho3 = new Carrinho();
-            this.Hide();
-            carrinho3.ShowDialog();
-            this.Close();
+
+            //Cria um String para colocar no Executor de Query.
+            string inserirQuery = "INSERT INTO carrinho (id_cadastro, nome_funcionario, senha_funcionario, email_funcionario) VALUES" +
+                "()";
         }
 
         private void BtnCartao_Click(object sender, EventArgs e)

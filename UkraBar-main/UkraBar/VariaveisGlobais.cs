@@ -15,6 +15,15 @@ namespace UkraBar
         public static int quantidadeVegetariano;
         public static int quantidadeAlemao;
 
+        public static double valorItaliano;
+        public static double valorIberico;
+        public static double valorPolones;
+        public static double valorJapones;
+        public static double valorVegetariano;
+        public static double valorAlemao;
+
+
+
         public static int cartao = 0;
         public static int dinheiro = 0;
         public static int pix = 0;

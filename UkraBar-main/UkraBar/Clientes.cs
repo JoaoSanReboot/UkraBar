@@ -42,13 +42,12 @@ namespace UkraBar
 
         private void BtnCpfCad_Click(object sender, EventArgs e)
         {
-            BoxCpf.Text = VariaveisGlobais.Cpf.ToString();
+            VariaveisGlobais.Cpf = Convert.ToInt32(BoxCpf.Text);
 
-            MenuEscolha Escolha = new MenuEscolha();
-                this.Hide();
-                Escolha.ShowDialog();
-                this.Close();
-            
         }
+      
+
+        
     }
+
 }
