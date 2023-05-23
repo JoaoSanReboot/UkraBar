@@ -2057,6 +2057,7 @@
             this.Name = "MenuSanduba";
             this.Text = "MenuSanduba";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MenuSanduba_Load);
             this.panelItaliano.ResumeLayout(false);
             this.panelItaliano.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSimbolo)).EndInit();

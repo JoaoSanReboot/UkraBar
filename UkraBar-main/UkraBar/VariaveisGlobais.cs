@@ -39,5 +39,6 @@ namespace UkraBar
         public static int pix = 0;
 
         public static string Cpf;
+        public static int ultimoIdClienteInserido;
     }
 }

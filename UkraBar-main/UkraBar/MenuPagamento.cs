@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Google.Protobuf.WellKnownTypes;
 using MySql.Data.MySqlClient;
 
 namespace UkraBar
@@ -17,7 +18,7 @@ namespace UkraBar
         {
             InitializeComponent();
         }
-                                      //Setando comandos MySql para a contatenação.
+        //Setando comandos MySql para a contatenação.
 
         public MySqlConnection conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
         public string connectionString = "SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;";
@@ -76,11 +77,20 @@ namespace UkraBar
             }
         }
 
-
         private void BtnPix_Click(object sender, EventArgs e)
         {
-            VariaveisGlobais.pix = 1;
+            conn.Open();
+            string queryInserirCarrinho = "INSERT INTO carrinho (id_cliente, valor_final) VALUES (@idCliente, @valorFinal)";
+            using (comando = new MySqlCommand(queryInserirCarrinho, conn))
+            {
+                comando.Parameters.AddWithValue("@idCliente", VariaveisGlobais.ultimoIdClienteInserido);
+                comando.Parameters.AddWithValue("@valorFinal", VariaveisGlobais.valorFinal);
+                comando.ExecuteNonQuery();
+            }
+            conn.Close();
+
         }
+
         private void BtnCartao_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.cartao = 1;

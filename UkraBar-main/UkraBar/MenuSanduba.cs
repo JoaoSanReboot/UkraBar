@@ -268,8 +268,6 @@ namespace UkraBar
             AtualizarValor();
             VariaveisGlobais.valorVegetariano= VariaveisGlobais.quantidadeVegetariano * 22;
             BoxValorfinalV.Text = VariaveisGlobais.valorVegetariano.ToString() + ",00";
-
-
         }
 
         private void BtnMenosV_Click(object sender, EventArgs e)
@@ -327,7 +325,10 @@ namespace UkraBar
 
         }
 
+        private void MenuSanduba_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }
 

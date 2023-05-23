@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 using System.Windows.Forms;
 
 namespace UkraBar
@@ -54,17 +55,6 @@ namespace UkraBar
             {
                 AbrirConexão(); //Abre Conexão.
                 comando = new MySqlCommand(query, conn); //Declara comandos para MySql.
-
-                //Se o comando for executado corretamente mostrar Message Box
-                if (comando.ExecuteNonQuery() == 1)
-
-                    MessageBox.Show("Executado com Sucesso");
-
-                //Senão Mostrar outra Message Box
-                else
-
-                    MessageBox.Show("Não foi Executado");
-
             }
             //Se uma exceção for encontrada Mostrar Error Message
             catch (Exception ex)
@@ -85,7 +75,7 @@ namespace UkraBar
 
         private void BtnSim_Click(object sender, EventArgs e)
         {
-        PanelCpfNota.Visible = false;
+            PanelCpfNota.Visible = false;
         }
 
         private void BtnNao_Click(object sender, EventArgs e)
@@ -98,18 +88,31 @@ namespace UkraBar
 
         private void BtnCpfCad_Click(object sender, EventArgs e)
         {
-            VariaveisGlobais.Cpf = Convert.ToString(BoxCpf.Text);
-            string InserirQuery = ("INSERT INTO cliente (cpf_cliente) VALUES ('"+VariaveisGlobais.Cpf+"')");
-            executarQuery(InserirQuery);
+            if (string.IsNullOrEmpty(BoxCpf.Text))
+            {
+                MessageBox.Show("Você não insiriu todos os dado");
+            }
+            if (BoxCpf.Text.Length == 11)
+            {
+                conn.Open();
+                VariaveisGlobais.Cpf = Convert.ToString(BoxCpf.Text);
+                string queryInserirCliente = ("INSERT INTO cliente (cpf_cliente) VALUES ('" + VariaveisGlobais.Cpf + "')");
 
-            MenuEscolha menu = new MenuEscolha();
-            this.Hide();
-            menu.ShowDialog();
-            this.Close();
+                using (comando = new MySqlCommand(queryInserirCliente, conn))
+                {   
+                    comando.Parameters.AddWithValue("@cpf_cliente", VariaveisGlobais.Cpf);      
+                    comando.ExecuteNonQuery();
+                    VariaveisGlobais.ultimoIdClienteInserido = (int)comando.LastInsertedId;
+                }
+
+                MenuEscolha menu = new MenuEscolha();
+                this.Hide();
+                menu.ShowDialog();
+                this.Close();
+                conn.Close();
+
+            }
         }
-      
-
-        
     }
 
 }
