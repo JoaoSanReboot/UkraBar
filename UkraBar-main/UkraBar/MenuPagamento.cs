@@ -79,13 +79,14 @@ namespace UkraBar
 
         private void BtnPix_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorFinal = VariaveisGlobais.valorItaliano + VariaveisGlobais.valorJapones + VariaveisGlobais.valorPolones + VariaveisGlobais.valorVegetariano + VariaveisGlobais.valorAlemao + VariaveisGlobais.valorIberico;
             conn.Open();
             string queryInserirCarrinho = "INSERT INTO carrinho (id_cliente, valor_final) VALUES (@idCliente, @valorFinal)";
-            using (comando = new MySqlCommand(queryInserirCarrinho, conn))
+            using (MySqlCommand comandos = new MySqlCommand(queryInserirCarrinho, conn))
             {
-                comando.Parameters.AddWithValue("@idCliente", VariaveisGlobais.ultimoIdClienteInserido);
-                comando.Parameters.AddWithValue("@valorFinal", VariaveisGlobais.valorFinal);
-                comando.ExecuteNonQuery();
+                comandos.Parameters.AddWithValue("@idCliente", VariaveisGlobais.ultimoIdClienteInserido);
+                comandos.Parameters.AddWithValue("@valorFinal", VariaveisGlobais.valorFinal);
+                comandos.ExecuteNonQuery();
             }
             conn.Close();
 
@@ -93,7 +94,6 @@ namespace UkraBar
 
         private void BtnCartao_Click(object sender, EventArgs e)
         {
-            VariaveisGlobais.cartao = 1;
             Carrinho carrinho3 = new Carrinho();
             this.Hide();
             carrinho3.ShowDialog();
@@ -102,7 +102,7 @@ namespace UkraBar
 
         private void BtnDinheiro_Click(object sender, EventArgs e)
         {
-            VariaveisGlobais.dinheiro = 1;
+    
             Carrinho carrinho3 = new Carrinho();
             this.Hide();
             carrinho3.ShowDialog();

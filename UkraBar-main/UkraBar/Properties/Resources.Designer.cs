@@ -213,6 +213,16 @@ namespace UkraBar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ComoDeseja {
+            get {
+                object obj = ResourceManager.GetObject("ComoDeseja", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CpfNaNota {
             get {
                 object obj = ResourceManager.GetObject("CpfNaNota", resourceCulture);

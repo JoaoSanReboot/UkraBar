@@ -30,13 +30,7 @@ namespace UkraBar
         public static double valorAlemaoMenos;
 
 
-        public static double valorFinal; 
-
-
-
-        public static int cartao = 0;
-        public static int dinheiro = 0;
-        public static int pix = 0;
+        public static double valorFinal;
 
         public static string Cpf;
         public static int ultimoIdClienteInserido;
