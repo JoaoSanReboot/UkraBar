@@ -82,6 +82,14 @@ namespace UkraBar
 
         private string quantidadeArmazenada = string.Empty;
 
+        private string SandubaItaliano;
+        private string SandubaIberico;
+        private string KatsuSando;
+        private string SandubaPolones;
+        private string SandubaVegetariano;
+        private string SandubaAlemão;
+
+
         //Todos os Btn Compras.
         private void BtnComprar_Click(object sender, EventArgs e)
         {
@@ -141,35 +149,102 @@ namespace UkraBar
         //Todos os Btn Ok
         private void BtnOkI_Click(object sender, EventArgs e)
         {
+            conn.Open();
+            string queryInserirCarrinho = "INSERT INTO pedido_cliente (nome_produto, quantidade, valor_produto) VALUES (@nome_produto, @quantidade, @valor_produto)";
+            using (MySqlCommand comandos = new MySqlCommand(queryInserirCarrinho, conn))
+            {
+                comandos.Parameters.AddWithValue("@nome_produto", SandubaItaliano);
+                comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeItaliano);
+                comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorItaliano);
+                comandos.ExecuteNonQuery();
+                VariaveisGlobais.ultimoIdPedidoInserido = (int)comandos.LastInsertedId;
+            }
+            conn.Close();
+
             MessageBox.Show(VariaveisGlobais.quantidadeItaliano.ToString(), "Foram adicionados no Carrinho");
             panelItaliano.Visible = false;
         }
 
         private void BtnOkK_Click(object sender, EventArgs e)
         {
+            conn.Open();
+            string queryInserirPedido = "INSERT INTO pedido_cliente (nome_produto, quantidade, valor_produto) VALUES (@nome_produto, @quantidade, @valor_produto)";
+            using (MySqlCommand comandos = new MySqlCommand(queryInserirPedido, conn))
+            {
+                comandos.Parameters.AddWithValue("@nome_produto", KatsuSando);
+                comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeJapones);
+                comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorJapones);
+                comandos.ExecuteNonQuery();
+                VariaveisGlobais.ultimoIdPedidoInserido = (int)comandos.LastInsertedId;
+            }
+            conn.Close();
             MessageBox.Show(VariaveisGlobais.quantidadeJapones.ToString(), "Foram adicionados no Carrinho");
             panelKatsuSando.Visible = false;
         }
 
         private void BtnOkV_Click(object sender, EventArgs e)
         {
+            conn.Open();
+            string queryInserirPedido = "INSERT INTO pedido_cliente (nome_produto, quantidade, valor_produto) VALUES (@nome_produto, @quantidade, @valor_produto)";
+            using (MySqlCommand comandos = new MySqlCommand(queryInserirPedido, conn))
+            {
+                comandos.Parameters.AddWithValue("@nome_produto", SandubaVegetariano);
+                comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeVegetariano);
+                comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorVegetariano);
+                comandos.ExecuteNonQuery();
+                VariaveisGlobais.ultimoIdPedidoInserido = (int)comandos.LastInsertedId;
+            }
+            conn.Close();
             MessageBox.Show(VariaveisGlobais.valorVegetariano.ToString(), "Foram adicionados no Carrinho");
             panelVegetariano.Visible = false;
         }
         private void BtnOkZ_Click(object sender, EventArgs e)
         {
+            conn.Open();
+            string queryInserirPedido = "INSERT INTO pedido_cliente (nome_produto, quantidade, valor_produto) VALUES (@nome_produto, @quantidade, @valor_produto)";
+            using (MySqlCommand comandos = new MySqlCommand(queryInserirPedido, conn))
+            {
+                comandos.Parameters.AddWithValue("@nome_produto", SandubaPolones);
+                comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadePolones);
+                comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorPolones);
+                comandos.ExecuteNonQuery();
+                VariaveisGlobais.ultimoIdPedidoInserido = (int)comandos.LastInsertedId;
+            }
+            conn.Close();
             MessageBox.Show(VariaveisGlobais.quantidadePolones.ToString(), "Foram adicionados no Carrinho");
             panelZapiekanka.Visible = false;
         }
 
         private void BtnOkA_Click(object sender, EventArgs e)
         {
+            conn.Open();
+            string queryInserirPedido = "INSERT INTO pedido_cliente (nome_produto, quantidade, valor_produto) VALUES (@nome_produto, @quantidade, @valor_produto)";
+            using (MySqlCommand comandos = new MySqlCommand(queryInserirPedido, conn))
+            {
+                comandos.Parameters.AddWithValue("@nome_produto", SandubaAlemão);
+                comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeAlemao);
+                comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorAlemao);
+                comandos.ExecuteNonQuery();
+                VariaveisGlobais.ultimoIdPedidoInserido = (int)comandos.LastInsertedId;
+            }
+            conn.Close();
             MessageBox.Show(VariaveisGlobais.quantidadeAlemao.ToString(), "Foram adicionados no Carrinho");
             panelAlemão.Visible = false;
         }
 
         private void BtnOkIB_Click(object sender, EventArgs e)
         {
+            conn.Open();
+            string queryInserirPedido = "INSERT INTO pedido_cliente (nome_produto, quantidade, valor_produto) VALUES (@nome_produto, @quantidade, @valor_produto)";
+            using (MySqlCommand comandos = new MySqlCommand(queryInserirPedido, conn))
+            {
+                comandos.Parameters.AddWithValue("@nome_produto", SandubaIberico);
+                comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeIberico);
+                comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorIberico);
+                comandos.ExecuteNonQuery();
+                VariaveisGlobais.ultimoIdPedidoInserido = (int)comandos.LastInsertedId;
+            }
+            conn.Close();
             MessageBox.Show(VariaveisGlobais.quantidadeIberico.ToString(), "Foram adicionados no Carrinho");
             panelIberico.Visible = false;
         }

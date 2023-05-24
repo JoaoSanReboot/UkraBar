@@ -97,7 +97,7 @@ namespace UkraBar
                 conn.Open();
                 VariaveisGlobais.Cpf = Convert.ToString(BoxCpf.Text);
                 string queryInserirCliente = ("INSERT INTO cliente (cpf_cliente) VALUES ('" + VariaveisGlobais.Cpf + "')");
-
+                    
                 using (comando = new MySqlCommand(queryInserirCliente, conn))
                 {   
                     comando.Parameters.AddWithValue("@cpf_cliente", VariaveisGlobais.Cpf);      
