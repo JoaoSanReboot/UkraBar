@@ -28,7 +28,20 @@ namespace UkraBar
 
         private void BtnNome_Click(object sender, EventArgs e)
         {
+            conn.Open();
+            
+            string queryInserirNome = "UPDATE cliente SET nome_cliente = @nome_cliente WHERE id_cliente = '"+ VariaveisGlobais.ultimoIdClienteInserido +"'";
+            using (MySqlCommand comandos = new MySqlCommand(queryInserirNome, conn))
+            {
+                comandos.Parameters.AddWithValue("@nome_cliente", BoxNome.Text);
+                comandos.ExecuteNonQuery();
+            }
+            conn.Close();
 
+            MenuPagamento menuPagamento = new MenuPagamento();
+            this.Hide();
+            menuPagamento.ShowDialog();
+            this.Close();
         }
     }
 }

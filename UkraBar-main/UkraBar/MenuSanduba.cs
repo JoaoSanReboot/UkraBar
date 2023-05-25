@@ -167,8 +167,7 @@ namespace UkraBar
                 comandos.Parameters.AddWithValue("@nome_produto", "KatsuSando");
                 comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeJapones);
                 comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorJapones);
-                comandos.ExecuteNonQuery();
-                VariaveisGlobais.ultimoIdPedidoInserido = (int)comandos.LastInsertedId;
+                comandos.ExecuteNonQuery(); 
             }
             conn.Close();
             MessageBox.Show(VariaveisGlobais.quantidadeJapones.ToString(), "Foram adicionados no Carrinho");
@@ -185,7 +184,6 @@ namespace UkraBar
                 comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeVegetariano);
                 comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorVegetariano);
                 comandos.ExecuteNonQuery();
-                VariaveisGlobais.ultimoIdPedidoInserido = (int)comandos.LastInsertedId;
             }
             conn.Close();
             MessageBox.Show(VariaveisGlobais.valorVegetariano.ToString(), "Foram adicionados no Carrinho");
@@ -201,7 +199,6 @@ namespace UkraBar
                 comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadePolones);
                 comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorPolones);
                 comandos.ExecuteNonQuery();
-                VariaveisGlobais.ultimoIdPedidoInserido = (int)comandos.LastInsertedId;
             }
             conn.Close();
             MessageBox.Show(VariaveisGlobais.quantidadePolones.ToString(), "Foram adicionados no Carrinho");
@@ -218,7 +215,6 @@ namespace UkraBar
                 comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeAlemao);
                 comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorAlemao);
                 comandos.ExecuteNonQuery();
-                VariaveisGlobais.ultimoIdPedidoInserido = (int)comandos.LastInsertedId;
             }
             conn.Close();
             MessageBox.Show(VariaveisGlobais.quantidadeAlemao.ToString(), "Foram adicionados no Carrinho");
@@ -235,7 +231,6 @@ namespace UkraBar
                 comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeIberico);
                 comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorIberico);
                 comandos.ExecuteNonQuery();
-                VariaveisGlobais.ultimoIdPedidoInserido = (int)comandos.LastInsertedId;
             }
             conn.Close();
             MessageBox.Show(VariaveisGlobais.quantidadeIberico.ToString(), "Foram adicionados no Carrinho");
@@ -396,6 +391,20 @@ namespace UkraBar
         private void MenuSanduba_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            string queryInserirDadosC = "UPDATE cliente SET id_pedido_cliente = @id_pedido_cliente WHERE id_cliente = '" + VariaveisGlobais.ultimoIdClienteInserido + "'";
+            using (MySqlCommand comandos = new MySqlCommand(queryInserirDadosC, conn))
+            {
+                comandos.Parameters.AddWithValue("@id_pedido_cliente", VariaveisGlobais.ultimoIdPedidoInserido);
+                comandos.ExecuteNonQuery();
+            }
+            conn.Close();
+
+            MessageBox.Show(Convert.ToString(VariaveisGlobais.ultimoIdPedidoInserido), Convert.ToString(VariaveisGlobais.ultimoIdClienteInserido));
         }
     }
 }

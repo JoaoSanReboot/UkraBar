@@ -113,10 +113,9 @@ namespace UkraBar
 
         private void BtnFechar_Click(object sender, EventArgs e)
         {
-           
-            MenuPagamento menuPagamento = new MenuPagamento();
+            _NomeCliente MenuNome = new _NomeCliente();
             this.Hide();
-            menuPagamento.ShowDialog();
+            MenuNome.ShowDialog();
             this.Close();
         }
         

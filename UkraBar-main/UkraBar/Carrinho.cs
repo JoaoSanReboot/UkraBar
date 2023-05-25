@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace UkraBar
 {
@@ -17,12 +18,13 @@ namespace UkraBar
         public MySqlConnection conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
         public string connectionString = "SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;";
         public MySqlCommand comando;
-        public MySqlDataReader reader;
+        public MySqlDataReader reader6;
         public DataTable table;
 
         public Carrinho()
         {
             InitializeComponent();
+            CarregarDados();
     
         }
 
@@ -32,13 +34,13 @@ namespace UkraBar
             conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
             conn.Open();// Abre Conexão.
 
-            string query = "SELECT quantidade FROM carrinho"; //Seleciona informações da tabela Cadastro Funcionário.
+            string query = "SELECT * FROM carrinho"; //Seleciona informações da tabela Cadastro Funcionário.
             comando = new MySqlCommand(query, conn); //Declara comandos que serão usados.
-            reader = comando.ExecuteReader(); //Lê os comandos.
+            reader6 = comando.ExecuteReader(); //Lê os comandos.
             table = new DataTable(); //Abre a Table.
-            table.Load(reader); //Table lê os comandos.
-            DTgridFunc.DataSource = table; //Renomeia Table para DTgridFunc.
-            DTgridFunc.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; //Comando para alinhar as tabelas no DataGriedView.
+            table.Load(reader6); //Table lê os comandos.
+            DTgridCarrinho.DataSource = table; //Renomeia Table para DTgridFunc.
+            DTgridCarrinho.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; //Comando para alinhar as tabelas no DataGriedView.
             conn.Close(); //Fecha Conexão 
 
         }
@@ -91,17 +93,6 @@ namespace UkraBar
                 //Depois de Executar tudo Fechar.
                 FecharConexão();
             }
-        }
-
-   
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //Cria um String para colocar no Executor de Query.
-            string inserirQuery = "INSERT INTO carrinho (quantidade) VALUES" +
-                "('" + VariaveisGlobais.quantidadeItaliano + "')";
-            executarQuery(inserirQuery);//Coloca a String no Executor.
-            CarregarDados();        //Carrega dados na tabela.
         }
     }
 }

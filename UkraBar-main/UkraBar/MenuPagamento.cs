@@ -26,74 +26,28 @@ namespace UkraBar
         public MySqlDataReader reader;
         public DataTable table;
 
-
-        //Publics Abrir e Fechar Conexão com o Banco de Dados.
-        public void AbrirConexão()
-        {
-            //Se o status da conexão estiver fechada então abrir.
-            if (conn.State == ConnectionState.Closed)
-            {
-                conn.Open();
-            }
-        }
-
-        public void FecharConexão()
-        {
-            //Se o status da conexão estiver aberta então fechar.
-            if (conn.State == ConnectionState.Open)
-            {
-                conn.Close();
-            }
-        }
-
-        //Public Executar comandos no banco de dados.
-        public void executarQuery(string query)
-        {
-            try
-            {
-                AbrirConexão(); //Abre Conexão.
-                comando = new MySqlCommand(query, conn); //Declara comandos para MySql.
-
-                //Se o comando for executado corretamente mostrar Message Box
-                if (comando.ExecuteNonQuery() == 1)
-
-                    MessageBox.Show("Executado com Sucesso");
-
-                //Senão Mostrar outra Message Box
-                else
-
-                    MessageBox.Show("Não foi Executado");
-
-            }
-            //Se uma exceção for encontrada Mostrar Error Message
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                //Depois de Executar tudo Fechar.
-                FecharConexão();
-            }
-        }
-
         private void BtnPix_Click(object sender, EventArgs e)
         {
-            VariaveisGlobais.valorFinal = VariaveisGlobais.valorItaliano + VariaveisGlobais.valorJapones + VariaveisGlobais.valorPolones + VariaveisGlobais.valorVegetariano + VariaveisGlobais.valorAlemao + VariaveisGlobais.valorIberico;
-            conn.Open();
-            string queryInserirCarrinho = "INSERT INTO carrinho (id_cliente, valor_final) VALUES (@idCliente, @valorFinal)";
-            using (MySqlCommand comandos = new MySqlCommand(queryInserirCarrinho, conn))
-            {
-                comandos.Parameters.AddWithValue("@idCliente", VariaveisGlobais.ultimoIdClienteInserido);
-                comandos.Parameters.AddWithValue("@valorFinal", VariaveisGlobais.valorFinal);
-                comandos.ExecuteNonQuery();
-            }
-            conn.Close();
+    
+
+            Carrinho carrinho3 = new Carrinho();
+            this.Hide();
+            carrinho3.ShowDialog();
+            this.Close();
 
         }
 
         private void BtnCartao_Click(object sender, EventArgs e)
         {
+            conn.Open();
+            string queryInserirCartao = "UPDATE cliente SET forma_pagamento = @forma_pagamento WHERE id_cliente = '" + VariaveisGlobais.ultimoIdClienteInserido + "'";
+            using (MySqlCommand comandos = new MySqlCommand(queryInserirCartao, conn))
+            {
+                comandos.Parameters.AddWithValue("@forma_pagamento", "Cartão");
+                comandos.ExecuteNonQuery();
+            }
+
+            conn.Close();
             Carrinho carrinho3 = new Carrinho();
             this.Hide();
             carrinho3.ShowDialog();
@@ -102,7 +56,17 @@ namespace UkraBar
 
         private void BtnDinheiro_Click(object sender, EventArgs e)
         {
-    
+
+            conn.Open();
+            string queryInserirDinheiro = "UPDATE cliente SET forma_pagamento = @forma_pagamento WHERE id_cliente = '" + VariaveisGlobais.ultimoIdClienteInserido + "'";
+            using (MySqlCommand comandos = new MySqlCommand(queryInserirDinheiro, conn))
+            {
+                comandos.Parameters.AddWithValue("@forma_pagamento", "Dinheiro");
+                comandos.ExecuteNonQuery();
+                VariaveisGlobais.ultimoIdClienteInserido = (int)comandos.LastInsertedId;
+            }
+            conn.Close();
+
             Carrinho carrinho3 = new Carrinho();
             this.Hide();
             carrinho3.ShowDialog();

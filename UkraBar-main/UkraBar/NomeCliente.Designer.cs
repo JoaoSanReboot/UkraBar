@@ -80,6 +80,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "_NomeCliente";
             this.Text = "_NomeCliente";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

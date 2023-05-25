@@ -102,7 +102,7 @@ namespace UkraBar
                 {   
                     comando.Parameters.AddWithValue("@cpf_cliente", VariaveisGlobais.Cpf);      
                     comando.ExecuteNonQuery();
-                    VariaveisGlobais.ultimoIdClienteInserido = (int)comando.LastInsertedId;
+                    VariaveisGlobais.ultimoIdPedidoInserido = (int)comando.LastInsertedId;
                 }
 
                 MenuEscolha menu = new MenuEscolha();

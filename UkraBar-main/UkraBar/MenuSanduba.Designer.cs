@@ -174,6 +174,7 @@
             this.BtnItaliano = new System.Windows.Forms.PictureBox();
             this.BtnIberico = new System.Windows.Forms.Button();
             this.BtnPolonesComprar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelItaliano.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSimbolo)).BeginInit();
             this.panelValor.SuspendLayout();
@@ -2030,11 +2031,30 @@
             this.BtnPolonesComprar.UseVisualStyleBackColor = false;
             this.BtnPolonesComprar.Click += new System.EventHandler(this.BtnPolonesComprar_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkGreen;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(363, 30);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
+            this.button1.Size = new System.Drawing.Size(281, 55);
+            this.button1.TabIndex = 46;
+            this.button1.Text = "        Comprar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MenuSanduba
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panelVegetariano);
             this.Controls.Add(this.panelItaliano);
             this.Controls.Add(this.panelAlemão);
@@ -2253,5 +2273,6 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Button BtnIberico;
         private System.Windows.Forms.Button BtnPolonesComprar;
+        private System.Windows.Forms.Button button1;
     }
 }
