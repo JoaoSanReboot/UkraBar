@@ -33,6 +33,7 @@ namespace UkraBar
         public static double valorFinal;
 
         public static string Cpf;
+
         public static int ultimoIdClienteInserido;
         public static int ultimoIdPedidoInserido;
     }

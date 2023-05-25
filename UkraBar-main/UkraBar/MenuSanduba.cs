@@ -82,13 +82,6 @@ namespace UkraBar
 
         private string quantidadeArmazenada = string.Empty;
 
-        private string SandubaItaliano;
-        private string SandubaIberico;
-        private string KatsuSando;
-        private string SandubaPolones;
-        private string SandubaVegetariano;
-        private string SandubaAlemão;
-
 
         //Todos os Btn Compras.
         private void BtnComprar_Click(object sender, EventArgs e)
@@ -153,7 +146,7 @@ namespace UkraBar
             string queryInserirCarrinho = "INSERT INTO pedido_cliente (nome_produto, quantidade, valor_produto) VALUES (@nome_produto, @quantidade, @valor_produto)";
             using (MySqlCommand comandos = new MySqlCommand(queryInserirCarrinho, conn))
             {
-                comandos.Parameters.AddWithValue("@nome_produto", SandubaItaliano);
+                comandos.Parameters.AddWithValue("@nome_produto", "SandubaItaliano");
                 comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeItaliano);
                 comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorItaliano);
                 comandos.ExecuteNonQuery();
@@ -171,7 +164,7 @@ namespace UkraBar
             string queryInserirPedido = "INSERT INTO pedido_cliente (nome_produto, quantidade, valor_produto) VALUES (@nome_produto, @quantidade, @valor_produto)";
             using (MySqlCommand comandos = new MySqlCommand(queryInserirPedido, conn))
             {
-                comandos.Parameters.AddWithValue("@nome_produto", KatsuSando);
+                comandos.Parameters.AddWithValue("@nome_produto", "KatsuSando");
                 comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeJapones);
                 comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorJapones);
                 comandos.ExecuteNonQuery();
@@ -188,7 +181,7 @@ namespace UkraBar
             string queryInserirPedido = "INSERT INTO pedido_cliente (nome_produto, quantidade, valor_produto) VALUES (@nome_produto, @quantidade, @valor_produto)";
             using (MySqlCommand comandos = new MySqlCommand(queryInserirPedido, conn))
             {
-                comandos.Parameters.AddWithValue("@nome_produto", SandubaVegetariano);
+                comandos.Parameters.AddWithValue("@nome_produto", "SandubaVegetariano");
                 comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeVegetariano);
                 comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorVegetariano);
                 comandos.ExecuteNonQuery();
@@ -204,7 +197,7 @@ namespace UkraBar
             string queryInserirPedido = "INSERT INTO pedido_cliente (nome_produto, quantidade, valor_produto) VALUES (@nome_produto, @quantidade, @valor_produto)";
             using (MySqlCommand comandos = new MySqlCommand(queryInserirPedido, conn))
             {
-                comandos.Parameters.AddWithValue("@nome_produto", SandubaPolones);
+                comandos.Parameters.AddWithValue("@nome_produto", "SandubaPolones");
                 comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadePolones);
                 comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorPolones);
                 comandos.ExecuteNonQuery();
@@ -221,7 +214,7 @@ namespace UkraBar
             string queryInserirPedido = "INSERT INTO pedido_cliente (nome_produto, quantidade, valor_produto) VALUES (@nome_produto, @quantidade, @valor_produto)";
             using (MySqlCommand comandos = new MySqlCommand(queryInserirPedido, conn))
             {
-                comandos.Parameters.AddWithValue("@nome_produto", SandubaAlemão);
+                comandos.Parameters.AddWithValue("@nome_produto", "SandubaAlemão");
                 comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeAlemao);
                 comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorAlemao);
                 comandos.ExecuteNonQuery();
@@ -238,7 +231,7 @@ namespace UkraBar
             string queryInserirPedido = "INSERT INTO pedido_cliente (nome_produto, quantidade, valor_produto) VALUES (@nome_produto, @quantidade, @valor_produto)";
             using (MySqlCommand comandos = new MySqlCommand(queryInserirPedido, conn))
             {
-                comandos.Parameters.AddWithValue("@nome_produto", SandubaIberico);
+                comandos.Parameters.AddWithValue("@nome_produto", "SandubaIberico");
                 comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeIberico);
                 comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorIberico);
                 comandos.ExecuteNonQuery();
@@ -309,8 +302,8 @@ namespace UkraBar
         private void BtnMenosZ_Click(object sender, EventArgs e)
         {
            
-                VariaveisGlobais.quantidadePolones--;
-                AtualizarValor();
+            VariaveisGlobais.quantidadePolones--;
+            AtualizarValor();
             VariaveisGlobais.valorPolonesMenos = VariaveisGlobais.valorPolones - 24;
             VariaveisGlobais.valorPolones = VariaveisGlobais.valorPolonesMenos;
             BoxValorfinalZ.Text = VariaveisGlobais.valorPolones.ToString() + ",00";
