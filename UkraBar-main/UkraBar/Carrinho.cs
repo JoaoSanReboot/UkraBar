@@ -45,8 +45,7 @@ namespace UkraBar
             DTgridCarrinho.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; //Comando para alinhar as tabelas no DataGriedView.
             conn.Close(); //Fecha Conexão 
 
-        }
-
+        } 
         public void CarregarDados2()
         {
             conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
