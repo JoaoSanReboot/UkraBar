@@ -16,5 +16,40 @@ namespace UkraBar
         {
             InitializeComponent();
         }
+
+        private void BtnComprarAlemao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnChaMate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMacaAmor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMoniche_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSlava_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCaipirinha_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
