@@ -98,11 +98,11 @@ namespace UkraBar
                 VariaveisGlobais.Cpf = Convert.ToString(BoxCpf.Text);
                 string queryInserirCliente = ("INSERT INTO cliente (cpf_cliente) VALUES ('" + VariaveisGlobais.Cpf + "')");
                     
-                using (comando = new MySqlCommand(queryInserirCliente, conn))
+                using (MySqlCommand comandos = new MySqlCommand(queryInserirCliente, conn))
                 {   
-                    comando.Parameters.AddWithValue("@cpf_cliente", VariaveisGlobais.Cpf);      
-                    comando.ExecuteNonQuery();
-                    VariaveisGlobais.ultimoIdPedidoInserido = (int)comando.LastInsertedId;
+                    comandos.Parameters.AddWithValue("@cpf_cliente", VariaveisGlobais.Cpf);      
+                    comandos.ExecuteNonQuery();
+                    VariaveisGlobais.ultimoIdClienteInserido = (int)comandos.LastInsertedId;
                 }
 
                 MenuEscolha menu = new MenuEscolha();
