@@ -19,41 +19,23 @@ namespace UkraBar
         public string connectionString = "SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;";
         public MySqlCommand comando;
         public MySqlDataReader reader6;
-        public MySqlDataReader reader;
         public DataTable table;
 
         public Carrinho()
         {
             InitializeComponent();
             CarregarDados();
-            CarregarDados2();
-
+            CarregarValores();
         }
 
-        //Carregar Dados é um public para carregar informações no DataGridView.
         public void CarregarDados()
         {
             conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
             conn.Open();// Abre Conexão.
 
-            string query = "SELECT valor_final FROM carrinho"; //Seleciona informações da tabela Cadastro Funcionário.
+            string query = "SELECT nome_produto, quantidade, valor_produto FROM pedido_cliente WHERE id_cliente = '" + VariaveisGlobais.ultimoIdClienteInserido + "'";
             comando = new MySqlCommand(query, conn); //Declara comandos que serão usados.
-            MySqlDataReader reader5 = comando.ExecuteReader(); //Lê os comandos.
-            table = new DataTable(); //Abre a Table.
-            table.Load(reader6); //Table lê os comandos.
-            DTgridCarrinho.DataSource = table; //Renomeia Table para DTgridFunc.
-            DTgridCarrinho.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; //Comando para alinhar as tabelas no DataGriedView.
-            conn.Close(); //Fecha Conexão 
-
-        } 
-        public void CarregarDados2()
-        {
-            conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
-            conn.Open();// Abre Conexão.
-
-            string query = "SELECT nome_produto, quantidade, valor_produto FROM pedido_cliente WHERE id_pedido_cliente = (SELECT MAX(id) FROM pedido_cliente)"; //Seleciona informações da tabela Cadastro Funcionário.
-            comando = new MySqlCommand(query, conn); //Declara comandos que serão usados.
-            reader6 = comando.ExecuteReader(); //Lê os comandos.
+            MySqlDataReader reader6 = comando.ExecuteReader(); //Lê os comandos.
             table = new DataTable(); //Abre a Table.
             table.Load(reader6); //Table lê os comandos.
             DTgridCarrinho2.DataSource = table; //Renomeia Table para DTgridFunc.
@@ -61,55 +43,20 @@ namespace UkraBar
             conn.Close(); //Fecha Conexão 
 
         }
-
-        //Publics Abrir e Fechar Conexão com o Banco de Dados.
-        public void AbrirConexão()
+        public void CarregarValores()
         {
-            //Se o status da conexão estiver fechada então abrir.
-            if (conn.State == ConnectionState.Closed)
-            {
-                conn.Open();
-            }
-        }
+            conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
+            conn.Open();// Abre Conexão.
 
-        public void FecharConexão()
-        {
-            //Se o status da conexão estiver aberta então fechar.
-            if (conn.State == ConnectionState.Open)
-            {
-                conn.Close();
-            }
-        }
+            string query = "SELECT valor_final FROM carrinho WHERE id_cliente = '" + VariaveisGlobais.ultimoIdClienteInserido + "'";
+            comando = new MySqlCommand(query, conn); //Declara comandos que serão usados.
+            MySqlDataReader reader6 = comando.ExecuteReader(); //Lê os comandos.
+            table = new DataTable(); //Abre a Table.
+            table.Load(reader6); //Table lê os comandos.
+            DTgridValor.DataSource = table; //Renomeia Table para DTgridFunc.
+            DTgridValor.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; //Comando para alinhar as tabelas no DataGriedView.
+            conn.Close(); //Fecha Conexão 
 
-        //Public Executar comandos no banco de dados.
-        public void executarQuery(string query)
-        {
-            try
-            {
-                AbrirConexão(); //Abre Conexão.
-                comando = new MySqlCommand(query, conn); //Declara comandos para MySql.
-
-                //Se o comando for executado corretamente mostrar Message Box
-                if (comando.ExecuteNonQuery() == 1)
-
-                    MessageBox.Show("Executado com Sucesso");
-
-                //Senão Mostrar outra Message Box
-                else
-
-                    MessageBox.Show("Não foi Executado");
-
-            }
-            //Se uma exceção for encontrada Mostrar Error Message
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                //Depois de Executar tudo Fechar.
-                FecharConexão();
-            }
         }
     }
 }

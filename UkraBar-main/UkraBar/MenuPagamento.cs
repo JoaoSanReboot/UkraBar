@@ -36,8 +36,7 @@ namespace UkraBar
                 comandos.ExecuteNonQuery();
             }
 
-
-            string queryInserirCarrinho = "INSERT INTO carrinho (id_cliente, valor_final, id_pedido_cliente) VALUES (@id_cliente, valor_final, @id_pedido_cliente)";
+            string queryInserirCarrinho = "INSERT INTO carrinho (id_cliente, valor_final, id_pedido_cliente) VALUES (@id_cliente, @valor_final, @id_pedido_cliente)";
             using (MySqlCommand comandos = new MySqlCommand(queryInserirCarrinho, conn))
             {
                 comandos.Parameters.AddWithValue("@id_cliente", VariaveisGlobais.ultimoIdClienteInserido);
@@ -64,6 +63,14 @@ namespace UkraBar
                 comandos.Parameters.AddWithValue("@forma_pagamento", "Cartão");
                 comandos.ExecuteNonQuery();
             }
+            string queryInserirCarrinho = "INSERT INTO carrinho (id_cliente, valor_final, id_pedido_cliente) VALUES (@id_cliente, @valor_final, @id_pedido_cliente)";
+            using (MySqlCommand comandos = new MySqlCommand(queryInserirCarrinho, conn))
+            {
+                comandos.Parameters.AddWithValue("@id_cliente", VariaveisGlobais.ultimoIdClienteInserido);
+                comandos.Parameters.AddWithValue("@valor_final", VariaveisGlobais.valorFinal);
+                comandos.Parameters.AddWithValue("@id_pedido_cliente", VariaveisGlobais.ultimoIdPedidoInserido);
+                comandos.ExecuteNonQuery();
+            }
 
             conn.Close();
             Carrinho carrinho3 = new Carrinho();
@@ -83,6 +90,16 @@ namespace UkraBar
                 comandos.ExecuteNonQuery();
                 VariaveisGlobais.ultimoIdClienteInserido = (int)comandos.LastInsertedId;
             }
+
+            string queryInserirCarrinho = "INSERT INTO carrinho (id_cliente, valor_final, id_pedido_cliente) VALUES (@id_cliente, @valor_final, @id_pedido_cliente)";
+            using (MySqlCommand comandos = new MySqlCommand(queryInserirCarrinho, conn))
+            {
+                comandos.Parameters.AddWithValue("@id_cliente", VariaveisGlobais.ultimoIdClienteInserido);
+                comandos.Parameters.AddWithValue("@valor_final", VariaveisGlobais.valorFinal);
+                comandos.Parameters.AddWithValue("@id_pedido_cliente", VariaveisGlobais.ultimoIdPedidoInserido);
+                comandos.ExecuteNonQuery();
+            }
+
             conn.Close();
 
             Carrinho carrinho3 = new Carrinho();
