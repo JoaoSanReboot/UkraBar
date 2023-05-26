@@ -180,17 +180,18 @@ namespace UkraBar
         private void BtnOkV_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string queryInserirPedido = "INSERT INTO pedido_cliente (nome_produto, quantidade, valor_produto) VALUES (@nome_produto, @quantidade, @valor_produto)";
+            string queryInserirPedido = "INSERT INTO pedido_cliente (nome_produto, quantidade, valor_produto, id_cliente) VALUES (@nome_produto, @quantidade, @valor_produto, @id_cliente)";
             using (MySqlCommand comandos = new MySqlCommand(queryInserirPedido, conn))
             {
                 comandos.Parameters.AddWithValue("@nome_produto", "SandubaVegetariano");
                 comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeVegetariano);
                 comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorVegetariano);
-                comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorJapones);
+                comandos.Parameters.AddWithValue("@id_cliente", VariaveisGlobais.ultimoIdClienteInserido);
                 comandos.ExecuteNonQuery();
+                VariaveisGlobais.ultimoIdPedidoInserido = (int)comandos.LastInsertedId;
             }
             conn.Close();
-            MessageBox.Show(VariaveisGlobais.valorVegetariano.ToString(), "Foram adicionados no Carrinho");
+            MessageBox.Show(VariaveisGlobais.quantidadeVegetariano.ToString(), "Foram adicionados no Carrinho");
             panelVegetariano.Visible = false;
         }
         private void BtnOkZ_Click(object sender, EventArgs e)
@@ -201,6 +202,7 @@ namespace UkraBar
             {
                 comandos.Parameters.AddWithValue("@nome_produto", "SandubaPolones");
                 comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadePolones);
+                comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorPolones);
                 comandos.Parameters.AddWithValue("@id_cliente", VariaveisGlobais.ultimoIdClienteInserido);
                 comandos.ExecuteNonQuery();
                 VariaveisGlobais.ultimoIdPedidoInserido = (int)comandos.LastInsertedId;
@@ -261,8 +263,8 @@ namespace UkraBar
         private void BtnMenos1_Click(object sender, EventArgs e)
         {
            
-                VariaveisGlobais.quantidadeItaliano--;
-                AtualizarValor();
+            VariaveisGlobais.quantidadeItaliano--;
+            AtualizarValor();
             VariaveisGlobais.valorItalianoMenos = VariaveisGlobais.valorItaliano - 24;
             VariaveisGlobais.valorItaliano = VariaveisGlobais.valorItalianoMenos;
             BoxValorfinalI.Text = VariaveisGlobais.valorItaliano.ToString() + ",00";
@@ -288,8 +290,8 @@ namespace UkraBar
         private void BtnMenosI_Click(object sender, EventArgs e)
         {
            
-                VariaveisGlobais.quantidadeIberico--;
-                AtualizarValor();
+            VariaveisGlobais.quantidadeIberico--;
+            AtualizarValor();
             VariaveisGlobais.valorIbericoMenos = VariaveisGlobais.valorIberico - 27;
             VariaveisGlobais.valorIberico = VariaveisGlobais.valorIbericoMenos;
             BoxValorfinalIB.Text = VariaveisGlobais.valorIberico.ToString() + ",00";
@@ -325,8 +327,8 @@ namespace UkraBar
         private void BtnMenosK_Click(object sender, EventArgs e)
         {
             
-                VariaveisGlobais.quantidadeJapones--;
-                AtualizarValor();
+            VariaveisGlobais.quantidadeJapones--;
+            AtualizarValor();
             VariaveisGlobais.valorJaponesMenos = VariaveisGlobais.valorJapones - 24;
             VariaveisGlobais.valorJapones= VariaveisGlobais.valorJaponesMenos;
             BoxValorfinalK.Text = VariaveisGlobais.valorJapones.ToString() + ",00";
@@ -338,7 +340,7 @@ namespace UkraBar
         {
             VariaveisGlobais.quantidadeVegetariano++;
             AtualizarValor();
-            VariaveisGlobais.valorVegetariano= VariaveisGlobais.quantidadeVegetariano * 22;
+            VariaveisGlobais.valorVegetariano = VariaveisGlobais.quantidadeVegetariano * 22;
             BoxValorfinalV.Text = VariaveisGlobais.valorVegetariano.ToString() + ",00";
         }
 
@@ -364,8 +366,8 @@ namespace UkraBar
         private void BtnMenosA_Click(object sender, EventArgs e)
         {
            
-                VariaveisGlobais.quantidadeAlemao--;
-                AtualizarValor();
+            VariaveisGlobais.quantidadeAlemao--;
+            AtualizarValor();
             VariaveisGlobais.valorAlemaoMenos = VariaveisGlobais.valorAlemao- 25;
             VariaveisGlobais.valorAlemao = VariaveisGlobais.valorAlemaoMenos;
             BoxValorfinal.Text = VariaveisGlobais.valorAlemao.ToString() + ",00";
@@ -386,12 +388,6 @@ namespace UkraBar
             cliente.ShowDialog();
             this.Close();
         }
-
-        private void pbFundo_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void BoxCItaliano_Click(object sender, EventArgs e)
         {
 
@@ -400,12 +396,6 @@ namespace UkraBar
         private void MenuSanduba_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-            MessageBox.Show(Convert.ToString(VariaveisGlobais.ultimoIdClienteInserido));
         }
     }
 }

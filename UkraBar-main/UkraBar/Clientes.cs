@@ -80,9 +80,9 @@ namespace UkraBar
 
         private void BtnNao_Click(object sender, EventArgs e)
         {
-            MenuEscolha Escolha = new MenuEscolha();
+            MenuEscolha menuEscolha = new MenuEscolha();
             this.Hide();
-            Escolha.ShowDialog();
+            menuEscolha.ShowDialog();
             this.Close();
         }
 
@@ -105,9 +105,9 @@ namespace UkraBar
                     VariaveisGlobais.ultimoIdClienteInserido = (int)comandos.LastInsertedId;
                 }
 
-                MenuEscolha menu = new MenuEscolha();
+                MenuEscolha menuEscolha = new MenuEscolha();
                 this.Hide();
-                menu.ShowDialog();
+                menuEscolha.ShowDialog();
                 this.Close();
                 conn.Close();
 

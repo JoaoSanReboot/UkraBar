@@ -28,7 +28,25 @@ namespace UkraBar
 
         private void BtnPix_Click(object sender, EventArgs e)
         {
-    
+            conn.Open();
+            string queryInserirPix = "UPDATE cliente SET forma_pagamento = @forma_pagamento WHERE id_cliente = '" + VariaveisGlobais.ultimoIdClienteInserido + "'";
+            using (MySqlCommand comandos = new MySqlCommand(queryInserirPix, conn))
+            {
+                comandos.Parameters.AddWithValue("@forma_pagamento", "Pix");
+                comandos.ExecuteNonQuery();
+            }
+
+
+            string queryInserirCarrinho = "INSERT INTO carrinho (id_cliente, valor_final, id_pedido_cliente) VALUES (@id_cliente, valor_final, @id_pedido_cliente)";
+            using (MySqlCommand comandos = new MySqlCommand(queryInserirCarrinho, conn))
+            {
+                comandos.Parameters.AddWithValue("@id_cliente", VariaveisGlobais.ultimoIdClienteInserido);
+                comandos.Parameters.AddWithValue("@valor_final", VariaveisGlobais.valorFinal);
+                comandos.Parameters.AddWithValue("@id_pedido_cliente", VariaveisGlobais.ultimoIdPedidoInserido);
+                comandos.ExecuteNonQuery();
+            }
+
+            conn.Close();
 
             Carrinho carrinho3 = new Carrinho();
             this.Hide();

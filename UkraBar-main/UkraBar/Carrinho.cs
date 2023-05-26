@@ -19,13 +19,15 @@ namespace UkraBar
         public string connectionString = "SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;";
         public MySqlCommand comando;
         public MySqlDataReader reader6;
+        public MySqlDataReader reader;
         public DataTable table;
 
         public Carrinho()
         {
             InitializeComponent();
             CarregarDados();
-    
+            CarregarDados2();
+
         }
 
         //Carregar Dados é um public para carregar informações no DataGridView.
@@ -34,13 +36,29 @@ namespace UkraBar
             conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
             conn.Open();// Abre Conexão.
 
-            string query = "SELECT * FROM carrinho"; //Seleciona informações da tabela Cadastro Funcionário.
+            string query = "SELECT valor_final FROM carrinho"; //Seleciona informações da tabela Cadastro Funcionário.
             comando = new MySqlCommand(query, conn); //Declara comandos que serão usados.
-            reader6 = comando.ExecuteReader(); //Lê os comandos.
+            MySqlDataReader reader5 = comando.ExecuteReader(); //Lê os comandos.
             table = new DataTable(); //Abre a Table.
             table.Load(reader6); //Table lê os comandos.
             DTgridCarrinho.DataSource = table; //Renomeia Table para DTgridFunc.
             DTgridCarrinho.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; //Comando para alinhar as tabelas no DataGriedView.
+            conn.Close(); //Fecha Conexão 
+
+        }
+
+        public void CarregarDados2()
+        {
+            conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
+            conn.Open();// Abre Conexão.
+
+            string query = "SELECT nome_produto, quantidade, valor_produto FROM pedido_cliente WHERE id_pedido_cliente = (SELECT MAX(id) FROM pedido_cliente)"; //Seleciona informações da tabela Cadastro Funcionário.
+            comando = new MySqlCommand(query, conn); //Declara comandos que serão usados.
+            reader6 = comando.ExecuteReader(); //Lê os comandos.
+            table = new DataTable(); //Abre a Table.
+            table.Load(reader6); //Table lê os comandos.
+            DTgridCarrinho2.DataSource = table; //Renomeia Table para DTgridFunc.
+            DTgridCarrinho2.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; //Comando para alinhar as tabelas no DataGriedView.
             conn.Close(); //Fecha Conexão 
 
         }
