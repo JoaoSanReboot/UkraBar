@@ -43,6 +43,9 @@
             this.BtnVoltar = new System.Windows.Forms.Button();
             this.DTgridCarrinho2 = new System.Windows.Forms.DataGridView();
             this.DTgridValor = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.sideBarMenu.SuspendLayout();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
@@ -182,7 +185,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DTgridCarrinho2.DefaultCellStyle = dataGridViewCellStyle2;
             this.DTgridCarrinho2.GridColor = System.Drawing.Color.Black;
-            this.DTgridCarrinho2.Location = new System.Drawing.Point(340, 99);
+            this.DTgridCarrinho2.Location = new System.Drawing.Point(324, 12);
             this.DTgridCarrinho2.Name = "DTgridCarrinho2";
             this.DTgridCarrinho2.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -202,7 +205,7 @@
             this.DTgridCarrinho2.RowTemplate.Height = 30;
             this.DTgridCarrinho2.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.DTgridCarrinho2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DTgridCarrinho2.Size = new System.Drawing.Size(714, 459);
+            this.DTgridCarrinho2.Size = new System.Drawing.Size(787, 459);
             this.DTgridCarrinho2.TabIndex = 50;
             // 
             // DTgridValor
@@ -236,7 +239,7 @@
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DTgridValor.DefaultCellStyle = dataGridViewCellStyle5;
             this.DTgridValor.GridColor = System.Drawing.Color.Black;
-            this.DTgridValor.Location = new System.Drawing.Point(340, 558);
+            this.DTgridValor.Location = new System.Drawing.Point(324, 464);
             this.DTgridValor.Name = "DTgridValor";
             this.DTgridValor.ReadOnly = true;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -256,19 +259,43 @@
             this.DTgridValor.RowTemplate.Height = 30;
             this.DTgridValor.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.DTgridValor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DTgridValor.Size = new System.Drawing.Size(714, 126);
+            this.DTgridValor.Size = new System.Drawing.Size(787, 149);
             this.DTgridValor.TabIndex = 51;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(324, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(66, 601);
+            this.panel1.TabIndex = 52;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(324, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(787, 31);
+            this.panel2.TabIndex = 53;
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(324, 464);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(787, 31);
+            this.panel3.TabIndex = 54;
             // 
             // Carrinho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.DTgridValor);
             this.Controls.Add(this.DTgridCarrinho2);
             this.Controls.Add(this.sideBarMenu);
             this.Name = "Carrinho";
-            this.Text = "Carrinho";
+            this.Text = ";";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.sideBarMenu.ResumeLayout(false);
             this.panelMenu.ResumeLayout(false);
@@ -290,5 +317,8 @@
         private System.Windows.Forms.Button BtnVoltar;
         private System.Windows.Forms.DataGridView DTgridCarrinho2;
         private System.Windows.Forms.DataGridView DTgridValor;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }

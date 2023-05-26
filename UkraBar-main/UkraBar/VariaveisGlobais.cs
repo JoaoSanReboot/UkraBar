@@ -29,6 +29,52 @@ namespace UkraBar
         public static double valorVegetarianoMenos;
         public static double valorAlemaoMenos;
 
+        //Bebidas
+
+        public static int quantidadeChamate;
+        public static int quantidadeMaçaAmor;
+        public static int quantidadeMoniche;
+        public static int quantidadeSlava;
+        public static int quantidadeCaipirinha;
+        public static int quantidadePolaka;
+
+        public static double valorChamate;
+        public static double valorMaçaAmor;
+        public static double valorMoniche;
+        public static double valorSlava;
+        public static double valorCaipirinha;
+        public static double valorPolaka;
+
+        public static double valorChamateMenos;
+        public static double valorMaçãAmorMenos;
+        public static double valorMonicheMenos;
+        public static double valorSlavaMenos;
+        public static double valorCaipirinhaMenos;
+        public static double valorPolakaMenos;
+
+        //Pratos
+
+        public static int quantidadeBatata;
+        public static int quantidadeFrango;
+        public static int quantidadePeroche;
+        public static int quantidadeHulubsti;
+        public static int quantidadeBorscht;
+        public static int quantidadeBanosh;
+
+        public static double valorBatata;
+        public static double valorFrango;
+        public static double valorPeroche;
+        public static double valorHulubsti;
+        public static double valorBorscht;
+        public static double valorBanosh;
+
+        public static double valorBatataMenos;
+        public static double valorFrangoMenos;
+        public static double quantidadePerocheMenos;
+        public static double quantidadeHulubstiMenos;
+        public static double valorBorschtMenos;
+        public static double valorBanoshMenos;
+
 
         public static double valorFinal;
 

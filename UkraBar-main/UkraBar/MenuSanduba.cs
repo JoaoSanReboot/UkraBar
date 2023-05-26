@@ -29,87 +29,45 @@ namespace UkraBar
         public MySqlDataReader reader;
         public DataTable table;
 
-
-        //Publics Abrir e Fechar Conexão com o Banco de Dados.
-        public void AbrirConexão()
-        {
-            //Se o status da conexão estiver fechada então abrir.
-            if (conn.State == ConnectionState.Closed)
-            {
-                conn.Open();
-            }
-        }
-
-        public void FecharConexão()
-        {
-            //Se o status da conexão estiver aberta então fechar.
-            if (conn.State == ConnectionState.Open)
-            {
-                conn.Close();
-            }
-        }
-
-        //Public Executar comandos no banco de dados.
-        public void executarQuery(string query)
-        {
-            try
-            {
-                AbrirConexão(); //Abre Conexão.
-                comando = new MySqlCommand(query, conn); //Declara comandos para MySql.
-
-                //Se o comando for executado corretamente mostrar Message Box
-                if (comando.ExecuteNonQuery() == 1)
-
-                    MessageBox.Show("Executado com Sucesso");
-
-                //Senão Mostrar outra Message Box
-                else
-
-                    MessageBox.Show("Não foi Executado");
-
-            }
-            //Se uma exceção for encontrada Mostrar Error Message
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                //Depois de Executar tudo Fechar.
-                FecharConexão();
-            }
-        }
-
-        private string quantidadeArmazenada = string.Empty;
-
-
         //Todos os Btn Compras.
         private void BtnComprar_Click(object sender, EventArgs e)
         {
             panelItaliano.Visible = true;
+            ResetVariaveis();
+            ResetBox();
         }
 
         private void BtnIberico_Click(object sender, EventArgs e)
         {
             panelIberico.Visible = true;
+            ResetVariaveis();
+            ResetBox();
         }
 
         private void BtnPolonesComprar_Click(object sender, EventArgs e)
         {
             panelZapiekanka.Visible = true;
+            ResetVariaveis();
+            ResetBox();
         }
 
         private void BtnVegetariano_Click(object sender, EventArgs e)
         {
             panelVegetariano.Visible = true;
+            ResetVariaveis();
+            ResetBox();
         }
         private void BtnKatsuoSando_Click(object sender, EventArgs e)
         {
             panelKatsuSando.Visible = true;
+            ResetVariaveis();
+            ResetBox();
         }
         private void BtnComprarAlemao_Click(object sender, EventArgs e)
         {
             panelAlemão.Visible = true;
+            ResetVariaveis();
+            ResetBox();
         }
 
         //Todos Btn Cancelar
@@ -244,6 +202,7 @@ namespace UkraBar
                 VariaveisGlobais.ultimoIdPedidoInserido = (int)comandos.LastInsertedId;
             }
             conn.Close();
+
             MessageBox.Show(VariaveisGlobais.quantidadeIberico.ToString(), "Foram adicionados no Carrinho");
             panelIberico.Visible = false;
         }
@@ -260,19 +219,40 @@ namespace UkraBar
             BoxCQuantidadeA.Text = VariaveisGlobais.quantidadeAlemao.ToString();
         }
 
-        private void BtnMenos1_Click(object sender, EventArgs e)
+        public void ResetVariaveis()
         {
-           
-            VariaveisGlobais.quantidadeItaliano--;
-            AtualizarValor();
-            VariaveisGlobais.valorItalianoMenos = VariaveisGlobais.valorItaliano - 24;
-            VariaveisGlobais.valorItaliano = VariaveisGlobais.valorItalianoMenos;
-            BoxValorfinalI.Text = VariaveisGlobais.valorItaliano.ToString() + ",00";
+
+         VariaveisGlobais.quantidadeItaliano = 0;
+         VariaveisGlobais.quantidadeIberico = 0;
+         VariaveisGlobais.quantidadePolones = 0;
+         VariaveisGlobais.quantidadeJapones = 0;
+         VariaveisGlobais.quantidadeVegetariano = 0;
+         VariaveisGlobais.quantidadeAlemao = 0;
+
+        }
+
+        public void ResetBox()
+        {
+
+            BoxCItaliano.Text = "";
+            BoxcQuantidadeI.Text = "";
+            BoxCQuantidadeZ.Text = "";
+            BoxCQuantidadeK.Text = "";
+            BoxCQuantidadeV.Text = "";
+            BoxCQuantidadeA.Text = "";
+
+            BoxValorfinalI.Text = "";
+            BoxValorfinalIB.Text = "";
+            BoxValorfinal.Text = "";
+            BoxValorfinalK.Text = "";
+            BoxValorfinalV.Text = "";
+            BoxValorfinalZ.Text = "";
 
         }
 
         private void BtnMais1_Click(object sender, EventArgs e)
         {
+
             VariaveisGlobais.quantidadeItaliano++;
             AtualizarValor();
             VariaveisGlobais.valorItaliano = VariaveisGlobais.quantidadeItaliano * 24;
@@ -287,16 +267,6 @@ namespace UkraBar
             BoxValorfinalIB.Text = VariaveisGlobais.valorIberico.ToString() + ",00";
         }
 
-        private void BtnMenosI_Click(object sender, EventArgs e)
-        {
-           
-            VariaveisGlobais.quantidadeIberico--;
-            AtualizarValor();
-            VariaveisGlobais.valorIbericoMenos = VariaveisGlobais.valorIberico - 27;
-            VariaveisGlobais.valorIberico = VariaveisGlobais.valorIbericoMenos;
-            BoxValorfinalIB.Text = VariaveisGlobais.valorIberico.ToString() + ",00";
-        }
-
         private void BtnMaisZ_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadePolones++;
@@ -304,18 +274,6 @@ namespace UkraBar
             VariaveisGlobais.valorPolones = VariaveisGlobais.quantidadePolones * 24;
             BoxValorfinalZ.Text = VariaveisGlobais.valorPolones.ToString() + ",00";
         }
-
-        private void BtnMenosZ_Click(object sender, EventArgs e)
-        {
-           
-            VariaveisGlobais.quantidadePolones--;
-            AtualizarValor();
-            VariaveisGlobais.valorPolonesMenos = VariaveisGlobais.valorPolones - 24;
-            VariaveisGlobais.valorPolones = VariaveisGlobais.valorPolonesMenos;
-            BoxValorfinalZ.Text = VariaveisGlobais.valorPolones.ToString() + ",00";
-        }
-
-
         private void BtnMaisK_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadeJapones++;
@@ -323,19 +281,6 @@ namespace UkraBar
             VariaveisGlobais.valorJapones = VariaveisGlobais.quantidadeJapones * 24;
             BoxValorfinalK.Text = VariaveisGlobais.valorJapones.ToString() + ",00";
         }
-
-        private void BtnMenosK_Click(object sender, EventArgs e)
-        {
-            
-            VariaveisGlobais.quantidadeJapones--;
-            AtualizarValor();
-            VariaveisGlobais.valorJaponesMenos = VariaveisGlobais.valorJapones - 24;
-            VariaveisGlobais.valorJapones= VariaveisGlobais.valorJaponesMenos;
-            BoxValorfinalK.Text = VariaveisGlobais.valorJapones.ToString() + ",00";
-
-        }
-
-
         private void BtnMaisV_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadeVegetariano++;
@@ -343,18 +288,6 @@ namespace UkraBar
             VariaveisGlobais.valorVegetariano = VariaveisGlobais.quantidadeVegetariano * 22;
             BoxValorfinalV.Text = VariaveisGlobais.valorVegetariano.ToString() + ",00";
         }
-
-        private void BtnMenosV_Click(object sender, EventArgs e)
-        {
-            if(VariaveisGlobais.quantidadeVegetariano > 0 || VariaveisGlobais.valorVegetariano > 0)
-
-                VariaveisGlobais.quantidadeVegetariano--;
-                AtualizarValor();
-                VariaveisGlobais.valorVegetarianoMenos= VariaveisGlobais.valorVegetariano - 22;
-                VariaveisGlobais.valorVegetariano = VariaveisGlobais.valorVegetarianoMenos;
-                BoxValorfinalV.Text = VariaveisGlobais.valorVegetariano.ToString()+ ",00";
-        }
-
         private void BtnMaisA_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadeAlemao++;
@@ -363,11 +296,86 @@ namespace UkraBar
             BoxValorfinal.Text = VariaveisGlobais.valorAlemao.ToString() + ",00";
         }
 
+
+        private void BtnMenosZ_Click(object sender, EventArgs e)
+        {
+           if(VariaveisGlobais.quantidadePolones > 0)
+
+            VariaveisGlobais.quantidadePolones--;
+            AtualizarValor();
+
+           if(VariaveisGlobais.valorPolones > 0)
+            VariaveisGlobais.valorPolonesMenos = VariaveisGlobais.valorPolones - 24;
+            VariaveisGlobais.valorPolones = VariaveisGlobais.valorPolonesMenos;
+            BoxValorfinalZ.Text = VariaveisGlobais.valorPolones.ToString() + ",00";
+        }
+
+        private void BtnMenosK_Click(object sender, EventArgs e)
+        {
+            if(VariaveisGlobais.quantidadeJapones > 0)
+
+            VariaveisGlobais.quantidadeJapones--;
+            AtualizarValor();
+            
+            if(VariaveisGlobais.valorJapones > 0)
+
+            VariaveisGlobais.valorJaponesMenos = VariaveisGlobais.valorJapones - 24;
+            VariaveisGlobais.valorJapones= VariaveisGlobais.valorJaponesMenos;
+            BoxValorfinalK.Text = VariaveisGlobais.valorJapones.ToString() + ",00";
+
+        }
+        private void BtnMenos1_Click(object sender, EventArgs e)
+        {
+            if (VariaveisGlobais.quantidadeItaliano > 0)
+
+            VariaveisGlobais.quantidadeItaliano--;
+            AtualizarValor();
+
+            if (VariaveisGlobais.valorItaliano > 0)
+
+                VariaveisGlobais.valorItalianoMenos = VariaveisGlobais.valorItaliano - 24;
+            VariaveisGlobais.valorItaliano = VariaveisGlobais.valorItalianoMenos;
+            BoxValorfinalI.Text = VariaveisGlobais.valorItaliano.ToString() + ",00";
+
+        }
+
+        private void BtnMenosI_Click(object sender, EventArgs e)
+        {
+            if(VariaveisGlobais.quantidadeIberico > 0)
+
+            VariaveisGlobais.quantidadeIberico--;
+            AtualizarValor();
+
+            if(VariaveisGlobais.valorIberico > 0)
+
+            VariaveisGlobais.valorIbericoMenos = VariaveisGlobais.valorIberico - 27;
+            VariaveisGlobais.valorIberico = VariaveisGlobais.valorIbericoMenos;
+            BoxValorfinalIB.Text = VariaveisGlobais.valorIberico.ToString() + ",00";
+        }
+
+        private void BtnMenosV_Click(object sender, EventArgs e)
+        {
+            if(VariaveisGlobais.quantidadeVegetariano > 0)
+
+             VariaveisGlobais.quantidadeVegetariano--;
+             AtualizarValor();
+
+            if(VariaveisGlobais.valorVegetariano > 0)
+
+            VariaveisGlobais.valorVegetarianoMenos= VariaveisGlobais.valorVegetariano - 22;
+            VariaveisGlobais.valorVegetariano = VariaveisGlobais.valorVegetarianoMenos;
+            BoxValorfinalV.Text = VariaveisGlobais.valorVegetariano.ToString()+ ",00";
+        }
+
         private void BtnMenosA_Click(object sender, EventArgs e)
         {
-           
+           if(VariaveisGlobais.quantidadeAlemao > 0)
+
             VariaveisGlobais.quantidadeAlemao--;
             AtualizarValor();
+
+           if(VariaveisGlobais.valorAlemao > 0)
+
             VariaveisGlobais.valorAlemaoMenos = VariaveisGlobais.valorAlemao- 25;
             VariaveisGlobais.valorAlemao = VariaveisGlobais.valorAlemaoMenos;
             BoxValorfinal.Text = VariaveisGlobais.valorAlemao.ToString() + ",00";
