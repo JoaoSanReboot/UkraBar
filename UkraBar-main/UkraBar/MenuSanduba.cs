@@ -19,7 +19,6 @@ namespace UkraBar
         public MenuSanduba()
         {
             InitializeComponent();
-            AtualizarValor();
         }
         //Setando comandos MySql para a contatenação.
 

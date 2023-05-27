@@ -56,22 +56,22 @@ namespace UkraBar
 
         public static int quantidadeBatata;
         public static int quantidadeFrango;
-        public static int quantidadePeroche;
+        public static int quantidadePerohe;
         public static int quantidadeHulubsti;
         public static int quantidadeBorscht;
         public static int quantidadeBanosh;
 
         public static double valorBatata;
         public static double valorFrango;
-        public static double valorPeroche;
+        public static double valorPerohe;
         public static double valorHulubsti;
         public static double valorBorscht;
         public static double valorBanosh;
 
         public static double valorBatataMenos;
         public static double valorFrangoMenos;
-        public static double quantidadePerocheMenos;
-        public static double quantidadeHulubstiMenos;
+        public static double valorPeroheMenos;
+        public static double valorHulubstiMenos;
         public static double valorBorschtMenos;
         public static double valorBanoshMenos;
 
