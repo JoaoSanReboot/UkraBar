@@ -18,16 +18,30 @@ namespace UkraBar
             InitializeComponent();
         }
 
-        private void BtnSanduba_Click(object sender, EventArgs e)
+        private void BtnFechar_Click(object sender, EventArgs e)
         {
-           MenuSanduba MenuS = new MenuSanduba();
+            VariaveisGlobais.valorFinal = VariaveisGlobais.valorItaliano + VariaveisGlobais.valorJapones + VariaveisGlobais.valorPolones + VariaveisGlobais.valorIberico + VariaveisGlobais.valorAlemao + VariaveisGlobais.valorVegetariano;
+            VariaveisGlobais.valorFinalP = VariaveisGlobais.valorBatata + VariaveisGlobais.valorHulubsti + VariaveisGlobais.valorFrango + VariaveisGlobais.valorPerohe+ VariaveisGlobais.valorBorscht + VariaveisGlobais.valorBanosh;
+            VariaveisGlobais.valorFinalB = VariaveisGlobais.valorPolaka + VariaveisGlobais.valorChamate + VariaveisGlobais.valorMaçaAmor + VariaveisGlobais.valorMoniche + VariaveisGlobais.valorSlava + VariaveisGlobais.valorCaipirinha;
+
+            VariaveisGlobais.valorFinalTotal = VariaveisGlobais.valorFinal + VariaveisGlobais.valorFinalB + VariaveisGlobais.valorFinalP;  
+            
+            _NomeCliente MenuNome = new _NomeCliente();
+            this.Hide();
+            MenuNome.ShowDialog();
+            this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MenuSanduba MenuS = new MenuSanduba();
             this.Hide();
             MenuS.ShowDialog();
-            this.Close();   
+            this.Close();
 
         }
 
-        private void BtnPratos_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
             MenuPratos MenuP = new MenuPratos();
             this.Hide();
@@ -35,32 +49,12 @@ namespace UkraBar
             this.Close();
         }
 
-        private void BtnBebidas_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
             MenuBebidas MenuB = new MenuBebidas();
             this.Hide();
             MenuB.ShowDialog();
             this.Close();
         }
-
-        private void BtnSobremesas_Click(object sender, EventArgs e)
-        {
-            MenuSobremesas MenuSm = new MenuSobremesas();
-            this.Hide();
-            MenuSm.ShowDialog();
-            this.Close();
-        }
-
-        private void BtnFechar_Click(object sender, EventArgs e)
-        {
-            VariaveisGlobais.valorFinal = VariaveisGlobais.valorItaliano + VariaveisGlobais.valorJapones + VariaveisGlobais.valorPolones + VariaveisGlobais.valorIberico + VariaveisGlobais.valorAlemao + VariaveisGlobais.valorVegetariano;
-          
-            _NomeCliente MenuNome = new _NomeCliente();
-            this.Hide();
-            MenuNome.ShowDialog();
-            this.Close();
-        }
-        
-     
     }
 }

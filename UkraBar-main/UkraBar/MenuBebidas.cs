@@ -147,7 +147,7 @@ namespace UkraBar
             }
             conn.Close();
 
-            MessageBox.Show(VariaveisGlobais.quantidadeBatata.ToString(), "Foram adicionados no Carrinho");
+            MessageBox.Show(VariaveisGlobais.quantidadePolaka.ToString(), "Foram adicionados no Carrinho");
             panelPolaka.Visible = false;
         }
 
@@ -166,7 +166,7 @@ namespace UkraBar
             }
             conn.Close();
 
-            MessageBox.Show(VariaveisGlobais.quantidadeBatata.ToString(), "Foram adicionados no Carrinho");
+            MessageBox.Show(VariaveisGlobais.quantidadeChamate.ToString(), "Foram adicionados no Carrinho");
             panelChaMatte.Visible = false;
         }
         private void BtnOkCA_Click(object sender, EventArgs e)
@@ -184,7 +184,7 @@ namespace UkraBar
             }
             conn.Close();
 
-            MessageBox.Show(VariaveisGlobais.quantidadeBatata.ToString(), "Foram adicionados no Carrinho");
+            MessageBox.Show(VariaveisGlobais.quantidadeCaipirinha.ToString(), "Foram adicionados no Carrinho");
             panelCaipirinha.Visible = false;
         }
 
@@ -203,7 +203,7 @@ namespace UkraBar
             }
             conn.Close();
 
-            MessageBox.Show(VariaveisGlobais.quantidadeBatata.ToString(), "Foram adicionados no Carrinho");
+            MessageBox.Show(VariaveisGlobais.quantidadeMaçaAmor.ToString(), "Foram adicionados no Carrinho");
             panelMacaAmor.Visible = false;
         }
         private void BtnOkM_Click(object sender, EventArgs e)
@@ -221,7 +221,7 @@ namespace UkraBar
             }
             conn.Close();
 
-            MessageBox.Show(VariaveisGlobais.quantidadeBatata.ToString(), "Foram adicionados no Carrinho");
+            MessageBox.Show(VariaveisGlobais.quantidadeMoniche.ToString(), "Foram adicionados no Carrinho");
             panelMunich.Visible = false;
         }
 
@@ -240,7 +240,7 @@ namespace UkraBar
             }
             conn.Close();
 
-            MessageBox.Show(VariaveisGlobais.quantidadeBatata.ToString(), "Foram adicionados no Carrinho");
+            MessageBox.Show(VariaveisGlobais.quantidadeSlava.ToString(), "Foram adicionados no Carrinho");
             panelSlava.Visible = false;
         }
         private void BtnMenosP_Click(object sender, EventArgs e)
@@ -252,7 +252,7 @@ namespace UkraBar
 
             if (VariaveisGlobais.valorPolaka > 0)
 
-                VariaveisGlobais.valorPolakaMenos = VariaveisGlobais.valorPolaka - 24;
+                VariaveisGlobais.valorPolakaMenos = VariaveisGlobais.valorPolaka - 26;
             VariaveisGlobais.valorPolaka = VariaveisGlobais.valorPolakaMenos;
             BoxValorfinalP.Text = VariaveisGlobais.valorPolaka.ToString() + ",00";
         }
@@ -265,9 +265,9 @@ namespace UkraBar
 
             if (VariaveisGlobais.valorChamate > 0)
 
-                VariaveisGlobais.valorChamateMenos = VariaveisGlobais.valorChamate - 24;
+                VariaveisGlobais.valorChamateMenos = VariaveisGlobais.valorChamate - 8;
             VariaveisGlobais.valorChamate = VariaveisGlobais.valorChamateMenos;
-            BoxValorfinalM.Text = VariaveisGlobais.valorChamate.ToString() + ",00";
+            BoxValorfinalC.Text = VariaveisGlobais.valorChamate.ToString() + ",00";
         }
         private void BtnMenosCA_Click(object sender, EventArgs e)
         {
@@ -278,7 +278,7 @@ namespace UkraBar
 
             if (VariaveisGlobais.valorCaipirinha > 0)
 
-                VariaveisGlobais.valorCaipirinhaMenos = VariaveisGlobais.valorCaipirinha - 24;
+                VariaveisGlobais.valorCaipirinhaMenos = VariaveisGlobais.valorCaipirinha - 16;
             VariaveisGlobais.valorCaipirinha = VariaveisGlobais.valorCaipirinhaMenos;
             BoxValorfinalCA.Text = VariaveisGlobais.valorCaipirinha.ToString() + ",00";
         }
@@ -291,7 +291,7 @@ namespace UkraBar
 
             if (VariaveisGlobais.valorMaçaAmor > 0)
 
-                VariaveisGlobais.valorMaçãAmorMenos = VariaveisGlobais.valorMaçaAmor - 24;
+                VariaveisGlobais.valorMaçãAmorMenos = VariaveisGlobais.valorMaçaAmor - 18;
             VariaveisGlobais.valorMaçaAmor = VariaveisGlobais.valorMaçãAmorMenos;
             BoxValorfinalMA.Text = VariaveisGlobais.valorMaçaAmor.ToString() + ",00";
         }
@@ -304,9 +304,9 @@ namespace UkraBar
 
             if (VariaveisGlobais.valorMoniche > 0)
 
-                VariaveisGlobais.valorMonicheMenos = VariaveisGlobais.valorMoniche - 24;
+                VariaveisGlobais.valorMonicheMenos = VariaveisGlobais.valorMoniche - 23;
             VariaveisGlobais.valorMoniche = VariaveisGlobais.valorMonicheMenos;
-            BoxValorfinalM.Text = VariaveisGlobais.valorHulubsti.ToString() + ",00";
+            BoxValorfinalM.Text = VariaveisGlobais.valorMoniche.ToString() + ",00";
         }
 
         private void BtnMenosS_Click(object sender, EventArgs e)
@@ -318,7 +318,7 @@ namespace UkraBar
 
             if (VariaveisGlobais.valorSlava > 0)
 
-                VariaveisGlobais.valorSlavaMenos = VariaveisGlobais.valorSlava - 24;
+                VariaveisGlobais.valorSlavaMenos = VariaveisGlobais.valorSlava - 18;
                 VariaveisGlobais.valorSlava = VariaveisGlobais.valorSlavaMenos;
                 BoxValorfinalS.Text = VariaveisGlobais.valorSlava.ToString() + ",00";
         }
@@ -326,21 +326,21 @@ namespace UkraBar
         {
             VariaveisGlobais.quantidadeCaipirinha++;
             AtualizarValor();
-            VariaveisGlobais.valorCaipirinha = VariaveisGlobais.quantidadeCaipirinha * 25;
+            VariaveisGlobais.valorCaipirinha = VariaveisGlobais.quantidadeCaipirinha * 16;
             BoxValorfinalCA.Text = VariaveisGlobais.valorCaipirinha.ToString() + ",00";
         }
         private void BtnMaisMA_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadeMaçaAmor++;
             AtualizarValor();
-            VariaveisGlobais.valorMaçaAmor = VariaveisGlobais.quantidadeMaçaAmor * 25;
+            VariaveisGlobais.valorMaçaAmor = VariaveisGlobais.quantidadeMaçaAmor * 18;
             BoxValorfinalMA.Text = VariaveisGlobais.valorMaçaAmor.ToString() + ",00";
         }
         private void BtnMaisM_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadeMoniche++;
             AtualizarValor();
-            VariaveisGlobais.valorMoniche = VariaveisGlobais.quantidadeMoniche * 25;
+            VariaveisGlobais.valorMoniche = VariaveisGlobais.quantidadeMoniche * 23;
             BoxValorfinalM.Text = VariaveisGlobais.valorMoniche.ToString() + ",00";
         }
 
@@ -348,22 +348,31 @@ namespace UkraBar
         {
             VariaveisGlobais.quantidadeSlava++;
             AtualizarValor();
-            VariaveisGlobais.valorSlava = VariaveisGlobais.quantidadeSlava * 25;
+            VariaveisGlobais.valorSlava = VariaveisGlobais.quantidadeSlava * 18;
             BoxValorfinalS.Text = VariaveisGlobais.valorSlava.ToString() + ",00";
         }
         private void BtnMaisC_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadeChamate++;
             AtualizarValor();
-            VariaveisGlobais.valorChamate = VariaveisGlobais.quantidadeChamate * 25;
+            VariaveisGlobais.valorChamate = VariaveisGlobais.quantidadeChamate * 8;
             BoxValorfinalC.Text = VariaveisGlobais.valorChamate.ToString() + ",00";
         }
         private void BtnMaisP_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadePolaka++;
             AtualizarValor();
-            VariaveisGlobais.valorPolaka = VariaveisGlobais.quantidadePolaka * 25;
+            VariaveisGlobais.valorPolaka = VariaveisGlobais.quantidadePolaka * 26;
             BoxValorfinalP.Text = VariaveisGlobais.valorPolaka.ToString() + ",00";
+        }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+
+            MenuEscolha Escolha = new MenuEscolha();
+            this.Hide();
+            Escolha.ShowDialog();
+            this.Close();
         }
     }
 }

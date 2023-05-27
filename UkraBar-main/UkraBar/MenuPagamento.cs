@@ -40,7 +40,7 @@ namespace UkraBar
             using (MySqlCommand comandos = new MySqlCommand(queryInserirCarrinho, conn))
             {
                 comandos.Parameters.AddWithValue("@id_cliente", VariaveisGlobais.ultimoIdClienteInserido);
-                comandos.Parameters.AddWithValue("@valor_final", VariaveisGlobais.valorFinal);
+                comandos.Parameters.AddWithValue("@valor_final", VariaveisGlobais.valorFinalTotal);
                 comandos.Parameters.AddWithValue("@id_pedido_cliente", VariaveisGlobais.ultimoIdPedidoInserido);
                 comandos.ExecuteNonQuery();
             }
@@ -67,7 +67,7 @@ namespace UkraBar
             using (MySqlCommand comandos = new MySqlCommand(queryInserirCarrinho, conn))
             {
                 comandos.Parameters.AddWithValue("@id_cliente", VariaveisGlobais.ultimoIdClienteInserido);
-                comandos.Parameters.AddWithValue("@valor_final", VariaveisGlobais.valorFinal);
+                comandos.Parameters.AddWithValue("@valor_final", VariaveisGlobais.valorFinalTotal);
                 comandos.Parameters.AddWithValue("@id_pedido_cliente", VariaveisGlobais.ultimoIdPedidoInserido);
                 comandos.ExecuteNonQuery();
             }
@@ -95,7 +95,7 @@ namespace UkraBar
             using (MySqlCommand comandos = new MySqlCommand(queryInserirCarrinho, conn))
             {
                 comandos.Parameters.AddWithValue("@id_cliente", VariaveisGlobais.ultimoIdClienteInserido);
-                comandos.Parameters.AddWithValue("@valor_final", VariaveisGlobais.valorFinal);
+                comandos.Parameters.AddWithValue("@valor_final", VariaveisGlobais.valorFinalTotal);
                 comandos.Parameters.AddWithValue("@id_pedido_cliente", VariaveisGlobais.ultimoIdPedidoInserido);
                 comandos.ExecuteNonQuery();
             }

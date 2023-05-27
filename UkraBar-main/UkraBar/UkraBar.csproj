@@ -141,12 +141,6 @@
     <Compile Include="MenuSanduba.Designer.cs">
       <DependentUpon>MenuSanduba.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuSobremesas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuSobremesas.Designer.cs">
-      <DependentUpon>MenuSobremesas.cs</DependentUpon>
-    </Compile>
     <Compile Include="PainelCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -402,6 +396,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ComoDeseja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-05-27 at 11.44.47.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

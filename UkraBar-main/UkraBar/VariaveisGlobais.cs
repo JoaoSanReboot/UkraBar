@@ -77,6 +77,9 @@ namespace UkraBar
 
 
         public static double valorFinal;
+        public static double valorFinalB;
+        public static double valorFinalP;
+        public static double valorFinalTotal;
 
         public static string Cpf;
 

@@ -170,12 +170,7 @@
             this.BtnBorscht = new System.Windows.Forms.Button();
             this.BtnBanosh = new System.Windows.Forms.Button();
             this.BtnBatata = new System.Windows.Forms.Button();
-            this.BtnAlemao = new System.Windows.Forms.PictureBox();
-            this.BtnVegano = new System.Windows.Forms.PictureBox();
-            this.BtnJapones = new System.Windows.Forms.PictureBox();
-            this.BtnPolones = new System.Windows.Forms.PictureBox();
-            this.BtnEspanhol = new System.Windows.Forms.PictureBox();
-            this.BtnItaliano = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelBatata.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel23.SuspendLayout();
@@ -201,12 +196,7 @@
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
             this.SideBarLateral.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnAlemao)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnVegano)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnJapones)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnPolones)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnEspanhol)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnItaliano)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBatata
@@ -231,11 +221,11 @@
             this.panelBatata.Controls.Add(this.label18);
             this.panelBatata.Controls.Add(this.panel24);
             this.panelBatata.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelBatata.Location = new System.Drawing.Point(356, 102);
-            this.panelBatata.MaximumSize = new System.Drawing.Size(0, 486);
+            this.panelBatata.Location = new System.Drawing.Point(397, 102);
+            this.panelBatata.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelBatata.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelBatata.Name = "panelBatata";
-            this.panelBatata.Size = new System.Drawing.Size(0, 486);
+            this.panelBatata.Size = new System.Drawing.Size(707, 486);
             this.panelBatata.TabIndex = 60;
             this.panelBatata.Visible = false;
             // 
@@ -302,7 +292,7 @@
             this.panel19.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel19.Location = new System.Drawing.Point(5, 481);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(0, 5);
+            this.panel19.Size = new System.Drawing.Size(697, 5);
             this.panel19.TabIndex = 17;
             // 
             // panel20
@@ -320,14 +310,14 @@
             this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel21.Location = new System.Drawing.Point(0, 0);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(0, 5);
+            this.panel21.Size = new System.Drawing.Size(702, 5);
             this.panel21.TabIndex = 15;
             // 
             // panel22
             // 
             this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.panel22.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel22.Location = new System.Drawing.Point(-5, 0);
+            this.panel22.Location = new System.Drawing.Point(702, 0);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(5, 486);
             this.panel22.TabIndex = 14;
@@ -372,7 +362,7 @@
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(65, 24);
             this.label16.TabIndex = 10;
-            this.label16.Text = "22,00";
+            this.label16.Text = "23,00";
             // 
             // BoxCQuantidadeB
             // 
@@ -498,11 +488,11 @@
             this.panelFrango.Controls.Add(this.lblItaliano);
             this.panelFrango.Controls.Add(this.panelFundo);
             this.panelFrango.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelFrango.Location = new System.Drawing.Point(356, 103);
-            this.panelFrango.MaximumSize = new System.Drawing.Size(0, 486);
+            this.panelFrango.Location = new System.Drawing.Point(397, 102);
+            this.panelFrango.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelFrango.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelFrango.Name = "panelFrango";
-            this.panelFrango.Size = new System.Drawing.Size(0, 486);
+            this.panelFrango.Size = new System.Drawing.Size(707, 486);
             this.panelFrango.TabIndex = 52;
             this.panelFrango.Visible = false;
             // 
@@ -569,7 +559,7 @@
             this.panelBorder3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelBorder3.Location = new System.Drawing.Point(5, 481);
             this.panelBorder3.Name = "panelBorder3";
-            this.panelBorder3.Size = new System.Drawing.Size(0, 5);
+            this.panelBorder3.Size = new System.Drawing.Size(697, 5);
             this.panelBorder3.TabIndex = 17;
             // 
             // PanelBorder2
@@ -587,14 +577,14 @@
             this.panelBorder1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBorder1.Location = new System.Drawing.Point(0, 0);
             this.panelBorder1.Name = "panelBorder1";
-            this.panelBorder1.Size = new System.Drawing.Size(0, 5);
+            this.panelBorder1.Size = new System.Drawing.Size(702, 5);
             this.panelBorder1.TabIndex = 15;
             // 
             // panelBorder
             // 
             this.panelBorder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.panelBorder.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelBorder.Location = new System.Drawing.Point(-5, 0);
+            this.panelBorder.Location = new System.Drawing.Point(702, 0);
             this.panelBorder.Name = "panelBorder";
             this.panelBorder.Size = new System.Drawing.Size(5, 486);
             this.panelBorder.TabIndex = 14;
@@ -639,7 +629,7 @@
             this.lblPreço.Name = "lblPreço";
             this.lblPreço.Size = new System.Drawing.Size(65, 24);
             this.lblPreço.TabIndex = 10;
-            this.lblPreço.Text = "24,00";
+            this.lblPreço.Text = "45,00";
             // 
             // BoxCquantidadeF
             // 
@@ -765,11 +755,11 @@
             this.panelPerohe.Controls.Add(this.label24);
             this.panelPerohe.Controls.Add(this.panel30);
             this.panelPerohe.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelPerohe.Location = new System.Drawing.Point(356, 103);
-            this.panelPerohe.MaximumSize = new System.Drawing.Size(0, 486);
+            this.panelPerohe.Location = new System.Drawing.Point(397, 103);
+            this.panelPerohe.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelPerohe.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelPerohe.Name = "panelPerohe";
-            this.panelPerohe.Size = new System.Drawing.Size(0, 486);
+            this.panelPerohe.Size = new System.Drawing.Size(707, 486);
             this.panelPerohe.TabIndex = 61;
             this.panelPerohe.Visible = false;
             // 
@@ -836,7 +826,7 @@
             this.panel25.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel25.Location = new System.Drawing.Point(5, 481);
             this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(0, 5);
+            this.panel25.Size = new System.Drawing.Size(697, 5);
             this.panel25.TabIndex = 17;
             // 
             // panel26
@@ -854,14 +844,14 @@
             this.panel27.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel27.Location = new System.Drawing.Point(0, 0);
             this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(0, 5);
+            this.panel27.Size = new System.Drawing.Size(702, 5);
             this.panel27.TabIndex = 15;
             // 
             // panel28
             // 
             this.panel28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.panel28.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel28.Location = new System.Drawing.Point(-5, 0);
+            this.panel28.Location = new System.Drawing.Point(702, 0);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(5, 486);
             this.panel28.TabIndex = 14;
@@ -906,7 +896,7 @@
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(65, 24);
             this.label22.TabIndex = 10;
-            this.label22.Text = "25,00";
+            this.label22.Text = "32,00";
             // 
             // BoxCQuantidadeP
             // 
@@ -1032,11 +1022,11 @@
             this.panelHolubtsi.Controls.Add(this.lblIberico);
             this.panelHolubtsi.Controls.Add(this.panel7);
             this.panelHolubtsi.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelHolubtsi.Location = new System.Drawing.Point(356, 103);
-            this.panelHolubtsi.MaximumSize = new System.Drawing.Size(0, 486);
+            this.panelHolubtsi.Location = new System.Drawing.Point(397, 103);
+            this.panelHolubtsi.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelHolubtsi.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelHolubtsi.Name = "panelHolubtsi";
-            this.panelHolubtsi.Size = new System.Drawing.Size(0, 486);
+            this.panelHolubtsi.Size = new System.Drawing.Size(707, 486);
             this.panelHolubtsi.TabIndex = 54;
             this.panelHolubtsi.Visible = false;
             // 
@@ -1103,7 +1093,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(5, 481);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(0, 5);
+            this.panel2.Size = new System.Drawing.Size(697, 5);
             this.panel2.TabIndex = 17;
             // 
             // panel3
@@ -1121,14 +1111,14 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(0, 5);
+            this.panel4.Size = new System.Drawing.Size(702, 5);
             this.panel4.TabIndex = 15;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(-5, 0);
+            this.panel5.Location = new System.Drawing.Point(702, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(5, 486);
             this.panel5.TabIndex = 14;
@@ -1173,7 +1163,7 @@
             this.lblPreçoI.Name = "lblPreçoI";
             this.lblPreçoI.Size = new System.Drawing.Size(65, 24);
             this.lblPreçoI.TabIndex = 10;
-            this.lblPreçoI.Text = "27,00";
+            this.lblPreçoI.Text = "20,00";
             // 
             // BoxcQuantidadeH
             // 
@@ -1299,11 +1289,11 @@
             this.panelBorscht.Controls.Add(this.label12);
             this.panelBorscht.Controls.Add(this.panel18);
             this.panelBorscht.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelBorscht.Location = new System.Drawing.Point(356, 103);
-            this.panelBorscht.MaximumSize = new System.Drawing.Size(0, 486);
+            this.panelBorscht.Location = new System.Drawing.Point(397, 103);
+            this.panelBorscht.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelBorscht.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelBorscht.Name = "panelBorscht";
-            this.panelBorscht.Size = new System.Drawing.Size(0, 486);
+            this.panelBorscht.Size = new System.Drawing.Size(707, 486);
             this.panelBorscht.TabIndex = 59;
             this.panelBorscht.Visible = false;
             // 
@@ -1370,7 +1360,7 @@
             this.panel13.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel13.Location = new System.Drawing.Point(5, 481);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(0, 5);
+            this.panel13.Size = new System.Drawing.Size(697, 5);
             this.panel13.TabIndex = 17;
             // 
             // panel14
@@ -1388,14 +1378,14 @@
             this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel15.Location = new System.Drawing.Point(0, 0);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(0, 5);
+            this.panel15.Size = new System.Drawing.Size(702, 5);
             this.panel15.TabIndex = 15;
             // 
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.panel16.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel16.Location = new System.Drawing.Point(-5, 0);
+            this.panel16.Location = new System.Drawing.Point(702, 0);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(5, 486);
             this.panel16.TabIndex = 14;
@@ -1440,7 +1430,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(65, 24);
             this.label10.TabIndex = 10;
-            this.label10.Text = "24,00";
+            this.label10.Text = "28,00";
             // 
             // BoxCQuantidadeBO
             // 
@@ -1566,11 +1556,11 @@
             this.panelBanosh.Controls.Add(this.label6);
             this.panelBanosh.Controls.Add(this.panel12);
             this.panelBanosh.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelBanosh.Location = new System.Drawing.Point(356, 103);
-            this.panelBanosh.MaximumSize = new System.Drawing.Size(0, 486);
+            this.panelBanosh.Location = new System.Drawing.Point(397, 103);
+            this.panelBanosh.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelBanosh.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelBanosh.Name = "panelBanosh";
-            this.panelBanosh.Size = new System.Drawing.Size(0, 486);
+            this.panelBanosh.Size = new System.Drawing.Size(707, 486);
             this.panelBanosh.TabIndex = 58;
             this.panelBanosh.Visible = false;
             // 
@@ -1637,7 +1627,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel6.Location = new System.Drawing.Point(5, 481);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(0, 5);
+            this.panel6.Size = new System.Drawing.Size(697, 5);
             this.panel6.TabIndex = 17;
             // 
             // panel8
@@ -1655,14 +1645,14 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(0, 5);
+            this.panel9.Size = new System.Drawing.Size(702, 5);
             this.panel9.TabIndex = 15;
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel10.Location = new System.Drawing.Point(-5, 0);
+            this.panel10.Location = new System.Drawing.Point(702, 0);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(5, 486);
             this.panel10.TabIndex = 14;
@@ -1707,7 +1697,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 24);
             this.label4.TabIndex = 10;
-            this.label4.Text = "24,00";
+            this.label4.Text = "25,00";
             // 
             // BoxCQuantidadeBA
             // 
@@ -1872,10 +1862,10 @@
             this.BtnPerohe.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnPerohe.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.BtnPerohe.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnPerohe.Location = new System.Drawing.Point(990, 299);
+            this.BtnPerohe.Location = new System.Drawing.Point(1058, 321);
             this.BtnPerohe.Name = "BtnPerohe";
             this.BtnPerohe.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnPerohe.Size = new System.Drawing.Size(281, 55);
+            this.BtnPerohe.Size = new System.Drawing.Size(228, 55);
             this.BtnPerohe.TabIndex = 63;
             this.BtnPerohe.Text = "        Comprar";
             this.BtnPerohe.UseVisualStyleBackColor = false;
@@ -1890,10 +1880,10 @@
             this.BtnFrango.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnFrango.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.BtnFrango.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnFrango.Location = new System.Drawing.Point(612, 299);
+            this.BtnFrango.Location = new System.Drawing.Point(649, 320);
             this.BtnFrango.Name = "BtnFrango";
             this.BtnFrango.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnFrango.Size = new System.Drawing.Size(281, 55);
+            this.BtnFrango.Size = new System.Drawing.Size(228, 55);
             this.BtnFrango.TabIndex = 62;
             this.BtnFrango.Text = "        Comprar";
             this.BtnFrango.UseVisualStyleBackColor = false;
@@ -1908,10 +1898,10 @@
             this.BtnHulubsti.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnHulubsti.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.BtnHulubsti.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnHulubsti.Location = new System.Drawing.Point(222, 596);
+            this.BtnHulubsti.Location = new System.Drawing.Point(233, 660);
             this.BtnHulubsti.Name = "BtnHulubsti";
             this.BtnHulubsti.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnHulubsti.Size = new System.Drawing.Size(281, 55);
+            this.BtnHulubsti.Size = new System.Drawing.Size(228, 55);
             this.BtnHulubsti.TabIndex = 57;
             this.BtnHulubsti.Text = "        Comprar";
             this.BtnHulubsti.UseVisualStyleBackColor = false;
@@ -1926,10 +1916,10 @@
             this.BtnBorscht.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnBorscht.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.BtnBorscht.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnBorscht.Location = new System.Drawing.Point(612, 594);
+            this.BtnBorscht.Location = new System.Drawing.Point(649, 660);
             this.BtnBorscht.Name = "BtnBorscht";
             this.BtnBorscht.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnBorscht.Size = new System.Drawing.Size(281, 55);
+            this.BtnBorscht.Size = new System.Drawing.Size(228, 55);
             this.BtnBorscht.TabIndex = 56;
             this.BtnBorscht.Text = "        Comprar";
             this.BtnBorscht.UseVisualStyleBackColor = false;
@@ -1944,10 +1934,10 @@
             this.BtnBanosh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnBanosh.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.BtnBanosh.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnBanosh.Location = new System.Drawing.Point(990, 594);
+            this.BtnBanosh.Location = new System.Drawing.Point(1058, 660);
             this.BtnBanosh.Name = "BtnBanosh";
             this.BtnBanosh.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnBanosh.Size = new System.Drawing.Size(281, 55);
+            this.BtnBanosh.Size = new System.Drawing.Size(228, 55);
             this.BtnBanosh.TabIndex = 55;
             this.BtnBanosh.Text = "        Comprar";
             this.BtnBanosh.UseVisualStyleBackColor = false;
@@ -1962,125 +1952,47 @@
             this.BtnBatata.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnBatata.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.BtnBatata.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnBatata.Location = new System.Drawing.Point(222, 293);
+            this.BtnBatata.Location = new System.Drawing.Point(233, 319);
             this.BtnBatata.Name = "BtnBatata";
             this.BtnBatata.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnBatata.Size = new System.Drawing.Size(281, 55);
+            this.BtnBatata.Size = new System.Drawing.Size(228, 55);
             this.BtnBatata.TabIndex = 53;
             this.BtnBatata.Text = "        Comprar";
             this.BtnBatata.UseVisualStyleBackColor = false;
             this.BtnBatata.Click += new System.EventHandler(this.BtnBatata_Click);
             // 
-            // BtnAlemao
+            // pictureBox1
             // 
-            this.BtnAlemao.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnAlemao.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.BtnAlemao.Image = global::UkraBar.Properties.Resources.SandubaAlemão21;
-            this.BtnAlemao.Location = new System.Drawing.Point(991, 402);
-            this.BtnAlemao.Name = "BtnAlemao";
-            this.BtnAlemao.Size = new System.Drawing.Size(284, 186);
-            this.BtnAlemao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.BtnAlemao.TabIndex = 51;
-            this.BtnAlemao.TabStop = false;
-            // 
-            // BtnVegano
-            // 
-            this.BtnVegano.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnVegano.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.BtnVegano.Image = global::UkraBar.Properties.Resources.SandubaVegano;
-            this.BtnVegano.Location = new System.Drawing.Point(613, 402);
-            this.BtnVegano.Name = "BtnVegano";
-            this.BtnVegano.Size = new System.Drawing.Size(286, 187);
-            this.BtnVegano.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.BtnVegano.TabIndex = 50;
-            this.BtnVegano.TabStop = false;
-            // 
-            // BtnJapones
-            // 
-            this.BtnJapones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnJapones.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.BtnJapones.Image = global::UkraBar.Properties.Resources.KatsuSanduba1;
-            this.BtnJapones.Location = new System.Drawing.Point(222, 402);
-            this.BtnJapones.Name = "BtnJapones";
-            this.BtnJapones.Size = new System.Drawing.Size(281, 188);
-            this.BtnJapones.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.BtnJapones.TabIndex = 49;
-            this.BtnJapones.TabStop = false;
-            // 
-            // BtnPolones
-            // 
-            this.BtnPolones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnPolones.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.BtnPolones.Image = global::UkraBar.Properties.Resources.SandubaPolones1;
-            this.BtnPolones.Location = new System.Drawing.Point(992, 102);
-            this.BtnPolones.Name = "BtnPolones";
-            this.BtnPolones.Size = new System.Drawing.Size(279, 184);
-            this.BtnPolones.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.BtnPolones.TabIndex = 48;
-            this.BtnPolones.TabStop = false;
-            // 
-            // BtnEspanhol
-            // 
-            this.BtnEspanhol.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnEspanhol.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.BtnEspanhol.Image = global::UkraBar.Properties.Resources.SandubaEspanhol;
-            this.BtnEspanhol.Location = new System.Drawing.Point(613, 102);
-            this.BtnEspanhol.Name = "BtnEspanhol";
-            this.BtnEspanhol.Size = new System.Drawing.Size(280, 184);
-            this.BtnEspanhol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.BtnEspanhol.TabIndex = 47;
-            this.BtnEspanhol.TabStop = false;
-            // 
-            // BtnItaliano
-            // 
-            this.BtnItaliano.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnItaliano.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.BtnItaliano.Image = global::UkraBar.Properties.Resources.SandubaItaliano;
-            this.BtnItaliano.Location = new System.Drawing.Point(222, 102);
-            this.BtnItaliano.Name = "BtnItaliano";
-            this.BtnItaliano.Size = new System.Drawing.Size(280, 185);
-            this.BtnItaliano.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.BtnItaliano.TabIndex = 46;
-            this.BtnItaliano.TabStop = false;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::UkraBar.Properties.Resources._1;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1370, 749);
+            this.pictureBox1.TabIndex = 66;
+            this.pictureBox1.TabStop = false;
             // 
             // MenuPratos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.panelFrango);
             this.Controls.Add(this.panelBatata);
             this.Controls.Add(this.panelPerohe);
-            this.Controls.Add(this.SideBarLateral);
-            this.Controls.Add(this.panelFrango);
             this.Controls.Add(this.panelHolubtsi);
             this.Controls.Add(this.panelBorscht);
             this.Controls.Add(this.panelBanosh);
+            this.Controls.Add(this.SideBarLateral);
             this.Controls.Add(this.BtnPerohe);
             this.Controls.Add(this.BtnFrango);
             this.Controls.Add(this.BtnHulubsti);
             this.Controls.Add(this.BtnBorscht);
             this.Controls.Add(this.BtnBanosh);
             this.Controls.Add(this.BtnBatata);
-            this.Controls.Add(this.BtnAlemao);
-            this.Controls.Add(this.BtnVegano);
-            this.Controls.Add(this.BtnJapones);
-            this.Controls.Add(this.BtnPolones);
-            this.Controls.Add(this.BtnEspanhol);
-            this.Controls.Add(this.BtnItaliano);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "MenuPratos";
             this.Text = "MenuPratos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelBatata.ResumeLayout(false);
             this.panelBatata.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -2118,14 +2030,8 @@
             this.panel11.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.SideBarLateral.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.BtnAlemao)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnVegano)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnJapones)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnPolones)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnEspanhol)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnItaliano)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -2267,17 +2173,12 @@
         private System.Windows.Forms.Button BtnBorscht;
         private System.Windows.Forms.Button BtnBanosh;
         private System.Windows.Forms.Button BtnBatata;
-        private System.Windows.Forms.PictureBox BtnAlemao;
-        private System.Windows.Forms.PictureBox BtnVegano;
-        private System.Windows.Forms.PictureBox BtnJapones;
-        private System.Windows.Forms.PictureBox BtnPolones;
-        private System.Windows.Forms.PictureBox BtnEspanhol;
-        private System.Windows.Forms.PictureBox BtnItaliano;
         private System.Windows.Forms.FlowLayoutPanel SideBarLateral;
         private System.Windows.Forms.Button BtnVoltar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button BtnSair;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
