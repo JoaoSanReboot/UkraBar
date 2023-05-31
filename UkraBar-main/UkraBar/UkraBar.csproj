@@ -418,5 +418,8 @@
   <ItemGroup>
     <None Include="Resources\c.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fast_cart_24px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

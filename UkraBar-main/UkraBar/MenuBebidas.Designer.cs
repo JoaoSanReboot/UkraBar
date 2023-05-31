@@ -28,10 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SideBarLateral = new System.Windows.Forms.FlowLayoutPanel();
-            this.BtnVoltar = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.BtnSair = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
             this.panelChaMatte = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -168,7 +165,17 @@
             this.btnSlava = new System.Windows.Forms.Button();
             this.btnChaMate = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.SideBarLateral.SuspendLayout();
+            this.SideBarLateral = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.lblMenu = new System.Windows.Forms.Label();
+            this.pbMenu = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.BtnSobre = new System.Windows.Forms.Button();
+            this.BtnAjuda = new System.Windows.Forms.Button();
+            this.BtnCarrinho = new System.Windows.Forms.Button();
+            this.BtnVoltar = new System.Windows.Forms.Button();
+            this.BtnSair = new System.Windows.Forms.Button();
+            this.SideBarTime = new System.Windows.Forms.Timer(this.components);
             this.panelChaMatte.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel23.SuspendLayout();
@@ -194,58 +201,11 @@
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SideBarLateral.SuspendLayout();
+            this.panelMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // SideBarLateral
-            // 
-            this.SideBarLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.SideBarLateral.Controls.Add(this.BtnVoltar);
-            this.SideBarLateral.Controls.Add(this.panel1);
-            this.SideBarLateral.Controls.Add(this.BtnSair);
-            this.SideBarLateral.Dock = System.Windows.Forms.DockStyle.Left;
-            this.SideBarLateral.Location = new System.Drawing.Point(0, 0);
-            this.SideBarLateral.Name = "SideBarLateral";
-            this.SideBarLateral.Size = new System.Drawing.Size(160, 749);
-            this.SideBarLateral.TabIndex = 58;
-            // 
-            // BtnVoltar
-            // 
-            this.BtnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnVoltar.FlatAppearance.BorderSize = 0;
-            this.BtnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnVoltar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnVoltar.ForeColor = System.Drawing.Color.White;
-            this.BtnVoltar.Image = global::UkraBar.Properties.Resources.reply_arrow_24px;
-            this.BtnVoltar.Location = new System.Drawing.Point(3, 3);
-            this.BtnVoltar.Name = "BtnVoltar";
-            this.BtnVoltar.Size = new System.Drawing.Size(157, 50);
-            this.BtnVoltar.TabIndex = 40;
-            this.BtnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnVoltar.UseVisualStyleBackColor = false;
-            this.BtnVoltar.Click += new System.EventHandler(this.BtnVoltar_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(3, 59);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(224, 581);
-            this.panel1.TabIndex = 44;
-            // 
-            // BtnSair
-            // 
-            this.BtnSair.BackColor = System.Drawing.Color.Red;
-            this.BtnSair.FlatAppearance.BorderSize = 0;
-            this.BtnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSair.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSair.ForeColor = System.Drawing.Color.White;
-            this.BtnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSair.Location = new System.Drawing.Point(3, 646);
-            this.BtnSair.Name = "BtnSair";
-            this.BtnSair.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.BtnSair.Size = new System.Drawing.Size(157, 50);
-            this.BtnSair.TabIndex = 41;
-            this.BtnSair.Text = "Sair";
-            this.BtnSair.UseVisualStyleBackColor = false;
             // 
             // panelChaMatte
             // 
@@ -1931,11 +1891,163 @@
             this.pictureBox1.TabIndex = 67;
             this.pictureBox1.TabStop = false;
             // 
+            // SideBarLateral
+            // 
+            this.SideBarLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.SideBarLateral.Controls.Add(this.panelMenu);
+            this.SideBarLateral.Controls.Add(this.panel1);
+            this.SideBarLateral.Controls.Add(this.BtnSair);
+            this.SideBarLateral.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SideBarLateral.Location = new System.Drawing.Point(0, 0);
+            this.SideBarLateral.MaximumSize = new System.Drawing.Size(200, 749);
+            this.SideBarLateral.MinimumSize = new System.Drawing.Size(70, 749);
+            this.SideBarLateral.Name = "SideBarLateral";
+            this.SideBarLateral.Size = new System.Drawing.Size(70, 749);
+            this.SideBarLateral.TabIndex = 68;
+            // 
+            // panelMenu
+            // 
+            this.panelMenu.Controls.Add(this.lblMenu);
+            this.panelMenu.Controls.Add(this.pbMenu);
+            this.panelMenu.Location = new System.Drawing.Point(3, 3);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(222, 116);
+            this.panelMenu.TabIndex = 42;
+            // 
+            // lblMenu
+            // 
+            this.lblMenu.AutoSize = true;
+            this.lblMenu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenu.ForeColor = System.Drawing.Color.White;
+            this.lblMenu.Location = new System.Drawing.Point(78, 37);
+            this.lblMenu.Name = "lblMenu";
+            this.lblMenu.Size = new System.Drawing.Size(54, 21);
+            this.lblMenu.TabIndex = 1;
+            this.lblMenu.Text = "Menu";
+            // 
+            // pbMenu
+            // 
+            this.pbMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbMenu.Image = global::UkraBar.Properties.Resources.squared_menu_24px;
+            this.pbMenu.Location = new System.Drawing.Point(17, 37);
+            this.pbMenu.Name = "pbMenu";
+            this.pbMenu.Size = new System.Drawing.Size(30, 28);
+            this.pbMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbMenu.TabIndex = 0;
+            this.pbMenu.TabStop = false;
+            this.pbMenu.Click += new System.EventHandler(this.pbMenu_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.BtnSobre);
+            this.panel1.Controls.Add(this.BtnAjuda);
+            this.panel1.Controls.Add(this.BtnCarrinho);
+            this.panel1.Controls.Add(this.BtnVoltar);
+            this.panel1.Location = new System.Drawing.Point(3, 125);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(197, 529);
+            this.panel1.TabIndex = 43;
+            // 
+            // BtnSobre
+            // 
+            this.BtnSobre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnSobre.FlatAppearance.BorderSize = 0;
+            this.BtnSobre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSobre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSobre.ForeColor = System.Drawing.Color.White;
+            this.BtnSobre.Image = global::UkraBar.Properties.Resources.info_24px;
+            this.BtnSobre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSobre.Location = new System.Drawing.Point(-1, 63);
+            this.BtnSobre.Name = "BtnSobre";
+            this.BtnSobre.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.BtnSobre.Size = new System.Drawing.Size(198, 50);
+            this.BtnSobre.TabIndex = 42;
+            this.BtnSobre.Text = "              Sobre";
+            this.BtnSobre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSobre.UseVisualStyleBackColor = false;
+            // 
+            // BtnAjuda
+            // 
+            this.BtnAjuda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnAjuda.FlatAppearance.BorderSize = 0;
+            this.BtnAjuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAjuda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAjuda.ForeColor = System.Drawing.Color.White;
+            this.BtnAjuda.Image = global::UkraBar.Properties.Resources.ask_question_24px;
+            this.BtnAjuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAjuda.Location = new System.Drawing.Point(-1, 123);
+            this.BtnAjuda.Name = "BtnAjuda";
+            this.BtnAjuda.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.BtnAjuda.Size = new System.Drawing.Size(198, 50);
+            this.BtnAjuda.TabIndex = 43;
+            this.BtnAjuda.Text = "              Ajuda";
+            this.BtnAjuda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAjuda.UseVisualStyleBackColor = false;
+            // 
+            // BtnCarrinho
+            // 
+            this.BtnCarrinho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnCarrinho.FlatAppearance.BorderSize = 0;
+            this.BtnCarrinho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCarrinho.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCarrinho.ForeColor = System.Drawing.Color.White;
+            this.BtnCarrinho.Image = global::UkraBar.Properties.Resources.fast_cart_24px;
+            this.BtnCarrinho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCarrinho.Location = new System.Drawing.Point(0, 3);
+            this.BtnCarrinho.Name = "BtnCarrinho";
+            this.BtnCarrinho.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.BtnCarrinho.Size = new System.Drawing.Size(197, 50);
+            this.BtnCarrinho.TabIndex = 41;
+            this.BtnCarrinho.Text = "Carrinho";
+            this.BtnCarrinho.UseVisualStyleBackColor = false;
+            this.BtnCarrinho.Click += new System.EventHandler(this.BtnCarrinho_Click);
+            // 
+            // BtnVoltar
+            // 
+            this.BtnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnVoltar.FlatAppearance.BorderSize = 0;
+            this.BtnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnVoltar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVoltar.ForeColor = System.Drawing.Color.White;
+            this.BtnVoltar.Image = global::UkraBar.Properties.Resources.reply_arrow_24px;
+            this.BtnVoltar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnVoltar.Location = new System.Drawing.Point(-3, 183);
+            this.BtnVoltar.Name = "BtnVoltar";
+            this.BtnVoltar.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.BtnVoltar.Size = new System.Drawing.Size(197, 50);
+            this.BtnVoltar.TabIndex = 40;
+            this.BtnVoltar.Text = "Voltar";
+            this.BtnVoltar.UseVisualStyleBackColor = false;
+            this.BtnVoltar.Click += new System.EventHandler(this.BtnVoltar_Click_1);
+            // 
+            // BtnSair
+            // 
+            this.BtnSair.BackColor = System.Drawing.Color.Red;
+            this.BtnSair.FlatAppearance.BorderSize = 0;
+            this.BtnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSair.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSair.ForeColor = System.Drawing.Color.White;
+            this.BtnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSair.Location = new System.Drawing.Point(3, 660);
+            this.BtnSair.Name = "BtnSair";
+            this.BtnSair.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.BtnSair.Size = new System.Drawing.Size(195, 50);
+            this.BtnSair.TabIndex = 41;
+            this.BtnSair.Text = "Sair";
+            this.BtnSair.UseVisualStyleBackColor = false;
+            this.BtnSair.Click += new System.EventHandler(this.BtnSair_Click);
+            // 
+            // SideBarTime
+            // 
+            this.SideBarTime.Interval = 10;
+            this.SideBarTime.Tick += new System.EventHandler(this.SideBarTime_Tick);
+            // 
             // MenuBebidas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.SideBarLateral);
             this.Controls.Add(this.panelPolaka);
             this.Controls.Add(this.panelChaMatte);
             this.Controls.Add(this.panelMacaAmor);
@@ -1946,7 +2058,6 @@
             this.Controls.Add(this.btnMoniche);
             this.Controls.Add(this.btnCaipirinha);
             this.Controls.Add(this.btnMacaAmor);
-            this.Controls.Add(this.SideBarLateral);
             this.Controls.Add(this.btnSlava);
             this.Controls.Add(this.btnChaMate);
             this.Controls.Add(this.pictureBox1);
@@ -1954,7 +2065,6 @@
             this.Name = "MenuBebidas";
             this.Text = "MenuBebidas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.SideBarLateral.ResumeLayout(false);
             this.panelChaMatte.ResumeLayout(false);
             this.panelChaMatte.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -1992,6 +2102,11 @@
             this.panel11.PerformLayout();
             this.panel12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.SideBarLateral.ResumeLayout(false);
+            this.panelMenu.ResumeLayout(false);
+            this.panelMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2003,10 +2118,6 @@
         private System.Windows.Forms.Button btnCaipirinha;
         private System.Windows.Forms.Button btnChaMate;
         private System.Windows.Forms.Button btnSlava;
-        private System.Windows.Forms.FlowLayoutPanel SideBarLateral;
-        private System.Windows.Forms.Button BtnVoltar;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button BtnSair;
         private System.Windows.Forms.Panel panelChaMatte;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TextBox BoxValorfinalC;
@@ -2138,5 +2249,16 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button BtnPolaka;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.FlowLayoutPanel SideBarLateral;
+        private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.Label lblMenu;
+        private System.Windows.Forms.PictureBox pbMenu;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button BtnSobre;
+        private System.Windows.Forms.Button BtnAjuda;
+        private System.Windows.Forms.Button BtnCarrinho;
+        private System.Windows.Forms.Button BtnVoltar;
+        private System.Windows.Forms.Button BtnSair;
+        private System.Windows.Forms.Timer SideBarTime;
     }
 }

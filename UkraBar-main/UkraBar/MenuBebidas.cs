@@ -366,12 +366,58 @@ namespace UkraBar
             BoxValorfinalP.Text = VariaveisGlobais.valorPolaka.ToString() + ",00";
         }
 
-        private void BtnVoltar_Click(object sender, EventArgs e)
+        bool sideBarMenuExpand1;
+        private void SideBarTime_Tick(object sender, EventArgs e)
         {
+            if (sideBarMenuExpand1)
+            {
+                SideBarLateral.Width -= 30;    //Declara o caso do Panel estiver com Determinado tamanho.
+                if (SideBarLateral.Width == SideBarLateral.MinimumSize.Width)
+                {
 
+                    sideBarMenuExpand1 = false;//Deixa o Bool False.
+                    SideBarTime.Stop();//Para o TimerTick
+                }//Se estiver executa o comando.
+            } //Se o Bool Estiver Sim.
+            else
+            {
+
+                SideBarLateral.Width += 10;    //Declara o caso do Panel estiver com Determinado tamanho.
+                if (SideBarLateral.Width == SideBarLateral.MaximumSize.Width)
+                {
+
+                    sideBarMenuExpand1 = true; //Deixa o Bool True.
+                    SideBarTime.Stop();      //Para o TimerTick
+                }//Se estiver executa o comando.
+            }//Se o Bool Estiver Não.
+        }
+
+        private void pbMenu_Click(object sender, EventArgs e)
+        {
+            SideBarTime.Start();
+        }
+
+        private void BtnVoltar_Click_1(object sender, EventArgs e)
+        {
             MenuEscolha Escolha = new MenuEscolha();
             this.Hide();
             Escolha.ShowDialog();
+            this.Close();
+        }
+
+        private void BtnSair_Click(object sender, EventArgs e)
+        {
+            Clientes cliente = new Clientes();
+            this.Hide();
+            cliente.ShowDialog();
+            this.Close();
+        }
+
+        private void BtnCarrinho_Click(object sender, EventArgs e)
+        {
+            Carrinho carrinho = new Carrinho();
+            this.Hide();
+            carrinho.ShowDialog();
             this.Close();
         }
     }

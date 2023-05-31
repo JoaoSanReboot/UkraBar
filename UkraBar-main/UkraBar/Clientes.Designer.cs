@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.BtnCpfCad = new System.Windows.Forms.Button();
-            this.FundoCpf = new System.Windows.Forms.PictureBox();
             this.PanelCpfNota = new System.Windows.Forms.Panel();
             this.BtnSim = new System.Windows.Forms.Button();
             this.BtnNao = new System.Windows.Forms.Button();
             this.BoxCpf = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.FundoCpf)).BeginInit();
+            this.FundoCpf = new System.Windows.Forms.PictureBox();
             this.PanelCpfNota.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FundoCpf)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnCpfCad
@@ -52,16 +52,6 @@
             this.BtnCpfCad.Text = "AVANÇAR";
             this.BtnCpfCad.UseVisualStyleBackColor = false;
             this.BtnCpfCad.Click += new System.EventHandler(this.BtnCpfCad_Click);
-            // 
-            // FundoCpf
-            // 
-            this.FundoCpf.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FundoCpf.Image = global::UkraBar.Properties.Resources.TelaCpf;
-            this.FundoCpf.Location = new System.Drawing.Point(0, 0);
-            this.FundoCpf.Name = "FundoCpf";
-            this.FundoCpf.Size = new System.Drawing.Size(1270, 749);
-            this.FundoCpf.TabIndex = 0;
-            this.FundoCpf.TabStop = false;
             // 
             // PanelCpfNota
             // 
@@ -114,6 +104,16 @@
             this.BoxCpf.TabIndex = 4;
             this.BoxCpf.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // FundoCpf
+            // 
+            this.FundoCpf.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FundoCpf.Image = global::UkraBar.Properties.Resources.TelaCpf;
+            this.FundoCpf.Location = new System.Drawing.Point(0, 0);
+            this.FundoCpf.Name = "FundoCpf";
+            this.FundoCpf.Size = new System.Drawing.Size(1270, 749);
+            this.FundoCpf.TabIndex = 0;
+            this.FundoCpf.TabStop = false;
+            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -127,20 +127,19 @@
             this.Text = "Clientes";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Clientes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.FundoCpf)).EndInit();
             this.PanelCpfNota.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.FundoCpf)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox FundoCpf;
         private System.Windows.Forms.Button BtnCpfCad;
         private System.Windows.Forms.Panel PanelCpfNota;
         private System.Windows.Forms.Button BtnNao;
         private System.Windows.Forms.Button BtnSim;
         private System.Windows.Forms.TextBox BoxCpf;
+        private System.Windows.Forms.PictureBox FundoCpf;
     }
 }

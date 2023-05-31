@@ -26,10 +26,17 @@ namespace UkraBar
 
             VariaveisGlobais.valorFinalTotal = VariaveisGlobais.valorFinal + VariaveisGlobais.valorFinalB + VariaveisGlobais.valorFinalP;  
             
-            _NomeCliente MenuNome = new _NomeCliente();
-            this.Hide();
-            MenuNome.ShowDialog();
-            this.Close();
+            if(VariaveisGlobais.valorFinalTotal == 0)
+            {
+                MessageBox.Show("Seu carrinho está vazio!");
+            }
+            else
+            {
+                _NomeCliente MenuNome = new _NomeCliente();
+                this.Hide();
+                MenuNome.ShowDialog();
+                this.Close();
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

@@ -368,8 +368,45 @@ namespace UkraBar
             ResetVariaveis();
             ResetBox();
         }
+        bool sideBarMenuExpand1;
+        private void SideBarTime_Tick(object sender, EventArgs e)
+        {
+            if (sideBarMenuExpand1)
+            {
+                SideBarLateral.Width -= 30;    //Declara o caso do Panel estiver com Determinado tamanho.
+                if (SideBarLateral.Width == SideBarLateral.MinimumSize.Width)
+                {
 
-        private void BtnSair_Click(object sender, EventArgs e)
+                    sideBarMenuExpand1 = false;//Deixa o Bool False.
+                    SideBarTime.Stop();//Para o TimerTick
+                }//Se estiver executa o comando.
+            } //Se o Bool Estiver Sim.
+            else
+            {
+
+                SideBarLateral.Width += 10;    //Declara o caso do Panel estiver com Determinado tamanho.
+                if (SideBarLateral.Width == SideBarLateral.MaximumSize.Width)
+                {
+
+                    sideBarMenuExpand1 = true; //Deixa o Bool True.
+                    SideBarTime.Stop();      //Para o TimerTick
+                }//Se estiver executa o comando.
+            }//Se o Bool Estiver Não.
+        }
+
+        private void pbMenu_Click(object sender, EventArgs e)
+        {
+            SideBarTime.Start();
+        }
+        private void BtnVoltar_Click_1(object sender, EventArgs e)
+        {
+            MenuEscolha Escolha = new MenuEscolha();
+            this.Hide();
+            Escolha.ShowDialog();
+            this.Close();
+        }
+
+        private void BtnSair_Click_1(object sender, EventArgs e)
         {
             Clientes cliente = new Clientes();
             this.Hide();
@@ -377,11 +414,11 @@ namespace UkraBar
             this.Close();
         }
 
-        private void BtnVoltar_Click(object sender, EventArgs e)
+        private void BtnCarrinho_Click(object sender, EventArgs e)
         {
-            MenuEscolha Escolha = new MenuEscolha();
+            Carrinho carrinho = new Carrinho();
             this.Hide();
-            Escolha.ShowDialog();
+            carrinho.ShowDialog();
             this.Close();
         }
     }

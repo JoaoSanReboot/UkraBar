@@ -363,6 +363,16 @@ namespace UkraBar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fast_cart_24px {
+            get {
+                object obj = ResourceManager.GetObject("fast_cart_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap filled_circle_16px {
             get {
                 object obj = ResourceManager.GetObject("filled_circle_16px", resourceCulture);

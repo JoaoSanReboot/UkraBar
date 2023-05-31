@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace UkraBar
 {
@@ -25,6 +26,8 @@ namespace UkraBar
         public MySqlConnection conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
         public string connectionString = "SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;";
         public MySqlCommand comando;
+        public MySqlDataReader reader;
+        public DataTable table;
 
         private void Clientes_Load(object sender, EventArgs e)
         {
@@ -40,7 +43,7 @@ namespace UkraBar
         {
             conn.Open();
             VariaveisGlobais.Cpf = Convert.ToString(BoxCpf.Text);
-            string queryInserirCliente = ("INSERT INTO cliente (cpf_cliente) VALUES (@cpf_cliente)");
+            string queryInserirCliente = "INSERT INTO cliente (cpf_cliente) VALUES (@cpf_cliente)";
 
             using (MySqlCommand comandos = new MySqlCommand(queryInserirCliente, conn))
             {
@@ -58,20 +61,21 @@ namespace UkraBar
 
         private void BtnCpfCad_Click(object sender, EventArgs e)
         {
-       
-            if (BoxCpf.Text.Length > 0 || BoxCpf.Text.Length < 10) 
+
+            if (BoxCpf.Text.Length < 10)
             {
                 MessageBox.Show("Você não insiriu todos os dado");
             }
-                if (BoxCpf.Text.Length == 11)
+            if (BoxCpf.Text.Length == 11)
             {
+
                 conn.Open();
                 VariaveisGlobais.Cpf = Convert.ToString(BoxCpf.Text);
-                string queryInserirCliente = ("INSERT INTO cliente (cpf_cliente) VALUES ('" + VariaveisGlobais.Cpf + "')");
-                    
+                string queryInserirCliente = "INSERT INTO cliente (cpf_cliente) VALUES ('" + VariaveisGlobais.Cpf + "')";
+
                 using (MySqlCommand comandos = new MySqlCommand(queryInserirCliente, conn))
-                {   
-                    comandos.Parameters.AddWithValue("@cpf_cliente", VariaveisGlobais.Cpf);      
+                {
+                    comandos.Parameters.AddWithValue("@cpf_cliente", VariaveisGlobais.Cpf);
                     comandos.ExecuteNonQuery();
                     VariaveisGlobais.ultimoIdClienteInserido = (int)comandos.LastInsertedId;
                 }
@@ -80,10 +84,14 @@ namespace UkraBar
                 this.Hide();
                 menuEscolha.ShowDialog();
                 this.Close();
-                conn.Close();
 
+                conn.Close();
             }
         }
     }
-
 }
+
+        
+    
+
+
