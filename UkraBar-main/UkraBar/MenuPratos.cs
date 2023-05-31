@@ -51,19 +51,19 @@ namespace UkraBar
         public void ResetBox()
         {
 
-            BoxCquantidadeF.Text = "";
-            BoxCQuantidadeB.Text = "";
-            BoxCQuantidadeBO.Text = "";
-            BoxcQuantidadeH.Text = "";
-            BoxCQuantidadeBA.Text = "";
-            BoxCQuantidadeP.Text = "";
+            BoxCquantidadeF.Text = "1";
+            BoxCQuantidadeB.Text = "1";
+            BoxCQuantidadeBO.Text = "1";
+            BoxcQuantidadeH.Text = "1";
+            BoxCQuantidadeBA.Text = "1";
+            BoxCQuantidadeP.Text = "1";
 
-            BoxValorfinalP.Text = "";
-            BoxValorfinalBO.Text = "";
-            BoxValorfinalBA.Text = "";
-            BoxValorfinalH.Text = "";
-            BoxValorfinalF.Text = "";
-            BoxValorfinalB.Text = "";
+            BoxValorfinalP.Text = "32,00";
+            BoxValorfinalBO.Text = "28,00";
+            BoxValorfinalBA.Text = "25,00";
+            BoxValorfinalH.Text = "20,00";
+            BoxValorfinalF.Text = "45,00";
+            BoxValorfinalB.Text = "23,00";
 
         }
 
@@ -288,42 +288,42 @@ namespace UkraBar
         {
             VariaveisGlobais.quantidadeBatata++;
             AtualizarValor();
-            VariaveisGlobais.valorBatata = VariaveisGlobais.quantidadeBatata * 23;
+            VariaveisGlobais.valorBatata = VariaveisGlobais.quantidadeBatata * 23.00;
             BoxValorfinalB.Text = VariaveisGlobais.valorBatata.ToString() + ",00";
         }
         private void BtnMaisP_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadePerohe++;
             AtualizarValor();
-            VariaveisGlobais.valorPerohe = VariaveisGlobais.quantidadePerohe * 32;
+            VariaveisGlobais.valorPerohe = VariaveisGlobais.quantidadePerohe * 32.00;
             BoxValorfinalP.Text = VariaveisGlobais.valorPerohe.ToString() + ",00";
         }
         private void BtnMaisF_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadeFrango++;
             AtualizarValor();
-            VariaveisGlobais.valorFrango = VariaveisGlobais.quantidadeFrango * 45;
+            VariaveisGlobais.valorFrango = VariaveisGlobais.quantidadeFrango * 45.00;
             BoxValorfinalF.Text = VariaveisGlobais.valorFrango.ToString() + ",00";
         }
         private void BtnMaisH_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadeHulubsti++;
             AtualizarValor();
-            VariaveisGlobais.valorHulubsti = VariaveisGlobais.quantidadeHulubsti * 20;
+            VariaveisGlobais.valorHulubsti = VariaveisGlobais.quantidadeHulubsti * 20.00;
             BoxValorfinalH.Text = VariaveisGlobais.valorHulubsti.ToString() + ",00";
         }
         private void BtnMaisBO_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadeBorscht++;
             AtualizarValor();
-            VariaveisGlobais.valorBorscht = VariaveisGlobais.quantidadeBorscht * 28;
+            VariaveisGlobais.valorBorscht = VariaveisGlobais.quantidadeBorscht * 28.00;
             BoxValorfinalBO.Text = VariaveisGlobais.valorBorscht.ToString() + ",00";
         }
         private void BtnMaisBA_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadeBanosh++;
             AtualizarValor();
-            VariaveisGlobais.valorBanosh = VariaveisGlobais.quantidadeBanosh * 25;
+            VariaveisGlobais.valorBanosh = VariaveisGlobais.quantidadeBanosh * 25.00;
             BoxValorfinalBA.Text = VariaveisGlobais.valorBanosh.ToString() + ",00";
         }
 

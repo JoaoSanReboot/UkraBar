@@ -25,48 +25,6 @@ namespace UkraBar
         public MySqlConnection conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
         public string connectionString = "SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;";
         public MySqlCommand comando;
-        public MySqlDataReader reader;
-        public DataTable table;
-
-
-        //Publics Abrir e Fechar Conexão com o Banco de Dados.
-        public void AbrirConexão()
-        {
-            //Se o status da conexão estiver fechada então abrir.
-            if (conn.State == ConnectionState.Closed)
-            {
-                conn.Open();
-            }
-        }
-
-        public void FecharConexão()
-        {
-            //Se o status da conexão estiver aberta então fechar.
-            if (conn.State == ConnectionState.Open)
-            {
-                conn.Close();
-            }
-        }
-
-        //Public Executar comandos no banco de dados.
-        public void executarQuery(string query)
-        {
-            try
-            {
-                AbrirConexão(); //Abre Conexão.
-                comando = new MySqlCommand(query, conn); //Declara comandos para MySql.
-            }
-            //Se uma exceção for encontrada Mostrar Error Message
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                //Depois de Executar tudo Fechar.
-                FecharConexão();
-            }
-        }
 
         private void Clientes_Load(object sender, EventArgs e)
         {
@@ -80,19 +38,32 @@ namespace UkraBar
 
         private void BtnNao_Click(object sender, EventArgs e)
         {
+            conn.Open();
+            VariaveisGlobais.Cpf = Convert.ToString(BoxCpf.Text);
+            string queryInserirCliente = ("INSERT INTO cliente (cpf_cliente) VALUES (@cpf_cliente)");
+
+            using (MySqlCommand comandos = new MySqlCommand(queryInserirCliente, conn))
+            {
+                comandos.Parameters.AddWithValue("@cpf_cliente", "Sem Cpf");
+                comandos.ExecuteNonQuery();
+                VariaveisGlobais.ultimoIdClienteInserido = (int)comandos.LastInsertedId;
+            }
+
             MenuEscolha menuEscolha = new MenuEscolha();
             this.Hide();
             menuEscolha.ShowDialog();
             this.Close();
+            conn.Close();
         }
 
         private void BtnCpfCad_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(BoxCpf.Text))
+       
+            if (BoxCpf.Text.Length > 0 || BoxCpf.Text.Length < 10) 
             {
                 MessageBox.Show("Você não insiriu todos os dado");
             }
-            if (BoxCpf.Text.Length == 11)
+                if (BoxCpf.Text.Length == 11)
             {
                 conn.Open();
                 VariaveisGlobais.Cpf = Convert.ToString(BoxCpf.Text);

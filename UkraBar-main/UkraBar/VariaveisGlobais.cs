@@ -8,12 +8,12 @@ namespace UkraBar
 {
     internal class VariaveisGlobais
     {
-        public static int quantidadeItaliano;
-        public static int quantidadeIberico;
-        public static int quantidadePolones;
-        public static int quantidadeJapones;
-        public static int quantidadeVegetariano;
-        public static int quantidadeAlemao;
+        public static int quantidadeItaliano = 1;
+        public static int quantidadeIberico = 1;
+        public static int quantidadePolones= 1;
+        public static int quantidadeJapones = 1;
+        public static int quantidadeVegetariano = 1;
+        public static int quantidadeAlemao = 1;
 
         public static double valorItaliano;
         public static double valorIberico;
@@ -31,12 +31,12 @@ namespace UkraBar
 
         //Bebidas
 
-        public static int quantidadeChamate;
-        public static int quantidadeMaçaAmor;
-        public static int quantidadeMoniche;
-        public static int quantidadeSlava;
-        public static int quantidadeCaipirinha;
-        public static int quantidadePolaka;
+        public static int quantidadeChamate = 1;
+        public static int quantidadeMaçaAmor = 1;
+        public static int quantidadeMoniche = 1;
+        public static int quantidadeSlava = 1;
+        public static int quantidadeCaipirinha = 1;
+        public static int quantidadePolaka = 1;
 
         public static double valorChamate;
         public static double valorMaçaAmor;
@@ -54,12 +54,12 @@ namespace UkraBar
 
         //Pratos
 
-        public static int quantidadeBatata;
-        public static int quantidadeFrango;
-        public static int quantidadePerohe;
-        public static int quantidadeHulubsti;
-        public static int quantidadeBorscht;
-        public static int quantidadeBanosh;
+        public static int quantidadeBatata = 1;
+        public static int quantidadeFrango = 1;
+        public static int quantidadePerohe = 1;
+        public static int quantidadeHulubsti = 1;
+        public static int quantidadeBorscht = 1;
+        public static int quantidadeBanosh = 1;
 
         public static double valorBatata;
         public static double valorFrango;

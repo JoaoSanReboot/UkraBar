@@ -326,21 +326,21 @@ namespace UkraBar
         {
             VariaveisGlobais.quantidadeCaipirinha++;
             AtualizarValor();
-            VariaveisGlobais.valorCaipirinha = VariaveisGlobais.quantidadeCaipirinha * 16;
+            VariaveisGlobais.valorCaipirinha = VariaveisGlobais.quantidadeCaipirinha * 16.00;
             BoxValorfinalCA.Text = VariaveisGlobais.valorCaipirinha.ToString() + ",00";
         }
         private void BtnMaisMA_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadeMaçaAmor++;
             AtualizarValor();
-            VariaveisGlobais.valorMaçaAmor = VariaveisGlobais.quantidadeMaçaAmor * 18;
+            VariaveisGlobais.valorMaçaAmor = VariaveisGlobais.quantidadeMaçaAmor * 18.00;
             BoxValorfinalMA.Text = VariaveisGlobais.valorMaçaAmor.ToString() + ",00";
         }
         private void BtnMaisM_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadeMoniche++;
             AtualizarValor();
-            VariaveisGlobais.valorMoniche = VariaveisGlobais.quantidadeMoniche * 23;
+            VariaveisGlobais.valorMoniche = VariaveisGlobais.quantidadeMoniche * 23.00;
             BoxValorfinalM.Text = VariaveisGlobais.valorMoniche.ToString() + ",00";
         }
 
@@ -348,21 +348,21 @@ namespace UkraBar
         {
             VariaveisGlobais.quantidadeSlava++;
             AtualizarValor();
-            VariaveisGlobais.valorSlava = VariaveisGlobais.quantidadeSlava * 18;
+            VariaveisGlobais.valorSlava = VariaveisGlobais.quantidadeSlava * 18.00;
             BoxValorfinalS.Text = VariaveisGlobais.valorSlava.ToString() + ",00";
         }
         private void BtnMaisC_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadeChamate++;
             AtualizarValor();
-            VariaveisGlobais.valorChamate = VariaveisGlobais.quantidadeChamate * 8;
+            VariaveisGlobais.valorChamate = VariaveisGlobais.quantidadeChamate * 8.00;
             BoxValorfinalC.Text = VariaveisGlobais.valorChamate.ToString() + ",00";
         }
         private void BtnMaisP_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadePolaka++;
             AtualizarValor();
-            VariaveisGlobais.valorPolaka = VariaveisGlobais.quantidadePolaka * 26;
+            VariaveisGlobais.valorPolaka = VariaveisGlobais.quantidadePolaka * 26.00;
             BoxValorfinalP.Text = VariaveisGlobais.valorPolaka.ToString() + ",00";
         }
 

@@ -221,31 +221,31 @@ namespace UkraBar
         public void ResetVariaveis()
         {
 
-         VariaveisGlobais.quantidadeItaliano = 0;
-         VariaveisGlobais.quantidadeIberico = 0;
-         VariaveisGlobais.quantidadePolones = 0;
-         VariaveisGlobais.quantidadeJapones = 0;
-         VariaveisGlobais.quantidadeVegetariano = 0;
-         VariaveisGlobais.quantidadeAlemao = 0;
+         VariaveisGlobais.quantidadeItaliano = 1;
+         VariaveisGlobais.quantidadeIberico = 1;
+         VariaveisGlobais.quantidadePolones = 1;
+         VariaveisGlobais.quantidadeJapones = 1;
+         VariaveisGlobais.quantidadeVegetariano = 1;
+         VariaveisGlobais.quantidadeAlemao = 1;
 
         }
 
         public void ResetBox()
         {
 
-            BoxCItaliano.Text = "";
-            BoxcQuantidadeI.Text = "";
-            BoxCQuantidadeZ.Text = "";
-            BoxCQuantidadeK.Text = "";
-            BoxCQuantidadeV.Text = "";
-            BoxCQuantidadeA.Text = "";
+            BoxCItaliano.Text = "1";
+            BoxcQuantidadeI.Text = "1";
+            BoxCQuantidadeZ.Text = "1";
+            BoxCQuantidadeK.Text = "1";
+            BoxCQuantidadeV.Text = "1";
+            BoxCQuantidadeA.Text = "1";
 
-            BoxValorfinalI.Text = "";
-            BoxValorfinalIB.Text = "";
-            BoxValorfinal.Text = "";
-            BoxValorfinalK.Text = "";
-            BoxValorfinalV.Text = "";
-            BoxValorfinalZ.Text = "";
+            BoxValorfinalI.Text = "24,00";
+            BoxValorfinalIB.Text = "27,00";
+            BoxValorfinal.Text = "24,00";
+            BoxValorfinalK.Text = "24,00";
+            BoxValorfinalV.Text = "22,00";
+            BoxValorfinalZ.Text = "25,00";
 
         }
 
@@ -254,7 +254,7 @@ namespace UkraBar
 
             VariaveisGlobais.quantidadeItaliano++;
             AtualizarValor();
-            VariaveisGlobais.valorItaliano = VariaveisGlobais.quantidadeItaliano * 24;
+            VariaveisGlobais.valorItaliano = VariaveisGlobais.quantidadeItaliano * 24.00;
             BoxValorfinalI.Text = VariaveisGlobais.valorItaliano.ToString() + ",00";
         }
 
@@ -262,7 +262,7 @@ namespace UkraBar
         {
             VariaveisGlobais.quantidadeIberico++;
             AtualizarValor();
-            VariaveisGlobais.valorIberico=VariaveisGlobais.quantidadeIberico* 27;
+            VariaveisGlobais.valorIberico=VariaveisGlobais.quantidadeIberico* 27.00;
             BoxValorfinalIB.Text = VariaveisGlobais.valorIberico.ToString() + ",00";
         }
 
@@ -270,28 +270,28 @@ namespace UkraBar
         {
             VariaveisGlobais.quantidadePolones++;
             AtualizarValor();
-            VariaveisGlobais.valorPolones = VariaveisGlobais.quantidadePolones * 24;
+            VariaveisGlobais.valorPolones = VariaveisGlobais.quantidadePolones * 24.00;
             BoxValorfinalZ.Text = VariaveisGlobais.valorPolones.ToString() + ",00";
         }
         private void BtnMaisK_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadeJapones++;
             AtualizarValor();
-            VariaveisGlobais.valorJapones = VariaveisGlobais.quantidadeJapones * 24;
+            VariaveisGlobais.valorJapones = VariaveisGlobais.quantidadeJapones * 24.00;
             BoxValorfinalK.Text = VariaveisGlobais.valorJapones.ToString() + ",00";
         }
         private void BtnMaisV_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadeVegetariano++;
             AtualizarValor();
-            VariaveisGlobais.valorVegetariano = VariaveisGlobais.quantidadeVegetariano * 22;
+            VariaveisGlobais.valorVegetariano = VariaveisGlobais.quantidadeVegetariano * 22.00;
             BoxValorfinalV.Text = VariaveisGlobais.valorVegetariano.ToString() + ",00";
         }
         private void BtnMaisA_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.quantidadeAlemao++;
             AtualizarValor();
-            VariaveisGlobais.valorAlemao = VariaveisGlobais.quantidadeAlemao * 25;
+            VariaveisGlobais.valorAlemao = VariaveisGlobais.quantidadeAlemao * 25.00;
             BoxValorfinal.Text = VariaveisGlobais.valorAlemao.ToString() + ",00";
         }
 
