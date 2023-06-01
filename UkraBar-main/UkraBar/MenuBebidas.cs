@@ -45,6 +45,17 @@ namespace UkraBar
             VariaveisGlobais.quantidadeSlava = 1;
 
         }
+        public void ResetValor()
+        {
+
+            VariaveisGlobais.valorChamate = 8.00;
+            VariaveisGlobais.valorCaipirinha = 16.00;
+            VariaveisGlobais.valorMoniche = 23.00;
+            VariaveisGlobais.valorPolaka = 26.00;
+            VariaveisGlobais.valorMaçaAmor = 18.00;
+            VariaveisGlobais.valorSlava = 18.00;
+
+        }
 
         public void ResetBox()
         {
@@ -69,6 +80,7 @@ namespace UkraBar
         {
             panelPolaka.Visible = true;
             ResetVariaveis();
+            ResetValor();
             ResetBox();
         }
 
@@ -76,6 +88,7 @@ namespace UkraBar
         {
             panelChaMatte.Visible = true;
             ResetVariaveis();
+            ResetValor();
             ResetBox();
         }
 
@@ -83,6 +96,7 @@ namespace UkraBar
         {
             panelMacaAmor.Visible = true;
             ResetVariaveis();
+            ResetValor();
             ResetBox();
         }
 
@@ -90,6 +104,7 @@ namespace UkraBar
         {
             panelMunich.Visible = true;
             ResetVariaveis();
+            ResetValor();
             ResetBox();
         }
 
@@ -97,6 +112,7 @@ namespace UkraBar
         {
             panelSlava.Visible = true;
             ResetVariaveis();
+            ResetValor();
             ResetBox();
         }
 
@@ -104,6 +120,7 @@ namespace UkraBar
         {
             panelCaipirinha.Visible = true;
             ResetVariaveis();
+            ResetValor();
             ResetBox();
         }
         private void BtnCancelarC_Click(object sender, EventArgs e)

@@ -32,6 +32,7 @@ namespace UkraBar
         private void BtnComprar_Click(object sender, EventArgs e)
         {
             panelItaliano.Visible = true;
+            VariaveisGlobais.valorItaliano = 24.00;
             ResetVariaveis();
             ResetBox();
         }
@@ -39,6 +40,7 @@ namespace UkraBar
         private void BtnIberico_Click(object sender, EventArgs e)
         {
             panelIberico.Visible = true;
+            VariaveisGlobais.valorIberico = 27.00;
             ResetVariaveis();
             ResetBox();
         }
@@ -46,6 +48,7 @@ namespace UkraBar
         private void BtnPolonesComprar_Click(object sender, EventArgs e)
         {
             panelZapiekanka.Visible = true;
+            VariaveisGlobais.valorPolones = 24.00;
             ResetVariaveis();
             ResetBox();
         }
@@ -53,18 +56,21 @@ namespace UkraBar
         private void BtnVegetariano_Click(object sender, EventArgs e)
         {
             panelVegetariano.Visible = true;
+            VariaveisGlobais.valorJapones = 24.00;
             ResetVariaveis();
             ResetBox();
         }
         private void BtnKatsuoSando_Click(object sender, EventArgs e)
         {
             panelKatsuSando.Visible = true;
+            VariaveisGlobais.valorVegetariano = 22.00;
             ResetVariaveis();
             ResetBox();
         }
         private void BtnComprarAlemao_Click(object sender, EventArgs e)
         {
             panelAlemão.Visible = true;
+            VariaveisGlobais.valorAlemao = 24.00;
             ResetVariaveis();
             ResetBox();
         }
@@ -74,33 +80,27 @@ namespace UkraBar
         private void BtnCancelarI_Click(object sender, EventArgs e)
         {
             panelItaliano.Visible = false;
-            VariaveisGlobais.valorItaliano = 0;
         }
         private void BtnCancelarIB_Click(object sender, EventArgs e)
         {
             panelIberico.Visible = false;
-            VariaveisGlobais.valorIberico = 0;
         }
         private void BtnCancelarZ_Click(object sender, EventArgs e)
         {
-            panelZapiekanka.Visible = false;
-            VariaveisGlobais.valorPolones = 0;
+            panelZapiekanka.Visible = false;    
         }
         private void BtnCancelarK_Click(object sender, EventArgs e)
         {
             panelKatsuSando.Visible = false;
-            VariaveisGlobais.valorJapones = 0;
         }
         private void BtnCancelarV_Click(object sender, EventArgs e)
         {
             panelVegetariano.Visible = false;
-            VariaveisGlobais.valorVegetariano = 0;
 
         }
         private void BtnCancelarA_Click(object sender, EventArgs e)
         {
             panelAlemão.Visible = false;
-            VariaveisGlobais.valorAlemao = 0;
         }
 
         //Todos os Btn Ok

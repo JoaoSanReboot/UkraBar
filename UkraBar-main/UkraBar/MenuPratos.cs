@@ -39,15 +39,25 @@ namespace UkraBar
         public void ResetVariaveis()
         {
 
-            VariaveisGlobais.quantidadeBatata = 0;
-            VariaveisGlobais.quantidadeFrango = 0;
-            VariaveisGlobais.quantidadeBanosh = 0;
-            VariaveisGlobais.quantidadeHulubsti = 0;
-            VariaveisGlobais.quantidadeBorscht = 0;
-            VariaveisGlobais.quantidadePerohe = 0;
+            VariaveisGlobais.quantidadeBatata = 1;
+            VariaveisGlobais.quantidadeFrango = 1;
+            VariaveisGlobais.quantidadeBanosh = 1;
+            VariaveisGlobais.quantidadeHulubsti = 1;
+            VariaveisGlobais.quantidadeBorscht = 1;
+            VariaveisGlobais.quantidadePerohe = 1;
 
         }
+        public void ResetValor()
+        {
 
+            VariaveisGlobais.valorPerohe = 32.00;
+            VariaveisGlobais.valorBorscht = 28.00;
+            VariaveisGlobais.valorBanosh = 25.00;
+            VariaveisGlobais.valorHulubsti = 20.00;
+            VariaveisGlobais.valorFrango = 45.00;
+            VariaveisGlobais.valorBatata = 23.00;
+
+        }
         public void ResetBox()
         {
 
@@ -83,7 +93,7 @@ namespace UkraBar
             conn.Close();
 
             MessageBox.Show(VariaveisGlobais.quantidadeBatata.ToString(), "Foram adicionados no Carrinho");
-            panelBatata.Visible = false;
+            panelBanosh.Visible = false;
         }
 
         private void BtnOkBO_Click(object sender, EventArgs e)
@@ -337,6 +347,7 @@ namespace UkraBar
         {
             panelBatata.Visible = true;
             ResetVariaveis();
+            ResetValor();
             ResetBox();
         }
 
@@ -344,6 +355,7 @@ namespace UkraBar
         {
             panelFrango.Visible = true;
             ResetVariaveis();
+            ResetValor();
             ResetBox();
         }
 
@@ -351,6 +363,7 @@ namespace UkraBar
         {
             panelPerohe.Visible = true;
             ResetVariaveis();
+            ResetValor();
             ResetBox();
         }
 
@@ -358,6 +371,7 @@ namespace UkraBar
         {
             panelHolubtsi.Visible = true;
             ResetVariaveis();
+            ResetValor();
             ResetBox();
         }
 
@@ -365,6 +379,7 @@ namespace UkraBar
         {
             panelBorscht.Visible = true;
             ResetVariaveis();
+            ResetValor();
             ResetBox();
         }
 
@@ -372,6 +387,7 @@ namespace UkraBar
         {
             panelBanosh.Visible = true;
             ResetVariaveis();
+            ResetValor();
             ResetBox();
         }
         bool sideBarMenuExpand1;
