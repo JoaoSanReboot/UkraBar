@@ -32,7 +32,6 @@ namespace UkraBar
         private void BtnComprar_Click(object sender, EventArgs e)
         {
             panelItaliano.Visible = true;
-            VariaveisGlobais.valorItaliano = 24.00;
             ResetVariaveis();
             ResetBox();
         }
@@ -40,7 +39,6 @@ namespace UkraBar
         private void BtnIberico_Click(object sender, EventArgs e)
         {
             panelIberico.Visible = true;
-            VariaveisGlobais.valorIberico = 27.00;
             ResetVariaveis();
             ResetBox();
         }
@@ -48,7 +46,6 @@ namespace UkraBar
         private void BtnPolonesComprar_Click(object sender, EventArgs e)
         {
             panelZapiekanka.Visible = true;
-            VariaveisGlobais.valorPolones = 24.00;
             ResetVariaveis();
             ResetBox();
         }
@@ -56,21 +53,18 @@ namespace UkraBar
         private void BtnVegetariano_Click(object sender, EventArgs e)
         {
             panelVegetariano.Visible = true;
-            VariaveisGlobais.valorJapones = 24.00;
             ResetVariaveis();
             ResetBox();
         }
         private void BtnKatsuoSando_Click(object sender, EventArgs e)
         {
             panelKatsuSando.Visible = true;
-            VariaveisGlobais.valorVegetariano = 22.00;
             ResetVariaveis();
             ResetBox();
         }
         private void BtnComprarAlemao_Click(object sender, EventArgs e)
         {
             panelAlemão.Visible = true;
-            VariaveisGlobais.valorAlemao = 24.00;
             ResetVariaveis();
             ResetBox();
         }
@@ -87,7 +81,7 @@ namespace UkraBar
         }
         private void BtnCancelarZ_Click(object sender, EventArgs e)
         {
-            panelZapiekanka.Visible = false;    
+            panelZapiekanka.Visible = false;
         }
         private void BtnCancelarK_Click(object sender, EventArgs e)
         {
@@ -106,21 +100,39 @@ namespace UkraBar
         //Todos os Btn Ok
         private void BtnOkI_Click(object sender, EventArgs e)
         {
-            conn.Open();
-            string queryInserirCarrinho = "INSERT INTO pedido_cliente (nome_produto, quantidade, valor_produto, id_cliente) VALUES (@nome_produto, @quantidade, @valor_produto, @id_cliente)";
-            using (MySqlCommand comandos = new MySqlCommand(queryInserirCarrinho, conn))
+            if (VariaveisGlobais.isInsert)
             {
-                comandos.Parameters.AddWithValue("@nome_produto", "SandubaItaliano");
-                comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeItaliano);
-                comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorItaliano);
-                comandos.Parameters.AddWithValue("@id_cliente", VariaveisGlobais.ultimoIdClienteInserido);
-                comandos.ExecuteNonQuery();
-                VariaveisGlobais.ultimoIdPedidoInserido = (int)comandos.LastInsertedId;
+                conn.Open();
+                string queryInserirCarrinho = "INSERT INTO pedido_cliente (nome_produto, quantidade, valor_produto, id_cliente) VALUES (@nome_produto, @quantidade, @valor_produto, @id_cliente)";
+                using (MySqlCommand comandos = new MySqlCommand(queryInserirCarrinho, conn))
+                {
+                    comandos.Parameters.AddWithValue("@nome_produto", "SandubaItaliano");
+                    comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeItaliano);
+                    comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorItaliano);
+                    comandos.Parameters.AddWithValue("@id_cliente", VariaveisGlobais.ultimoIdClienteInserido);
+                    comandos.ExecuteNonQuery();
+                    VariaveisGlobais.ultimoIdPedidoInserido = (int)comandos.LastInsertedId;
+                }
+                conn.Close();
+                MessageBox.Show(VariaveisGlobais.quantidadeItaliano.ToString(), "Foram adicionados no Carrinho");
+                panelItaliano.Visible = false;
+                VariaveisGlobais.isInsert = true;
             }
-            conn.Close();
-
-            MessageBox.Show(VariaveisGlobais.quantidadeItaliano.ToString(), "Foram adicionados no Carrinho");
-            panelItaliano.Visible = false;
+            else
+            {
+                conn.Open();
+                string queryAtualizar = "UPDATE pedido_cliente SET quantidade = @quantidade, valor_produto = @valor_produto WHERE @id_cliente)";
+                using (MySqlCommand comandos = new MySqlCommand(queryAtualizar, conn))
+                {
+                    comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeItaliano);
+                    comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorItaliano);
+                    comandos.Parameters.AddWithValue("@id_cliente", VariaveisGlobais.ultimoIdClienteInserido);
+                    comandos.ExecuteNonQuery();
+                }
+                conn.Close();
+                MessageBox.Show(VariaveisGlobais.quantidadeItaliano.ToString(), "Foram adicionados no Carrinho");
+                panelItaliano.Visible = false;
+            }
         }
 
         private void BtnOkK_Click(object sender, EventArgs e)
@@ -225,6 +237,7 @@ namespace UkraBar
             BoxCQuantidadeA.Text = VariaveisGlobais.quantidadeAlemao.ToString();
         }
 
+
         public void ResetVariaveis()
         {
 
@@ -235,6 +248,12 @@ namespace UkraBar
          VariaveisGlobais.quantidadeVegetariano = 1;
          VariaveisGlobais.quantidadeAlemao = 1;
 
+         VariaveisGlobais.valorAlemao = 24.00;
+         VariaveisGlobais.valorVegetariano = 22.00;
+         VariaveisGlobais.valorPolones = 24.00;
+         VariaveisGlobais.valorJapones = 24.00;
+         VariaveisGlobais.valorIberico = 27.00;          
+         VariaveisGlobais.valorItaliano = 24.00;
         }
 
         public void ResetBox()
@@ -444,12 +463,6 @@ namespace UkraBar
 
         private void BtnCarrinho_Click(object sender, EventArgs e)
         {
-            VariaveisGlobais.valorFinal = VariaveisGlobais.valorItaliano + VariaveisGlobais.valorJapones + VariaveisGlobais.valorPolones + VariaveisGlobais.valorIberico + VariaveisGlobais.valorAlemao + VariaveisGlobais.valorVegetariano;
-            VariaveisGlobais.valorFinalP = VariaveisGlobais.valorBatata + VariaveisGlobais.valorHulubsti + VariaveisGlobais.valorFrango + VariaveisGlobais.valorPerohe + VariaveisGlobais.valorBorscht + VariaveisGlobais.valorBanosh;
-            VariaveisGlobais.valorFinalB = VariaveisGlobais.valorPolaka + VariaveisGlobais.valorChamate + VariaveisGlobais.valorMaçaAmor + VariaveisGlobais.valorMoniche + VariaveisGlobais.valorSlava + VariaveisGlobais.valorCaipirinha;
-
-            VariaveisGlobais.valorFinalTotal = VariaveisGlobais.valorFinal + VariaveisGlobais.valorFinalB + VariaveisGlobais.valorFinalP;
-
             Carrinho carrinho = new Carrinho();
             this.Hide();
             carrinho.ShowDialog();

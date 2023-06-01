@@ -85,5 +85,8 @@ namespace UkraBar
 
         public static int ultimoIdClienteInserido;
         public static int ultimoIdPedidoInserido;
+
+        public static bool isInsert = true;
+
     }
 }
