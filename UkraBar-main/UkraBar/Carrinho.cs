@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Google.Protobuf.WellKnownTypes;
 
 namespace UkraBar
 {
@@ -45,18 +46,8 @@ namespace UkraBar
         }
         public void CarregarValores()
         {
-            conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
-            conn.Open();// Abre Conexão.
-
-            string query = "SELECT valor_final FROM carrinho WHERE id_cliente = '" + VariaveisGlobais.ultimoIdClienteInserido + "'";
-            comando = new MySqlCommand(query, conn); //Declara comandos que serão usados.
-            MySqlDataReader reader6 = comando.ExecuteReader(); //Lê os comandos.
-            table = new DataTable(); //Abre a Table.
-            table.Load(reader6); //Table lê os comandos.
-            DTgridValor.DataSource = table; //Renomeia Table para DTgridFunc.
-            DTgridValor.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; //Comando para alinhar as tabelas no DataGriedView.
-            conn.Close(); //Fecha Conexão 
-
+            int rowIndex = DTgridValor.Rows.Add();
+            DTgridValor.Rows[rowIndex].Cells[0].Value = VariaveisGlobais.valorFinalTotal.ToString();
         }
 
         bool sideBarMenuExpand1;
@@ -88,6 +79,22 @@ namespace UkraBar
         private void pbMenu_Click(object sender, EventArgs e)
         {
             SideBarTime.Start();
+        }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            MenuEscolha Escolha = new MenuEscolha();
+            this.Hide();
+            Escolha.ShowDialog();
+            this.Close();
+        }
+
+        private void BtnSair_Click(object sender, EventArgs e)
+        {
+            Clientes cliente = new Clientes();
+            this.Hide();
+            cliente.ShowDialog();
+            this.Close();
         }
     }
 }

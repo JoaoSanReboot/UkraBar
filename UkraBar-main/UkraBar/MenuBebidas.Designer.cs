@@ -229,7 +229,7 @@
             this.panelChaMatte.Controls.Add(this.label18);
             this.panelChaMatte.Controls.Add(this.panel24);
             this.panelChaMatte.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelChaMatte.Location = new System.Drawing.Point(442, 89);
+            this.panelChaMatte.Location = new System.Drawing.Point(347, 100);
             this.panelChaMatte.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelChaMatte.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelChaMatte.Name = "panelChaMatte";
@@ -495,7 +495,7 @@
             this.panelMacaAmor.Controls.Add(this.lblItaliano);
             this.panelMacaAmor.Controls.Add(this.panelFundo);
             this.panelMacaAmor.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelMacaAmor.Location = new System.Drawing.Point(442, 89);
+            this.panelMacaAmor.Location = new System.Drawing.Point(347, 100);
             this.panelMacaAmor.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelMacaAmor.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelMacaAmor.Name = "panelMacaAmor";
@@ -750,7 +750,7 @@
             this.panelMunich.Controls.Add(this.label24);
             this.panelMunich.Controls.Add(this.panel30);
             this.panelMunich.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelMunich.Location = new System.Drawing.Point(444, 89);
+            this.panelMunich.Location = new System.Drawing.Point(349, 100);
             this.panelMunich.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelMunich.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelMunich.Name = "panelMunich";
@@ -1007,7 +1007,7 @@
             this.panelSlava.Controls.Add(this.lblIberico);
             this.panelSlava.Controls.Add(this.panel7);
             this.panelSlava.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelSlava.Location = new System.Drawing.Point(444, 87);
+            this.panelSlava.Location = new System.Drawing.Point(349, 98);
             this.panelSlava.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelSlava.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelSlava.Name = "panelSlava";
@@ -1273,7 +1273,7 @@
             this.panelCaipirinha.Controls.Add(this.label12);
             this.panelCaipirinha.Controls.Add(this.panel18);
             this.panelCaipirinha.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelCaipirinha.Location = new System.Drawing.Point(447, 89);
+            this.panelCaipirinha.Location = new System.Drawing.Point(352, 100);
             this.panelCaipirinha.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelCaipirinha.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelCaipirinha.Name = "panelCaipirinha";
@@ -1529,7 +1529,7 @@
             this.panelPolaka.Controls.Add(this.label6);
             this.panelPolaka.Controls.Add(this.panel12);
             this.panelPolaka.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelPolaka.Location = new System.Drawing.Point(442, 89);
+            this.panelPolaka.Location = new System.Drawing.Point(347, 100);
             this.panelPolaka.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelPolaka.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelPolaka.Name = "panelPolaka";

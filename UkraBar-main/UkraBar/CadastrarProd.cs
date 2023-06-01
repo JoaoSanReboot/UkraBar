@@ -33,7 +33,7 @@ namespace UkraBar
             conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
             conn.Open();// Abre Conexão.
 
-            string query = "SELECT * FROM produto"; //Seleciona informações da tabela Cadastro Funcionário.
+            string query = "SELECT * FROM produto_loja"; //Seleciona informações da tabela Cadastro Funcionário.
             comando = new MySqlCommand(query, conn); //Declara comandos que serão usados.
             reader2 = comando.ExecuteReader(); //Lê os comandos.
             table = new DataTable(); //Abre a Table.
@@ -263,7 +263,7 @@ namespace UkraBar
         //Btn Salvar Informações no MySql.
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
-            string inserirQuery = "INSERT INTO produto (id_produto, nome_produto, descricao, valor_produto, quantidade) VALUES" +
+            string inserirQuery = "INSERT INTO produto_loja (id_produto, nome_produto, descricao, valor_produto, quantidade) VALUES" +
                 "('" + BoxcId.Text + "','" + BoxcNome.Text + "', '" + BoxcDescricao.Text + "','" + BoxcValorP.Text + "','"+ BoxcQuantidade+"')";
             executarQuery(inserirQuery);//Executa a String
             CarregarDados();        //Carrega dados na tabela.
@@ -298,7 +298,7 @@ namespace UkraBar
             {
                 conn.Open();//Abre Conexão.
                 //Declara String.
-                string Atualizar = "UPDATE produto SET nome_produto = @nome_produto, descricao = @descricao, valor_produto = @valor_produto, quantidade = @quantidade WHERE id_produto = @id_produto";
+                string Atualizar = "UPDATE produto_loja SET nome_produto = @nome_produto, descricao = @descricao, valor_produto = @valor_produto, quantidade = @quantidade WHERE id_produto = @id_produto";
                 using (MySqlCommand comando = new MySqlCommand(Atualizar, conn))//Usa strings.
                 {
                     {
@@ -352,7 +352,7 @@ namespace UkraBar
                 try
                 {
                     conn.Open();//Abre Conexão.
-                    comando = new MySqlCommand("SELECT * FROM ukrasystem.produto WHERE" +
+                    comando = new MySqlCommand("SELECT * FROM ukrasystem.produto_loja WHERE" +
                         " id_produto LIKE" + b +
                         "OR nome_produto LIKE" + b +
                         "OR descricao LIKE" + b +

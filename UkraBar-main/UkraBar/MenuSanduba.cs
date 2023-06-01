@@ -74,26 +74,33 @@ namespace UkraBar
         private void BtnCancelarI_Click(object sender, EventArgs e)
         {
             panelItaliano.Visible = false;
+            VariaveisGlobais.valorItaliano = 0;
         }
         private void BtnCancelarIB_Click(object sender, EventArgs e)
         {
             panelIberico.Visible = false;
+            VariaveisGlobais.valorIberico = 0;
         }
         private void BtnCancelarZ_Click(object sender, EventArgs e)
         {
             panelZapiekanka.Visible = false;
+            VariaveisGlobais.valorPolones = 0;
         }
         private void BtnCancelarK_Click(object sender, EventArgs e)
         {
             panelKatsuSando.Visible = false;
+            VariaveisGlobais.valorJapones = 0;
         }
         private void BtnCancelarV_Click(object sender, EventArgs e)
         {
             panelVegetariano.Visible = false;
+            VariaveisGlobais.valorVegetariano = 0;
+
         }
         private void BtnCancelarA_Click(object sender, EventArgs e)
         {
             panelAlemão.Visible = false;
+            VariaveisGlobais.valorAlemao = 0;
         }
 
         //Todos os Btn Ok
@@ -437,6 +444,12 @@ namespace UkraBar
 
         private void BtnCarrinho_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorFinal = VariaveisGlobais.valorItaliano + VariaveisGlobais.valorJapones + VariaveisGlobais.valorPolones + VariaveisGlobais.valorIberico + VariaveisGlobais.valorAlemao + VariaveisGlobais.valorVegetariano;
+            VariaveisGlobais.valorFinalP = VariaveisGlobais.valorBatata + VariaveisGlobais.valorHulubsti + VariaveisGlobais.valorFrango + VariaveisGlobais.valorPerohe + VariaveisGlobais.valorBorscht + VariaveisGlobais.valorBanosh;
+            VariaveisGlobais.valorFinalB = VariaveisGlobais.valorPolaka + VariaveisGlobais.valorChamate + VariaveisGlobais.valorMaçaAmor + VariaveisGlobais.valorMoniche + VariaveisGlobais.valorSlava + VariaveisGlobais.valorCaipirinha;
+
+            VariaveisGlobais.valorFinalTotal = VariaveisGlobais.valorFinal + VariaveisGlobais.valorFinalB + VariaveisGlobais.valorFinalP;
+
             Carrinho carrinho = new Carrinho();
             this.Hide();
             carrinho.ShowDialog();

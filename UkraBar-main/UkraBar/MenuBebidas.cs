@@ -37,31 +37,31 @@ namespace UkraBar
         public void ResetVariaveis()
         {
 
-            VariaveisGlobais.quantidadeChamate = 0;
-            VariaveisGlobais.quantidadeCaipirinha = 0;
-            VariaveisGlobais.quantidadeMoniche = 0;
-            VariaveisGlobais.quantidadePolaka = 0;
-            VariaveisGlobais.quantidadeMaçaAmor = 0;
-            VariaveisGlobais.quantidadeSlava = 0;
+            VariaveisGlobais.quantidadeChamate = 1;
+            VariaveisGlobais.quantidadeCaipirinha = 1;
+            VariaveisGlobais.quantidadeMoniche = 1;
+            VariaveisGlobais.quantidadePolaka = 1;
+            VariaveisGlobais.quantidadeMaçaAmor = 1;
+            VariaveisGlobais.quantidadeSlava = 1;
 
         }
 
         public void ResetBox()
         {
 
-            BoxcQuantidadeS.Text = "";
-            BoxCQuantidadeP.Text = "";
-            BoxCQuantidadeM.Text = "";
-            BoxquantidadeMA.Text = "";
-            BoxCQuantidadeCA.Text = "";
-            BoxCQuantidadeC.Text = "";
+            BoxcQuantidadeS.Text = "1";
+            BoxCQuantidadeP.Text = "1";
+            BoxCQuantidadeM.Text = "1";
+            BoxquantidadeMA.Text = "1";
+            BoxCQuantidadeCA.Text = "1";
+            BoxCQuantidadeC.Text = "1";  
 
-            BoxValorfinalP.Text = "";
-            BoxValorfinalCA.Text = "";
-            BoxValorfinalS.Text = "";
-            BoxValorfinalMA.Text = "";
-            BoxValorfinalM.Text = "";
-            BoxValorfinalC.Text = "";
+            BoxValorfinalP.Text = "26,00";
+            BoxValorfinalCA.Text = "16,00";
+            BoxValorfinalS.Text = "18,00";
+            BoxValorfinalMA.Text = "18,00";
+            BoxValorfinalM.Text = "23,00";
+            BoxValorfinalC.Text = "8,00";
 
         }
 
@@ -109,27 +109,33 @@ namespace UkraBar
         private void BtnCancelarC_Click(object sender, EventArgs e)
         {
             panelChaMatte.Visible = false;
+            VariaveisGlobais.valorChamate = 0;
         }
         private void BtnCancelarP_Click(object sender, EventArgs e)
         {
             panelPolaka.Visible = false;
+            VariaveisGlobais.valorPolaka = 0;
         }
         private void BtnCancelarCA_Click(object sender, EventArgs e)
         {
             panelCaipirinha.Visible = false;
+            VariaveisGlobais.valorCaipirinha = 0;
         }
         private void BtnCancelarM_Click(object sender, EventArgs e)
         {
             panelMunich.Visible = false;
+            VariaveisGlobais.valorMoniche = 0;
         }
         private void BtnCancelarMA_Click(object sender, EventArgs e)
         {
             panelMacaAmor.Visible = false;
+            VariaveisGlobais.valorMaçaAmor = 0;
         }
 
         private void BtnCancelarS_Click(object sender, EventArgs e)
         {
             panelSlava.Visible = false;
+            VariaveisGlobais.valorSlava = 0;
         }
 
         private void BtnOkP_Click(object sender, EventArgs e)
@@ -274,7 +280,7 @@ namespace UkraBar
             if (VariaveisGlobais.quantidadeCaipirinha > 0)
 
                 VariaveisGlobais.quantidadeCaipirinha--;
-            AtualizarValor();
+                AtualizarValor();
 
             if (VariaveisGlobais.valorCaipirinha > 0)
 
@@ -415,6 +421,12 @@ namespace UkraBar
 
         private void BtnCarrinho_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorFinal = VariaveisGlobais.valorItaliano + VariaveisGlobais.valorJapones + VariaveisGlobais.valorPolones + VariaveisGlobais.valorIberico + VariaveisGlobais.valorAlemao + VariaveisGlobais.valorVegetariano;
+            VariaveisGlobais.valorFinalP = VariaveisGlobais.valorBatata + VariaveisGlobais.valorHulubsti + VariaveisGlobais.valorFrango + VariaveisGlobais.valorPerohe + VariaveisGlobais.valorBorscht + VariaveisGlobais.valorBanosh;
+            VariaveisGlobais.valorFinalB = VariaveisGlobais.valorPolaka + VariaveisGlobais.valorChamate + VariaveisGlobais.valorMaçaAmor + VariaveisGlobais.valorMoniche + VariaveisGlobais.valorSlava + VariaveisGlobais.valorCaipirinha;
+
+            VariaveisGlobais.valorFinalTotal = VariaveisGlobais.valorFinal + VariaveisGlobais.valorFinalB + VariaveisGlobais.valorFinalP;
+
             Carrinho carrinho = new Carrinho();
             this.Hide();
             carrinho.ShowDialog();

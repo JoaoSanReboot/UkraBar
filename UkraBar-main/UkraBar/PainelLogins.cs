@@ -83,8 +83,8 @@ namespace UkraBar
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            PainelCliente PainelCliente = new PainelCliente();//Abre o Layout do Cliente
-            PainelCliente.Show();
+            Clientes cliente = new Clientes();//Abre o Layout do Cliente
+            cliente.Show();
             this.Hide();
         }
 

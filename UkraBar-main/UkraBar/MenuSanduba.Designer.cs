@@ -246,7 +246,7 @@
             this.panelItaliano.Controls.Add(this.lblItaliano);
             this.panelItaliano.Controls.Add(this.panelFundo);
             this.panelItaliano.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelItaliano.Location = new System.Drawing.Point(381, 120);
+            this.panelItaliano.Location = new System.Drawing.Point(373, 98);
             this.panelItaliano.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelItaliano.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelItaliano.Name = "panelItaliano";
@@ -503,7 +503,7 @@
             this.panelIberico.Controls.Add(this.lblIberico);
             this.panelIberico.Controls.Add(this.panel7);
             this.panelIberico.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelIberico.Location = new System.Drawing.Point(381, 120);
+            this.panelIberico.Location = new System.Drawing.Point(373, 98);
             this.panelIberico.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelIberico.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelIberico.Name = "panelIberico";
@@ -770,7 +770,7 @@
             this.panelZapiekanka.Controls.Add(this.label6);
             this.panelZapiekanka.Controls.Add(this.panel12);
             this.panelZapiekanka.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelZapiekanka.Location = new System.Drawing.Point(381, 120);
+            this.panelZapiekanka.Location = new System.Drawing.Point(373, 98);
             this.panelZapiekanka.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelZapiekanka.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelZapiekanka.Name = "panelZapiekanka";
@@ -1037,7 +1037,7 @@
             this.panelKatsuSando.Controls.Add(this.label12);
             this.panelKatsuSando.Controls.Add(this.panel18);
             this.panelKatsuSando.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelKatsuSando.Location = new System.Drawing.Point(381, 120);
+            this.panelKatsuSando.Location = new System.Drawing.Point(373, 98);
             this.panelKatsuSando.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelKatsuSando.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelKatsuSando.Name = "panelKatsuSando";
@@ -1304,7 +1304,7 @@
             this.panelVegetariano.Controls.Add(this.label18);
             this.panelVegetariano.Controls.Add(this.panel24);
             this.panelVegetariano.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelVegetariano.Location = new System.Drawing.Point(381, 119);
+            this.panelVegetariano.Location = new System.Drawing.Point(373, 97);
             this.panelVegetariano.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelVegetariano.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelVegetariano.Name = "panelVegetariano";
@@ -1570,7 +1570,7 @@
             this.panelAlemão.Controls.Add(this.label24);
             this.panelAlemão.Controls.Add(this.panel30);
             this.panelAlemão.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelAlemão.Location = new System.Drawing.Point(381, 120);
+            this.panelAlemão.Location = new System.Drawing.Point(373, 98);
             this.panelAlemão.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelAlemão.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelAlemão.Name = "panelAlemão";
