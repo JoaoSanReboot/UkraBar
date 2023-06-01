@@ -414,6 +414,25 @@ namespace UkraBar
 
         private void BtnSair_Click_1(object sender, EventArgs e)
         {
+            conn.Open();
+            string DeletarCliente = "DELETE FROM cliente WHERE id_cliente = @id_cliente";
+            using (MySqlCommand comandos = new MySqlCommand(DeletarCliente, conn))
+            {
+                comandos.Parameters.AddWithValue("@id_cliente", VariaveisGlobais.ultimoIdClienteInserido);
+                comandos.ExecuteNonQuery();
+            }
+        
+            string DeletarPedido = "DELETE FROM pedido_cliente WHERE id_pedido_cliente = @id_pedido_cliente";
+            using (MySqlCommand comandos = new MySqlCommand(DeletarPedido, conn))
+            {
+                comandos.Parameters.AddWithValue("@id_pedido_cliente", VariaveisGlobais.ultimoIdPedidoInserido);
+                comandos.ExecuteNonQuery();
+            }
+            conn.Close();
+
+
+
+
             Clientes cliente = new Clientes();
             this.Hide();
             cliente.ShowDialog();

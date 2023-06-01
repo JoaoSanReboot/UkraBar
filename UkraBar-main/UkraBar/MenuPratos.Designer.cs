@@ -232,7 +232,7 @@
             this.panelBatata.Controls.Add(this.label18);
             this.panelBatata.Controls.Add(this.panel24);
             this.panelBatata.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelBatata.Location = new System.Drawing.Point(397, 102);
+            this.panelBatata.Location = new System.Drawing.Point(372, 96);
             this.panelBatata.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelBatata.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelBatata.Name = "panelBatata";
@@ -499,7 +499,7 @@
             this.panelFrango.Controls.Add(this.lblItaliano);
             this.panelFrango.Controls.Add(this.panelFundo);
             this.panelFrango.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelFrango.Location = new System.Drawing.Point(397, 102);
+            this.panelFrango.Location = new System.Drawing.Point(372, 96);
             this.panelFrango.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelFrango.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelFrango.Name = "panelFrango";
@@ -766,7 +766,7 @@
             this.panelPerohe.Controls.Add(this.label24);
             this.panelPerohe.Controls.Add(this.panel30);
             this.panelPerohe.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelPerohe.Location = new System.Drawing.Point(397, 103);
+            this.panelPerohe.Location = new System.Drawing.Point(372, 97);
             this.panelPerohe.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelPerohe.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelPerohe.Name = "panelPerohe";
@@ -1033,7 +1033,7 @@
             this.panelHolubtsi.Controls.Add(this.lblIberico);
             this.panelHolubtsi.Controls.Add(this.panel7);
             this.panelHolubtsi.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelHolubtsi.Location = new System.Drawing.Point(397, 103);
+            this.panelHolubtsi.Location = new System.Drawing.Point(372, 97);
             this.panelHolubtsi.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelHolubtsi.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelHolubtsi.Name = "panelHolubtsi";
@@ -1300,7 +1300,7 @@
             this.panelBorscht.Controls.Add(this.label12);
             this.panelBorscht.Controls.Add(this.panel18);
             this.panelBorscht.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelBorscht.Location = new System.Drawing.Point(397, 103);
+            this.panelBorscht.Location = new System.Drawing.Point(372, 97);
             this.panelBorscht.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelBorscht.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelBorscht.Name = "panelBorscht";
@@ -1567,7 +1567,7 @@
             this.panelBanosh.Controls.Add(this.label6);
             this.panelBanosh.Controls.Add(this.panel12);
             this.panelBanosh.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelBanosh.Location = new System.Drawing.Point(397, 103);
+            this.panelBanosh.Location = new System.Drawing.Point(372, 97);
             this.panelBanosh.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelBanosh.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelBanosh.Name = "panelBanosh";

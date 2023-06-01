@@ -38,12 +38,12 @@ namespace UkraBar
         public static int quantidadeCaipirinha = 1;
         public static int quantidadePolaka = 1;
 
-        public static double valorChamate;
-        public static double valorMaçaAmor;
-        public static double valorMoniche;
-        public static double valorSlava;
-        public static double valorCaipirinha;
-        public static double valorPolaka;
+        public static double valorChamate = 8.00;
+        public static double valorMaçaAmor = 18.00;
+        public static double valorMoniche = 18.00;
+        public static double valorSlava = 23.00;
+        public static double valorCaipirinha = 16.00;
+        public static double valorPolaka = 26.00;
 
         public static double valorChamateMenos;
         public static double valorMaçãAmorMenos;
