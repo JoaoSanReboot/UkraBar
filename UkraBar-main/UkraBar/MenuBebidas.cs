@@ -102,23 +102,19 @@ namespace UkraBar
         private void BtnCancelarCA_Click(object sender, EventArgs e)
         {
             panelCaipirinha.Visible = false;
-            VariaveisGlobais.valorCaipirinha = 0;
         }
         private void BtnCancelarM_Click(object sender, EventArgs e)
         {
             panelMunich.Visible = false;
-            VariaveisGlobais.valorMoniche = 0;
         }
         private void BtnCancelarMA_Click(object sender, EventArgs e)
         {
             panelMacaAmor.Visible = false;
-            VariaveisGlobais.valorMaçaAmor = 0;
         }
 
         private void BtnCancelarS_Click(object sender, EventArgs e)
         {
             panelSlava.Visible = false;
-            VariaveisGlobais.valorSlava = 0;
         }
 
         private void BtnOkP_Click(object sender, EventArgs e)
@@ -187,7 +183,7 @@ namespace UkraBar
                 {
                     comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeChamate);
                     comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorChamate);
-                    comandos.Parameters.AddWithValue("@nome_produto", "Chá Mattte");
+                    comandos.Parameters.AddWithValue("@nome_produto", "Chá Matte");
                     comandos.Parameters.AddWithValue("@id_cliente", VariaveisGlobais.ultimoIdClienteInserido);
                     comandos.ExecuteNonQuery();
                 }
@@ -250,7 +246,7 @@ namespace UkraBar
                     VariaveisGlobais.ultimoIdPedidoInserido = (int)comandos.LastInsertedId;
                 }
                 conn.Close();
-                VariaveisGlobais.CompraMoniche = false;
+                VariaveisGlobais.CompraMaça = false;
                 MessageBox.Show(VariaveisGlobais.quantidadeMaçaAmor.ToString(), "Foram adicionados no Carrinho");
                 panelMacaAmor.Visible = false;
             }

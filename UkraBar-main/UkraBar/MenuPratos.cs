@@ -88,7 +88,7 @@ namespace UkraBar
                 string AtualizarCarrinho = "UPDATE pedido_cliente SET quantidade =  @quantidade, valor_produto = @valor_produto WHERE nome_produto = @nome_produto AND id_cliente = @id_cliente";
                 using (MySqlCommand comandos = new MySqlCommand(AtualizarCarrinho, conn))
                 {
-                    comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.valorBanosh);
+                    comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeBanosh);
                     comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorBanosh);
                     comandos.Parameters.AddWithValue("@nome_produto", "Banosh");
                     comandos.Parameters.AddWithValue("@id_cliente", VariaveisGlobais.ultimoIdClienteInserido);
@@ -292,33 +292,27 @@ namespace UkraBar
         private void BtnCancelarBA_Click(object sender, EventArgs e)
         {
             panelBanosh.Visible = false;
-            VariaveisGlobais.valorBanosh = 0;
         }
         private void BtnCancelarBO_Click(object sender, EventArgs e)
         {
             panelBorscht.Visible = false;
-            VariaveisGlobais.valorBorscht = 0;
         }
         private void BtnCancelarH_Click(object sender, EventArgs e)
         {
             panelHolubtsi.Visible = false;
-            VariaveisGlobais.valorHulubsti = 0;
         }
         private void BtnCancelarF_Click(object sender, EventArgs e)
         {
             panelFrango.Visible = false;
-            VariaveisGlobais.valorFrango = 0;
         }
         private void BtnCancelarP_Click(object sender, EventArgs e)
         {
             panelPerohe.Visible = false;
-            VariaveisGlobais.valorPerohe = 0;
         }
 
         private void BtnCancelarB_Click(object sender, EventArgs e)
         {
             panelBatata.Visible = false;
-            VariaveisGlobais.valorBatata = 0;
         }
         private void BtnMenosBA_Click(object sender, EventArgs e)
         {
