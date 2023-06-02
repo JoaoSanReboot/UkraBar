@@ -92,12 +92,10 @@ namespace UkraBar
         private void BtnCancelarC_Click(object sender, EventArgs e)
         {
             panelChaMatte.Visible = false;
-            VariaveisGlobais.valorChamate = 0;
         }
         private void BtnCancelarP_Click(object sender, EventArgs e)
         {
             panelPolaka.Visible = false;
-            VariaveisGlobais.valorPolaka = 0;
         }
         private void BtnCancelarCA_Click(object sender, EventArgs e)
         {
