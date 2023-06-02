@@ -147,6 +147,12 @@
     <Compile Include="PainelCliente.Designer.cs">
       <DependentUpon>PainelCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="PainelFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PainelFuncionario.Designer.cs">
+      <DependentUpon>PainelFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="PainelLogins.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PainelCliente.resx">
       <DependentUpon>PainelCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PainelFuncionario.resx">
+      <DependentUpon>PainelFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PainelLogins.resx">
       <DependentUpon>PainelLogins.cs</DependentUpon>
