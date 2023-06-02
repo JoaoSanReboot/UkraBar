@@ -15,19 +15,20 @@ namespace UkraBar
         public static int quantidadeVegetariano = 1;
         public static int quantidadeAlemao = 1;
 
-        public static double valorItaliano;
-        public static double valorIberico;
-        public static double valorPolones;
-        public static double valorJapones;
-        public static double valorVegetariano;
-        public static double valorAlemao;
 
-        public static double valorItalianoMenos;
-        public static double valorIbericoMenos;
-        public static double valorPolonesMenos;
-        public static double valorJaponesMenos;
-        public static double valorVegetarianoMenos;
-        public static double valorAlemaoMenos;
+        public static double valorAlemao = 25.00;
+        public static double valorVegetariano = 22.00;
+        public static double valorPolones = 24.00;
+        public static double valorJapones = 24.00;
+        public static double valorIberico = 27.00 ;          
+        public static double valorItaliano = 24.00;
+
+        public static double valorItalianoMenos = 24.00;
+        public static double valorIbericoMenos = 27.00;
+        public static double valorPolonesMenos = 24.00;
+        public static double valorJaponesMenos = 24.00;
+        public static double valorVegetarianoMenos = 22.00;
+        public static double valorAlemaoMenos = 25.00;
 
         //Bebidas
 
@@ -86,7 +87,11 @@ namespace UkraBar
         public static int ultimoIdClienteInserido;
         public static int ultimoIdPedidoInserido;
 
-        public static bool isInsert = true;
-
+        public static bool CompraItaliano = true;
+        public static bool CompraJapones = true;
+        public static bool CompraIberico = true;
+        public static bool CompraVegetariano = true;
+        public static bool CompraAlemao = true;
+        public static bool CompraPolones = true;
     }
 }

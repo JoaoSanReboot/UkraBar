@@ -37,6 +37,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DTgridCarrinho2 = new System.Windows.Forms.DataGridView();
             this.DTgridValor = new System.Windows.Forms.DataGridView();
+            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -50,7 +51,6 @@
             this.BtnVoltar = new System.Windows.Forms.Button();
             this.BtnSair = new System.Windows.Forms.Button();
             this.SideBarTime = new System.Windows.Forms.Timer(this.components);
-            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DTgridCarrinho2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DTgridValor)).BeginInit();
             this.SideBarLateral.SuspendLayout();
@@ -169,6 +169,12 @@
             this.DTgridValor.Size = new System.Drawing.Size(787, 149);
             this.DTgridValor.TabIndex = 51;
             // 
+            // Valor
+            // 
+            this.Valor.HeaderText = "Valor Final";
+            this.Valor.Name = "Valor";
+            this.Valor.ReadOnly = true;
+            // 
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(324, 12);
@@ -201,7 +207,7 @@
             this.SideBarLateral.MaximumSize = new System.Drawing.Size(200, 749);
             this.SideBarLateral.MinimumSize = new System.Drawing.Size(70, 749);
             this.SideBarLateral.Name = "SideBarLateral";
-            this.SideBarLateral.Size = new System.Drawing.Size(200, 749);
+            this.SideBarLateral.Size = new System.Drawing.Size(70, 749);
             this.SideBarLateral.TabIndex = 55;
             // 
             // panelMenu
@@ -321,12 +327,6 @@
             // 
             this.SideBarTime.Interval = 10;
             this.SideBarTime.Tick += new System.EventHandler(this.SideBarTime_Tick);
-            // 
-            // Valor
-            // 
-            this.Valor.HeaderText = "Valor Final";
-            this.Valor.Name = "Valor";
-            this.Valor.ReadOnly = true;
             // 
             // Carrinho
             // 
