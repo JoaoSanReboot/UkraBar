@@ -39,19 +39,19 @@ namespace UkraBar
         public static int quantidadeCaipirinha = 1;
         public static int quantidadePolaka = 1;
 
-        public static double valorChamate;
-        public static double valorMaçaAmor;
-        public static double valorMoniche;
-        public static double valorSlava;
-        public static double valorCaipirinha;
-        public static double valorPolaka;
+        public static double valorChamate = 8.00;
+        public static double valorMaçaAmor = 18.00;
+        public static double valorMoniche = 23.00;
+        public static double valorSlava = 18.00;
+        public static double valorCaipirinha = 16.00;
+        public static double valorPolaka = 26.00;
 
-        public static double valorChamateMenos;
-        public static double valorMaçãAmorMenos;
-        public static double valorMonicheMenos;
-        public static double valorSlavaMenos;
-        public static double valorCaipirinhaMenos;
-        public static double valorPolakaMenos;
+        public static double valorChamateMenos = 8.00;
+        public static double valorMaçaAmorMenos = 18.00;
+        public static double valorMonicheMenos = 23.00;
+        public static double valorSlavaMenos = 18.00;
+        public static double valorCaipirinhaMenos = 16.00;
+        public static double valorPolakaMenos = 26.00;
 
         //Pratos
 
@@ -62,25 +62,25 @@ namespace UkraBar
         public static int quantidadeBorscht = 1;
         public static int quantidadeBanosh = 1;
 
-        public static double valorBatata;
-        public static double valorFrango;
-        public static double valorPerohe;
-        public static double valorHulubsti;
-        public static double valorBorscht;
-        public static double valorBanosh;
+        public static double valorBatata = 23.00;
+        public static double valorFrango = 45.00;
+        public static double valorPerohe = 32.00;
+        public static double valorHulubsti = 20.00;
+        public static double valorBorscht = 28.00;
+        public static double valorBanosh = 25.00;
 
-        public static double valorBatataMenos;
-        public static double valorFrangoMenos;
-        public static double valorPeroheMenos;
-        public static double valorHulubstiMenos;
-        public static double valorBorschtMenos;
-        public static double valorBanoshMenos;
+        public static double valorBatataMenos = 23.00;
+        public static double valorFrangoMenos = 45.00;
+        public static double valorPeroheMenos = 32.00;
+        public static double valorHulubstiMenos = 20.00;
+        public static double valorBorschtMenos = 28.00;
+        public static double valorBanoshMenos = 25.00;
 
 
-        public static double valorFinal;
-        public static double valorFinalB;
-        public static double valorFinalP;
-        public static double valorFinalTotal;
+        public static double valorFinal = 0;
+        public static double valorFinalB = 0;
+        public static double valorFinalP = 0;
+        public static double valorFinalTotal = 0;
 
         public static string Cpf;
 
@@ -93,5 +93,19 @@ namespace UkraBar
         public static bool CompraVegetariano = true;
         public static bool CompraAlemao = true;
         public static bool CompraPolones = true;
+
+        public static bool CompraChamate = true;
+        public static bool CompraMaça = true;
+        public static bool CompraCaipirinha = true;
+        public static bool CompraMoniche = true;
+        public static bool CompraSlava = true;
+        public static bool CompraPolaka = true;
+
+        public static bool CompraFrango = true;
+        public static bool CompraBanosh = true;
+        public static bool CompraBatata = true;
+        public static bool CompraHusbulist= true;
+        public static bool CompraBorscht = true;
+        public static bool CompraPerohe = true;
     }
 }
