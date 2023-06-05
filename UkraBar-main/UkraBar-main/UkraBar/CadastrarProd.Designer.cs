@@ -268,6 +268,7 @@
             this.BtnSobre.Image = global::UkraBar.Properties.Resources.info_24px;
             this.BtnSobre.Name = "BtnSobre";
             this.BtnSobre.UseVisualStyleBackColor = false;
+            this.BtnSobre.Click += new System.EventHandler(this.BtnSobre_Click);
             // 
             // BtnAjuda
             // 

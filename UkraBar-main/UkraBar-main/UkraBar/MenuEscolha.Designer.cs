@@ -89,7 +89,6 @@
             // 
             // TelaFundo
             // 
-            this.TelaFundo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TelaFundo.Image = global::UkraBar.Properties.Resources.WhatsApp_Image_2023_05_27_at_11_44_47;
             this.TelaFundo.Location = new System.Drawing.Point(0, 0);
             this.TelaFundo.Name = "TelaFundo";

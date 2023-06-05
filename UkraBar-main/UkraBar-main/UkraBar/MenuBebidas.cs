@@ -62,31 +62,42 @@ namespace UkraBar
 
         private void BtnPolaka_Click(object sender, EventArgs e)
         {
+            //VariaveisGlobais.valorPolaka = 26;
+            BoxValorfinalP.Text = "26,00";
             panelPolaka.Visible = true;
         }
 
         private void btnChaMate_Click(object sender, EventArgs e)
         {
+            //VariaveisGlobais.valorItaliano = 8;
+            BoxValorfinalC.Text = "8,00";
             panelChaMatte.Visible = true;
         }
 
         private void btnMacaAmor_Click(object sender, EventArgs e)
         {
+            //VariaveisGlobais.valorMacaAmor = 18;
+            BoxValorfinalMA.Text = "18,00";
             panelMacaAmor.Visible = true;
         }
 
         private void btnMoniche_Click(object sender, EventArgs e)
         {
+            //VariaveisGlobais.valorItaliano = 23;
+            BoxValorfinalM.Text = "23,00";
             panelMunich.Visible = true;
         }
 
         private void btnSlava_Click(object sender, EventArgs e)
-        {
+        { //VariaveisGlobais.valorSlava = 18;
+            BoxValorfinalS.Text = "18,00";
             panelSlava.Visible = true;
         }
 
         private void btnCaipirinha_Click(object sender, EventArgs e)
         {
+            //VariaveisGlobais.valorCaipirinha = 16;
+            BoxValorfinalCA.Text = "16,00";
             panelCaipirinha.Visible = true;
         }
         private void BtnCancelarC_Click(object sender, EventArgs e)
@@ -117,6 +128,7 @@ namespace UkraBar
 
         private void BtnOkP_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorPolaka= Convert.ToDouble(BoxValorfinalP.Text);
             if (VariaveisGlobais.CompraPolaka == true)
             {
                 conn.Open();
@@ -155,6 +167,7 @@ namespace UkraBar
 
         private void BtnOkC_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorChamate = Convert.ToDouble(BoxValorfinalC.Text);
             if (VariaveisGlobais.CompraChamate == true)
             {
                 conn.Open();
@@ -192,6 +205,7 @@ namespace UkraBar
         }
         private void BtnOkCA_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorCaipirinha = Convert.ToDouble(BoxValorfinalCA.Text);
             if (VariaveisGlobais.CompraCaipirinha == true)
             {
                 conn.Open();
@@ -230,6 +244,7 @@ namespace UkraBar
 
         private void BtnOkMA_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorMaçaAmor = Convert.ToDouble(BoxValorfinalMA.Text);
             if (VariaveisGlobais.CompraMaça == true)
             {
                 conn.Open();
@@ -267,6 +282,7 @@ namespace UkraBar
         }
         private void BtnOkM_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorMoniche= Convert.ToDouble(BoxValorfinalM.Text);
             if (VariaveisGlobais.CompraMoniche == true)
             {
                 conn.Open();
@@ -305,6 +321,7 @@ namespace UkraBar
 
         private void BtnOkS_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorSlava = Convert.ToDouble(BoxValorfinalS.Text);
             if (VariaveisGlobais.CompraSlava == true)
             {
                 conn.Open();
@@ -515,6 +532,13 @@ namespace UkraBar
             Carrinho carrinho = new Carrinho();
             this.Hide();
             carrinho.ShowDialog();
+            this.Close();
+        }
+
+        private void BtnSobre_Click(object sender, EventArgs e)
+        {
+            Sobre Sobrenos = new Sobre();
+            Sobrenos.ShowDialog();
             this.Close();
         }
     }

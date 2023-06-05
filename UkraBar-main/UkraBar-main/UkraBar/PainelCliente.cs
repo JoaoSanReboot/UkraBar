@@ -4,42 +4,40 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace UkraBar
 {
-    public partial class CadastrarProd : Form
+    public partial class PainelCliente : Form
     {
+
         public MySqlConnection conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
         public string connectionString = "SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;";
         public MySqlCommand comando;
-        public MySqlDataReader reader2;
+        public MySqlDataReader reader3;
         public DataTable table;
 
-        public CadastrarProd()
+        public PainelCliente()
         {
             InitializeComponent();
             CarregarDados();
         }
 
-        //Carregar Dados é um public para carregar informações no DataGridView.
         public void CarregarDados()
         {
             conn = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
             conn.Open();// Abre Conexão.
 
-            string query = "SELECT * FROM produto_loja"; //Seleciona informações da tabela Cadastro Funcionário.
+            string query = "SELECT * FROM cliente"; //Seleciona informações da tabela Cadastro Funcionário.
             comando = new MySqlCommand(query, conn); //Declara comandos que serão usados.
-            reader2 = comando.ExecuteReader(); //Lê os comandos.
+            reader3 = comando.ExecuteReader(); //Lê os comandos.
             table = new DataTable(); //Abre a Table.
-            table.Load(reader2); //Table lê os comandos.
-            DTgridProd.DataSource = table; //Renomeia Table para DTgridFunc.
-            DTgridProd.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; //Comando para alinhar as tabelas no DataGriedView.
+            table.Load(reader3); //Table lê os comandos.
+            DTgridClie.DataSource = table; //Renomeia Table para DTgridFunc.
+            DTgridClie.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; //Comando para alinhar as tabelas no DataGriedView.
             conn.Close(); //Fecha Conexão 
 
         }
@@ -98,13 +96,12 @@ namespace UkraBar
 
         bool sideBarMenuExpandD; //Bool para Cronometro da Barra Lateral.
         bool PanelConfigD;   //Bool para o Panel de Configurações.
-        bool NovoProdBarD;   //Bool para o Panel de Novo Funcionário.
         bool EditFundoD;     //Bool para o Panel de Editar Funcionário.
 
         //Timer Ticks para animações das Side Bars.
 
         //Side Bar Lateral.
-        private void TimerSideBar_Tick(object sender, EventArgs e)
+        private void TimerSideBar_Tick_1(object sender, EventArgs e)
         {
             if (sideBarMenuExpandD)
             {
@@ -129,48 +126,15 @@ namespace UkraBar
             }//Se o Bool Estiver Não.
         }
 
-        //Side Bar Novo Produto.
-        private void NovoProdBar_Tick(object sender, EventArgs e)
-        {
-
-            if (NovoProdBarD)
-            {
-                PanelCadastrarProd.Width -= 30; //Declara o caso do Panel estiver com Determinado tamanho.
-                if (PanelCadastrarProd.Width == PanelCadastrarProd.MinimumSize.Width)
-                {
-
-
-
-                    NovoProdBarD = false;//Deixa o Bool False.
-                    NovoProdBar.Stop();//Para o TimerTick.
-                }//Se estiver executa o comando.
-            }//Se o Bool Estiver Sim.
-            else
-            {
-                PanelCadastrarProd.Width += 10;  //Declara o caso do Panel estiver com Determinado tamanho.
-                if (PanelCadastrarProd.Width == PanelCadastrarProd.MaximumSize.Width)
-                {
-
-                    NovoProdBarD = true;   //Deixa o Bool True.
-                    NovoProdBar.Stop();//Para o TimerTick.
-                }
-            }//Se o Bool Estiver Não.
-        }
-
-                                    //Funções dos Botões da Side Bar Lateral Direia.
-
+                                                   //Funções dos Botões da Side Bar Lateral Direia.
         //Abre o Menu Lareral
         private void pbMenu_Click(object sender, EventArgs e)
         {
             TimerSideBar.Start();    //Começa o TimerTick.
-            if (sideBarMenuExpandD == true)  //Se o Bool Estiver True.
-
-            PanelCadastrarProd.Visible = false; //Esconder Outro Bool.
-            NovoProdBar.Stop();        //Para outro Timer.
         }
 
         //Abre o Panel de Configurações.
-        private void BtnConfigurações_Click_1(object sender, EventArgs e)
+        private void BtnConfigurações_Click(object sender, EventArgs e)
         {
             if (PanelConfigD)
             {
@@ -179,9 +143,9 @@ namespace UkraBar
                 PanelConfigD = false;
             }//Se o Panel estive True
             else
+            {
                 panelShowConfig.Height += 257;//Se o panel estiver Maior ou igual o Valor.
-                PanelConfigD = true;   
-            {       //Deixe o Bool True.
+                PanelConfigD = true;          //Deixe o Bool True.
             }//Se o Panel estive False
         }
 
@@ -195,17 +159,11 @@ namespace UkraBar
         }
 
         //Remove as Bordas do Form Original.
-        private void CadastrarProd_Load(object sender, EventArgs e)
+        private void PainelCliente_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.None;
         }
 
-        //Fecha o Form Atual.
-        private void FecharJanelaF_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-        
         //Maximiza o Form.
         private void MaximizarJanela_Click(object sender, EventArgs e)
         {
@@ -223,16 +181,13 @@ namespace UkraBar
         private void MinimizarJanela_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+            MinimizarJanela.Location = MinimizarJanela.Location;
         }
 
-        //Abre Panel de Novo Produto
-        private void BtnNovoProd_Click(object sender, EventArgs e)
+        //Fecha o Form Atual.
+        private void FecharJanelaF_Click(object sender, EventArgs e)
         {
-            if (sideBarMenuExpandD == true)
-            {
-                PanelCadastrarProd.Visible = true;
-                NovoProdBar.Start();
-            }
+            this.Close();
         }
 
         //Btn Deleta as linhas no Grid e no MySql.
@@ -240,40 +195,24 @@ namespace UkraBar
         {
             conn.Open();
 
-            for (int i = 0; i < DTgridProd.Rows.Count; i++)//Faz a contagem de linhas Selecionadas enquanto i for menor que a contagens de rows.
+            for (int i = 0; i < DTgridClie.Rows.Count; i++)//Faz a contagem de linhas Selecionadas enquanto i for menor que a contagens de rows.
             {
-                DataGridViewCheckBoxCell CheckBox = DTgridProd.Rows[i].Cells[0] as DataGridViewCheckBoxCell; //Defini CheckBox como funcional.
+                DataGridViewCheckBoxCell CheckBox = DTgridClie.Rows[i].Cells[0] as DataGridViewCheckBoxCell; //Defini CheckBox como funcional.
 
                 if (CheckBox.Value != null && (bool)CheckBox.Value == true)//Bool sim ou não.
                 {
-                    int id = Convert.ToInt32(DTgridProd.Rows[i].Cells[1].Value);//Int para contagem de celulas marcadas.
+                    int id = Convert.ToInt32(DTgridClie.Rows[i].Cells[1].Value);//Int para contagem de celulas marcadas.
 
-                    MySqlCommand comando = new MySqlCommand("DELETE FROM produto WHERE id_produto = @id_produto", conn);//Comandos MySql
-                    comando.Parameters.AddWithValue("@id_produto", id);
+                    MySqlCommand comando = new MySqlCommand("DELETE FROM cliente WHERE id_cleinte = @id_cliente", conn);//Comandos MySql
+                    comando.Parameters.AddWithValue("@id_cliente", id);
                     comando.ExecuteNonQuery();
 
-                    DTgridProd.Rows.RemoveAt(i);//Deleta as linhas.
+                    DTgridClie.Rows.RemoveAt(i);//Deleta as linhas.
                     i--;                       //Diminui as linhas.
                 }
             }
             CarregarDados();//Carregas os dados no GridView
             conn.Close();//Fecha a Conexão
-        }
-
-        //Btn Salvar Informações no MySql.
-        private void BtnSalvar_Click(object sender, EventArgs e)
-        {
-            string inserirQuery = "INSERT INTO produto_loja (id_produto, nome_produto, descricao, valor_produto, quantidade) VALUES" +
-                "('" + BoxcId.Text + "','" + BoxcNome.Text + "', '" + BoxcDescricao.Text + "','" + BoxcValorP.Text + "','"+ BoxcQuantidade+"')";
-            executarQuery(inserirQuery);//Executa a String
-            CarregarDados();        //Carrega dados na tabela.
-            NovoProdBar.Stop(); //Para o Timer.
-        }
-
-        //Picture Box Fechar dentro do Panel de Cadastro de Produto.
-        private void pbFechar_Click(object sender, EventArgs e)
-        {
-            NovoProdBar.Start();//Reincia o timer ja ligado.
         }
 
         //Abre o Panel de Editar.
@@ -298,16 +237,15 @@ namespace UkraBar
             {
                 conn.Open();//Abre Conexão.
                 //Declara String.
-                string Atualizar = "UPDATE produto_loja SET nome_produto = @nome_produto, descricao = @descricao, valor_produto = @valor_produto, quantidade = @quantidade WHERE id_produto = @id_produto";
+                string Atualizar = "UPDATE cliente SET cpf_cliente = @cpf_cliente, nome_cliente = @nome_cliente, carrinho = @carrinho WHERE id_cliente = @id_cliente";
                 using (MySqlCommand comando = new MySqlCommand(Atualizar, conn))//Usa strings.
                 {
                     {
                         //Declara Box como informações dentro do mysql.
-                        comando.Parameters.AddWithValue("@id_produto", BoxdIdP.Text);
-                        comando.Parameters.AddWithValue("@nome_produto", BoxdNomeP.Text);
-                        comando.Parameters.AddWithValue("@descricao", BoxdDescricaoP.Text);
-                        comando.Parameters.AddWithValue("@valor_produto", BoxdValorP.Text);
-                        comando.Parameters.AddWithValue("@quantidade", BoxdQuantidadeP.Text);
+                        comando.Parameters.AddWithValue("@id_cliente", BoxdIdC.Text);
+                        comando.Parameters.AddWithValue("@cpf_cliente", BoxdCpfC.Text);
+                        comando.Parameters.AddWithValue("@nome_cliente", BoxdNomeC.Text);
+                        comando.Parameters.AddWithValue("@carrinho", BoxdCarrinhoC.Text);
                         comando.ExecuteNonQuery();//Executa comando.
                     }
                 }
@@ -322,24 +260,22 @@ namespace UkraBar
             {
                 conn.Close();//Fecha Conexão.
             }
-
         }
 
         //Função Mouse Click na Row Selecionar.
-        private void DTgridProd_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        private void DTgridClie_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            foreach (DataGridViewRow row in DTgridProd.Rows)
+            foreach (DataGridViewRow row in DTgridClie.Rows)
             {
                 if (Convert.ToBoolean(row.Cells["CheckBox"].Value))
                 {
-                    BoxdIdP.Text = DTgridProd.CurrentRow.Cells[1].Value.ToString();
-                    BoxdNomeP.Text = DTgridProd.CurrentRow.Cells[2].Value.ToString();
-                    BoxdDescricaoP.Text = DTgridProd.CurrentRow.Cells[3].Value.ToString();
-                    BoxdValorP.Text = DTgridProd.CurrentRow.Cells[4].Value.ToString();
-                    BoxdQuantidadeP.Text = DTgridProd.CurrentRow.Cells[5].Value.ToString();
+                    BoxdIdC.Text = DTgridClie.CurrentRow.Cells[1].Value.ToString();
+                    BoxdCpfC.Text = DTgridClie.CurrentRow.Cells[2].Value.ToString();
+                    BoxdNomeC.Text = DTgridClie.CurrentRow.Cells[3].Value.ToString();
+                    BoxdCarrinhoC.Text = DTgridClie.CurrentRow.Cells[4].Value.ToString();
                 }
             }
-     
+
         }
 
         //Btn Buscar informações.
@@ -352,19 +288,18 @@ namespace UkraBar
                 try
                 {
                     conn.Open();//Abre Conexão.
-                    comando = new MySqlCommand("SELECT * FROM ukrasystem.produto_loja WHERE" +
-                        " id_produto LIKE" + b +
-                        "OR nome_produto LIKE" + b +
-                        "OR descricao LIKE" + b +
-                        "OR valor_produto LIKE" + b +
-                        "OR quantidade LIKE" + b, conn); //Envia comando Select no MySql
+                    comando = new MySqlCommand("SELECT * FROM ukrasystem.cliente WHERE" +
+                        " id_cliente LIKE" + b +
+                        "OR cpf_cliente LIKE" + b +
+                        "OR nome_cliente LIKE" + b +
+                        "OR carrinho LIKE" + b, conn); //Envia comando Select no MySql
                     DataTable ProcurarDataTable = new DataTable(); //Defini table nova
                     using (MySqlDataAdapter adapter = new MySqlDataAdapter(comando))//Faz o filtro no DataGridView.
                     {
                         adapter.Fill(ProcurarDataTable);
                     }
-                    DTgridProd.DataSource = ProcurarDataTable; //Mostra nova table
-                    DTgridProd.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;//Centraliza as Tabelas.
+                    DTgridClie.DataSource = ProcurarDataTable; //Mostra nova table
+                    DTgridClie.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;//Centraliza as Tabelas.
                     conn.Close();//Fecha Conexão.
                 }
                 catch (Exception ex)
@@ -372,6 +307,13 @@ namespace UkraBar
                     MessageBox.Show("Algum erro Encontrado", ex.Message);
                 }
             }
+        }
+
+        private void BtnSobre_Click(object sender, EventArgs e)
+        {
+            Sobre Sobrenos = new Sobre();
+            Sobrenos.ShowDialog();
+            this.Close();
         }
     }
 }

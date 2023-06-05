@@ -47,12 +47,12 @@ namespace UkraBar
         public void CarregarValores()
         {
             VariaveisGlobais.valorFinal = VariaveisGlobais.valorItaliano + VariaveisGlobais.valorJapones + VariaveisGlobais.valorPolones + VariaveisGlobais.valorIberico + VariaveisGlobais.valorAlemao + VariaveisGlobais.valorVegetariano;
-           
-            
+
+
             VariaveisGlobais.valorFinalP = VariaveisGlobais.valorBatata + VariaveisGlobais.valorHulubsti + VariaveisGlobais.valorFrango + VariaveisGlobais.valorPerohe + VariaveisGlobais.valorBorscht + VariaveisGlobais.valorBanosh;
             VariaveisGlobais.valorFinalB = VariaveisGlobais.valorPolaka + VariaveisGlobais.valorChamate + VariaveisGlobais.valorMaçaAmor + VariaveisGlobais.valorMoniche + VariaveisGlobais.valorSlava + VariaveisGlobais.valorCaipirinha;
 
-            VariaveisGlobais.valorFinalTotal = VariaveisGlobais.valorFinal + VariaveisGlobais.valorFinalB + VariaveisGlobais.valorFinalP;
+            VariaveisGlobais.valorFinalTotal = VariaveisGlobais.valorFinal+ VariaveisGlobais.valorFinalB + VariaveisGlobais.valorFinalP;
 
             int rowIndex = DTgridValor.Rows.Add();
             DTgridValor.Rows[rowIndex].Cells[0].Value = VariaveisGlobais.valorFinalTotal.ToString();
@@ -103,6 +103,13 @@ namespace UkraBar
             Clientes cliente = new Clientes();
             this.Hide();
             cliente.ShowDialog();
+            this.Close();
+        }
+
+        private void BtnSobre_Click(object sender, EventArgs e)
+        {
+            Sobre Sobrenos = new Sobre();
+            Sobrenos.ShowDialog();
             this.Close();
         }
     }

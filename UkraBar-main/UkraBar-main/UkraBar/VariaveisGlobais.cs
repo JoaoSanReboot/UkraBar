@@ -16,12 +16,12 @@ namespace UkraBar
         public static int quantidadeAlemao = 1;
 
 
-        public static double valorAlemao = 25.00;
-        public static double valorVegetariano = 22.00;
-        public static double valorPolones = 24.00;
-        public static double valorJapones = 24.00;
-        public static double valorIberico = 27.00 ;          
-        public static double valorItaliano = 24.00;
+        public static double valorAlemao = 0;
+        public static double valorVegetariano = 0;
+        public static double valorPolones = 0;
+        public static double valorJapones = 0;
+        public static double valorIberico = 0 ;          
+        public static double valorItaliano = 0;
 
         public static double valorItalianoMenos = 24.00;
         public static double valorIbericoMenos = 27.00;
@@ -39,12 +39,12 @@ namespace UkraBar
         public static int quantidadeCaipirinha = 1;
         public static int quantidadePolaka = 1;
 
-        public static double valorChamate = 8.00;
-        public static double valorMaçaAmor = 18.00;
-        public static double valorMoniche = 23.00;
-        public static double valorSlava = 18.00;
-        public static double valorCaipirinha = 16.00;
-        public static double valorPolaka = 26.00;
+        public static double valorChamate = 0;
+        public static double valorMaçaAmor =0;
+        public static double valorMoniche = 0;
+        public static double valorSlava = 0;
+        public static double valorCaipirinha =0;
+        public static double valorPolaka = 0;
 
         public static double valorChamateMenos = 8.00;
         public static double valorMaçaAmorMenos = 18.00;
@@ -62,12 +62,12 @@ namespace UkraBar
         public static int quantidadeBorscht = 1;
         public static int quantidadeBanosh = 1;
 
-        public static double valorBatata = 23.00;
-        public static double valorFrango = 45.00;
-        public static double valorPerohe = 32.00;
-        public static double valorHulubsti = 20.00;
-        public static double valorBorscht = 28.00;
-        public static double valorBanosh = 25.00;
+        public static double valorBatata = 0;
+        public static double valorFrango =0;
+        public static double valorPerohe =0;
+        public static double valorHulubsti = 0;
+        public static double valorBorscht = 0;
+        public static double valorBanosh = 0;
 
         public static double valorBatataMenos = 23.00;
         public static double valorFrangoMenos = 45.00;

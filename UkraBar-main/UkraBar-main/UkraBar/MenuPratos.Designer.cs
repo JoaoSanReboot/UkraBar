@@ -2004,6 +2004,7 @@
             this.BtnSobre.Text = "               Sobre";
             this.BtnSobre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnSobre.UseVisualStyleBackColor = false;
+            this.BtnSobre.Click += new System.EventHandler(this.BtnSobre_Click);
             // 
             // BtnAjuda
             // 

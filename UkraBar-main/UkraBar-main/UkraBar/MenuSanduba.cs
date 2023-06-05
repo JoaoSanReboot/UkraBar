@@ -32,29 +32,41 @@ namespace UkraBar
         //Todos os Btn Compras.
         private void BtnComprar_Click(object sender, EventArgs e)
         {
+            //VariaveisGlobais.valorItaliano = 24;
+            BoxValorfinalI.Text = "24,00";
             panelItaliano.Visible = true;
         }
 
         private void BtnIberico_Click(object sender, EventArgs e)
         {
+            // VariaveisGlobais.valorIberico = 27;
+            BoxValorfinalIB.Text = "27,00";
             panelIberico.Visible = true;
         }
 
         private void BtnPolonesComprar_Click(object sender, EventArgs e)
         {
+            //VariaveisGlobais.valorPolones = 24;
+            BoxValorfinalZ.Text = "24,00";
             panelZapiekanka.Visible = true;
         }
 
         private void BtnVegetariano_Click(object sender, EventArgs e)
         {
+            //VariaveisGlobais.valorVegetariano = 22;
+            BoxValorfinalV.Text = "22,00";
             panelVegetariano.Visible = true;
         }
         private void BtnKatsuoSando_Click(object sender, EventArgs e)
         {
+            //VariaveisGlobais.valorJapones = 24;
+            BoxValorfinalK.Text = "24,00";
             panelKatsuSando.Visible = true;
         }
         private void BtnComprarAlemao_Click(object sender, EventArgs e)
         {
+            //VariaveisGlobais.valorAlemao = 25;
+            BoxValorfinal.Text = "25,00";
             panelAlemão.Visible = true;
         }
 
@@ -89,6 +101,7 @@ namespace UkraBar
         //Todos os Btn Ok
         private void BtnOkI_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorItaliano = Convert.ToDouble(BoxValorfinalI.Text);
             if (VariaveisGlobais.CompraItaliano == true) 
             { 
                 conn.Open();
@@ -97,13 +110,14 @@ namespace UkraBar
             {
                 comandos.Parameters.AddWithValue("@nome_produto", "SandubaItaliano");
                 comandos.Parameters.AddWithValue("@quantidade", VariaveisGlobais.quantidadeItaliano);
+            
                 comandos.Parameters.AddWithValue("@valor_produto", VariaveisGlobais.valorItaliano);
                 comandos.Parameters.AddWithValue("@id_cliente", VariaveisGlobais.ultimoIdClienteInserido);
                 comandos.ExecuteNonQuery();
                 VariaveisGlobais.ultimoIdPedidoInserido = (int)comandos.LastInsertedId;
             }
-            conn.Close();
-            VariaveisGlobais.CompraItaliano = false;
+                conn.Close();
+                VariaveisGlobais.CompraItaliano = false;
             MessageBox.Show(VariaveisGlobais.quantidadeItaliano.ToString(), "Foram adicionados no Carrinho");
             panelItaliano.Visible = false;
         }
@@ -127,8 +141,10 @@ namespace UkraBar
 
         private void BtnOkK_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorJapones= Convert.ToDouble(BoxValorfinalK.Text);
             if (VariaveisGlobais.CompraJapones == true)
             {
+              
                 conn.Open();
                 string queryInserirPedido = "INSERT INTO pedido_cliente (nome_produto, quantidade, valor_produto, id_cliente) VALUES (@nome_produto, @quantidade, @valor_produto, @id_cliente)";
                 using (MySqlCommand comandos = new MySqlCommand(queryInserirPedido, conn))
@@ -165,6 +181,7 @@ namespace UkraBar
 
         private void BtnOkV_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorVegetariano = Convert.ToDouble(BoxValorfinalV.Text);
             if (VariaveisGlobais.CompraVegetariano == true)
             {
                 conn.Open();
@@ -203,6 +220,7 @@ namespace UkraBar
         }
         private void BtnOkZ_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorPolones = Convert.ToDouble(BoxValorfinalZ.Text);
             if (VariaveisGlobais.CompraPolones == true)
             {
                 conn.Open();
@@ -241,6 +259,7 @@ namespace UkraBar
 
         private void BtnOkA_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorAlemao = Convert.ToDouble(BoxValorfinal.Text);
             if (VariaveisGlobais.CompraAlemao == true)
             {
                 conn.Open();
@@ -279,6 +298,7 @@ namespace UkraBar
 
         private void BtnOkIB_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorIberico = Convert.ToDouble(BoxValorfinalIB.Text);
             if (VariaveisGlobais.CompraIberico == true)
             {
                 conn.Open();
@@ -330,7 +350,7 @@ namespace UkraBar
             BoxValorfinalIB.Text = VariaveisGlobais.valorIberico.ToString() + ",00";
             BoxValorfinalZ.Text = VariaveisGlobais.valorPolones.ToString() + ",00";
             BoxValorfinalK.Text = VariaveisGlobais.valorJapones.ToString() + ",00";
-            BoxValorfinalV.Text = VariaveisGlobais.valorVegetariano.ToString() + ",00";
+            //.Text = VariaveisGlobais.valorVegetariano.ToString() + ",00";
             BoxValorfinal.Text = VariaveisGlobais.valorAlemao.ToString() + ",00";
 
         }
@@ -357,7 +377,7 @@ namespace UkraBar
 
             VariaveisGlobais.quantidadeItaliano++;
             AtualizarValor();
-            VariaveisGlobais.valorItaliano = VariaveisGlobais.quantidadeItaliano * 24.00;
+            VariaveisGlobais.valorItaliano = Convert.ToInt32(VariaveisGlobais.quantidadeItaliano) * 24.00;
             BoxValorfinalI.Text = VariaveisGlobais.valorItaliano.ToString() + ",00";
         }
 
@@ -387,7 +407,7 @@ namespace UkraBar
         {
             VariaveisGlobais.quantidadeVegetariano++;
             AtualizarValor();
-            VariaveisGlobais.valorVegetariano = VariaveisGlobais.quantidadeVegetariano * 22.00;
+            VariaveisGlobais.valorVegetariano = Convert.ToInt32(VariaveisGlobais.quantidadeVegetariano) * 22.00;
             BoxValorfinalV.Text = VariaveisGlobais.valorVegetariano.ToString() + ",00";
         }
         private void BtnMaisA_Click(object sender, EventArgs e)
@@ -542,6 +562,28 @@ namespace UkraBar
             Carrinho carrinho = new Carrinho();
             this.Hide();
             carrinho.ShowDialog();
+            this.Close();
+        }
+
+        private void BoxValorfinalV_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelVegetariano_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnSobre_Click(object sender, EventArgs e)
+        {
+            Sobre Sobrenos= new Sobre();
+            Sobrenos.ShowDialog();
             this.Close();
         }
     }

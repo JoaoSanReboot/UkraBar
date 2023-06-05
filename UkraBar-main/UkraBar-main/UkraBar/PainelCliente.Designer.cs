@@ -1,6 +1,6 @@
 ﻿namespace UkraBar
 {
-    partial class CadastrarDesc
+    partial class PainelCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BarSideTop = new System.Windows.Forms.FlowLayoutPanel();
             this.panelLabel = new System.Windows.Forms.Panel();
-            this.lblDesc = new System.Windows.Forms.Label();
+            this.lblCliente = new System.Windows.Forms.Label();
             this.panelBuscar = new System.Windows.Forms.Panel();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.BoxBuscar = new System.Windows.Forms.TextBox();
@@ -45,7 +45,6 @@
             this.pbMenu = new System.Windows.Forms.PictureBox();
             this.panelShowConfig = new System.Windows.Forms.Panel();
             this.BtnDeletar = new System.Windows.Forms.Button();
-            this.BtnNovoDesc = new System.Windows.Forms.Button();
             this.BtnEditar = new System.Windows.Forms.Button();
             this.BtnConfigurações = new System.Windows.Forms.Button();
             this.BtnSobre = new System.Windows.Forms.Button();
@@ -57,33 +56,19 @@
             this.FecharJanelaF = new System.Windows.Forms.Button();
             this.LayoutFundoDT = new System.Windows.Forms.FlowLayoutPanel();
             this.panelEditarFundo = new System.Windows.Forms.Panel();
+            this.lblCarrinhoC = new System.Windows.Forms.Label();
+            this.BoxdCarrinhoC = new System.Windows.Forms.TextBox();
             this.BtnPincel = new System.Windows.Forms.Button();
-            this.lblPorcentagemD = new System.Windows.Forms.Label();
-            this.BoxdPorcentagemD = new System.Windows.Forms.TextBox();
-            this.lblDescricaoP = new System.Windows.Forms.Label();
-            this.lblNomeD = new System.Windows.Forms.Label();
-            this.BoxdNomeP = new System.Windows.Forms.TextBox();
-            this.BoxdDescricaoP = new System.Windows.Forms.TextBox();
+            this.lblNomeC = new System.Windows.Forms.Label();
+            this.lblCpfC = new System.Windows.Forms.Label();
+            this.BoxdCpfC = new System.Windows.Forms.TextBox();
+            this.BoxdNomeC = new System.Windows.Forms.TextBox();
             this.lblIdP = new System.Windows.Forms.Label();
-            this.BoxdIdP = new System.Windows.Forms.TextBox();
+            this.BoxdIdC = new System.Windows.Forms.TextBox();
             this.panelFundoDT = new System.Windows.Forms.Panel();
-            this.DTgridDesc = new System.Windows.Forms.DataGridView();
+            this.DTgridClie = new System.Windows.Forms.DataGridView();
             this.CheckBox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.PanelCadastrarDesc = new System.Windows.Forms.Panel();
-            this.BoxcPorcentagem = new System.Windows.Forms.TextBox();
-            this.lblPorcentagem = new System.Windows.Forms.Label();
-            this.BtnSalvar = new System.Windows.Forms.Button();
-            this.BoxcDescricao = new System.Windows.Forms.TextBox();
-            this.BoxcId = new System.Windows.Forms.TextBox();
-            this.BoxcNome = new System.Windows.Forms.TextBox();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.panelAviso = new System.Windows.Forms.Panel();
-            this.lblAviso = new System.Windows.Forms.Label();
-            this.lblDescricao = new System.Windows.Forms.Label();
-            this.pbFechar = new System.Windows.Forms.PictureBox();
-            this.lblId = new System.Windows.Forms.Label();
             this.TimerSideBar = new System.Windows.Forms.Timer(this.components);
-            this.NovoDescTimer = new System.Windows.Forms.Timer(this.components);
             this.TelaFundo = new System.Windows.Forms.PictureBox();
             this.BarSideTop.SuspendLayout();
             this.panelLabel.SuspendLayout();
@@ -97,10 +82,7 @@
             this.LayoutFundoDT.SuspendLayout();
             this.panelEditarFundo.SuspendLayout();
             this.panelFundoDT.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DTgridDesc)).BeginInit();
-            this.PanelCadastrarDesc.SuspendLayout();
-            this.panelAviso.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFechar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DTgridClie)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TelaFundo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,24 +101,24 @@
             // panelLabel
             // 
             this.panelLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.panelLabel.Controls.Add(this.lblDesc);
+            this.panelLabel.Controls.Add(this.lblCliente);
             this.panelLabel.Location = new System.Drawing.Point(3, 3);
             this.panelLabel.Name = "panelLabel";
             this.panelLabel.Size = new System.Drawing.Size(287, 61);
             this.panelLabel.TabIndex = 39;
             // 
-            // lblDesc
+            // lblCliente
             // 
-            this.lblDesc.AutoSize = true;
-            this.lblDesc.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblDesc.ForeColor = System.Drawing.Color.White;
-            this.lblDesc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblDesc.Location = new System.Drawing.Point(23, 20);
-            this.lblDesc.Name = "lblDesc";
-            this.lblDesc.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblDesc.Size = new System.Drawing.Size(245, 21);
-            this.lblDesc.TabIndex = 0;
-            this.lblDesc.Text = "CRUD | Cofigurações de Desconto";
+            this.lblCliente.AutoSize = true;
+            this.lblCliente.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lblCliente.ForeColor = System.Drawing.Color.White;
+            this.lblCliente.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblCliente.Location = new System.Drawing.Point(23, 20);
+            this.lblCliente.Name = "lblCliente";
+            this.lblCliente.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblCliente.Size = new System.Drawing.Size(242, 21);
+            this.lblCliente.TabIndex = 0;
+            this.lblCliente.Text = "CRUD | Configurações do Cliente ";
             // 
             // panelBuscar
             // 
@@ -246,11 +228,10 @@
             // 
             this.panelShowConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
             this.panelShowConfig.Controls.Add(this.BtnDeletar);
-            this.panelShowConfig.Controls.Add(this.BtnNovoDesc);
             this.panelShowConfig.Controls.Add(this.BtnEditar);
             this.panelShowConfig.Controls.Add(this.BtnConfigurações);
             this.panelShowConfig.Location = new System.Drawing.Point(3, 125);
-            this.panelShowConfig.MaximumSize = new System.Drawing.Size(223, 200);
+            this.panelShowConfig.MaximumSize = new System.Drawing.Size(223, 150);
             this.panelShowConfig.MinimumSize = new System.Drawing.Size(223, 50);
             this.panelShowConfig.Name = "panelShowConfig";
             this.panelShowConfig.Size = new System.Drawing.Size(223, 50);
@@ -266,7 +247,7 @@
             this.BtnDeletar.Image = global::UkraBar.Properties.Resources.trash_26px;
             this.BtnDeletar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnDeletar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnDeletar.Location = new System.Drawing.Point(-1, 100);
+            this.BtnDeletar.Location = new System.Drawing.Point(0, 50);
             this.BtnDeletar.Name = "BtnDeletar";
             this.BtnDeletar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.BtnDeletar.Size = new System.Drawing.Size(228, 50);
@@ -275,26 +256,6 @@
             this.BtnDeletar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnDeletar.UseVisualStyleBackColor = false;
             this.BtnDeletar.Click += new System.EventHandler(this.BtnDeletar_Click);
-            // 
-            // BtnNovoDesc
-            // 
-            this.BtnNovoDesc.BackColor = System.Drawing.Color.Green;
-            this.BtnNovoDesc.FlatAppearance.BorderSize = 0;
-            this.BtnNovoDesc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNovoDesc.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnNovoDesc.ForeColor = System.Drawing.Color.White;
-            this.BtnNovoDesc.Image = global::UkraBar.Properties.Resources.add_30px;
-            this.BtnNovoDesc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnNovoDesc.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.BtnNovoDesc.Location = new System.Drawing.Point(-2, 50);
-            this.BtnNovoDesc.Name = "BtnNovoDesc";
-            this.BtnNovoDesc.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnNovoDesc.Size = new System.Drawing.Size(229, 50);
-            this.BtnNovoDesc.TabIndex = 45;
-            this.BtnNovoDesc.Text = "               Novo Desconto";
-            this.BtnNovoDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnNovoDesc.UseVisualStyleBackColor = false;
-            this.BtnNovoDesc.Click += new System.EventHandler(this.BtnNovoDesc_Click);
             // 
             // BtnEditar
             // 
@@ -306,7 +267,7 @@
             this.BtnEditar.Image = global::UkraBar.Properties.Resources.pencil_24px;
             this.BtnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEditar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnEditar.Location = new System.Drawing.Point(-4, 150);
+            this.BtnEditar.Location = new System.Drawing.Point(-8, 100);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.BtnEditar.Size = new System.Drawing.Size(231, 50);
@@ -326,7 +287,7 @@
             this.BtnConfigurações.Image = global::UkraBar.Properties.Resources.engineering_30px;
             this.BtnConfigurações.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnConfigurações.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnConfigurações.Location = new System.Drawing.Point(0, 0);
+            this.BtnConfigurações.Location = new System.Drawing.Point(2, 0);
             this.BtnConfigurações.Name = "BtnConfigurações";
             this.BtnConfigurações.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.BtnConfigurações.Size = new System.Drawing.Size(223, 50);
@@ -354,6 +315,7 @@
             this.BtnSobre.Text = "                  Sobre";
             this.BtnSobre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnSobre.UseVisualStyleBackColor = false;
+            this.BtnSobre.Click += new System.EventHandler(this.BtnSobre_Click);
             // 
             // BtnAjuda
             // 
@@ -468,7 +430,7 @@
             this.LayoutFundoDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
             this.LayoutFundoDT.Controls.Add(this.panelEditarFundo);
             this.LayoutFundoDT.Controls.Add(this.panelFundoDT);
-            this.LayoutFundoDT.Location = new System.Drawing.Point(260, 164);
+            this.LayoutFundoDT.Location = new System.Drawing.Point(275, 164);
             this.LayoutFundoDT.Name = "LayoutFundoDT";
             this.LayoutFundoDT.Size = new System.Drawing.Size(964, 562);
             this.LayoutFundoDT.TabIndex = 55;
@@ -476,21 +438,42 @@
             // panelEditarFundo
             // 
             this.panelEditarFundo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.panelEditarFundo.Controls.Add(this.lblCarrinhoC);
+            this.panelEditarFundo.Controls.Add(this.BoxdCarrinhoC);
             this.panelEditarFundo.Controls.Add(this.BtnPincel);
-            this.panelEditarFundo.Controls.Add(this.lblPorcentagemD);
-            this.panelEditarFundo.Controls.Add(this.BoxdPorcentagemD);
-            this.panelEditarFundo.Controls.Add(this.lblDescricaoP);
-            this.panelEditarFundo.Controls.Add(this.lblNomeD);
-            this.panelEditarFundo.Controls.Add(this.BoxdNomeP);
-            this.panelEditarFundo.Controls.Add(this.BoxdDescricaoP);
+            this.panelEditarFundo.Controls.Add(this.lblNomeC);
+            this.panelEditarFundo.Controls.Add(this.lblCpfC);
+            this.panelEditarFundo.Controls.Add(this.BoxdCpfC);
+            this.panelEditarFundo.Controls.Add(this.BoxdNomeC);
             this.panelEditarFundo.Controls.Add(this.lblIdP);
-            this.panelEditarFundo.Controls.Add(this.BoxdIdP);
+            this.panelEditarFundo.Controls.Add(this.BoxdIdC);
             this.panelEditarFundo.Location = new System.Drawing.Point(3, 3);
             this.panelEditarFundo.MaximumSize = new System.Drawing.Size(979, 103);
             this.panelEditarFundo.MinimumSize = new System.Drawing.Size(979, 0);
             this.panelEditarFundo.Name = "panelEditarFundo";
             this.panelEditarFundo.Size = new System.Drawing.Size(979, 0);
             this.panelEditarFundo.TabIndex = 0;
+            // 
+            // lblCarrinhoC
+            // 
+            this.lblCarrinhoC.AutoSize = true;
+            this.lblCarrinhoC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblCarrinhoC.ForeColor = System.Drawing.Color.White;
+            this.lblCarrinhoC.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.lblCarrinhoC.Location = new System.Drawing.Point(661, 17);
+            this.lblCarrinhoC.Name = "lblCarrinhoC";
+            this.lblCarrinhoC.Size = new System.Drawing.Size(76, 21);
+            this.lblCarrinhoC.TabIndex = 48;
+            this.lblCarrinhoC.Text = "Carrinho";
+            // 
+            // BoxdCarrinhoC
+            // 
+            this.BoxdCarrinhoC.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BoxdCarrinhoC.Location = new System.Drawing.Point(580, 42);
+            this.BoxdCarrinhoC.MaxLength = 100;
+            this.BoxdCarrinhoC.Name = "BoxdCarrinhoC";
+            this.BoxdCarrinhoC.Size = new System.Drawing.Size(238, 29);
+            this.BoxdCarrinhoC.TabIndex = 47;
             // 
             // BtnPincel
             // 
@@ -502,7 +485,7 @@
             this.BtnPincel.Image = global::UkraBar.Properties.Resources.pencil_24px;
             this.BtnPincel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnPincel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnPincel.Location = new System.Drawing.Point(856, 26);
+            this.BtnPincel.Location = new System.Drawing.Point(855, 25);
             this.BtnPincel.Name = "BtnPincel";
             this.BtnPincel.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.BtnPincel.Size = new System.Drawing.Size(59, 59);
@@ -512,68 +495,47 @@
             this.BtnPincel.UseVisualStyleBackColor = false;
             this.BtnPincel.Click += new System.EventHandler(this.BtnPincel_Click);
             // 
-            // lblPorcentagemD
+            // lblNomeC
             // 
-            this.lblPorcentagemD.AutoSize = true;
-            this.lblPorcentagemD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblPorcentagemD.ForeColor = System.Drawing.Color.White;
-            this.lblPorcentagemD.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblPorcentagemD.Location = new System.Drawing.Point(642, 18);
-            this.lblPorcentagemD.Name = "lblPorcentagemD";
-            this.lblPorcentagemD.Size = new System.Drawing.Size(112, 21);
-            this.lblPorcentagemD.TabIndex = 45;
-            this.lblPorcentagemD.Text = "Porcentagem";
+            this.lblNomeC.AutoSize = true;
+            this.lblNomeC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblNomeC.ForeColor = System.Drawing.Color.White;
+            this.lblNomeC.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblNomeC.Location = new System.Drawing.Point(382, 18);
+            this.lblNomeC.Name = "lblNomeC";
+            this.lblNomeC.Size = new System.Drawing.Size(139, 21);
+            this.lblNomeC.TabIndex = 9;
+            this.lblNomeC.Text = "Nome do Cliente";
             // 
-            // BoxdPorcentagemD
+            // lblCpfC
             // 
-            this.BoxdPorcentagemD.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BoxdPorcentagemD.Location = new System.Drawing.Point(587, 43);
-            this.BoxdPorcentagemD.MaxLength = 100;
-            this.BoxdPorcentagemD.Name = "BoxdPorcentagemD";
-            this.BoxdPorcentagemD.Size = new System.Drawing.Size(223, 29);
-            this.BoxdPorcentagemD.TabIndex = 45;
+            this.lblCpfC.AutoSize = true;
+            this.lblCpfC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblCpfC.ForeColor = System.Drawing.Color.White;
+            this.lblCpfC.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.lblCpfC.Location = new System.Drawing.Point(167, 18);
+            this.lblCpfC.Name = "lblCpfC";
+            this.lblCpfC.Size = new System.Drawing.Size(118, 21);
+            this.lblCpfC.TabIndex = 7;
+            this.lblCpfC.Text = "Cpf do Cliente";
             // 
-            // lblDescricaoP
+            // BoxdCpfC
             // 
-            this.lblDescricaoP.AutoSize = true;
-            this.lblDescricaoP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblDescricaoP.ForeColor = System.Drawing.Color.White;
-            this.lblDescricaoP.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblDescricaoP.Location = new System.Drawing.Point(413, 19);
-            this.lblDescricaoP.Name = "lblDescricaoP";
-            this.lblDescricaoP.Size = new System.Drawing.Size(84, 21);
-            this.lblDescricaoP.TabIndex = 9;
-            this.lblDescricaoP.Text = "Descrição";
+            this.BoxdCpfC.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BoxdCpfC.Location = new System.Drawing.Point(131, 41);
+            this.BoxdCpfC.MaxLength = 100;
+            this.BoxdCpfC.Name = "BoxdCpfC";
+            this.BoxdCpfC.Size = new System.Drawing.Size(190, 29);
+            this.BoxdCpfC.TabIndex = 6;
             // 
-            // lblNomeD
+            // BoxdNomeC
             // 
-            this.lblNomeD.AutoSize = true;
-            this.lblNomeD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblNomeD.ForeColor = System.Drawing.Color.White;
-            this.lblNomeD.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.lblNomeD.Location = new System.Drawing.Point(157, 19);
-            this.lblNomeD.Name = "lblNomeD";
-            this.lblNomeD.Size = new System.Drawing.Size(157, 21);
-            this.lblNomeD.TabIndex = 7;
-            this.lblNomeD.Text = "Nome do Desconto";
-            // 
-            // BoxdNomeP
-            // 
-            this.BoxdNomeP.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BoxdNomeP.Location = new System.Drawing.Point(135, 42);
-            this.BoxdNomeP.MaxLength = 100;
-            this.BoxdNomeP.Name = "BoxdNomeP";
-            this.BoxdNomeP.Size = new System.Drawing.Size(190, 29);
-            this.BoxdNomeP.TabIndex = 6;
-            // 
-            // BoxdDescricaoP
-            // 
-            this.BoxdDescricaoP.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BoxdDescricaoP.Location = new System.Drawing.Point(340, 43);
-            this.BoxdDescricaoP.MaxLength = 100;
-            this.BoxdDescricaoP.Name = "BoxdDescricaoP";
-            this.BoxdDescricaoP.Size = new System.Drawing.Size(231, 29);
-            this.BoxdDescricaoP.TabIndex = 8;
+            this.BoxdNomeC.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BoxdNomeC.Location = new System.Drawing.Point(336, 42);
+            this.BoxdNomeC.MaxLength = 100;
+            this.BoxdNomeC.Name = "BoxdNomeC";
+            this.BoxdNomeC.Size = new System.Drawing.Size(231, 29);
+            this.BoxdNomeC.TabIndex = 8;
             // 
             // lblIdP
             // 
@@ -581,39 +543,39 @@
             this.lblIdP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.lblIdP.ForeColor = System.Drawing.Color.White;
             this.lblIdP.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblIdP.Location = new System.Drawing.Point(74, 18);
+            this.lblIdP.Location = new System.Drawing.Point(72, 17);
             this.lblIdP.Name = "lblIdP";
             this.lblIdP.Size = new System.Drawing.Size(25, 21);
             this.lblIdP.TabIndex = 5;
             this.lblIdP.Text = "Id";
             // 
-            // BoxdIdP
+            // BoxdIdC
             // 
-            this.BoxdIdP.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BoxdIdP.Location = new System.Drawing.Point(57, 42);
-            this.BoxdIdP.MaxLength = 100;
-            this.BoxdIdP.Name = "BoxdIdP";
-            this.BoxdIdP.Size = new System.Drawing.Size(59, 29);
-            this.BoxdIdP.TabIndex = 4;
+            this.BoxdIdC.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BoxdIdC.Location = new System.Drawing.Point(55, 41);
+            this.BoxdIdC.MaxLength = 100;
+            this.BoxdIdC.Name = "BoxdIdC";
+            this.BoxdIdC.Size = new System.Drawing.Size(59, 29);
+            this.BoxdIdC.TabIndex = 4;
             // 
             // panelFundoDT
             // 
-            this.panelFundoDT.Controls.Add(this.DTgridDesc);
+            this.panelFundoDT.Controls.Add(this.DTgridClie);
             this.panelFundoDT.Location = new System.Drawing.Point(3, 9);
             this.panelFundoDT.Name = "panelFundoDT";
             this.panelFundoDT.Size = new System.Drawing.Size(979, 552);
             this.panelFundoDT.TabIndex = 1;
             // 
-            // DTgridDesc
+            // DTgridClie
             // 
-            this.DTgridDesc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.DTgridClie.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.DTgridDesc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DTgridDesc.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.DTgridDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DTgridDesc.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DTgridDesc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+            this.DTgridClie.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DTgridClie.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.DTgridClie.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DTgridClie.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DTgridClie.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -621,10 +583,10 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTgridDesc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.DTgridDesc.ColumnHeadersHeight = 30;
-            this.DTgridDesc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.DTgridDesc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DTgridClie.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.DTgridClie.ColumnHeadersHeight = 30;
+            this.DTgridClie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.DTgridClie.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CheckBox});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
@@ -633,10 +595,10 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DTgridDesc.DefaultCellStyle = dataGridViewCellStyle2;
-            this.DTgridDesc.GridColor = System.Drawing.Color.Black;
-            this.DTgridDesc.Location = new System.Drawing.Point(3, 0);
-            this.DTgridDesc.Name = "DTgridDesc";
+            this.DTgridClie.DefaultCellStyle = dataGridViewCellStyle2;
+            this.DTgridClie.GridColor = System.Drawing.Color.Black;
+            this.DTgridClie.Location = new System.Drawing.Point(3, 0);
+            this.DTgridClie.Name = "DTgridClie";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -644,19 +606,19 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GrayText;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTgridDesc.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.DTgridDesc.RowHeadersWidth = 51;
-            this.DTgridDesc.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.DTgridDesc.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.DTgridDesc.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DTgridDesc.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
-            this.DTgridDesc.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
-            this.DTgridDesc.RowTemplate.Height = 30;
-            this.DTgridDesc.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.DTgridDesc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DTgridDesc.Size = new System.Drawing.Size(958, 549);
-            this.DTgridDesc.TabIndex = 29;
-            this.DTgridDesc.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DTgridDesc_CellMouseClick);
+            this.DTgridClie.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.DTgridClie.RowHeadersWidth = 51;
+            this.DTgridClie.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.DTgridClie.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.DTgridClie.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DTgridClie.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
+            this.DTgridClie.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
+            this.DTgridClie.RowTemplate.Height = 30;
+            this.DTgridClie.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.DTgridClie.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DTgridClie.Size = new System.Drawing.Size(958, 549);
+            this.DTgridClie.TabIndex = 29;
+            this.DTgridClie.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DTgridClie_CellMouseClick);
             // 
             // CheckBox
             // 
@@ -668,174 +630,10 @@
             this.CheckBox.Name = "CheckBox";
             this.CheckBox.Width = 70;
             // 
-            // PanelCadastrarDesc
-            // 
-            this.PanelCadastrarDesc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.PanelCadastrarDesc.Controls.Add(this.BoxcPorcentagem);
-            this.PanelCadastrarDesc.Controls.Add(this.lblPorcentagem);
-            this.PanelCadastrarDesc.Controls.Add(this.BtnSalvar);
-            this.PanelCadastrarDesc.Controls.Add(this.BoxcDescricao);
-            this.PanelCadastrarDesc.Controls.Add(this.BoxcId);
-            this.PanelCadastrarDesc.Controls.Add(this.BoxcNome);
-            this.PanelCadastrarDesc.Controls.Add(this.lblNome);
-            this.PanelCadastrarDesc.Controls.Add(this.panelAviso);
-            this.PanelCadastrarDesc.Controls.Add(this.lblDescricao);
-            this.PanelCadastrarDesc.Controls.Add(this.pbFechar);
-            this.PanelCadastrarDesc.Controls.Add(this.lblId);
-            this.PanelCadastrarDesc.Location = new System.Drawing.Point(256, 162);
-            this.PanelCadastrarDesc.MaximumSize = new System.Drawing.Size(982, 558);
-            this.PanelCadastrarDesc.MinimumSize = new System.Drawing.Size(0, 560);
-            this.PanelCadastrarDesc.Name = "PanelCadastrarDesc";
-            this.PanelCadastrarDesc.Size = new System.Drawing.Size(0, 560);
-            this.PanelCadastrarDesc.TabIndex = 56;
-            // 
-            // BoxcPorcentagem
-            // 
-            this.BoxcPorcentagem.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BoxcPorcentagem.Location = new System.Drawing.Point(60, 327);
-            this.BoxcPorcentagem.MaxLength = 30;
-            this.BoxcPorcentagem.Name = "BoxcPorcentagem";
-            this.BoxcPorcentagem.Size = new System.Drawing.Size(250, 29);
-            this.BoxcPorcentagem.TabIndex = 15;
-            // 
-            // lblPorcentagem
-            // 
-            this.lblPorcentagem.AutoSize = true;
-            this.lblPorcentagem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.lblPorcentagem.ForeColor = System.Drawing.Color.White;
-            this.lblPorcentagem.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.lblPorcentagem.Location = new System.Drawing.Point(60, 306);
-            this.lblPorcentagem.Name = "lblPorcentagem";
-            this.lblPorcentagem.Size = new System.Drawing.Size(111, 21);
-            this.lblPorcentagem.TabIndex = 16;
-            this.lblPorcentagem.Text = "Porcentagem:";
-            // 
-            // BtnSalvar
-            // 
-            this.BtnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.BtnSalvar.FlatAppearance.BorderSize = 0;
-            this.BtnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSalvar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.BtnSalvar.ForeColor = System.Drawing.Color.White;
-            this.BtnSalvar.Image = global::UkraBar.Properties.Resources.Checkmark_24px;
-            this.BtnSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSalvar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnSalvar.Location = new System.Drawing.Point(54, 387);
-            this.BtnSalvar.Name = "BtnSalvar";
-            this.BtnSalvar.Padding = new System.Windows.Forms.Padding(0, 0, 40, 0);
-            this.BtnSalvar.Size = new System.Drawing.Size(256, 50);
-            this.BtnSalvar.TabIndex = 11;
-            this.BtnSalvar.Text = "                        Salvar";
-            this.BtnSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSalvar.UseVisualStyleBackColor = false;
-            this.BtnSalvar.Click += new System.EventHandler(this.BtnSalvar_Click);
-            // 
-            // BoxcDescricao
-            // 
-            this.BoxcDescricao.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BoxcDescricao.Location = new System.Drawing.Point(61, 235);
-            this.BoxcDescricao.MaxLength = 100;
-            this.BoxcDescricao.Name = "BoxcDescricao";
-            this.BoxcDescricao.Size = new System.Drawing.Size(250, 29);
-            this.BoxcDescricao.TabIndex = 7;
-            // 
-            // BoxcId
-            // 
-            this.BoxcId.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BoxcId.Location = new System.Drawing.Point(61, 67);
-            this.BoxcId.MaxLength = 1000;
-            this.BoxcId.Name = "BoxcId";
-            this.BoxcId.Size = new System.Drawing.Size(51, 29);
-            this.BoxcId.TabIndex = 1;
-            // 
-            // BoxcNome
-            // 
-            this.BoxcNome.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BoxcNome.Location = new System.Drawing.Point(61, 148);
-            this.BoxcNome.MaxLength = 100;
-            this.BoxcNome.Name = "BoxcNome";
-            this.BoxcNome.Size = new System.Drawing.Size(250, 29);
-            this.BoxcNome.TabIndex = 3;
-            // 
-            // lblNome
-            // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.lblNome.ForeColor = System.Drawing.Color.White;
-            this.lblNome.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblNome.Location = new System.Drawing.Point(61, 124);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(157, 21);
-            this.lblNome.TabIndex = 4;
-            this.lblNome.Text = "Nome do Desconto:";
-            // 
-            // panelAviso
-            // 
-            this.panelAviso.BackColor = System.Drawing.Color.Red;
-            this.panelAviso.Controls.Add(this.lblAviso);
-            this.panelAviso.Location = new System.Drawing.Point(112, 78);
-            this.panelAviso.Name = "panelAviso";
-            this.panelAviso.Size = new System.Drawing.Size(136, 19);
-            this.panelAviso.TabIndex = 6;
-            // 
-            // lblAviso
-            // 
-            this.lblAviso.AutoSize = true;
-            this.lblAviso.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            this.lblAviso.ForeColor = System.Drawing.Color.Black;
-            this.lblAviso.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblAviso.Location = new System.Drawing.Point(-1, 4);
-            this.lblAviso.Name = "lblAviso";
-            this.lblAviso.Size = new System.Drawing.Size(138, 12);
-            this.lblAviso.TabIndex = 5;
-            this.lblAviso.Text = "Recomendado não usar";
-            // 
-            // lblDescricao
-            // 
-            this.lblDescricao.AutoSize = true;
-            this.lblDescricao.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.lblDescricao.ForeColor = System.Drawing.Color.White;
-            this.lblDescricao.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblDescricao.Location = new System.Drawing.Point(61, 214);
-            this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(85, 21);
-            this.lblDescricao.TabIndex = 8;
-            this.lblDescricao.Text = "Descrição:";
-            // 
-            // pbFechar
-            // 
-            this.pbFechar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbFechar.Image = global::UkraBar.Properties.Resources.X_Key_50px;
-            this.pbFechar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pbFechar.Location = new System.Drawing.Point(928, 5);
-            this.pbFechar.Name = "pbFechar";
-            this.pbFechar.Size = new System.Drawing.Size(40, 40);
-            this.pbFechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbFechar.TabIndex = 0;
-            this.pbFechar.TabStop = false;
-            this.pbFechar.Click += new System.EventHandler(this.pbFechar_Click);
-            // 
-            // lblId
-            // 
-            this.lblId.AutoSize = true;
-            this.lblId.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.lblId.ForeColor = System.Drawing.Color.White;
-            this.lblId.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblId.Location = new System.Drawing.Point(61, 43);
-            this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(29, 21);
-            this.lblId.TabIndex = 2;
-            this.lblId.Text = "Id:";
-            // 
             // TimerSideBar
             // 
             this.TimerSideBar.Interval = 10;
             this.TimerSideBar.Tick += new System.EventHandler(this.TimerSideBar_Tick_1);
-            // 
-            // NovoDescTimer
-            // 
-            this.NovoDescTimer.Interval = 10;
-            this.NovoDescTimer.Tick += new System.EventHandler(this.NovoDescTimer_Tick);
             // 
             // TelaFundo
             // 
@@ -845,24 +643,23 @@
             this.TelaFundo.Location = new System.Drawing.Point(0, 0);
             this.TelaFundo.Name = "TelaFundo";
             this.TelaFundo.Size = new System.Drawing.Size(1370, 749);
-            this.TelaFundo.TabIndex = 57;
+            this.TelaFundo.TabIndex = 56;
             this.TelaFundo.TabStop = false;
             // 
-            // CadastrarDesc
+            // PainelCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.PanelCadastrarDesc);
             this.Controls.Add(this.LayoutFundoDT);
             this.Controls.Add(this.BarSideTop);
             this.Controls.Add(this.sideBarMenuD);
             this.Controls.Add(this.paneltopbar);
             this.Controls.Add(this.TelaFundo);
-            this.Name = "CadastrarDesc";
-            this.Text = "CadastrarDesc";
+            this.Name = "PainelCliente";
+            this.Text = "PainelCliente";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.CadastrarDesc_Load);
+            this.Load += new System.EventHandler(this.PainelCliente_Load);
             this.BarSideTop.ResumeLayout(false);
             this.panelLabel.ResumeLayout(false);
             this.panelLabel.PerformLayout();
@@ -879,12 +676,7 @@
             this.panelEditarFundo.ResumeLayout(false);
             this.panelEditarFundo.PerformLayout();
             this.panelFundoDT.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DTgridDesc)).EndInit();
-            this.PanelCadastrarDesc.ResumeLayout(false);
-            this.PanelCadastrarDesc.PerformLayout();
-            this.panelAviso.ResumeLayout(false);
-            this.panelAviso.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFechar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DTgridClie)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TelaFundo)).EndInit();
             this.ResumeLayout(false);
 
@@ -894,7 +686,7 @@
 
         private System.Windows.Forms.FlowLayoutPanel BarSideTop;
         private System.Windows.Forms.Panel panelLabel;
-        private System.Windows.Forms.Label lblDesc;
+        private System.Windows.Forms.Label lblCliente;
         private System.Windows.Forms.Panel panelBuscar;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox BoxBuscar;
@@ -905,7 +697,6 @@
         private System.Windows.Forms.PictureBox pbMenu;
         private System.Windows.Forms.Panel panelShowConfig;
         private System.Windows.Forms.Button BtnDeletar;
-        private System.Windows.Forms.Button BtnNovoDesc;
         private System.Windows.Forms.Button BtnEditar;
         private System.Windows.Forms.Button BtnConfigurações;
         private System.Windows.Forms.Button BtnSobre;
@@ -917,33 +708,19 @@
         private System.Windows.Forms.Button FecharJanelaF;
         private System.Windows.Forms.FlowLayoutPanel LayoutFundoDT;
         private System.Windows.Forms.Panel panelEditarFundo;
+        private System.Windows.Forms.Label lblCarrinhoC;
+        private System.Windows.Forms.TextBox BoxdCarrinhoC;
         private System.Windows.Forms.Button BtnPincel;
-        private System.Windows.Forms.Label lblPorcentagemD;
-        private System.Windows.Forms.TextBox BoxdPorcentagemD;
-        private System.Windows.Forms.Label lblDescricaoP;
-        private System.Windows.Forms.Label lblNomeD;
-        private System.Windows.Forms.TextBox BoxdNomeP;
-        private System.Windows.Forms.TextBox BoxdDescricaoP;
+        private System.Windows.Forms.Label lblNomeC;
+        private System.Windows.Forms.Label lblCpfC;
+        private System.Windows.Forms.TextBox BoxdCpfC;
+        private System.Windows.Forms.TextBox BoxdNomeC;
         private System.Windows.Forms.Label lblIdP;
-        private System.Windows.Forms.TextBox BoxdIdP;
+        private System.Windows.Forms.TextBox BoxdIdC;
         private System.Windows.Forms.Panel panelFundoDT;
-        private System.Windows.Forms.DataGridView DTgridDesc;
+        private System.Windows.Forms.DataGridView DTgridClie;
         private System.Windows.Forms.DataGridViewCheckBoxColumn CheckBox;
-        private System.Windows.Forms.Panel PanelCadastrarDesc;
-        private System.Windows.Forms.TextBox BoxcPorcentagem;
-        private System.Windows.Forms.Label lblPorcentagem;
-        private System.Windows.Forms.Button BtnSalvar;
-        private System.Windows.Forms.TextBox BoxcDescricao;
-        private System.Windows.Forms.TextBox BoxcId;
-        private System.Windows.Forms.TextBox BoxcNome;
-        private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.Panel panelAviso;
-        private System.Windows.Forms.Label lblAviso;
-        private System.Windows.Forms.Label lblDescricao;
-        private System.Windows.Forms.PictureBox pbFechar;
-        private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Timer TimerSideBar;
-        private System.Windows.Forms.Timer NovoDescTimer;
         private System.Windows.Forms.PictureBox TelaFundo;
     }
 }

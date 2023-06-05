@@ -64,6 +64,7 @@ namespace UkraBar
 
         private void BtnOkBA_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorBanosh = Convert.ToDouble(BoxValorfinalBA.Text);
             if (VariaveisGlobais.CompraBanosh == true)
             {
                 conn.Open();
@@ -101,6 +102,7 @@ namespace UkraBar
         }
         private void BtnOkBO_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorBorscht = Convert.ToDouble(BoxValorfinalBO.Text);
             if (VariaveisGlobais.CompraBorscht == true)
             {
                 conn.Open();
@@ -140,6 +142,7 @@ namespace UkraBar
 
         private void BtnOkH_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorHulubsti = Convert.ToDouble(BoxValorfinalB.Text);
             if (VariaveisGlobais.CompraHusbulist == true)
             {
                 conn.Open();
@@ -178,6 +181,7 @@ namespace UkraBar
 
         private void BtnOkF_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorFrango = Convert.ToDouble(BoxValorfinalF.Text);
             if (VariaveisGlobais.CompraFrango == true)
             {
                 conn.Open();
@@ -216,6 +220,7 @@ namespace UkraBar
 
         private void BtnOkP_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorPerohe = Convert.ToDouble(BoxValorfinalP.Text);
             if (VariaveisGlobais.CompraPerohe)
             {
 
@@ -254,6 +259,7 @@ namespace UkraBar
         }
         private void BtnOkB_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorBatata = Convert.ToDouble(BoxValorfinalB.Text);
             if (VariaveisGlobais.CompraBatata == true)
             {
                 conn.Open();
@@ -438,31 +444,43 @@ namespace UkraBar
 
         private void BtnBatata_Click(object sender, EventArgs e)
         {
+            //VariaveisGlobais.valorBatata = 23;
+            BoxValorfinalB.Text = "23,00";
             panelBatata.Visible = true;
         }
 
         private void BtnFrango_Click(object sender, EventArgs e)
         {
+            //VariaveisGlobais.valorFrango = 45;
+            BoxValorfinalF.Text = "45,00";
             panelFrango.Visible = true;
         }
 
         private void BtnPerohe_Click(object sender, EventArgs e)
         {
+            //VariaveisGlobais.valorPerohe = 32;
+            BoxValorfinalP.Text = "32,00";
             panelPerohe.Visible = true;
         }
 
         private void BtnHulubsti_Click(object sender, EventArgs e)
         {
+            //VariaveisGlobais.valorHulubsti = 20;
+            BoxValorfinalH.Text = "20,00";
             panelHolubtsi.Visible = true;
         }
 
         private void BtnBorscht_Click(object sender, EventArgs e)
         {
+            //VariaveisGlobais.valorBorcht = 28;
+            BoxValorfinalBO.Text = "28,00";
             panelBorscht.Visible = true;
         }
 
         private void BtnBanosh_Click(object sender, EventArgs e)
         {
+            //VariaveisGlobais.valorBanosh = 25;
+            BoxValorfinalBA.Text = "25,00";
             panelBanosh.Visible = true;
         }
         bool sideBarMenuExpand1;
@@ -535,6 +553,13 @@ namespace UkraBar
             Carrinho carrinho = new Carrinho();
             this.Hide();
             carrinho.ShowDialog();
+            this.Close();
+        }
+
+        private void BtnSobre_Click(object sender, EventArgs e)
+        {
+            Sobre Sobrenos = new Sobre();
+            Sobrenos.ShowDialog();
             this.Close();
         }
     }

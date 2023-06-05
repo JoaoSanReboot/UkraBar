@@ -375,7 +375,12 @@ namespace UkraBar
             }
         }
 
-       
+        private void BtnSobre_Click(object sender, EventArgs e)
+        {
+            Sobre Sobrenos = new Sobre();
+            Sobrenos.ShowDialog();
+            this.Close();
+        }
     }
 }
     

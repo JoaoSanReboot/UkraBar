@@ -31,7 +31,8 @@ namespace UkraBar
 
         private void Clientes_Load(object sender, EventArgs e)
         {
-
+            panel1.AutoSize = true;
+            panel1.AutoSizeMode=AutoSizeMode.GrowAndShrink;
         }
 
         private void BtnSim_Click(object sender, EventArgs e)
@@ -64,7 +65,7 @@ namespace UkraBar
 
             if (BoxCpf.Text.Length < 10)
             {
-                MessageBox.Show("Você não insiriu todos os dado");
+                MessageBox.Show("Você não inseriu todos os dados");
             }
             if (BoxCpf.Text.Length == 11)
             {
@@ -87,6 +88,11 @@ namespace UkraBar
 
                 conn.Close();
             }
+        }
+
+        private void BoxCpf_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
