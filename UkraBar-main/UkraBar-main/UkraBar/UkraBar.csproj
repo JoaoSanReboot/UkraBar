@@ -139,6 +139,12 @@
     <Compile Include="Carrinho.Designer.cs">
       <DependentUpon>Carrinho.cs</DependentUpon>
     </Compile>
+    <Compile Include="FinalizarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalizarPedido.Designer.cs">
+      <DependentUpon>FinalizarPedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuBebidas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalizarPedido.resx">
+      <DependentUpon>FinalizarPedido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuBebidas.resx">
       <DependentUpon>MenuBebidas.cs</DependentUpon>
@@ -489,6 +498,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Ukra Bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meal_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bao_bun_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cola_24px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

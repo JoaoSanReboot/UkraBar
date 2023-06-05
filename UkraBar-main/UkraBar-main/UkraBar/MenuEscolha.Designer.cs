@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtnFechar = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -38,21 +37,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TelaFundo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // BtnFechar
-            // 
-            this.BtnFechar.BackColor = System.Drawing.Color.Red;
-            this.BtnFechar.FlatAppearance.BorderSize = 0;
-            this.BtnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnFechar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnFechar.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnFechar.Location = new System.Drawing.Point(587, 230);
-            this.BtnFechar.Name = "BtnFechar";
-            this.BtnFechar.Size = new System.Drawing.Size(192, 63);
-            this.BtnFechar.TabIndex = 5;
-            this.BtnFechar.Text = "Finalizar Pedido";
-            this.BtnFechar.UseVisualStyleBackColor = false;
-            this.BtnFechar.Click += new System.EventHandler(this.BtnFechar_Click);
             // 
             // pictureBox3
             // 
@@ -104,7 +88,6 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.BtnFechar);
             this.Controls.Add(this.TelaFundo);
             this.Name = "MenuEscolha";
             this.Text = "Cardapio";
@@ -121,7 +104,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox TelaFundo;
-        private System.Windows.Forms.Button BtnFechar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;

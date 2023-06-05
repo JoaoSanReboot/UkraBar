@@ -47,9 +47,9 @@ namespace UkraBar
 
             conn.Close();
 
-            Carrinho carrinho3 = new Carrinho();
+            FinalizarPedido finalizar = new FinalizarPedido();
             this.Hide();
-            carrinho3.ShowDialog();
+            finalizar.ShowDialog();
             this.Close();
 
         }
@@ -73,9 +73,9 @@ namespace UkraBar
             }
 
             conn.Close();
-            Carrinho carrinho3 = new Carrinho();
+            FinalizarPedido finalizar = new FinalizarPedido();
             this.Hide();
-            carrinho3.ShowDialog();
+            finalizar.ShowDialog();
             this.Close();
         }
 
@@ -102,9 +102,9 @@ namespace UkraBar
 
             conn.Close();
 
-            Carrinho carrinho3 = new Carrinho();
+            FinalizarPedido finalizar = new FinalizarPedido();
             this.Hide();
-            carrinho3.ShowDialog();
+            finalizar.ShowDialog();
             this.Close();
         }
     }

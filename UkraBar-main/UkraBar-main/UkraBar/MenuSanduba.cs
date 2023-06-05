@@ -586,6 +586,22 @@ namespace UkraBar
             Sobrenos.ShowDialog();
             this.Close();
         }
+
+        private void BtnPrato_Click(object sender, EventArgs e)
+        {
+            MenuPratos Pratos = new MenuPratos();
+            this.Hide();
+            Pratos.ShowDialog();
+            this.Close();
+        }
+
+        private void BtnBebidas_Click(object sender, EventArgs e)
+        {
+            MenuBebidas Bebidas = new MenuBebidas();
+            this.Hide();
+            Bebidas.ShowDialog();
+            this.Close();
+        }
     }
 }
 

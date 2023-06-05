@@ -163,6 +163,16 @@ namespace UkraBar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bao_bun_24px {
+            get {
+                object obj = ResourceManager.GetObject("bao_bun_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BOTAO {
             get {
                 object obj = ResourceManager.GetObject("BOTAO", resourceCulture);
@@ -296,6 +306,16 @@ namespace UkraBar.Properties {
         internal static System.Drawing.Bitmap close_window_24px1 {
             get {
                 object obj = ResourceManager.GetObject("close_window_24px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cola_24px {
+            get {
+                object obj = ResourceManager.GetObject("cola_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -456,6 +476,16 @@ namespace UkraBar.Properties {
         internal static System.Drawing.Bitmap maximize_window_24px {
             get {
                 object obj = ResourceManager.GetObject("maximize_window_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap meal_26px {
+            get {
+                object obj = ResourceManager.GetObject("meal_26px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -112,5 +112,20 @@ namespace UkraBar
             Sobrenos.ShowDialog();
             this.Close();
         }
+
+        private void BtnFinalizar_Click(object sender, EventArgs e)
+        {
+            if (VariaveisGlobais.valorFinalTotal == 0)
+            {
+                MessageBox.Show("Você ainda não fez um Pedido!");
+            }
+            else
+            {
+                _NomeCliente MenuNome = new _NomeCliente();
+                this.Hide();
+                MenuNome.ShowDialog();
+                this.Close();
+            }
+        }
     }
 }

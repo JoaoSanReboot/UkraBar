@@ -165,8 +165,8 @@
             this.lblMenu = new System.Windows.Forms.Label();
             this.pbMenu = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BtnSobre = new System.Windows.Forms.Button();
-            this.BtnAjuda = new System.Windows.Forms.Button();
+            this.BtnBebidas = new System.Windows.Forms.Button();
+            this.BtnPrato = new System.Windows.Forms.Button();
             this.BtnCarrinho = new System.Windows.Forms.Button();
             this.BtnVoltar = new System.Windows.Forms.Button();
             this.SideBarTime = new System.Windows.Forms.Timer(this.components);
@@ -1855,8 +1855,8 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.BtnSobre);
-            this.panel1.Controls.Add(this.BtnAjuda);
+            this.panel1.Controls.Add(this.BtnBebidas);
+            this.panel1.Controls.Add(this.BtnPrato);
             this.panel1.Controls.Add(this.BtnCarrinho);
             this.panel1.Controls.Add(this.BtnVoltar);
             this.panel1.Location = new System.Drawing.Point(3, 125);
@@ -1864,42 +1864,41 @@
             this.panel1.Size = new System.Drawing.Size(197, 529);
             this.panel1.TabIndex = 43;
             // 
-            // BtnSobre
+            // BtnBebidas
             // 
-            this.BtnSobre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnSobre.FlatAppearance.BorderSize = 0;
-            this.BtnSobre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSobre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSobre.ForeColor = System.Drawing.Color.White;
-            this.BtnSobre.Image = global::UkraBar.Properties.Resources.info_24px;
-            this.BtnSobre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSobre.Location = new System.Drawing.Point(-1, 63);
-            this.BtnSobre.Name = "BtnSobre";
-            this.BtnSobre.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.BtnSobre.Size = new System.Drawing.Size(198, 50);
-            this.BtnSobre.TabIndex = 42;
-            this.BtnSobre.Text = "              Sobre";
-            this.BtnSobre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSobre.UseVisualStyleBackColor = false;
-            this.BtnSobre.Click += new System.EventHandler(this.BtnSobre_Click);
+            this.BtnBebidas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnBebidas.FlatAppearance.BorderSize = 0;
+            this.BtnBebidas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBebidas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBebidas.ForeColor = System.Drawing.Color.White;
+            this.BtnBebidas.Image = global::UkraBar.Properties.Resources.cola_24px;
+            this.BtnBebidas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnBebidas.Location = new System.Drawing.Point(-1, 115);
+            this.BtnBebidas.Name = "BtnBebidas";
+            this.BtnBebidas.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.BtnBebidas.Size = new System.Drawing.Size(197, 50);
+            this.BtnBebidas.TabIndex = 47;
+            this.BtnBebidas.Text = "Bebidas";
+            this.BtnBebidas.UseVisualStyleBackColor = false;
+            this.BtnBebidas.Click += new System.EventHandler(this.BtnBebidas_Click);
             // 
-            // BtnAjuda
+            // BtnPrato
             // 
-            this.BtnAjuda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnAjuda.FlatAppearance.BorderSize = 0;
-            this.BtnAjuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAjuda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAjuda.ForeColor = System.Drawing.Color.White;
-            this.BtnAjuda.Image = global::UkraBar.Properties.Resources.ask_question_24px;
-            this.BtnAjuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAjuda.Location = new System.Drawing.Point(-1, 123);
-            this.BtnAjuda.Name = "BtnAjuda";
-            this.BtnAjuda.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.BtnAjuda.Size = new System.Drawing.Size(198, 50);
-            this.BtnAjuda.TabIndex = 43;
-            this.BtnAjuda.Text = "              Ajuda";
-            this.BtnAjuda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAjuda.UseVisualStyleBackColor = false;
+            this.BtnPrato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnPrato.FlatAppearance.BorderSize = 0;
+            this.BtnPrato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPrato.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPrato.ForeColor = System.Drawing.Color.White;
+            this.BtnPrato.Image = global::UkraBar.Properties.Resources.meal_26px;
+            this.BtnPrato.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnPrato.Location = new System.Drawing.Point(-3, 59);
+            this.BtnPrato.Name = "BtnPrato";
+            this.BtnPrato.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.BtnPrato.Size = new System.Drawing.Size(197, 50);
+            this.BtnPrato.TabIndex = 46;
+            this.BtnPrato.Text = "Pratos ";
+            this.BtnPrato.UseVisualStyleBackColor = false;
+            this.BtnPrato.Click += new System.EventHandler(this.BtnPrato_Click);
             // 
             // BtnCarrinho
             // 
@@ -1928,7 +1927,7 @@
             this.BtnVoltar.ForeColor = System.Drawing.Color.White;
             this.BtnVoltar.Image = global::UkraBar.Properties.Resources.reply_arrow_24px;
             this.BtnVoltar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnVoltar.Location = new System.Drawing.Point(-3, 183);
+            this.BtnVoltar.Location = new System.Drawing.Point(-3, 171);
             this.BtnVoltar.Name = "BtnVoltar";
             this.BtnVoltar.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.BtnVoltar.Size = new System.Drawing.Size(197, 50);
@@ -2276,8 +2275,8 @@
         private System.Windows.Forms.PictureBox pbMenu;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button BtnCarrinho;
-        private System.Windows.Forms.Button BtnSobre;
-        private System.Windows.Forms.Button BtnAjuda;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button BtnBebidas;
+        private System.Windows.Forms.Button BtnPrato;
     }
 }

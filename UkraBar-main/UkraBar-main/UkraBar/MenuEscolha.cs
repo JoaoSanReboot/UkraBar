@@ -19,13 +19,7 @@ namespace UkraBar
         }
 
         private void BtnFechar_Click(object sender, EventArgs e)
-        {
-            VariaveisGlobais.valorFinal = VariaveisGlobais.valorItaliano + VariaveisGlobais.valorJapones + VariaveisGlobais.valorPolones + VariaveisGlobais.valorIberico + VariaveisGlobais.valorAlemao + VariaveisGlobais.valorVegetariano;
-            VariaveisGlobais.valorFinalP = VariaveisGlobais.valorBatata + VariaveisGlobais.valorHulubsti + VariaveisGlobais.valorFrango + VariaveisGlobais.valorPerohe+ VariaveisGlobais.valorBorscht + VariaveisGlobais.valorBanosh;
-            VariaveisGlobais.valorFinalB = VariaveisGlobais.valorPolaka + VariaveisGlobais.valorChamate + VariaveisGlobais.valorMaçaAmor + VariaveisGlobais.valorMoniche + VariaveisGlobais.valorSlava + VariaveisGlobais.valorCaipirinha;
-
-            VariaveisGlobais.valorFinalTotal = VariaveisGlobais.valorFinal + VariaveisGlobais.valorFinalB + VariaveisGlobais.valorFinalP;  
-            
+        {        
             if(VariaveisGlobais.valorFinalTotal == 0)
             {
                 MessageBox.Show("Seu carrinho está vazio!");
