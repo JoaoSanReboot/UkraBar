@@ -127,14 +127,20 @@
   <data name="MesaSuperiorEsquerdo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MesaSuperiorEsquerdo.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BTNcliente1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BTNcliente1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BtnEntrar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BtnEntrar1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="filtered_file_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\filtered_file_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KatsuSanduba1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KatsuSanduba1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="squared_menu_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\squared_menu_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PBADM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PBADM.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,11 +148,17 @@
   <data name="maximize_window_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maximize_window_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mobile_shop_payment_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mobile_shop_payment_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Selecione" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Selecione.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eye_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eye_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PBFUNC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PBFUNC.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BOTAO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BOTAO.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,17 +178,23 @@
   <data name="TelaCpf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TelaCpf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="expand_arrow_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\expand_arrow_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bao_bun_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bao_bun_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="upload_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\upload_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cola_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cola_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sandubas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sandubas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Checkmark_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Checkmark_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FundoLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FundoLogin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SandubaPolones" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SandubaPolones.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,6 +208,9 @@
   <data name="shopping_cart_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shopping_cart_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BTNadm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BTNadm.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="SandubaPolones1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SandubaPolones1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -199,8 +220,8 @@
   <data name="b" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\b.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="squared_menu_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\squared_menu_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="expand_arrow_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\expand_arrow_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fast_cart_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fast_cart_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,6 +277,9 @@
   <data name="Sandubas2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sandubas2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BtnLogar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BtnLogar1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pencil_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pencil_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -271,8 +295,8 @@
   <data name="reply_arrow_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reply_arrow_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bao_bun_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bao_bun_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BTNcliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BTNcliente.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SandubaEspanhol" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SandubaEspanhol.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -295,14 +319,17 @@
   <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="engineering_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\engineering_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="KatsuSanduba1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KatsuSanduba1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sale (1) (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sale (1) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="engineering_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\engineering_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="toggle_on_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toggle_on_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -331,11 +358,14 @@
   <data name="TelaFundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TelaFundo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mobile_shop_payment_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mobile_shop_payment_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BTNfunc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BTNfunc.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SandubaAlemão21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SandubaAlemão21.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FundoLogin1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FundoLogin1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="close_window_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close_window_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -391,7 +421,7 @@
   <data name="info_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cola_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cola_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FundoLayout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FundoLayout.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

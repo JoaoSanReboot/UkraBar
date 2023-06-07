@@ -508,5 +508,38 @@
   <ItemGroup>
     <None Include="Resources\cola_24px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BTNadm.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PBFUNC.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BTNcliente.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagens\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BTNfunc.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BTNcliente1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PBADM.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoLogin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnLogar1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoLogin1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoLayout.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
