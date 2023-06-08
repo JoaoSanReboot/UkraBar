@@ -143,6 +143,26 @@ namespace UkraBar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AdmImage {
+            get {
+                object obj = ResourceManager.GetObject("AdmImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ADMimagem {
+            get {
+                object obj = ResourceManager.GetObject("ADMimagem", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ask_question_24px {
             get {
                 object obj = ResourceManager.GetObject("ask_question_24px", resourceCulture);
@@ -456,6 +476,36 @@ namespace UkraBar.Properties {
         internal static System.Drawing.Bitmap filtered_file_24px {
             get {
                 object obj = ResourceManager.GetObject("filtered_file_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FundoADM {
+            get {
+                object obj = ResourceManager.GetObject("FundoADM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FundoAdmeFunc {
+            get {
+                object obj = ResourceManager.GetObject("FundoAdmeFunc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FundoBase {
+            get {
+                object obj = ResourceManager.GetObject("FundoBase", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

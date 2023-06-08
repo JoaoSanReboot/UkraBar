@@ -121,5 +121,18 @@ namespace UkraBar
         {
 
         }
+
+        private void BtnDescontosView_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnProduto_Click(object sender, EventArgs e)
+        {
+            MenuEscolha menu = new MenuEscolha();
+            this.Hide();
+            menu.ShowDialog();
+            this.Close();
+        }
     }
 }

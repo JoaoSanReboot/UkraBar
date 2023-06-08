@@ -58,6 +58,9 @@
             // 
             // TextFunc1
             // 
+            this.TextFunc1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TextFunc1.BackColor = System.Drawing.Color.White;
             this.TextFunc1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextFunc1.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
@@ -71,6 +74,9 @@
             // 
             // TextFunc2
             // 
+            this.TextFunc2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TextFunc2.BackColor = System.Drawing.Color.White;
             this.TextFunc2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextFunc2.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
@@ -104,6 +110,9 @@
             // 
             // TextAdm1
             // 
+            this.TextAdm1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TextAdm1.BackColor = System.Drawing.Color.White;
             this.TextAdm1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextAdm1.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
@@ -117,6 +126,9 @@
             // 
             // TextAdm2Senha
             // 
+            this.TextAdm2Senha.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TextAdm2Senha.BackColor = System.Drawing.Color.White;
             this.TextAdm2Senha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextAdm2Senha.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
@@ -130,17 +142,23 @@
             // 
             // Layout1
             // 
+            this.Layout1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Layout1.AutoSize = true;
             this.Layout1.BackgroundImage = global::UkraBar.Properties.Resources.FundoLayout;
             this.Layout1.Controls.Add(this.BtnFuncI);
             this.Layout1.Controls.Add(this.BtnClienteI);
             this.Layout1.Location = new System.Drawing.Point(986, 139);
             this.Layout1.Name = "Layout1";
-            this.Layout1.Size = new System.Drawing.Size(328, 180);
+            this.Layout1.Size = new System.Drawing.Size(334, 180);
             this.Layout1.TabIndex = 42;
             this.Layout1.Visible = false;
             // 
             // BtnFuncI
             // 
+            this.BtnFuncI.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnFuncI.AutoSize = true;
             this.BtnFuncI.BackgroundImage = global::UkraBar.Properties.Resources.BTNfunc;
             this.BtnFuncI.FlatAppearance.BorderSize = 0;
             this.BtnFuncI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -153,6 +171,8 @@
             // 
             // BtnClienteI
             // 
+            this.BtnClienteI.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnClienteI.AutoSize = true;
             this.BtnClienteI.BackgroundImage = global::UkraBar.Properties.Resources.BTNcliente1;
             this.BtnClienteI.FlatAppearance.BorderSize = 0;
             this.BtnClienteI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -165,12 +185,16 @@
             // 
             // Layout2
             // 
+            this.Layout2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Layout2.AutoSize = true;
             this.Layout2.BackgroundImage = global::UkraBar.Properties.Resources.FundoLayout;
             this.Layout2.Controls.Add(this.BtnAdmI1);
             this.Layout2.Controls.Add(this.BtnClienteI2);
             this.Layout2.Location = new System.Drawing.Point(986, 139);
             this.Layout2.Name = "Layout2";
-            this.Layout2.Size = new System.Drawing.Size(328, 180);
+            this.Layout2.Size = new System.Drawing.Size(334, 180);
             this.Layout2.TabIndex = 43;
             this.Layout2.Visible = false;
             // 
@@ -200,6 +224,10 @@
             // 
             // BtnAdmUser
             // 
+            this.BtnAdmUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnAdmUser.AutoSize = true;
             this.BtnAdmUser.BackgroundImage = global::UkraBar.Properties.Resources.BTNadm;
             this.BtnAdmUser.FlatAppearance.BorderSize = 0;
             this.BtnAdmUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -212,6 +240,9 @@
             // 
             // pbMostrar
             // 
+            this.pbMostrar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbMostrar.BackColor = System.Drawing.Color.Transparent;
             this.pbMostrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbMostrar.Image = global::UkraBar.Properties.Resources.eye_24px;
@@ -225,6 +256,9 @@
             // 
             // pbOcultar
             // 
+            this.pbOcultar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbOcultar.BackColor = System.Drawing.Color.Transparent;
             this.pbOcultar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbOcultar.Image = global::UkraBar.Properties.Resources.hide_24px;
@@ -238,6 +272,9 @@
             // 
             // pbMostrar2
             // 
+            this.pbMostrar2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbMostrar2.BackColor = System.Drawing.Color.White;
             this.pbMostrar2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbMostrar2.Image = global::UkraBar.Properties.Resources.eye_24px;
@@ -251,6 +288,9 @@
             // 
             // pbOcultar2
             // 
+            this.pbOcultar2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbOcultar2.BackColor = System.Drawing.Color.White;
             this.pbOcultar2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbOcultar2.Image = global::UkraBar.Properties.Resources.hide_24px;
@@ -264,6 +304,10 @@
             // 
             // BtnFuncUser
             // 
+            this.BtnFuncUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnFuncUser.AutoSize = true;
             this.BtnFuncUser.BackgroundImage = global::UkraBar.Properties.Resources.PBFUNC;
             this.BtnFuncUser.FlatAppearance.BorderSize = 0;
             this.BtnFuncUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -276,6 +320,10 @@
             // 
             // BtnLogarAdm
             // 
+            this.BtnLogarAdm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnLogarAdm.AutoSize = true;
             this.BtnLogarAdm.BackgroundImage = global::UkraBar.Properties.Resources.BtnLogar1;
             this.BtnLogarAdm.FlatAppearance.BorderSize = 0;
             this.BtnLogarAdm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -288,6 +336,10 @@
             // 
             // BtnLogarFunc
             // 
+            this.BtnLogarFunc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnLogarFunc.AutoSize = true;
             this.BtnLogarFunc.BackgroundImage = global::UkraBar.Properties.Resources.BtnLogar1;
             this.BtnLogarFunc.FlatAppearance.BorderSize = 0;
             this.BtnLogarFunc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -325,6 +377,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PainelLogins_Load);
             this.Layout1.ResumeLayout(false);
+            this.Layout1.PerformLayout();
             this.Layout2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOcultar)).EndInit();

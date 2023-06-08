@@ -518,7 +518,7 @@
     <None Include="Resources\BTNcliente.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Imagens\" />
+    <None Include="Resources\FundoBase.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BTNfunc.PNG" />
@@ -540,6 +540,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\FundoLayout.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoAdmeFunc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoADM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdmImage.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADMimagem.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
