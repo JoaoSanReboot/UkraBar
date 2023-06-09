@@ -63,41 +63,10 @@ namespace UkraBar
             }
         }
 
-        //Public Executar comandos no banco de dados.
-        public void executarQuery(string query)
-        {
-            try
-            {
-                AbrirConexão(); //Abre Conexão.
-                comando = new MySqlCommand(query, conn); //Declara comandos para MySql.
-
-                //Se o comando for executado corretamente mostrar Message Box
-                if (comando.ExecuteNonQuery() == 1)
-
-                    MessageBox.Show("Executado com Sucesso");
-
-                //Senão Mostrar outra Message Box
-                else
-
-                    MessageBox.Show("Não foi Executado");
-
-            }
-            //Se uma exceção for encontrada Mostrar Error Message
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                //Depois de Executar tudo Fechar.
-                FecharConexão();
-            }
-        }
-
         //Declarar Valores Bools
 
         bool sideBarMenuExpandD; //Bool para Cronometro da Barra Lateral.
-        bool PanelConfigD;   //Bool para o Panel de Configurações.
+        bool PanelConfig;   //Bool para o Panel de Configurações.
         bool NovoProdBarD;   //Bool para o Panel de Novo Funcionário.
         bool EditFundoD;     //Bool para o Panel de Editar Funcionário.
 
@@ -169,22 +138,6 @@ namespace UkraBar
             NovoProdBar.Stop();        //Para outro Timer.
         }
 
-        //Abre o Panel de Configurações.
-        private void BtnConfigurações_Click_1(object sender, EventArgs e)
-        {
-            if (PanelConfigD)
-            {
-
-                panelShowConfig.Height -= 257;//Se o panel estiver Menor ou igual o Valor.
-                PanelConfigD = false;
-            }//Se o Panel estive True
-            else
-                panelShowConfig.Height += 257;//Se o panel estiver Maior ou igual o Valor.
-                PanelConfigD = true;   
-            {       //Deixe o Bool True.
-            }//Se o Panel estive False
-        }
-
         //Volta um Formúlário.
         private void BtnVoltar_Click(object sender, EventArgs e)
         {
@@ -235,82 +188,44 @@ namespace UkraBar
             this.WindowState = FormWindowState.Minimized;
         }
 
-        //Abre Panel de Novo Produto
-        private void BtnNovoProd_Click(object sender, EventArgs e)
-        {
-            if (sideBarMenuExpandD == true)
-            {
-                PanelCadastrarProd.Visible = true;
-                NovoProdBar.Start();
-            }
-        }
-
-        //Btn Deleta as linhas no Grid e no MySql.
-        private void BtnDeletar_Click(object sender, EventArgs e)
-        {
-            conn.Open();
-
-            for (int i = 0; i < DTgridProd.Rows.Count; i++)//Faz a contagem de linhas Selecionadas enquanto i for menor que a contagens de rows.
-            {
-                DataGridViewCheckBoxCell CheckBox = DTgridProd.Rows[i].Cells[0] as DataGridViewCheckBoxCell; //Defini CheckBox como funcional.
-
-                if (CheckBox.Value != null && (bool)CheckBox.Value == true)//Bool sim ou não.
-                {
-                    int id = Convert.ToInt32(DTgridProd.Rows[i].Cells[1].Value);//Int para contagem de celulas marcadas.
-
-                    MySqlCommand comando = new MySqlCommand("DELETE FROM produto_loja WHERE id_produto = @id_produto", conn);//Comandos MySql
-                    comando.Parameters.AddWithValue("@id_produto", id);
-                    comando.ExecuteNonQuery();
-
-                    DTgridProd.Rows.RemoveAt(i);//Deleta as linhas.
-                    i--;                       //Diminui as linhas.
-                }
-            }
-            CarregarDados();//Carregas os dados no GridView
-            conn.Close();//Fecha a Conexão
-        }
-
         //Btn Salvar Informações no MySql.
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
-            string inserirQuery = "INSERT INTO produto_loja (id_produto, nome_produto, descricao, valor_produto, quantidade) VALUES (@id_produto, @nome_produto, @descricao, @valor_produto, @quantidade)";
-            using (MySqlCommand comando = new MySqlCommand(inserirQuery))
+            conn.Open();
+            string queryInserir = "INSERT INTO produto_loja (id_produto, nome_produto, descricao, valor_produto, quantidade) VALUES (@id_produto, @nome_produto, @descricao, @valor_produto, @quantidade)";
+            using (MySqlCommand comandos = new MySqlCommand(queryInserir, conn))
             {
-                conn.Open();
-                comando.Parameters.AddWithValue("@id_produto", BoxcId.Text);
-                comando.Parameters.AddWithValue("@nome_produto", BoxcNome.Text);
-                comando.Parameters.AddWithValue("@descricao", BoxcDescricao.Text);
-                comando.Parameters.AddWithValue("@valor_produto", BoxcValorP.Text);
-                comando.Parameters.AddWithValue("@quantidade", BoxcQuantidade.Text);
-                VariaveisGlobais.ultimoIdProdutoInserido = (int)comando.LastInsertedId;
+                comandos.Parameters.AddWithValue("@id_produto", BoxcId.Text);
+                comandos.Parameters.AddWithValue("@nome_produto", BoxcNome.Text);
+                comandos.Parameters.AddWithValue("@descricao", BoxcDescricao.Text);
+                comandos.Parameters.AddWithValue("@valor_produto", BoxcValorP.Text);
+                comandos.Parameters.AddWithValue("@quantidade", BoxcQuantidade.Text);
+                comandos.ExecuteNonQuery();
+                VariaveisGlobais.ultimoIdProdutoInserido = (int)comandos.LastInsertedId;
 
                 conn.Close();
             }
 
-            CarregarDados();        //Carrega dados na tabela.
-            NovoProdBar.Stop(); //Para o Timer.
+                 conn.Open();
+            string queryInserirLogin = "INSERT INTO login_adm (nome_adm, senha_adm, id_produto) VALUES (@nome_adm, @senha_adm, @id_produto)";
+            using (MySqlCommand comandos = new MySqlCommand(queryInserirLogin, conn))
+            {
+                comandos.Parameters.AddWithValue("@nome_adm", "UkraAdm");
+                comandos.Parameters.AddWithValue("@senha_adm", "8^#3xY@7c$S5p@2#9a4!g6R^@1f%T#");
+                comandos.Parameters.AddWithValue("@id_produto", VariaveisGlobais.ultimoIdProdutoInserido);
+                comandos.ExecuteNonQuery();
+                conn.Close();
+            }
 
+            MessageBox.Show("Executado com Sucesso!");
+            CarregarDados();        //Carrega dados na tabela.
+            NovoProdBar.Start(); //Para o Timer.
         }
 
         //Picture Box Fechar dentro do Panel de Cadastro de Produto.
         private void pbFechar_Click(object sender, EventArgs e)
         {
             NovoProdBar.Start();//Reincia o timer ja ligado.
-        }
-
-        //Abre o Panel de Editar.
-        private void BtnEditar_Click(object sender, EventArgs e)
-        {
-            if (EditFundoD)//Se o Bool estiver menor ou igual valor.
-            {
-                panelEditarFundo.Height -= 113;
-                EditFundoD = false;//Deixar Bool false.
-            }
-            else
-            {
-                panelEditarFundo.Height += 113;//Se o Bool estiver maior ou igual valor.
-                EditFundoD = true;//Deixar Bool True.
-            }
         }
 
         //Edita Informações na tabela Mysql e no Grid.
@@ -402,6 +317,68 @@ namespace UkraBar
             Sobrenos.ShowDialog();
             this.Close();
             //teste
+        }
+
+        private void BtnConfigurações_Click(object sender, EventArgs e)
+        {
+            if (PanelConfig)
+            {
+
+                panelShowConfig.Height -= 257;//Se o panel estiver Menor ou igual o Valor.
+                PanelConfig = false;
+            }//Se o Panel estive True
+            else
+            {
+                panelShowConfig.Height += 257;//Se o panel estiver Maior ou igual o Valor.
+                PanelConfig = true;          //Deixe o Bool True.
+            }//Se o Panel estive False
+        }
+
+        private void BtnNovoFunc_Click(object sender, EventArgs e)
+        {
+            if (sideBarMenuExpandD == true)
+            {
+                PanelCadastrarProd.Visible = true;
+                NovoProdBar.Start();
+            }
+        }
+
+        private void BtnDeletar_Click_1(object sender, EventArgs e)
+        {
+            conn.Open();
+
+            for (int i = 0; i < DTgridProd.Rows.Count; i++)//Faz a contagem de linhas Selecionadas enquanto i for menor que a contagens de rows.
+            {
+                DataGridViewCheckBoxCell CheckBox = DTgridProd.Rows[i].Cells[0] as DataGridViewCheckBoxCell; //Defini CheckBox como funcional.
+
+                if (CheckBox.Value != null && (bool)CheckBox.Value == true)//Bool sim ou não.
+                {
+                    int id = Convert.ToInt32(DTgridProd.Rows[i].Cells[1].Value);//Int para contagem de celulas marcadas.
+
+                    MySqlCommand comando = new MySqlCommand("DELETE FROM produto_loja WHERE id_produto = @id_produto", conn);//Comandos MySql
+                    comando.Parameters.AddWithValue("@id_produto", id);
+                    comando.ExecuteNonQuery();
+
+                    DTgridProd.Rows.RemoveAt(i);//Deleta as linhas.
+                    i--;                       //Diminui as linhas.
+                }
+            }
+            CarregarDados();//Carregas os dados no GridView
+            conn.Close();//Fecha a Conexão
+        }
+
+        private void BtnEditar_Click_1(object sender, EventArgs e)
+        {
+            if (EditFundoD)//Se o Bool estiver menor ou igual valor.
+            {
+                panelEditarFundo.Height -= 113;
+                EditFundoD = false;//Deixar Bool false.
+            }
+            else
+            {
+                panelEditarFundo.Height += 113;//Se o Bool estiver maior ou igual valor.
+                EditFundoD = true;//Deixar Bool True.
+            }
         }
     }
 }
