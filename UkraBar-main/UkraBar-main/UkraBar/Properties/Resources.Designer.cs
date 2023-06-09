@@ -553,6 +553,16 @@ namespace UkraBar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FundoCpf {
+            get {
+                object obj = ResourceManager.GetObject("FundoCpf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FundoFinal {
             get {
                 object obj = ResourceManager.GetObject("FundoFinal", resourceCulture);
@@ -776,6 +786,16 @@ namespace UkraBar.Properties {
         internal static System.Drawing.Bitmap mobile_shop_payment_24px1 {
             get {
                 object obj = ResourceManager.GetObject("mobile_shop_payment_24px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NotaCpf {
+            get {
+                object obj = ResourceManager.GetObject("NotaCpf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

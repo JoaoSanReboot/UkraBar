@@ -63,7 +63,7 @@ namespace UkraBar
         private void BtnCpfCad_Click(object sender, EventArgs e)
         {
 
-            if (BoxCpf.Text.Length < 10)
+            if (BoxCpf.Text.Length < 11)
             {
                 MessageBox.Show("Você não inseriu todos os dados");
             }

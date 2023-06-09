@@ -565,5 +565,11 @@
   <ItemGroup>
     <None Include="Resources\FUNCIMAGE12.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NotaCpf.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoCpf.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

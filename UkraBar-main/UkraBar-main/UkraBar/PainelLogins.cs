@@ -54,6 +54,10 @@ namespace UkraBar
         private void BtnFuncI_Click(object sender, EventArgs e)
         {
             BtnFuncUser.BringToFront();
+            TextAdm1.Text = "";
+            TextAdm2Senha.Text = "";
+            TextFunc1.Text = "";
+            TextFunc2.Text = "";
             TextFunc1.Visible = true;
             TextFunc2.Visible = true;
             TextAdm1.Visible = false;
@@ -80,6 +84,10 @@ namespace UkraBar
         private void BtnAdmI1_Click(object sender, EventArgs e)
         {
             BtnAdmUser.BringToFront();
+            TextAdm1.Text = "";
+            TextAdm2Senha.Text = "";
+            TextFunc1.Text = "";
+            TextFunc2.Text = "";
             TextAdm1.Visible = true;
             TextAdm2Senha.Visible = true;
             TextFunc1.Visible = false;
