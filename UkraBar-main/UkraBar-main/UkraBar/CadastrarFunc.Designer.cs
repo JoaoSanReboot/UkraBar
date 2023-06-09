@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.SideBarTime = new System.Windows.Forms.Timer(this.components);
             this.NovoFuncTimer = new System.Windows.Forms.Timer(this.components);
             this.BoxcEmail = new System.Windows.Forms.TextBox();
@@ -80,7 +80,6 @@
             this.BtnDeletar = new System.Windows.Forms.Button();
             this.BtnConfigurações = new System.Windows.Forms.Button();
             this.BtnSobre = new System.Windows.Forms.Button();
-            this.BtnAjuda = new System.Windows.Forms.Button();
             this.BtnVoltar = new System.Windows.Forms.Button();
             this.PanelCadastrarFunc = new System.Windows.Forms.Panel();
             this.BtnSalvar = new System.Windows.Forms.Button();
@@ -119,7 +118,7 @@
             // 
             this.BoxcEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BoxcEmail.Location = new System.Drawing.Point(61, 322);
-            this.BoxcEmail.MaxLength = 100;
+            this.BoxcEmail.MaxLength = 60;
             this.BoxcEmail.Name = "BoxcEmail";
             this.BoxcEmail.Size = new System.Drawing.Size(250, 29);
             this.BoxcEmail.TabIndex = 9;
@@ -137,7 +136,7 @@
             // 
             this.BoxcNome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BoxcNome.Location = new System.Drawing.Point(61, 148);
-            this.BoxcNome.MaxLength = 100;
+            this.BoxcNome.MaxLength = 50;
             this.BoxcNome.Name = "BoxcNome";
             this.BoxcNome.Size = new System.Drawing.Size(250, 29);
             this.BoxcNome.TabIndex = 3;
@@ -217,9 +216,6 @@
             // 
             // LayoutFundoDT
             // 
-            this.LayoutFundoDT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.LayoutFundoDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
             this.LayoutFundoDT.Controls.Add(this.panelEditarFundo);
             this.LayoutFundoDT.Controls.Add(this.panelFundoDT);
@@ -241,7 +237,7 @@
             this.panelEditarFundo.Controls.Add(this.lblIdF);
             this.panelEditarFundo.Controls.Add(this.BoxdIdF);
             this.panelEditarFundo.Location = new System.Drawing.Point(3, 3);
-            this.panelEditarFundo.MaximumSize = new System.Drawing.Size(979, 103);
+            this.panelEditarFundo.MaximumSize = new System.Drawing.Size(979, 101);
             this.panelEditarFundo.MinimumSize = new System.Drawing.Size(979, 0);
             this.panelEditarFundo.Name = "panelEditarFundo";
             this.panelEditarFundo.Size = new System.Drawing.Size(979, 0);
@@ -256,14 +252,14 @@
             this.BtnPincel.ForeColor = System.Drawing.Color.White;
             this.BtnPincel.Image = global::UkraBar.Properties.Resources.pencil_24px;
             this.BtnPincel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnPincel.Location = new System.Drawing.Point(895, 26);
+            this.BtnPincel.Location = new System.Drawing.Point(893, 28);
             this.BtnPincel.Name = "BtnPincel";
-            this.BtnPincel.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnPincel.Size = new System.Drawing.Size(59, 59);
+            this.BtnPincel.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.BtnPincel.Size = new System.Drawing.Size(65, 59);
             this.BtnPincel.TabIndex = 46;
-            this.BtnPincel.Text = "                  Editar";
             this.BtnPincel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnPincel.UseVisualStyleBackColor = false;
+            this.BtnPincel.Click += new System.EventHandler(this.BtnPincel_Click_1);
             // 
             // lblEmailF
             // 
@@ -355,45 +351,42 @@
             // 
             // DTgridClientes
             // 
-            this.DTgridClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.DTgridClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DTgridClientes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.DTgridClientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DTgridClientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DTgridClientes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTgridClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTgridClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.DTgridClientes.ColumnHeadersHeight = 30;
             this.DTgridClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DTgridClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CheckBox});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DTgridClientes.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DTgridClientes.DefaultCellStyle = dataGridViewCellStyle10;
             this.DTgridClientes.GridColor = System.Drawing.Color.Black;
             this.DTgridClientes.Location = new System.Drawing.Point(3, 3);
             this.DTgridClientes.Name = "DTgridClientes";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTgridClientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTgridClientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.DTgridClientes.RowHeadersWidth = 51;
             this.DTgridClientes.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.DTgridClientes.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
@@ -405,6 +398,7 @@
             this.DTgridClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DTgridClientes.Size = new System.Drawing.Size(973, 546);
             this.DTgridClientes.TabIndex = 30;
+            this.DTgridClientes.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DTgridClientes_CellMouseClick);
             // 
             // CheckBox
             // 
@@ -430,8 +424,6 @@
             // 
             // MinimizarJanela
             // 
-            this.MinimizarJanela.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.MinimizarJanela.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.MinimizarJanela.FlatAppearance.BorderSize = 0;
             this.MinimizarJanela.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
@@ -443,11 +435,10 @@
             this.MinimizarJanela.TabIndex = 2;
             this.MinimizarJanela.Text = "       ";
             this.MinimizarJanela.UseVisualStyleBackColor = false;
+            this.MinimizarJanela.Click += new System.EventHandler(this.MinimizarJanela_Click);
             // 
             // MaximizarJanela
             // 
-            this.MaximizarJanela.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.MaximizarJanela.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.MaximizarJanela.FlatAppearance.BorderSize = 0;
             this.MaximizarJanela.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
@@ -459,11 +450,10 @@
             this.MaximizarJanela.TabIndex = 1;
             this.MaximizarJanela.Text = "       ";
             this.MaximizarJanela.UseVisualStyleBackColor = false;
+            this.MaximizarJanela.Click += new System.EventHandler(this.MaximizarJanela_Click);
             // 
             // FecharJanelaF
             // 
-            this.FecharJanelaF.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.FecharJanelaF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.FecharJanelaF.FlatAppearance.BorderSize = 0;
             this.FecharJanelaF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
@@ -475,12 +465,14 @@
             this.FecharJanelaF.TabIndex = 0;
             this.FecharJanelaF.Text = "       ";
             this.FecharJanelaF.UseVisualStyleBackColor = false;
+            this.FecharJanelaF.Click += new System.EventHandler(this.FecharJanelaF_Click_1);
             // 
             // BarSideTop
             // 
             this.BarSideTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.BarSideTop.Controls.Add(this.panelLabel);
             this.BarSideTop.Controls.Add(this.panelBuscar);
+            this.BarSideTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarSideTop.Location = new System.Drawing.Point(76, 39);
             this.BarSideTop.Name = "BarSideTop";
             this.BarSideTop.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -536,6 +528,7 @@
             this.btnBuscar.Text = "      Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // BoxBuscar
             // 
@@ -564,7 +557,6 @@
             this.sideBarMenu.Controls.Add(this.panelMenu);
             this.sideBarMenu.Controls.Add(this.panelShowConfig);
             this.sideBarMenu.Controls.Add(this.BtnSobre);
-            this.sideBarMenu.Controls.Add(this.BtnAjuda);
             this.sideBarMenu.Controls.Add(this.BtnVoltar);
             this.sideBarMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideBarMenu.Location = new System.Drawing.Point(0, 39);
@@ -638,6 +630,7 @@
             this.BtnEditar.Text = "                    Editar";
             this.BtnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEditar.UseVisualStyleBackColor = false;
+            this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click_1);
             // 
             // BtnNovoFunc
             // 
@@ -656,6 +649,7 @@
             this.BtnNovoFunc.Text = "               Novo Funcionário";
             this.BtnNovoFunc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnNovoFunc.UseVisualStyleBackColor = false;
+            this.BtnNovoFunc.Click += new System.EventHandler(this.BtnNovoFunc_Click_1);
             // 
             // BtnDeletar
             // 
@@ -674,6 +668,7 @@
             this.BtnDeletar.Text = "                  Deletar";
             this.BtnDeletar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnDeletar.UseVisualStyleBackColor = false;
+            this.BtnDeletar.Click += new System.EventHandler(this.BtnDeletar_Click_1);
             // 
             // BtnConfigurações
             // 
@@ -711,27 +706,14 @@
             this.BtnSobre.Text = "                  Sobre";
             this.BtnSobre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnSobre.UseVisualStyleBackColor = false;
-            // 
-            // BtnAjuda
-            // 
-            this.BtnAjuda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnAjuda.FlatAppearance.BorderSize = 0;
-            this.BtnAjuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAjuda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAjuda.ForeColor = System.Drawing.Color.White;
-            this.BtnAjuda.Image = global::UkraBar.Properties.Resources.ask_question_24px;
-            this.BtnAjuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAjuda.Location = new System.Drawing.Point(3, 237);
-            this.BtnAjuda.Name = "BtnAjuda";
-            this.BtnAjuda.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.BtnAjuda.Size = new System.Drawing.Size(223, 50);
-            this.BtnAjuda.TabIndex = 38;
-            this.BtnAjuda.Text = "                  Ajuda";
-            this.BtnAjuda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAjuda.UseVisualStyleBackColor = false;
+            this.BtnSobre.Click += new System.EventHandler(this.BtnSobre_Click_1);
             // 
             // BtnVoltar
             // 
+            this.BtnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnVoltar.AutoSize = true;
             this.BtnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.BtnVoltar.FlatAppearance.BorderSize = 0;
             this.BtnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -739,7 +721,7 @@
             this.BtnVoltar.ForeColor = System.Drawing.Color.White;
             this.BtnVoltar.Image = global::UkraBar.Properties.Resources.reply_arrow_24px;
             this.BtnVoltar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnVoltar.Location = new System.Drawing.Point(3, 293);
+            this.BtnVoltar.Location = new System.Drawing.Point(3, 237);
             this.BtnVoltar.Name = "BtnVoltar";
             this.BtnVoltar.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.BtnVoltar.Size = new System.Drawing.Size(223, 50);
@@ -763,7 +745,7 @@
             this.PanelCadastrarFunc.Controls.Add(this.lblSenha);
             this.PanelCadastrarFunc.Controls.Add(this.pbFechar);
             this.PanelCadastrarFunc.Controls.Add(this.lblId);
-            this.PanelCadastrarFunc.Location = new System.Drawing.Point(268, 156);
+            this.PanelCadastrarFunc.Location = new System.Drawing.Point(269, 156);
             this.PanelCadastrarFunc.MaximumSize = new System.Drawing.Size(982, 560);
             this.PanelCadastrarFunc.MinimumSize = new System.Drawing.Size(0, 560);
             this.PanelCadastrarFunc.Name = "PanelCadastrarFunc";
@@ -787,6 +769,7 @@
             this.BtnSalvar.Text = "                        Salvar";
             this.BtnSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnSalvar.UseVisualStyleBackColor = false;
+            this.BtnSalvar.Click += new System.EventHandler(this.BtnSalvar_Click);
             // 
             // pbFechar
             // 
@@ -798,14 +781,15 @@
             this.pbFechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFechar.TabIndex = 0;
             this.pbFechar.TabStop = false;
+            this.pbFechar.Click += new System.EventHandler(this.pbFechar_Click_1);
             // 
             // dataGridViewImageColumn1
             // 
             this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.NullValue = null;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.NullValue = null;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridViewImageColumn1.FillWeight = 167.1073F;
             this.dataGridViewImageColumn1.HeaderText = "CEditar";
             this.dataGridViewImageColumn1.Image = global::UkraBar.Properties.Resources.pencil_16px;
@@ -840,6 +824,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Painel de Cadastro";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.CadastrarFunc_Load);
             this.panelAviso.ResumeLayout(false);
             this.panelAviso.PerformLayout();
             this.LayoutFundoDT.ResumeLayout(false);
@@ -855,6 +840,7 @@
             this.panelBuscar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FundoPesquisar)).EndInit();
             this.sideBarMenu.ResumeLayout(false);
+            this.sideBarMenu.PerformLayout();
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).EndInit();
@@ -913,7 +899,6 @@
         private System.Windows.Forms.Button BtnDeletar;
         private System.Windows.Forms.Button BtnConfigurações;
         private System.Windows.Forms.Button BtnSobre;
-        private System.Windows.Forms.Button BtnAjuda;
         private System.Windows.Forms.Button BtnVoltar;
         private System.Windows.Forms.Button FecharJanelaF;
         private System.Windows.Forms.Button MinimizarJanela;

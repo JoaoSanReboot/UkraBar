@@ -207,191 +207,186 @@ namespace UkraBar
             }
         }
 
-            //Abre Panel de Cadastrar Funcionários.
-            private void BtnNovoFunc_Click(object sender, EventArgs e)
-            {
-                if (sideBarMenuExpand == true)//Se o Bool Estiver Sim.
-                {
-                    PanelCadastrarFunc.Visible = true;//Então deixar Bool Sim;
-                    NovoFuncTimer.Start();          //Começar Timer.
-                }
-            }
-
-            //Abre o Panel de Editar Funcionários.
-            private void BtnEditar_Click(object sender, EventArgs e)
-            {
-                if (EditFundo)//Se o Bool estiver menor ou igual valor.
-                {
-                    panelEditarFundo.Height -= 113;
-                    EditFundo = false;//Deixar Bool false.
-                }
-                else
-                {
-                    panelEditarFundo.Height += 113;//Se o Bool estiver maior ou igual valor.
-                    EditFundo = true;//Deixar Bool True.
-                }
-            }
-
             //PictureBox de X botton para fechar Panel de Cadastro
             private void pbFechar_Click(object sender, EventArgs e)
             {
                 NovoFuncTimer.Start();//Inicia o Tempo para Fechar.
             }
 
-            //Btn Salvar Dentro do Panel, Envia Informações no MySql.
-            private void BtnSalvar_Click(object sender, EventArgs e)
-            {
-                //Cria um String para colocar no Executor de Query.
-                string inserirQuery = "INSERT INTO cadastro_funcionario (id_cadastro, nome_funcionario, senha_funcionario, email_funcionario) VALUES" +
-                    "('" + BoxcId.Text + "','" + BoxcNome.Text + "', '" + BoxcSenha.Text + "','" + BoxcEmail.Text + "')";
-                executarQuery(inserirQuery);//Coloca a String no Executor.
-                CarregarDados();        //Carrega dados na tabela.
-                NovoFuncTimer.Stop();//Para o Timer.
 
+        private void BtnNovoFunc_Click_1(object sender, EventArgs e)
+        {
+            if (sideBarMenuExpand == true)//Se o Bool Estiver Sim.
+            {
+                PanelCadastrarFunc.Visible = true;//Então deixar Bool Sim;
+                NovoFuncTimer.Start();          //Começar Timer.
             }
+        }
 
-            //Btn Deletar Informações no Grid e no MySql.
-            private void BtnDeletar_Click(object sender, EventArgs e)
+        private void BtnDeletar_Click_1(object sender, EventArgs e)
+        {
+            conn.Open();
+
+            for (int i = 0; i < DTgridClientes.Rows.Count; i++)//Faz a contagem de linhas Selecionadas enquanto i for menor que a contagens de rows.
             {
-                conn.Open();
+                DataGridViewCheckBoxCell CheckBox = DTgridClientes.Rows[i].Cells[0] as DataGridViewCheckBoxCell; //Defini CheckBox como funcional.
 
-                for (int i = 0; i < DTgridClientes.Rows.Count; i++)//Faz a contagem de linhas Selecionadas enquanto i for menor que a contagens de rows.
+                if (CheckBox.Value != null && (bool)CheckBox.Value == true)//Bool sim ou não.
                 {
-                    DataGridViewCheckBoxCell CheckBox = DTgridClientes.Rows[i].Cells[0] as DataGridViewCheckBoxCell; //Defini CheckBox como funcional.
+                    int id = Convert.ToInt32(DTgridClientes.Rows[i].Cells[1].Value);//Int para contagem de celulas marcadas.
 
-                    if (CheckBox.Value != null && (bool)CheckBox.Value == true)//Bool sim ou não.
-                    {
-                        int id = Convert.ToInt32(DTgridClientes.Rows[i].Cells[1].Value);//Int para contagem de celulas marcadas.
+                    MySqlCommand comando = new MySqlCommand("DELETE FROM cadastro_funcionario WHERE id_cadastro = @id_cadastro", conn);//Comandos MySql
+                    comando.Parameters.AddWithValue("@id_cadastro", id);
+                    comando.ExecuteNonQuery();
 
-                        MySqlCommand comando = new MySqlCommand("DELETE FROM cadastro_funcionario WHERE id_cadastro = @id_cadastro", conn);//Comandos MySql
-                        comando.Parameters.AddWithValue("@id_cadastro", id);
-                        comando.ExecuteNonQuery();
-
-                        DTgridClientes.Rows.RemoveAt(i);//Deleta as linhas.
-                        i--;                       //Diminui as linhas.
-                    }
-                }
-                CarregarDados();//Carregas os dados no GridView
-                conn.Close();
-            }
-
-            //Btn Buscar Informações na Tabela.
-            private void btnBuscar_Click(object sender, EventArgs e)
-            {
-                using (MySqlConnection conn = new MySqlConnection(connectionString))//Executa a conn quando apertado.
-                {
-                    string b = "'%" + BoxBuscar.Text + "%'"; // Defini BoxBuscar como string
-
-                    try
-                    {
-                        conn.Open();//Abre Conexão.
-                        comando = new MySqlCommand("SELECT * FROM ukrasystem.cadastro_funcionario WHERE" +
-                            " id_cadastro LIKE" + b +
-                            "OR nome_foto LIKE" + b +
-                            "OR nome_funcionario LIKE" + b +
-                            "OR senha_funcionario LIKE" + b +
-                            "OR email_funcionario LIKE" + b, conn); //Envia comando Select no MySql
-                        DataTable ProcurarDataTable = new DataTable(); //Defini table nova
-                        using (MySqlDataAdapter adapter = new MySqlDataAdapter(comando))//Faz o filtro no DataGridView.
-                        {
-                            adapter.Fill(ProcurarDataTable);
-                        }
-                        DTgridClientes.DataSource = ProcurarDataTable; //Mostra nova table
-                        DTgridClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;//Centraliza as Tabelas.
-                        conn.Close();//Fecha Conexão.
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Algum erro Encontrado", ex.Message);
-                    }
+                    DTgridClientes.Rows.RemoveAt(i);//Deleta as linhas.
+                    i--;                       //Diminui as linhas.
                 }
             }
+            CarregarDados();//Carregas os dados no GridView
+            conn.Close();
+        }
 
-            private void BtnPincel_Click(object sender, EventArgs e)
+        private void BtnEditar_Click_1(object sender, EventArgs e)
+        {
+            if (EditFundo)//Se o Bool estiver menor ou igual valor.
             {
+                panelEditarFundo.Height -= 113;
+                EditFundo = false;//Deixar Bool false.
+            }
+            else
+            {
+                panelEditarFundo.Height += 113;//Se o Bool estiver maior ou igual valor.
+                EditFundo = true;//Deixar Bool True.
+            }
+        }
+
+        private void BtnPincel_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                conn.Open();//Abre Conexão.
+                            //Declara String.
+                string Atualizar = "UPDATE cadastro_funcionario SET nome_funcionario = @nome_funcionario, senha_funcionario = @senha_funcionario, email_funcionario = @email_funcionario WHERE id_cadastro = @id_cadastro";
+                using (MySqlCommand comando = new MySqlCommand(Atualizar, conn))//Usa strings.
+                {
+                    {
+                        //Declara Box como informações dentro do mysql.
+                        comando.Parameters.AddWithValue("@id_cadastro", BoxdIdF.Text);
+                        comando.Parameters.AddWithValue("@nome_funcionario", BoxdNomeF.Text);
+                        comando.Parameters.AddWithValue("@senha_funcionario", BoxdSenhaF.Text);
+                        comando.Parameters.AddWithValue("@email_funcionario", BoxdEmailF.Text);
+                        comando.ExecuteNonQuery();//Executa comando.
+                    }
+                }
+                MessageBox.Show("Executado com Sucesso");//Mensagem de Execução.
+                CarregarDados();//Carrega dados na tabela.
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro");//Mensagem de error.
+            }
+            finally
+            {
+                conn.Close();//Fecha Conexão.
+            }
+        }
+
+        private void DTgridClientes_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            foreach (DataGridViewRow row in DTgridClientes.Rows)
+            {
+                if (Convert.ToBoolean(row.Cells["CheckBox"].Value))
+                {
+                    BoxdIdF.Text = DTgridClientes.CurrentRow.Cells[1].Value.ToString();
+                    BoxdNomeF.Text = DTgridClientes.CurrentRow.Cells[2].Value.ToString();
+                    BoxdSenhaF.Text = DTgridClientes.CurrentRow.Cells[3].Value.ToString();
+                    BoxdEmailF.Text = DTgridClientes.CurrentRow.Cells[4].Value.ToString();
+                }
+            }
+        }
+
+        private void CadastrarFunc_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.None;
+        }
+
+        private void FecharJanelaF_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void MaximizarJanela_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+
+        }
+
+        private void MinimizarJanela_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void BtnSobre_Click_1(object sender, EventArgs e)
+        {
+            Sobre Sobrenos = new Sobre();
+            Sobrenos.ShowDialog();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))//Executa a conn quando apertado.
+            {
+                string b = "'%" + BoxBuscar.Text + "%'"; // Defini BoxBuscar como string
+
                 try
                 {
                     conn.Open();//Abre Conexão.
-                                //Declara String.
-                    string Atualizar = "UPDATE cadastro_funcionario SET nome_funcionario = @nome_funcionario, senha_funcionario = @senha_funcionario, email_funcionario = @email_funcionario WHERE id_cadastro = @id_cadastro";
-                    using (MySqlCommand comando = new MySqlCommand(Atualizar, conn))//Usa strings.
+                    comando = new MySqlCommand("SELECT * FROM ukrasystem.cadastro_funcionario WHERE" +
+                        " id_cadastro LIKE" + b +
+                        "OR nome_foto LIKE" + b +
+                        "OR nome_funcionario LIKE" + b +
+                        "OR senha_funcionario LIKE" + b +
+                        "OR email_funcionario LIKE" + b, conn); //Envia comando Select no MySql
+                    DataTable ProcurarDataTable = new DataTable(); //Defini table nova
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(comando))//Faz o filtro no DataGridView.
                     {
-                        {
-                            //Declara Box como informações dentro do mysql.
-                            comando.Parameters.AddWithValue("@id_cadastro", BoxdIdF.Text);
-                            comando.Parameters.AddWithValue("@nome_funcionario", BoxdNomeF.Text);
-                            comando.Parameters.AddWithValue("@senha_funcionario", BoxdSenhaF.Text);
-                            comando.Parameters.AddWithValue("@email_funcionario", BoxdEmailF.Text);
-                            comando.ExecuteNonQuery();//Executa comando.
-                        }
+                        adapter.Fill(ProcurarDataTable);
                     }
-                    MessageBox.Show("Executado com Sucesso");//Mensagem de Execução.
-                    CarregarDados();//Carrega dados na tabela.
+                    DTgridClientes.DataSource = ProcurarDataTable; //Mostra nova table
+                    DTgridClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;//Centraliza as Tabelas.
+                    conn.Close();//Fecha Conexão.
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Erro");//Mensagem de error.
+                    MessageBox.Show("Algum erro Encontrado", ex.Message);
                 }
-                finally
-                {
-                    conn.Close();//Fecha Conexão.
-                }
-            }
-
-            //Setando o Form como sem Borda.
-            private void CadastrarFunc_Load(object sender, EventArgs e)
-            {
-                this.FormBorderStyle = FormBorderStyle.None;
-            }
-
-            //Picture Box Aumentar Form.
-            private void button1_Click(object sender, EventArgs e)
-            {
-                if (this.WindowState == FormWindowState.Normal)
-                {
-                    this.WindowState = FormWindowState.Maximized;
-                }
-                else
-                {
-                    this.WindowState = FormWindowState.Normal;
-                }
-
-            }
-
-            //Picture Box Minimizar Form.
-            private void button2_Click(object sender, EventArgs e)
-            {
-                this.WindowState = FormWindowState.Minimized;
-            }
-
-            //Picture Box de X para Fechar Form.
-            private void FecharJanelaF_Click(object sender, EventArgs e)
-            {
-                this.Close();
-            }
-
-            //Função Clicar na Row enviar informações nas Box.
-            private void DTgridFunc_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-            {
-                foreach (DataGridViewRow row in DTgridClientes.Rows)
-                {
-                    if (Convert.ToBoolean(row.Cells["CheckBox"].Value))
-                    {
-                        BoxdIdF.Text = DTgridClientes.CurrentRow.Cells[1].Value.ToString();
-                        BoxdNomeF.Text = DTgridClientes.CurrentRow.Cells[2].Value.ToString();
-                        BoxdSenhaF.Text = DTgridClientes.CurrentRow.Cells[3].Value.ToString();
-                        BoxdEmailF.Text = DTgridClientes.CurrentRow.Cells[4].Value.ToString();
-                    }
-                }
-            }
-
-            private void BtnSobre_Click(object sender, EventArgs e)
-            {
-                Sobre Sobrenos = new Sobre();
-                Sobrenos.ShowDialog();
-                this.Close();
             }
         }
+
+        private void BtnSalvar_Click(object sender, EventArgs e)
+        {
+            //Cria um String para colocar no Executor de Query.
+            string inserirQuery = "INSERT INTO cadastro_funcionario (id_cadastro, nome_funcionario, senha_funcionario, email_funcionario) VALUES" +
+                "('" + BoxcId.Text + "','" + BoxcNome.Text + "', '" + BoxcSenha.Text + "','" + BoxcEmail.Text + "')";
+            executarQuery(inserirQuery);//Coloca a String no Executor.
+            CarregarDados();        //Carrega dados na tabela.
+            NovoFuncTimer.Stop();//Para o Timer.
+        }
+
+        private void pbFechar_Click_1(object sender, EventArgs e)
+        {
+            NovoFuncTimer.Start();//Reincia o timer ja ligado.
+        }
+
+    }
     }
 
 

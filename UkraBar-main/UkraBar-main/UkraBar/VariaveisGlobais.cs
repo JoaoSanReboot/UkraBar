@@ -84,6 +84,7 @@ namespace UkraBar
 
         public static string Cpf;
 
+        public static int ultimoIdProdutoInserido;
         public static int ultimoIdClienteInserido;
         public static int ultimoIdPedidoInserido;
 

@@ -258,7 +258,7 @@ namespace UkraBar
                 {
                     int id = Convert.ToInt32(DTgridProd.Rows[i].Cells[1].Value);//Int para contagem de celulas marcadas.
 
-                    MySqlCommand comando = new MySqlCommand("DELETE FROM produto WHERE id_produto = @id_produto", conn);//Comandos MySql
+                    MySqlCommand comando = new MySqlCommand("DELETE FROM produto_loja WHERE id_produto = @id_produto", conn);//Comandos MySql
                     comando.Parameters.AddWithValue("@id_produto", id);
                     comando.ExecuteNonQuery();
 
@@ -273,11 +273,23 @@ namespace UkraBar
         //Btn Salvar Informações no MySql.
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
-            string inserirQuery = "INSERT INTO produto_loja (id_produto, nome_produto, descricao, valor_produto, quantidade) VALUES" +
-                "('" + BoxcId.Text + "','" + BoxcNome.Text + "', '" + BoxcDescricao.Text + "','" + BoxcValorP.Text + "','"+ BoxcQuantidade+"')";
-            executarQuery(inserirQuery);//Executa a String
+            string inserirQuery = "INSERT INTO produto_loja (id_produto, nome_produto, descricao, valor_produto, quantidade) VALUES (@id_produto, @nome_produto, @descricao, @valor_produto, @quantidade)";
+            using (MySqlCommand comando = new MySqlCommand(inserirQuery))
+            {
+                conn.Open();
+                comando.Parameters.AddWithValue("@id_produto", BoxcId.Text);
+                comando.Parameters.AddWithValue("@nome_produto", BoxcNome.Text);
+                comando.Parameters.AddWithValue("@descricao", BoxcDescricao.Text);
+                comando.Parameters.AddWithValue("@valor_produto", BoxcValorP.Text);
+                comando.Parameters.AddWithValue("@quantidade", BoxcQuantidade.Text);
+                VariaveisGlobais.ultimoIdProdutoInserido = (int)comando.LastInsertedId;
+
+                conn.Close();
+            }
+
             CarregarDados();        //Carrega dados na tabela.
             NovoProdBar.Stop(); //Para o Timer.
+
         }
 
         //Picture Box Fechar dentro do Panel de Cadastro de Produto.
