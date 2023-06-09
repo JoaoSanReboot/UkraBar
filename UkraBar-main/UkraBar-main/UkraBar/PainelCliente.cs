@@ -60,38 +60,6 @@ namespace UkraBar
                 conn.Close();
             }
         }
-
-        //Public Executar comandos no banco de dados.
-        public void executarQuery(string query)
-        {
-            try
-            {
-                AbrirConexão(); //Abre Conexão.
-                comando = new MySqlCommand(query, conn); //Declara comandos para MySql.
-
-                //Se o comando for executado corretamente mostrar Message Box
-                if (comando.ExecuteNonQuery() == 1)
-
-                    MessageBox.Show("Executado com Sucesso");
-
-                //Senão Mostrar outra Message Box
-                else
-
-                    MessageBox.Show("Não foi Executado");
-
-            }
-            //Se uma exceção for encontrada Mostrar Error Message
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                //Depois de Executar tudo Fechar.
-                FecharConexão();
-            }
-        }
-
         //Declarar Valores Bools
 
         bool sideBarMenuExpandD; //Bool para Cronometro da Barra Lateral.

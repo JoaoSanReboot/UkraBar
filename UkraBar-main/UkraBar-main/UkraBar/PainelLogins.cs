@@ -14,7 +14,7 @@ namespace UkraBar
 {
     public partial class PainelLogins : Form
     {
-
+        public MySqlConnection conn2 = new MySqlConnection("SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;");
 
         public PainelLogins()
         {
@@ -144,8 +144,8 @@ namespace UkraBar
             VariaveisGlobais.idAdm = 0;
 
             //Declara as strings da Box
-            string nomelogin = TextFunc1.Text;
-            string senhalogin = TextFunc2.Text;
+            VariaveisGlobais.NomeFunc = TextFunc1.Text;
+            VariaveisGlobais.SenhaFunc = TextFunc2.Text;
 
             //Estabelece Conexão com o BD
             string connectionString = "SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;";
@@ -153,8 +153,8 @@ namespace UkraBar
 
             //Faz o comando Select From na tabela
             MySqlCommand command = new MySqlCommand("SELECT * FROM cadastro_funcionario WHERE nome_funcionario=@nome_funcionario AND senha_funcionario=@senha_funcionario", conn);
-            command.Parameters.AddWithValue("@nome_funcionario", nomelogin);
-            command.Parameters.AddWithValue("@senha_funcionario", senhalogin);
+            command.Parameters.AddWithValue("@nome_funcionario", VariaveisGlobais.NomeFunc);
+            command.Parameters.AddWithValue("@senha_funcionario", VariaveisGlobais.SenhaFunc);
 
             try
             {
@@ -163,6 +163,16 @@ namespace UkraBar
 
                 if (reader.HasRows)
                 {
+                    string queryInserirFunc = "INSERT INTO login_func (nome_login_funcionario, senha_login_funcionario) VALUES (@nome_login_funcionario, @senha_login_funcionario)";
+                    using (MySqlCommand comandos = new MySqlCommand(queryInserirFunc, conn2))
+                    {
+                        conn2.Open();
+                        comandos.Parameters.AddWithValue("@nome_login_funcionario", TextFunc1.Text);
+                        comandos.Parameters.AddWithValue("@senha_login_funcionario", TextFunc2.Text);
+                        comandos.ExecuteNonQuery();
+                        VariaveisGlobais.ultimoIdLoginFuncionarioInserido = (int)comandos.LastInsertedId;
+                        conn2.Close();
+                    }
                     PainelFuncionario PainelLogins = new PainelFuncionario();
                     this.Hide();
                     PainelLogins.ShowDialog();

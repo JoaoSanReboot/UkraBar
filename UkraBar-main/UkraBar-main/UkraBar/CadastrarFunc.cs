@@ -373,12 +373,34 @@ namespace UkraBar
 
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
-            //Cria um String para colocar no Executor de Query.
-            string inserirQuery = "INSERT INTO cadastro_funcionario (id_cadastro, nome_funcionario, senha_funcionario, email_funcionario) VALUES" +
-                "('" + BoxcId.Text + "','" + BoxcNome.Text + "', '" + BoxcSenha.Text + "','" + BoxcEmail.Text + "')";
-            executarQuery(inserirQuery);//Coloca a String no Executor.
+            conn.Open();
+            string queryInserir = "INSERT INTO cadastro_funcionario (id_cadastro, nome_funcionario, senha_funcionario, email_funcionario) VALUES (@id_cadastro, @nome_funcionario, @senha_funcionario, @email_funcionario)";
+            using (MySqlCommand comandos = new MySqlCommand(queryInserir, conn))
+            {
+                comandos.Parameters.AddWithValue("@id_cadastro", BoxcId.Text);
+                comandos.Parameters.AddWithValue("@nome_funcionario", BoxcNome.Text);
+                comandos.Parameters.AddWithValue("@senha_funcionario", BoxcSenha.Text);
+                comandos.Parameters.AddWithValue("@email_funcionario", BoxcEmail.Text);
+                comandos.ExecuteNonQuery();
+                VariaveisGlobais.ultimoIdFuncionarioInserido = (int)comandos.LastInsertedId;
+
+                conn.Close();
+            }
+
+            conn.Open();
+            string queryInserirLogin = "INSERT INTO login_adm (nome_adm, senha_adm, id_cadastro) VALUES (@nome_adm, @senha_adm, @id_cadastro)";
+            using (MySqlCommand comandos = new MySqlCommand(queryInserirLogin, conn))
+            {
+                comandos.Parameters.AddWithValue("@nome_adm", "UkraAdm");
+                comandos.Parameters.AddWithValue("@senha_adm", "8^#3xY@7c$S5p@2#9a4!g6R^@1f%T#");
+                comandos.Parameters.AddWithValue("@id_cadastro", VariaveisGlobais.ultimoIdFuncionarioInserido);
+                comandos.ExecuteNonQuery();
+                conn.Close();
+            }
+
+            MessageBox.Show("Executado com Sucesso!");
             CarregarDados();        //Carrega dados na tabela.
-            NovoFuncTimer.Stop();//Para o Timer.
+            NovoFuncTimer.Start(); //Para o Timer.
         }
 
         private void pbFechar_Click_1(object sender, EventArgs e)

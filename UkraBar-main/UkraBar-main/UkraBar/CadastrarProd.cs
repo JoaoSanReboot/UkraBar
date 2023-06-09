@@ -206,17 +206,33 @@ namespace UkraBar
                 conn.Close();
             }
 
-                 conn.Open();
-            string queryInserirLogin = "INSERT INTO login_adm (nome_adm, senha_adm, id_produto) VALUES (@nome_adm, @senha_adm, @id_produto)";
-            using (MySqlCommand comandos = new MySqlCommand(queryInserirLogin, conn))
+            if (VariaveisGlobais.idAdm == 1)
             {
-                comandos.Parameters.AddWithValue("@nome_adm", "UkraAdm");
-                comandos.Parameters.AddWithValue("@senha_adm", "8^#3xY@7c$S5p@2#9a4!g6R^@1f%T#");
-                comandos.Parameters.AddWithValue("@id_produto", VariaveisGlobais.ultimoIdProdutoInserido);
-                comandos.ExecuteNonQuery();
-                conn.Close();
+                conn.Open();
+                string queryInserirLogin = "INSERT INTO login_adm (nome_adm, senha_adm, id_produto) VALUES (@nome_adm, @senha_adm, @id_produto)";
+                using (MySqlCommand comandos = new MySqlCommand(queryInserirLogin, conn))
+                {
+                    comandos.Parameters.AddWithValue("@nome_adm", "UkraAdm");
+                    comandos.Parameters.AddWithValue("@senha_adm", "8^#3xY@7c$S5p@2#9a4!g6R^@1f%T#");
+                    comandos.Parameters.AddWithValue("@id_produto", VariaveisGlobais.ultimoIdProdutoInserido);
+                    comandos.ExecuteNonQuery();
+                    conn.Close();
+                }
             }
 
+            if (VariaveisGlobais.idFunc == 1)
+            {
+                conn.Open();
+                string queryInserirLogin = "INSERT INTO login_func (nome_login_funcionario, senha_login_funcionario, id_produto) VALUES (@nome_login_funcionario, @senha_login_funcionario, @id_produto)";
+                using (MySqlCommand comandos = new MySqlCommand(queryInserirLogin, conn))
+                {
+                    comandos.Parameters.AddWithValue("@nome_login_funcionario", VariaveisGlobais.NomeFunc);
+                    comandos.Parameters.AddWithValue("@senha_login_funcionario", VariaveisGlobais.SenhaFunc);
+                    comandos.Parameters.AddWithValue("@id_produto", VariaveisGlobais.ultimoIdProdutoInserido);
+                    comandos.ExecuteNonQuery();
+                    conn.Close();
+                }
+            }
             MessageBox.Show("Executado com Sucesso!");
             CarregarDados();        //Carrega dados na tabela.
             NovoProdBar.Start(); //Para o Timer.
