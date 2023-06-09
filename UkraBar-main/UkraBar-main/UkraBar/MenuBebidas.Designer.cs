@@ -175,7 +175,6 @@
             this.btnMacaAmor = new System.Windows.Forms.Button();
             this.btnSlava = new System.Windows.Forms.Button();
             this.btnChaMate = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelChaMatte.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel23.SuspendLayout();
@@ -204,7 +203,6 @@
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelChaMatte
@@ -229,7 +227,7 @@
             this.panelChaMatte.Controls.Add(this.label18);
             this.panelChaMatte.Controls.Add(this.panel24);
             this.panelChaMatte.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelChaMatte.Location = new System.Drawing.Point(347, 100);
+            this.panelChaMatte.Location = new System.Drawing.Point(336, 174);
             this.panelChaMatte.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelChaMatte.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelChaMatte.Name = "panelChaMatte";
@@ -495,7 +493,7 @@
             this.panelMacaAmor.Controls.Add(this.lblItaliano);
             this.panelMacaAmor.Controls.Add(this.panelFundo);
             this.panelMacaAmor.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelMacaAmor.Location = new System.Drawing.Point(347, 100);
+            this.panelMacaAmor.Location = new System.Drawing.Point(336, 174);
             this.panelMacaAmor.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelMacaAmor.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelMacaAmor.Name = "panelMacaAmor";
@@ -750,7 +748,7 @@
             this.panelMunich.Controls.Add(this.label24);
             this.panelMunich.Controls.Add(this.panel30);
             this.panelMunich.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelMunich.Location = new System.Drawing.Point(349, 100);
+            this.panelMunich.Location = new System.Drawing.Point(338, 174);
             this.panelMunich.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelMunich.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelMunich.Name = "panelMunich";
@@ -1007,7 +1005,7 @@
             this.panelSlava.Controls.Add(this.lblIberico);
             this.panelSlava.Controls.Add(this.panel7);
             this.panelSlava.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelSlava.Location = new System.Drawing.Point(349, 98);
+            this.panelSlava.Location = new System.Drawing.Point(338, 172);
             this.panelSlava.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelSlava.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelSlava.Name = "panelSlava";
@@ -1273,7 +1271,7 @@
             this.panelCaipirinha.Controls.Add(this.label12);
             this.panelCaipirinha.Controls.Add(this.panel18);
             this.panelCaipirinha.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelCaipirinha.Location = new System.Drawing.Point(352, 100);
+            this.panelCaipirinha.Location = new System.Drawing.Point(341, 174);
             this.panelCaipirinha.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelCaipirinha.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelCaipirinha.Name = "panelCaipirinha";
@@ -1529,7 +1527,7 @@
             this.panelPolaka.Controls.Add(this.label6);
             this.panelPolaka.Controls.Add(this.panel12);
             this.panelPolaka.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelPolaka.Location = new System.Drawing.Point(347, 100);
+            this.panelPolaka.Location = new System.Drawing.Point(336, 174);
             this.panelPolaka.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelPolaka.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelPolaka.Name = "panelPolaka";
@@ -1931,14 +1929,12 @@
             this.BtnPolaka.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPolaka.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPolaka.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnPolaka.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.BtnPolaka.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnPolaka.Location = new System.Drawing.Point(1047, 658);
+            this.BtnPolaka.Location = new System.Drawing.Point(948, 627);
             this.BtnPolaka.Name = "BtnPolaka";
-            this.BtnPolaka.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnPolaka.Size = new System.Drawing.Size(228, 55);
+            this.BtnPolaka.Size = new System.Drawing.Size(157, 55);
             this.BtnPolaka.TabIndex = 65;
-            this.BtnPolaka.Text = "        Comprar";
+            this.BtnPolaka.Text = "Adicionar";
             this.BtnPolaka.UseVisualStyleBackColor = false;
             this.BtnPolaka.Click += new System.EventHandler(this.BtnPolaka_Click);
             // 
@@ -1949,14 +1945,12 @@
             this.btnMoniche.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMoniche.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMoniche.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMoniche.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.btnMoniche.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMoniche.Location = new System.Drawing.Point(1047, 319);
+            this.btnMoniche.Location = new System.Drawing.Point(948, 372);
             this.btnMoniche.Name = "btnMoniche";
-            this.btnMoniche.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.btnMoniche.Size = new System.Drawing.Size(228, 55);
+            this.btnMoniche.Size = new System.Drawing.Size(157, 55);
             this.btnMoniche.TabIndex = 51;
-            this.btnMoniche.Text = "        Comprar";
+            this.btnMoniche.Text = "Adicionar";
             this.btnMoniche.UseVisualStyleBackColor = false;
             this.btnMoniche.Click += new System.EventHandler(this.btnMoniche_Click);
             // 
@@ -1967,14 +1961,12 @@
             this.btnCaipirinha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCaipirinha.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCaipirinha.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCaipirinha.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.btnCaipirinha.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCaipirinha.Location = new System.Drawing.Point(629, 658);
+            this.btnCaipirinha.Location = new System.Drawing.Point(603, 627);
             this.btnCaipirinha.Name = "btnCaipirinha";
-            this.btnCaipirinha.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.btnCaipirinha.Size = new System.Drawing.Size(228, 55);
+            this.btnCaipirinha.Size = new System.Drawing.Size(156, 55);
             this.btnCaipirinha.TabIndex = 53;
-            this.btnCaipirinha.Text = "        Comprar";
+            this.btnCaipirinha.Text = "Adicionar";
             this.btnCaipirinha.UseVisualStyleBackColor = false;
             this.btnCaipirinha.Click += new System.EventHandler(this.btnCaipirinha_Click);
             // 
@@ -1985,14 +1977,12 @@
             this.btnMacaAmor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMacaAmor.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMacaAmor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMacaAmor.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.btnMacaAmor.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMacaAmor.Location = new System.Drawing.Point(629, 319);
+            this.btnMacaAmor.Location = new System.Drawing.Point(603, 372);
             this.btnMacaAmor.Name = "btnMacaAmor";
-            this.btnMacaAmor.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.btnMacaAmor.Size = new System.Drawing.Size(228, 55);
+            this.btnMacaAmor.Size = new System.Drawing.Size(157, 55);
             this.btnMacaAmor.TabIndex = 50;
-            this.btnMacaAmor.Text = "        Comprar";
+            this.btnMacaAmor.Text = "Adicionar";
             this.btnMacaAmor.UseVisualStyleBackColor = false;
             this.btnMacaAmor.Click += new System.EventHandler(this.btnMacaAmor_Click);
             // 
@@ -2003,14 +1993,12 @@
             this.btnSlava.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSlava.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSlava.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSlava.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.btnSlava.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSlava.Location = new System.Drawing.Point(211, 658);
+            this.btnSlava.Location = new System.Drawing.Point(256, 627);
             this.btnSlava.Name = "btnSlava";
-            this.btnSlava.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.btnSlava.Size = new System.Drawing.Size(228, 55);
+            this.btnSlava.Size = new System.Drawing.Size(160, 55);
             this.btnSlava.TabIndex = 57;
-            this.btnSlava.Text = "        Comprar";
+            this.btnSlava.Text = "Adicionar";
             this.btnSlava.UseVisualStyleBackColor = false;
             this.btnSlava.Click += new System.EventHandler(this.btnSlava_Click);
             // 
@@ -2021,31 +2009,20 @@
             this.btnChaMate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChaMate.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChaMate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnChaMate.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.btnChaMate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnChaMate.Location = new System.Drawing.Point(211, 324);
+            this.btnChaMate.Location = new System.Drawing.Point(256, 372);
             this.btnChaMate.Name = "btnChaMate";
-            this.btnChaMate.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.btnChaMate.Size = new System.Drawing.Size(228, 55);
+            this.btnChaMate.Size = new System.Drawing.Size(160, 55);
             this.btnChaMate.TabIndex = 55;
-            this.btnChaMate.Text = "        Comprar";
+            this.btnChaMate.Text = "Adicionar";
             this.btnChaMate.UseVisualStyleBackColor = false;
             this.btnChaMate.Click += new System.EventHandler(this.btnChaMate_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::UkraBar.Properties.Resources._23;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1370, 749);
-            this.pictureBox1.TabIndex = 67;
-            this.pictureBox1.TabStop = false;
             // 
             // MenuBebidas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::UkraBar.Properties.Resources.BebidasCentralizada;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.SideBarLateral);
             this.Controls.Add(this.panelPolaka);
@@ -2060,11 +2037,11 @@
             this.Controls.Add(this.btnMacaAmor);
             this.Controls.Add(this.btnSlava);
             this.Controls.Add(this.btnChaMate);
-            this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MenuBebidas";
             this.Text = "MenuBebidas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MenuBebidas_Load);
             this.panelChaMatte.ResumeLayout(false);
             this.panelChaMatte.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -2106,7 +2083,6 @@
             this.panelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2248,7 +2224,6 @@
         private System.Windows.Forms.Button BtnOkP;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button BtnPolaka;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.FlowLayoutPanel SideBarLateral;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Label lblMenu;

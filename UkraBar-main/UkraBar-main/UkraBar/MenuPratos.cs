@@ -578,5 +578,10 @@ namespace UkraBar
             Bebidas.ShowDialog();
             this.Close();
         }
+
+        private void MenuPratos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

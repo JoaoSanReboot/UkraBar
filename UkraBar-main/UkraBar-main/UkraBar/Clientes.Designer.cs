@@ -75,12 +75,12 @@
             // 
             // PanelCpfNota
             // 
-            this.PanelCpfNota.BackgroundImage = global::UkraBar.Properties.Resources.NotaCpf;
+            this.PanelCpfNota.BackgroundImage = global::UkraBar.Properties.Resources.cpfNota;
             this.PanelCpfNota.Controls.Add(this.BtnSim);
             this.PanelCpfNota.Controls.Add(this.BtnNao);
-            this.PanelCpfNota.Location = new System.Drawing.Point(301, 251);
+            this.PanelCpfNota.Location = new System.Drawing.Point(284, 235);
             this.PanelCpfNota.Name = "PanelCpfNota";
-            this.PanelCpfNota.Size = new System.Drawing.Size(775, 429);
+            this.PanelCpfNota.Size = new System.Drawing.Size(791, 466);
             this.PanelCpfNota.TabIndex = 3;
             // 
             // BtnSim
@@ -90,7 +90,7 @@
             this.BtnSim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSim.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSim.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnSim.Location = new System.Drawing.Point(76, 197);
+            this.BtnSim.Location = new System.Drawing.Point(95, 197);
             this.BtnSim.Name = "BtnSim";
             this.BtnSim.Size = new System.Drawing.Size(260, 74);
             this.BtnSim.TabIndex = 2;
@@ -117,7 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::UkraBar.Properties.Resources.FundoCpf;
+            this.BackgroundImage = global::UkraBar.Properties.Resources.InsiraCpf;
             this.ClientSize = new System.Drawing.Size(1270, 749);
             this.Controls.Add(this.PanelCpfNota);
             this.Controls.Add(this.BtnCpfCad);

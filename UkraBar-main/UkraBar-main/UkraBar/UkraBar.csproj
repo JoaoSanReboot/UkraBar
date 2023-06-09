@@ -571,5 +571,62 @@
   <ItemGroup>
     <None Include="Resources\FundoCpf.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoSandubas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuEscolha.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnPratos1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnBebidas1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnSandubas1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsiraCpf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cpfNota.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BebidasFeias.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BebidasBonitas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BebidasFinal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pratos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BebidasCentralizada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SanbuasCentralizados.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuEscolha1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ComoDesejaSer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pagamento.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RecomeçarTudo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recomeçar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recomeçar1.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

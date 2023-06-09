@@ -16,5 +16,13 @@ namespace UkraBar
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Clientes cliente = new Clientes();
+            this.Hide();
+            cliente.ShowDialog();
+            this.Close();
+        }
     }
 }

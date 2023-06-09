@@ -203,6 +203,46 @@ namespace UkraBar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BebidasBonitas {
+            get {
+                object obj = ResourceManager.GetObject("BebidasBonitas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BebidasCentralizada {
+            get {
+                object obj = ResourceManager.GetObject("BebidasCentralizada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BebidasFeias {
+            get {
+                object obj = ResourceManager.GetObject("BebidasFeias", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BebidasFinal {
+            get {
+                object obj = ResourceManager.GetObject("BebidasFinal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BOTAO {
             get {
                 object obj = ResourceManager.GetObject("BOTAO", resourceCulture);
@@ -246,6 +286,16 @@ namespace UkraBar.Properties {
         internal static System.Drawing.Bitmap BtnBebidas {
             get {
                 object obj = ResourceManager.GetObject("BtnBebidas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BtnBebidas1 {
+            get {
+                object obj = ResourceManager.GetObject("BtnBebidas1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -333,9 +383,29 @@ namespace UkraBar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BtnPratos1 {
+            get {
+                object obj = ResourceManager.GetObject("BtnPratos1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BtnSandubas {
             get {
                 object obj = ResourceManager.GetObject("BtnSandubas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BtnSandubas1 {
+            get {
+                object obj = ResourceManager.GetObject("BtnSandubas1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -423,6 +493,16 @@ namespace UkraBar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ComoDesejaSer {
+            get {
+                object obj = ResourceManager.GetObject("ComoDesejaSer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CpfNaNota {
             get {
                 object obj = ResourceManager.GetObject("CpfNaNota", resourceCulture);
@@ -436,6 +516,16 @@ namespace UkraBar.Properties {
         internal static System.Drawing.Bitmap CpfNaNota1 {
             get {
                 object obj = ResourceManager.GetObject("CpfNaNota1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cpfNota {
+            get {
+                object obj = ResourceManager.GetObject("cpfNota", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -613,6 +703,16 @@ namespace UkraBar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FundoSandubas {
+            get {
+                object obj = ResourceManager.GetObject("FundoSandubas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hide_24px {
             get {
                 object obj = ResourceManager.GetObject("hide_24px", resourceCulture);
@@ -636,6 +736,16 @@ namespace UkraBar.Properties {
         internal static System.Drawing.Bitmap info_24px {
             get {
                 object obj = ResourceManager.GetObject("info_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap InsiraCpf {
+            get {
+                object obj = ResourceManager.GetObject("InsiraCpf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -686,6 +796,26 @@ namespace UkraBar.Properties {
         internal static System.Drawing.Bitmap meal_26px {
             get {
                 object obj = ResourceManager.GetObject("meal_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MenuEscolha {
+            get {
+                object obj = ResourceManager.GetObject("MenuEscolha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MenuEscolha1 {
+            get {
+                object obj = ResourceManager.GetObject("MenuEscolha1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -803,6 +933,16 @@ namespace UkraBar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Pagamento {
+            get {
+                object obj = ResourceManager.GetObject("Pagamento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PBADM {
             get {
                 object obj = ResourceManager.GetObject("PBADM", resourceCulture);
@@ -853,6 +993,46 @@ namespace UkraBar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Pratos {
+            get {
+                object obj = ResourceManager.GetObject("Pratos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Recomeçar {
+            get {
+                object obj = ResourceManager.GetObject("Recomeçar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Recomeçar1 {
+            get {
+                object obj = ResourceManager.GetObject("Recomeçar1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RecomeçarTudo {
+            get {
+                object obj = ResourceManager.GetObject("RecomeçarTudo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap reply_arrow_24px {
             get {
                 object obj = ResourceManager.GetObject("reply_arrow_24px", resourceCulture);
@@ -876,6 +1056,16 @@ namespace UkraBar.Properties {
         internal static System.Drawing.Bitmap sale__2_ {
             get {
                 object obj = ResourceManager.GetObject("sale (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SanbuasCentralizados {
+            get {
+                object obj = ResourceManager.GetObject("SanbuasCentralizados", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

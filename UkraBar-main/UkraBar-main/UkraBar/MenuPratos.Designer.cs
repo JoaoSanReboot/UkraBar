@@ -178,7 +178,6 @@
             this.BtnBorscht = new System.Windows.Forms.Button();
             this.BtnBanosh = new System.Windows.Forms.Button();
             this.BtnBatata = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelBatata.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel23.SuspendLayout();
@@ -207,7 +206,6 @@
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBatata
@@ -232,7 +230,7 @@
             this.panelBatata.Controls.Add(this.label18);
             this.panelBatata.Controls.Add(this.panel24);
             this.panelBatata.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelBatata.Location = new System.Drawing.Point(372, 96);
+            this.panelBatata.Location = new System.Drawing.Point(357, 191);
             this.panelBatata.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelBatata.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelBatata.Name = "panelBatata";
@@ -499,7 +497,7 @@
             this.panelFrango.Controls.Add(this.lblItaliano);
             this.panelFrango.Controls.Add(this.panelFundo);
             this.panelFrango.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelFrango.Location = new System.Drawing.Point(372, 96);
+            this.panelFrango.Location = new System.Drawing.Point(357, 191);
             this.panelFrango.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelFrango.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelFrango.Name = "panelFrango";
@@ -766,7 +764,7 @@
             this.panelPerohe.Controls.Add(this.label24);
             this.panelPerohe.Controls.Add(this.panel30);
             this.panelPerohe.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelPerohe.Location = new System.Drawing.Point(372, 97);
+            this.panelPerohe.Location = new System.Drawing.Point(357, 192);
             this.panelPerohe.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelPerohe.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelPerohe.Name = "panelPerohe";
@@ -1033,7 +1031,7 @@
             this.panelHolubtsi.Controls.Add(this.lblIberico);
             this.panelHolubtsi.Controls.Add(this.panel7);
             this.panelHolubtsi.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelHolubtsi.Location = new System.Drawing.Point(372, 97);
+            this.panelHolubtsi.Location = new System.Drawing.Point(357, 192);
             this.panelHolubtsi.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelHolubtsi.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelHolubtsi.Name = "panelHolubtsi";
@@ -1300,7 +1298,7 @@
             this.panelBorscht.Controls.Add(this.label12);
             this.panelBorscht.Controls.Add(this.panel18);
             this.panelBorscht.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelBorscht.Location = new System.Drawing.Point(372, 97);
+            this.panelBorscht.Location = new System.Drawing.Point(357, 192);
             this.panelBorscht.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelBorscht.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelBorscht.Name = "panelBorscht";
@@ -1567,7 +1565,7 @@
             this.panelBanosh.Controls.Add(this.label6);
             this.panelBanosh.Controls.Add(this.panel12);
             this.panelBanosh.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelBanosh.Location = new System.Drawing.Point(372, 97);
+            this.panelBanosh.Location = new System.Drawing.Point(357, 192);
             this.panelBanosh.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelBanosh.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelBanosh.Name = "panelBanosh";
@@ -1970,14 +1968,12 @@
             this.BtnPerohe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPerohe.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPerohe.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnPerohe.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.BtnPerohe.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnPerohe.Location = new System.Drawing.Point(1058, 321);
+            this.BtnPerohe.Location = new System.Drawing.Point(900, 342);
             this.BtnPerohe.Name = "BtnPerohe";
-            this.BtnPerohe.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnPerohe.Size = new System.Drawing.Size(228, 55);
+            this.BtnPerohe.Size = new System.Drawing.Size(259, 55);
             this.BtnPerohe.TabIndex = 63;
-            this.BtnPerohe.Text = "        Comprar";
+            this.BtnPerohe.Text = "Adicionar";
             this.BtnPerohe.UseVisualStyleBackColor = false;
             this.BtnPerohe.Click += new System.EventHandler(this.BtnPerohe_Click);
             // 
@@ -1988,14 +1984,12 @@
             this.BtnFrango.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnFrango.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnFrango.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnFrango.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.BtnFrango.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnFrango.Location = new System.Drawing.Point(649, 320);
+            this.BtnFrango.Location = new System.Drawing.Point(552, 341);
             this.BtnFrango.Name = "BtnFrango";
-            this.BtnFrango.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnFrango.Size = new System.Drawing.Size(228, 55);
+            this.BtnFrango.Size = new System.Drawing.Size(259, 55);
             this.BtnFrango.TabIndex = 62;
-            this.BtnFrango.Text = "        Comprar";
+            this.BtnFrango.Text = "Adicionar";
             this.BtnFrango.UseVisualStyleBackColor = false;
             this.BtnFrango.Click += new System.EventHandler(this.BtnFrango_Click);
             // 
@@ -2006,14 +2000,12 @@
             this.BtnHulubsti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnHulubsti.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnHulubsti.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnHulubsti.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.BtnHulubsti.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnHulubsti.Location = new System.Drawing.Point(233, 660);
+            this.BtnHulubsti.Location = new System.Drawing.Point(206, 613);
             this.BtnHulubsti.Name = "BtnHulubsti";
-            this.BtnHulubsti.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnHulubsti.Size = new System.Drawing.Size(228, 55);
+            this.BtnHulubsti.Size = new System.Drawing.Size(259, 55);
             this.BtnHulubsti.TabIndex = 57;
-            this.BtnHulubsti.Text = "        Comprar";
+            this.BtnHulubsti.Text = "Adicionar";
             this.BtnHulubsti.UseVisualStyleBackColor = false;
             this.BtnHulubsti.Click += new System.EventHandler(this.BtnHulubsti_Click);
             // 
@@ -2024,14 +2016,12 @@
             this.BtnBorscht.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBorscht.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBorscht.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnBorscht.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.BtnBorscht.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnBorscht.Location = new System.Drawing.Point(649, 660);
+            this.BtnBorscht.Location = new System.Drawing.Point(553, 613);
             this.BtnBorscht.Name = "BtnBorscht";
-            this.BtnBorscht.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnBorscht.Size = new System.Drawing.Size(228, 55);
+            this.BtnBorscht.Size = new System.Drawing.Size(259, 55);
             this.BtnBorscht.TabIndex = 56;
-            this.BtnBorscht.Text = "        Comprar";
+            this.BtnBorscht.Text = "Adicionar";
             this.BtnBorscht.UseVisualStyleBackColor = false;
             this.BtnBorscht.Click += new System.EventHandler(this.BtnBorscht_Click);
             // 
@@ -2042,14 +2032,12 @@
             this.BtnBanosh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBanosh.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBanosh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnBanosh.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.BtnBanosh.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnBanosh.Location = new System.Drawing.Point(1058, 660);
+            this.BtnBanosh.Location = new System.Drawing.Point(902, 613);
             this.BtnBanosh.Name = "BtnBanosh";
-            this.BtnBanosh.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnBanosh.Size = new System.Drawing.Size(228, 55);
+            this.BtnBanosh.Size = new System.Drawing.Size(259, 55);
             this.BtnBanosh.TabIndex = 55;
-            this.BtnBanosh.Text = "        Comprar";
+            this.BtnBanosh.Text = "Adicionar";
             this.BtnBanosh.UseVisualStyleBackColor = false;
             this.BtnBanosh.Click += new System.EventHandler(this.BtnBanosh_Click);
             // 
@@ -2060,31 +2048,20 @@
             this.BtnBatata.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBatata.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBatata.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnBatata.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.BtnBatata.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnBatata.Location = new System.Drawing.Point(233, 319);
+            this.BtnBatata.Location = new System.Drawing.Point(206, 343);
             this.BtnBatata.Name = "BtnBatata";
-            this.BtnBatata.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnBatata.Size = new System.Drawing.Size(228, 55);
+            this.BtnBatata.Size = new System.Drawing.Size(259, 55);
             this.BtnBatata.TabIndex = 53;
-            this.BtnBatata.Text = "        Comprar";
+            this.BtnBatata.Text = "Adicionar";
             this.BtnBatata.UseVisualStyleBackColor = false;
             this.BtnBatata.Click += new System.EventHandler(this.BtnBatata_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::UkraBar.Properties.Resources._1;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1370, 749);
-            this.pictureBox1.TabIndex = 66;
-            this.pictureBox1.TabStop = false;
             // 
             // MenuPratos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::UkraBar.Properties.Resources.Pratos;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.SideBarLateral);
             this.Controls.Add(this.panelFrango);
@@ -2099,10 +2076,10 @@
             this.Controls.Add(this.BtnBorscht);
             this.Controls.Add(this.BtnBanosh);
             this.Controls.Add(this.BtnBatata);
-            this.Controls.Add(this.pictureBox1);
             this.Name = "MenuPratos";
             this.Text = "MenuPratos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MenuPratos_Load);
             this.panelBatata.ResumeLayout(false);
             this.panelBatata.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -2144,7 +2121,6 @@
             this.panelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2289,7 +2265,6 @@
         private System.Windows.Forms.Button BtnBatata;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.FlowLayoutPanel SideBarLateral;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Label lblMenu;

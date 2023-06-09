@@ -176,7 +176,6 @@
             this.BtnVegetariano = new System.Windows.Forms.Button();
             this.BtnComprarAlemao = new System.Windows.Forms.Button();
             this.BtnComprar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelItaliano.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSimbolo)).BeginInit();
             this.panelValor.SuspendLayout();
@@ -205,7 +204,6 @@
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnSair
@@ -246,7 +244,7 @@
             this.panelItaliano.Controls.Add(this.lblItaliano);
             this.panelItaliano.Controls.Add(this.panelFundo);
             this.panelItaliano.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelItaliano.Location = new System.Drawing.Point(386, 100);
+            this.panelItaliano.Location = new System.Drawing.Point(321, 192);
             this.panelItaliano.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelItaliano.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelItaliano.Name = "panelItaliano";
@@ -503,7 +501,7 @@
             this.panelIberico.Controls.Add(this.lblIberico);
             this.panelIberico.Controls.Add(this.panel7);
             this.panelIberico.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelIberico.Location = new System.Drawing.Point(386, 100);
+            this.panelIberico.Location = new System.Drawing.Point(321, 192);
             this.panelIberico.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelIberico.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelIberico.Name = "panelIberico";
@@ -770,7 +768,7 @@
             this.panelZapiekanka.Controls.Add(this.label6);
             this.panelZapiekanka.Controls.Add(this.panel12);
             this.panelZapiekanka.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelZapiekanka.Location = new System.Drawing.Point(386, 100);
+            this.panelZapiekanka.Location = new System.Drawing.Point(321, 192);
             this.panelZapiekanka.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelZapiekanka.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelZapiekanka.Name = "panelZapiekanka";
@@ -1037,7 +1035,7 @@
             this.panelKatsuSando.Controls.Add(this.label12);
             this.panelKatsuSando.Controls.Add(this.panel18);
             this.panelKatsuSando.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelKatsuSando.Location = new System.Drawing.Point(386, 100);
+            this.panelKatsuSando.Location = new System.Drawing.Point(321, 192);
             this.panelKatsuSando.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelKatsuSando.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelKatsuSando.Name = "panelKatsuSando";
@@ -1304,7 +1302,7 @@
             this.panelVegetariano.Controls.Add(this.label18);
             this.panelVegetariano.Controls.Add(this.panel24);
             this.panelVegetariano.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelVegetariano.Location = new System.Drawing.Point(386, 100);
+            this.panelVegetariano.Location = new System.Drawing.Point(321, 192);
             this.panelVegetariano.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelVegetariano.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelVegetariano.Name = "panelVegetariano";
@@ -1573,7 +1571,7 @@
             this.panelAlemão.Controls.Add(this.label24);
             this.panelAlemão.Controls.Add(this.panel30);
             this.panelAlemão.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelAlemão.Location = new System.Drawing.Point(386, 100);
+            this.panelAlemão.Location = new System.Drawing.Point(321, 192);
             this.panelAlemão.MaximumSize = new System.Drawing.Size(707, 486);
             this.panelAlemão.MinimumSize = new System.Drawing.Size(0, 486);
             this.panelAlemão.Name = "panelAlemão";
@@ -1948,14 +1946,12 @@
             this.BtnPolonesComprar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPolonesComprar.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPolonesComprar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnPolonesComprar.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.BtnPolonesComprar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnPolonesComprar.Location = new System.Drawing.Point(1077, 320);
+            this.BtnPolonesComprar.Location = new System.Drawing.Point(903, 347);
             this.BtnPolonesComprar.Name = "BtnPolonesComprar";
-            this.BtnPolonesComprar.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnPolonesComprar.Size = new System.Drawing.Size(228, 55);
+            this.BtnPolonesComprar.Size = new System.Drawing.Size(260, 55);
             this.BtnPolonesComprar.TabIndex = 45;
-            this.BtnPolonesComprar.Text = "        Comprar";
+            this.BtnPolonesComprar.Text = " Adicionar";
             this.BtnPolonesComprar.UseVisualStyleBackColor = false;
             this.BtnPolonesComprar.Click += new System.EventHandler(this.BtnPolonesComprar_Click);
             // 
@@ -1966,14 +1962,12 @@
             this.BtnIberico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnIberico.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnIberico.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnIberico.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.BtnIberico.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnIberico.Location = new System.Drawing.Point(659, 321);
+            this.BtnIberico.Location = new System.Drawing.Point(555, 347);
             this.BtnIberico.Name = "BtnIberico";
-            this.BtnIberico.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnIberico.Size = new System.Drawing.Size(228, 55);
+            this.BtnIberico.Size = new System.Drawing.Size(260, 55);
             this.BtnIberico.TabIndex = 44;
-            this.BtnIberico.Text = "        Comprar";
+            this.BtnIberico.Text = " Adicionar";
             this.BtnIberico.UseVisualStyleBackColor = false;
             this.BtnIberico.Click += new System.EventHandler(this.BtnIberico_Click);
             // 
@@ -1984,14 +1978,12 @@
             this.BtnKatsuoSando.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnKatsuoSando.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnKatsuoSando.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnKatsuoSando.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.BtnKatsuoSando.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnKatsuoSando.Location = new System.Drawing.Point(246, 661);
+            this.BtnKatsuoSando.Location = new System.Drawing.Point(206, 607);
             this.BtnKatsuoSando.Name = "BtnKatsuoSando";
-            this.BtnKatsuoSando.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnKatsuoSando.Size = new System.Drawing.Size(228, 55);
+            this.BtnKatsuoSando.Size = new System.Drawing.Size(260, 55);
             this.BtnKatsuoSando.TabIndex = 15;
-            this.BtnKatsuoSando.Text = "        Comprar";
+            this.BtnKatsuoSando.Text = " Adicionar";
             this.BtnKatsuoSando.UseVisualStyleBackColor = false;
             this.BtnKatsuoSando.Click += new System.EventHandler(this.BtnKatsuoSando_Click);
             // 
@@ -2002,14 +1994,12 @@
             this.BtnVegetariano.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnVegetariano.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnVegetariano.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnVegetariano.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.BtnVegetariano.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnVegetariano.Location = new System.Drawing.Point(659, 661);
+            this.BtnVegetariano.Location = new System.Drawing.Point(555, 607);
             this.BtnVegetariano.Name = "BtnVegetariano";
-            this.BtnVegetariano.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnVegetariano.Size = new System.Drawing.Size(228, 55);
+            this.BtnVegetariano.Size = new System.Drawing.Size(260, 55);
             this.BtnVegetariano.TabIndex = 14;
-            this.BtnVegetariano.Text = "        Comprar";
+            this.BtnVegetariano.Text = " Adicionar";
             this.BtnVegetariano.UseVisualStyleBackColor = false;
             this.BtnVegetariano.Click += new System.EventHandler(this.BtnVegetariano_Click);
             // 
@@ -2020,14 +2010,12 @@
             this.BtnComprarAlemao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnComprarAlemao.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnComprarAlemao.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnComprarAlemao.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.BtnComprarAlemao.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnComprarAlemao.Location = new System.Drawing.Point(1077, 661);
+            this.BtnComprarAlemao.Location = new System.Drawing.Point(903, 607);
             this.BtnComprarAlemao.Name = "BtnComprarAlemao";
-            this.BtnComprarAlemao.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnComprarAlemao.Size = new System.Drawing.Size(228, 55);
+            this.BtnComprarAlemao.Size = new System.Drawing.Size(260, 55);
             this.BtnComprarAlemao.TabIndex = 13;
-            this.BtnComprarAlemao.Text = "        Comprar";
+            this.BtnComprarAlemao.Text = " Adicionar";
             this.BtnComprarAlemao.UseVisualStyleBackColor = false;
             this.BtnComprarAlemao.Click += new System.EventHandler(this.BtnComprarAlemao_Click);
             // 
@@ -2038,32 +2026,20 @@
             this.BtnComprar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnComprar.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnComprar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnComprar.Image = global::UkraBar.Properties.Resources.shopping_cart_32px;
             this.BtnComprar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnComprar.Location = new System.Drawing.Point(246, 322);
+            this.BtnComprar.Location = new System.Drawing.Point(206, 349);
             this.BtnComprar.Name = "BtnComprar";
-            this.BtnComprar.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.BtnComprar.Size = new System.Drawing.Size(228, 55);
+            this.BtnComprar.Size = new System.Drawing.Size(260, 55);
             this.BtnComprar.TabIndex = 9;
-            this.BtnComprar.Text = "        Comprar";
+            this.BtnComprar.Text = " Adicionar";
             this.BtnComprar.UseVisualStyleBackColor = false;
             this.BtnComprar.Click += new System.EventHandler(this.BtnComprar_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::UkraBar.Properties.Resources._3;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1370, 749);
-            this.pictureBox1.TabIndex = 47;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // MenuSanduba
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::UkraBar.Properties.Resources.SanbuasCentralizados;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panelVegetariano);
             this.Controls.Add(this.panelItaliano);
@@ -2078,7 +2054,6 @@
             this.Controls.Add(this.BtnVegetariano);
             this.Controls.Add(this.BtnComprarAlemao);
             this.Controls.Add(this.BtnComprar);
-            this.Controls.Add(this.pictureBox1);
             this.Name = "MenuSanduba";
             this.Text = "MenuSanduba";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -2124,7 +2099,6 @@
             this.panelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2275,7 +2249,6 @@
         private System.Windows.Forms.PictureBox pbMenu;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button BtnCarrinho;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnBebidas;
         private System.Windows.Forms.Button BtnPrato;
     }

@@ -557,5 +557,10 @@ namespace UkraBar
             Sanduba.ShowDialog();
             this.Close();
         }
+
+        private void MenuBebidas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
