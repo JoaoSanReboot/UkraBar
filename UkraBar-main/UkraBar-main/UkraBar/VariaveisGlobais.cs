@@ -107,5 +107,8 @@ namespace UkraBar
         public static bool CompraHusbulist= true;
         public static bool CompraBorscht = true;
         public static bool CompraPerohe = true;
+
+        public static int idAdm;
+        public static int idFunc;
     }
 }

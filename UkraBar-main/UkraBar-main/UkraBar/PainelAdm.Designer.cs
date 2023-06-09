@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pMenu = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnProduto = new System.Windows.Forms.Button();
             this.BtnClientesView = new System.Windows.Forms.Button();
             this.BtnCadastrar = new System.Windows.Forms.Button();
@@ -37,10 +38,12 @@
             this.BtnProdutos = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PanelSair = new System.Windows.Forms.Panel();
+            this.BtnSair = new System.Windows.Forms.Button();
             this.pMenu.SuspendLayout();
-            this.pCadastro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pCadastro.SuspendLayout();
+            this.PanelSair.SuspendLayout();
             this.SuspendLayout();
             // 
             // pMenu
@@ -57,8 +60,23 @@
             this.pMenu.TabIndex = 1;
             this.pMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.PainelMenu_Paint);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::UkraBar.Properties.Resources.admIMAGE22;
+            this.pictureBox1.Location = new System.Drawing.Point(38, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(249, 68);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // BtnProduto
             // 
+            this.BtnProduto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnProduto.AutoSize = true;
             this.BtnProduto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.BtnProduto.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -79,6 +97,9 @@
             // 
             // BtnClientesView
             // 
+            this.BtnClientesView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnClientesView.AutoSize = true;
             this.BtnClientesView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.BtnClientesView.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -99,6 +120,9 @@
             // 
             // BtnCadastrar
             // 
+            this.BtnCadastrar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnCadastrar.AutoSize = true;
             this.BtnCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.BtnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -109,10 +133,10 @@
             this.BtnCadastrar.ForeColor = System.Drawing.SystemColors.Control;
             this.BtnCadastrar.Image = global::UkraBar.Properties.Resources.expand_arrow_24px;
             this.BtnCadastrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCadastrar.Location = new System.Drawing.Point(343, 18);
+            this.BtnCadastrar.Location = new System.Drawing.Point(333, 17);
             this.BtnCadastrar.Name = "BtnCadastrar";
             this.BtnCadastrar.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
-            this.BtnCadastrar.Size = new System.Drawing.Size(187, 63);
+            this.BtnCadastrar.Size = new System.Drawing.Size(197, 63);
             this.BtnCadastrar.TabIndex = 0;
             this.BtnCadastrar.Text = "   Cadastrar";
             this.BtnCadastrar.UseVisualStyleBackColor = false;
@@ -131,13 +155,16 @@
             this.pCadastro.Controls.Add(this.BtnProdutos);
             this.pCadastro.Location = new System.Drawing.Point(330, 84);
             this.pCadastro.Name = "pCadastro";
-            this.pCadastro.Size = new System.Drawing.Size(200, 130);
+            this.pCadastro.Size = new System.Drawing.Size(203, 130);
             this.pCadastro.TabIndex = 8;
             this.pCadastro.Visible = false;
             this.pCadastro.Paint += new System.Windows.Forms.PaintEventHandler(this.pCadastro_Paint);
             // 
             // BtnFuncionario
             // 
+            this.BtnFuncionario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnFuncionario.AutoSize = true;
             this.BtnFuncionario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.BtnFuncionario.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -146,7 +173,7 @@
             this.BtnFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnFuncionario.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnFuncionario.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnFuncionario.Location = new System.Drawing.Point(0, 62);
+            this.BtnFuncionario.Location = new System.Drawing.Point(3, 62);
             this.BtnFuncionario.Name = "BtnFuncionario";
             this.BtnFuncionario.Size = new System.Drawing.Size(197, 65);
             this.BtnFuncionario.TabIndex = 8;
@@ -158,6 +185,9 @@
             // 
             // BtnProdutos
             // 
+            this.BtnProdutos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnProdutos.AutoSize = true;
             this.BtnProdutos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.BtnProdutos.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -166,7 +196,7 @@
             this.BtnProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnProdutos.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnProdutos.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnProdutos.Location = new System.Drawing.Point(0, 0);
+            this.BtnProdutos.Location = new System.Drawing.Point(3, 0);
             this.BtnProdutos.Name = "BtnProdutos";
             this.BtnProdutos.Size = new System.Drawing.Size(197, 62);
             this.BtnProdutos.TabIndex = 6;
@@ -192,23 +222,43 @@
             this.panel2.Size = new System.Drawing.Size(10, 665);
             this.panel2.TabIndex = 10;
             // 
-            // pictureBox1
+            // PanelSair
             // 
-            this.pictureBox1.Image = global::UkraBar.Properties.Resources.ADMimagem;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 11);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(236, 70);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
+            this.PanelSair.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PanelSair.AutoSize = true;
+            this.PanelSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.PanelSair.Controls.Add(this.BtnSair);
+            this.PanelSair.Location = new System.Drawing.Point(38, 84);
+            this.PanelSair.Name = "PanelSair";
+            this.PanelSair.Size = new System.Drawing.Size(256, 66);
+            this.PanelSair.TabIndex = 11;
+            this.PanelSair.Visible = false;
+            // 
+            // BtnSair
+            // 
+            this.BtnSair.BackColor = System.Drawing.Color.Red;
+            this.BtnSair.FlatAppearance.BorderSize = 0;
+            this.BtnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSair.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnSair.ForeColor = System.Drawing.SystemColors.Control;
+            this.BtnSair.Location = new System.Drawing.Point(4, 0);
+            this.BtnSair.Name = "BtnSair";
+            this.BtnSair.Size = new System.Drawing.Size(249, 62);
+            this.BtnSair.TabIndex = 12;
+            this.BtnSair.Text = "Sair";
+            this.BtnSair.UseVisualStyleBackColor = false;
+            this.BtnSair.Click += new System.EventHandler(this.BtnSair_Click);
             // 
             // PainelAdm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackgroundImage = global::UkraBar.Properties.Resources.FundoADM;
+            this.BackgroundImage = global::UkraBar.Properties.Resources.FundoFinal;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.PanelSair);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pCadastro);
@@ -218,9 +268,10 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pMenu.ResumeLayout(false);
             this.pMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pCadastro.ResumeLayout(false);
             this.pCadastro.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.PanelSair.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,5 +288,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel PanelSair;
+        private System.Windows.Forms.Button BtnSair;
     }
 }

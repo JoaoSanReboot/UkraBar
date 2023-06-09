@@ -188,10 +188,20 @@ namespace UkraBar
         //Volta um Formúlário.
         private void BtnVoltar_Click(object sender, EventArgs e)
         {
-            PainelAdm adm = new PainelAdm(); //Declara nome do Formulário
-            this.Hide();       //Esconde o Atual
-            adm.ShowDialog(); //Mostra o Novo Formulário.
-            this.Close();    //Fecha o Formulário antigo.
+            if (VariaveisGlobais.idAdm == 1)
+            {
+                PainelAdm adm = new PainelAdm(); //Declara nome do Formulário
+                this.Hide();       //Esconde o Atual
+                adm.ShowDialog(); //Mostra o Novo Formulário.
+                this.Close();    //Fecha o Formulário antigo.
+            }
+            if (VariaveisGlobais.idFunc == 1)
+            {
+                PainelFuncionario func = new PainelFuncionario(); //Declara nome do Formulário
+                this.Hide();       //Esconde o Atual
+                func.ShowDialog(); //Mostra o Novo Formulário.
+                this.Close();    //Fecha o Formulário antigo.
+            }
         }
 
         //Remove as Bordas do Form Original.

@@ -32,35 +32,11 @@ namespace UkraBar
 
         }
 
-
-        private void pbMostrar2_Click(object sender, EventArgs e)
-        {
-            pbOcultar2.BringToFront();
-            TextFunc2.PasswordChar = '*';//Botão de Ocultar senha do Funcionario
-        }
-
-        private void pbOcultar2_Click(object sender, EventArgs e)
-        {
-            pbMostrar2.BringToFront();
-            TextFunc2.PasswordChar = '\0';//Botão de Mostrar senha do Funcionario
-        }
-
-
         private void TextAdm1_TextChanged(object sender, EventArgs e)
         {
 
         }
-        private void pbOcultar_Click_1(object sender, EventArgs e)
-        {
-            pbMostrar.BringToFront();
-            TextAdm2Senha.PasswordChar = '\0';//Botão de Ocultar senha do Adm
-        }
 
-        private void pbMostrar_Click_1(object sender, EventArgs e)
-        {
-            pbOcultar.BringToFront();
-            TextAdm2Senha.PasswordChar = '*';//Botão de Mostrar senha do Adm
-        }
 
         private void BtnAdmUser_Click(object sender, EventArgs e)
         {
@@ -116,20 +92,54 @@ namespace UkraBar
 
         private void BtnLogarAdm_Click(object sender, EventArgs e)
         {
-            if (TextAdm1.Text == "UkraAdm" & TextAdm2Senha.Text == "91371357")//Login Base do Adm
+
+            VariaveisGlobais.idAdm = 1;
+            VariaveisGlobais.idFunc = 0;
+
+            //Declara as strings da Box
+            string nomeloginADM = TextAdm1.Text;
+            string senhaloginADM = TextAdm2Senha.Text;
+
+            //Estabelece Conexão com o BD
+            string connectionString = "SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;";
+            MySqlConnection conn = new MySqlConnection(connectionString);
+
+            //Faz o comando Select From na tabela
+            MySqlCommand command = new MySqlCommand("SELECT nome_adm, senha_adm FROM login_adm WHERE nome_adm=@nome_adm AND senha_adm=@senha_adm", conn);
+            command.Parameters.AddWithValue("@nome_adm", nomeloginADM);
+            command.Parameters.AddWithValue("@senha_adm", senhaloginADM);
+
+            try
             {
-                PainelAdm PainelMenu = new PainelAdm();//Abre Layout do ADM
-                PainelMenu.Show();
-                this.Hide();
+                conn.Open();//Abre Conexão
+                MySqlDataReader reader = command.ExecuteReader();//Executa comando
+
+                if (reader.HasRows)
+                {
+                    PainelAdm adm = new PainelAdm();
+                    this.Hide();
+                    adm.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Senha ou Login invalidos.");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Algo não foi Escrito Corretamente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);// Mensagem de Error
+                MessageBox.Show("Algo está Incorreto : " + ex.Message);//Senão Mostrar mensagem e não executar comando
+            }
+            finally
+            {
+                conn.Close();//Fecha Conexão
             }
         }
 
         private void BtnLogarFunc_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.idFunc = 1;
+            VariaveisGlobais.idAdm = 0;
 
             //Declara as strings da Box
             string nomelogin = TextFunc1.Text;
@@ -151,10 +161,10 @@ namespace UkraBar
 
                 if (reader.HasRows)
                 {
-                    MessageBox.Show("Logado com sucesso!");//Caso login executado com exilio abrir formulario
-                    PainelAdm PainelLogins = new PainelAdm();
-                    PainelLogins.Show();
+                    PainelFuncionario PainelLogins = new PainelFuncionario();
                     this.Hide();
+                    PainelLogins.ShowDialog();
+                    this.Close();
                 }
                 else
                 {
@@ -190,6 +200,30 @@ namespace UkraBar
             this.Hide();
             clientes.ShowDialog();
             this.Close();
+        }
+
+        private void pbMostrar_Click(object sender, EventArgs e)
+        {
+            pbOcultar.BringToFront();
+            TextAdm2Senha.PasswordChar = '*';//Botão de Mostrar senha do Adm
+        }
+
+        private void pbOcultar_Click_1(object sender, EventArgs e)
+        {
+            pbMostrar.BringToFront();
+            TextAdm2Senha.PasswordChar = '\0';//Botão de Ocultar senha do Adm
+        }
+
+        private void pbMostrar2_Click_1(object sender, EventArgs e)
+        {
+            pbOcultar2.BringToFront();
+            TextFunc2.PasswordChar = '*';//Botão de Mostrar senha do Adm
+        }
+
+        private void pbOcultar2_Click_1(object sender, EventArgs e)
+        {
+            pbMostrar2.BringToFront();
+            TextFunc2.PasswordChar = '\0';//Botão de Ocultar senha do Adm
         }
     }
 

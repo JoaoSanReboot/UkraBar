@@ -41,13 +41,13 @@
             this.BtnAdmI1 = new System.Windows.Forms.Button();
             this.BtnClienteI2 = new System.Windows.Forms.Button();
             this.BtnAdmUser = new System.Windows.Forms.Button();
+            this.BtnFuncUser = new System.Windows.Forms.Button();
+            this.BtnLogarAdm = new System.Windows.Forms.Button();
+            this.BtnLogarFunc = new System.Windows.Forms.Button();
             this.pbMostrar = new System.Windows.Forms.PictureBox();
             this.pbOcultar = new System.Windows.Forms.PictureBox();
             this.pbMostrar2 = new System.Windows.Forms.PictureBox();
             this.pbOcultar2 = new System.Windows.Forms.PictureBox();
-            this.BtnFuncUser = new System.Windows.Forms.Button();
-            this.BtnLogarAdm = new System.Windows.Forms.Button();
-            this.BtnLogarFunc = new System.Windows.Forms.Button();
             this.Layout1.SuspendLayout();
             this.Layout2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMostrar)).BeginInit();
@@ -65,7 +65,8 @@
             this.TextFunc1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextFunc1.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
             this.TextFunc1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TextFunc1.Location = new System.Drawing.Point(538, 283);
+            this.TextFunc1.Location = new System.Drawing.Point(591, 307);
+            this.TextFunc1.MaxLength = 60;
             this.TextFunc1.Name = "TextFunc1";
             this.TextFunc1.Size = new System.Drawing.Size(270, 32);
             this.TextFunc1.TabIndex = 11;
@@ -81,10 +82,10 @@
             this.TextFunc2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextFunc2.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
             this.TextFunc2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TextFunc2.Location = new System.Drawing.Point(538, 388);
-            this.TextFunc2.MaxLength = 8;
+            this.TextFunc2.Location = new System.Drawing.Point(591, 404);
+            this.TextFunc2.MaxLength = 30;
             this.TextFunc2.Name = "TextFunc2";
-            this.TextFunc2.Size = new System.Drawing.Size(277, 32);
+            this.TextFunc2.Size = new System.Drawing.Size(262, 32);
             this.TextFunc2.TabIndex = 2;
             this.TextFunc2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -117,7 +118,8 @@
             this.TextAdm1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextAdm1.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
             this.TextAdm1.ForeColor = System.Drawing.Color.Black;
-            this.TextAdm1.Location = new System.Drawing.Point(538, 283);
+            this.TextAdm1.Location = new System.Drawing.Point(591, 307);
+            this.TextAdm1.MaxLength = 60;
             this.TextAdm1.Name = "TextAdm1";
             this.TextAdm1.Size = new System.Drawing.Size(270, 32);
             this.TextAdm1.TabIndex = 33;
@@ -133,10 +135,10 @@
             this.TextAdm2Senha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextAdm2Senha.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
             this.TextAdm2Senha.ForeColor = System.Drawing.Color.Black;
-            this.TextAdm2Senha.Location = new System.Drawing.Point(538, 388);
-            this.TextAdm2Senha.MaxLength = 18;
+            this.TextAdm2Senha.Location = new System.Drawing.Point(591, 404);
+            this.TextAdm2Senha.MaxLength = 30;
             this.TextAdm2Senha.Name = "TextAdm2Senha";
-            this.TextAdm2Senha.Size = new System.Drawing.Size(270, 32);
+            this.TextAdm2Senha.Size = new System.Drawing.Size(262, 32);
             this.TextAdm2Senha.TabIndex = 38;
             this.TextAdm2Senha.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -238,70 +240,6 @@
             this.BtnAdmUser.UseVisualStyleBackColor = true;
             this.BtnAdmUser.Click += new System.EventHandler(this.BtnAdmUser_Click);
             // 
-            // pbMostrar
-            // 
-            this.pbMostrar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMostrar.BackColor = System.Drawing.Color.Transparent;
-            this.pbMostrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbMostrar.Image = global::UkraBar.Properties.Resources.eye_24px;
-            this.pbMostrar.Location = new System.Drawing.Point(792, 388);
-            this.pbMostrar.Name = "pbMostrar";
-            this.pbMostrar.Size = new System.Drawing.Size(32, 30);
-            this.pbMostrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbMostrar.TabIndex = 22;
-            this.pbMostrar.TabStop = false;
-            this.pbMostrar.Click += new System.EventHandler(this.pbMostrar_Click_1);
-            // 
-            // pbOcultar
-            // 
-            this.pbOcultar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbOcultar.BackColor = System.Drawing.Color.Transparent;
-            this.pbOcultar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbOcultar.Image = global::UkraBar.Properties.Resources.hide_24px;
-            this.pbOcultar.Location = new System.Drawing.Point(792, 388);
-            this.pbOcultar.Name = "pbOcultar";
-            this.pbOcultar.Size = new System.Drawing.Size(32, 30);
-            this.pbOcultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbOcultar.TabIndex = 21;
-            this.pbOcultar.TabStop = false;
-            this.pbOcultar.Click += new System.EventHandler(this.pbOcultar_Click_1);
-            // 
-            // pbMostrar2
-            // 
-            this.pbMostrar2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMostrar2.BackColor = System.Drawing.Color.White;
-            this.pbMostrar2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbMostrar2.Image = global::UkraBar.Properties.Resources.eye_24px;
-            this.pbMostrar2.Location = new System.Drawing.Point(792, 388);
-            this.pbMostrar2.Name = "pbMostrar2";
-            this.pbMostrar2.Size = new System.Drawing.Size(32, 30);
-            this.pbMostrar2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbMostrar2.TabIndex = 30;
-            this.pbMostrar2.TabStop = false;
-            this.pbMostrar2.Click += new System.EventHandler(this.pbMostrar2_Click);
-            // 
-            // pbOcultar2
-            // 
-            this.pbOcultar2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbOcultar2.BackColor = System.Drawing.Color.White;
-            this.pbOcultar2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbOcultar2.Image = global::UkraBar.Properties.Resources.hide_24px;
-            this.pbOcultar2.Location = new System.Drawing.Point(792, 388);
-            this.pbOcultar2.Name = "pbOcultar2";
-            this.pbOcultar2.Size = new System.Drawing.Size(32, 30);
-            this.pbOcultar2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbOcultar2.TabIndex = 31;
-            this.pbOcultar2.TabStop = false;
-            this.pbOcultar2.Click += new System.EventHandler(this.pbOcultar2_Click);
-            // 
             // BtnFuncUser
             // 
             this.BtnFuncUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -324,12 +262,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnLogarAdm.AutoSize = true;
-            this.BtnLogarAdm.BackgroundImage = global::UkraBar.Properties.Resources.BtnLogar1;
+            this.BtnLogarAdm.BackgroundImage = global::UkraBar.Properties.Resources.BtnLogin;
             this.BtnLogarAdm.FlatAppearance.BorderSize = 0;
             this.BtnLogarAdm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLogarAdm.Location = new System.Drawing.Point(529, 497);
+            this.BtnLogarAdm.Location = new System.Drawing.Point(503, 500);
             this.BtnLogarAdm.Name = "BtnLogarAdm";
-            this.BtnLogarAdm.Size = new System.Drawing.Size(263, 96);
+            this.BtnLogarAdm.Size = new System.Drawing.Size(409, 76);
             this.BtnLogarAdm.TabIndex = 45;
             this.BtnLogarAdm.UseVisualStyleBackColor = true;
             this.BtnLogarAdm.Click += new System.EventHandler(this.BtnLogarAdm_Click);
@@ -340,28 +278,80 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnLogarFunc.AutoSize = true;
-            this.BtnLogarFunc.BackgroundImage = global::UkraBar.Properties.Resources.BtnLogar1;
+            this.BtnLogarFunc.BackgroundImage = global::UkraBar.Properties.Resources.BtnLogin;
             this.BtnLogarFunc.FlatAppearance.BorderSize = 0;
             this.BtnLogarFunc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLogarFunc.Location = new System.Drawing.Point(529, 497);
+            this.BtnLogarFunc.Location = new System.Drawing.Point(503, 500);
             this.BtnLogarFunc.Name = "BtnLogarFunc";
-            this.BtnLogarFunc.Size = new System.Drawing.Size(263, 96);
+            this.BtnLogarFunc.Size = new System.Drawing.Size(409, 76);
             this.BtnLogarFunc.TabIndex = 46;
             this.BtnLogarFunc.UseVisualStyleBackColor = true;
             this.BtnLogarFunc.Click += new System.EventHandler(this.BtnLogarFunc_Click);
+            // 
+            // pbMostrar
+            // 
+            this.pbMostrar.BackColor = System.Drawing.Color.Transparent;
+            this.pbMostrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbMostrar.Image = global::UkraBar.Properties.Resources.eye_24px1;
+            this.pbMostrar.Location = new System.Drawing.Point(852, 404);
+            this.pbMostrar.Name = "pbMostrar";
+            this.pbMostrar.Size = new System.Drawing.Size(32, 30);
+            this.pbMostrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbMostrar.TabIndex = 48;
+            this.pbMostrar.TabStop = false;
+            this.pbMostrar.Click += new System.EventHandler(this.pbMostrar_Click);
+            // 
+            // pbOcultar
+            // 
+            this.pbOcultar.BackColor = System.Drawing.Color.Transparent;
+            this.pbOcultar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbOcultar.Image = global::UkraBar.Properties.Resources.invisible_24px;
+            this.pbOcultar.Location = new System.Drawing.Point(852, 404);
+            this.pbOcultar.Name = "pbOcultar";
+            this.pbOcultar.Size = new System.Drawing.Size(32, 30);
+            this.pbOcultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbOcultar.TabIndex = 47;
+            this.pbOcultar.TabStop = false;
+            this.pbOcultar.Click += new System.EventHandler(this.pbOcultar_Click_1);
+            // 
+            // pbMostrar2
+            // 
+            this.pbMostrar2.BackColor = System.Drawing.Color.Transparent;
+            this.pbMostrar2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbMostrar2.Image = global::UkraBar.Properties.Resources.eye_24px1;
+            this.pbMostrar2.Location = new System.Drawing.Point(852, 404);
+            this.pbMostrar2.Name = "pbMostrar2";
+            this.pbMostrar2.Size = new System.Drawing.Size(32, 30);
+            this.pbMostrar2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbMostrar2.TabIndex = 50;
+            this.pbMostrar2.TabStop = false;
+            this.pbMostrar2.Click += new System.EventHandler(this.pbMostrar2_Click_1);
+            // 
+            // pbOcultar2
+            // 
+            this.pbOcultar2.BackColor = System.Drawing.Color.Transparent;
+            this.pbOcultar2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbOcultar2.Image = global::UkraBar.Properties.Resources.invisible_24px;
+            this.pbOcultar2.Location = new System.Drawing.Point(852, 404);
+            this.pbOcultar2.Name = "pbOcultar2";
+            this.pbOcultar2.Size = new System.Drawing.Size(32, 30);
+            this.pbOcultar2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbOcultar2.TabIndex = 49;
+            this.pbOcultar2.TabStop = false;
+            this.pbOcultar2.Click += new System.EventHandler(this.pbOcultar2_Click_1);
             // 
             // PainelLogins
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::UkraBar.Properties.Resources.FundoLogin1;
+            this.BackgroundImage = global::UkraBar.Properties.Resources.TelaLogin12;
             this.ClientSize = new System.Drawing.Size(1367, 749);
             this.Controls.Add(this.pbMostrar);
             this.Controls.Add(this.pbOcultar);
-            this.Controls.Add(this.TextAdm2Senha);
             this.Controls.Add(this.pbMostrar2);
             this.Controls.Add(this.pbOcultar2);
+            this.Controls.Add(this.TextAdm2Senha);
             this.Controls.Add(this.BtnLogarAdm);
             this.Controls.Add(this.Layout1);
             this.Controls.Add(this.BtnAdmUser);
@@ -394,10 +384,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox TextAdm1;
-        private System.Windows.Forms.PictureBox pbMostrar2;
-        private System.Windows.Forms.PictureBox pbOcultar2;
-        private System.Windows.Forms.PictureBox pbOcultar;
-        private System.Windows.Forms.PictureBox pbMostrar;
         private System.Windows.Forms.TextBox TextAdm2Senha;
         private System.Windows.Forms.Button BtnAdmUser;
         private System.Windows.Forms.FlowLayoutPanel Layout1;
@@ -409,6 +395,10 @@
         private System.Windows.Forms.Button BtnClienteI2;
         private System.Windows.Forms.Button BtnLogarAdm;
         private System.Windows.Forms.Button BtnLogarFunc;
+        private System.Windows.Forms.PictureBox pbMostrar;
+        private System.Windows.Forms.PictureBox pbOcultar;
+        private System.Windows.Forms.PictureBox pbMostrar2;
+        private System.Windows.Forms.PictureBox pbOcultar2;
     }
 }
 

@@ -70,14 +70,6 @@ namespace UkraBar
 
         }//Botão de Cadastro de Produto
 
-        private void button9_Click(object sender, EventArgs e)//Botão de Cadastro Desconto
-        {
-            CadastrarDesc DesCad = new CadastrarDesc();
-            this.Hide();
-            DesCad.ShowDialog();
-            this.Close();
-        }
-
         private void button12_Click(object sender, EventArgs e)//Botão de Cadastro Funcionario
         {
             CadastrarFunc FuncCad = new CadastrarFunc();
@@ -132,6 +124,25 @@ namespace UkraBar
             MenuEscolha menu = new MenuEscolha();
             this.Hide();
             menu.ShowDialog();
+            this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (!PanelSair.Visible)
+
+                PanelSair.Visible = true; //Exibi o Painel de Botões 
+
+            else
+
+                PanelSair.Visible = false;//Esconde o Painel de Botões
+        }
+
+        private void BtnSair_Click(object sender, EventArgs e)
+        {
+            PainelLogins Login = new PainelLogins();
+            this.Hide();
+            Login.ShowDialog();
             this.Close();
         }
     }
