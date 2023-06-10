@@ -19,6 +19,8 @@ namespace UkraBar
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.valorFinalTotal = 0;
+
             Clientes cliente = new Clientes();
             this.Hide();
             cliente.ShowDialog();

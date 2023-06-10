@@ -142,7 +142,7 @@ namespace UkraBar
 
         private void BtnOkH_Click(object sender, EventArgs e)
         {
-            VariaveisGlobais.valorHulubsti = Convert.ToDouble(BoxValorfinalB.Text);
+            VariaveisGlobais.valorHulubsti = Convert.ToDouble(BoxValorfinalH.Text);
             if (VariaveisGlobais.CompraHusbulist == true)
             {
                 conn.Open();
