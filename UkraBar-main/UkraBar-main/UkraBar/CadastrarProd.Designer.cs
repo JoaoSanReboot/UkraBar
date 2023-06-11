@@ -896,7 +896,6 @@
             this.Location = new System.Drawing.Point(10, 80);
             this.Name = "CadastrarProd";
             this.Text = "Cadastro de Produto";
-            this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.CadastrarProd_Load);
             this.BarSideTop.ResumeLayout(false);
