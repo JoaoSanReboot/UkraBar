@@ -87,6 +87,7 @@ namespace UkraBar
         public static string NomeFunc;
         public static string SenhaFunc;
 
+        public static int ultimoIdLoginAdmInserido;
         public static int ultimoIdLoginFuncionarioInserido;
         public static int ultimoIdFuncionarioInserido;
         public static int ultimoIdProdutoInserido;

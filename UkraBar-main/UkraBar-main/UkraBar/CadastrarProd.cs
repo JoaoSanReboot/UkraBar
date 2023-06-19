@@ -363,6 +363,10 @@ namespace UkraBar
         {
             conn.Open();
 
+            string DeletarPK = "DELETE FROM produto_loja WHERE id_produto = @id_produto";
+            string DeletarFKA = "DELETE FROM login_adm WHERE id_produto = @id_produto";
+            string DeletarFKF = "DELETE FROM login_func WHERE id_produto = @id_produto";
+
             for (int i = 0; i < DTgridProd.Rows.Count; i++)//Faz a contagem de linhas Selecionadas enquanto i for menor que a contagens de rows.
             {
                 DataGridViewCheckBoxCell CheckBox = DTgridProd.Rows[i].Cells[0] as DataGridViewCheckBoxCell; //Defini CheckBox como funcional.
@@ -371,9 +375,28 @@ namespace UkraBar
                 {
                     int id = Convert.ToInt32(DTgridProd.Rows[i].Cells[1].Value);//Int para contagem de celulas marcadas.
 
-                    MySqlCommand comando = new MySqlCommand("DELETE FROM produto_loja WHERE id_produto = @id_produto", conn);//Comandos MySql
-                    comando.Parameters.AddWithValue("@id_produto", id);
-                    comando.ExecuteNonQuery();
+                    if (VariaveisGlobais.idAdm == 1)
+                    {
+                        using (MySqlCommand command = new MySqlCommand(DeletarFKA, conn))
+                        {
+                            command.Parameters.AddWithValue("@id_produto", id);
+                            command.ExecuteNonQuery();
+                        }
+                    }
+
+                    if (VariaveisGlobais.idFunc == 1)
+                    {
+                        using (MySqlCommand command = new MySqlCommand(DeletarFKF, conn))
+                        {
+                            command.Parameters.AddWithValue("@id_produto", id);
+                            command.ExecuteNonQuery();
+                        }
+                    }
+                    using (MySqlCommand command = new MySqlCommand(DeletarPK, conn))
+                    {
+                        command.Parameters.AddWithValue("@id_produto", id);
+                        command.ExecuteNonQuery();
+                    }
 
                     DTgridProd.Rows.RemoveAt(i);//Deleta as linhas.
                     i--;                       //Diminui as linhas.

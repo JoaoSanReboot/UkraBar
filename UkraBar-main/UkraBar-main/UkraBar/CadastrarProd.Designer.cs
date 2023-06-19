@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BarSideTop = new System.Windows.Forms.FlowLayoutPanel();
             this.panelLabel = new System.Windows.Forms.Panel();
             this.lblProd = new System.Windows.Forms.Label();
@@ -45,7 +45,7 @@
             this.pbMenu = new System.Windows.Forms.PictureBox();
             this.panelShowConfig = new System.Windows.Forms.Panel();
             this.BtnEditar = new System.Windows.Forms.Button();
-            this.BtnNovoFunc = new System.Windows.Forms.Button();
+            this.BtnNovoProd = new System.Windows.Forms.Button();
             this.BtnDeletar = new System.Windows.Forms.Button();
             this.BtnConfigurações = new System.Windows.Forms.Button();
             this.BtnSobre = new System.Windows.Forms.Button();
@@ -249,7 +249,7 @@
             // 
             this.panelShowConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
             this.panelShowConfig.Controls.Add(this.BtnEditar);
-            this.panelShowConfig.Controls.Add(this.BtnNovoFunc);
+            this.panelShowConfig.Controls.Add(this.BtnNovoProd);
             this.panelShowConfig.Controls.Add(this.BtnDeletar);
             this.panelShowConfig.Controls.Add(this.BtnConfigurações);
             this.panelShowConfig.Location = new System.Drawing.Point(3, 125);
@@ -278,24 +278,24 @@
             this.BtnEditar.UseVisualStyleBackColor = false;
             this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click_1);
             // 
-            // BtnNovoFunc
+            // BtnNovoProd
             // 
-            this.BtnNovoFunc.BackColor = System.Drawing.Color.Green;
-            this.BtnNovoFunc.FlatAppearance.BorderSize = 0;
-            this.BtnNovoFunc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNovoFunc.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnNovoFunc.ForeColor = System.Drawing.Color.White;
-            this.BtnNovoFunc.Image = global::UkraBar.Properties.Resources.add_30px;
-            this.BtnNovoFunc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnNovoFunc.Location = new System.Drawing.Point(1, 52);
-            this.BtnNovoFunc.Name = "BtnNovoFunc";
-            this.BtnNovoFunc.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnNovoFunc.Size = new System.Drawing.Size(229, 50);
-            this.BtnNovoFunc.TabIndex = 40;
-            this.BtnNovoFunc.Text = "               Novo Funcionário";
-            this.BtnNovoFunc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnNovoFunc.UseVisualStyleBackColor = false;
-            this.BtnNovoFunc.Click += new System.EventHandler(this.BtnNovoFunc_Click);
+            this.BtnNovoProd.BackColor = System.Drawing.Color.Green;
+            this.BtnNovoProd.FlatAppearance.BorderSize = 0;
+            this.BtnNovoProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNovoProd.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BtnNovoProd.ForeColor = System.Drawing.Color.White;
+            this.BtnNovoProd.Image = global::UkraBar.Properties.Resources.add_30px;
+            this.BtnNovoProd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnNovoProd.Location = new System.Drawing.Point(1, 52);
+            this.BtnNovoProd.Name = "BtnNovoProd";
+            this.BtnNovoProd.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.BtnNovoProd.Size = new System.Drawing.Size(229, 50);
+            this.BtnNovoProd.TabIndex = 40;
+            this.BtnNovoProd.Text = "               Novo Produto";
+            this.BtnNovoProd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnNovoProd.UseVisualStyleBackColor = false;
+            this.BtnNovoProd.Click += new System.EventHandler(this.BtnNovoFunc_Click);
             // 
             // BtnDeletar
             // 
@@ -828,37 +828,37 @@
             this.DTgridProd.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DTgridProd.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DTgridProd.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTgridProd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTgridProd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.DTgridProd.ColumnHeadersHeight = 30;
             this.DTgridProd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DTgridProd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CheckBox});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DTgridProd.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DTgridProd.DefaultCellStyle = dataGridViewCellStyle5;
             this.DTgridProd.GridColor = System.Drawing.Color.Black;
             this.DTgridProd.Location = new System.Drawing.Point(3, 0);
             this.DTgridProd.Name = "DTgridProd";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTgridProd.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTgridProd.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.DTgridProd.RowHeadersWidth = 51;
             this.DTgridProd.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.DTgridProd.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
@@ -980,7 +980,7 @@
         private System.Windows.Forms.TextBox BoxdQuantidadeP;
         private System.Windows.Forms.Panel panelShowConfig;
         private System.Windows.Forms.Button BtnEditar;
-        private System.Windows.Forms.Button BtnNovoFunc;
+        private System.Windows.Forms.Button BtnNovoProd;
         private System.Windows.Forms.Button BtnDeletar;
         private System.Windows.Forms.Button BtnConfigurações;
         private System.Windows.Forms.Button BtnSobre;

@@ -207,11 +207,11 @@ namespace UkraBar
             }
         }
 
-            //PictureBox de X botton para fechar Panel de Cadastro
-            private void pbFechar_Click(object sender, EventArgs e)
-            {
-                NovoFuncTimer.Start();//Inicia o Tempo para Fechar.
-            }
+        //PictureBox de X botton para fechar Panel de Cadastro
+        private void pbFechar_Click(object sender, EventArgs e)
+        {
+            NovoFuncTimer.Start();//Inicia o Tempo para Fechar.
+        }
 
 
         private void BtnNovoFunc_Click_1(object sender, EventArgs e)
@@ -222,10 +222,12 @@ namespace UkraBar
                 NovoFuncTimer.Start();          //Começar Timer.
             }
         }
-
         private void BtnDeletar_Click_1(object sender, EventArgs e)
         {
             conn.Open();
+
+            string DeletarPK = "DELETE FROM cadastro_funcionario WHERE id_cadastro = @id_cadastro";
+            string DeletarFKA = "DELETE FROM login_adm WHERE id_cadastro = @id_cadastro";
 
             for (int i = 0; i < DTgridClientes.Rows.Count; i++)//Faz a contagem de linhas Selecionadas enquanto i for menor que a contagens de rows.
             {
@@ -235,17 +237,29 @@ namespace UkraBar
                 {
                     int id = Convert.ToInt32(DTgridClientes.Rows[i].Cells[1].Value);//Int para contagem de celulas marcadas.
 
-                    MySqlCommand comando = new MySqlCommand("DELETE FROM cadastro_funcionario WHERE id_cadastro = @id_cadastro", conn);//Comandos MySql
-                    comando.Parameters.AddWithValue("@id_cadastro", id);
-                    comando.ExecuteNonQuery();
+                    if (VariaveisGlobais.idAdm == 1)
+                    {
+                        using (MySqlCommand command = new MySqlCommand(DeletarFKA, conn))
+                        {
+                            command.Parameters.AddWithValue("@id_cadastro", id);
+                            command.ExecuteNonQuery();
+                        }
+                    }
+                    using (MySqlCommand command = new MySqlCommand(DeletarPK, conn))
+                    {
+                        command.Parameters.AddWithValue("@id_cadastro", id);
+                        command.ExecuteNonQuery();
+                    }
 
                     DTgridClientes.Rows.RemoveAt(i);//Deleta as linhas.
                     i--;                       //Diminui as linhas.
                 }
             }
+      
             CarregarDados();//Carregas os dados no GridView
             conn.Close();
         }
+
 
         private void BtnEditar_Click_1(object sender, EventArgs e)
         {

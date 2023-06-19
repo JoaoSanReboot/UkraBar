@@ -118,6 +118,7 @@ namespace UkraBar
             MySqlCommand command = new MySqlCommand("SELECT nome_adm, senha_adm FROM login_adm WHERE nome_adm=@nome_adm AND senha_adm=@senha_adm", conn);
             command.Parameters.AddWithValue("@nome_adm", nomeloginADM);
             command.Parameters.AddWithValue("@senha_adm", senhaloginADM);
+            VariaveisGlobais.ultimoIdLoginAdmInserido = (int)command.LastInsertedId;
 
             try
             {
