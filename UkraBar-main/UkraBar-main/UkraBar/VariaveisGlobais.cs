@@ -117,5 +117,8 @@ namespace UkraBar
 
         public static int idAdm;
         public static int idFunc;
+
+        public static string nomeloginADM;
+        public static string senhaloginADM;
     }
 }

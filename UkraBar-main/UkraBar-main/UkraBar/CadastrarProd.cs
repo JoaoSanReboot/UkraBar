@@ -212,8 +212,8 @@ namespace UkraBar
                 string queryInserirLogin = "INSERT INTO login_adm (nome_adm, senha_adm, id_produto) VALUES (@nome_adm, @senha_adm, @id_produto)";
                 using (MySqlCommand comandos = new MySqlCommand(queryInserirLogin, conn))
                 {
-                    comandos.Parameters.AddWithValue("@nome_adm", "UkraAdm");
-                    comandos.Parameters.AddWithValue("@senha_adm", "8^#3xY@7c$S5p@2#9a4!g6R^@1f%T#");
+                    comandos.Parameters.AddWithValue("@nome_adm", VariaveisGlobais.nomeloginADM);
+                    comandos.Parameters.AddWithValue("@senha_adm", VariaveisGlobais.senhaloginADM);
                     comandos.Parameters.AddWithValue("@id_produto", VariaveisGlobais.ultimoIdProdutoInserido);
                     comandos.ExecuteNonQuery();
                     conn.Close();

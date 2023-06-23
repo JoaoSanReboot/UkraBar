@@ -107,8 +107,8 @@ namespace UkraBar
             VariaveisGlobais.idFunc = 0;
 
             //Declara as strings da Box
-            string nomeloginADM = TextAdm1.Text;
-            string senhaloginADM = TextAdm2Senha.Text;
+             VariaveisGlobais.nomeloginADM = TextAdm1.Text;
+             VariaveisGlobais.senhaloginADM = TextAdm2Senha.Text;
 
             //Estabelece Conexão com o BD
             string connectionString = "SERVER=localhost;DATABASE=ukrasystem;UID=root;PASSWORD=;";
@@ -116,8 +116,8 @@ namespace UkraBar
 
             //Faz o comando Select From na tabela
             MySqlCommand command = new MySqlCommand("SELECT nome_adm, senha_adm FROM login_adm WHERE nome_adm=@nome_adm AND senha_adm=@senha_adm", conn);
-            command.Parameters.AddWithValue("@nome_adm", nomeloginADM);
-            command.Parameters.AddWithValue("@senha_adm", senhaloginADM);
+            command.Parameters.AddWithValue("@nome_adm", VariaveisGlobais.nomeloginADM);
+            command.Parameters.AddWithValue("@senha_adm", VariaveisGlobais.senhaloginADM);
             VariaveisGlobais.ultimoIdLoginAdmInserido = (int)command.LastInsertedId;
 
             try
