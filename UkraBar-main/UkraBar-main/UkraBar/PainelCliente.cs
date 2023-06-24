@@ -177,43 +177,53 @@ namespace UkraBar
             string DeletarFKA = "DELETE FROM login_adm WHERE id_cliente = @id_cliente";
             string DeletarFKF = "DELETE FROM login_func WHERE id_cliente = @id_cliente";
 
-            for (int i = 0; i < DTgridClie.Rows.Count; i++)//Faz a contagem de linhas Selecionadas enquanto i for menor que a contagens de rows.
+            try
             {
-                DataGridViewCheckBoxCell CheckBox = DTgridClie.Rows[i].Cells[0] as DataGridViewCheckBoxCell; //Defini CheckBox como funcional.
-
-                if (CheckBox.Value != null && (bool)CheckBox.Value == true)//Bool sim ou não.
+                for (int i = 0; i < DTgridClie.Rows.Count; i++)//Faz a contagem de linhas Selecionadas enquanto i for menor que a contagens de rows.
                 {
-                    int id = Convert.ToInt32(DTgridClie.Rows[i].Cells[1].Value);//Int para contagem de celulas marcadas.
+                    DataGridViewCheckBoxCell CheckBox = DTgridClie.Rows[i].Cells[0] as DataGridViewCheckBoxCell; //Defini CheckBox como funcional.
 
-                    if (VariaveisGlobais.idAdm == 1)
+                    if (CheckBox.Value != null && (bool)CheckBox.Value == true)//Bool sim ou não.
                     {
-                        using (MySqlCommand command = new MySqlCommand(DeletarFKA, conn))
+                        int id = Convert.ToInt32(DTgridClie.Rows[i].Cells[1].Value);//Int para contagem de celulas marcadas.
+
+                        if (VariaveisGlobais.idAdm == 1)
+                        {
+                            using (MySqlCommand command = new MySqlCommand(DeletarFKA, conn))
+                            {
+                                command.Parameters.AddWithValue("@id_cliente", id);
+                                command.ExecuteNonQuery();
+                            }
+                        }
+
+                        if (VariaveisGlobais.idFunc == 1)
+                        {
+                            using (MySqlCommand command = new MySqlCommand(DeletarFKF, conn))
+                            {
+                                command.Parameters.AddWithValue("@id_cliente", id);
+                                command.ExecuteNonQuery();
+                            }
+                        }
+                        using (MySqlCommand command = new MySqlCommand(DeletarPK, conn))
                         {
                             command.Parameters.AddWithValue("@id_cliente", id);
                             command.ExecuteNonQuery();
                         }
-                    }
 
-                    if (VariaveisGlobais.idFunc == 1)
-                    {
-                        using (MySqlCommand command = new MySqlCommand(DeletarFKF, conn))
-                        {
-                            command.Parameters.AddWithValue("@id_cliente", id);
-                            command.ExecuteNonQuery();
-                        }
+                        DTgridClie.Rows.RemoveAt(i);//Deleta as linhas.
+                        i--;                       //Diminui as linhas.
                     }
-                    using (MySqlCommand command = new MySqlCommand(DeletarPK, conn))
-                    {
-                        command.Parameters.AddWithValue("@id_cliente", id);
-                        command.ExecuteNonQuery();
-                    }
-
-                    DTgridClie.Rows.RemoveAt(i);//Deleta as linhas.
-                    i--;                       //Diminui as linhas.
                 }
             }
-            CarregarDados();//Carregas os dados no GridView
-            conn.Close();//Fecha a Conexão
+            catch (Exception ex)
+            {
+                MessageBox.Show("Você não tem permissão para apagar, apenas o criador pode deletar.");
+            }
+            finally
+            {
+                CarregarDados();//Carregas os dados no GridView
+                conn.Close();//Fecha a Conexão
+            }
         }
 
         //Abre o Panel de Editar.
@@ -238,7 +248,7 @@ namespace UkraBar
             {
                 conn.Open();//Abre Conexão.
                 //Declara String.
-                string Atualizar = "UPDATE cliente SET cpf_cliente = @cpf_cliente, nome_cliente = @nome_cliente, carrinho = @carrinho WHERE id_cliente = @id_cliente";
+                string Atualizar = "UPDATE cliente SET cpf_cliente = @cpf_cliente, nome_cliente = @nome_cliente, forma_pagamento = @forma_pagamento WHERE id_cliente = @id_cliente";
                 using (MySqlCommand comando = new MySqlCommand(Atualizar, conn))//Usa strings.
                 {
                     {
@@ -246,7 +256,7 @@ namespace UkraBar
                         comando.Parameters.AddWithValue("@id_cliente", BoxdIdC.Text);
                         comando.Parameters.AddWithValue("@cpf_cliente", BoxdCpfC.Text);
                         comando.Parameters.AddWithValue("@nome_cliente", BoxdNomeC.Text);
-                        comando.Parameters.AddWithValue("@carrinho", BoxdCarrinhoC.Text);
+                        comando.Parameters.AddWithValue("forma_pagamento", BoxdPagamentoC.Text);
                         comando.ExecuteNonQuery();//Executa comando.
                     }
                 }
@@ -273,7 +283,7 @@ namespace UkraBar
                     BoxdIdC.Text = DTgridClie.CurrentRow.Cells[1].Value.ToString();
                     BoxdCpfC.Text = DTgridClie.CurrentRow.Cells[2].Value.ToString();
                     BoxdNomeC.Text = DTgridClie.CurrentRow.Cells[3].Value.ToString();
-                    BoxdCarrinhoC.Text = DTgridClie.CurrentRow.Cells[4].Value.ToString();
+                    BoxdPagamentoC.Text = DTgridClie.CurrentRow.Cells[4].Value.ToString();
                 }
             }
 

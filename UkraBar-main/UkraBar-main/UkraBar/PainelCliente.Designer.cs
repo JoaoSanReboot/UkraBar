@@ -57,7 +57,7 @@
             this.LayoutFundoDT = new System.Windows.Forms.FlowLayoutPanel();
             this.panelEditarFundo = new System.Windows.Forms.Panel();
             this.lblCarrinhoC = new System.Windows.Forms.Label();
-            this.BoxdCarrinhoC = new System.Windows.Forms.TextBox();
+            this.BoxdPagamentoC = new System.Windows.Forms.TextBox();
             this.BtnPincel = new System.Windows.Forms.Button();
             this.lblNomeC = new System.Windows.Forms.Label();
             this.lblCpfC = new System.Windows.Forms.Label();
@@ -434,7 +434,7 @@
             // 
             this.panelEditarFundo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
             this.panelEditarFundo.Controls.Add(this.lblCarrinhoC);
-            this.panelEditarFundo.Controls.Add(this.BoxdCarrinhoC);
+            this.panelEditarFundo.Controls.Add(this.BoxdPagamentoC);
             this.panelEditarFundo.Controls.Add(this.BtnPincel);
             this.panelEditarFundo.Controls.Add(this.lblNomeC);
             this.panelEditarFundo.Controls.Add(this.lblCpfC);
@@ -458,23 +458,23 @@
             this.lblCarrinhoC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.lblCarrinhoC.ForeColor = System.Drawing.Color.White;
             this.lblCarrinhoC.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.lblCarrinhoC.Location = new System.Drawing.Point(661, 17);
+            this.lblCarrinhoC.Location = new System.Drawing.Point(614, 16);
             this.lblCarrinhoC.Name = "lblCarrinhoC";
-            this.lblCarrinhoC.Size = new System.Drawing.Size(76, 21);
+            this.lblCarrinhoC.Size = new System.Drawing.Size(173, 21);
             this.lblCarrinhoC.TabIndex = 48;
-            this.lblCarrinhoC.Text = "Carrinho";
+            this.lblCarrinhoC.Text = "Forma de Pagamento";
             // 
-            // BoxdCarrinhoC
+            // BoxdPagamentoC
             // 
-            this.BoxdCarrinhoC.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.BoxdPagamentoC.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.BoxdCarrinhoC.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BoxdCarrinhoC.Location = new System.Drawing.Point(580, 42);
-            this.BoxdCarrinhoC.MaxLength = 100;
-            this.BoxdCarrinhoC.Name = "BoxdCarrinhoC";
-            this.BoxdCarrinhoC.Size = new System.Drawing.Size(238, 29);
-            this.BoxdCarrinhoC.TabIndex = 47;
+            this.BoxdPagamentoC.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BoxdPagamentoC.Location = new System.Drawing.Point(581, 41);
+            this.BoxdPagamentoC.MaxLength = 100;
+            this.BoxdPagamentoC.Name = "BoxdPagamentoC";
+            this.BoxdPagamentoC.Size = new System.Drawing.Size(238, 29);
+            this.BoxdPagamentoC.TabIndex = 47;
             // 
             // BtnPincel
             // 
@@ -713,7 +713,7 @@
         private System.Windows.Forms.FlowLayoutPanel LayoutFundoDT;
         private System.Windows.Forms.Panel panelEditarFundo;
         private System.Windows.Forms.Label lblCarrinhoC;
-        private System.Windows.Forms.TextBox BoxdCarrinhoC;
+        private System.Windows.Forms.TextBox BoxdPagamentoC;
         private System.Windows.Forms.Button BtnPincel;
         private System.Windows.Forms.Label lblNomeC;
         private System.Windows.Forms.Label lblCpfC;

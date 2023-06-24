@@ -414,7 +414,6 @@ namespace UkraBar
 
             MessageBox.Show("Executado com Sucesso!");
             CarregarDados();        //Carrega dados na tabela.
-            NovoFuncTimer.Start(); //Para o Timer.
         }
 
         private void pbFechar_Click_1(object sender, EventArgs e)

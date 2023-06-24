@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -235,7 +236,6 @@ namespace UkraBar
             }
             MessageBox.Show("Executado com Sucesso!");
             CarregarDados();        //Carrega dados na tabela.
-            NovoProdBar.Start(); //Para o Timer.
         }
 
         //Picture Box Fechar dentro do Panel de Cadastro de Produto.
@@ -367,43 +367,60 @@ namespace UkraBar
             string DeletarFKA = "DELETE FROM login_adm WHERE id_produto = @id_produto";
             string DeletarFKF = "DELETE FROM login_func WHERE id_produto = @id_produto";
 
-            for (int i = 0; i < DTgridProd.Rows.Count; i++)//Faz a contagem de linhas Selecionadas enquanto i for menor que a contagens de rows.
+            try
             {
-                DataGridViewCheckBoxCell CheckBox = DTgridProd.Rows[i].Cells[0] as DataGridViewCheckBoxCell; //Defini CheckBox como funcional.
 
-                if (CheckBox.Value != null && (bool)CheckBox.Value == true)//Bool sim ou não.
+                for (int i = 0; i < DTgridProd.Rows.Count; i++)//Faz a contagem de linhas Selecionadas enquanto i for menor que a contagens de rows.
                 {
-                    int id = Convert.ToInt32(DTgridProd.Rows[i].Cells[1].Value);//Int para contagem de celulas marcadas.
+                    DataGridViewCheckBoxCell CheckBox = DTgridProd.Rows[i].Cells[0] as DataGridViewCheckBoxCell; //Defini CheckBox como funcional.
 
-                    if (VariaveisGlobais.idAdm == 1)
+                    if (CheckBox.Value != null && (bool)CheckBox.Value == true)//Bool sim ou não.
                     {
-                        using (MySqlCommand command = new MySqlCommand(DeletarFKA, conn))
+                        int id = Convert.ToInt32(DTgridProd.Rows[i].Cells[1].Value);//Int para contagem de celulas marcadas.
+
+                        if (VariaveisGlobais.idAdm == 1)
+                        {
+                            using (MySqlCommand command = new MySqlCommand(DeletarFKA, conn))
+                            {
+                                command.Parameters.AddWithValue("@id_produto", id);
+                                command.ExecuteNonQuery();
+                            }
+                        }
+
+                        if (VariaveisGlobais.idFunc == 1)
+                        {
+                            using (MySqlCommand command = new MySqlCommand(DeletarFKF, conn))
+                            {
+                                command.Parameters.AddWithValue("@id_produto", id);
+                                command.ExecuteNonQuery();
+                            }
+                        }
+                        using (MySqlCommand command = new MySqlCommand(DeletarPK, conn))
                         {
                             command.Parameters.AddWithValue("@id_produto", id);
                             command.ExecuteNonQuery();
                         }
+
+                        DTgridProd.Rows.RemoveAt(i);//Deleta as linhas.
+                        i--;                       //Diminui as linhas.
+
                     }
 
-                    if (VariaveisGlobais.idFunc == 1)
-                    {
-                        using (MySqlCommand command = new MySqlCommand(DeletarFKF, conn))
-                        {
-                            command.Parameters.AddWithValue("@id_produto", id);
-                            command.ExecuteNonQuery();
-                        }
-                    }
-                    using (MySqlCommand command = new MySqlCommand(DeletarPK, conn))
-                    {
-                        command.Parameters.AddWithValue("@id_produto", id);
-                        command.ExecuteNonQuery();
-                    }
-
-                    DTgridProd.Rows.RemoveAt(i);//Deleta as linhas.
-                    i--;                       //Diminui as linhas.
                 }
+            }catch (Exception ex)
+            {
+                MessageBox.Show("Você não cadastrou esse Produto, apenas o criador pode deletar.");
             }
-            CarregarDados();//Carregas os dados no GridView
-            conn.Close();//Fecha a Conexão
+            finally
+            {
+                CarregarDados();//Carregas os dados no GridView
+                conn.Close();//Fecha a Conexão
+            }
+            {
+
+            }
+            
+          
         }
 
         private void BtnEditar_Click_1(object sender, EventArgs e)
